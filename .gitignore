@@ -1,0 +1,9 @@
+node_modules/
+.npm-cache/
+.next/
+out/
+.DS_Store
+*.log
+data/raw/
+data/reports/
+work/

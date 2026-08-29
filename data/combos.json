@@ -1,0 +1,146 @@
+[
+  {
+    "id": "nano-blade",
+    "name": "나노 강화제 + 용검",
+    "heroes": [
+      "ana",
+      "genji"
+    ],
+    "score": 5,
+    "difficulty": 4,
+    "description": "나노 강화제로 겐지의 진입 피해와 생존력을 동시에 높여 짧은 시간에 후방을 정리합니다.",
+    "timing": "키리코의 정화와 루시우의 소리 방벽이 빠진 직후 진입합니다.",
+    "counters": [
+      "kiriko",
+      "lucio",
+      "zenyatta"
+    ],
+    "reviewedAt": "2026-08-29"
+  },
+  {
+    "id": "grav-dragon",
+    "name": "중력자탄 + 용의 일격",
+    "heroes": [
+      "zarya",
+      "hanzo"
+    ],
+    "score": 5,
+    "difficulty": 3,
+    "description": "중력자탄으로 적을 묶은 뒤 용의 일격을 통과시켜 넓은 범위에 지속 피해를 줍니다.",
+    "timing": "엄폐가 적은 거점과 좁은 화물 구간에서 효과가 큽니다.",
+    "counters": [
+      "kiriko",
+      "zenyatta",
+      "lucio"
+    ],
+    "reviewedAt": "2026-08-29"
+  },
+  {
+    "id": "grav-blossom",
+    "name": "중력자탄 + 죽음의 꽃",
+    "heroes": [
+      "zarya",
+      "reaper"
+    ],
+    "score": 5,
+    "difficulty": 3,
+    "description": "흩어질 수 없는 적에게 리퍼의 광역 피해를 집중해 한타를 빠르게 끝냅니다.",
+    "timing": "방어 매트릭스와 불사 장치가 빠진 것을 확인합니다.",
+    "counters": [
+      "baptiste",
+      "dva",
+      "kiriko"
+    ],
+    "reviewedAt": "2026-08-29"
+  },
+  {
+    "id": "blizzard-bomb",
+    "name": "눈보라 + 자폭",
+    "heroes": [
+      "mei",
+      "dva"
+    ],
+    "score": 5,
+    "difficulty": 2,
+    "description": "눈보라로 이동을 제한한 뒤 자폭을 겹쳐 엄폐가 부족한 목표 구역을 비웁니다.",
+    "timing": "상대 이동 기술과 정화를 먼저 유도하면 성공률이 높아집니다.",
+    "counters": [
+      "kiriko",
+      "reinhardt",
+      "mei"
+    ],
+    "reviewedAt": "2026-08-29"
+  },
+  {
+    "id": "window-visor",
+    "name": "증폭 매트릭스 + 전술 조준경",
+    "heroes": [
+      "baptiste",
+      "soldier-76"
+    ],
+    "score": 4,
+    "difficulty": 2,
+    "description": "넓은 사선에서 증폭된 자동 조준 사격으로 방벽과 후방을 함께 압박합니다.",
+    "timing": "상대가 엄폐물 사이를 이동해야 하는 화물 구간에 설치합니다.",
+    "counters": [
+      "dva",
+      "sigma",
+      "winston"
+    ],
+    "reviewedAt": "2026-08-29"
+  },
+  {
+    "id": "kitsune-visor",
+    "name": "키츠네 러시 + 전술 조준경",
+    "heroes": [
+      "kiriko",
+      "soldier-76"
+    ],
+    "score": 4,
+    "difficulty": 2,
+    "description": "공격 속도와 이동 속도를 높여 솔저: 76의 지속 화력을 극대화합니다.",
+    "timing": "직선 시야가 긴 거점이나 화물 구간에서 함께 전진합니다.",
+    "counters": [
+      "sigma",
+      "dva",
+      "lucio"
+    ],
+    "reviewedAt": "2026-08-29"
+  },
+  {
+    "id": "nano-bob",
+    "name": "나노 강화제 + B.O.B.",
+    "heroes": [
+      "ana",
+      "ashe"
+    ],
+    "score": 4,
+    "difficulty": 2,
+    "description": "B.O.B.의 화력과 생존력을 강화해 거점 점유와 다각도 압박을 동시에 만듭니다.",
+    "timing": "B.O.B.이 안정적인 사선을 확보한 직후 나노 강화제를 사용합니다.",
+    "counters": [
+      "ana",
+      "sombra",
+      "sigma"
+    ],
+    "reviewedAt": "2026-08-29"
+  },
+  {
+    "id": "window-bob",
+    "name": "증폭 매트릭스 + B.O.B.",
+    "heroes": [
+      "baptiste",
+      "ashe"
+    ],
+    "score": 4,
+    "difficulty": 3,
+    "description": "B.O.B.의 사선 앞에 증폭 매트릭스를 설치해 좁은 구역의 화력을 크게 높입니다.",
+    "timing": "적이 매트릭스 사선을 우회하기 어려운 위치에서 사용합니다.",
+    "counters": [
+      "sombra",
+      "ana",
+      "sigma"
+    ],
+    "reviewedAt": "2026-08-29"
+  }
+]

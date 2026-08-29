@@ -1,0 +1,1172 @@
+[
+  {
+    "id": "antarctic-peninsula",
+    "name": "남극 반도",
+    "mode": "쟁탈",
+    "recommendations": [
+      {
+        "hero": "mizuki",
+        "rank": 1,
+        "winRate": 51.6,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "illari",
+        "rank": 1,
+        "winRate": 50,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "bastion",
+        "rank": 1,
+        "winRate": 49.2,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "zarya",
+        "rank": 1,
+        "winRate": 48.4,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "cassidy",
+        "rank": 1,
+        "winRate": 47.3,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "baptiste",
+        "rank": 1,
+        "winRate": 46.6,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "symmetra",
+        "rank": 3,
+        "winRate": 55.5,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "mauga",
+        "rank": 3,
+        "winRate": 49.1,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "shion",
+        "rank": 3,
+        "winRate": 48.9,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "sojourn",
+        "rank": 3,
+        "winRate": 45.4,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "nepal",
+    "name": "네팔",
+    "mode": "쟁탈",
+    "recommendations": [
+      {
+        "hero": "moira",
+        "rank": 1,
+        "winRate": 51.4,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "symmetra",
+        "rank": 2,
+        "winRate": 55.5,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "hazard",
+        "rank": 2,
+        "winRate": 50,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "ramattra",
+        "rank": 2,
+        "winRate": 49.5,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "orisa",
+        "rank": 2,
+        "winRate": 46.1,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "lijiang-tower",
+    "name": "리장 타워",
+    "mode": "쟁탈",
+    "recommendations": [
+      {
+        "hero": "symmetra",
+        "rank": 1,
+        "winRate": 55.5,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "pharah",
+        "rank": 1,
+        "winRate": 52.2,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "jetpack-cat",
+        "rank": 2,
+        "winRate": 52.8,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "lucio",
+        "rank": 2,
+        "winRate": 51,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "sojourn",
+        "rank": 2,
+        "winRate": 45.4,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "moira",
+        "rank": 3,
+        "winRate": 51.4,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "hazard",
+        "rank": 3,
+        "winRate": 50,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "orisa",
+        "rank": 3,
+        "winRate": 46.1,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "busan",
+    "name": "부산",
+    "mode": "쟁탈",
+    "recommendations": [
+      {
+        "hero": "sojourn",
+        "rank": 1,
+        "winRate": 45.4,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "soldier-76",
+        "rank": 2,
+        "winRate": 49.4,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "mauga",
+        "rank": 2,
+        "winRate": 49.1,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "dva",
+        "rank": 2,
+        "winRate": 44.7,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "bastion",
+        "rank": 3,
+        "winRate": 49.2,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "zarya",
+        "rank": 3,
+        "winRate": 48.4,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "emre",
+        "rank": 3,
+        "winRate": 48,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "cassidy",
+        "rank": 3,
+        "winRate": 47.3,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "samoa",
+    "name": "사모아",
+    "mode": "쟁탈",
+    "recommendations": [
+      {
+        "hero": "mauga",
+        "rank": 1,
+        "winRate": 49.1,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "junker-queen",
+        "rank": 3,
+        "winRate": 53.7,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "roadhog",
+        "rank": 3,
+        "winRate": 45.3,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "oasis",
+    "name": "오아시스",
+    "mode": "쟁탈",
+    "recommendations": [
+      {
+        "hero": "moira",
+        "rank": 2,
+        "winRate": 51.4,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "zarya",
+        "rank": 2,
+        "winRate": 48.4,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "cassidy",
+        "rank": 2,
+        "winRate": 47.3,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "roadhog",
+        "rank": 2,
+        "winRate": 45.3,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "pharah",
+        "rank": 3,
+        "winRate": 52.2,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "ilios",
+    "name": "일리오스",
+    "mode": "쟁탈",
+    "recommendations": [
+      {
+        "hero": "jetpack-cat",
+        "rank": 1,
+        "winRate": 52.8,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "reaper",
+        "rank": 1,
+        "winRate": 52.2,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "lucio",
+        "rank": 1,
+        "winRate": 51,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "hazard",
+        "rank": 1,
+        "winRate": 50,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "echo",
+        "rank": 1,
+        "winRate": 48.9,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "orisa",
+        "rank": 1,
+        "winRate": 46.1,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "roadhog",
+        "rank": 1,
+        "winRate": 45.3,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "pharah",
+        "rank": 2,
+        "winRate": 52.2,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "brigitte",
+        "rank": 3,
+        "winRate": 51.1,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "watchpoint-gibraltar",
+    "name": "감시 기지: 지브롤터",
+    "mode": "호위",
+    "recommendations": [
+      {
+        "hero": "winston",
+        "rank": 2,
+        "winRate": 49.9,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "ashe",
+        "rank": 3,
+        "winRate": 51.1,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "wuyang",
+        "rank": 3,
+        "winRate": 51.1,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "dva",
+        "rank": 3,
+        "winRate": 44.7,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "dorado",
+    "name": "도라도",
+    "mode": "호위",
+    "recommendations": [
+      {
+        "hero": "wrecking-ball",
+        "rank": 2,
+        "winRate": 49.1,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "lifeweaver",
+        "rank": 2,
+        "winRate": 48.2,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "reaper",
+        "rank": 3,
+        "winRate": 52.2,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "vendetta",
+        "rank": 3,
+        "winRate": 51.4,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "winston",
+        "rank": 3,
+        "winRate": 49.9,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "rialto",
+    "name": "리알토",
+    "mode": "호위",
+    "recommendations": [
+      {
+        "hero": "mei",
+        "rank": 1,
+        "winRate": 54,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "reinhardt",
+        "rank": 2,
+        "winRate": 52.5,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "junkrat",
+        "rank": 2,
+        "winRate": 52.4,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "brigitte",
+        "rank": 2,
+        "winRate": 51.1,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "domina",
+        "rank": 2,
+        "winRate": 49.9,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "zenyatta",
+        "rank": 3,
+        "winRate": 54.9,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "mizuki",
+        "rank": 3,
+        "winRate": 51.6,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "shambali-monastery",
+    "name": "샴발리 수도원",
+    "mode": "호위",
+    "recommendations": [
+      {
+        "hero": "ramattra",
+        "rank": 1,
+        "winRate": 49.5,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "illari",
+        "rank": 2,
+        "winRate": 50,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "mei",
+        "rank": 3,
+        "winRate": 54,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "genji",
+        "rank": 3,
+        "winRate": 50.8,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "domina",
+        "rank": 3,
+        "winRate": 49.9,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "sigma",
+        "rank": 3,
+        "winRate": 49.6,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "hanzo",
+        "rank": 3,
+        "winRate": 49.6,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "echo",
+        "rank": 3,
+        "winRate": 48.9,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "mercy",
+        "rank": 3,
+        "winRate": 46.4,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "circuit-royal",
+    "name": "서킷 로얄",
+    "mode": "호위",
+    "recommendations": [
+      {
+        "hero": "ashe",
+        "rank": 1,
+        "winRate": 51.1,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "domina",
+        "rank": 1,
+        "winRate": 49.9,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "sigma",
+        "rank": 1,
+        "winRate": 49.6,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "hanzo",
+        "rank": 1,
+        "winRate": 49.6,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "sierra",
+        "rank": 1,
+        "winRate": 49.5,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "zenyatta",
+        "rank": 2,
+        "winRate": 54.9,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "mei",
+        "rank": 2,
+        "winRate": 54,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "bastion",
+        "rank": 2,
+        "winRate": 49.2,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "baptiste",
+        "rank": 2,
+        "winRate": 46.6,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "widowmaker",
+        "rank": 3,
+        "winRate": 45.8,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "junkertown",
+    "name": "쓰레기촌",
+    "mode": "호위",
+    "recommendations": [
+      {
+        "hero": "wrecking-ball",
+        "rank": 3,
+        "winRate": 49.1,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "lifeweaver",
+        "rank": 3,
+        "winRate": 48.2,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "havana",
+    "name": "하바나",
+    "mode": "호위",
+    "recommendations": [
+      {
+        "hero": "zenyatta",
+        "rank": 1,
+        "winRate": 54.9,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "lifeweaver",
+        "rank": 1,
+        "winRate": 48.2,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "ana",
+        "rank": 1,
+        "winRate": 48.1,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "emre",
+        "rank": 1,
+        "winRate": 48,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "ashe",
+        "rank": 2,
+        "winRate": 51.1,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "widowmaker",
+        "rank": 2,
+        "winRate": 45.8,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "torbjorn",
+        "rank": 3,
+        "winRate": 57.1,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "illari",
+        "rank": 3,
+        "winRate": 50,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "numbani",
+    "name": "눔바니",
+    "mode": "혼합",
+    "recommendations": [
+      {
+        "hero": "juno",
+        "rank": 1,
+        "winRate": 51.7,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "winston",
+        "rank": 1,
+        "winRate": 49.9,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "dva",
+        "rank": 1,
+        "winRate": 44.7,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "wuyang",
+        "rank": 2,
+        "winRate": 51.1,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "kiriko",
+        "rank": 2,
+        "winRate": 46.6,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "baptiste",
+        "rank": 3,
+        "winRate": 46.6,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "blizzard-world",
+    "name": "블리자드 월드",
+    "mode": "혼합",
+    "recommendations": [
+      {
+        "hero": "kiriko",
+        "rank": 1,
+        "winRate": 46.6,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "sigma",
+        "rank": 2,
+        "winRate": 49.6,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "sierra",
+        "rank": 2,
+        "winRate": 49.5,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "emre",
+        "rank": 2,
+        "winRate": 48,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "eichenwalde",
+    "name": "아이헨발데",
+    "mode": "혼합",
+    "recommendations": [
+      {
+        "hero": "torbjorn",
+        "rank": 1,
+        "winRate": 57.1,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "junkrat",
+        "rank": 1,
+        "winRate": 52.4,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "reinhardt",
+        "rank": 3,
+        "winRate": 52.5,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "kings-row",
+    "name": "왕의 길",
+    "mode": "혼합",
+    "recommendations": [
+      {
+        "hero": "reinhardt",
+        "rank": 1,
+        "winRate": 52.5,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "doomfist",
+        "rank": 1,
+        "winRate": 50.4,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "wrecking-ball",
+        "rank": 1,
+        "winRate": 49.1,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "widowmaker",
+        "rank": 1,
+        "winRate": 45.8,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "vendetta",
+        "rank": 2,
+        "winRate": 51.4,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "hanzo",
+        "rank": 2,
+        "winRate": 49.6,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "ana",
+        "rank": 2,
+        "winRate": 48.1,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "paraiso",
+    "name": "파라이수",
+    "mode": "혼합",
+    "recommendations": [
+      {
+        "hero": "torbjorn",
+        "rank": 2,
+        "winRate": 57.1,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "mizuki",
+        "rank": 2,
+        "winRate": 51.6,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "junkrat",
+        "rank": 3,
+        "winRate": 52.4,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "ramattra",
+        "rank": 3,
+        "winRate": 49.5,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "hollywood",
+    "name": "할리우드",
+    "mode": "혼합",
+    "recommendations": [
+      {
+        "hero": "genji",
+        "rank": 2,
+        "winRate": 50.8,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "ana",
+        "rank": 3,
+        "winRate": 48.1,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "new-queen-street",
+    "name": "뉴 퀸 스트리트",
+    "mode": "밀기",
+    "recommendations": [
+      {
+        "hero": "soldier-76",
+        "rank": 1,
+        "winRate": 49.4,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "juno",
+        "rank": 3,
+        "winRate": 51.7,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "runasapi",
+    "name": "루나사피",
+    "mode": "밀기",
+    "recommendations": [
+      {
+        "hero": "anran",
+        "rank": 1,
+        "winRate": 52.1,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "wuyang",
+        "rank": 1,
+        "winRate": 51.1,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "tracer",
+        "rank": 1,
+        "winRate": 50.1,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "venture",
+        "rank": 2,
+        "winRate": 53,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "juno",
+        "rank": 2,
+        "winRate": 51.7,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "dmon",
+        "rank": 3,
+        "winRate": 53.9,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "soldier-76",
+        "rank": 3,
+        "winRate": 49.4,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "freja",
+        "rank": 3,
+        "winRate": 48.4,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "sombra",
+        "rank": 3,
+        "winRate": 47.8,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "esperanca",
+    "name": "이스페란사",
+    "mode": "밀기",
+    "recommendations": [
+      {
+        "hero": "freja",
+        "rank": 2,
+        "winRate": 48.4,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "sombra",
+        "rank": 2,
+        "winRate": 47.8,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "mercy",
+        "rank": 2,
+        "winRate": 46.4,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "sierra",
+        "rank": 3,
+        "winRate": 49.5,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "kiriko",
+        "rank": 3,
+        "winRate": 46.6,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "colosseo",
+    "name": "콜로세오",
+    "mode": "밀기",
+    "recommendations": [
+      {
+        "hero": "vendetta",
+        "rank": 1,
+        "winRate": 51.4,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "genji",
+        "rank": 1,
+        "winRate": 50.8,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "freja",
+        "rank": 1,
+        "winRate": 48.4,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "sombra",
+        "rank": 1,
+        "winRate": 47.8,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "mercy",
+        "rank": 1,
+        "winRate": 46.4,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "tracer",
+        "rank": 2,
+        "winRate": 50.1,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "echo",
+        "rank": 2,
+        "winRate": 48.9,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "anran",
+        "rank": 3,
+        "winRate": 52.1,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "lucio",
+        "rank": 3,
+        "winRate": 51,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "doomfist",
+        "rank": 3,
+        "winRate": 50.4,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "new-junk-city",
+    "name": "뉴 정크 시티",
+    "mode": "플래시포인트",
+    "recommendations": [
+      {
+        "hero": "junker-queen",
+        "rank": 1,
+        "winRate": 53.7,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "shion",
+        "rank": 1,
+        "winRate": 48.9,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "dmon",
+        "rank": 2,
+        "winRate": 53.9,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "anran",
+        "rank": 2,
+        "winRate": 52.1,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "suravasa",
+    "name": "수라바사",
+    "mode": "플래시포인트",
+    "recommendations": [
+      {
+        "hero": "doomfist",
+        "rank": 2,
+        "winRate": 50.4,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "venture",
+        "rank": 3,
+        "winRate": 53,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "jetpack-cat",
+        "rank": 3,
+        "winRate": 52.8,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "aatlis",
+    "name": "아틀리스",
+    "mode": "플래시포인트",
+    "recommendations": [
+      {
+        "hero": "dmon",
+        "rank": 1,
+        "winRate": 53.9,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "venture",
+        "rank": 1,
+        "winRate": 53,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "brigitte",
+        "rank": 1,
+        "winRate": 51.1,
+        "note": "이 맵에서 추천 우선순위 1그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "junker-queen",
+        "rank": 2,
+        "winRate": 53.7,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "reaper",
+        "rank": 2,
+        "winRate": 52.2,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "shion",
+        "rank": 2,
+        "winRate": 48.9,
+        "note": "이 맵에서 추천 우선순위 2그룹으로 분류된 영웅입니다."
+      },
+      {
+        "hero": "tracer",
+        "rank": 3,
+        "winRate": 50.1,
+        "note": "이 맵에서 추천 우선순위 3그룹으로 분류된 영웅입니다."
+      }
+    ],
+    "reviewedAt": "2026-08-30"
+  }
+]
