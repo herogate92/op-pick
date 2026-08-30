@@ -4,6 +4,10 @@ import { HomeBackgroundMedia } from "@/components/HomeBackgroundMedia";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getHero } from "@/lib/data";
 
+function CtaElectricity() {
+  return <span className="cta-electricity" aria-hidden="true" />;
+}
+
 export default function HomePage() {
   const poster = getHero("tracer")?.background ?? getHero("ana")?.background;
   return (
@@ -16,11 +20,11 @@ export default function HomePage() {
         <p>영웅을 이해하고, 상성을 확인하고, 가장 잘 맞는 아군 조합을 설계하세요.</p>
         <div className="cinematic-actions">
           <Link href="/heroes/" className="cinematic-primary">
-            <span className="cta-electricity" aria-hidden="true"><span /><span /><span /><span /></span>
+            <CtaElectricity />
             <span className="cta-content"><Shield aria-hidden="true" /> 영웅 선택 <ArrowRight aria-hidden="true" /></span>
           </Link>
           <Link href="/team-builder/" className="cinematic-secondary">
-            <span className="cta-electricity" aria-hidden="true"><span /><span /><span /><span /></span>
+            <CtaElectricity />
             <span className="cta-content"><UsersRound aria-hidden="true" /> 팀 조합 만들기</span>
           </Link>
         </div>

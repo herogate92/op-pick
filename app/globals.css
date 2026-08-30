@@ -29,7 +29,22 @@ button { color: inherit; }
 .nav-link { min-width: 106px; padding: 0 12px; display: flex; flex: 0 0 auto; gap: 8px; align-items: center; justify-content: center; color: #c4ccda; font-weight: 750; white-space: nowrap; border-right: 1px solid rgba(255,255,255,.05); transition: color .2s, background .2s; }
 .nav-link:hover { color: white; background: rgba(255,255,255,.04); }
 .nav-link.active { color: white; background: linear-gradient(180deg, rgba(8,220,243,.26), rgba(8,220,243,.12)); box-shadow: inset 0 -3px 0 var(--cyan); }
-.brand { min-width: 286px; margin: -1px 20px -11px; padding: 6px 32px 8px; display: flex; gap: 12px; justify-content: center; align-items: center; background: linear-gradient(180deg, #17355e, #087fc0 55%, #03bfe2); clip-path: polygon(8% 0,92% 0,100% 100%,0 100%); border-inline: 2px solid var(--cyan-soft); filter: drop-shadow(0 8px 12px rgba(0,211,255,.26)); }
+.brand { min-width: 286px; position: relative; isolation: isolate; margin: -1px 20px -11px; padding: 6px 32px 8px; display: flex; gap: 12px; justify-content: center; align-items: center; overflow: hidden; background: linear-gradient(180deg, #17355e, #087fc0 55%, #03bfe2); clip-path: polygon(8% 0,92% 0,100% 100%,0 100%); border-inline: 2px solid var(--cyan-soft); filter: drop-shadow(0 8px 12px rgba(0,211,255,.26)); transition: filter .2s ease, transform .18s ease; }
+.brand > span:not(.brand-electricity) { position: relative; z-index: 2; }
+.brand-electricity { position: absolute; z-index: 1; inset: 0; opacity: 0; pointer-events: none; transition: opacity .08s linear; }
+.brand-electricity svg { width: 100%; height: 100%; display: block; overflow: hidden; }
+.brand-electric-frame { fill: none; stroke: #fff; stroke-width: 2.2; opacity: .72; vector-effect: non-scaling-stroke; filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 6px var(--cyan)); }
+.brand-arc { opacity: 0; filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 5px var(--cyan-soft)) drop-shadow(0 0 10px var(--cyan)); }
+.brand-arc path { fill: none; stroke: #fff; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; vector-effect: non-scaling-stroke; }
+.brand-arc path + path { stroke-width: 1.15; }
+.brand:hover, .brand:focus-visible { filter: brightness(1.06) drop-shadow(0 7px 11px rgba(0,211,255,.42)) drop-shadow(0 0 11px rgba(109,244,255,.25)); transform: none; outline: none; }
+.brand:hover .brand-electricity, .brand:focus-visible .brand-electricity { opacity: 1; }
+.brand:hover .brand-electric-frame, .brand:focus-visible .brand-electric-frame { animation: brand-frame-pulse 1.05s steps(2,end) infinite; }
+.brand:hover .brand-arc, .brand:focus-visible .brand-arc { animation: brand-arc-flash 3s linear infinite; }
+.brand:hover .brand-arc path, .brand:focus-visible .brand-arc path { animation: brand-arc-draw 3s linear infinite; }
+.brand:hover .brand-arc-two, .brand:focus-visible .brand-arc-two, .brand:hover .brand-arc-two path, .brand:focus-visible .brand-arc-two path { animation-delay: -.75s; }
+.brand:hover .brand-arc-three, .brand:focus-visible .brand-arc-three, .brand:hover .brand-arc-three path, .brand:focus-visible .brand-arc-three path { animation-delay: -1.5s; }
+.brand:hover .brand-arc-four, .brand:focus-visible .brand-arc-four, .brand:hover .brand-arc-four path, .brand:focus-visible .brand-arc-four path { animation-delay: -2.25s; }
 .brand-mark { width: 40px; height: 40px; display: grid; place-items: center; border: 3px solid white; border-radius: 50%; font-size: 13px; font-weight: 950; }
 .brand strong, .brand small { display: block; }
 .brand strong { font-size: 19px; letter-spacing: .04em; }
@@ -681,32 +696,30 @@ body:not(.ads-enabled) .ad-placeholder { display: none !important; }
 .cinematic-actions > a { --cta-electric: #bffcff; min-width: 176px; position: relative; isolation: isolate; display: flex; align-items: center; justify-content: center; padding: 13px 18px; overflow: visible; font-size: 12px; font-weight: 900; transition: color .16s ease, background-color .16s ease, border-color .16s ease, box-shadow .2s ease, transform .16s ease; }
 .cinematic-actions > a::before { content: ""; position: absolute; z-index: 0; inset: -3px; border: 1px solid transparent; opacity: 0; pointer-events: none; transition: opacity .15s ease; }
 .cinematic-actions > a::after { content: ""; position: absolute; z-index: 1; inset: 1px; opacity: 0; pointer-events: none; background: linear-gradient(112deg, transparent 12%, rgba(255,255,255,.5) 32%, transparent 52%); background-position: 125% 0; background-size: 220% 100%; }
-.cinematic-actions > a:hover, .cinematic-actions > a:focus-visible { transform: translateY(-2px); outline: none; }
+.cinematic-actions > a:hover, .cinematic-actions > a:focus-visible { transform: translateY(-1px); outline: none; }
 .cinematic-actions > a:hover::before, .cinematic-actions > a:focus-visible::before { opacity: 1; border-color: var(--cta-electric); animation: cta-border-surge .72s steps(2,end) infinite; }
 .cinematic-actions > a:hover::after, .cinematic-actions > a:focus-visible::after { opacity: .72; animation: cta-energy-sweep .82s ease-out infinite; }
 .cta-content { position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; gap: 8px; }
-.cta-electricity { position: absolute; z-index: 3; inset: -12px; opacity: 0; pointer-events: none; transition: opacity .12s ease; }
-.cta-electricity > span { position: absolute; display: block; background: linear-gradient(90deg, transparent, #fff 38%, var(--cta-electric) 62%, transparent); filter: drop-shadow(0 0 3px var(--cta-electric)) drop-shadow(0 0 7px rgba(109,244,255,.8)); }
-.cta-electricity > span:nth-child(1), .cta-electricity > span:nth-child(3) { width: 58px; height: 12px; clip-path: polygon(0 44%, 17% 44%, 24% 4%, 35% 78%, 46% 24%, 59% 56%, 100% 56%, 100% 72%, 58% 72%, 48% 42%, 34% 100%, 25% 38%, 18% 72%, 0 72%); }
-.cta-electricity > span:nth-child(2), .cta-electricity > span:nth-child(4) { width: 12px; height: 48px; background: linear-gradient(180deg, transparent, #fff 38%, var(--cta-electric) 62%, transparent); clip-path: polygon(44% 0, 44% 17%, 4% 24%, 78% 35%, 24% 46%, 56% 59%, 56% 100%, 72% 100%, 72% 58%, 42% 48%, 100% 34%, 38% 25%, 72% 18%, 72% 0); }
-.cta-electricity > span:nth-child(1) { top: 5px; left: 12%; }
-.cta-electricity > span:nth-child(2) { top: 13%; right: 5px; }
-.cta-electricity > span:nth-child(3) { right: 13%; bottom: 5px; transform: rotate(180deg); }
-.cta-electricity > span:nth-child(4) { bottom: 10%; left: 5px; transform: rotate(180deg); }
+.cta-electricity { position: absolute; z-index: 4; inset: -2px; overflow: hidden; opacity: 0; pointer-events: none; border: 1px solid rgba(191,252,255,.82); box-shadow: inset 0 0 8px rgba(109,244,255,.22), 0 0 7px rgba(8,220,243,.32); transition: opacity .12s ease; }
+.cta-electricity::before, .cta-electricity::after { content: ""; position: absolute; width: 42%; height: 2px; background: linear-gradient(90deg, transparent, #fff 44%, var(--cta-electric) 62%, transparent); filter: drop-shadow(0 0 3px #fff) drop-shadow(0 0 6px var(--cta-electric)); }
+.cta-electricity::before { top: 0; left: -42%; }
+.cta-electricity::after { right: -42%; bottom: 0; }
 .cinematic-actions > a:hover .cta-electricity, .cinematic-actions > a:focus-visible .cta-electricity { opacity: 1; }
-.cinematic-actions > a:hover .cta-electricity > span, .cinematic-actions > a:focus-visible .cta-electricity > span { animation: cta-lightning-flicker .64s steps(2,end) infinite; }
-.cinematic-actions > a:hover .cta-electricity > span:nth-child(2), .cinematic-actions > a:focus-visible .cta-electricity > span:nth-child(2) { animation-delay: -.18s; }
-.cinematic-actions > a:hover .cta-electricity > span:nth-child(3), .cinematic-actions > a:focus-visible .cta-electricity > span:nth-child(3) { animation-delay: -.37s; }
-.cinematic-actions > a:hover .cta-electricity > span:nth-child(4), .cinematic-actions > a:focus-visible .cta-electricity > span:nth-child(4) { animation-delay: -.51s; }
+.cinematic-actions > a:hover .cta-electricity::before, .cinematic-actions > a:focus-visible .cta-electricity::before { animation: cta-edge-current .75s ease-in-out infinite; }
+.cinematic-actions > a:hover .cta-electricity::after, .cinematic-actions > a:focus-visible .cta-electricity::after { animation: cta-edge-current-reverse .75s ease-in-out -.38s infinite; }
 .cinematic-actions svg { width: 18px; }
 .cinematic-primary { color: #07101e; background: var(--cyan); box-shadow: 0 0 30px rgba(8,220,243,.2); }
-.cinematic-primary:hover, .cinematic-primary:focus-visible { color: #020a12; background: #7bf4ff; box-shadow: 0 0 12px rgba(191,252,255,.7), 0 0 34px rgba(8,220,243,.48), inset 0 0 16px rgba(255,255,255,.26); }
+.cinematic-primary:hover, .cinematic-primary:focus-visible { color: #020a12; background: #6df4ff; box-shadow: 0 0 10px rgba(109,244,255,.55), 0 0 26px rgba(8,220,243,.34), inset 0 0 12px rgba(255,255,255,.22); }
 .cinematic-secondary { color: white; border: 1px solid rgba(255,255,255,.42); background: rgba(5,12,25,.52); backdrop-filter: blur(12px); }
-.cinematic-secondary:hover, .cinematic-secondary:focus-visible { border-color: var(--cta-electric); background: rgba(10,35,53,.82); box-shadow: 0 0 10px rgba(191,252,255,.42), 0 0 28px rgba(8,220,243,.3), inset 0 0 18px rgba(109,244,255,.08); }
+.cinematic-secondary:hover, .cinematic-secondary:focus-visible { color: white; border-color: var(--cta-electric); background: rgba(8,42,62,.88); box-shadow: 0 0 9px rgba(109,244,255,.42), 0 0 24px rgba(8,220,243,.26), inset 0 0 14px rgba(109,244,255,.1); }
 @keyframes cta-border-surge { 0%, 100% { box-shadow: 0 0 4px rgba(191,252,255,.55), inset 0 0 3px rgba(191,252,255,.32); } 42% { border-color: #fff; box-shadow: 0 0 8px var(--cta-electric), 0 0 16px rgba(8,220,243,.65), inset 0 0 6px rgba(255,255,255,.48); } 66% { border-color: rgba(109,244,255,.45); } }
 @keyframes cta-energy-sweep { 0% { background-position: 125% 0; } 55%, 100% { background-position: -125% 0; } }
-@keyframes cta-lightning-flicker { 0%, 100% { opacity: .18; scale: .92; } 12% { opacity: 1; scale: 1.08; } 24% { opacity: .08; } 38% { opacity: .88; translate: 2px -1px; } 52% { opacity: .22; } 68% { opacity: 1; scale: 1; } 84% { opacity: .35; translate: -1px 1px; } }
-@media (prefers-reduced-motion: reduce) { .cinematic-actions > a:hover::before, .cinematic-actions > a:focus-visible::before, .cinematic-actions > a:hover::after, .cinematic-actions > a:focus-visible::after, .cinematic-actions > a:hover .cta-electricity > span, .cinematic-actions > a:focus-visible .cta-electricity > span { animation: none !important; } }
+@keyframes cta-edge-current { 0% { left: -42%; opacity: 0; } 18% { opacity: 1; } 70% { opacity: .85; } 100% { left: 100%; opacity: 0; } }
+@keyframes cta-edge-current-reverse { 0% { right: -42%; opacity: 0; } 18% { opacity: 1; } 70% { opacity: .85; } 100% { right: 100%; opacity: 0; } }
+@keyframes brand-frame-pulse { 0%, 24%, 52%, 100% { opacity: .46; stroke: var(--cyan-soft); } 25%, 51%, 76% { opacity: 1; stroke: #fff; } 77%, 90% { opacity: .68; stroke: var(--cyan-soft); } }
+@keyframes brand-arc-flash { 0%, 7%, 18%, 100% { opacity: 0; } 8% { opacity: .78; } 10% { opacity: 1; } 12% { opacity: .32; } 14% { opacity: 1; } 17% { opacity: .5; } }
+@keyframes brand-arc-draw { 0%, 7% { stroke-dashoffset: 1; } 11% { stroke-dashoffset: 0; } 18%, 100% { stroke-dashoffset: -.15; } }
+@media (prefers-reduced-motion: reduce) { .brand:hover .brand-electric-frame, .brand:focus-visible .brand-electric-frame, .brand:hover .brand-arc, .brand:focus-visible .brand-arc, .brand:hover .brand-arc path, .brand:focus-visible .brand-arc path, .cinematic-actions > a:hover::before, .cinematic-actions > a:focus-visible::before, .cinematic-actions > a:hover::after, .cinematic-actions > a:focus-visible::after, .cinematic-actions > a:hover .cta-electricity::before, .cinematic-actions > a:focus-visible .cta-electricity::before, .cinematic-actions > a:hover .cta-electricity::after, .cinematic-actions > a:focus-visible .cta-electricity::after { animation: none !important; } }
 .home-quick-nav { width: min(1500px,calc(100% - 70px)); position: absolute; z-index: 4; left: 50%; bottom: 22px; display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; transform: translateX(-50%); background: rgba(109,244,255,.18); border: 1px solid rgba(109,244,255,.2); }
 .home-quick-nav > a { min-height: 70px; display: grid; grid-template-columns: 30px 1fr 16px; gap: 9px; align-items: center; padding: 11px 15px; background: rgba(7,16,31,.86); backdrop-filter: blur(18px); }
 .home-quick-nav > a:hover { background: rgba(11,39,61,.94); }

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Home, MapPinned, Menu, Search, Shield, Sparkles, Swords, UsersRound } from "lucide-react";
+import { BrandElectricity } from "@/components/BrandElectricity";
 import { heroes } from "@/lib/data";
 
 const navItems = [
@@ -20,6 +21,7 @@ export function SiteHeader({ active }: { active: string }) {
         ))}
       </nav>
       <Link href="/" className="brand" aria-label="OP PICK LAB 홈">
+        <BrandElectricity />
         <span className="brand-mark">OP</span><span><strong>OP PICK LAB</strong><small>오버워치 픽 연구소</small></span>
       </Link>
       <div className="top-actions">

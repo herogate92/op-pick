@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ChevronRight, Cross, HeartPulse, Home, MapPinned, Menu, Search, Shield, Sparkles, Swords, UsersRound, X, Zap } from "lucide-react";
 import { AbilityStats } from "@/components/AbilityStats";
+import { BrandElectricity } from "@/components/BrandElectricity";
 import type { Ability, Combo, Matchup, Role } from "@/lib/data";
 import { roleAccent, roleLabels, subroleLabels } from "@/lib/data";
 
@@ -68,6 +69,7 @@ export function HeroStage({ heroes, matchups, combos }: { heroes: HeroSummary[];
           ))}
         </nav>
         <Link href="/" className="brand" aria-label="OP PICK LAB 홈">
+          <BrandElectricity />
           <span className="brand-mark">OP</span><span><strong>OP PICK LAB</strong><small>오버워치 픽 연구소</small></span>
         </Link>
         <div className="top-actions">
