@@ -333,7 +333,7 @@ button { color: inherit; }
 .detail-hero { min-height: 440px; position: relative; border-bottom: 1px solid rgba(109,244,255,.18); overflow: hidden; background: #07101e; }
 .hero-background-media { position: absolute; z-index: 0; inset: 0; overflow: hidden; background: #07101e; }
 .hero-background-poster { position: absolute; inset: 0; background-position: center 24%; background-size: cover; }
-.hero-background-youtube { width: 100vw; height: 56.25vw; min-width: 782px; min-height: 440px; position: absolute; top: 50%; left: 50%; border: 0; opacity: 0; pointer-events: none; transform: translate(-50%,-50%); animation: youtube-background-reveal 3.8s ease forwards; }
+.hero-background-youtube { width: 100vw; height: 56.25vw; min-width: 782px; min-height: 440px; position: absolute; top: 50%; left: 50%; border: 0; opacity: 1; pointer-events: none; transform: translate(-50%,-50%); }
 .hero-video-toggle { min-height: 38px; position: absolute; z-index: 5; top: 18px; right: 20px; display: flex; align-items: center; justify-content: center; gap: 7px; padding: 8px 11px; color: #eef7ff; border: 1px solid rgba(255,255,255,.42); border-radius: 3px; background: rgba(5,12,25,.7); backdrop-filter: blur(12px); font-size: 10px; font-weight: 850; cursor: pointer; }
 .hero-video-toggle:hover, .hero-video-toggle:focus-visible { color: #07101e; border-color: var(--hero-accent); background: var(--hero-accent); outline: none; }
 .hero-video-toggle svg { width: 14px; height: 14px; fill: currentColor; }
@@ -667,14 +667,10 @@ body:not(.ads-enabled) .ad-placeholder { display: none !important; }
 .cinematic-home { min-height: 100svh; position: relative; overflow: hidden; background: #050b16; }
 .home-background-media { position: absolute; z-index: 0; inset: 0; overflow: hidden; background: #050b16; }
 .home-background-poster { position: absolute; inset: 0; background-color: #050b16; background-position: center; background-size: cover; }
-.home-background-youtube { width: 100vw; height: 56.25vw; min-width: 177.78vh; min-height: 100vh; position: absolute; top: 50%; left: 50%; border: 0; opacity: 0; pointer-events: none; transform: translate(-50%,-50%); animation: youtube-background-reveal 3.8s ease forwards; }
+.home-background-youtube { width: 100vw; height: 56.25vw; min-width: 177.78vh; min-height: 100vh; position: absolute; top: 50%; left: 50%; border: 0; opacity: 1; pointer-events: none; transform: translate(-50%,-50%); }
 .home-video-toggle { min-width: 112px; min-height: 42px; position: absolute; z-index: 6; right: 24px; bottom: 142px; display: flex; align-items: center; justify-content: center; gap: 7px; padding: 9px 12px; color: #f6fbff; border: 1px solid rgba(255,255,255,.42); border-radius: 3px; background: rgba(5,12,25,.68); backdrop-filter: blur(12px); font-size: 10px; font-weight: 850; cursor: pointer; }
 .home-video-toggle:hover, .home-video-toggle:focus-visible { color: #07101e; border-color: var(--cyan); background: var(--cyan); outline: none; }
 .home-video-toggle svg { width: 15px; height: 15px; fill: currentColor; }
-@keyframes youtube-background-reveal {
-  0%, 82% { opacity: 0; }
-  100% { opacity: 1; }
-}
 .home-video-overlay { position: absolute; z-index: 1; inset: 0; background: linear-gradient(90deg, rgba(4,10,21,.92) 0%, rgba(4,10,21,.55) 40%, rgba(4,10,21,.14) 72%), linear-gradient(0deg, rgba(4,10,21,.96) 0%, transparent 43%), radial-gradient(circle at 65% 42%, transparent 0 28%, rgba(5,11,24,.22) 68%); }
 .cinematic-home .topbar { position: relative; z-index: 10; }
 .cinematic-home-content { width: min(1500px,calc(100% - 70px)); min-height: calc(100svh - 250px); position: relative; z-index: 3; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; margin: 0 auto; padding: 50px 0 120px; }
