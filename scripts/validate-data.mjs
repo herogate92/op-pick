@@ -4,13 +4,14 @@ import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const read = async (name) => JSON.parse(await readFile(join(root, "data", name), "utf8"));
-const [heroes, matchups, combos, maps, teamSynergies, teamCautions] = await Promise.all([
+const [heroes, matchups, combos, maps, teamSynergies, teamCautions, heroRates] = await Promise.all([
   read("heroes.json"),
   read("matchups.json"),
   read("combos.json"),
   read("maps.json"),
   read("team-synergies.json"),
   read("team-cautions.json"),
+  read("hero-rates.json"),
 ]);
 
 const errors = [];
@@ -93,6 +94,20 @@ for (const caution of teamCautions) {
   if (!caution.modes?.length || !caution.modes.every((mode) => validTeamModes.has(mode))) errors.push(`주의 조합 모드 오류: ${caution.id}`);
 }
 
+if (!heroRates.fetchedAt || !Array.isArray(heroRates.snapshots) || !heroRates.snapshots.length) errors.push("공식 통계 스냅샷 누락");
+for (const snapshot of heroRates.snapshots ?? []) {
+  if (!snapshot.id || !snapshot.label || !snapshot.sourceUrl?.startsWith("https://overwatch.blizzard.com/")) errors.push(`공식 통계 메타데이터 오류: ${snapshot.id}`);
+  if (snapshot.rows?.length !== heroes.length) errors.push(`공식 통계 영웅 수 불일치: ${snapshot.id}/${snapshot.rows?.length}`);
+  const rateKeys = new Set();
+  for (const row of snapshot.rows ?? []) {
+    if (!keys.has(row.hero) || rateKeys.has(row.hero)) errors.push(`공식 통계 영웅 키 오류: ${snapshot.id}/${row.hero}`);
+    rateKeys.add(row.hero);
+    for (const [label, value] of [["승률", row.winRate], ["픽률", row.pickRate], ["금지율", row.banRate]]) {
+      if (value !== null && (typeof value !== "number" || value < 0 || value > 100)) errors.push(`공식 통계 ${label} 범위 오류: ${snapshot.id}/${row.hero}`);
+    }
+  }
+}
+
 if (!heroes.some((hero) => hero.name === "D.Va")) errors.push("D.Va 이름 검증 실패");
 if (!heroes.some((hero) => hero.name === "솔저: 76")) errors.push("솔저: 76 이름 검증 실패");
 
@@ -102,4 +117,4 @@ if (errors.length) {
 }
 
 const verifiedMatchups = matchups.filter((matchup) => matchup.status === "verified").length;
-console.log(`데이터 검증 완료: 영웅 ${heroes.length}, 상성 ${matchups.length}(검증 ${verifiedMatchups}, 검토 필요 ${matchups.length - verifiedMatchups}), 궁 조합 ${combos.length}, 팀 시너지 ${teamSynergies.length}, 주의 조합 ${teamCautions.length}, 맵 ${maps.length}, 맵 추천 ${maps.reduce((sum, map) => sum + map.recommendations.length, 0)}`);
+console.log(`데이터 검증 완료: 영웅 ${heroes.length}, 상성 ${matchups.length}(검증 ${verifiedMatchups}, 검토 필요 ${matchups.length - verifiedMatchups}), 궁 조합 ${combos.length}, 팀 시너지 ${teamSynergies.length}, 주의 조합 ${teamCautions.length}, 맵 ${maps.length}, 맵 추천 ${maps.reduce((sum, map) => sum + map.recommendations.length, 0)}, 공식 통계 ${heroRates.snapshots.length}개 조건`);

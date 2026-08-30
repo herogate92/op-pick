@@ -1,11 +1,12 @@
 import Link from "next/link";
-import { Home, MapPinned, Menu, Search, Shield, Sparkles, Swords, UsersRound } from "lucide-react";
+import { BarChart3, Home, MapPinned, Menu, Search, Shield, Sparkles, Swords, UsersRound } from "lucide-react";
 import { BrandElectricity } from "@/components/BrandElectricity";
 import { heroes } from "@/lib/data";
 
 const navItems = [
   { href: "/", label: "홈", icon: Home, id: "home" },
   { href: "/heroes/", label: "영웅", icon: Shield, id: "heroes" },
+  { href: "/rates/", label: "통계", icon: BarChart3, id: "rates" },
   { href: "/maps/", label: "맵별 추천", icon: MapPinned, id: "maps" },
   { href: "/matchups/", label: "상성", icon: Swords, id: "matchups" },
   { href: "/combos/", label: "조합", icon: Sparkles, id: "combos" },

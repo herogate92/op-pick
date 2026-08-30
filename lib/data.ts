@@ -4,6 +4,7 @@ import combosJson from "@/data/combos.json";
 import mapsJson from "@/data/maps.json";
 import teamSynergiesJson from "@/data/team-synergies.json";
 import teamCautionsJson from "@/data/team-cautions.json";
+import heroRatesJson from "@/data/hero-rates.json";
 
 export type Role = "tank" | "damage" | "support";
 export interface AbilityStat { label: string; value: string; }
@@ -36,6 +37,13 @@ export interface MapGuide { id: string; name: string; mode: string; recommendati
 export type TeamMode = "5v5" | "6v6";
 export interface TeamSynergy { id: string; heroes: [string, string]; score: number; type: string; reason: string; modes: TeamMode[]; reviewedAt: string; }
 export interface TeamCaution { id: string; heroes: [string, string]; penalty: number; reason: string; mitigation: string; modes: TeamMode[]; reviewedAt: string; }
+export interface HeroRateRow { hero: string; winRate: number | null; pickRate: number | null; banRate: number | null; }
+export interface HeroRateSnapshot {
+  id: string; label: string; sourceUrl: string;
+  filters: { input: string; inputLabel: string; region: string; regionLabel: string; map: string; mapLabel: string; tier: string; tierLabel: string };
+  rows: HeroRateRow[];
+}
+export interface HeroRatesDocument { fetchedAt: string; notice: string; snapshots: HeroRateSnapshot[]; }
 
 export const heroes = heroesJson as Hero[];
 export const matchups = matchupsJson as Matchup[];
@@ -43,6 +51,7 @@ export const combos = combosJson as Combo[];
 export const maps = mapsJson as MapGuide[];
 export const teamSynergies = teamSynergiesJson as TeamSynergy[];
 export const teamCautions = teamCautionsJson as TeamCaution[];
+export const heroRates = heroRatesJson as HeroRatesDocument;
 export const roleLabels: Record<Role, string> = { tank: "돌격", damage: "공격", support: "지원" };
 export const subroleLabels: Record<string, string> = {
   stalwart: "강건한 자", initiator: "개시자", bruiser: "투사", sharpshooter: "명사수", recon: "수색가",
