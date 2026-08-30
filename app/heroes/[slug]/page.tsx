@@ -36,6 +36,7 @@ export default async function HeroDetailPage({ params }: { params: Promise<{ slu
   const strongAgainst = getStrongAgainst(hero.key);
   const heroCombos = getCombosFor(hero.key);
   const heroVideo = getHeroVideo(hero.key);
+  const directBackgroundVideo = heroVideo ? undefined : hero.abilities.find((ability) => ability.video)?.video;
   const related = heroes.filter((item) => item.role === hero.role && item.key !== hero.key).slice(0, 6);
   const pageUrl = `https://opick.ggwp.kr/heroes/${hero.key}/`;
   const heroJsonLd = [
@@ -66,7 +67,7 @@ export default async function HeroDetailPage({ params }: { params: Promise<{ slu
       <JsonLd data={heroJsonLd} />
       <SiteHeader active="heroes" />
       <section className="detail-hero">
-        <HeroBackgroundMedia videoId={heroVideo?.id} poster={hero.background} heroName={hero.name} />
+        <HeroBackgroundMedia videoId={heroVideo?.id} directVideo={directBackgroundVideo} poster={hero.background} heroName={hero.name} />
         <div className="detail-overlay" />
         <div className="detail-hero-inner">
           <div className="detail-title">

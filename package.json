@@ -12,7 +12,7 @@
     "data:review": "node scripts/validate-external-review.mjs",
     "data:validate": "node scripts/validate-data.mjs",
     "videos:validate": "node scripts/audit-hero-videos.mjs",
-    "check": "npm run data:validate && npm run lint && npm run build"
+    "check": "npm run data:validate && npm run videos:validate && npm run lint && npm run build"
   },
   "dependencies": {
     "lucide-react": "1.37.0",

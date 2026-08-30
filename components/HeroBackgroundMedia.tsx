@@ -5,14 +5,17 @@ import { useState } from "react";
 
 export function HeroBackgroundMedia({
   videoId,
+  directVideo,
   poster,
   heroName,
 }: {
   videoId?: string;
+  directVideo?: { thumbnail: string; mp4: string; webm: string };
   poster?: string;
   heroName: string;
 }) {
-  const [isPlaying, setIsPlaying] = useState(Boolean(videoId));
+  const hasVideo = Boolean(videoId || directVideo?.mp4 || directVideo?.webm);
+  const [isPlaying, setIsPlaying] = useState(hasVideo);
   const videoUrl = videoId
     ? `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&disablekb=1&fs=0&iv_load_policy=3&playsinline=1&rel=0&modestbranding=1&cc_load_policy=0`
     : undefined;
@@ -34,8 +37,22 @@ export function HeroBackgroundMedia({
             tabIndex={-1}
           />
         )}
+        {isPlaying && !videoUrl && directVideo && (
+          <video
+            className="hero-background-video"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster={directVideo.thumbnail}
+          >
+            <source src={directVideo.webm} type="video/webm" />
+            <source src={directVideo.mp4} type="video/mp4" />
+          </video>
+        )}
       </div>
-      {videoId && (
+      {hasVideo && (
         <button
           type="button"
           className="hero-video-toggle"

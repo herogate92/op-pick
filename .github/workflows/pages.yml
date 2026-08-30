@@ -25,6 +25,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run data:validate
+      - run: npm run videos:validate
       - run: npm run lint
       - run: npm run build
       - uses: actions/configure-pages@v6

@@ -349,6 +349,7 @@ button { color: inherit; }
 .hero-background-media { position: absolute; z-index: 0; inset: 0; overflow: hidden; background: #07101e; }
 .hero-background-poster { position: absolute; inset: 0; background-position: center 24%; background-size: cover; }
 .hero-background-youtube { width: 100vw; height: 56.25vw; min-width: 782px; min-height: 440px; position: absolute; top: 50%; left: 50%; border: 0; opacity: 1; pointer-events: none; transform: translate(-50%,-50%); }
+.hero-background-video { width: 100%; height: 100%; position: absolute; inset: 0; object-fit: cover; object-position: center; pointer-events: none; }
 .hero-video-toggle { min-height: 38px; position: absolute; z-index: 5; top: 18px; right: 20px; display: flex; align-items: center; justify-content: center; gap: 7px; padding: 8px 11px; color: #eef7ff; border: 1px solid rgba(255,255,255,.42); border-radius: 3px; background: rgba(5,12,25,.7); backdrop-filter: blur(12px); font-size: 10px; font-weight: 850; cursor: pointer; }
 .hero-video-toggle:hover, .hero-video-toggle:focus-visible { color: #07101e; border-color: var(--hero-accent); background: var(--hero-accent); outline: none; }
 .hero-video-toggle svg { width: 14px; height: 14px; fill: currentColor; }

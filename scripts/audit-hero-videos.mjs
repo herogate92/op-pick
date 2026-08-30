@@ -12,10 +12,6 @@ for (const line of source.split(/\r?\n/)) {
   mappings.set(match[1] ?? match[2], match[3] ?? sharedId);
 }
 
-const aliases = {
-  cassidy: ["캐서디", "맥크리"],
-  dva: ["D.Va", "슈팅 스타"],
-};
 const sharedHeroes = new Set(["domina", "mizuki", "anran", "emre", "jetpack-cat"]);
 const embedChecks = new Map();
 
@@ -27,6 +23,7 @@ function checkEmbed(id) {
           "user-agent": "Mozilla/5.0",
           referer: "https://opick.ggwp.kr/",
         },
+        signal: AbortSignal.timeout(20_000),
       });
       if (!response.ok) return false;
       const html = await response.text();
@@ -37,41 +34,84 @@ function checkEmbed(id) {
   return embedChecks.get(id);
 }
 
+async function checkDirectVideo(video) {
+  const responses = await Promise.all([
+    [video.thumbnail, "image/"],
+    [video.webm, "video/webm"],
+    [video.mp4, "video/mp4"],
+  ].map(async ([url, contentType]) => {
+    const response = await fetch(url, { method: "HEAD", signal: AbortSignal.timeout(20_000) });
+    return response.ok && response.headers.get("content-type")?.startsWith(contentType);
+  }));
+  return responses.every(Boolean);
+}
+
 async function inspect(hero) {
+  const officialResponse = await fetch(hero.sourceUrl, { signal: AbortSignal.timeout(30_000) });
+  const officialHtml = officialResponse.ok ? await officialResponse.text() : "";
+  const abilityVideoUrls = hero.abilities.flatMap((ability) => ability.video ? Object.values(ability.video) : []);
+  const abilitiesMatchOfficial = officialResponse.ok
+    && abilityVideoUrls.length > 0
+    && abilityVideoUrls.every((url) => officialHtml.includes(url));
+
   const id = mappings.get(hero.key);
-  if (!id) return { key: hero.key, name: hero.name, status: "missing-mapping" };
+  if (!id) {
+    const ability = hero.abilities.find((item) => item.video);
+    if (!ability?.video) return { key: hero.key, name: hero.name, status: "missing-video" };
+    const directVideoOk = await checkDirectVideo(ability.video);
+    return {
+      key: hero.key,
+      name: hero.name,
+      kind: "official-ability",
+      ability: ability.name,
+      officialPageOk: officialResponse.ok,
+      abilitiesMatchOfficial,
+      directVideoOk,
+      status: abilitiesMatchOfficial && directVideoOk ? "ok" : "review",
+    };
+  }
+
   const url = `https://www.youtube.com/oembed?url=${encodeURIComponent(`https://www.youtube.com/watch?v=${id}`)}&format=json`;
-  const response = await fetch(url);
+  const response = await fetch(url, { signal: AbortSignal.timeout(20_000) });
   if (!response.ok) return { key: hero.key, name: hero.name, id, status: `youtube-${response.status}` };
   const metadata = await response.json();
   const embedOk = await checkEmbed(id);
-  const names = aliases[hero.key] ?? [hero.name];
-  const titleMatches = sharedHeroes.has(hero.key) || names.some((name) => metadata.title.toLocaleLowerCase("ko-KR").includes(name.toLocaleLowerCase("ko-KR")));
+  const titleMatches = sharedHeroes.has(hero.key)
+    || metadata.title.toLocaleLowerCase("ko-KR").includes(hero.name.toLocaleLowerCase("ko-KR"));
   const official = metadata.author_url === "https://www.youtube.com/@OverwatchKR";
+  const legacyTitle = /게임플레이 미리 보기|맥크리/.test(metadata.title);
   return {
     key: hero.key,
     name: hero.name,
+    kind: "youtube",
     id,
     title: metadata.title,
     official,
     titleMatches,
+    legacyTitle,
     embedOk,
-    status: official && titleMatches && embedOk ? "ok" : "review",
+    officialPageOk: officialResponse.ok,
+    abilitiesMatchOfficial,
+    status: official && titleMatches && !legacyTitle && embedOk && abilitiesMatchOfficial ? "ok" : "review",
   };
 }
 
 const results = [];
-for (let index = 0; index < heroes.length; index += 8) {
-  results.push(...await Promise.all(heroes.slice(index, index + 8).map(inspect)));
+for (let index = 0; index < heroes.length; index += 6) {
+  results.push(...await Promise.all(heroes.slice(index, index + 6).map(inspect)));
 }
 
-console.log(JSON.stringify({
+const report = {
   summary: {
     heroes: heroes.length,
-    mapped: mappings.size,
+    youtube: results.filter((result) => result.kind === "youtube").length,
+    officialAbility: results.filter((result) => result.kind === "official-ability").length,
     ok: results.filter((result) => result.status === "ok").length,
     review: results.filter((result) => result.status !== "ok").length,
   },
   review: results.filter((result) => result.status !== "ok"),
   results,
-}, null, 2));
+};
+
+console.log(JSON.stringify(report, null, 2));
+if (report.summary.review > 0) process.exit(1);
