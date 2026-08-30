@@ -30,78 +30,102 @@
     "hero": "ana",
     "counter": "winston",
     "score": 5,
-    "reason": "윈스턴은(는) 아나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
+    "reason": "윈스턴은 점프 팩으로 도주기가 없는 아나에게 곧바로 접근하고, 방벽 생성기로 수면총과 생체 수류탄의 경로를 끊을 수 있습니다.",
+    "condition": "윈스턴이 점프 팩과 방벽을 함께 보유한 채 아나가 아군 보호에서 떨어진 순간 진입할 때 위력이 큽니다.",
     "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "status": "verified",
+    "confidence": "high",
+    "patchBasis": "2026-08-30 라이브 기술 구조 · 현재 상성 평가",
+    "counterplay": "점프 거리를 미리 벌리고 아군 가까이 자리 잡으세요. 방벽 안에서는 무리하게 수면총을 쓰지 말고 윈스턴이 방벽을 벗어나는 순간을 노리세요.",
+    "evidence": [
+      "official-hero-kit",
+      "current-matchup-crosscheck"
+    ]
   },
   {
     "id": "ana-zarya",
     "hero": "ana",
     "counter": "zarya",
     "score": 5,
-    "reason": "자리야은(는) 아나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
+    "reason": "자리야의 입자 방벽은 생체 수류탄의 치유 차단을 해제하고 수면총을 막아, 아나가 만든 결정적인 공격 기회를 되돌릴 수 있습니다.",
+    "condition": "자리야가 방벽 충전을 남겨 두고 아나의 생체 수류탄이 적중한 아군에게 즉시 방벽을 제공할 때 효과가 가장 큽니다.",
     "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "status": "verified",
+    "confidence": "high",
+    "patchBasis": "2026-08-30 라이브 기술 구조 · 현재 상성 평가",
+    "counterplay": "자리야의 방벽 사용 횟수를 확인한 뒤 생체 수류탄과 수면총을 사용하세요. 방벽이 남아 있다면 한 대상에게 두 기술을 동시에 소모하지 않는 편이 안전합니다.",
+    "evidence": [
+      "official-hero-kit",
+      "current-matchup-crosscheck"
+    ]
   },
   {
     "id": "ana-dmon",
     "hero": "ana",
     "counter": "dmon",
     "score": 4,
-    "reason": "D.Mon은(는) 아나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
+    "reason": "D.Mon은 추진기로 아나와의 거리를 빠르게 좁히고 파워 배리어로 수면총과 생체 수류탄을 막으며 근접 압박을 이어갈 수 있습니다.",
+    "condition": "아나가 엄폐물과 아군에게서 떨어져 있고 D.Mon이 추진기 연료와 배리어 내구도를 충분히 남긴 상황에서 강합니다.",
     "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "status": "verified",
+    "confidence": "high",
+    "patchBasis": "2026-08-30 라이브 기술 구조 · 현재 상성 평가",
+    "counterplay": "배리어가 내려오기 전까지 수면총을 아끼고, D.Mon이 직선으로 접근하기 어려운 고지대나 좁은 엄폐 뒤에서 아군과 교차 사격하세요.",
+    "evidence": [
+      "official-hero-kit",
+      "current-matchup-crosscheck"
+    ]
   },
   {
     "id": "ana-dva",
     "hero": "ana",
     "counter": "dva",
     "score": 4,
-    "reason": "D.Va은(는) 아나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
+    "reason": "D.Va는 부스터로 아나에게 빠르게 붙고 방어 매트릭스로 수면총과 생체 수류탄을 제거해 아나의 생존 수단을 제한합니다.",
+    "condition": "D.Va가 방어 매트릭스 자원을 남긴 채 부스터로 진입하고 아나의 후퇴 경로까지 막을 때 특히 위협적입니다.",
     "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "status": "verified",
+    "confidence": "high",
+    "patchBasis": "2026-08-30 라이브 기술 구조 · 현재 상성 평가",
+    "counterplay": "방어 매트릭스를 먼저 소모시키고 수면총을 사용하세요. 부스터 진입 각도에서 벗어난 엄폐 뒤에 서고, 공격받으면 즉시 아군 쪽으로 이동하세요.",
+    "evidence": [
+      "official-hero-kit",
+      "current-matchup-crosscheck"
+    ]
   },
   {
     "id": "ana-freja",
     "hero": "ana",
     "counter": "freja",
     "score": 4,
-    "reason": "프레야은(는) 아나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
+    "reason": "프레야는 기동 기술로 사선을 바꾸며 원거리에서 정조준 피해를 누적해, 이동기가 없는 아나의 고정된 지원 위치를 압박합니다.",
+    "condition": "긴 시야가 열리고 아나가 조준경을 오래 사용해 이동 경로가 예측되는 구도에서 프레야가 유리합니다.",
     "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "status": "verified",
+    "confidence": "high",
+    "patchBasis": "2026-08-30 라이브 기술 구조 · 현재 상성 평가",
+    "counterplay": "같은 위치에서 반복해서 조준하지 말고 엄폐 사이를 짧게 이동하세요. 프레야가 각도를 바꿀 때 아군에게 위치를 알리고 혼자 장거리 대치를 이어가지 마세요.",
+    "evidence": [
+      "official-hero-kit",
+      "current-matchup-crosscheck"
+    ]
   },
   {
     "id": "ana-sigma",
     "hero": "ana",
     "counter": "sigma",
     "score": 4,
-    "reason": "시그마은(는) 아나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
+    "reason": "시그마는 실험용 방벽과 키네틱 손아귀로 아나의 사선과 투사체 기술을 번갈아 차단하면서 중거리 압박을 유지합니다.",
+    "condition": "좁은 정면 교전에서 시그마가 방벽과 손아귀를 교대로 사용해 아나의 공격 각도를 하나로 제한할 때 효과적입니다.",
     "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "status": "verified",
+    "confidence": "high",
+    "patchBasis": "2026-08-30 라이브 기술 구조 · 현재 상성 평가",
+    "counterplay": "방벽 정면에서 기술을 낭비하지 말고 옆각으로 이동하세요. 키네틱 손아귀가 끝난 뒤 생체 수류탄을 던지고, 강착을 피할 엄폐를 항상 확보하세요.",
+    "evidence": [
+      "official-hero-kit",
+      "current-matchup-crosscheck"
+    ]
   },
   {
     "id": "ana-sombra",
