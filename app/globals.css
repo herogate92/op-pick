@@ -586,7 +586,7 @@ button { color: inherit; }
 .stats-source-bar a { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 6px; color: var(--cyan-soft); font-size: 9px; font-weight: 850; }
 .stats-source-bar a svg { width: 13px; height: 13px; }
 .stats-explorer { display: grid; gap: 10px; }
-.stats-summary { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 7px; }
+.stats-summary { display: grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap: 7px; }
 .stats-summary > button, .stats-count-card { min-height: 76px; position: relative; padding: 11px 13px; overflow: hidden; text-align: left; border: 1px solid rgba(255,255,255,.09); background: linear-gradient(145deg, #101f38, #0a1527); }
 .stats-summary > button { color: inherit; cursor: pointer; }
 .stats-summary > button::after, .stats-count-card::after { content: ""; position: absolute; inset: auto 0 0; height: 2px; background: rgba(109,244,255,.18); }

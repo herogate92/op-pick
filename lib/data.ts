@@ -40,6 +40,7 @@ export interface TeamCaution { id: string; heroes: [string, string]; penalty: nu
 export interface HeroRateRow { hero: string; winRate: number | null; pickRate: number | null; banRate: number | null; }
 export interface HeroRateSnapshot {
   id: string; label: string; sourceUrl: string;
+  dataProvider: "overfast" | "blizzard"; dataProviderLabel: string; dataProviderUrl: string;
   filters: { input: string; inputLabel: string; region: string; regionLabel: string; map: string; mapLabel: string; tier: string; tierLabel: string };
   rows: HeroRateRow[];
 }

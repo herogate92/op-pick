@@ -19,6 +19,8 @@ export function StatsExplorer({ snapshots, heroes }: { snapshots: HeroRateSnapsh
   const [query, setQuery] = useState("");
   const [sortKey, setSortKey] = useState<SortKey>("winRate");
   const snapshot = snapshots.find((item) => item.id === snapshotId) ?? snapshots[0];
+  const metrics = (["winRate", "pickRate", "banRate"] as SortKey[]).filter((metric) => metric !== "banRate" || snapshot.rows.some((row) => row.banRate !== null));
+  const activeSortKey = metrics.includes(sortKey) ? sortKey : "winRate";
   const heroByKey = useMemo(() => new Map(heroes.map((hero) => [hero.key, hero])), [heroes]);
 
   const rows = useMemo(() => {
@@ -27,8 +29,8 @@ export function StatsExplorer({ snapshots, heroes }: { snapshots: HeroRateSnapsh
       .map((row) => ({ ...row, heroData: heroByKey.get(row.hero) }))
       .filter((row) => row.heroData && (role === "all" || row.heroData.role === role))
       .filter((row) => !normalized || row.heroData!.name.toLocaleLowerCase("ko").includes(normalized))
-      .sort((a, b) => (b[sortKey] ?? -1) - (a[sortKey] ?? -1));
-  }, [heroByKey, query, role, snapshot, sortKey]);
+      .sort((a, b) => (b[activeSortKey] ?? -1) - (a[activeSortKey] ?? -1));
+  }, [activeSortKey, heroByKey, query, role, snapshot]);
 
   const topFor = (metric: SortKey) => snapshot.rows
     .filter((row) => row[metric] !== null && (metric !== "banRate" || (row[metric] ?? 0) > 0))
@@ -43,7 +45,7 @@ export function StatsExplorer({ snapshots, heroes }: { snapshots: HeroRateSnapsh
   return (
     <div className="stats-explorer">
       <section className="stats-summary" aria-label="통계 요약">
-        {(["winRate", "pickRate", "banRate"] as SortKey[]).map((metric) => {
+        {metrics.map((metric) => {
           const leader = leaders[metric];
           const hero = leader ? heroByKey.get(leader.hero) : undefined;
           return (
@@ -83,7 +85,7 @@ export function StatsExplorer({ snapshots, heroes }: { snapshots: HeroRateSnapsh
 
         <div className="stats-table-wrap">
           <table className="stats-table">
-            <thead><tr><th scope="col">순위</th><th scope="col">영웅</th>{(["winRate", "pickRate", "banRate"] as SortKey[]).map((metric) => <th scope="col" key={metric}><button type="button" className={sortKey === metric ? "selected" : ""} onClick={() => setSortKey(metric)}>{metricLabels[metric]}</button></th>)}</tr></thead>
+            <thead><tr><th scope="col">순위</th><th scope="col">영웅</th>{metrics.map((metric) => <th scope="col" key={metric}><button type="button" className={activeSortKey === metric ? "selected" : ""} onClick={() => setSortKey(metric)}>{metricLabels[metric]}</button></th>)}</tr></thead>
             <tbody>
               {rows.map((row, index) => {
                 const hero = row.heroData!;
@@ -91,7 +93,7 @@ export function StatsExplorer({ snapshots, heroes }: { snapshots: HeroRateSnapsh
                   <tr key={row.hero}>
                     <td><span className={index < 3 ? "stats-rank top" : "stats-rank"}>{index < 3 && <Trophy aria-hidden="true" />}{index + 1}</span></td>
                     <td><Link href={`/heroes/${hero.key}/`} className="stats-hero"><span className={`stats-portrait role-${hero.role}`}><Image src={hero.portrait} alt="" width={44} height={44} /></span><span><strong>{hero.name}</strong><small>{roleLabels[hero.role]}</small></span></Link></td>
-                    {(["winRate", "pickRate", "banRate"] as SortKey[]).map((metric) => <td key={metric}><div className={`rate-cell ${sortKey === metric ? "active" : ""}`}><strong>{formatRate(row[metric])}</strong><span><i style={{ width: `${Math.max(0, ((row[metric] ?? 0) / maxValues[metric]) * 100)}%` }} /></span></div></td>)}
+                    {metrics.map((metric) => <td key={metric}><div className={`rate-cell ${activeSortKey === metric ? "active" : ""}`}><strong>{formatRate(row[metric])}</strong><span><i style={{ width: `${Math.max(0, ((row[metric] ?? 0) / maxValues[metric]) * 100)}%` }} /></span></div></td>)}
                   </tr>
                 );
               })}

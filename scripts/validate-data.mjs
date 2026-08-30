@@ -97,6 +97,7 @@ for (const caution of teamCautions) {
 if (!heroRates.fetchedAt || !Array.isArray(heroRates.snapshots) || !heroRates.snapshots.length) errors.push("공식 통계 스냅샷 누락");
 for (const snapshot of heroRates.snapshots ?? []) {
   if (!snapshot.id || !snapshot.label || !snapshot.sourceUrl?.startsWith("https://overwatch.blizzard.com/")) errors.push(`공식 통계 메타데이터 오류: ${snapshot.id}`);
+  if (!["overfast", "blizzard"].includes(snapshot.dataProvider) || !snapshot.dataProviderLabel || !snapshot.dataProviderUrl?.startsWith("https://")) errors.push(`통계 제공 경로 오류: ${snapshot.id}`);
   if (snapshot.rows?.length !== heroes.length) errors.push(`공식 통계 영웅 수 불일치: ${snapshot.id}/${snapshot.rows?.length}`);
   const rateKeys = new Set();
   for (const row of snapshot.rows ?? []) {
