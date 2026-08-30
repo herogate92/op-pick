@@ -12,8 +12,7 @@ export default function HomePage() {
       <div className="home-video-overlay" />
       <SiteHeader active="home" />
       <section className="cinematic-home-content">
-        <span className="home-fan-label">오버워치 픽 연구소</span>
-        <h1><span>OP</span><br />PICK LAB</h1>
+        <h1><span>OP</span> PICK LAB</h1>
         <p>영웅을 이해하고, 상성을 확인하고, 가장 잘 맞는 아군 조합을 설계하세요.</p>
         <div className="cinematic-actions">
           <Link href="/heroes/" className="cinematic-primary"><Shield aria-hidden="true" /> 영웅 선택 <ArrowRight aria-hidden="true" /></Link>

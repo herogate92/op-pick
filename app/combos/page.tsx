@@ -13,7 +13,7 @@ export default function CombosPage() {
       <SiteHeader active="combos" />
       <section className="page-intro">
         <span className="section-kicker">TEAM SYNERGY</span>
-        <h1>두 개의 궁극기로<br /><em>한타를 설계하세요</em></h1>
+        <h1>두 개의 궁극기로 <em>한타를 설계하세요</em></h1>
         <p>대표적인 궁극기 연계와 사용 타이밍, 상대가 대응할 수 있는 수단을 함께 정리했습니다.</p>
       </section>
       <div className="content-with-rail">
