@@ -24,7 +24,9 @@ export function MatchupExplorer({ heroes, matchups }: { heroes: Hero[]; matchups
   const right = heroes.find((hero) => hero.key === rightKey)!;
   const direct = matchups.find((item) => item.hero === leftKey && item.counter === rightKey);
   const reverse = matchups.find((item) => item.hero === rightKey && item.counter === leftKey);
-  const recommendations = useMemo(() => matchups.filter((item) => item.hero === leftKey).sort((a, b) => b.score - a.score), [leftKey, matchups]);
+  const recommendations = useMemo(() => matchups
+    .filter((item) => item.hero === leftKey)
+    .sort((a, b) => Number(b.status === "verified") - Number(a.status === "verified") || b.score - a.score), [leftKey, matchups]);
   const relation = direct ? { data: direct, winner: right, loser: left } : reverse ? { data: reverse, winner: left, loser: right } : null;
 
   const swap = () => { setLeftKey(rightKey); setRightKey(leftKey); };
@@ -38,10 +40,17 @@ export function MatchupExplorer({ heroes, matchups }: { heroes: Hero[]; matchups
       </div>
 
       <div className="matchup-results">
-        <section className={relation ? "verdict-card known" : "verdict-card pending"} aria-live="polite">
+        <section className={relation ? `verdict-card known ${relation.data.status}` : "verdict-card pending"} aria-live="polite">
           {relation ? <>
             <div className="verdict-icon"><ShieldAlert /></div>
-            <div className="verdict-copy"><span className="section-kicker">MATCHUP VERDICT</span><h2><strong>{relation.winner.name}</strong>이(가) {relation.loser.name}을(를) 상대하기 유리합니다</h2><ScoreMeter value={relation.data.score} label="상성 강도" /><p>{relation.data.reason}</p><div className="condition-box"><CheckCircle2 /><span><strong>운영 조건</strong>{relation.data.condition}</span></div><div className="verdict-source-row"><small>마지막 검수 {relation.data.reviewedAt}</small></div></div>
+            <div className="verdict-copy">
+              <div className="matchup-quality-row"><span className="section-kicker">MATCHUP VERDICT</span><MatchupQualityBadge matchup={relation.data} /></div>
+              <h2><strong>{relation.winner.name}</strong>이(가) {relation.loser.name}을(를) 상대하기 {relation.data.status === "verified" ? "유리합니다" : "유리할 가능성이 있습니다"}</h2>
+              <ScoreMeter value={relation.data.score} label={relation.data.status === "verified" ? "상성 강도" : "초기 평가"} />
+              <p>{relation.data.reason}</p>
+              <div className="condition-box"><CheckCircle2 /><span><strong>대응 포인트</strong>{relation.data.counterplay}</span></div>
+              <div className="verdict-source-row"><small>{relation.data.patchBasis} · 마지막 검수 {relation.data.reviewedAt}</small></div>
+            </div>
           </> : <>
             <div className="verdict-icon"><HelpCircle /></div><div className="verdict-copy"><span className="section-kicker">NO DIRECT DATA</span><h2>직접 상성 정보 없음</h2><p>현재 두 영웅을 직접 비교한 자료가 없습니다. 역할, 사거리, 맵 구조와 숙련도를 함께 고려하세요.</p></div>
           </>}
@@ -51,12 +60,19 @@ export function MatchupExplorer({ heroes, matchups }: { heroes: Hero[]; matchups
           <div className="section-heading"><span className="section-kicker">RECOMMENDED COUNTERS</span><h2>{left.name} 상대 추천 영웅</h2></div>
           {recommendations.length ? <div className="counter-recommend-grid">{recommendations.map((item) => {
             const hero = heroes.find((candidate) => candidate.key === item.counter)!;
-            return <button key={item.id} onClick={() => setRightKey(hero.key)} className={rightKey === hero.key ? "counter-recommend selected" : "counter-recommend"}>{/* eslint-disable-next-line @next/next/no-img-element */}<img src={hero.portrait} alt="" /><span><strong>{hero.name}</strong><small>{roleLabels[hero.role]}</small></span><ScoreMeter value={item.score} /></button>;
+            return <button key={item.id} onClick={() => setRightKey(hero.key)} className={rightKey === hero.key ? "counter-recommend selected" : "counter-recommend"}>{/* eslint-disable-next-line @next/next/no-img-element */}<img src={hero.portrait} alt="" /><span><strong>{hero.name}</strong><small>{roleLabels[hero.role]} · {item.status === "verified" ? "검증" : "검토 필요"}</small></span><ScoreMeter value={item.score} /></button>;
           })}</div> : <div className="review-pending"><HelpCircle /><span><strong>추천 정보 준비 중</strong><small>이 영웅은 아직 등록된 추천 카운터가 없습니다.</small></span></div>}
         </section>
       </div>
     </div>
   );
+}
+
+function MatchupQualityBadge({ matchup }: { matchup: Matchup }) {
+  const label = matchup.status === "provisional"
+    ? "검토 필요 · 낮은 신뢰도"
+    : matchup.confidence === "high" ? "교차 검증 · 높은 신뢰도" : "개별 검토 · 중간 신뢰도";
+  return <span className={`matchup-quality-badge ${matchup.status} ${matchup.confidence}`}>{label}</span>;
 }
 
 function HeroSelect({ hero, heroes, value, onChange, label }: { hero: Hero; heroes: Hero[]; value: string; onChange: (value: string) => void; label: string }) {

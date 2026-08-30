@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
+    "data:audit": "node scripts/audit-matchups.mjs",
     "data:validate": "node scripts/validate-data.mjs",
     "videos:validate": "node scripts/audit-hero-videos.mjs",
     "check": "npm run data:validate && npm run lint && npm run build"

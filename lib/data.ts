@@ -23,7 +23,13 @@ export interface Hero {
   storyMedia: StoryMedia | null; storyChapters: StoryChapter[];
   sourceUrl: string; checkedAt: string; reviewStatus: "verified" | "review-needed";
 }
-export interface Matchup { id: string; hero: string; counter: string; score: number; reason: string; condition: string; reviewedAt: string; }
+export type MatchupStatus = "verified" | "provisional";
+export type MatchupConfidence = "high" | "medium" | "low";
+export interface Matchup {
+  id: string; hero: string; counter: string; score: number; reason: string; condition: string;
+  counterplay: string; status: MatchupStatus; confidence: MatchupConfidence; patchBasis: string; reviewedAt: string;
+  evidence?: string[];
+}
 export interface Combo { id: string; name: string; heroes: string[]; score: number; difficulty: number; description: string; timing: string; counters: string[]; reviewedAt: string; }
 export interface MapRecommendation { hero: string; rank: number; winRate: number; note: string; }
 export interface MapGuide { id: string; name: string; mode: string; recommendations: MapRecommendation[]; reviewedAt: string; }
@@ -44,11 +50,11 @@ export const subroleLabels: Record<string, string> = {
 };
 export const roleAccent: Record<Role, string> = { tank: "#5fd4ff", damage: "#ff7153", support: "#5af0bd" };
 export function getHero(key: string) { return heroes.find((hero) => hero.key === key); }
-export function getCountersFor(key: string) { return matchups.filter((matchup) => matchup.hero === key); }
-export function getStrongAgainst(key: string) { return matchups.filter((matchup) => matchup.counter === key); }
+export function getCountersFor(key: string) { return matchups.filter((matchup) => matchup.hero === key && matchup.status === "verified"); }
+export function getStrongAgainst(key: string) { return matchups.filter((matchup) => matchup.counter === key && matchup.status === "verified"); }
 export function getCombosFor(key: string) { return combos.filter((combo) => combo.heroes.includes(key)); }
 export function hasDetailedMatchupData(matchup: Matchup) {
-  return !/핵심 운영을 방해하거나|통계·평가는 패치/.test(`${matchup.reason} ${matchup.condition}`);
+  return matchup.status === "verified";
 }
 export const detailedMatchups = matchups.filter(hasDetailedMatchupData);
 export function getDetailedMatchup(pair: string) {

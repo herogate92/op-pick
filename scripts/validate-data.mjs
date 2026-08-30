@@ -32,10 +32,19 @@ for (const hero of heroes) {
 }
 
 const matchupIds = new Set();
+const genericMatchupPattern = /핵심 운영을 방해하거나|통계·평가는 패치/;
+const validMatchupStatuses = new Set(["verified", "provisional"]);
+const validMatchupConfidence = new Set(["high", "medium", "low"]);
 for (const matchup of matchups) {
   if (!keys.has(matchup.hero) || !keys.has(matchup.counter)) errors.push(`존재하지 않는 상성 영웅: ${matchup.hero}/${matchup.counter}`);
   if (matchup.score < 1 || matchup.score > 5) errors.push(`상성 점수 범위 오류: ${matchup.id}`);
   if (!matchup.reviewedAt) errors.push(`상성 검수일 누락: ${matchup.id}`);
+  if (!validMatchupStatuses.has(matchup.status)) errors.push(`상성 검증 상태 오류: ${matchup.id}`);
+  if (!validMatchupConfidence.has(matchup.confidence)) errors.push(`상성 신뢰도 오류: ${matchup.id}`);
+  if (!matchup.patchBasis || !matchup.counterplay) errors.push(`상성 기준 또는 대응법 누락: ${matchup.id}`);
+  if (matchup.status === "verified" && genericMatchupPattern.test(`${matchup.reason} ${matchup.condition}`)) errors.push(`검증 상성에 일반 문구 사용: ${matchup.id}`);
+  if (matchup.status === "provisional" && matchup.confidence !== "low") errors.push(`미검증 상성 신뢰도 오류: ${matchup.id}`);
+  if (matchup.confidence === "high" && (!Array.isArray(matchup.evidence) || matchup.evidence.length < 2)) errors.push(`고신뢰 상성 교차 검증 근거 누락: ${matchup.id}`);
   const id = `${matchup.hero}:${matchup.counter}`;
   if (matchupIds.has(id)) errors.push(`중복 상성: ${id}`);
   matchupIds.add(id);
@@ -92,4 +101,5 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`데이터 검증 완료: 영웅 ${heroes.length}, 상성 ${matchups.length}, 궁 조합 ${combos.length}, 팀 시너지 ${teamSynergies.length}, 주의 조합 ${teamCautions.length}, 맵 ${maps.length}, 맵 추천 ${maps.reduce((sum, map) => sum + map.recommendations.length, 0)}`);
+const verifiedMatchups = matchups.filter((matchup) => matchup.status === "verified").length;
+console.log(`데이터 검증 완료: 영웅 ${heroes.length}, 상성 ${matchups.length}(검증 ${verifiedMatchups}, 검토 필요 ${matchups.length - verifiedMatchups}), 궁 조합 ${combos.length}, 팀 시너지 ${teamSynergies.length}, 주의 조합 ${teamCautions.length}, 맵 ${maps.length}, 맵 추천 ${maps.reduce((sum, map) => sum + map.recommendations.length, 0)}`);

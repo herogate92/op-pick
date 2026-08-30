@@ -76,10 +76,10 @@ export default async function MatchupDetailPage({ params }: { params: Promise<{ 
             </div>
             <div className="matchup-guide-verdict">
               <ShieldAlert aria-hidden="true" />
-              <div><span className="section-kicker">MATCHUP VERDICT</span><h2>{counter.name}이(가) 유리합니다</h2><ScoreMeter value={matchup.score} label="상성 강도" /><p>{matchup.reason}</p></div>
+              <div><div className="matchup-quality-row"><span className="section-kicker">MATCHUP VERDICT</span><span className={`matchup-quality-badge verified ${matchup.confidence}`}>{matchup.confidence === "high" ? "교차 검증 · 높은 신뢰도" : "개별 검토 · 중간 신뢰도"}</span></div><h2>{counter.name}이(가) 유리합니다</h2><ScoreMeter value={matchup.score} label="상성 강도" /><p>{matchup.reason}</p></div>
             </div>
-            <div className="condition-box"><CheckCircle2 aria-hidden="true" /><span><strong>{hero.name} 운영 조건</strong>{matchup.condition}</span></div>
-            <footer><span><CalendarDays aria-hidden="true" />마지막 검수 {matchup.reviewedAt}</span><Link href={`/matchups/?hero=${hero.key}&opponent=${counter.key}`}>비교 도구에서 보기</Link></footer>
+            <div className="condition-box"><CheckCircle2 aria-hidden="true" /><span><strong>{hero.name} 대응 포인트</strong>{matchup.counterplay}</span></div>
+            <footer><span><CalendarDays aria-hidden="true" />{matchup.patchBasis} · 마지막 검수 {matchup.reviewedAt}</span><Link href={`/matchups/?hero=${hero.key}&opponent=${counter.key}`}>비교 도구에서 보기</Link></footer>
           </section>
           <p className="seo-guide-note">상성은 맵, 사거리, 팀 조합과 숙련도에 따라 달라질 수 있습니다.</p>
           <AdSlot kind="banner" />

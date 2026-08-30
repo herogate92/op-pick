@@ -6,7 +6,11 @@
     "score": 5,
     "reason": "기동성과 튕겨내기로 후방의 아나를 반복해서 압박합니다.",
     "condition": "생체 수류탄을 바닥에 사용해 자신도 함께 치유하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "생체 수류탄을 바닥에 사용해 자신도 함께 치유하세요."
   },
   {
     "id": "ana-tracer",
@@ -15,7 +19,11 @@
     "score": 5,
     "reason": "빠른 측면 이동이 조준과 수면총 적중을 어렵게 합니다.",
     "condition": "수면총을 먼저 사용하지 말고 팀 가까이에 자리하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "수면총을 먼저 사용하지 말고 팀 가까이에 자리하세요."
   },
   {
     "id": "ana-winston",
@@ -24,7 +32,11 @@
     "score": 5,
     "reason": "윈스턴은(는) 아나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "ana-zarya",
@@ -33,7 +45,11 @@
     "score": 5,
     "reason": "자리야은(는) 아나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "ana-dmon",
@@ -42,7 +58,11 @@
     "score": 4,
     "reason": "D.Mon은(는) 아나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "ana-dva",
@@ -51,7 +71,11 @@
     "score": 4,
     "reason": "D.Va은(는) 아나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "ana-freja",
@@ -60,7 +84,11 @@
     "score": 4,
     "reason": "프레야은(는) 아나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "ana-sigma",
@@ -69,7 +97,11 @@
     "score": 4,
     "reason": "시그마은(는) 아나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "ana-sombra",
@@ -78,7 +110,11 @@
     "score": 4,
     "reason": "은신 진입과 해킹이 아나의 제한된 생존 수단을 무력화합니다.",
     "condition": "아군과 시야를 공유하고 해킹 음향을 확인하세요.",
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-08-29",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "아군과 시야를 공유하고 해킹 음향을 확인하세요."
   },
   {
     "id": "anran-jetpack-cat",
@@ -87,7 +123,11 @@
     "score": 4,
     "reason": "제트팩 캣은(는) 안란의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "anran-kiriko",
@@ -96,7 +136,11 @@
     "score": 4,
     "reason": "키리코은(는) 안란의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "anran-mei",
@@ -105,7 +149,11 @@
     "score": 4,
     "reason": "메이은(는) 안란의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "anran-moira",
@@ -114,7 +162,11 @@
     "score": 4,
     "reason": "모이라은(는) 안란의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "anran-pharah",
@@ -123,7 +175,11 @@
     "score": 4,
     "reason": "파라은(는) 안란의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "anran-reaper",
@@ -132,7 +188,11 @@
     "score": 4,
     "reason": "리퍼은(는) 안란의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "anran-symmetra",
@@ -141,7 +201,11 @@
     "score": 4,
     "reason": "시메트라은(는) 안란의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "anran-zarya",
@@ -150,7 +214,11 @@
     "score": 4,
     "reason": "자리야은(는) 안란의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "ashe-genji",
@@ -159,7 +227,11 @@
     "score": 5,
     "reason": "기동성과 튕겨내기로 중장거리 사격 각도를 빠르게 무너뜨립니다.",
     "condition": "겐지의 튕겨내기 이후 다이너마이트를 사용하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "겐지의 튕겨내기 이후 다이너마이트를 사용하세요."
   },
   {
     "id": "ashe-tracer",
@@ -168,7 +240,11 @@
     "score": 5,
     "reason": "빠른 측면 접근이 애쉬에게 안정적으로 조준할 시간을 주지 않습니다.",
     "condition": "충격 샷건을 생존용으로 남겨 두세요.",
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-08-29",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "충격 샷건을 생존용으로 남겨 두세요."
   },
   {
     "id": "ashe-dva",
@@ -177,7 +253,11 @@
     "score": 4,
     "reason": "부스터로 고지대에 접근하고 방어 매트릭스로 다이너마이트를 지울 수 있습니다.",
     "condition": "D.Va의 부스터가 빠졌을 때 위치를 옮기세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "D.Va의 부스터가 빠졌을 때 위치를 옮기세요."
   },
   {
     "id": "ashe-sombra",
@@ -186,7 +266,11 @@
     "score": 4,
     "reason": "솜브라은(는) 애쉬의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "ashe-vendetta",
@@ -195,7 +279,11 @@
     "score": 4,
     "reason": "벤데타은(는) 애쉬의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "ashe-venture",
@@ -204,7 +292,11 @@
     "score": 4,
     "reason": "벤처은(는) 애쉬의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "ashe-widowmaker",
@@ -213,7 +305,11 @@
     "score": 4,
     "reason": "위도우메이커은(는) 애쉬의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "ashe-winston",
@@ -222,7 +318,11 @@
     "score": 4,
     "reason": "점프와 방벽으로 고지대를 직접 압박해 조준 공간을 없앱니다.",
     "condition": "충격 샷건으로 방벽 밖에 착지하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "충격 샷건으로 방벽 밖에 착지하세요."
   },
   {
     "id": "ashe-wrecking-ball",
@@ -231,7 +331,11 @@
     "score": 4,
     "reason": "레킹볼은(는) 애쉬의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "baptiste-widowmaker",
@@ -240,7 +344,11 @@
     "score": 5,
     "reason": "한 발의 높은 피해가 불사 장치 사용 전 처치를 노릴 수 있습니다.",
     "condition": "고지대에서 같은 위치를 반복해서 사용하지 마세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "고지대에서 같은 위치를 반복해서 사용하지 마세요."
   },
   {
     "id": "baptiste-ashe",
@@ -249,7 +357,11 @@
     "score": 4,
     "reason": "장거리 압박과 다이너마이트가 밀집된 치유 위치를 흔듭니다.",
     "condition": "점프 장화로 사선만 바꾸기보다 엄폐물을 우선하세요.",
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-08-29",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "점프 장화로 사선만 바꾸기보다 엄폐물을 우선하세요."
   },
   {
     "id": "baptiste-hanzo",
@@ -258,7 +370,11 @@
     "score": 4,
     "reason": "높은 순간 피해가 불사 장치와 재생 폭발의 반응 시간을 줄입니다.",
     "condition": "음파 화살에 위치가 노출됐는지 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "음파 화살에 위치가 노출됐는지 확인하세요."
   },
   {
     "id": "bastion-ashe",
@@ -267,7 +383,11 @@
     "score": 4,
     "reason": "애쉬은(는) 바스티온의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "bastion-doomfist",
@@ -276,7 +396,11 @@
     "score": 4,
     "reason": "둠피스트은(는) 바스티온의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "bastion-hanzo",
@@ -285,7 +409,11 @@
     "score": 4,
     "reason": "한조은(는) 바스티온의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "bastion-reaper",
@@ -294,7 +422,11 @@
     "score": 4,
     "reason": "리퍼은(는) 바스티온의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "bastion-sigma",
@@ -303,7 +435,11 @@
     "score": 4,
     "reason": "시그마은(는) 바스티온의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "bastion-sojourn",
@@ -312,7 +448,11 @@
     "score": 4,
     "reason": "소전은(는) 바스티온의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "bastion-tracer",
@@ -321,7 +461,11 @@
     "score": 4,
     "reason": "트레이서은(는) 바스티온의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "bastion-wuyang",
@@ -330,7 +474,11 @@
     "score": 4,
     "reason": "우양은(는) 바스티온의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "brigitte-pharah",
@@ -339,7 +487,11 @@
     "score": 5,
     "reason": "파라은(는) 브리기테의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "brigitte-bastion",
@@ -348,7 +500,11 @@
     "score": 4,
     "reason": "바스티온은(는) 브리기테의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "brigitte-echo",
@@ -357,7 +513,11 @@
     "score": 4,
     "reason": "에코은(는) 브리기테의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "brigitte-jetpack-cat",
@@ -366,7 +526,11 @@
     "score": 4,
     "reason": "제트팩 캣은(는) 브리기테의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "brigitte-mauga",
@@ -375,7 +539,11 @@
     "score": 4,
     "reason": "마우가은(는) 브리기테의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "brigitte-ramattra",
@@ -384,7 +552,11 @@
     "score": 4,
     "reason": "라마트라은(는) 브리기테의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "brigitte-reinhardt",
@@ -393,7 +565,11 @@
     "score": 4,
     "reason": "라인하르트은(는) 브리기테의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "brigitte-symmetra",
@@ -402,7 +578,11 @@
     "score": 4,
     "reason": "시메트라은(는) 브리기테의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "cassidy-ashe",
@@ -411,7 +591,11 @@
     "score": 4,
     "reason": "애쉬은(는) 캐서디의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "cassidy-dmon",
@@ -420,7 +604,11 @@
     "score": 4,
     "reason": "D.Mon은(는) 캐서디의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "cassidy-freja",
@@ -429,7 +617,11 @@
     "score": 4,
     "reason": "프레야은(는) 캐서디의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "cassidy-hanzo",
@@ -438,7 +630,11 @@
     "score": 4,
     "reason": "한조은(는) 캐서디의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "cassidy-junker-queen",
@@ -447,7 +643,11 @@
     "score": 4,
     "reason": "정커퀸은(는) 캐서디의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "cassidy-roadhog",
@@ -456,7 +656,11 @@
     "score": 4,
     "reason": "로드호그은(는) 캐서디의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "cassidy-sigma",
@@ -465,7 +669,11 @@
     "score": 4,
     "reason": "시그마은(는) 캐서디의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "cassidy-widowmaker",
@@ -474,7 +682,11 @@
     "score": 4,
     "reason": "위도우메이커은(는) 캐서디의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "dmon-bastion",
@@ -483,7 +695,11 @@
     "score": 4,
     "reason": "바스티온은(는) D.Mon의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "dmon-echo",
@@ -492,16 +708,28 @@
     "score": 4,
     "reason": "에코은(는) D.Mon의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "dmon-mei",
     "hero": "dmon",
     "counter": "mei",
     "score": 4,
-    "reason": "메이은(는) D.Mon의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reason": "메이는 빙벽으로 수평 진입한 D.Mon과 지원진 사이를 끊어 근접 압박을 고립으로 바꿀 수 있습니다.",
+    "condition": "D.Mon이 추진기로 아군 시야 밖까지 깊게 들어간 상황에서 특히 강합니다.",
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "high",
+    "patchBasis": "2026-08-30 라이브 기술 구조 · 현재 상성 평가",
+    "counterplay": "빙벽을 확인하기 전에는 깊게 진입하지 말고, 지원가의 시야가 유지되는 각도로 추진기 연료를 남겨 두세요.",
+    "evidence": [
+      "official-hero-kit",
+      "current-matchup-crosscheck"
+    ]
   },
   {
     "id": "dmon-pharah",
@@ -510,16 +738,28 @@
     "score": 4,
     "reason": "파라은(는) D.Mon의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "dmon-ramattra",
     "hero": "dmon",
     "counter": "ramattra",
     "score": 4,
-    "reason": "라마트라은(는) D.Mon의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reason": "라마트라의 네메시스 형태는 정면 방벽에 의존하는 D.Mon을 직접 압박하고, 탐식의 소용돌이는 추진기 진입 경로를 제한합니다.",
+    "condition": "라마트라가 네메시스 형태와 소용돌이를 함께 사용할 수 있는 정면 교전에서 영향이 큽니다.",
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "high",
+    "patchBasis": "2026-08-30 라이브 기술 구조 · 현재 상성 평가",
+    "counterplay": "네메시스 형태를 정면에서 오래 받아내지 말고, 소용돌이가 빠진 뒤 측면으로 이동해 융합포로 거리를 조절하세요.",
+    "evidence": [
+      "official-hero-kit",
+      "current-matchup-crosscheck"
+    ]
   },
   {
     "id": "dmon-reaper",
@@ -528,7 +768,11 @@
     "score": 4,
     "reason": "리퍼은(는) D.Mon의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "dmon-reinhardt",
@@ -537,16 +781,28 @@
     "score": 4,
     "reason": "라인하르트은(는) D.Mon의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "dmon-torbjorn",
     "hero": "dmon",
     "counter": "torbjorn",
     "score": 4,
-    "reason": "토르비욘은(는) D.Mon의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reason": "D.Mon은 주력 근접 사거리가 짧아 떨어진 위치의 포탑을 빠르게 정리하기 어렵고, 접근 중 지속 피해를 받기 쉽습니다.",
+    "condition": "포탑이 고지대나 교차 사선에 배치되어 직접 접근이 어려울 때 불리함이 커집니다.",
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "high",
+    "patchBasis": "2026-08-30 라이브 기술 구조 · 현재 상성 평가",
+    "counterplay": "먼저 융합포와 아군 화력으로 포탑을 제거한 뒤 진입하고, 포탑과 토르비욘을 동시에 상대하지 마세요.",
+    "evidence": [
+      "official-hero-kit",
+      "current-matchup-crosscheck"
+    ]
   },
   {
     "id": "domina-ashe",
@@ -555,7 +811,11 @@
     "score": 4,
     "reason": "애쉬은(는) 도미나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "domina-dmon",
@@ -564,16 +824,28 @@
     "score": 4,
     "reason": "D.Mon은(는) 도미나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "domina-ramattra",
     "hero": "domina",
     "counter": "ramattra",
     "score": 4,
-    "reason": "라마트라은(는) 도미나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reason": "라마트라는 네메시스 형태로 도미나의 분할 방벽 너머를 압박하고 추가 방어력으로 정면 교환을 오래 유지할 수 있습니다.",
+    "condition": "두 영웅이 좁은 전선에서 정면으로 맞붙는 상황에서 라마트라의 이점이 커집니다.",
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "high",
+    "patchBasis": "2026-08-30 라이브 기술 구조 · 현재 상성 평가",
+    "counterplay": "중거리를 유지하고 음파 반발기를 네메시스 접근 차단용으로 남겨 방벽 뒤 공간을 확보하세요.",
+    "evidence": [
+      "official-hero-kit",
+      "current-matchup-crosscheck"
+    ]
   },
   {
     "id": "domina-reinhardt",
@@ -582,7 +854,11 @@
     "score": 4,
     "reason": "라인하르트은(는) 도미나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "domina-sojourn",
@@ -591,25 +867,45 @@
     "score": 4,
     "reason": "소전은(는) 도미나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "domina-symmetra",
     "hero": "domina",
     "counter": "symmetra",
     "score": 4,
-    "reason": "시메트라은(는) 도미나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reason": "시메트라는 고정된 방벽 교전에서 광선 출력을 키우고 감시 포탑으로 도미나의 느린 이동 경로를 통제할 수 있습니다.",
+    "condition": "좁은 길목에서 도미나가 같은 방벽 위치를 반복해서 지킬 때 효과가 커집니다.",
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "high",
+    "patchBasis": "2026-08-30 라이브 기술 구조 · 현재 상성 평가",
+    "counterplay": "충전된 광선에 방벽을 계속 노출하지 말고, 포탑을 먼저 제거한 뒤 다른 각도에 방벽 배열을 다시 구성하세요.",
+    "evidence": [
+      "official-hero-kit",
+      "current-matchup-crosscheck"
+    ]
   },
   {
     "id": "domina-winston",
     "hero": "domina",
     "counter": "winston",
     "score": 4,
-    "reason": "윈스턴은(는) 도미나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reason": "윈스턴은 점프로 전선을 우회하고 방벽 안팎을 오가며 도미나가 선호하는 정면 교환을 피할 수 있습니다.",
+    "condition": "고저차와 측면 통로가 많아 윈스턴이 반복해서 진입 위치를 바꿀 수 있는 맵에서 강합니다.",
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "high",
+    "patchBasis": "2026-08-30 라이브 기술 구조 · 현재 상성 평가",
+    "counterplay": "점프 착지에 음파 반발기를 맞추고, 방벽 안으로 들어가기보다 아군과 함께 거리를 벌린 뒤 방벽이 끝날 때 집중 공격하세요.",
+    "evidence": [
+      "official-hero-kit",
+      "current-matchup-crosscheck"
+    ]
   },
   {
     "id": "domina-zarya",
@@ -618,7 +914,11 @@
     "score": 4,
     "reason": "자리야은(는) 도미나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "doomfist-cassidy",
@@ -627,7 +927,11 @@
     "score": 4,
     "reason": "캐서디은(는) 둠피스트의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "doomfist-echo",
@@ -636,7 +940,11 @@
     "score": 4,
     "reason": "에코은(는) 둠피스트의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "doomfist-junkrat",
@@ -645,7 +953,11 @@
     "score": 4,
     "reason": "정크랫은(는) 둠피스트의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "doomfist-mauga",
@@ -654,7 +966,11 @@
     "score": 4,
     "reason": "마우가은(는) 둠피스트의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "doomfist-mei",
@@ -663,7 +979,11 @@
     "score": 4,
     "reason": "메이은(는) 둠피스트의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "doomfist-orisa",
@@ -672,7 +992,11 @@
     "score": 4,
     "reason": "오리사은(는) 둠피스트의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "doomfist-pharah",
@@ -681,7 +1005,11 @@
     "score": 4,
     "reason": "파라은(는) 둠피스트의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "doomfist-roadhog",
@@ -690,7 +1018,11 @@
     "score": 4,
     "reason": "로드호그은(는) 둠피스트의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "dva-reaper",
@@ -699,7 +1031,11 @@
     "score": 5,
     "reason": "큰 피격 판정과 근접 교전이 리퍼의 산탄 피해와 회복을 쉽게 허용합니다.",
     "condition": "방어 매트릭스로 산탄을 막을 수 없으므로 거리를 벌리고 고지대를 활용하세요.",
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-08-29",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "방어 매트릭스로 산탄을 막을 수 없으므로 거리를 벌리고 고지대를 활용하세요."
   },
   {
     "id": "dva-brigitte",
@@ -708,7 +1044,11 @@
     "score": 4,
     "reason": "브리기테은(는) D.Va의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "dva-junker-queen",
@@ -717,7 +1057,11 @@
     "score": 4,
     "reason": "정커퀸은(는) D.Va의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "dva-mei",
@@ -726,7 +1070,11 @@
     "score": 4,
     "reason": "빙벽이 퇴로를 끊고 감속 압박이 부스터 이탈 타이밍을 제한합니다.",
     "condition": "좁은 통로에서 특히 위협적입니다.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "좁은 통로에서 특히 위협적입니다."
   },
   {
     "id": "dva-mizuki",
@@ -735,7 +1083,11 @@
     "score": 4,
     "reason": "미즈키은(는) D.Va의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "dva-roadhog",
@@ -744,7 +1096,11 @@
     "score": 4,
     "reason": "로드호그은(는) D.Va의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "dva-symmetra",
@@ -753,7 +1109,11 @@
     "score": 4,
     "reason": "광선과 포탑 압박은 방어 매트릭스의 장점을 약화합니다.",
     "condition": "포탑이 설치된 좁은 거점을 피하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "포탑이 설치된 좁은 거점을 피하세요."
   },
   {
     "id": "dva-zarya",
@@ -762,7 +1122,11 @@
     "score": 4,
     "reason": "광선 공격은 방어 매트릭스로 지울 수 없어 정면 유지력이 떨어집니다.",
     "condition": "자리야의 방벽 사용 횟수를 확인하고 교전하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "자리야의 방벽 사용 횟수를 확인하고 교전하세요."
   },
   {
     "id": "echo-ashe",
@@ -771,7 +1135,11 @@
     "score": 4,
     "reason": "애쉬은(는) 에코의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "echo-baptiste",
@@ -780,7 +1148,11 @@
     "score": 4,
     "reason": "바티스트은(는) 에코의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "echo-cassidy",
@@ -789,7 +1161,11 @@
     "score": 4,
     "reason": "캐서디은(는) 에코의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "echo-dva",
@@ -798,7 +1174,11 @@
     "score": 4,
     "reason": "D.Va은(는) 에코의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "echo-emre",
@@ -807,7 +1187,11 @@
     "score": 4,
     "reason": "엠레은(는) 에코의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "echo-soldier-76",
@@ -816,7 +1200,11 @@
     "score": 4,
     "reason": "솔저: 76은(는) 에코의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "echo-widowmaker",
@@ -825,7 +1213,11 @@
     "score": 4,
     "reason": "위도우메이커은(는) 에코의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "echo-zarya",
@@ -834,7 +1226,11 @@
     "score": 4,
     "reason": "자리야은(는) 에코의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "emre-dva",
@@ -843,7 +1239,11 @@
     "score": 4,
     "reason": "D.Va은(는) 엠레의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "emre-sigma",
@@ -852,7 +1252,11 @@
     "score": 4,
     "reason": "시그마은(는) 엠레의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "emre-widowmaker",
@@ -861,7 +1265,11 @@
     "score": 4,
     "reason": "위도우메이커은(는) 엠레의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "emre-winston",
@@ -870,7 +1278,11 @@
     "score": 4,
     "reason": "윈스턴은(는) 엠레의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "emre-wrecking-ball",
@@ -879,7 +1291,11 @@
     "score": 4,
     "reason": "레킹볼은(는) 엠레의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "freja-dva",
@@ -888,7 +1304,11 @@
     "score": 4,
     "reason": "D.Va은(는) 프레야의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "freja-illari",
@@ -897,7 +1317,11 @@
     "score": 4,
     "reason": "일리아리은(는) 프레야의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "freja-lucio",
@@ -906,7 +1330,11 @@
     "score": 4,
     "reason": "루시우은(는) 프레야의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "freja-winston",
@@ -915,7 +1343,11 @@
     "score": 4,
     "reason": "윈스턴은(는) 프레야의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "freja-zarya",
@@ -924,7 +1356,11 @@
     "score": 4,
     "reason": "자리야은(는) 프레야의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "genji-mei",
@@ -933,7 +1369,11 @@
     "score": 5,
     "reason": "광선형 지속 공격과 감속은 튕겨내기로 대응하기 어렵습니다.",
     "condition": "급속 빙결과 빙벽이 빠진 뒤 용검을 사용하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "급속 빙결과 빙벽이 빠진 뒤 용검을 사용하세요."
   },
   {
     "id": "genji-moira",
@@ -942,7 +1382,11 @@
     "score": 5,
     "reason": "추적형 공격과 소멸이 겐지의 기동성과 튕겨내기를 안정적으로 대응합니다.",
     "condition": "소멸 사용을 확인한 뒤 질풍참으로 마무리하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "소멸 사용을 확인한 뒤 질풍참으로 마무리하세요."
   },
   {
     "id": "genji-symmetra",
@@ -951,7 +1395,11 @@
     "score": 5,
     "reason": "시메트라은(는) 겐지의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "genji-anran",
@@ -960,7 +1408,11 @@
     "score": 4,
     "reason": "안란은(는) 겐지의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "genji-brigitte",
@@ -969,7 +1421,11 @@
     "score": 4,
     "reason": "방패 밀쳐내기와 근접 유지력이 겐지의 진입 시간을 낭비시킵니다.",
     "condition": "집결과 방패 체력을 먼저 소모시키세요.",
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-08-29",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "집결과 방패 체력을 먼저 소모시키세요."
   },
   {
     "id": "genji-pharah",
@@ -978,7 +1434,11 @@
     "score": 4,
     "reason": "파라은(는) 겐지의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "genji-torbjorn",
@@ -987,7 +1447,11 @@
     "score": 4,
     "reason": "토르비욘은(는) 겐지의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "genji-winston",
@@ -996,7 +1460,11 @@
     "score": 4,
     "reason": "테슬라 캐논의 광역 지속 피해는 튕겨내기의 영향을 받지 않습니다.",
     "condition": "방벽 밖으로 빠르게 이탈하며 지원과 함께 대응하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "방벽 밖으로 빠르게 이탈하며 지원과 함께 대응하세요."
   },
   {
     "id": "genji-zarya",
@@ -1005,7 +1473,11 @@
     "score": 4,
     "reason": "자리야은(는) 겐지의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "hanzo-tracer",
@@ -1014,7 +1486,11 @@
     "score": 5,
     "reason": "점멸과 시간 역행이 투사체 예측을 어렵게 하고 근접 압박을 이어갑니다.",
     "condition": "음파 화살로 진입 방향을 미리 확인하세요.",
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-08-29",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "음파 화살로 진입 방향을 미리 확인하세요."
   },
   {
     "id": "hanzo-dva",
@@ -1023,7 +1499,11 @@
     "score": 4,
     "reason": "D.Va은(는) 한조의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "hanzo-echo",
@@ -1032,7 +1512,11 @@
     "score": 4,
     "reason": "에코은(는) 한조의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "hanzo-genji",
@@ -1041,7 +1525,11 @@
     "score": 4,
     "reason": "벽 타기와 튕겨내기가 한조의 고지대와 폭발 피해를 견제합니다.",
     "condition": "폭풍 화살을 튕겨내기에 모두 사용하지 마세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "폭풍 화살을 튕겨내기에 모두 사용하지 마세요."
   },
   {
     "id": "hanzo-hazard",
@@ -1050,7 +1538,11 @@
     "score": 4,
     "reason": "해저드은(는) 한조의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "hanzo-lucio",
@@ -1059,7 +1551,11 @@
     "score": 4,
     "reason": "루시우은(는) 한조의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "hanzo-vendetta",
@@ -1068,7 +1564,11 @@
     "score": 4,
     "reason": "벤데타은(는) 한조의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "hanzo-winston",
@@ -1077,7 +1577,11 @@
     "score": 4,
     "reason": "방벽과 점프 진입으로 안전한 투사체 거리를 없앱니다.",
     "condition": "도약으로 방벽 밖을 유지하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "도약으로 방벽 밖을 유지하세요."
   },
   {
     "id": "hanzo-wrecking-ball",
@@ -1086,7 +1590,11 @@
     "score": 4,
     "reason": "레킹볼은(는) 한조의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "hazard-pharah",
@@ -1095,7 +1603,11 @@
     "score": 5,
     "reason": "파라은(는) 해저드의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "hazard-ana",
@@ -1104,7 +1616,11 @@
     "score": 4,
     "reason": "아나은(는) 해저드의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "hazard-echo",
@@ -1113,7 +1629,11 @@
     "score": 4,
     "reason": "에코은(는) 해저드의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "hazard-mauga",
@@ -1122,7 +1642,11 @@
     "score": 4,
     "reason": "마우가은(는) 해저드의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "hazard-orisa",
@@ -1131,7 +1655,11 @@
     "score": 4,
     "reason": "오리사은(는) 해저드의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "hazard-roadhog",
@@ -1140,7 +1668,11 @@
     "score": 4,
     "reason": "로드호그은(는) 해저드의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "hazard-sigma",
@@ -1149,7 +1681,11 @@
     "score": 4,
     "reason": "시그마은(는) 해저드의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "hazard-zarya",
@@ -1158,7 +1694,11 @@
     "score": 4,
     "reason": "자리야은(는) 해저드의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "illari-dva",
@@ -1167,7 +1707,11 @@
     "score": 4,
     "reason": "D.Va은(는) 일리아리의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "illari-hanzo",
@@ -1176,7 +1720,11 @@
     "score": 4,
     "reason": "한조은(는) 일리아리의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "illari-shion",
@@ -1185,7 +1733,11 @@
     "score": 4,
     "reason": "시온은(는) 일리아리의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "illari-sojourn",
@@ -1194,7 +1746,11 @@
     "score": 4,
     "reason": "소전은(는) 일리아리의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "illari-sombra",
@@ -1203,7 +1759,11 @@
     "score": 4,
     "reason": "솜브라은(는) 일리아리의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "illari-widowmaker",
@@ -1212,7 +1772,11 @@
     "score": 4,
     "reason": "위도우메이커은(는) 일리아리의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "illari-winston",
@@ -1221,25 +1785,45 @@
     "score": 4,
     "reason": "윈스턴은(는) 일리아리의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "jetpack-cat-mauga",
     "hero": "jetpack-cat",
     "counter": "mauga",
     "score": 5,
-    "reason": "마우가은(는) 제트팩 캣의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reason": "마우가의 히트스캔 기관총은 공중에 오래 노출되는 제트팩 캣을 지속적으로 추적하기 쉽습니다.",
+    "condition": "긴 시야가 열려 있고 제트팩 캣이 아군을 견인하느라 이동 경로가 읽히는 상황에서 강합니다.",
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "high",
+    "patchBasis": "2026-08-30 라이브 기술 구조 · 현재 상성 평가",
+    "counterplay": "엄폐물 사이를 짧게 이동하고, 마우가의 시야를 끊은 뒤에만 아군 견인을 시작하세요.",
+    "evidence": [
+      "official-hero-kit",
+      "current-matchup-crosscheck"
+    ]
   },
   {
     "id": "jetpack-cat-ashe",
     "hero": "jetpack-cat",
     "counter": "ashe",
     "score": 4,
-    "reason": "애쉬은(는) 제트팩 캣의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reason": "애쉬의 히트스캔 조준 사격은 공중에서 이동하는 제트팩 캣에게 즉시 압박을 주고 견인 동선도 제한합니다.",
+    "condition": "제트팩 캣이 넓은 공간에서 직선으로 비행하거나 아군을 견인할 때 적중시키기 쉽습니다.",
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "high",
+    "patchBasis": "2026-08-30 라이브 기술 구조 · 현재 상성 평가",
+    "counterplay": "예측 가능한 수평 비행을 피하고, 애쉬의 사선과 충격 샷건 위치를 확인한 뒤 엄폐물 단위로 이동하세요.",
+    "evidence": [
+      "official-hero-kit",
+      "current-matchup-crosscheck"
+    ]
   },
   {
     "id": "jetpack-cat-bastion",
@@ -1248,7 +1832,11 @@
     "score": 4,
     "reason": "바스티온은(는) 제트팩 캣의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "jetpack-cat-cassidy",
@@ -1257,16 +1845,28 @@
     "score": 4,
     "reason": "캐서디은(는) 제트팩 캣의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "jetpack-cat-domina",
     "hero": "jetpack-cat",
     "counter": "domina",
     "score": 4,
-    "reason": "도미나은(는) 제트팩 캣의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reason": "도미나의 중거리 광선과 마무리 사격은 공중 이동 경로가 드러난 제트팩 캣을 안정적으로 압박할 수 있습니다.",
+    "condition": "중거리 정면 시야가 길고 제트팩 캣이 같은 고도를 유지할 때 효과가 커집니다.",
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "high",
+    "patchBasis": "2026-08-30 라이브 기술 구조 · 현재 상성 평가",
+    "counterplay": "고도와 방향을 자주 바꾸고, 도미나의 충전 사격 타이밍에는 구조물 뒤로 시야를 끊으세요.",
+    "evidence": [
+      "official-hero-kit",
+      "current-matchup-crosscheck"
+    ]
   },
   {
     "id": "jetpack-cat-juno",
@@ -1275,7 +1875,11 @@
     "score": 4,
     "reason": "주노은(는) 제트팩 캣의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "jetpack-cat-soldier-76",
@@ -1284,7 +1888,11 @@
     "score": 4,
     "reason": "솔저: 76은(는) 제트팩 캣의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "jetpack-cat-sombra",
@@ -1293,7 +1901,11 @@
     "score": 4,
     "reason": "솜브라은(는) 제트팩 캣의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "junker-queen-ashe",
@@ -1302,7 +1914,11 @@
     "score": 4,
     "reason": "애쉬은(는) 정커퀸의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "junker-queen-echo",
@@ -1311,7 +1927,11 @@
     "score": 4,
     "reason": "에코은(는) 정커퀸의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "junker-queen-junkrat",
@@ -1320,7 +1940,11 @@
     "score": 4,
     "reason": "정크랫은(는) 정커퀸의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "junker-queen-kiriko",
@@ -1329,7 +1953,11 @@
     "score": 4,
     "reason": "키리코은(는) 정커퀸의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "junker-queen-lucio",
@@ -1338,7 +1966,11 @@
     "score": 4,
     "reason": "루시우은(는) 정커퀸의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "junker-queen-orisa",
@@ -1347,7 +1979,11 @@
     "score": 4,
     "reason": "오리사은(는) 정커퀸의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "junker-queen-pharah",
@@ -1356,7 +1992,11 @@
     "score": 4,
     "reason": "파라은(는) 정커퀸의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "junker-queen-zarya",
@@ -1365,7 +2005,11 @@
     "score": 4,
     "reason": "자리야은(는) 정커퀸의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "junkrat-pharah",
@@ -1374,7 +2018,11 @@
     "score": 5,
     "reason": "파라은(는) 정크랫의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "junkrat-widowmaker",
@@ -1383,7 +2031,11 @@
     "score": 5,
     "reason": "위도우메이커은(는) 정크랫의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "junkrat-dva",
@@ -1392,7 +2044,11 @@
     "score": 4,
     "reason": "D.Va은(는) 정크랫의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "junkrat-emre",
@@ -1401,7 +2057,11 @@
     "score": 4,
     "reason": "엠레은(는) 정크랫의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "junkrat-freja",
@@ -1410,7 +2070,11 @@
     "score": 4,
     "reason": "프레야은(는) 정크랫의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "junkrat-mauga",
@@ -1419,7 +2083,11 @@
     "score": 4,
     "reason": "마우가은(는) 정크랫의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "junkrat-mercy",
@@ -1428,7 +2096,11 @@
     "score": 4,
     "reason": "메르시은(는) 정크랫의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "junkrat-zarya",
@@ -1437,7 +2109,11 @@
     "score": 4,
     "reason": "자리야은(는) 정크랫의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "juno-ashe",
@@ -1446,7 +2122,11 @@
     "score": 4,
     "reason": "애쉬은(는) 주노의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "juno-cassidy",
@@ -1455,7 +2135,11 @@
     "score": 4,
     "reason": "캐서디은(는) 주노의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "juno-dva",
@@ -1464,7 +2148,11 @@
     "score": 4,
     "reason": "D.Va은(는) 주노의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "juno-mauga",
@@ -1473,7 +2161,11 @@
     "score": 4,
     "reason": "마우가은(는) 주노의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "juno-soldier-76",
@@ -1482,7 +2174,11 @@
     "score": 4,
     "reason": "솔저: 76은(는) 주노의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "juno-sombra",
@@ -1491,7 +2187,11 @@
     "score": 4,
     "reason": "솜브라은(는) 주노의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "juno-winston",
@@ -1500,7 +2200,11 @@
     "score": 4,
     "reason": "윈스턴은(는) 주노의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "juno-zarya",
@@ -1509,7 +2213,11 @@
     "score": 4,
     "reason": "자리야은(는) 주노의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "kiriko-dva",
@@ -1518,7 +2226,11 @@
     "score": 4,
     "reason": "D.Va은(는) 키리코의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "kiriko-genji",
@@ -1527,7 +2239,11 @@
     "score": 4,
     "reason": "높은 기동성으로 벽 타기와 순간이동 이후의 위치를 추격합니다.",
     "condition": "아군에게 순간이동할 안전한 지점을 유지하세요.",
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-08-29",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "아군에게 순간이동할 안전한 지점을 유지하세요."
   },
   {
     "id": "kiriko-pharah",
@@ -1536,7 +2252,11 @@
     "score": 4,
     "reason": "파라은(는) 키리코의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "kiriko-tracer",
@@ -1545,7 +2265,11 @@
     "score": 4,
     "reason": "여러 각도에서 빠르게 압박해 정화와 순간이동 사용을 강요합니다.",
     "condition": "정화는 피해보다 결정적 상태 이상에 사용하세요.",
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-08-29",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "정화는 피해보다 결정적 상태 이상에 사용하세요."
   },
   {
     "id": "kiriko-winston",
@@ -1554,7 +2278,11 @@
     "score": 4,
     "reason": "방벽과 광역 공격으로 벽 타기와 치유 시야를 동시에 제한합니다.",
     "condition": "순간이동을 진입 전에 소비하지 마세요.",
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-08-29",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "순간이동을 진입 전에 소비하지 마세요."
   },
   {
     "id": "lifeweaver-genji",
@@ -1563,7 +2291,11 @@
     "score": 4,
     "reason": "겐지은(는) 라이프위버의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "lifeweaver-mauga",
@@ -1572,7 +2304,11 @@
     "score": 4,
     "reason": "마우가은(는) 라이프위버의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "lifeweaver-pharah",
@@ -1581,7 +2317,11 @@
     "score": 4,
     "reason": "파라은(는) 라이프위버의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "lifeweaver-reaper",
@@ -1590,7 +2330,11 @@
     "score": 4,
     "reason": "리퍼은(는) 라이프위버의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "lifeweaver-sombra",
@@ -1599,7 +2343,11 @@
     "score": 4,
     "reason": "솜브라은(는) 라이프위버의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "lifeweaver-vendetta",
@@ -1608,7 +2356,11 @@
     "score": 4,
     "reason": "벤데타은(는) 라이프위버의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "lifeweaver-venture",
@@ -1617,7 +2369,11 @@
     "score": 4,
     "reason": "벤처은(는) 라이프위버의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "lifeweaver-winston",
@@ -1626,7 +2382,11 @@
     "score": 4,
     "reason": "윈스턴은(는) 라이프위버의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "lucio-cassidy",
@@ -1635,7 +2395,11 @@
     "score": 4,
     "reason": "캐서디은(는) 루시우의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "lucio-mauga",
@@ -1644,7 +2408,11 @@
     "score": 4,
     "reason": "마우가은(는) 루시우의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "lucio-moira",
@@ -1653,7 +2421,11 @@
     "score": 4,
     "reason": "모이라은(는) 루시우의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "lucio-sombra",
@@ -1662,7 +2434,11 @@
     "score": 4,
     "reason": "솜브라은(는) 루시우의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "mauga-ana",
@@ -1671,7 +2447,11 @@
     "score": 4,
     "reason": "아나은(는) 마우가의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "mauga-hanzo",
@@ -1680,7 +2460,11 @@
     "score": 4,
     "reason": "한조은(는) 마우가의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "mauga-reaper",
@@ -1689,7 +2473,11 @@
     "score": 4,
     "reason": "리퍼은(는) 마우가의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "mauga-sigma",
@@ -1698,7 +2486,11 @@
     "score": 4,
     "reason": "시그마은(는) 마우가의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "mauga-sojourn",
@@ -1707,7 +2499,11 @@
     "score": 4,
     "reason": "소전은(는) 마우가의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "mauga-zenyatta",
@@ -1716,7 +2512,11 @@
     "score": 4,
     "reason": "젠야타은(는) 마우가의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "mei-ashe",
@@ -1725,7 +2525,11 @@
     "score": 5,
     "reason": "고지대와 다이너마이트로 근접하기 전에 체력을 소모시킵니다.",
     "condition": "충격 샷건이 빠진 뒤 빙벽으로 고립시키세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "충격 샷건이 빠진 뒤 빙벽으로 고립시키세요."
   },
   {
     "id": "mei-widowmaker",
@@ -1734,7 +2538,11 @@
     "score": 5,
     "reason": "장거리 저격으로 메이의 짧은 유효 사거리 밖에서 압박합니다.",
     "condition": "빙벽로 시야를 끊고 좁은 공간으로 이동하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "빙벽로 시야를 끊고 좁은 공간으로 이동하세요."
   },
   {
     "id": "mei-echo",
@@ -1743,7 +2551,11 @@
     "score": 4,
     "reason": "공중에서 거리와 각도를 바꿔 메이의 근거리 제어를 피합니다.",
     "condition": "비행 종료 후 빙벽으로 퇴로를 차단하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "비행 종료 후 빙벽으로 퇴로를 차단하세요."
   },
   {
     "id": "mei-emre",
@@ -1752,7 +2564,11 @@
     "score": 4,
     "reason": "엠레은(는) 메이의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "mei-freja",
@@ -1761,7 +2577,11 @@
     "score": 4,
     "reason": "프레야은(는) 메이의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "mei-hanzo",
@@ -1770,7 +2590,11 @@
     "score": 4,
     "reason": "한조은(는) 메이의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "mei-mercy",
@@ -1779,7 +2603,11 @@
     "score": 4,
     "reason": "메르시은(는) 메이의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "mei-pharah",
@@ -1788,7 +2616,11 @@
     "score": 4,
     "reason": "공중 기동과 폭발 피해로 감속 범위 밖에서 교전합니다.",
     "condition": "고드름 투사체로 예측 사격하거나 실내로 유도하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "고드름 투사체로 예측 사격하거나 실내로 유도하세요."
   },
   {
     "id": "mercy-ashe",
@@ -1797,7 +2629,11 @@
     "score": 5,
     "reason": "장거리 히트스캔과 다이너마이트가 공중 이동 경로를 압박합니다.",
     "condition": "수호천사 이동을 직선으로 반복하지 마세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "수호천사 이동을 직선으로 반복하지 마세요."
   },
   {
     "id": "mercy-widowmaker",
@@ -1806,7 +2642,11 @@
     "score": 5,
     "reason": "한 발의 높은 피해가 예측 가능한 활공 경로에 치명적입니다.",
     "condition": "엄폐물을 연결해 짧게 이동하세요.",
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-08-29",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "엄폐물을 연결해 짧게 이동하세요."
   },
   {
     "id": "mercy-ana",
@@ -1815,7 +2655,11 @@
     "score": 4,
     "reason": "아나은(는) 메르시의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "mercy-cassidy",
@@ -1824,7 +2668,11 @@
     "score": 4,
     "reason": "캐서디은(는) 메르시의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "mercy-dmon",
@@ -1833,7 +2681,11 @@
     "score": 4,
     "reason": "D.Mon은(는) 메르시의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "mercy-domina",
@@ -1842,7 +2694,11 @@
     "score": 4,
     "reason": "도미나은(는) 메르시의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "mercy-dva",
@@ -1851,7 +2707,11 @@
     "score": 4,
     "reason": "D.Va은(는) 메르시의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "mercy-mauga",
@@ -1860,7 +2720,11 @@
     "score": 4,
     "reason": "마우가은(는) 메르시의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "mercy-soldier76",
@@ -1869,7 +2733,11 @@
     "score": 4,
     "reason": "지속적인 히트스캔 화력이 공중 이동 중인 메르시를 안정적으로 압박합니다.",
     "condition": "전술 조준경이 있을 때 시야를 완전히 끊으세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "전술 조준경이 있을 때 시야를 완전히 끊으세요."
   },
   {
     "id": "mizuki-echo",
@@ -1878,7 +2746,11 @@
     "score": 4,
     "reason": "에코은(는) 미즈키의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "mizuki-jetpack-cat",
@@ -1887,7 +2759,11 @@
     "score": 4,
     "reason": "제트팩 캣은(는) 미즈키의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "mizuki-pharah",
@@ -1896,7 +2772,11 @@
     "score": 4,
     "reason": "파라은(는) 미즈키의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "moira-cassidy",
@@ -1905,7 +2785,11 @@
     "score": 4,
     "reason": "캐서디은(는) 모이라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "moira-roadhog",
@@ -1914,7 +2798,11 @@
     "score": 4,
     "reason": "로드호그은(는) 모이라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "moira-symmetra",
@@ -1923,7 +2811,11 @@
     "score": 4,
     "reason": "시메트라은(는) 모이라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "moira-torbjorn",
@@ -1932,7 +2824,11 @@
     "score": 4,
     "reason": "토르비욘은(는) 모이라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "orisa-mei",
@@ -1941,7 +2837,11 @@
     "score": 4,
     "reason": "메이은(는) 오리사의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "orisa-sigma",
@@ -1950,7 +2850,11 @@
     "score": 4,
     "reason": "시그마은(는) 오리사의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "orisa-zarya",
@@ -1959,7 +2863,11 @@
     "score": 4,
     "reason": "자리야은(는) 오리사의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "orisa-zenyatta",
@@ -1968,7 +2876,11 @@
     "score": 4,
     "reason": "젠야타은(는) 오리사의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "pharah-juno",
@@ -1977,7 +2889,11 @@
     "score": 5,
     "reason": "주노은(는) 파라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "pharah-cassidy",
@@ -1986,7 +2902,11 @@
     "score": 4,
     "reason": "캐서디은(는) 파라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "pharah-dva",
@@ -1995,7 +2915,11 @@
     "score": 4,
     "reason": "D.Va은(는) 파라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "pharah-emre",
@@ -2004,7 +2928,11 @@
     "score": 4,
     "reason": "엠레은(는) 파라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "pharah-shion",
@@ -2013,7 +2941,11 @@
     "score": 4,
     "reason": "시온은(는) 파라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "pharah-soldier-76",
@@ -2022,7 +2954,11 @@
     "score": 4,
     "reason": "솔저: 76은(는) 파라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "pharah-sombra",
@@ -2031,7 +2967,11 @@
     "score": 4,
     "reason": "솜브라은(는) 파라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "pharah-widowmaker",
@@ -2040,7 +2980,11 @@
     "score": 4,
     "reason": "위도우메이커은(는) 파라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "ramattra-reaper",
@@ -2049,7 +2993,11 @@
     "score": 5,
     "reason": "네메시스 형태의 큰 몸집이 리퍼의 근접 산탄과 생명력 회복을 돕습니다.",
     "condition": "응징 지속 시간이 끝날 때까지 거리를 유지하세요.",
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-08-29",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "응징 지속 시간이 끝날 때까지 거리를 유지하세요."
   },
   {
     "id": "ramattra-ana",
@@ -2058,7 +3006,11 @@
     "score": 4,
     "reason": "아나은(는) 라마트라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "ramattra-bastion",
@@ -2067,7 +3019,11 @@
     "score": 4,
     "reason": "지속 집중 화력이 막기와 방벽 자원을 빠르게 소모시킵니다.",
     "condition": "강습 모드가 끝난 뒤 네메시스 형태로 압박하세요.",
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-08-29",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "강습 모드가 끝난 뒤 네메시스 형태로 압박하세요."
   },
   {
     "id": "ramattra-mei",
@@ -2076,7 +3032,11 @@
     "score": 4,
     "reason": "빙벽이 전진을 끊고 팀과의 간격을 벌립니다.",
     "condition": "좁은 공간에서 고립되지 않도록 주의하세요.",
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-08-29",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "좁은 공간에서 고립되지 않도록 주의하세요."
   },
   {
     "id": "ramattra-orisa",
@@ -2085,7 +3045,11 @@
     "score": 4,
     "reason": "오리사은(는) 라마트라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "ramattra-wuyang",
@@ -2094,7 +3058,11 @@
     "score": 4,
     "reason": "우양은(는) 라마트라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "ramattra-zenyatta",
@@ -2103,7 +3071,11 @@
     "score": 4,
     "reason": "젠야타은(는) 라마트라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "reaper-ashe",
@@ -2112,7 +3084,11 @@
     "score": 5,
     "reason": "고지대 장거리 압박과 충격 샷건이 리퍼의 접근을 거부합니다.",
     "condition": "실내 우회로와 순간이동으로 교전 거리를 줄이세요.",
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-08-29",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "실내 우회로와 순간이동으로 교전 거리를 줄이세요."
   },
   {
     "id": "reaper-widowmaker",
@@ -2121,7 +3097,11 @@
     "score": 5,
     "reason": "유효 사거리 밖에서 지속적으로 압박해 근접 화력을 발휘하기 어렵게 합니다.",
     "condition": "시야가 긴 맵에서는 다른 영웅 교체를 고려하세요.",
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-08-29",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "시야가 긴 맵에서는 다른 영웅 교체를 고려하세요."
   },
   {
     "id": "reaper-cassidy",
@@ -2130,7 +3110,11 @@
     "score": 4,
     "reason": "캐서디은(는) 리퍼의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "reaper-echo",
@@ -2139,7 +3123,11 @@
     "score": 4,
     "reason": "공중 기동과 중거리 폭발 피해가 리퍼의 접근을 어렵게 합니다.",
     "condition": "비행 종료 위치를 예상해 우회하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "비행 종료 위치를 예상해 우회하세요."
   },
   {
     "id": "reaper-freja",
@@ -2148,7 +3136,11 @@
     "score": 4,
     "reason": "프레야은(는) 리퍼의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "reaper-illari",
@@ -2157,7 +3149,11 @@
     "score": 4,
     "reason": "일리아리은(는) 리퍼의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "reaper-mercy",
@@ -2166,7 +3162,11 @@
     "score": 4,
     "reason": "메르시은(는) 리퍼의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "reaper-pharah",
@@ -2175,7 +3175,11 @@
     "score": 4,
     "reason": "공중에서 거리를 유지하면 리퍼의 산탄 피해가 거의 닿지 않습니다.",
     "condition": "실내 목표 구역으로 교전을 유도하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "실내 목표 구역으로 교전을 유도하세요."
   },
   {
     "id": "reaper-symmetra",
@@ -2184,7 +3188,11 @@
     "score": 4,
     "reason": "시메트라은(는) 리퍼의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "reaper-torbjorn",
@@ -2193,7 +3201,11 @@
     "score": 4,
     "reason": "토르비욘은(는) 리퍼의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "reinhardt-lucio",
@@ -2202,7 +3214,11 @@
     "score": 5,
     "reason": "루시우은(는) 라인하르트의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "reinhardt-mei",
@@ -2211,7 +3227,11 @@
     "score": 5,
     "reason": "빙벽으로 라인하르트를 아군과 분리해 방벽 뒤의 지원을 끊을 수 있습니다.",
     "condition": "좁은 초크 포인트에서 가장 강력합니다.",
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-08-29",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "좁은 초크 포인트에서 가장 강력합니다."
   },
   {
     "id": "reinhardt-pharah",
@@ -2220,7 +3240,11 @@
     "score": 5,
     "reason": "파라은(는) 라인하르트의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "reinhardt-reaper",
@@ -2229,7 +3253,11 @@
     "score": 5,
     "reason": "근접 산탄 화력이 방벽을 내린 순간의 큰 몸집을 빠르게 압박합니다.",
     "condition": "화염 강타와 팀 집중 공격으로 접근을 차단하세요.",
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-08-29",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "화염 강타와 팀 집중 공격으로 접근을 차단하세요."
   },
   {
     "id": "reinhardt-bastion",
@@ -2238,7 +3266,11 @@
     "score": 4,
     "reason": "집중 화력이 방벽 자원을 빠르게 소모시켜 전진을 어렵게 만듭니다.",
     "condition": "엄폐물 사이를 짧게 이동하고 강습 모드 종료 후 진입하세요.",
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-08-29",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "엄폐물 사이를 짧게 이동하고 강습 모드 종료 후 진입하세요."
   },
   {
     "id": "reinhardt-jetpack-cat",
@@ -2247,7 +3279,11 @@
     "score": 4,
     "reason": "제트팩 캣은(는) 라인하르트의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "reinhardt-orisa",
@@ -2256,7 +3292,11 @@
     "score": 4,
     "reason": "오리사은(는) 라인하르트의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "reinhardt-ramattra",
@@ -2265,7 +3305,11 @@
     "score": 4,
     "reason": "네메시스 형태의 공격이 방벽 중심 운영을 흔들 수 있습니다.",
     "condition": "형태 전환과 소용돌이 사용 후 교전하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "형태 전환과 소용돌이 사용 후 교전하세요."
   },
   {
     "id": "reinhardt-symmetra",
@@ -2274,7 +3318,11 @@
     "score": 4,
     "reason": "시메트라은(는) 라인하르트의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "reinhardt-torbjorn",
@@ -2283,7 +3331,11 @@
     "score": 4,
     "reason": "토르비욘은(는) 라인하르트의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "reinhardt-wuyang",
@@ -2292,7 +3344,11 @@
     "score": 4,
     "reason": "우양은(는) 라인하르트의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "roadhog-ana",
@@ -2301,7 +3357,11 @@
     "score": 5,
     "reason": "아나은(는) 로드호그의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "roadhog-ashe",
@@ -2310,7 +3370,11 @@
     "score": 4,
     "reason": "애쉬은(는) 로드호그의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "roadhog-freja",
@@ -2319,7 +3383,11 @@
     "score": 4,
     "reason": "프레야은(는) 로드호그의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "roadhog-hanzo",
@@ -2328,7 +3396,11 @@
     "score": 4,
     "reason": "한조은(는) 로드호그의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "roadhog-orisa",
@@ -2337,7 +3409,11 @@
     "score": 4,
     "reason": "오리사은(는) 로드호그의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "roadhog-reaper",
@@ -2346,7 +3422,11 @@
     "score": 4,
     "reason": "리퍼은(는) 로드호그의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "roadhog-sojourn",
@@ -2355,7 +3435,11 @@
     "score": 4,
     "reason": "소전은(는) 로드호그의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "roadhog-zenyatta",
@@ -2364,7 +3448,11 @@
     "score": 4,
     "reason": "젠야타은(는) 로드호그의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "shion-brigitte",
@@ -2373,7 +3461,11 @@
     "score": 4,
     "reason": "브리기테은(는) 시온의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "shion-cassidy",
@@ -2382,7 +3474,11 @@
     "score": 4,
     "reason": "캐서디은(는) 시온의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "shion-dmon",
@@ -2391,7 +3487,11 @@
     "score": 4,
     "reason": "D.Mon은(는) 시온의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "shion-hazard",
@@ -2400,7 +3500,11 @@
     "score": 4,
     "reason": "해저드은(는) 시온의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "shion-roadhog",
@@ -2409,7 +3513,11 @@
     "score": 4,
     "reason": "로드호그은(는) 시온의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "shion-symmetra",
@@ -2418,7 +3526,11 @@
     "score": 4,
     "reason": "시메트라은(는) 시온의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "shion-winston",
@@ -2427,7 +3539,11 @@
     "score": 4,
     "reason": "윈스턴은(는) 시온의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "shion-zarya",
@@ -2436,7 +3552,11 @@
     "score": 4,
     "reason": "자리야은(는) 시온의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sierra-ashe",
@@ -2445,7 +3565,11 @@
     "score": 4,
     "reason": "애쉬은(는) 시에라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sierra-dva",
@@ -2454,7 +3578,11 @@
     "score": 4,
     "reason": "D.Va은(는) 시에라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sierra-kiriko",
@@ -2463,7 +3591,11 @@
     "score": 4,
     "reason": "키리코은(는) 시에라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sierra-moira",
@@ -2472,7 +3604,11 @@
     "score": 4,
     "reason": "모이라은(는) 시에라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sierra-sigma",
@@ -2481,7 +3617,11 @@
     "score": 4,
     "reason": "시그마은(는) 시에라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sierra-sombra",
@@ -2490,7 +3630,11 @@
     "score": 4,
     "reason": "솜브라은(는) 시에라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sierra-winston",
@@ -2499,7 +3643,11 @@
     "score": 4,
     "reason": "윈스턴은(는) 시에라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sierra-zarya",
@@ -2508,7 +3656,11 @@
     "score": 4,
     "reason": "자리야은(는) 시에라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sigma-zarya",
@@ -2517,7 +3669,11 @@
     "score": 5,
     "reason": "자리야은(는) 시그마의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sigma-dmon",
@@ -2526,7 +3682,11 @@
     "score": 4,
     "reason": "D.Mon은(는) 시그마의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sigma-genji",
@@ -2535,7 +3695,11 @@
     "score": 4,
     "reason": "겐지은(는) 시그마의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sigma-reinhardt",
@@ -2544,7 +3708,11 @@
     "score": 4,
     "reason": "라인하르트은(는) 시그마의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sigma-sombra",
@@ -2553,7 +3721,11 @@
     "score": 4,
     "reason": "솜브라은(는) 시그마의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sigma-symmetra",
@@ -2562,7 +3734,11 @@
     "score": 4,
     "reason": "시메트라은(는) 시그마의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sigma-tracer",
@@ -2571,7 +3747,11 @@
     "score": 4,
     "reason": "트레이서은(는) 시그마의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sigma-winston",
@@ -2580,7 +3760,11 @@
     "score": 4,
     "reason": "윈스턴은(는) 시그마의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sojourn-dva",
@@ -2589,7 +3773,11 @@
     "score": 4,
     "reason": "D.Va은(는) 소전의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sojourn-genji",
@@ -2598,7 +3786,11 @@
     "score": 4,
     "reason": "겐지은(는) 소전의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sojourn-zarya",
@@ -2607,7 +3799,11 @@
     "score": 4,
     "reason": "자리야은(는) 소전의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "soldier-76-dva",
@@ -2616,7 +3812,11 @@
     "score": 4,
     "reason": "D.Va은(는) 솔저: 76의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "soldier-76-genji",
@@ -2625,7 +3825,11 @@
     "score": 4,
     "reason": "겐지은(는) 솔저: 76의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "soldier-76-sigma",
@@ -2634,7 +3838,11 @@
     "score": 4,
     "reason": "시그마은(는) 솔저: 76의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "soldier-76-vendetta",
@@ -2643,7 +3851,11 @@
     "score": 4,
     "reason": "벤데타은(는) 솔저: 76의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "soldier-76-venture",
@@ -2652,7 +3864,11 @@
     "score": 4,
     "reason": "벤처은(는) 솔저: 76의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "soldier-76-winston",
@@ -2661,7 +3877,11 @@
     "score": 4,
     "reason": "윈스턴은(는) 솔저: 76의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sombra-cassidy",
@@ -2670,7 +3890,11 @@
     "score": 4,
     "reason": "캐서디은(는) 솜브라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sombra-dmon",
@@ -2679,7 +3903,11 @@
     "score": 4,
     "reason": "D.Mon은(는) 솜브라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sombra-dva",
@@ -2688,7 +3916,11 @@
     "score": 4,
     "reason": "D.Va은(는) 솜브라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sombra-kiriko",
@@ -2697,7 +3929,11 @@
     "score": 4,
     "reason": "키리코은(는) 솜브라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sombra-mei",
@@ -2706,7 +3942,11 @@
     "score": 4,
     "reason": "메이은(는) 솜브라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sombra-moira",
@@ -2715,7 +3955,11 @@
     "score": 4,
     "reason": "모이라은(는) 솜브라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sombra-symmetra",
@@ -2724,7 +3968,11 @@
     "score": 4,
     "reason": "시메트라은(는) 솜브라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "sombra-zarya",
@@ -2733,7 +3981,11 @@
     "score": 4,
     "reason": "자리야은(는) 솜브라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "symmetra-cassidy",
@@ -2742,7 +3994,11 @@
     "score": 4,
     "reason": "캐서디은(는) 시메트라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "symmetra-freja",
@@ -2751,7 +4007,11 @@
     "score": 4,
     "reason": "프레야은(는) 시메트라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "symmetra-hanzo",
@@ -2760,7 +4020,11 @@
     "score": 4,
     "reason": "한조은(는) 시메트라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "symmetra-jetpack-cat",
@@ -2769,7 +4033,11 @@
     "score": 4,
     "reason": "제트팩 캣은(는) 시메트라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "symmetra-pharah",
@@ -2778,7 +4046,11 @@
     "score": 4,
     "reason": "파라은(는) 시메트라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "symmetra-roadhog",
@@ -2787,7 +4059,11 @@
     "score": 4,
     "reason": "로드호그은(는) 시메트라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "symmetra-wuyang",
@@ -2796,7 +4072,11 @@
     "score": 4,
     "reason": "우양은(는) 시메트라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "symmetra-zarya",
@@ -2805,7 +4085,11 @@
     "score": 4,
     "reason": "자리야은(는) 시메트라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "torbjorn-sigma",
@@ -2814,7 +4098,11 @@
     "score": 5,
     "reason": "시그마은(는) 토르비욘의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "torbjorn-ashe",
@@ -2823,7 +4111,11 @@
     "score": 4,
     "reason": "애쉬은(는) 토르비욘의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "torbjorn-domina",
@@ -2832,7 +4124,11 @@
     "score": 4,
     "reason": "도미나은(는) 토르비욘의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "torbjorn-echo",
@@ -2841,7 +4137,11 @@
     "score": 4,
     "reason": "에코은(는) 토르비욘의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "torbjorn-hanzo",
@@ -2850,7 +4150,11 @@
     "score": 4,
     "reason": "한조은(는) 토르비욘의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "torbjorn-orisa",
@@ -2859,7 +4163,11 @@
     "score": 4,
     "reason": "오리사은(는) 토르비욘의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "torbjorn-ramattra",
@@ -2868,7 +4176,11 @@
     "score": 4,
     "reason": "라마트라은(는) 토르비욘의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "torbjorn-zarya",
@@ -2877,7 +4189,11 @@
     "score": 4,
     "reason": "자리야은(는) 토르비욘의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "tracer-cassidy",
@@ -2886,7 +4202,11 @@
     "score": 5,
     "reason": "높은 순간 피해가 낮은 생명력의 트레이서에게 치명적입니다.",
     "condition": "구르기와 섬광탄 계열 기술 사용 후 접근하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "구르기와 섬광탄 계열 기술 사용 후 접근하세요."
   },
   {
     "id": "tracer-brigitte",
@@ -2895,7 +4215,11 @@
     "score": 4,
     "reason": "방패와 근접 공격이 후방 지원 영웅을 안정적으로 보호합니다.",
     "condition": "혼자 마무리하려 하지 말고 여러 방향에서 압박하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "혼자 마무리하려 하지 말고 여러 방향에서 압박하세요."
   },
   {
     "id": "tracer-echo",
@@ -2904,7 +4228,11 @@
     "score": 4,
     "reason": "에코은(는) 트레이서의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "tracer-mei",
@@ -2913,7 +4241,11 @@
     "score": 4,
     "reason": "감속 압박과 급속 빙결이 트레이서의 짧은 교전 주기를 끊습니다.",
     "condition": "빙벽이 점멸 퇴로를 가로막지 않도록 각도를 넓게 잡으세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "빙벽이 점멸 퇴로를 가로막지 않도록 각도를 넓게 잡으세요."
   },
   {
     "id": "tracer-moira",
@@ -2922,7 +4254,11 @@
     "score": 4,
     "reason": "추적형 공격과 소멸 때문에 짧은 시간 안에 처치하기 어렵습니다.",
     "condition": "소멸을 먼저 유도한 뒤 다시 진입하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "소멸을 먼저 유도한 뒤 다시 진입하세요."
   },
   {
     "id": "tracer-pharah",
@@ -2931,7 +4267,11 @@
     "score": 4,
     "reason": "파라은(는) 트레이서의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "tracer-symmetra",
@@ -2940,7 +4280,11 @@
     "score": 4,
     "reason": "시메트라은(는) 트레이서의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "tracer-torbjorn",
@@ -2949,7 +4293,11 @@
     "score": 4,
     "reason": "토르비욘은(는) 트레이서의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "vendetta-cassidy",
@@ -2958,7 +4306,11 @@
     "score": 4,
     "reason": "캐서디은(는) 벤데타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "vendetta-echo",
@@ -2967,16 +4319,28 @@
     "score": 4,
     "reason": "에코은(는) 벤데타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "vendetta-jetpack-cat",
     "hero": "vendetta",
     "counter": "jetpack-cat",
     "score": 4,
-    "reason": "제트팩 캣은(는) 벤데타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reason": "제트팩 캣은 지속 비행과 방향 전환으로 벤데타의 근접 연계 사거리 밖에 머물며 아군까지 이동시킬 수 있습니다.",
+    "condition": "제트팩 캣이 넓은 공간에서 연료와 엄폐물을 번갈아 활용할 때 접근이 어렵습니다.",
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "high",
+    "patchBasis": "2026-08-30 라이브 기술 구조 · 현재 상성 평가",
+    "counterplay": "투사형 공격은 확정 각도에만 사용하고, 비행을 무리하게 추격하기보다 견인 대상의 착지 위치를 압박하세요.",
+    "evidence": [
+      "official-hero-kit",
+      "current-matchup-crosscheck"
+    ]
   },
   {
     "id": "vendetta-mei",
@@ -2985,25 +4349,45 @@
     "score": 4,
     "reason": "메이은(는) 벤데타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "vendetta-orisa",
     "hero": "vendetta",
     "counter": "orisa",
     "score": 4,
-    "reason": "오리사은(는) 벤데타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reason": "오리사는 투창과 수호의 창으로 벤데타의 돌진 흐름을 끊고 근접 공격에서 아군을 밀어낼 수 있습니다.",
+    "condition": "투창과 수호의 창을 벤데타 진입에 맞춰 순서대로 사용할 수 있을 때 제어력이 큽니다.",
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "high",
+    "patchBasis": "2026-08-30 라이브 기술 구조 · 현재 상성 평가",
+    "counterplay": "투창과 수호의 창 중 하나를 먼저 유도한 뒤 소용돌이 돌진을 사용하고, 두 기술이 모두 남아 있을 때는 정면 진입을 피하세요.",
+    "evidence": [
+      "official-hero-kit",
+      "current-matchup-crosscheck"
+    ]
   },
   {
     "id": "vendetta-pharah",
     "hero": "vendetta",
     "counter": "pharah",
     "score": 4,
-    "reason": "파라은(는) 벤데타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reason": "파라는 공중 거리를 유지해 벤데타의 대검 연계가 닿는 시간을 줄이고 로켓으로 접근 경로를 압박합니다.",
+    "condition": "천장이 높고 공중 엄폐가 가능한 전장에서 파라가 거리를 유지할수록 유리합니다.",
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "high",
+    "patchBasis": "2026-08-30 라이브 기술 구조 · 현재 상성 평가",
+    "counterplay": "상승 베기를 추격에 낭비하지 말고 착지 지점을 노리거나, 아군 히트스캔과 함께 파라의 비행 자원을 먼저 소모시키세요.",
+    "evidence": [
+      "official-hero-kit",
+      "current-matchup-crosscheck"
+    ]
   },
   {
     "id": "vendetta-roadhog",
@@ -3012,7 +4396,11 @@
     "score": 4,
     "reason": "로드호그은(는) 벤데타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "vendetta-symmetra",
@@ -3021,7 +4409,11 @@
     "score": 4,
     "reason": "시메트라은(는) 벤데타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "venture-cassidy",
@@ -3030,7 +4422,11 @@
     "score": 4,
     "reason": "캐서디은(는) 벤처의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "venture-echo",
@@ -3039,7 +4435,11 @@
     "score": 4,
     "reason": "에코은(는) 벤처의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "venture-freja",
@@ -3048,7 +4448,11 @@
     "score": 4,
     "reason": "프레야은(는) 벤처의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "venture-kiriko",
@@ -3057,7 +4461,11 @@
     "score": 4,
     "reason": "키리코은(는) 벤처의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "venture-mei",
@@ -3066,7 +4474,11 @@
     "score": 4,
     "reason": "메이은(는) 벤처의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "venture-pharah",
@@ -3075,7 +4487,11 @@
     "score": 4,
     "reason": "파라은(는) 벤처의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "venture-symmetra",
@@ -3084,7 +4500,11 @@
     "score": 4,
     "reason": "시메트라은(는) 벤처의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "venture-torbjorn",
@@ -3093,7 +4513,11 @@
     "score": 4,
     "reason": "토르비욘은(는) 벤처의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "widowmaker-genji",
@@ -3102,7 +4526,11 @@
     "score": 5,
     "reason": "벽 타기와 질풍참으로 고지대에 빠르게 도달합니다.",
     "condition": "독 지뢰로 주요 진입로를 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "독 지뢰로 주요 진입로를 확인하세요."
   },
   {
     "id": "widowmaker-tracer",
@@ -3111,7 +4539,11 @@
     "score": 5,
     "reason": "점멸로 저격 시야를 우회해 근거리에서 지속적으로 압박합니다.",
     "condition": "갈고리를 탈출용으로 남겨 두세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "갈고리를 탈출용으로 남겨 두세요."
   },
   {
     "id": "widowmaker-doomfist",
@@ -3120,7 +4552,11 @@
     "score": 4,
     "reason": "둠피스트은(는) 위도우메이커의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "widowmaker-dva",
@@ -3129,7 +4565,11 @@
     "score": 4,
     "reason": "부스터와 방어 매트릭스로 고지대 저격 각도를 빠르게 무너뜨립니다.",
     "condition": "팀과 너무 멀리 떨어지지 마세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "팀과 너무 멀리 떨어지지 마세요."
   },
   {
     "id": "widowmaker-hazard",
@@ -3138,7 +4578,11 @@
     "score": 4,
     "reason": "해저드은(는) 위도우메이커의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "widowmaker-sombra",
@@ -3147,7 +4591,11 @@
     "score": 4,
     "reason": "솜브라은(는) 위도우메이커의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "widowmaker-winston",
@@ -3156,7 +4604,11 @@
     "score": 4,
     "reason": "점프 팩과 방벽으로 저격 각도를 직접 차단합니다.",
     "condition": "갈고리 목적지를 미리 확보하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "갈고리 목적지를 미리 확보하세요."
   },
   {
     "id": "widowmaker-wrecking-ball",
@@ -3165,7 +4617,11 @@
     "score": 4,
     "reason": "레킹볼은(는) 위도우메이커의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "winston-reaper",
@@ -3174,7 +4630,11 @@
     "score": 5,
     "reason": "점프 진입 후 리퍼의 높은 근접 화력에 쉽게 노출됩니다.",
     "condition": "리퍼 위치가 확인되지 않으면 후방 진입을 미루세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "리퍼 위치가 확인되지 않으면 후방 진입을 미루세요."
   },
   {
     "id": "winston-bastion",
@@ -3183,7 +4643,11 @@
     "score": 4,
     "reason": "큰 피격 판정과 낮은 순간 방어력이 집중 화력에 취약합니다.",
     "condition": "강습 모드가 끝난 뒤 방벽과 함께 진입하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "강습 모드가 끝난 뒤 방벽과 함께 진입하세요."
   },
   {
     "id": "winston-junker-queen",
@@ -3192,7 +4656,11 @@
     "score": 4,
     "reason": "정커퀸은(는) 윈스턴의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "winston-mauga",
@@ -3201,7 +4669,11 @@
     "score": 4,
     "reason": "마우가은(는) 윈스턴의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "winston-mei",
@@ -3210,7 +4682,11 @@
     "score": 4,
     "reason": "감속과 빙벽이 점프 팩 이탈 경로를 제한합니다.",
     "condition": "빙벽 재사용 대기시간을 먼저 빼는 것이 좋습니다.",
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-08-29",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "빙벽 재사용 대기시간을 먼저 빼는 것이 좋습니다."
   },
   {
     "id": "winston-orisa",
@@ -3219,7 +4695,11 @@
     "score": 4,
     "reason": "오리사은(는) 윈스턴의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "winston-ramattra",
@@ -3228,7 +4708,11 @@
     "score": 4,
     "reason": "라마트라은(는) 윈스턴의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "winston-roadhog",
@@ -3237,7 +4721,11 @@
     "score": 4,
     "reason": "로드호그은(는) 윈스턴의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "winston-torbjorn",
@@ -3246,7 +4734,11 @@
     "score": 3,
     "reason": "포탑과 과부하가 후방 다이브의 시간을 지연시킵니다.",
     "condition": "포탑을 먼저 제거할 아군과 함께 움직이세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "포탑을 먼저 제거할 아군과 함께 움직이세요."
   },
   {
     "id": "wrecking-ball-cassidy",
@@ -3255,7 +4747,11 @@
     "score": 4,
     "reason": "캐서디은(는) 레킹볼의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "wrecking-ball-echo",
@@ -3264,7 +4760,11 @@
     "score": 4,
     "reason": "에코은(는) 레킹볼의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "wrecking-ball-mauga",
@@ -3273,7 +4773,11 @@
     "score": 4,
     "reason": "마우가은(는) 레킹볼의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "wrecking-ball-orisa",
@@ -3282,7 +4786,11 @@
     "score": 4,
     "reason": "오리사은(는) 레킹볼의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "wrecking-ball-pharah",
@@ -3291,7 +4799,11 @@
     "score": 4,
     "reason": "파라은(는) 레킹볼의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "wrecking-ball-roadhog",
@@ -3300,7 +4812,11 @@
     "score": 4,
     "reason": "로드호그은(는) 레킹볼의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "wrecking-ball-sombra",
@@ -3309,7 +4825,11 @@
     "score": 4,
     "reason": "솜브라은(는) 레킹볼의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "wrecking-ball-torbjorn",
@@ -3318,7 +4838,11 @@
     "score": 4,
     "reason": "토르비욘은(는) 레킹볼의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "wuyang-echo",
@@ -3327,7 +4851,11 @@
     "score": 4,
     "reason": "에코은(는) 우양의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "wuyang-sigma",
@@ -3336,7 +4864,11 @@
     "score": 4,
     "reason": "시그마은(는) 우양의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "wuyang-zarya",
@@ -3345,7 +4877,11 @@
     "score": 4,
     "reason": "자리야은(는) 우양의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "zarya-pharah",
@@ -3354,7 +4890,11 @@
     "score": 5,
     "reason": "짧은 유효 사거리 때문에 공중에서 거리를 유지하는 파라를 압박하기 어렵습니다.",
     "condition": "개활지에서는 히트스캔 아군의 지원이 필요합니다.",
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-08-29",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "개활지에서는 히트스캔 아군의 지원이 필요합니다."
   },
   {
     "id": "zarya-winston",
@@ -3363,7 +4903,11 @@
     "score": 5,
     "reason": "윈스턴은(는) 자리야의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "zarya-ashe",
@@ -3372,7 +4916,11 @@
     "score": 4,
     "reason": "고지대와 장거리 압박으로 자리야가 에너지를 활용할 거리를 주지 않습니다.",
     "condition": "방벽이 빠진 뒤 다이너마이트를 조심하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "방벽이 빠진 뒤 다이너마이트를 조심하세요."
   },
   {
     "id": "zarya-bastion",
@@ -3381,7 +4929,11 @@
     "score": 4,
     "reason": "바스티온은(는) 자리야의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "zarya-dmon",
@@ -3390,7 +4942,11 @@
     "score": 4,
     "reason": "D.Mon은(는) 자리야의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "zarya-lifeweaver",
@@ -3399,7 +4955,11 @@
     "score": 4,
     "reason": "라이프위버은(는) 자리야의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "zarya-mei",
@@ -3408,7 +4968,11 @@
     "score": 4,
     "reason": "메이은(는) 자리야의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "zarya-reinhardt",
@@ -3417,7 +4981,11 @@
     "score": 4,
     "reason": "라인하르트은(는) 자리야의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "zarya-widowmaker",
@@ -3426,7 +4994,11 @@
     "score": 4,
     "reason": "장거리 저격이 자리야보다 후방 지원 영웅을 먼저 위협합니다.",
     "condition": "엄폐가 적은 맵에서 영향이 큽니다.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
+    "counterplay": "엄폐가 적은 맵에서 영향이 큽니다."
   },
   {
     "id": "zenyatta-doomfist",
@@ -3435,7 +5007,11 @@
     "score": 4,
     "reason": "둠피스트은(는) 젠야타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "zenyatta-dva",
@@ -3444,7 +5020,11 @@
     "score": 4,
     "reason": "D.Va은(는) 젠야타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "zenyatta-genji",
@@ -3453,7 +5033,11 @@
     "score": 4,
     "reason": "겐지은(는) 젠야타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "zenyatta-sigma",
@@ -3462,7 +5046,11 @@
     "score": 4,
     "reason": "시그마은(는) 젠야타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "zenyatta-tracer",
@@ -3471,7 +5059,11 @@
     "score": 4,
     "reason": "트레이서은(는) 젠야타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "zenyatta-vendetta",
@@ -3480,7 +5072,11 @@
     "score": 4,
     "reason": "벤데타은(는) 젠야타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "zenyatta-venture",
@@ -3489,7 +5085,11 @@
     "score": 4,
     "reason": "벤처은(는) 젠야타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   },
   {
     "id": "zenyatta-winston",
@@ -3498,6 +5098,10 @@
     "score": 4,
     "reason": "윈스턴은(는) 젠야타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
     "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30"
+    "reviewedAt": "2026-08-30",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
+    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
   }
 ]
