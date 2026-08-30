@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Database, Shield, Sparkles, Swords } from "lucide-react";
 import { AdSlot } from "@/components/AdSlot";
 import { SiteHeader } from "@/components/SiteHeader";
 import { combos, getHero, heroes, matchups, roleLabels } from "@/lib/data";
+
+export const metadata: Metadata = {
+  title: "오버워치 픽 가이드",
+  description: "영웅 정보, 상성 비교, 궁극기 조합과 팀 구성 도구를 빠르게 살펴보세요.",
+  alternates: { canonical: "/overview/" },
+};
 
 export default function OverviewPage() {
   const featuredHeroes = ["ana", "dva", "genji", "kiriko", "reinhardt", "tracer"].map(getHero).filter(Boolean);

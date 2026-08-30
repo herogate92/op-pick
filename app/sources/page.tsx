@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import { Code2, Database, ExternalLink, Scale } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 
-export const metadata: Metadata = { title: "운영 및 라이선스", description: "OP PICK LAB의 데이터 운영 원칙과 오픈소스 라이선스 안내입니다." };
+export const metadata: Metadata = {
+  title: "운영 및 라이선스",
+  description: "OP PICK LAB의 데이터 운영 원칙과 오픈소스 라이선스 안내입니다.",
+  alternates: { canonical: "/sources/" },
+};
 
 const openSource = [
   { name: "Next.js", version: "16.3.3", license: "MIT", owner: "Vercel, Inc.", url: "https://github.com/vercel/next.js" },

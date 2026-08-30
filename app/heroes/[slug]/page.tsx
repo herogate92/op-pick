@@ -6,9 +6,10 @@ import { AdSlot } from "@/components/AdSlot";
 import { AbilityStats } from "@/components/AbilityStats";
 import { HeroMiniCard } from "@/components/HeroMiniCard";
 import { HeroBackgroundMedia } from "@/components/HeroBackgroundMedia";
+import { JsonLd } from "@/components/JsonLd";
 import { ScoreMeter } from "@/components/ScoreMeter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { getCombosFor, getCountersFor, getHero, getStrongAgainst, heroes, roleAccent, roleLabels, subroleLabels } from "@/lib/data";
+import { getCombosFor, getCountersFor, getHero, getStrongAgainst, hasDetailedMatchupData, heroes, roleAccent, roleLabels, subroleLabels } from "@/lib/data";
 import { getHeroVideo } from "@/lib/hero-videos";
 
 export function generateStaticParams() { return heroes.map((hero) => ({ slug: hero.key })); }
@@ -21,7 +22,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${hero.name} 정보와 상성`,
     description,
-    openGraph: { title: `${hero.name} 정보와 상성`, description, images: hero.portrait ? [{ url: hero.portrait }] : [] },
+    alternates: { canonical: `/heroes/${hero.key}/` },
+    openGraph: { title: `${hero.name} 정보와 상성`, description, url: `/heroes/${hero.key}/`, images: hero.portrait ? [{ url: hero.portrait }] : [] },
     twitter: { card: "summary", title: `${hero.name} 정보와 상성`, description, images: hero.portrait ? [hero.portrait] : [] },
   };
 }
@@ -35,9 +37,33 @@ export default async function HeroDetailPage({ params }: { params: Promise<{ slu
   const heroCombos = getCombosFor(hero.key);
   const heroVideo = getHeroVideo(hero.key);
   const related = heroes.filter((item) => item.role === hero.role && item.key !== hero.key).slice(0, 6);
+  const pageUrl = `https://opick.ggwp.kr/heroes/${hero.key}/`;
+  const heroJsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: `${hero.name} 정보와 상성`,
+      description: `${hero.name}의 기술, 특전, 카운터 픽과 추천 조합을 확인하세요.`,
+      url: pageUrl,
+      inLanguage: "ko-KR",
+      dateModified: hero.checkedAt,
+      primaryImageOfPage: hero.portrait ? { "@type": "ImageObject", url: hero.portrait } : undefined,
+      isPartOf: { "@type": "WebSite", name: "OP PICK LAB", url: "https://opick.ggwp.kr/" },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "홈", item: "https://opick.ggwp.kr/" },
+        { "@type": "ListItem", position: 2, name: "영웅", item: "https://opick.ggwp.kr/heroes/" },
+        { "@type": "ListItem", position: 3, name: hero.name, item: pageUrl },
+      ],
+    },
+  ];
 
   return (
     <main className="page-shell hero-detail-page" style={{ "--hero-accent": roleAccent[hero.role] } as React.CSSProperties}>
+      <JsonLd data={heroJsonLd} />
       <SiteHeader active="heroes" />
       <section className="detail-hero">
         <HeroBackgroundMedia videoId={heroVideo?.id} poster={hero.background} heroName={hero.name} />
@@ -121,5 +147,5 @@ function PerkGroup({ title, items }: { title: string; items: { name: string; des
 }
 
 function MatchupGroup({ title, icon, items }: { title: string; icon: React.ReactNode; items: { matchup: ReturnType<typeof getCountersFor>[number]; hero: NonNullable<ReturnType<typeof getHero>> }[] }) {
-  return <div className="matchup-group"><h3>{icon}{title}</h3>{items.length ? items.slice(0, 5).map(({ matchup, hero }) => <article key={matchup.id} className="matchup-row"><HeroMiniCard hero={hero} suffix={<ScoreMeter value={matchup.score} />} /><p>{matchup.reason}</p><small>{matchup.condition}</small></article>) : <ReviewPending text="등록된 상성 정보가 아직 없습니다." />}</div>;
+  return <div className="matchup-group"><h3>{icon}{title}</h3>{items.length ? items.slice(0, 5).map(({ matchup, hero }) => <article key={matchup.id} className="matchup-row"><HeroMiniCard hero={hero} suffix={<ScoreMeter value={matchup.score} />} /><p>{matchup.reason}</p><small>{matchup.condition}</small>{hasDetailedMatchupData(matchup) && <Link className="text-link matchup-detail-link" href={`/matchups/${matchup.hero}-vs-${matchup.counter}/`}>상성 상세 분석</Link>}</article>) : <ReviewPending text="등록된 상성 정보가 아직 없습니다." />}</div>;
 }

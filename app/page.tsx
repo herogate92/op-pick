@@ -1,8 +1,16 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Shield, Sparkles, Swords, UsersRound } from "lucide-react";
 import { HomeBackgroundMedia } from "@/components/HomeBackgroundMedia";
 import { SiteHeader } from "@/components/SiteHeader";
+import { JsonLd } from "@/components/JsonLd";
 import { getHero } from "@/lib/data";
+
+export const metadata: Metadata = {
+  title: "오버워치 영웅 상성·카운터 픽·맵별 추천",
+  description: "오버워치 영웅 정보와 카운터 픽, 맵별 추천, 궁극기 조합과 팀 구성을 한곳에서 확인하세요.",
+  alternates: { canonical: "/" },
+};
 
 function CtaElectricity() {
   return <span className="cta-electricity" aria-hidden="true" />;
@@ -10,8 +18,18 @@ function CtaElectricity() {
 
 export default function HomePage() {
   const poster = getHero("tracer")?.background ?? getHero("ana")?.background;
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "OP PICK LAB",
+    alternateName: "오버워치 픽 연구소",
+    url: "https://opick.ggwp.kr/",
+    inLanguage: "ko-KR",
+    description: "오버워치 영웅 상성, 카운터 픽, 맵별 추천과 팀 조합을 제공하는 팬 가이드",
+  };
   return (
     <main className="cinematic-home">
+      <JsonLd data={websiteJsonLd} />
       <HomeBackgroundMedia poster={poster} />
       <div className="home-video-overlay" />
       <SiteHeader active="home" />

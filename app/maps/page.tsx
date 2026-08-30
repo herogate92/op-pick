@@ -4,7 +4,11 @@ import { MapExplorer } from "@/components/MapExplorer";
 import { SiteHeader } from "@/components/SiteHeader";
 import { heroes, maps } from "@/lib/data";
 
-export const metadata: Metadata = { title: "맵별 추천 영웅", description: "전장과 게임 모드별로 추천 영웅을 빠르게 확인합니다." };
+export const metadata: Metadata = {
+  title: "오버워치 맵별 추천 영웅",
+  description: "전장과 게임 모드별로 추천 영웅을 역할별로 빠르게 확인합니다.",
+  alternates: { canonical: "/maps/" },
+};
 
 export default function MapsPage() {
   const publicMaps = maps.map(({ id, name, mode, recommendations }) => ({

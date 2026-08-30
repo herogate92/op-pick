@@ -5,7 +5,11 @@ import { ScoreMeter } from "@/components/ScoreMeter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { combos, getHero } from "@/lib/data";
 
-export const metadata: Metadata = { title: "궁극기와 팀 조합", description: "대표 궁극기 연계, 사용 타이밍과 대응 영웅을 확인합니다." };
+export const metadata: Metadata = {
+  title: "오버워치 궁극기와 팀 조합",
+  description: "대표 궁극기 연계, 사용 타이밍과 대응 영웅을 확인합니다.",
+  alternates: { canonical: "/combos/" },
+};
 
 export default function CombosPage() {
   return (

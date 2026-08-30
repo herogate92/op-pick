@@ -3,8 +3,13 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://opick.ggwp.kr"),
-  title: { default: "OP PICK LAB", template: "%s | OP PICK LAB" },
+  title: { default: "OP PICK LAB | 오버워치 영웅 상성·카운터 픽·맵별 추천", template: "%s | OP PICK LAB" },
   description: "오버워치 영웅 정보, 카운터 픽과 궁극기 조합을 빠르게 확인하는 비공식 팬 가이드입니다.",
+  applicationName: "OP PICK LAB",
+  authors: [{ name: "OP PICK LAB" }],
+  creator: "OP PICK LAB",
+  publisher: "OP PICK LAB",
+  robots: { index: true, follow: true },
   openGraph: {
     title: "OP PICK LAB · 오버워치 픽 연구소",
     description: "픽은 빠르게, 판단은 정확하게. 영웅 상성과 조합을 한눈에 확인하세요.",

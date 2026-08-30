@@ -7,6 +7,7 @@ import { combos, heroes, maps, teamCautions, teamSynergies } from "@/lib/data";
 export const metadata: Metadata = {
   title: "팀 조합 연구소",
   description: "5대5 역할 고정과 6대6 자유 구성으로 아군 영웅을 조합하고 역할 균형과 궁극기 연계를 확인합니다.",
+  alternates: { canonical: "/team-builder/" },
 };
 
 export default function TeamBuilderPage() {

@@ -47,3 +47,10 @@ export function getHero(key: string) { return heroes.find((hero) => hero.key ===
 export function getCountersFor(key: string) { return matchups.filter((matchup) => matchup.hero === key); }
 export function getStrongAgainst(key: string) { return matchups.filter((matchup) => matchup.counter === key); }
 export function getCombosFor(key: string) { return combos.filter((combo) => combo.heroes.includes(key)); }
+export function hasDetailedMatchupData(matchup: Matchup) {
+  return !/핵심 운영을 방해하거나|통계·평가는 패치/.test(`${matchup.reason} ${matchup.condition}`);
+}
+export const detailedMatchups = matchups.filter(hasDetailedMatchupData);
+export function getDetailedMatchup(pair: string) {
+  return detailedMatchups.find((matchup) => `${matchup.hero}-vs-${matchup.counter}` === pair);
+}

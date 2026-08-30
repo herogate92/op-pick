@@ -49,6 +49,7 @@ export function MapExplorer({ maps, heroes }: { maps: PublicMapGuide[]; heroes: 
           <section className="map-recommend-panel" aria-live="polite">
             <header className="map-recommend-heading">
               <div><span className="section-kicker">MAP HERO PICKS</span><h2>{selected.name}</h2><p>{selected.mode} · 추천 영웅 {selected.recommendations.length}명</p></div>
+              <Link href={`/maps/${selected.id}/`} className="text-link">상세 추천 보기</Link>
             </header>
             <div className="map-role-sections">
               {(["tank", "damage", "support"] as Role[]).map((role) => {
