@@ -1,0 +1,47 @@
+[
+  {
+    "id": "lucio-zenyatta-sustain",
+    "heroes": ["lucio", "zenyatta"],
+    "penalty": 3,
+    "reason": "순간 집중 치유가 부족해 긴 교전에서 전선 유지가 어려울 수 있습니다.",
+    "mitigation": "짧게 진입하고 빠지는 조합을 구성하거나 다른 역할에서 생존 기술을 보강하세요.",
+    "modes": ["5v5", "6v6"],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "mercy-lifeweaver-pressure",
+    "heroes": ["mercy", "lifeweaver"],
+    "penalty": 2,
+    "reason": "두 지원가가 치유와 구조에 집중하면 정면 화력과 교전 개시 수단이 부족할 수 있습니다.",
+    "mitigation": "돌격과 공격 영웅이 확실한 진입 수단 또는 원거리 처치 능력을 갖추는 편이 좋습니다.",
+    "modes": ["5v5", "6v6"],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "reinhardt-widowmaker-range",
+    "heroes": ["reinhardt", "widowmaker"],
+    "penalty": 2,
+    "reason": "라인하르트의 근접 전선과 위도우메이커의 장거리 시야각이 서로 다른 교전 위치를 요구합니다.",
+    "mitigation": "시야가 긴 전장에서는 위도우메이커의 선제 처치 후 라인하르트가 진입하는 순서를 맞추세요.",
+    "modes": ["5v5", "6v6"],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "reinhardt-pharah-height",
+    "heroes": ["reinhardt", "pharah"],
+    "penalty": 2,
+    "reason": "지상 방벽과 공중 공격이 분리되어 서로의 직접적인 보호를 받기 어렵습니다.",
+    "mitigation": "나머지 영웅이 지상 전선을 유지하고 파라는 측면 각도로 압박하도록 역할을 분리하세요.",
+    "modes": ["5v5", "6v6"],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "winston-moira-range",
+    "heroes": ["winston", "moira"],
+    "penalty": 2,
+    "reason": "윈스턴이 고지대나 먼 후방으로 진입하면 모이라의 안정적인 치유 범위를 벗어날 수 있습니다.",
+    "mitigation": "치유 구슬 경로와 이탈 위치를 먼저 정하고, 무리한 장거리 점프를 피하세요.",
+    "modes": ["5v5", "6v6"],
+    "reviewedAt": "2026-08-30"
+  }
+]

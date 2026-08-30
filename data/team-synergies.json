@@ -1,0 +1,119 @@
+[
+  {
+    "id": "jetpack-cat-pharah",
+    "heroes": ["jetpack-cat", "pharah"],
+    "score": 4,
+    "type": "공중 기동",
+    "reason": "제트팩 캣은 생명줄로 공중의 파라를 따라가며 이동과 치유를 함께 지원할 수 있습니다.",
+    "modes": ["5v5", "6v6"],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "jetpack-cat-reinhardt",
+    "heroes": ["jetpack-cat", "reinhardt"],
+    "score": 3,
+    "type": "진입 보조",
+    "reason": "생명줄로 라인하르트의 짧은 교전 거리를 보완할 수 있지만, 운송 경로와 착지 지점을 맞춰야 합니다.",
+    "modes": ["5v5", "6v6"],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "dmon-lucio",
+    "heroes": ["dmon", "lucio"],
+    "score": 5,
+    "type": "근접 돌진",
+    "reason": "루시우의 속도 증폭은 플라스마 세이버 중심의 D.Mon이 유효 거리까지 빠르게 진입하도록 돕습니다.",
+    "modes": ["5v5", "6v6"],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "dmon-dva",
+    "heroes": ["dmon", "dva"],
+    "score": 4,
+    "type": "이중 MEKA 전선",
+    "reason": "D.Mon이 정면을 압박하는 동안 D.Va가 고지대와 측면을 견제하는 6대6 역할 분담이 가능합니다.",
+    "modes": ["6v6"],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "domina-symmetra",
+    "heroes": ["domina", "symmetra"],
+    "score": 3,
+    "type": "거점 통제",
+    "reason": "도미나의 방벽 배열과 시메트라의 순간이동기·감시 포탑을 함께 사용해 좁은 진입로를 통제할 수 있습니다.",
+    "modes": ["5v5", "6v6"],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "mizuki-kiriko",
+    "heroes": ["mizuki", "kiriko"],
+    "score": 4,
+    "type": "방어 순환",
+    "reason": "미즈키의 결계 성역이 투사체를 흡수하고 키리코의 정화가 상태 이상을 해제해 서로 다른 위협에 대응합니다.",
+    "modes": ["5v5", "6v6"],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "anran-winston",
+    "heroes": ["anran", "winston"],
+    "score": 4,
+    "type": "집중 다이브",
+    "reason": "두 영웅 모두 빠르게 후방에 진입할 수 있어 같은 대상을 지정하면 압박을 집중하기 쉽습니다.",
+    "modes": ["5v5", "6v6"],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "vendetta-ana",
+    "heroes": ["vendetta", "ana"],
+    "score": 4,
+    "type": "나노 근접 압박",
+    "reason": "나노 강화제는 근접 전투에 진입한 벤데타의 공격과 생존을 동시에 보완합니다.",
+    "modes": ["5v5", "6v6"],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "winston-tracer",
+    "heroes": ["winston", "tracer"],
+    "score": 5,
+    "type": "집중 다이브",
+    "reason": "윈스턴의 점프 팩 진입에 트레이서가 합류해 고립된 같은 대상을 빠르게 압박합니다.",
+    "modes": ["5v5", "6v6"],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "reinhardt-lucio",
+    "heroes": ["reinhardt", "lucio"],
+    "score": 5,
+    "type": "속도 브롤",
+    "reason": "루시우의 속도 증폭이 라인하르트의 접근과 후퇴를 도와 근접 교전 주도권을 높입니다.",
+    "modes": ["5v5", "6v6"],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "pharah-mercy",
+    "heroes": ["pharah", "mercy"],
+    "score": 5,
+    "type": "공중 지원",
+    "reason": "메르시는 수호천사로 파라를 따라가며 치유 또는 공격력 증폭을 지속할 수 있습니다.",
+    "modes": ["5v5", "6v6"],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "sigma-baptiste",
+    "heroes": ["sigma", "baptiste"],
+    "score": 4,
+    "type": "원거리 유지",
+    "reason": "시그마의 방벽과 바티스트의 불사 장치·증폭 매트릭스가 중장거리 교전을 안정적으로 유지합니다.",
+    "modes": ["5v5", "6v6"],
+    "reviewedAt": "2026-08-30"
+  },
+  {
+    "id": "juno-winston",
+    "heroes": ["juno", "winston"],
+    "score": 4,
+    "type": "기동 다이브",
+    "reason": "주노의 하이퍼 링이 윈스턴과 아군의 진입·이탈 속도를 보완합니다.",
+    "modes": ["5v5", "6v6"],
+    "reviewedAt": "2026-08-30"
+  }
+]

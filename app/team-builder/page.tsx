@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { AdSlot } from "@/components/AdSlot";
 import { SiteHeader } from "@/components/SiteHeader";
 import { TeamBuilder } from "@/components/TeamBuilder";
-import { combos, heroes } from "@/lib/data";
+import { combos, heroes, maps, teamCautions, teamSynergies } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "팀 조합 연구소",
@@ -14,7 +14,7 @@ export default function TeamBuilderPage() {
   return (
     <main className="page-shell team-builder-page">
       <SiteHeader active="team-builder" />
-      <TeamBuilder heroes={roster} combos={combos} />
+      <TeamBuilder heroes={roster} combos={combos} maps={maps} synergies={teamSynergies} cautions={teamCautions} />
       <AdSlot kind="banner" />
     </main>
   );

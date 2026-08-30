@@ -4,11 +4,13 @@ import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const read = async (name) => JSON.parse(await readFile(join(root, "data", name), "utf8"));
-const [heroes, matchups, combos, maps] = await Promise.all([
+const [heroes, matchups, combos, maps, teamSynergies, teamCautions] = await Promise.all([
   read("heroes.json"),
   read("matchups.json"),
   read("combos.json"),
   read("maps.json"),
+  read("team-synergies.json"),
+  read("team-cautions.json"),
 ]);
 
 const errors = [];
@@ -61,6 +63,27 @@ for (const combo of combos) {
   if (!combo.reviewedAt) errors.push(`조합 검수일 누락: ${combo.id}`);
 }
 
+const validTeamModes = new Set(["5v5", "6v6"]);
+const synergyIds = new Set();
+for (const synergy of teamSynergies) {
+  if (!synergy.id || synergyIds.has(synergy.id)) errors.push(`중복 또는 빈 팀 시너지 ID: ${synergy.id}`);
+  synergyIds.add(synergy.id);
+  if (synergy.heroes?.length !== 2 || !synergy.heroes.every((key) => keys.has(key)) || synergy.heroes[0] === synergy.heroes[1]) errors.push(`팀 시너지 영웅 오류: ${synergy.id}`);
+  if (synergy.score < 1 || synergy.score > 5) errors.push(`팀 시너지 점수 범위 오류: ${synergy.id}`);
+  if (!synergy.reason || !synergy.type || !synergy.reviewedAt) errors.push(`팀 시너지 설명 또는 검수일 누락: ${synergy.id}`);
+  if (!synergy.modes?.length || !synergy.modes.every((mode) => validTeamModes.has(mode))) errors.push(`팀 시너지 모드 오류: ${synergy.id}`);
+}
+
+const cautionIds = new Set();
+for (const caution of teamCautions) {
+  if (!caution.id || cautionIds.has(caution.id)) errors.push(`중복 또는 빈 주의 조합 ID: ${caution.id}`);
+  cautionIds.add(caution.id);
+  if (caution.heroes?.length !== 2 || !caution.heroes.every((key) => keys.has(key)) || caution.heroes[0] === caution.heroes[1]) errors.push(`주의 조합 영웅 오류: ${caution.id}`);
+  if (caution.penalty < 1 || caution.penalty > 5) errors.push(`주의 조합 감점 범위 오류: ${caution.id}`);
+  if (!caution.reason || !caution.mitigation || !caution.reviewedAt) errors.push(`주의 조합 설명 또는 검수일 누락: ${caution.id}`);
+  if (!caution.modes?.length || !caution.modes.every((mode) => validTeamModes.has(mode))) errors.push(`주의 조합 모드 오류: ${caution.id}`);
+}
+
 if (!heroes.some((hero) => hero.name === "D.Va")) errors.push("D.Va 이름 검증 실패");
 if (!heroes.some((hero) => hero.name === "솔저: 76")) errors.push("솔저: 76 이름 검증 실패");
 
@@ -69,4 +92,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`데이터 검증 완료: 영웅 ${heroes.length}, 상성 ${matchups.length}, 조합 ${combos.length}, 맵 ${maps.length}, 맵 추천 ${maps.reduce((sum, map) => sum + map.recommendations.length, 0)}`);
+console.log(`데이터 검증 완료: 영웅 ${heroes.length}, 상성 ${matchups.length}, 궁 조합 ${combos.length}, 팀 시너지 ${teamSynergies.length}, 주의 조합 ${teamCautions.length}, 맵 ${maps.length}, 맵 추천 ${maps.reduce((sum, map) => sum + map.recommendations.length, 0)}`);
