@@ -15,8 +15,14 @@ export default function HomePage() {
         <h1><span>OP</span> PICK LAB</h1>
         <p>영웅을 이해하고, 상성을 확인하고, 가장 잘 맞는 아군 조합을 설계하세요.</p>
         <div className="cinematic-actions">
-          <Link href="/heroes/" className="cinematic-primary"><Shield aria-hidden="true" /> 영웅 선택 <ArrowRight aria-hidden="true" /></Link>
-          <Link href="/team-builder/" className="cinematic-secondary"><UsersRound aria-hidden="true" /> 팀 조합 만들기</Link>
+          <Link href="/heroes/" className="cinematic-primary">
+            <span className="cta-electricity" aria-hidden="true"><span /><span /><span /><span /></span>
+            <span className="cta-content"><Shield aria-hidden="true" /> 영웅 선택 <ArrowRight aria-hidden="true" /></span>
+          </Link>
+          <Link href="/team-builder/" className="cinematic-secondary">
+            <span className="cta-electricity" aria-hidden="true"><span /><span /><span /><span /></span>
+            <span className="cta-content"><UsersRound aria-hidden="true" /> 팀 조합 만들기</span>
+          </Link>
         </div>
       </section>
       <nav className="home-quick-nav" aria-label="빠른 메뉴">
