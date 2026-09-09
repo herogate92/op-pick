@@ -21,8 +21,9 @@ export default function RatesPage() {
       </section>
       <div className="content-with-rail rates-layout">
         <div className="page-content">
-          <StatsExplorer snapshots={heroRates.snapshots} heroes={heroes} fetchedAt={heroRates.fetchedAt} />
+          <StatsExplorer snapshots={heroRates.snapshots} heroes={heroes} fetchedAt={heroRates.fetchedAtIso ? new Intl.DateTimeFormat("ko-KR", { timeZone: "Asia/Seoul", dateStyle: "medium", timeStyle: "short" }).format(new Date(heroRates.fetchedAtIso)) + " KST" : heroRates.fetchedAt} />
           <p className="stats-disclaimer">{heroRates.notice}</p>
+          <p className="stats-disclaimer">매일 한국 시간 오전 6:17에 갱신을 시도합니다. 실행은 지연될 수 있으며, 수집·검증에 실패하면 마지막 성공 자료를 유지합니다. <a href="https://github.com/herogate92/op-pick/actions/workflows/pages.yml" target="_blank" rel="noreferrer">갱신 상태 확인</a></p>
           <p className="stats-disclaimer">픽률은 전체 영웅 플레이 시간 대비 비율입니다. 표본이 부족한 값은 <strong>--</strong>로 표시하며, 수치는 패치·지역·입력 방식·등급·전장에 따라 달라집니다.</p>
           <AdSlot kind="banner" />
         </div>

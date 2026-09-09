@@ -128,6 +128,7 @@ const document = {
   fetchedAt,
   notice: "Blizzard 공개 통계를 OverFast API 우선, 공식 페이지 대체 방식으로 수집했습니다. 수집일은 제공자의 집계 종료일이나 최신 패치 이후 경기만을 의미하지 않습니다.",
   snapshots: await Promise.all(snapshots.map(fetchSnapshot)),
+  fetchedAtIso: new Date().toISOString(),
 };
 
 // Validate both snapshots before replacing the last good file, including provider fallbacks.

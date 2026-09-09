@@ -1048,3 +1048,12 @@ body:not(.ads-enabled) .ad-placeholder { display: none !important; }
   .matchup-guide-card > .condition-box, .matchup-guide-card > footer { margin-left: 0; }
   .matchup-guide-card > footer { align-items: flex-start; flex-direction: column; }
 }
+
+.combo-filters { display:flex; flex-wrap:wrap; align-items:end; gap:14px; padding:20px; border:1px solid var(--border); margin-bottom:16px; }
+.combo-filters label { display:grid; gap:8px; flex:1 1 180px; font-size:14px; }
+.combo-filters input, .combo-filters select, .combo-filters button { min-height:44px; padding:10px 12px; border:1px solid #405269; background:#0d1a2c; color:#eef5ff; border-radius:4px; }
+.combo-filters input:focus-visible, .combo-filters select:focus-visible, .combo-filters button:focus-visible { outline:2px solid #79d4e8; outline-offset:3px; }
+.combo-grid > [hidden], .synergy-category-section[hidden] { display:none; }
+.combo-grid > div > article { height:100%; }
+.evidence-score-card p, .evidence-score-card details { font-size:14px; line-height:1.7; color:#b8c6d9; }
+.issues-card p.neutral { color:#b8c6d9; }

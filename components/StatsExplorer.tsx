@@ -45,7 +45,7 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt }: { snapshots: Her
   return (
     <div className="stats-explorer">
       <div className="stats-source-bar">
-        <span><strong>Blizzard 기반 통계 스냅샷</strong><small>{fetchedAt} 확인 · {snapshot.dataProviderLabel}로 갱신</small></span>
+        <span><strong>Blizzard 기반 통계 스냅샷</strong><small>마지막 성공 수집: {fetchedAt} · {snapshot.dataProviderLabel}로 갱신</small></span>
         <a href={snapshot.sourceUrl} target="_blank" rel="noreferrer">Blizzard에서 상세 필터 열기<ExternalLink aria-hidden="true" /></a>
       </div>
       <section className="stats-summary" aria-label="통계 요약">
