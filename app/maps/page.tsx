@@ -11,22 +11,16 @@ export const metadata: Metadata = {
 };
 
 export default function MapsPage() {
-  const publicMaps = maps.map(({ id, name, mode, recommendations }) => ({
-    id,
-    name,
-    mode,
-    recommendations: recommendations.map(({ hero, rank, winRate }) => ({ hero, rank, winRate })),
-  }));
   return (
     <main className="page-shell maps-page">
       <SiteHeader active="maps" />
       <section className="page-intro">
         <span className="section-kicker">MAP GUIDE</span>
         <h1>맵별 <em>추천 영웅</em></h1>
-        <p>게임 모드와 전장을 선택하면 해당 맵에서 성과가 좋은 영웅을 역할별로 보여드립니다.</p>
+        <p>전장 구조와 영웅 기술을 연결한 추천 이유, 유효한 조건과 주의점을 확인하세요. 통계 순위가 아닌 전략 분석입니다.</p>
       </section>
       <div className="content-with-rail">
-        <div className="page-content"><MapExplorer maps={publicMaps} heroes={heroes} /><AdSlot kind="banner" /></div>
+        <div className="page-content"><MapExplorer maps={maps} heroes={heroes} /><AdSlot kind="banner" /></div>
         <AdSlot kind="rail" />
       </div>
     </main>

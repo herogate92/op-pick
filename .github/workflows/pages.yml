@@ -24,6 +24,9 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - run: npm run data:rates:test
+      - name: Refresh statistics before deployment
+        run: npm run data:rates
       - run: npm run data:validate
       - run: npm run videos:validate
       - run: npm run lint

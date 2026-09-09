@@ -7,6 +7,7 @@ import { ArrowLeftRight, CheckCircle2, Cross, HelpCircle, Shield, ShieldAlert, S
 import type { Hero, Matchup, Role } from "@/lib/data";
 import { roleLabels } from "@/lib/data";
 import { ScoreMeter } from "./ScoreMeter";
+import { MatchupSkillExamples } from "./MatchupSkillExamples";
 
 type RoleFilter = Role | "all";
 const roleOptions: RoleFilter[] = ["all", "tank", "damage", "support"];
@@ -48,6 +49,7 @@ export function MatchupExplorer({ heroes, matchups }: { heroes: Hero[]; matchups
               <h2><strong>{relation.winner.name}</strong>이(가) {relation.loser.name}을(를) 상대하기 {relation.data.status === "verified" ? "유리합니다" : "유리할 가능성이 있습니다"}</h2>
               <ScoreMeter value={relation.data.score} label={relation.data.status === "verified" ? "상성 강도" : "초기 평가"} />
               <p>{relation.data.reason}</p>
+              <MatchupSkillExamples matchup={relation.data} heroName={relation.loser.name} counterName={relation.winner.name} />
               <div className="condition-box"><CheckCircle2 /><span><strong>대응 포인트</strong>{relation.data.counterplay}</span></div>
               <div className="verdict-source-row"><small>{relation.data.patchBasis} · 마지막 검수 {relation.data.reviewedAt}</small></div>
             </div>

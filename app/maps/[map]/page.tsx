@@ -53,7 +53,7 @@ export default async function MapDetailPage({ params }: { params: Promise<{ map:
       <section className="page-intro seo-detail-intro">
         <span className="section-kicker">MAP GUIDE · {map.mode}</span>
         <h1>{map.name} <em>추천 영웅</em></h1>
-        <p>역할별 추천 우선순위와 참고 승률을 한 페이지에서 확인하세요.</p>
+        <p>{map.analysisBasis}</p>
       </section>
       <div className="content-with-rail">
         <div className="page-content">
@@ -62,6 +62,7 @@ export default async function MapDetailPage({ params }: { params: Promise<{ map:
             <span><CalendarDays aria-hidden="true" />마지막 검수 {map.reviewedAt}</span>
             <Link href="/maps/"><ArrowLeft aria-hidden="true" />전체 맵 선택</Link>
           </section>
+          <p className="seo-guide-note">전장 특징: {map.terrain}<br />{map.layoutCaveat}</p>
           {(["tank", "damage", "support"] as Role[]).map((role) => {
             const recommendations = map.recommendations.filter((item) => getHero(item.hero)?.role === role);
             if (!recommendations.length) return null;
@@ -76,9 +77,11 @@ export default async function MapDetailPage({ params }: { params: Promise<{ map:
                         <Link href={`/heroes/${hero.key}/`} className="seo-guide-hero">
                           {/* eslint-disable-next-line @next/next/no-img-element */}<img src={hero.portrait} alt={`${hero.name} 영웅 초상`} />
                           <span><strong>{hero.name}</strong><small>{roleLabels[hero.role]}</small></span>
-                          <em>TOP {item.rank}</em>
                         </Link>
-                        <p>{item.note}</p><small>참고 승률 {item.winRate.toFixed(1)}%</small>
+                        <p>{item.note}</p>
+                        <p><strong>유효한 조건</strong> · {item.condition}</p>
+                        <p><strong>주의할 점</strong> · {item.caution}</p>
+                        <small><a href={item.sourceUrls[0]} target="_blank" rel="noreferrer">기술 설명 근거</a></small>
                       </article>
                     );
                   })}
@@ -86,7 +89,7 @@ export default async function MapDetailPage({ params }: { params: Promise<{ map:
               </section>
             );
           })}
-          <p className="seo-guide-note">추천 결과는 패치, 플랫폼, 지역, 등급과 팀 조합에 따라 달라질 수 있습니다.</p>
+          <p className="seo-guide-note">추천은 조건부 전략 분석이며 패치·팀 조합에 따라 달라집니다. 기존 맵 승률은 수집 조건과 원출처가 확인되지 않아 표시를 보류했습니다. 최신 전체 맵 통계는 <Link href="/rates/">승률·픽률</Link>에서 확인하세요. {map.sourceUrls.map((url, index) => <a key={url} href={url} target="_blank" rel="noreferrer"> 전장 자료 {index + 1}</a>)}</p>
           <AdSlot kind="banner" />
         </div>
         <AdSlot kind="rail" />

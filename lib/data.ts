@@ -12,7 +12,8 @@ export interface AbilityVideo { thumbnail: string; mp4: string; webm: string; }
 export interface Ability {
   name: string; description: string; icon: string;
   video?: AbilityVideo;
-  stats?: AbilityStat[]; statsCheckedAt?: string;
+  stats?: AbilityStat[]; statsCheckedAt?: string; statsSourceUrl?: string;
+  statsPatchDate?: string; statsScope?: string; statsBasis?: string;
 }
 export interface StoryMedia { type: string; link: string; }
 export interface StoryChapter { title: string; picture: string; }
@@ -23,17 +24,29 @@ export interface Hero {
   abilities: Ability[]; perks: { minor: Ability[]; major: Ability[] }; storySummary: string;
   storyMedia: StoryMedia | null; storyChapters: StoryChapter[];
   sourceUrl: string; checkedAt: string; reviewStatus: "verified" | "review-needed";
+  abilitiesCheckedAt?: string; abilitiesSourceUrl?: string; hitpointsNotice?: string;
 }
 export type MatchupStatus = "verified" | "provisional";
 export type MatchupConfidence = "high" | "medium" | "low";
+export interface SkillInteraction {
+  heroAbility: string; counterAbility: string; interaction: string; condition: string; counterplay: string;
+}
 export interface Matchup {
   id: string; hero: string; counter: string; score: number; reason: string; condition: string;
   counterplay: string; status: MatchupStatus; confidence: MatchupConfidence; patchBasis: string; reviewedAt: string;
   evidence?: string[];
+  skillInteractions?: SkillInteraction[];
+  sourceUrls?: string[];
 }
 export interface Combo { id: string; name: string; heroes: string[]; score: number; difficulty: number; description: string; timing: string; counters: string[]; reviewedAt: string; }
-export interface MapRecommendation { hero: string; rank: number; winRate: number; note: string; }
-export interface MapGuide { id: string; name: string; mode: string; recommendations: MapRecommendation[]; reviewedAt: string; }
+export interface MapRecommendation {
+  hero: string; rank: number; winRate: number | null; note: string;
+  condition: string; caution: string; sourceUrls: string[];
+}
+export interface MapGuide {
+  id: string; name: string; mode: string; recommendations: MapRecommendation[]; reviewedAt: string;
+  terrain: string; analysisBasis: string; layoutCaveat: string; sourceUrls: string[];
+}
 export type TeamMode = "5v5" | "6v6";
 export interface TeamSynergy { id: string; heroes: [string, string]; score: number; type: string; reason: string; modes: TeamMode[]; reviewedAt: string; }
 export interface TeamCaution { id: string; heroes: [string, string]; penalty: number; reason: string; mitigation: string; modes: TeamMode[]; reviewedAt: string; }
