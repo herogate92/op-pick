@@ -501,14 +501,27 @@
     "id": "bastion-sigma",
     "hero": "bastion",
     "counter": "sigma",
-    "score": 4,
-    "reason": "시그마은(는) 바스티온의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "시그마가 키네틱 손아귀로 강습 사격을 흡수하면 바스티온의 집중 화력이 막히고 시그마의 생존 자원으로 전환됩니다.",
+    "condition": "키네틱 손아귀가 켜진 시그마 정면에 사격을 집중할 때.",
+    "reviewedAt": "2026-09-09",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "counterplay": "흡수 중에는 사격을 멈추거나 다른 적으로 목표를 바꾸고, 손아귀가 끝난 뒤 강습 화력을 집중하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "설정: 강습",
+        "counterAbility": "키네틱 손아귀",
+        "interaction": "시그마가 키네틱 손아귀로 강습 사격을 흡수하면 바스티온의 집중 화력이 막히고 시그마의 생존 자원으로 전환됩니다.",
+        "condition": "키네틱 손아귀가 켜진 시그마 정면에 사격을 집중할 때.",
+        "counterplay": "흡수 중에는 사격을 멈추거나 다른 적으로 목표를 바꾸고, 손아귀가 끝난 뒤 강습 화력을 집중하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/bastion?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/sigma?locale=ko-kr"
+    ]
   },
   {
     "id": "bastion-sojourn",
@@ -553,14 +566,27 @@
     "id": "brigitte-pharah",
     "hero": "brigitte",
     "counter": "pharah",
-    "score": 5,
-    "reason": "파라은(는) 브리기테의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "파라는 공중에서 로켓을 쏘며 로켓 도리깨의 근거리 범위 밖에 머물 수 있어 브리기테가 기본 공격으로 반격하거나 격려를 발동하기 어렵습니다.",
+    "condition": "파라가 비행할 공간과 사선을 확보했고 브리기테와 거리를 유지할 때.",
+    "reviewedAt": "2026-09-09",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "counterplay": "파라를 따라 개방된 곳으로 나가지 말고 천장이 있는 엄폐를 이용해 아군을 보호하며 도리깨 투척 기회를 보세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "로켓 도리깨",
+        "counterAbility": "로켓 런처",
+        "interaction": "파라는 공중에서 로켓을 쏘며 로켓 도리깨의 근거리 범위 밖에 머물 수 있어 브리기테가 기본 공격으로 반격하거나 격려를 발동하기 어렵습니다.",
+        "condition": "파라가 비행할 공간과 사선을 확보했고 브리기테와 거리를 유지할 때.",
+        "counterplay": "파라를 따라 개방된 곳으로 나가지 말고 천장이 있는 엄폐를 이용해 아군을 보호하며 도리깨 투척 기회를 보세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/brigitte?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/pharah?locale=ko-kr"
+    ]
   },
   {
     "id": "brigitte-bastion",
@@ -1266,14 +1292,27 @@
     "id": "echo-dva",
     "hero": "echo",
     "counter": "dva",
-    "score": 4,
-    "reason": "D.Va은(는) 에코의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "D.Va는 점착 폭탄이 부착되기 전에 매트릭스로 제거해 에코의 폭발 후 광선 집중 연계를 약화시킬 수 있습니다.",
+    "condition": "폭탄이 비행 중이며 매트릭스 영역에 들어갈 때. 이미 부착된 폭탄은 제거하지 못합니다.",
+    "reviewedAt": "2026-09-09",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "counterplay": "매트릭스를 먼저 유도하고 다른 각도에서 폭탄을 붙이세요. 광선 집중은 투사체와 별개로 활용하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "점착 폭탄",
+        "counterAbility": "방어 매트릭스",
+        "interaction": "D.Va는 점착 폭탄이 부착되기 전에 매트릭스로 제거해 에코의 폭발 후 광선 집중 연계를 약화시킬 수 있습니다.",
+        "condition": "폭탄이 비행 중이며 매트릭스 영역에 들어갈 때. 이미 부착된 폭탄은 제거하지 못합니다.",
+        "counterplay": "매트릭스를 먼저 유도하고 다른 각도에서 폭탄을 붙이세요. 광선 집중은 투사체와 별개로 활용하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/echo?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/dva?locale=ko-kr"
+    ]
   },
   {
     "id": "echo-emre",
@@ -1331,14 +1370,27 @@
     "id": "emre-dva",
     "hero": "emre",
     "counter": "dva",
-    "score": 4,
-    "reason": "D.Va은(는) 엠레의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "D.Va가 날아오는 사이버 파편 수류탄을 매트릭스로 제거하면 튕긴 뒤 폭발하는 범위 압박을 차단할 수 있습니다.",
+    "condition": "수류탄이 아직 폭발하지 않았고 매트릭스의 방어 영역을 지날 때.",
+    "reviewedAt": "2026-09-09",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "counterplay": "매트릭스 종료 후 던지거나 옆 엄폐면을 이용해 튕기는 경로를 바꾸세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "사이버 파편 수류탄",
+        "counterAbility": "방어 매트릭스",
+        "interaction": "D.Va가 날아오는 사이버 파편 수류탄을 매트릭스로 제거하면 튕긴 뒤 폭발하는 범위 압박을 차단할 수 있습니다.",
+        "condition": "수류탄이 아직 폭발하지 않았고 매트릭스의 방어 영역을 지날 때.",
+        "counterplay": "매트릭스 종료 후 던지거나 옆 엄폐면을 이용해 튕기는 경로를 바꾸세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/emre?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/dva?locale=ko-kr"
+    ]
   },
   {
     "id": "emre-sigma",
@@ -1396,14 +1448,27 @@
     "id": "freja-dva",
     "hero": "freja",
     "counter": "dva",
-    "score": 4,
-    "reason": "D.Va은(는) 프레야의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "정조준의 폭발 화살이 적중 전에 매트릭스에 제거되면 프레야의 직격 후 폭발 피해 연계가 끊깁니다.",
+    "condition": "폭발 화살이 아직 비행 중이고 활성 매트릭스 영역을 지날 때.",
+    "reviewedAt": "2026-09-09",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "counterplay": "상승기류와 재빠른 돌진으로 발사 각도를 바꾸고 매트릭스 종료 시점에 정조준을 맞추세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "정조준",
+        "counterAbility": "방어 매트릭스",
+        "interaction": "정조준의 폭발 화살이 적중 전에 매트릭스에 제거되면 프레야의 직격 후 폭발 피해 연계가 끊깁니다.",
+        "condition": "폭발 화살이 아직 비행 중이고 활성 매트릭스 영역을 지날 때.",
+        "counterplay": "상승기류와 재빠른 돌진으로 발사 각도를 바꾸고 매트릭스 종료 시점에 정조준을 맞추세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/freja?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/dva?locale=ko-kr"
+    ]
   },
   {
     "id": "freja-illari",
@@ -1747,14 +1812,27 @@
     "id": "hazard-ana",
     "hero": "hazard",
     "counter": "ana",
-    "score": 4,
-    "reason": "아나은(는) 해저드의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "날카로운 저항의 전방 방어는 수면 면역이 아니므로 수면총에 맞으면 방어 자세 중에도 잠들 수 있습니다.",
+    "condition": "아나가 수면총을 보유하고 해저드에게 직접 적중시킬 사선이 있을 때.",
+    "reviewedAt": "2026-09-09",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "counterplay": "가시벽이나 지형으로 아나의 사선을 끊고 수면총이 빠진 뒤 덤벼들기로 진입하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "날카로운 저항",
+        "counterAbility": "수면총",
+        "interaction": "날카로운 저항의 전방 방어는 수면 면역이 아니므로 수면총에 맞으면 방어 자세 중에도 잠들 수 있습니다.",
+        "condition": "아나가 수면총을 보유하고 해저드에게 직접 적중시킬 사선이 있을 때.",
+        "counterplay": "가시벽이나 지형으로 아나의 사선을 끊고 수면총이 빠진 뒤 덤벼들기로 진입하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/hazard?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/ana?locale=ko-kr"
+    ]
   },
   {
     "id": "hazard-echo",
@@ -1838,14 +1916,27 @@
     "id": "illari-dva",
     "hero": "illari",
     "counter": "dva",
-    "score": 4,
-    "reason": "D.Va은(는) 일리아리의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "D.Va는 태양 작렬의 발사체가 폭발하기 전에 흡수하여 궁극기의 적중과 후속 폭발 기회를 없앨 수 있습니다.",
+    "condition": "궁극기 발사체가 활성 매트릭스 영역을 통과할 때. 이미 적용된 효과를 지우는 것은 아닙니다.",
+    "reviewedAt": "2026-09-09",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "counterplay": "D.Va의 위치와 매트릭스 방향을 확인하고, 다른 각도 또는 매트릭스가 소모된 타이밍에 발사하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "태양 작렬",
+        "counterAbility": "방어 매트릭스",
+        "interaction": "D.Va는 태양 작렬의 발사체가 폭발하기 전에 흡수하여 궁극기의 적중과 후속 폭발 기회를 없앨 수 있습니다.",
+        "condition": "궁극기 발사체가 활성 매트릭스 영역을 통과할 때. 이미 적용된 효과를 지우는 것은 아닙니다.",
+        "counterplay": "D.Va의 위치와 매트릭스 방향을 확인하고, 다른 각도 또는 매트릭스가 소모된 타이밍에 발사하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/illari?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/dva?locale=ko-kr"
+    ]
   },
   {
     "id": "illari-hanzo",
@@ -2084,14 +2175,27 @@
     "id": "junker-queen-kiriko",
     "hero": "junker-queen",
     "counter": "kiriko",
-    "score": 4,
-    "reason": "키리코은(는) 정커퀸의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "정화의 방울은 살육으로 적용된 치유 차단과 지속 피해를 해제하여 정커퀸의 궁극기 후 처치 기회를 줄입니다.",
+    "condition": "살육에 맞은 적에게 정화가 닿았을 때. 살육의 이동 자체를 멈추는 기술은 아닙니다.",
+    "reviewedAt": "2026-09-09",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "counterplay": "정화의 방울이 사용된 뒤 살육으로 진입하거나 정화 범위에 함께 들어가지 못한 적을 집중하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "살육",
+        "counterAbility": "정화의 방울",
+        "interaction": "정화의 방울은 살육으로 적용된 치유 차단과 지속 피해를 해제하여 정커퀸의 궁극기 후 처치 기회를 줄입니다.",
+        "condition": "살육에 맞은 적에게 정화가 닿았을 때. 살육의 이동 자체를 멈추는 기술은 아닙니다.",
+        "counterplay": "정화의 방울이 사용된 뒤 살육으로 진입하거나 정화 범위에 함께 들어가지 못한 적을 집중하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/junker-queen?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/kiriko?locale=ko-kr"
+    ]
   },
   {
     "id": "junker-queen-lucio",
@@ -2175,14 +2279,27 @@
     "id": "junkrat-dva",
     "hero": "junkrat",
     "counter": "dva",
-    "score": 4,
-    "reason": "D.Va은(는) 정크랫의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "매트릭스가 폭탄 발사기의 유탄을 폭발 전에 제거하므로 좁은 길의 같은 사선에 계속 쏘는 압박이 약해집니다.",
+    "condition": "유탄이 폭발하기 전에 활성 매트릭스 영역을 통과할 때.",
+    "reviewedAt": "2026-09-09",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "counterplay": "벽을 이용해 유탄 각도를 분산하고 매트릭스 종료 후 화력을 집중하세요. 이미 폭발한 피해까지 취소되는 것은 아닙니다.",
+    "skillInteractions": [
+      {
+        "heroAbility": "폭탄 발사기",
+        "counterAbility": "방어 매트릭스",
+        "interaction": "매트릭스가 폭탄 발사기의 유탄을 폭발 전에 제거하므로 좁은 길의 같은 사선에 계속 쏘는 압박이 약해집니다.",
+        "condition": "유탄이 폭발하기 전에 활성 매트릭스 영역을 통과할 때.",
+        "counterplay": "벽을 이용해 유탄 각도를 분산하고 매트릭스 종료 후 화력을 집중하세요. 이미 폭발한 피해까지 취소되는 것은 아닙니다."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/junkrat?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/dva?locale=ko-kr"
+    ]
   },
   {
     "id": "junkrat-emre",
@@ -2279,14 +2396,27 @@
     "id": "juno-dva",
     "hero": "juno",
     "counter": "dva",
-    "score": 4,
-    "reason": "D.Va은(는) 주노의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "적을 추적하는 펄사 어뢰도 활성 매트릭스에 제거될 수 있어 추적 기능만으로 D.Va의 방어를 뚫을 수 없습니다.",
+    "condition": "적에게 향하는 공격 어뢰가 매트릭스 영역을 지날 때. 아군 치유 어뢰의 모든 상호작용을 의미하지 않습니다.",
+    "reviewedAt": "2026-09-09",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "counterplay": "매트릭스가 꺼지거나 다른 방향을 향할 때 발사하고, 글라이드 부스터로 D.Va와의 사선을 분리하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "펄사 어뢰",
+        "counterAbility": "방어 매트릭스",
+        "interaction": "적을 추적하는 펄사 어뢰도 활성 매트릭스에 제거될 수 있어 추적 기능만으로 D.Va의 방어를 뚫을 수 없습니다.",
+        "condition": "적에게 향하는 공격 어뢰가 매트릭스 영역을 지날 때. 아군 치유 어뢰의 모든 상호작용을 의미하지 않습니다.",
+        "counterplay": "매트릭스가 꺼지거나 다른 방향을 향할 때 발사하고, 글라이드 부스터로 D.Va와의 사선을 분리하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/juno?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/dva?locale=ko-kr"
+    ]
   },
   {
     "id": "juno-mauga",
@@ -2578,14 +2708,27 @@
     "id": "mauga-ana",
     "hero": "mauga",
     "counter": "ana",
-    "score": 4,
-    "reason": "아나은(는) 마우가의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "아나의 치유 차단은 터질 듯한 심장으로 얻는 자가 치유를 막아 마우가의 맞사격 유지력을 낮춥니다.",
+    "condition": "마우가에게 치유 차단이 적용되어 있고 아군 정화나 엄폐로 해제·회피하지 못했을 때. 피해 감소 효과 자체는 남습니다.",
+    "reviewedAt": "2026-09-09",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "counterplay": "치유 차단이 풀릴 때까지 엄폐하고, 수류탄이 빠진 뒤 터질 듯한 심장으로 교전을 이어가세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "터질 듯한 심장",
+        "counterAbility": "생체 수류탄",
+        "interaction": "아나의 치유 차단은 터질 듯한 심장으로 얻는 자가 치유를 막아 마우가의 맞사격 유지력을 낮춥니다.",
+        "condition": "마우가에게 치유 차단이 적용되어 있고 아군 정화나 엄폐로 해제·회피하지 못했을 때. 피해 감소 효과 자체는 남습니다.",
+        "counterplay": "치유 차단이 풀릴 때까지 엄폐하고, 수류탄이 빠진 뒤 터질 듯한 심장으로 교전을 이어가세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/mauga?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/ana?locale=ko-kr"
+    ]
   },
   {
     "id": "mauga-hanzo",
@@ -2994,14 +3137,27 @@
     "id": "orisa-zarya",
     "hero": "orisa",
     "counter": "zarya",
-    "score": 4,
-    "reason": "자리야은(는) 오리사의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "수호의 창의 투사체 파괴는 자리야 입자포의 기본 광선을 막지 못하므로 정면에서도 광선 피해를 받습니다.",
+    "condition": "자리야가 기본 광선 사거리 안에서 공격할 때. 입자포 보조 사격의 구체와는 다릅니다.",
+    "reviewedAt": "2026-09-09",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "counterplay": "수호의 창만으로 버티지 말고 방어 강화와 엄폐를 활용해 광선 사거리 밖으로 이동하세요. 방벽이 켜진 자리야에게 불필요한 에너지를 주지 마세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "수호의 창",
+        "counterAbility": "입자포",
+        "interaction": "수호의 창의 투사체 파괴는 자리야 입자포의 기본 광선을 막지 못하므로 정면에서도 광선 피해를 받습니다.",
+        "condition": "자리야가 기본 광선 사거리 안에서 공격할 때. 입자포 보조 사격의 구체와는 다릅니다.",
+        "counterplay": "수호의 창만으로 버티지 말고 방어 강화와 엄폐를 활용해 광선 사거리 밖으로 이동하세요. 방벽이 켜진 자리야에게 불필요한 에너지를 주지 마세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/orisa?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/zarya?locale=ko-kr"
+    ]
   },
   {
     "id": "orisa-zenyatta",
@@ -3046,14 +3202,27 @@
     "id": "pharah-dva",
     "hero": "pharah",
     "counter": "dva",
-    "score": 4,
-    "reason": "D.Va은(는) 파라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "D.Va는 포화의 로켓을 매트릭스로 제거하면서 고정된 위치의 파라에게 접근할 수 있습니다.",
+    "condition": "매트릭스가 파라와 목표 사이의 로켓 경로를 덮을 때.",
+    "reviewedAt": "2026-09-09",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "counterplay": "D.Va의 위치와 자원을 확인하고 옆 사선에서 짧은 처치 기회를 잡으세요. 정면에서 긴 사격 시간을 확보하려 하지 마세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "포화",
+        "counterAbility": "방어 매트릭스",
+        "interaction": "D.Va는 포화의 로켓을 매트릭스로 제거하면서 고정된 위치의 파라에게 접근할 수 있습니다.",
+        "condition": "매트릭스가 파라와 목표 사이의 로켓 경로를 덮을 때.",
+        "counterplay": "D.Va의 위치와 자원을 확인하고 옆 사선에서 짧은 처치 기회를 잡으세요. 정면에서 긴 사격 시간을 확보하려 하지 마세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/pharah?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/dva?locale=ko-kr"
+    ]
   },
   {
     "id": "pharah-emre",
@@ -3755,14 +3924,27 @@
     "id": "sierra-dva",
     "hero": "sierra",
     "counter": "dva",
-    "score": 4,
-    "reason": "D.Va은(는) 시에라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "추적 사격의 징표로 헬릭스 소총 탄이 목표를 따라가더라도 방어 매트릭스의 투사체 방어를 관통하지 못합니다.",
+    "condition": "소총 탄의 이동 경로가 활성 매트릭스 영역과 겹칠 때.",
+    "reviewedAt": "2026-09-09",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "counterplay": "앵커 드론으로 사선을 바꾸고 매트릭스가 다른 방향을 향하거나 소모된 때 사격을 집중하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "헬릭스 소총",
+        "counterAbility": "방어 매트릭스",
+        "interaction": "추적 사격의 징표로 헬릭스 소총 탄이 목표를 따라가더라도 방어 매트릭스의 투사체 방어를 관통하지 못합니다.",
+        "condition": "소총 탄의 이동 경로가 활성 매트릭스 영역과 겹칠 때.",
+        "counterplay": "앵커 드론으로 사선을 바꾸고 매트릭스가 다른 방향을 향하거나 소모된 때 사격을 집중하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/sierra?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/dva?locale=ko-kr"
+    ]
   },
   {
     "id": "sierra-kiriko",
@@ -4002,14 +4184,27 @@
     "id": "soldier-76-dva",
     "hero": "soldier-76",
     "counter": "dva",
-    "score": 4,
-    "reason": "D.Va은(는) 솔저: 76의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "전술 조준경은 조준을 보조하지만 방어 매트릭스를 관통하지 않으므로, D.Va가 사선을 막으면 궁극기 사격도 제거됩니다.",
+    "condition": "사격 경로가 활성 매트릭스 영역을 통과할 때.",
+    "reviewedAt": "2026-09-09",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "counterplay": "질주로 측면 사선을 확보하고 매트릭스 자원이 소모된 시점에 궁극기를 사용하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "전술 조준경",
+        "counterAbility": "방어 매트릭스",
+        "interaction": "전술 조준경은 조준을 보조하지만 방어 매트릭스를 관통하지 않으므로, D.Va가 사선을 막으면 궁극기 사격도 제거됩니다.",
+        "condition": "사격 경로가 활성 매트릭스 영역을 통과할 때.",
+        "counterplay": "질주로 측면 사선을 확보하고 매트릭스 자원이 소모된 시점에 궁극기를 사용하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/soldier-76?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/dva?locale=ko-kr"
+    ]
   },
   {
     "id": "soldier-76-genji",
@@ -4119,14 +4314,27 @@
     "id": "sombra-kiriko",
     "hero": "sombra",
     "counter": "kiriko",
-    "score": 4,
-    "reason": "키리코은(는) 솜브라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "정화의 방울은 바이러스의 지속 피해를 정화하여 솜브라의 기습 후 처치 연계를 끊을 수 있습니다.",
+    "condition": "정화가 피해 대상에게 닿았을 때. 이미 발생한 피해를 되돌리는 것은 아닙니다.",
+    "reviewedAt": "2026-09-09",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "counterplay": "정화의 방울을 먼저 유도하거나 키리코와 떨어진 목표를 공격하고, 정화 후에는 무리한 추격 대신 이탈하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "바이러스",
+        "counterAbility": "정화의 방울",
+        "interaction": "정화의 방울은 바이러스의 지속 피해를 정화하여 솜브라의 기습 후 처치 연계를 끊을 수 있습니다.",
+        "condition": "정화가 피해 대상에게 닿았을 때. 이미 발생한 피해를 되돌리는 것은 아닙니다.",
+        "counterplay": "정화의 방울을 먼저 유도하거나 키리코와 떨어진 목표를 공격하고, 정화 후에는 무리한 추격 대신 이탈하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/sombra?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/kiriko?locale=ko-kr"
+    ]
   },
   {
     "id": "sombra-mei",
@@ -4288,14 +4496,27 @@
     "id": "torbjorn-sigma",
     "hero": "torbjorn",
     "counter": "sigma",
-    "score": 5,
-    "reason": "시그마은(는) 토르비욘의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "시그마가 포탑과 아군 사이에 방벽을 놓으면 포탑의 고정된 사격 경로를 차단해 팀이 이동할 시간을 벌 수 있습니다.",
+    "condition": "포탑 사선이 유지 중인 방벽과 겹칠 때.",
+    "reviewedAt": "2026-09-09",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "counterplay": "포탑을 본대와 다른 각도에 배치해 방벽 하나로 두 사선을 막기 어렵게 하고, 파괴되기 전에 다음 엄폐 위치를 준비하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "포탑 설치",
+        "counterAbility": "실험용 방벽",
+        "interaction": "시그마가 포탑과 아군 사이에 방벽을 놓으면 포탑의 고정된 사격 경로를 차단해 팀이 이동할 시간을 벌 수 있습니다.",
+        "condition": "포탑 사선이 유지 중인 방벽과 겹칠 때.",
+        "counterplay": "포탑을 본대와 다른 각도에 배치해 방벽 하나로 두 사선을 막기 어렵게 하고, 파괴되기 전에 다음 엄폐 위치를 준비하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/torbjorn?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/sigma?locale=ko-kr"
+    ]
   },
   {
     "id": "torbjorn-ashe",
@@ -5347,6 +5568,370 @@
     "sourceUrls": [
       "https://overfast-api.tekrop.fr/heroes/ana?locale=ko-kr",
       "https://overfast-api.tekrop.fr/heroes/kiriko?locale=ko-kr"
+    ]
+  },
+  {
+    "id": "doomfist-vs-ana",
+    "hero": "doomfist",
+    "counter": "ana",
+    "score": 3,
+    "reason": "파워 블락의 전방 피해 감소는 수면 면역이 아니므로 수면총에 맞으면 방어 중에도 잠들어 후속 공격에 노출됩니다.",
+    "condition": "아나가 수면총을 보유하고 둠피스트에게 직접 사격할 수 있을 때.",
+    "counterplay": "수면총 사용을 확인한 뒤 진입하고, 방어 자세를 오래 유지하기보다 엄폐나 지진 강타로 사선을 끊으세요.",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "reviewedAt": "2026-09-09",
+    "skillInteractions": [
+      {
+        "heroAbility": "파워 블락",
+        "counterAbility": "수면총",
+        "interaction": "파워 블락의 전방 피해 감소는 수면 면역이 아니므로 수면총에 맞으면 방어 중에도 잠들어 후속 공격에 노출됩니다.",
+        "condition": "아나가 수면총을 보유하고 둠피스트에게 직접 사격할 수 있을 때.",
+        "counterplay": "수면총 사용을 확인한 뒤 진입하고, 방어 자세를 오래 유지하기보다 엄폐나 지진 강타로 사선을 끊으세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/doomfist?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/ana?locale=ko-kr"
+    ]
+  },
+  {
+    "id": "lifeweaver-vs-dva",
+    "hero": "lifeweaver",
+    "counter": "dva",
+    "score": 3,
+    "reason": "가시 연사의 투사체가 방어 매트릭스에 제거되어 접근하는 D.Va를 사격만으로 저지하기 어렵습니다.",
+    "condition": "가시가 활성화된 매트릭스의 방어 영역을 통과할 때. 연꽃 단상이나 구원의 손길 자체를 제거한다는 뜻은 아닙니다.",
+    "counterplay": "연꽃 단상으로 높이를 바꾸고 아군에게 접근 압박을 알리세요. 매트릭스가 끝난 뒤 사격을 집중하세요.",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "reviewedAt": "2026-09-09",
+    "skillInteractions": [
+      {
+        "heroAbility": "가시 연사",
+        "counterAbility": "방어 매트릭스",
+        "interaction": "가시 연사의 투사체가 방어 매트릭스에 제거되어 접근하는 D.Va를 사격만으로 저지하기 어렵습니다.",
+        "condition": "가시가 활성화된 매트릭스의 방어 영역을 통과할 때. 연꽃 단상이나 구원의 손길 자체를 제거한다는 뜻은 아닙니다.",
+        "counterplay": "연꽃 단상으로 높이를 바꾸고 아군에게 접근 압박을 알리세요. 매트릭스가 끝난 뒤 사격을 집중하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/lifeweaver?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/dva?locale=ko-kr"
+    ]
+  },
+  {
+    "id": "wrecking-ball-vs-junkrat",
+    "hero": "wrecking-ball",
+    "counter": "junkrat",
+    "score": 3,
+    "reason": "구르기로 진입하다 강철 덫에 걸리면 이동이 묶여 레킹볼의 이탈 경로가 끊깁니다.",
+    "condition": "레킹볼이 지면의 적 강철 덫을 밟았을 때.",
+    "counterplay": "진입 전 바닥과 좁은 출입구를 확인하고 덫을 사격으로 제거하거나 공중 진입 경로를 선택하세요.",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "reviewedAt": "2026-09-09",
+    "skillInteractions": [
+      {
+        "heroAbility": "구르기",
+        "counterAbility": "강철 덫",
+        "interaction": "구르기로 진입하다 강철 덫에 걸리면 이동이 묶여 레킹볼의 이탈 경로가 끊깁니다.",
+        "condition": "레킹볼이 지면의 적 강철 덫을 밟았을 때.",
+        "counterplay": "진입 전 바닥과 좁은 출입구를 확인하고 덫을 사격으로 제거하거나 공중 진입 경로를 선택하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/wrecking-ball?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/junkrat?locale=ko-kr"
+    ]
+  },
+  {
+    "id": "lucio-vs-orisa",
+    "hero": "lucio",
+    "counter": "orisa",
+    "score": 3,
+    "reason": "방어 강화 중인 오리사는 저지 불가 상태이므로 소리 파동의 밀치기로 낙사시키거나 거점 밖으로 밀어내기 어렵습니다.",
+    "condition": "오리사의 방어 강화가 활성화되어 있을 때. 피해까지 무효화된다는 의미는 아닙니다.",
+    "counterplay": "방어 강화가 끝난 뒤 밀치거나 다른 적을 겨냥하고, 속도 증가로 아군을 위험 지역에서 이동시키세요.",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "reviewedAt": "2026-09-09",
+    "skillInteractions": [
+      {
+        "heroAbility": "소리 파동",
+        "counterAbility": "방어 강화",
+        "interaction": "방어 강화 중인 오리사는 저지 불가 상태이므로 소리 파동의 밀치기로 낙사시키거나 거점 밖으로 밀어내기 어렵습니다.",
+        "condition": "오리사의 방어 강화가 활성화되어 있을 때. 피해까지 무효화된다는 의미는 아닙니다.",
+        "counterplay": "방어 강화가 끝난 뒤 밀치거나 다른 적을 겨냥하고, 속도 증가로 아군을 위험 지역에서 이동시키세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/lucio?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/orisa?locale=ko-kr"
+    ]
+  },
+  {
+    "id": "moira-vs-dva",
+    "hero": "moira",
+    "counter": "dva",
+    "score": 3,
+    "reason": "방어 매트릭스는 날아가는 생체 구슬을 제거하여 구슬의 지속 치유나 피해를 끊을 수 있습니다.",
+    "condition": "구슬이 활성 매트릭스 영역에 들어갈 때. 생체 손아귀나 융화의 광선까지 지운다는 뜻은 아닙니다.",
+    "counterplay": "구슬을 매트릭스 정면으로 던지지 말고 벽을 이용해 각도를 바꾸거나 매트릭스가 꺼진 뒤 사용하세요.",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "reviewedAt": "2026-09-09",
+    "skillInteractions": [
+      {
+        "heroAbility": "생체 구슬",
+        "counterAbility": "방어 매트릭스",
+        "interaction": "방어 매트릭스는 날아가는 생체 구슬을 제거하여 구슬의 지속 치유나 피해를 끊을 수 있습니다.",
+        "condition": "구슬이 활성 매트릭스 영역에 들어갈 때. 생체 손아귀나 융화의 광선까지 지운다는 뜻은 아닙니다.",
+        "counterplay": "구슬을 매트릭스 정면으로 던지지 말고 벽을 이용해 각도를 바꾸거나 매트릭스가 꺼진 뒤 사용하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/moira?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/dva?locale=ko-kr"
+    ]
+  },
+  {
+    "id": "mizuki-vs-winston",
+    "hero": "mizuki",
+    "counter": "winston",
+    "score": 3,
+    "reason": "결계 성역의 적 투사체 흡수는 테슬라 캐논의 기본 전기 공격을 제거하지 못해 성역 안에서도 근거리 압박을 받을 수 있습니다.",
+    "condition": "윈스턴의 기본 공격 사거리 안에 있을 때. 투사체인 보조 사격과 구분해야 합니다.",
+    "counterplay": "성역의 투사체 방어만 믿고 버티지 말고 종이 인형 분신술로 거리를 벌리며 아군의 집중 사격을 요청하세요.",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "reviewedAt": "2026-09-09",
+    "skillInteractions": [
+      {
+        "heroAbility": "결계 성역",
+        "counterAbility": "테슬라 캐논",
+        "interaction": "결계 성역의 적 투사체 흡수는 테슬라 캐논의 기본 전기 공격을 제거하지 못해 성역 안에서도 근거리 압박을 받을 수 있습니다.",
+        "condition": "윈스턴의 기본 공격 사거리 안에 있을 때. 투사체인 보조 사격과 구분해야 합니다.",
+        "counterplay": "성역의 투사체 방어만 믿고 버티지 말고 종이 인형 분신술로 거리를 벌리며 아군의 집중 사격을 요청하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/mizuki?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/winston?locale=ko-kr"
+    ]
+  },
+  {
+    "id": "venture-vs-roadhog",
+    "hero": "venture",
+    "counter": "roadhog",
+    "score": 3,
+    "reason": "잠복의 피해 면역에 들어가기 전에 사슬 갈고리에 잡히면 지하 진입으로 피하려던 공격에 노출됩니다.",
+    "condition": "벤처가 아직 지상에서 잠복 진입 동작 중이고 갈고리가 적중할 때. 이미 지하에 들어간 벤처를 끌어낸다는 뜻은 아닙니다.",
+    "counterplay": "갈고리를 먼저 유도하거나 엄폐 뒤에서 잠복하세요. 적 정면에서 체력이 낮아진 뒤 잠복을 시작하지 마세요.",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "reviewedAt": "2026-09-09",
+    "skillInteractions": [
+      {
+        "heroAbility": "잠복",
+        "counterAbility": "사슬 갈고리",
+        "interaction": "잠복의 피해 면역에 들어가기 전에 사슬 갈고리에 잡히면 지하 진입으로 피하려던 공격에 노출됩니다.",
+        "condition": "벤처가 아직 지상에서 잠복 진입 동작 중이고 갈고리가 적중할 때. 이미 지하에 들어간 벤처를 끌어낸다는 뜻은 아닙니다.",
+        "counterplay": "갈고리를 먼저 유도하거나 엄폐 뒤에서 잠복하세요. 적 정면에서 체력이 낮아진 뒤 잠복을 시작하지 마세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/venture?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/roadhog?locale=ko-kr"
+    ]
+  },
+  {
+    "id": "sojourn-vs-sigma",
+    "hero": "sojourn",
+    "counter": "sigma",
+    "score": 3,
+    "reason": "시그마의 실험용 방벽이 레일건 보조 사격의 사선을 가려 충전한 에너지를 후방의 적에게 적중시키기 어렵게 합니다.",
+    "condition": "방벽이 소전과 목표 사이에 놓여 있고 아직 파괴되지 않았을 때.",
+    "counterplay": "파워 슬라이드로 옆 사선을 만들거나 방벽이 회수·파괴된 순간에 보조 사격을 사용하세요.",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "reviewedAt": "2026-09-09",
+    "skillInteractions": [
+      {
+        "heroAbility": "레일건",
+        "counterAbility": "실험용 방벽",
+        "interaction": "시그마의 실험용 방벽이 레일건 보조 사격의 사선을 가려 충전한 에너지를 후방의 적에게 적중시키기 어렵게 합니다.",
+        "condition": "방벽이 소전과 목표 사이에 놓여 있고 아직 파괴되지 않았을 때.",
+        "counterplay": "파워 슬라이드로 옆 사선을 만들거나 방벽이 회수·파괴된 순간에 보조 사격을 사용하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/sojourn?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/sigma?locale=ko-kr"
+    ]
+  },
+  {
+    "id": "symmetra-vs-winston",
+    "hero": "symmetra",
+    "counter": "winston",
+    "score": 3,
+    "reason": "윈스턴의 기본 전기 공격은 근거리의 여러 대상을 공격하여 모여 있는 감시 포탑을 정리하며 진입하기 좋습니다.",
+    "condition": "윈스턴이 포탑의 사거리 안으로 접근하고 포탑들이 기본 전기 공격 범위에 모여 있을 때.",
+    "counterplay": "포탑을 한곳에 겹쳐 두지 말고 높이와 방향을 분산하세요. 윈스턴이 착지한 뒤 아군과 집중 공격하세요.",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "reviewedAt": "2026-09-09",
+    "skillInteractions": [
+      {
+        "heroAbility": "감시 포탑",
+        "counterAbility": "테슬라 캐논",
+        "interaction": "윈스턴의 기본 전기 공격은 근거리의 여러 대상을 공격하여 모여 있는 감시 포탑을 정리하며 진입하기 좋습니다.",
+        "condition": "윈스턴이 포탑의 사거리 안으로 접근하고 포탑들이 기본 전기 공격 범위에 모여 있을 때.",
+        "counterplay": "포탑을 한곳에 겹쳐 두지 말고 높이와 방향을 분산하세요. 윈스턴이 착지한 뒤 아군과 집중 공격하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/symmetra?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/winston?locale=ko-kr"
+    ]
+  },
+  {
+    "id": "shion-vs-sigma",
+    "hero": "shion",
+    "counter": "sigma",
+    "score": 3,
+    "reason": "시그마는 실험용 방벽으로 키라 쌍권총의 정면 사선을 막아 시온의 연속 사격 압박을 줄일 수 있습니다.",
+    "condition": "방벽 뒤에서 거리를 유지하는 시그마를 정면으로 공격할 때. 방벽을 우회한 근거리 교전까지 시그마 우세로 단정하지 않습니다.",
+    "counterplay": "조이라이드와 피하기로 엄폐를 따라 측면에 접근하고, 방벽을 우회한 각도에서 아군과 동시에 압박하세요.",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "reviewedAt": "2026-09-09",
+    "skillInteractions": [
+      {
+        "heroAbility": "키라 쌍권총",
+        "counterAbility": "실험용 방벽",
+        "interaction": "시그마는 실험용 방벽으로 키라 쌍권총의 정면 사선을 막아 시온의 연속 사격 압박을 줄일 수 있습니다.",
+        "condition": "방벽 뒤에서 거리를 유지하는 시그마를 정면으로 공격할 때. 방벽을 우회한 근거리 교전까지 시그마 우세로 단정하지 않습니다.",
+        "counterplay": "조이라이드와 피하기로 엄폐를 따라 측면에 접근하고, 방벽을 우회한 각도에서 아군과 동시에 압박하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/shion?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/sigma?locale=ko-kr"
+    ]
+  },
+  {
+    "id": "anran-vs-dva",
+    "hero": "anran",
+    "counter": "dva",
+    "score": 3,
+    "reason": "주작의 부채에서 발사된 화염 투사체가 매트릭스에 제거되면 안란이 원거리에서 화염 피해를 쌓기 어렵습니다.",
+    "condition": "투사체가 활성 매트릭스 영역을 통과할 때. 이미 붙은 화염을 정화하거나 근거리 기술 전부를 막는 것은 아닙니다.",
+    "counterplay": "매트릭스가 향하지 않은 측면을 잡고 맹염 질주 이후에도 돌아올 엄폐를 남겨 두세요.",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "reviewedAt": "2026-09-09",
+    "skillInteractions": [
+      {
+        "heroAbility": "주작의 부채",
+        "counterAbility": "방어 매트릭스",
+        "interaction": "주작의 부채에서 발사된 화염 투사체가 매트릭스에 제거되면 안란이 원거리에서 화염 피해를 쌓기 어렵습니다.",
+        "condition": "투사체가 활성 매트릭스 영역을 통과할 때. 이미 붙은 화염을 정화하거나 근거리 기술 전부를 막는 것은 아닙니다.",
+        "counterplay": "매트릭스가 향하지 않은 측면을 잡고 맹염 질주 이후에도 돌아올 엄폐를 남겨 두세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/anran?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/dva?locale=ko-kr"
+    ]
+  },
+  {
+    "id": "wuyang-vs-dva",
+    "hero": "wuyang",
+    "counter": "dva",
+    "score": 3,
+    "reason": "현무 지팡이의 물 구슬은 매트릭스 영역에 들어가면 제거될 수 있어 궤적을 조정해도 방어 영역을 통과하는 공격은 막힙니다.",
+    "condition": "물 구슬이 폭발 전 활성 매트릭스와 겹칠 때. 회복의 물결까지 제거한다는 의미는 아닙니다.",
+    "counterplay": "구슬 궤적을 옆으로 돌리거나 매트릭스 종료 후 발사하고, D.Va가 접근하면 격류로 엄폐를 바꾸세요.",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "reviewedAt": "2026-09-09",
+    "skillInteractions": [
+      {
+        "heroAbility": "현무 지팡이",
+        "counterAbility": "방어 매트릭스",
+        "interaction": "현무 지팡이의 물 구슬은 매트릭스 영역에 들어가면 제거될 수 있어 궤적을 조정해도 방어 영역을 통과하는 공격은 막힙니다.",
+        "condition": "물 구슬이 폭발 전 활성 매트릭스와 겹칠 때. 회복의 물결까지 제거한다는 의미는 아닙니다.",
+        "counterplay": "구슬 궤적을 옆으로 돌리거나 매트릭스 종료 후 발사하고, D.Va가 접근하면 격류로 엄폐를 바꾸세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/wuyang?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/dva?locale=ko-kr"
+    ]
+  },
+  {
+    "id": "zenyatta-vs-ana",
+    "hero": "zenyatta",
+    "counter": "ana",
+    "score": 3,
+    "reason": "초월 중 젠야타 자신은 피해 면역이지만 치유 차단에 걸린 주변 아군은 초월의 치유를 받지 못합니다.",
+    "condition": "초월 범위 안의 아군에게 치유 차단이 적용되고 아직 정화되지 않았을 때.",
+    "counterplay": "아나의 수류탄 사용을 확인하고 아군 정화와 연계하세요. 치유 차단 중인 아군은 초월만 믿지 말고 엄폐해야 합니다.",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "reviewedAt": "2026-09-09",
+    "skillInteractions": [
+      {
+        "heroAbility": "초월",
+        "counterAbility": "생체 수류탄",
+        "interaction": "초월 중 젠야타 자신은 피해 면역이지만 치유 차단에 걸린 주변 아군은 초월의 치유를 받지 못합니다.",
+        "condition": "초월 범위 안의 아군에게 치유 차단이 적용되고 아직 정화되지 않았을 때.",
+        "counterplay": "아나의 수류탄 사용을 확인하고 아군 정화와 연계하세요. 치유 차단 중인 아군은 초월만 믿지 말고 엄폐해야 합니다."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/zenyatta?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/ana?locale=ko-kr"
+    ]
+  },
+  {
+    "id": "cassidy-vs-dva",
+    "hero": "cassidy",
+    "counter": "dva",
+    "score": 3,
+    "reason": "황야의 무법자는 적을 포착해도 발사된 사격이 매트릭스에 막힐 수 있어, 정면 궁극기를 D.Va가 보호할 수 있습니다.",
+    "condition": "궁극기 발사 순간 목표까지의 사선에 활성 매트릭스가 있을 때.",
+    "counterplay": "D.Va의 매트릭스 자원을 소모시킨 뒤 사용하거나 D.Va가 동시에 지키기 어려운 측면 사선을 확보하세요.",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
+    "reviewedAt": "2026-09-09",
+    "skillInteractions": [
+      {
+        "heroAbility": "황야의 무법자",
+        "counterAbility": "방어 매트릭스",
+        "interaction": "황야의 무법자는 적을 포착해도 발사된 사격이 매트릭스에 막힐 수 있어, 정면 궁극기를 D.Va가 보호할 수 있습니다.",
+        "condition": "궁극기 발사 순간 목표까지의 사선에 활성 매트릭스가 있을 때.",
+        "counterplay": "D.Va의 매트릭스 자원을 소모시킨 뒤 사용하거나 D.Va가 동시에 지키기 어려운 측면 사선을 확보하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/cassidy?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/dva?locale=ko-kr"
     ]
   }
 ]

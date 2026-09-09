@@ -15,10 +15,9 @@ import {
   Target,
   Truck,
 } from "lucide-react";
-import type { Hero, Role } from "@/lib/data";
+import type { Hero, MapGuide, Role } from "@/lib/data";
 
-interface PublicMapRecommendation { hero: string; rank: number; winRate: number; }
-interface PublicMapGuide { id: string; name: string; mode: string; recommendations: PublicMapRecommendation[]; }
+type PublicMapGuide = MapGuide;
 
 const roleIcons = { tank: Shield, damage: Swords, support: Cross };
 const roleLabels: Record<Role, string> = { tank: "돌격", damage: "공격", support: "지원" };
@@ -86,11 +85,12 @@ export function MapExplorer({ maps, heroes }: { maps: PublicMapGuide[]; heroes: 
                 <span className="map-selected-mode"><SelectedModeIcon aria-hidden="true" />{selected.mode}</span>
                 <span className="section-kicker">SELECTED BATTLEGROUND</span>
                 <h2>{selected.name}</h2>
-                <p>추천 영웅 {selected.recommendations.length}명 · 역할별 성과 순위</p>
+                <p>추천 영웅 {selected.recommendations.length}명 · 조건부 전략 가이드</p>
               </div>
               <Link href={`/maps/${selected.id}/`} className="map-detail-link text-link">상세 추천 보기</Link>
             </header>
             <div className="map-role-sections">
+              <p className="map-analysis-note">{selected.analysisBasis}<br />{selected.layoutCaveat}</p>
               {(["tank", "damage", "support"] as Role[]).map((role) => {
                 const Icon = roleIcons[role];
                 const recommendations = selected.recommendations.filter((item) => heroByKey.get(item.hero)?.role === role);
@@ -104,8 +104,7 @@ export function MapExplorer({ maps, heroes }: { maps: PublicMapGuide[]; heroes: 
                         return (
                           <Link href={`/heroes/${hero.key}/`} key={hero.key} className="map-hero-card">
                             {/* eslint-disable-next-line @next/next/no-img-element */}<img src={hero.portrait} alt="" />
-                            <span><strong>{hero.name}</strong><small>적합 맵 {item.rank}순위 · 기본 승률 {item.winRate.toFixed(1)}%</small></span>
-                            <em>TOP {item.rank}</em>
+                            <span><strong>{hero.name}</strong><small>{item.note}</small><small>조건: {item.condition}</small><small>주의: {item.caution}</small></span>
                           </Link>
                         );
                       })}

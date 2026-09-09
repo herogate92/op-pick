@@ -27,6 +27,8 @@ for (const hero of heroes) {
     if (ability.stats && (!Array.isArray(ability.stats) || !ability.stats.length)) errors.push(`기술 수치 형식 오류: ${hero.key}/${ability.name}`);
     if (ability.stats?.some((stat) => !stat.label || !stat.value)) errors.push(`기술 수치 값 누락: ${hero.key}/${ability.name}`);
     if (ability.stats && !ability.statsCheckedAt) errors.push(`기술 수치 확인일 누락: ${hero.key}/${ability.name}`);
+    if (ability.statsSourceUrl && (!/^https:\/\/overwatch\.blizzard\.com\/en-us\/news\/patch-notes\/live\//.test(ability.statsSourceUrl) || !ability.statsPatchDate || !ability.statsScope || !ability.statsBasis)) errors.push(`기술 수치 출처·모드·패치 누락: ${hero.key}/${ability.name}`);
+    if (ability.stats && !ability.statsSourceUrl && !ability.statsBasis?.includes("재확인 필요")) errors.push(`미검증 수치 표시 누락: ${hero.key}/${ability.name}`);
   }
   if (!Array.isArray(hero.storyChapters)) errors.push(`스토리 챕터 형식 오류: ${hero.key}`);
   if (hero.storyMedia && !hero.storyMedia.link) errors.push(`스토리 미디어 주소 누락: ${hero.key}`);
@@ -71,18 +73,23 @@ for (const matchup of matchups) {
 }
 
 const mapIds = new Set();
+for (const hero of heroes) {
+  if (!matchups.some((matchup) => matchup.hero === hero.key && matchup.status === "verified")) errors.push(`검토된 상성 없는 영웅: ${hero.key}`);
+}
 const validMapModes = new Set(["쟁탈", "호위", "혼합", "밀기", "플래시포인트", "기타"]);
 for (const map of maps) {
   if (!map.id || mapIds.has(map.id)) errors.push(`중복 또는 빈 맵 ID: ${map.id}`);
   mapIds.add(map.id);
   if (!map.name || !validMapModes.has(map.mode)) errors.push(`맵 기본값 오류: ${map.id}`);
   if (!map.reviewedAt) errors.push(`맵 검수일 누락: ${map.id}`);
+  if (!map.terrain || !map.analysisBasis || !map.layoutCaveat || !map.sourceUrls?.length) errors.push(`맵 전략 근거 누락: ${map.id}`);
   if (!Array.isArray(map.recommendations) || !map.recommendations.length) errors.push(`맵 추천 누락: ${map.id}`);
   for (const recommendation of map.recommendations ?? []) {
     if (!keys.has(recommendation.hero)) errors.push(`존재하지 않는 맵 추천 영웅: ${map.id}/${recommendation.hero}`);
     if (recommendation.rank < 1 || recommendation.rank > 3) errors.push(`맵 추천 순위 오류: ${map.id}/${recommendation.hero}`);
-    if (recommendation.winRate < 0 || recommendation.winRate > 100) errors.push(`맵 추천 승률 오류: ${map.id}/${recommendation.hero}`);
+    if (recommendation.winRate !== null) errors.push(`출처 미검증 맵 승률 노출: ${map.id}/${recommendation.hero}`);
     if (!recommendation.note) errors.push(`맵 추천 설명 누락: ${map.id}/${recommendation.hero}`);
+    if (/추천 우선순위.*그룹으로 분류/.test(recommendation.note) || !recommendation.condition || !recommendation.caution || !recommendation.sourceUrls?.length) errors.push(`맵별 기술 근거·조건·주의점 누락: ${map.id}/${recommendation.hero}`);
   }
 }
 

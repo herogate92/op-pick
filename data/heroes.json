@@ -123,7 +123,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/genji/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/genji?locale=ko-kr"
   },
   {
     "key": "domina",
@@ -173,7 +175,9 @@
             "value": "100 · 1.5초"
           }
         ],
-        "statsCheckedAt": "2026-08-30"
+        "statsCheckedAt": "2026-08-30",
+        "statsBasis": "기존 입력값 · 수치 원출처 재확인 필요",
+        "statsScope": "적용 모드 미확인"
       },
       {
         "name": "방벽 배열",
@@ -202,7 +206,9 @@
             "value": "8초"
           }
         ],
-        "statsCheckedAt": "2026-08-30"
+        "statsCheckedAt": "2026-08-30",
+        "statsBasis": "기존 입력값 · 수치 원출처 재확인 필요",
+        "statsScope": "적용 모드 미확인"
       },
       {
         "name": "소닉 리펄서",
@@ -231,7 +237,9 @@
             "value": "0.5초 · 0.5초"
           }
         ],
-        "statsCheckedAt": "2026-08-30"
+        "statsCheckedAt": "2026-08-30",
+        "statsBasis": "기존 입력값 · 수치 원출처 재확인 필요",
+        "statsScope": "적용 모드 미확인"
       },
       {
         "name": "수정 발사",
@@ -260,7 +268,9 @@
             "value": "2~4m"
           }
         ],
-        "statsCheckedAt": "2026-08-30"
+        "statsCheckedAt": "2026-08-30",
+        "statsBasis": "기존 입력값 · 수치 원출처 재확인 필요",
+        "statsScope": "적용 모드 미확인"
       },
       {
         "name": "판옵티콘",
@@ -273,23 +283,15 @@
         },
         "stats": [
           {
-            "label": "피해",
-            "value": "직격 75 · 폭발 300~100"
-          },
-          {
             "label": "방벽 내구도",
-            "value": "450"
-          },
-          {
-            "label": "지속 / 시전",
-            "value": "5초 · 0.5초"
-          },
-          {
-            "label": "이동 둔화",
-            "value": "40%"
+            "value": "500"
           }
         ],
-        "statsCheckedAt": "2026-08-30"
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08/",
+        "statsPatchDate": "2026-08-11",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       }
     ],
     "perks": {
@@ -339,7 +341,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/domina/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/domina?locale=ko-kr"
   },
   {
     "key": "doomfist",
@@ -391,7 +395,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt0c6a436618b3b097/6333ca581ccd046877c0e43d/DOOMFIST_SEISMIC_SLAM.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt94b2e6f3ff702414/6333ca4e64fe5a7d44819f88/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_DoomfistSeismicSlam_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb59045a8c3544135/667992019d84e77508e03bb1/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_DoomfistSeismicSlam_WEB_16x9_1920x1080p30_H264.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "피해",
+            "value": "60"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08/",
+        "statsPatchDate": "2026-08-11",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "파워 블락",
@@ -461,7 +476,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/doomfist/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/doomfist?locale=ko-kr"
   },
   {
     "key": "ramattra",
@@ -523,7 +540,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltcd74c42a0b3f958f/6388f1ab5148880e83ab70ed/Ravenous_Vortex.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blta406f20e71c9f10b/637da4073cbefd11108110f3/1110_005_OVR_Hero-36-Abilities_Vortex_1P_4K_ZA_01.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt55fefe002a2223ed/6679fcc42cfadc72220cf3b9/1110_005_OVR_Hero-36-Abilities_Vortex_1P_4K_ZA_01.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "폭발 피해",
+            "value": "30"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07/",
+        "statsPatchDate": "2026-07-14",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "절멸",
@@ -583,7 +611,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/ramattra/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/ramattra?locale=ko-kr"
   },
   {
     "key": "lifeweaver",
@@ -654,7 +684,26 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltf7fcdf77458b0687/6413b37fad9e38554653fd79/Lifeweaver_Ability_Grip_3P.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltee37e74a3a8687a7/65821702619a8e4f245d67e2/Life_Grip.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt80d022d674e50926/65821702cd72b137a42c1db5/Life_Grip_1.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "기본 끌어오기 속도",
+            "value": "25m/s"
+          },
+          {
+            "label": "대상이 점프로 취소 가능한 시점",
+            "value": "0.6초 후"
+          },
+          {
+            "label": "거리별 속도 조건",
+            "value": "15m 초과 대상은 느리게 시작해 가속"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08/",
+        "statsPatchDate": "2026-08-11",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "생명의 나무",
@@ -722,7 +771,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/lifeweaver/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/lifeweaver?locale=ko-kr"
   },
   {
     "key": "reinhardt",
@@ -844,7 +895,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/reinhardt/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/reinhardt?locale=ko-kr"
   },
   {
     "key": "wrecking-ball",
@@ -975,7 +1028,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/wrecking-ball/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/wrecking-ball?locale=ko-kr"
   },
   {
     "key": "roadhog",
@@ -1086,7 +1141,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/roadhog/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/roadhog?locale=ko-kr"
   },
   {
     "key": "lucio",
@@ -1118,7 +1175,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltbde6a2d6309787fe/6339061b8537f87bfbcdc41c/LUCIO_SONICAMPLIFIER.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blte5e664ff4652ac8b/6339062d3922a2677fc88d28/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_LucioSonicAmplifier_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt08a24ad2b4528502/6679a0e64ac9fe0969f050fa/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_LucioSonicAmplifier_WEB_16x9_1920x1080p30_WEBM.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "투사체당 피해",
+            "value": "22"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07/",
+        "statsPatchDate": "2026-07-14",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "분위기 전환!",
@@ -1219,7 +1287,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/lucio/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/lucio?locale=ko-kr"
   },
   {
     "key": "reaper",
@@ -1291,7 +1361,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8f62fcdc91d241dd/633907858537f87bfbcdc438/REAPER_THE_REAPING.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltfad36772876f40a6/63390780da1d806602f83f1a/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_ReaperTheReaping_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt814b7f593e78f221/6679e0d82309b51de3e269f9/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_ReaperTheReaping_WEB_16x9_1920x1080p30_WEBM.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "생명력 흡수",
+            "value": "피해의 30%"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07/",
+        "statsPatchDate": "2026-07-14",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       }
     ],
     "perks": {
@@ -1341,7 +1422,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/reaper/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/reaper?locale=ko-kr"
   },
   {
     "key": "mauga",
@@ -1359,9 +1442,9 @@
     "age": 37,
     "hitpoints": {
       "health": 575,
-      "armor": 150,
+      "armor": 125,
       "shields": 0,
-      "total": 725
+      "total": 700
     },
     "abilities": [
       {
@@ -1372,7 +1455,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt77c770a7ee58b22b/6568cbc4f2f234a79edad409/Overrun.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt199be676979d5b38/69fe1aec07ef1abf6c666fb3/Overrun_mp4.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blta36adb228e622945/69fe1af536e0d2014949740b/OVR-18088-231031_Mauga-Hero-Page_Shift_webm.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "재사용 대기시간 (5v5)",
+            "value": "6초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08/",
+        "statsPatchDate": "2026-08-11",
+        "statsScope": "라이브 5v5 · 특전 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "터질 듯한 심장",
@@ -1460,7 +1554,10 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/mauga/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/mauga?locale=ko-kr",
+    "hitpointsNotice": "9월 8일 라이브 패치의 생명력·방어력 변경 반영. 모드별 차이에 유의하세요."
   },
   {
     "key": "mercy",
@@ -1588,7 +1685,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/mercy/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/mercy?locale=ko-kr"
   },
   {
     "key": "mei",
@@ -1696,7 +1795,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/mei/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/mei?locale=ko-kr"
   },
   {
     "key": "moira",
@@ -1812,7 +1913,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/moira/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/moira?locale=ko-kr"
   },
   {
     "key": "mizuki",
@@ -1863,7 +1966,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltcbb0a4aded709f3d/698175653101f3c04c5611c3/BindingChain.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt1a778629c5c4d679/698651b6f50df364a8469617/Mizuki_BindingChain_100_4K_PRHQ_LIVE_BEST_MZ.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blta0a2a078f5c2e1ca/698651beefc72d0be0137612/Mizuki_BindingChain_100_4K_PRHQ_LIVE_BEST_MZ.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "투사체 크기 (공식 표기)",
+            "value": "0.3"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08/",
+        "statsPatchDate": "2026-08-11",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "종이 인형 분신술",
@@ -1873,7 +1987,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt5b50dd31c8d00188/6981756646798a8a5935fcea/KatashiroReturn.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt0c819a826d336706/698651b9a3d43b98aa1f6e55/Mizuki_KatashiroReturn_100_4K_PRHQ_LIVE_1_MZ.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt402d1f5fe2b177f9/698651c0ad4e7e43febe3ece/Mizuki_KatashiroReturn_100_4K_PRHQ_LIVE_1_MZ.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "재사용 대기시간",
+            "value": "12초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08/",
+        "statsPatchDate": "2026-08-11",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "결계 성역",
@@ -1947,7 +2072,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/mizuki/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/mizuki?locale=ko-kr"
   },
   {
     "key": "bastion",
@@ -2068,7 +2195,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/bastion/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/bastion?locale=ko-kr"
   },
   {
     "key": "baptiste",
@@ -2119,7 +2248,26 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt6dee6bdf2c41f320/633904e2f87c00687e8ef22a/BAPTISTE_IMMORTALITY.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltaec02ac633712587/633904ee8537f87bfbcdc3fc/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_BaptisteImmortalityField_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt49d5044931702908/66798c498ec4a4a932373480/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_BaptisteImmortalityField_WEB_16x9_1920x1080p30_WEBM.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "최소 생명력 기준",
+            "value": "최대 생명력의 25%"
+          },
+          {
+            "label": "재사용 대기시간",
+            "value": "20초"
+          },
+          {
+            "label": "장치 생명력",
+            "value": "150"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "증폭 매트릭스",
@@ -2193,7 +2341,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/baptiste/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/baptiste?locale=ko-kr"
   },
   {
     "key": "vendetta",
@@ -2225,7 +2375,26 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltd489b2d0032f7f29/6930c1f5872f3d5925c60e7d/PalatineFang.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt9e8abe92f3e83263/6930c13d521fe601da2450a4/251022_WebAbility_Palatine_Fang_SH01.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt1face2900b607357/6930c1e0c8f277143343aaea/251022_WebAbility_Palatine_Fang_SH01.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "첫 휘두르기 지연",
+            "value": "0.15초"
+          },
+          {
+            "label": "수평 휘두르기 시간",
+            "value": "0.2초"
+          },
+          {
+            "label": "연속 공격 연결 시간",
+            "value": "0.9초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "수호 태세",
@@ -2245,7 +2414,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt31ad98f679f3b86a/6930c2e82575e11d19416227/Whirlwind.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt67600adaaca32a0e/6930c2c2627d444e6c5eb5a0/251023_TECB_WebAbility_3_Whirlwind_SH01.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltdd69e03c6c8a45ee/6930c2dc6a1a5693da4f0343/251023_TECB_WebAbility_3_Whirlwind_SH01.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "사용 후 회복 시간",
+            "value": "0.75초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "치솟는 베기",
@@ -2255,7 +2435,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb284f7f1bf7e4a24/6930c3360f2be26850ffc4e8/SoaringSlice.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltd3de541837ade979/6930c316521fe668272450a8/1023_VENDETTA_Web_SoaringSlice_GH_01.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt74a952c40458ceb3/6930c3285a1d2c33d290a171/1023_VENDETTA_Web_SoaringSlice_GH_01.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "부활 직후 재사용 대기시간",
+            "value": "3초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08/",
+        "statsPatchDate": "2026-08-11",
+        "statsScope": "라이브 · 부활 직후에만 적용하는 대기시간 · 일반 사용 쿨다운 아님",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "칼날 투영",
@@ -2275,7 +2466,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt3549da0266d24c51/6930c43515c04e380db7fe6d/SunderBlade.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8ddd27898b969746/6930c40b0f2be267edffc4ec/1023_VENDETTA_Web_SunderBlade_GH_01.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltcbed4a921fdae6d8/6930c4250f2be217abffc4f0/1023_VENDETTA_Web_SunderBlade_GH_01.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "사용 후 회복 시간",
+            "value": "0.5초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       }
     ],
     "perks": {
@@ -2325,7 +2527,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/vendetta/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/vendetta?locale=ko-kr"
   },
   {
     "key": "venture",
@@ -2440,7 +2644,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/venture/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/venture?locale=ko-kr"
   },
   {
     "key": "brigitte",
@@ -2459,8 +2665,8 @@
     "age": 25,
     "hitpoints": {
       "shields": 0,
-      "armor": 50,
-      "health": 200,
+      "armor": 75,
+      "health": 175,
       "total": 250
     },
     "abilities": [
@@ -2532,7 +2738,22 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt145b9f490b0d4535/6333c83fe3c2a2741688cae1/BRIGITTE_INSPIRE.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt50c1e85c6e9e3ee1/6333c8311ccd046877c0e435/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_BrigitteInspire_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blte42e0e1a880df5d6/667991e11d126b1aee6b09c2/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_BrigitteInspire_WEB_16x9_1920x1080p30_H264.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "발동 시 즉시 치유",
+            "value": "12"
+          },
+          {
+            "label": "지속 치유 총량",
+            "value": "45"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07/",
+        "statsPatchDate": "2026-07-14",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       }
     ],
     "perks": {
@@ -2582,7 +2803,10 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/brigitte/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/brigitte?locale=ko-kr",
+    "hitpointsNotice": "9월 8일 라이브 패치의 생명력·방어력 변경 반영. 모드별 차이에 유의하세요."
   },
   {
     "key": "sojourn",
@@ -2698,7 +2922,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/sojourn/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/sojourn?locale=ko-kr"
   },
   {
     "key": "soldier-76",
@@ -2816,7 +3042,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/soldier-76/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/soldier-76?locale=ko-kr"
   },
   {
     "key": "sombra",
@@ -2937,7 +3165,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/sombra/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/sombra?locale=ko-kr"
   },
   {
     "key": "sigma",
@@ -3059,7 +3289,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/sigma/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/sigma?locale=ko-kr"
   },
   {
     "key": "symmetra",
@@ -3110,7 +3342,22 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt1b8a1d681e6e3a37/633908ae1a0b5e7d3d1ec5e5/SYMMETRA_TELEPORTER.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt514f9c628dd121fa/633908b2f87c00687e8ef268/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_SymmetraTeleporter_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt844280e0657bde80/6679f49b84503015b6778966/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_SymmetraTeleporter_WEB_16x9_1920x1080p30_WEBM.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "설치 사거리",
+            "value": "25m"
+          },
+          {
+            "label": "재진입 간격",
+            "value": "1.25초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "광자 방벽",
@@ -3166,7 +3413,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/symmetra/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/symmetra?locale=ko-kr"
   },
   {
     "key": "sierra",
@@ -3197,7 +3446,22 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltf811f55c5723cef5/69d6daeffaafc818a3c9223e/helix_rifle.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt984c2c835013a2dd/69d6daded973a158f23b4cd3/helix_rifle.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt2b5bd6f1441387e1/69d6dae5ab998e7693136945/helix_rifle.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "탄당 피해",
+            "value": "8.5"
+          },
+          {
+            "label": "탄속",
+            "value": "120m/s"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "추적 사격",
@@ -3207,7 +3471,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt71fa823e0ba74b54/69d6db9a025c8c821b6ae521/tracking_shot.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt239b22de2ef87734/69d6db794e3b55fd0645b556/tracking_shot.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt57570623446ee5c7/69d6db8c0d37b279bac2b25b/tracking_shot.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "피해",
+            "value": "8.5"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "진동 폭약",
@@ -3217,7 +3492,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt94a9ca8cc888a193/69d6dbbde5cd9672aeea8ddc/tremor_charge.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt9526f3380fc1b5b5/69d6dbad369d006e857d8cca/tremor_charge.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt84a220b779f2d3b7/69d6dbb55a1e8a3c3f26ebdc/tremor_charge.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "재사용 대기시간",
+            "value": "7초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "앵커 드론",
@@ -3227,7 +3513,26 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt9be84618972942eb/69d6dbe428a69c3db20f5c29/anchor_drone.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltf30e5a277ee32cf1/69d6dbcd8d465d350a4c5e96/anchor_drone.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltd6cbfddd1601164b/69d6dbd690d82226dec2e0a9/anchor_drone.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "재사용 대기시간",
+            "value": "11초"
+          },
+          {
+            "label": "지속시간",
+            "value": "9초"
+          },
+          {
+            "label": "생명력",
+            "value": "125"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07/",
+        "statsPatchDate": "2026-07-14",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "개척자",
@@ -3291,7 +3596,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/sierra/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/sierra?locale=ko-kr"
   },
   {
     "key": "shion",
@@ -3332,7 +3639,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt1e0657b85e2aed89/6a28ad5dbf5303644a1d93f1/execute.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltaf20e95fa71b8681/6a28ad4bab7fcd758a5d1a7b/execute.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt9d36c6e7625d49fe/6a28ad56e915ad0cba1a8807/execute.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "사용 후 회복 시간",
+            "value": "0.3초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07/",
+        "statsPatchDate": "2026-07-14",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "조이라이드",
@@ -3342,7 +3660,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt39c1f55620566737/6a28adb3c0a86344cc1b4ba2/joyride.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt5c4b8cf54ba924f7/6a28ada1aafc971efe6ac5ca/joyride.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltaac264514152cd73/6a28adace486fd21ddd26052/joyride.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "지상 발사 충돌 판정 반경",
+            "value": "1m"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08/",
+        "statsPatchDate": "2026-08-11",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "피하기",
@@ -3416,7 +3745,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/shion/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/shion?locale=ko-kr"
   },
   {
     "key": "ana",
@@ -3468,7 +3799,22 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltcd66dcc6eb196187/633904873922a2677fc88cfa/ANA_BIOTICGRENADE.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt808b8a165c19d2e6/6339047eb8dbde69f52798e8/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_AnaBioticGrenade_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt73fcfa06c4272760/66906cd5c5289554ce6104aa/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_AnaBioticGrenade_WEB_16x9_1920x1080p30_WEBM.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "폭발 피해",
+            "value": "90"
+          },
+          {
+            "label": "폭발 치유",
+            "value": "90"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07/",
+        "statsPatchDate": "2026-07-14",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "나노 강화제",
@@ -3532,7 +3878,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/ana/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/ana?locale=ko-kr"
   },
   {
     "key": "anran",
@@ -3613,7 +3961,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt1fd77f77129c77bb/698174c2f50df30a22469407/VermillionRevival.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt3c407aa44c71e406/69864d927c6e2ca98d5e0b06/Anran_VermillionRevival_MP4_GH_01.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltcda5a15e4e0a2404/69864d73196624e597aeff3f/Anran_VermillionAscent_MP4_GH_01.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "시전 시간",
+            "value": "2.5초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "점화",
@@ -3677,7 +4036,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/anran/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/anran?locale=ko-kr"
   },
   {
     "key": "ashe",
@@ -3789,7 +4150,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/ashe/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/ashe?locale=ko-kr"
   },
   {
     "key": "echo",
@@ -3916,7 +4279,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/echo/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/echo?locale=ko-kr"
   },
   {
     "key": "emre",
@@ -4031,7 +4396,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/emre/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/emre?locale=ko-kr"
   },
   {
     "key": "orisa",
@@ -4153,7 +4520,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/orisa/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/orisa?locale=ko-kr"
   },
   {
     "key": "wuyang",
@@ -4195,7 +4564,22 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt2f59adec14b9f47e/689baf1ceed2553039bb451b/restorative-stream.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt1fb804728ee30ab1/689babc8ad861a7bf77201c7/OVR19757_Aqua_Web_Ability_Page_HRZ_60_RestorativeStream_MASTER.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt084c97aee0c81b4a/689babdc3cd8acbdc52e1506/OVR19757_Aqua_Web_Ability_Page_HRZ_60_RestorativeStream_MASTER.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "자원 재생 속도",
+            "value": "초당 15%"
+          },
+          {
+            "label": "시야 차단 허용 시간",
+            "value": "3초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "격류",
@@ -4225,7 +4609,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt116fc97c40e4e16a/689bb54beed25596b0bb4521/guardian-wave.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blte2b0f818a7e25979/689bb51d84578d06e7f5f2a2/OVR19757_Aqua_Web_Ability_Page_HRZ_60_GuardianWave_MASTER.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt618b527462da2888/689bb530025cdd4a4b934de9/OVR19757_Aqua_Web_Ability_Page_HRZ_60_GuardianWave_MASTER.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "최대 확산 각도",
+            "value": "15도"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08/",
+        "statsPatchDate": "2026-08-11",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       }
     ],
     "perks": {
@@ -4279,7 +4674,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/wuyang/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/wuyang?locale=ko-kr"
   },
   {
     "key": "widowmaker",
@@ -4394,7 +4791,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/widowmaker/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/widowmaker?locale=ko-kr"
   },
   {
     "key": "winston",
@@ -4446,7 +4845,22 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blta32bfb22a9132de6/633909121ccd046877c0e52b/WINSTON_PROJECTEDBARRIER.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltdd317c5c6e708da7/633909173917977bfd9861fb/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_WinstonBarrierProjector_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltea367a7bb81d9b63/6679f4a75e8b86170a85d179/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_WinstonBarrierProjector_WEB_16x9_1920x1080p30_WEBM.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "재사용 대기시간 (5v5)",
+            "value": "10초"
+          },
+          {
+            "label": "지속시간",
+            "value": "7초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 · 재사용 대기시간은 5v5 기준 · 특전 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "원시의 분노",
@@ -4506,7 +4920,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/winston/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/winston?locale=ko-kr"
   },
   {
     "key": "illari",
@@ -4617,7 +5033,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/illari/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/illari?locale=ko-kr"
   },
   {
     "key": "zarya",
@@ -4659,7 +5077,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt924907669563adc1/63390946425ea374105b61b5/ZARYA_PARTICLEBARRIER.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt5b884ae54928f9d3/6339094b399a07678557c199/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_ZaryaParticleBarrier_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt5b325c68c278ba35/6679f4b7845030d370778968/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_ZaryaParticleBarrier_WEB_16x9_1920x1080p30_WEBM.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "재사용 대기시간 (5v5)",
+            "value": "12초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 5v5 · 방벽 씌우기와 구분 · 특전 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "방벽 씌우기",
@@ -4739,7 +5168,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/zarya/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/zarya?locale=ko-kr"
   },
   {
     "key": "junker-queen",
@@ -4781,7 +5212,26 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltbf86e7b2c16375d1/6333ca917e84e17596f9c7e0/JUNKER_QUEEN_COMMANDING_SHOUT.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt1f73211d1195a166/6333ca867e84e17596f9c7dc/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_JunkerQueenCommandingShout_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltadbe73567e78e2ed/6679aa842134bd812dc554ee/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_JunkerQueenCommandingShout_WEB_16x9_1920x1080p30_H264.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "재사용 대기시간 (5v5)",
+            "value": "10초"
+          },
+          {
+            "label": "재사용 대기시간 (6v6)",
+            "value": "13초"
+          },
+          {
+            "label": "대기시간 시작",
+            "value": "효과 종료 후"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07/",
+        "statsPatchDate": "2026-07-14",
+        "statsScope": "라이브 · 5v5/6v6 별도 표기 · 특전 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "도륙",
@@ -4861,7 +5311,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/junker-queen/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/junker-queen?locale=ko-kr"
   },
   {
     "key": "junkrat",
@@ -4903,7 +5355,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt3ee407761d4d55db/633905e9f87c00687e8ef236/JUNKRAT_CONCUSSION_MINE.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blte873111671177925/633905ef3917977bfd9861c1/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_JunkratConcussionMine_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt9efdc6c384cc7b9a/6679a1ad6711607e184337a1/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_JunkratConcussionMine_WEB_16x9_1920x1080p30_WEBM.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "재사용 대기시간",
+            "value": "7초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "강철 덫",
@@ -4979,7 +5442,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/junkrat/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/junkrat?locale=ko-kr"
   },
   {
     "key": "jetpack-cat",
@@ -5011,7 +5476,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt3694a0b03f1ebb1c/6981754ae7959c0ff9bb348f/Paws.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8b732af1b7f88a6b/6986518ef2d218747e8ef940/JCAT_Paws_100_4K_PRHQ_LIVE_1_MZ.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt191c2276edf918ad/69865193efc72d68c713760a/JCAT_Paws_100_4K_PRHQ_LIVE_1_MZ.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "투사체당 피해 / 치유",
+            "value": "4 / 4"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "정신 없는 비행",
@@ -5101,7 +5577,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/jetpack-cat/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/jetpack-cat?locale=ko-kr"
   },
   {
     "key": "zenyatta",
@@ -5153,7 +5631,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt3f1cb50ae5da0445/6339095ce3c2a2741688cc01/ZENYATTA_ORBOFHARMONY.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt4204709d5485ca5e/63390961da1d806602f83f3a/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_ZenyattaOrbOfHarmony_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltf546ab77ca486589/6679f4bbe7bbdb7ff1c0cfc5/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_ZenyattaOrbOfHarmony_WEB_16x9_1920x1080p30_WEBM.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "시야 차단 허용 시간",
+            "value": "3초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "초월",
@@ -5227,7 +5716,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/zenyatta/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/zenyatta?locale=ko-kr"
   },
   {
     "key": "juno",
@@ -5269,7 +5760,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltf31d7e0e1695b4bd/66a3ef28e79fa5a9b1bd706c/Juno_Pulsar.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltd13dda36a3612bd5/66a2cdd2b68e88a355f7e04b/0627_JUNOWeb_PulsarTorpedoes_1P_GH_02.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blta9f494e54f8eb0b9/66a2cde21eb57e03d5e0d9c3/0627_JUNOWeb_PulsarTorpedoes_1P_GH_02.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "최소 대상 포착 시간",
+            "value": "0.35초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08/",
+        "statsPatchDate": "2026-08-11",
+        "statsScope": "라이브 · 가까운 대상의 최소 포착 시간 · 거리에 따라 증가",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "궤도 광선",
@@ -5367,7 +5869,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/juno/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/juno?locale=ko-kr"
   },
   {
     "key": "cassidy",
@@ -5469,7 +5973,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/cassidy/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/cassidy?locale=ko-kr"
   },
   {
     "key": "kiriko",
@@ -5501,7 +6007,22 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blta9a73179b9759022/6333cac3b8dbde69f5279858/KIRIKO_HEALING_OFUDA.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt7669c2e66554a1d2/6333cab6399a07678557c0b9/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_KirikoHealingOfuda_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8e783ecec766996e/6679a167671160a38d43379f/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_KirikoHealingOfuda_WEB_16x9_1920x1080p30_H264.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "투사체 속도",
+            "value": "18m/s"
+          },
+          {
+            "label": "최대 추적 사거리",
+            "value": "30m"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "쿠나이",
@@ -5531,7 +6052,22 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt683a2b73f84ea062/6333cac33917977bfd98610f/KIRIKO_PROTECTION_SUZU.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blte8fc68c16da8830e/6333cab72dc7636608cc7082/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_KirikoProtectionSuzu_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt1fc01e8f0b2b46b9/6679ac5d2134bd9e63c554f2/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_KirikoProtectionSuzu_WEB_16x9_1920x1080p30_H264.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "무적 지속시간",
+            "value": "0.5초"
+          },
+          {
+            "label": "폭발 반경",
+            "value": "4m"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "여우길",
@@ -5595,7 +6131,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/kiriko/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/kiriko?locale=ko-kr"
   },
   {
     "key": "torbjorn",
@@ -5627,7 +6165,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt100f42515de441fa/633908c81a0b5e7d3d1ec5eb/TORBJORN_RIVETGUN.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltfd9c03952d0e843f/633908cd1a0b5e7d3d1ec5ef/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_TorbjornRivetGun_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blta26896c2b8fcfd8a/6679f49f5e8b86180785d177/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_TorbjornRivetGun_WEB_16x9_1920x1080p30_WEBM.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "보조 사격 탄 퍼짐",
+            "value": "4도"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "대장간 망치",
@@ -5717,7 +6266,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/torbjorn/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/torbjorn?locale=ko-kr"
   },
   {
     "key": "tracer",
@@ -5769,7 +6320,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blta8bd64af6cbf8c06/633908e3399a07678557c185/TRACER_RECALL.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt90c2d86712cbac66/633908e7ed7dcc6a002803ec/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_TracerRecall_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt7cf38b0ed5faebd5/6679f4a22cfadc600a0cf3af/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_TracerRecall_WEB_16x9_1920x1080p30_WEBM.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "재사용 대기시간",
+            "value": "12초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08/",
+        "statsPatchDate": "2026-08-11",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "펄스 폭탄",
@@ -5833,7 +6395,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/tracer/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/tracer?locale=ko-kr"
   },
   {
     "key": "pharah",
@@ -5895,7 +6459,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blta21245fa883c3a63/633907a9ec7e18758be51084/PHARAH_Concussive_Blast.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt0bafdc5ec9b69294/633907a0ec7e18758be51080/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_PharahConcusiveBlast_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt68298287826d9c93/6679b20b9d84e7586be03bbd/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_PharahConcusiveBlast_WEB_16x9_1920x1080p30_WEBM.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "재사용 대기시간",
+            "value": "8초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08/",
+        "statsPatchDate": "2026-08-11",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "포화",
@@ -5965,7 +6540,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/pharah/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/pharah?locale=ko-kr"
   },
   {
     "key": "freja",
@@ -6017,7 +6594,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt37a0802041619a51/67ec717940df826a8a850192/take-aim.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt7b5ecd11efd68e4c/67ec715cd23f49622cd031d4/0319_FREJA_TakeAim_GH_01.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt14512b262415f67d/67ec716801d5d24afcc7fd5f/0319_FREJA_TakeAim_GH_01.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "폭발 화살 폭발 피해",
+            "value": "75"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "상승기류",
@@ -6085,7 +6673,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/freja/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/freja?locale=ko-kr"
   },
   {
     "key": "hanzo",
@@ -6216,7 +6806,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/hanzo/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/hanzo?locale=ko-kr"
   },
   {
     "key": "hazard",
@@ -6352,7 +6944,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/hazard/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/hazard?locale=ko-kr"
   },
   {
     "key": "dmon",
@@ -6383,7 +6977,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt472e52d23c6d191a/6a73de64458124cbbae14a74/plasmasaber.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt9fb75ef73b9da025/6a73e7e1458124d58ae14a7c/01_260727_DMon_WebAbilities_1P_PlasmaSaber_KG_0001.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltafb4b78e2c2d80a0/6a73e7e85db6070a0dda4bd1/01_260727_DMon_WebAbilities_1P_PlasmaSaber_KG_0001.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "기본 공격 피해",
+            "value": "60"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "휴대용 융합 연발총",
@@ -6393,7 +6998,22 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt27451ee96e3e81a3/6a73de7d71372ae9b52ebc39/portablefusionrepeater.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt11990a45ae54707f/6a73e7f845429f0ff7530af9/02_260727_DMon_WebAbilities_1P_PortableFusionRepeater_KG_0001.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltbb5282f5c2c8d1d5/6a73e7ff71372a41a32ebc3d/02_260727_DMon_WebAbilities_1P_PortableFusionRepeater_KG_0001.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "탄 퍼짐",
+            "value": "1.75도"
+          },
+          {
+            "label": "거리 감쇠 시작",
+            "value": "20m"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "파워 배리어",
@@ -6403,7 +7023,18 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltd33bb7f570ca6be2/6a73df3ef42b95a6d52fa779/barrier.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt331b79d8cd27bf93/6a73e8281bb9c5c97c6bc68a/3a_3b_260727_DMon_WebAbilities_1P_3P_PowerBarrier_0001.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt6384e59c767fbe7d/6a73e8338355d207162d635c/3a_3b_260727_DMon_WebAbilities_1P_3P_PowerBarrier_0001.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "시전 시간",
+            "value": "0.016초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "돌진 강타",
@@ -6413,7 +7044,22 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blta798c2e7e495f0ca/6a73df584581240baae14a78/surgingstrike.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt599f88125181e340/6a73e8b9e8b07f75e9474af0/3a_3b_260727_DMon_WebAbilities_1P_3P_SurgingStrike_KG_0001.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltcfc56f2a390bb212/6a73e8c4a571b02d88d18c88/3a_3b_260727_DMon_WebAbilities_1P_3P_SurgingStrike_KG_0001.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "시전 시간",
+            "value": "0.05초"
+          },
+          {
+            "label": "사용 후 회복 시간",
+            "value": "0.15초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08/",
+        "statsPatchDate": "2026-08-14",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "융합 연발총",
@@ -6423,7 +7069,22 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt0d370f8e2a5d9aaa/6a73dfe4e8b07fcdc8474aec/fusionrepeaterboosting.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt767a9c4c85d25884/6a73e8d9a571b0709ad18c8c/05_260727_DMon_WebAbilities_1P_FusionRepeater_Boosting_KG_0001.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt58302f8beedb869c/6a73e8e4c07be412bf2d4faf/05_260727_DMon_WebAbilities_1P_FusionRepeater_Boosting_KG_0001.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "시전 시간",
+            "value": "0.2초"
+          },
+          {
+            "label": "사용 후 회복 시간",
+            "value": "0.2초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08/",
+        "statsPatchDate": "2026-08-14",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       },
       {
         "name": "추진기",
@@ -6463,7 +7124,22 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt2b7cf614ebdaff7c/6a73e027a736250846c8a650/callmech.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltceb61b0a098104d1/6a73e93ac07be4c7842d4fb3/0727_DMON_AbilityVideos_CallMech_edit_100_4K_PRHQ_LIVE_1_MZ_1.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt456ab89883a59f6b/6a73e943a571b05763d18c90/0727_DMON_AbilityVideos_CallMech_edit_100_4K_PRHQ_LIVE_1_MZ_1.webm"
-        }
+        },
+        "stats": [
+          {
+            "label": "변신 시간",
+            "value": "0.95초"
+          },
+          {
+            "label": "1인칭 부팅 연출",
+            "value": "1초"
+          }
+        ],
+        "statsCheckedAt": "2026-09-09",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsPatchDate": "2026-09-08",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
       }
     ],
     "perks": {
@@ -6513,7 +7189,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/dmon/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/dmon?locale=ko-kr"
   },
   {
     "key": "dva",
@@ -6530,12 +7208,7 @@
     "location": "대한민국, 부산, MEKA 기지(이전 기록), 감시 기지: 지브롤터",
     "birthday": "6월 22일",
     "age": 21,
-    "hitpoints": {
-      "shields": 0,
-      "armor": 325,
-      "health": 325,
-      "total": 650
-    },
+    "hitpoints": null,
     "abilities": [
       {
         "name": "융합포",
@@ -6661,6 +7334,9 @@
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/dva/",
     "checkedAt": "2026-08-29",
-    "reviewStatus": "verified"
+    "reviewStatus": "verified",
+    "abilitiesCheckedAt": "2026-09-09",
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/dva?locale=ko-kr",
+    "hitpointsNotice": "API 생명력 구성과 9월 8일 5v5 패치 표기가 달라 총 생명력은 재확인 중입니다. 공식 변경: 메카 기본 생명력 200."
   }
 ]

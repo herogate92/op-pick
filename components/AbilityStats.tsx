@@ -12,7 +12,8 @@ export function AbilityStats({ ability, compact = false }: { ability: Ability; c
           <div key={`${stat.label}-${stat.value}`}><dt>{stat.label}</dt><dd>{stat.value}</dd></div>
         ))}
       </dl>
-      {ability.statsCheckedAt && <small>수치 확인 {ability.statsCheckedAt}</small>}
+      <small>{ability.statsScope} · {ability.statsBasis}</small>
+      {ability.statsSourceUrl ? <small><a href={ability.statsSourceUrl} target="_blank" rel="noreferrer">공식 패치 {ability.statsPatchDate}</a> · 확인 {ability.statsCheckedAt}</small> : <small>기존 입력일 {ability.statsCheckedAt} · 최신 수치 검증 전</small>}
     </div>
   );
 }

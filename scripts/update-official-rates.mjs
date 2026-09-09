@@ -1,4 +1,4 @@
-import { writeFile } from "node:fs/promises";
+import { readFile, rename, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -126,10 +126,28 @@ const fetchedAt = new Intl.DateTimeFormat("en-CA", {
 }).format(new Date());
 const document = {
   fetchedAt,
-  notice: "Blizzard 공개 통계를 OverFast API 우선, 공식 페이지 대체 방식으로 갱신한 조건별 스냅샷입니다.",
+  notice: "Blizzard 공개 통계를 OverFast API 우선, 공식 페이지 대체 방식으로 수집했습니다. 수집일은 제공자의 집계 종료일이나 최신 패치 이후 경기만을 의미하지 않습니다.",
   snapshots: await Promise.all(snapshots.map(fetchSnapshot)),
 };
 
-await writeFile(join(root, "data", "hero-rates.json"), `${JSON.stringify(document, null, 2)}\n`, "utf8");
+// Validate both snapshots before replacing the last good file, including provider fallbacks.
+const heroes = JSON.parse(await readFile(join(root, "data", "heroes.json"), "utf8"));
+const expectedKeys = new Set(heroes.map((hero) => hero.key));
+for (const snapshot of document.snapshots) {
+  const seen = new Set();
+  if (snapshot.rows.length !== expectedKeys.size) throw new Error(`${snapshot.id}: 영웅 수 불일치; 기존 스냅샷을 보존합니다.`);
+  for (const row of snapshot.rows) {
+    if (!expectedKeys.has(row.hero) || seen.has(row.hero)) throw new Error(`${snapshot.id}: 중복 또는 알 수 없는 영웅 ${row.hero}`);
+    seen.add(row.hero);
+    for (const value of [row.winRate, row.pickRate, row.banRate]) {
+      if (value !== null && (typeof value !== "number" || !Number.isFinite(value) || value < 0 || value > 100)) throw new Error(`${snapshot.id}/${row.hero}: 잘못된 통계 값`);
+    }
+  }
+  if (!snapshot.rows.some((row) => row.winRate !== null && row.pickRate !== null)) throw new Error(`${snapshot.id}: 유효 통계 없음`);
+}
+const destination = join(root, "data", "hero-rates.json");
+const temporary = `${destination}.${process.pid}.tmp`;
+await writeFile(temporary, `${JSON.stringify(document, null, 2)}\n`, "utf8");
+await rename(temporary, destination);
 const providers = [...new Set(document.snapshots.map((snapshot) => snapshot.dataProviderLabel))].join(", ");
 console.log(`통계 저장 완료: ${document.snapshots.length}개 조건, 각 ${document.snapshots[0].rows.length}명, ${providers}, ${fetchedAt}`);
