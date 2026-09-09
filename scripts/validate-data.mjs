@@ -108,6 +108,19 @@ for (const synergy of teamSynergies) {
   if (synergy.score < 1 || synergy.score > 5) errors.push(`팀 시너지 점수 범위 오류: ${synergy.id}`);
   if (!synergy.reason || !synergy.type || !synergy.reviewedAt) errors.push(`팀 시너지 설명 또는 검수일 누락: ${synergy.id}`);
   if (!synergy.modes?.length || !synergy.modes.every((mode) => validTeamModes.has(mode))) errors.push(`팀 시너지 모드 오류: ${synergy.id}`);
+  if (!["recommended", "held"].includes(synergy.status)) errors.push(`팀 시너지 추천 상태 누락: ${synergy.id}`);
+  if (synergy.status === "held" && !synergy.holdReason?.trim()) errors.push(`시너지 보류 이유 누락: ${synergy.id}`);
+  if (synergy.status === "recommended") {
+    if (!["ability", "mixed", "pair"].includes(synergy.category)) errors.push(`시너지 유형 오류: ${synergy.id}`);
+    if (![synergy.name, synergy.example, synergy.condition, synergy.failure, synergy.patchNote, synergy.verificationNote].every((value) => typeof value === "string" && value.trim())) errors.push(`시너지 사례·조건·실패·검토 범위 누락: ${synergy.id}`);
+    if (!Array.isArray(synergy.steps) || synergy.steps.length < 3 || synergy.steps.some((step) => typeof step !== "string" || !step.trim())) errors.push(`시너지 실행 순서 누락: ${synergy.id}`);
+    if (!["official-match", "official-example", "guide-example"].includes(synergy.evidence?.type) || !synergy.evidence?.summary || !synergy.evidence?.url?.startsWith("https://")) errors.push(`시너지 사례 출처 누락: ${synergy.id}`);
+    if (!synergy.sourceUrls?.length || !synergy.sourceUrls.every((url) => url.startsWith("https://"))) errors.push(`시너지 기술 출처 누락: ${synergy.id}`);
+    if (!Array.isArray(synergy.abilities) || !synergy.heroes.every((key) => synergy.abilities.some((ability) => ability.hero === key))) errors.push(`양쪽 영웅의 연계 기술 누락: ${synergy.id}`);
+    for (const ability of synergy.abilities ?? []) {
+      if (!synergy.heroes.includes(ability.hero) || !heroes.find((hero) => hero.key === ability.hero)?.abilities.some((item) => item.name === ability.name)) errors.push(`존재하지 않는 시너지 기술: ${synergy.id}/${ability.name}`);
+    }
+  }
 }
 
 const cautionIds = new Set();

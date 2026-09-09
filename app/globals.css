@@ -666,6 +666,30 @@ button { color: inherit; }
 
 /* Combo page */
 .combo-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+.synergy-category-nav { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+.synergy-category-nav a { padding: 10px 14px; border: 1px solid #27536d; color: #bceefa; background: #0c2033; font-size: 14px; }
+.synergy-category-nav a:hover, .synergy-category-nav a:focus-visible { border-color: #5fd4ff; }
+.synergy-category-section { scroll-margin-top: 100px; }
+.combo-card.synergy-guide-card > header { display: flex; flex-wrap: wrap; align-items: start; justify-content: space-between; }
+.synergy-guide-card h3 { margin: 6px 0 0; font-size: 21px; line-height: 1.4; }
+.synergy-evidence-badge { padding: 5px 8px; border: 1px solid #285668; color: #99dfeb; font-size: 11px; }
+.synergy-roster { display: flex; flex-wrap: wrap; gap: 18px; margin: 20px 0; }
+.synergy-roster a { display: flex; align-items: center; gap: 9px; font-size: 14px; }
+.synergy-roster img { width: 44px; height: 44px; object-fit: cover; background: #192b42; }
+.synergy-guide-card p, .synergy-guide-card li, .synergy-held-list p { color: #becbde; font-size: 14px; line-height: 1.75; overflow-wrap: anywhere; }
+.synergy-guide-card strong { color: #ecf4ff; }
+.synergy-abilities { display: flex; flex-wrap: wrap; gap: 7px; padding: 0; list-style: none; }
+.synergy-abilities li { padding: 3px 8px; background: #152940; font-size: 12px; }
+.synergy-details { margin-top: 20px; border-top: 1px solid #263c54; padding-top: 14px; }
+.synergy-details summary, .synergy-held-list summary { cursor: pointer; color: #82dff3; font-size: 14px; line-height: 1.6; }
+.synergy-details ol { padding-left: 22px; }
+.synergy-details li { margin: 10px 0; }
+.synergy-details a, .synergy-source-links a { color: #82dff3; text-decoration: underline; text-underline-offset: 3px; }
+.synergy-source-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0; font-size: 12px; }
+.synergy-guide-card footer, .synergy-details small { display: block; margin-top: 18px; color: #8dabc6; font-size: 12px; line-height: 1.6; }
+.synergy-held-list { border: 1px solid #30445c; padding: 18px; background: #0b1829; }
+.synergy-held-list ul { padding-left: 20px; }
+.synergy-held-list li { margin: 22px 0; }
 .combo-card { scroll-margin-top: 90px; padding: 24px; border: 1px solid rgba(255,255,255,.1); background: linear-gradient(145deg, #0f1d33, #091426); }
 .combo-card > header { display: grid; grid-template-columns: 42px 1fr auto; gap: 12px; align-items: center; }
 .combo-index { color: #506079; font-size: 24px; font-weight: 950; }

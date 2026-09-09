@@ -48,7 +48,15 @@ export interface MapGuide {
   terrain: string; analysisBasis: string; layoutCaveat: string; sourceUrls: string[];
 }
 export type TeamMode = "5v5" | "6v6";
-export interface TeamSynergy { id: string; heroes: [string, string]; score: number; type: string; reason: string; modes: TeamMode[]; reviewedAt: string; }
+interface SynergyBase { id: string; heroes: [string, string]; score: number; type: string; reason: string; modes: TeamMode[]; reviewedAt: string; }
+export interface TeamSynergy extends SynergyBase {
+  status: "recommended"; name: string; category: "ability" | "mixed" | "pair";
+  abilities: { hero: string; name: string }[];
+  example: string; steps: string[]; condition: string; failure: string;
+  evidence: { type: "official-match" | "official-example" | "guide-example"; url: string; summary: string };
+  sourceUrls: string[]; patchNote: string; verificationNote: string;
+}
+export interface HeldTeamSynergy extends SynergyBase { status: "held"; holdReason: string; }
 export interface TeamCaution { id: string; heroes: [string, string]; penalty: number; reason: string; mitigation: string; modes: TeamMode[]; reviewedAt: string; }
 export interface HeroRateRow { hero: string; winRate: number | null; pickRate: number | null; banRate: number | null; }
 export interface HeroRateSnapshot {
@@ -63,7 +71,10 @@ export const heroes = heroesJson as Hero[];
 export const matchups = matchupsJson as Matchup[];
 export const combos = combosJson as Combo[];
 export const maps = mapsJson as MapGuide[];
-export const teamSynergies = teamSynergiesJson as TeamSynergy[];
+const synergyRecords = teamSynergiesJson as (TeamSynergy | HeldTeamSynergy)[];
+// Only evidence-backed recommendations reach team scoring and auto-completion.
+export const teamSynergies = synergyRecords.filter((item): item is TeamSynergy => item.status === "recommended");
+export const heldTeamSynergies = synergyRecords.filter((item): item is HeldTeamSynergy => item.status === "held");
 export const teamCautions = teamCautionsJson as TeamCaution[];
 export const heroRates = heroRatesJson as HeroRatesDocument;
 export const roleLabels: Record<Role, string> = { tank: "돌격", damage: "공격", support: "지원" };
