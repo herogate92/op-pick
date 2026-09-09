@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { BarChart3, Cross, Search, Shield, Swords, Trophy } from "lucide-react";
+import { BarChart3, Cross, ExternalLink, Search, Shield, Swords, Trophy } from "lucide-react";
 import type { Hero, HeroRateSnapshot, Role } from "@/lib/data";
 
 type SortKey = "winRate" | "pickRate" | "banRate";
@@ -13,7 +13,7 @@ const roleIcons = { all: BarChart3, tank: Shield, damage: Swords, support: Cross
 const metricLabels: Record<SortKey, string> = { winRate: "승률", pickRate: "픽률", banRate: "금지율" };
 const formatRate = (value: number | null) => value === null ? "--" : `${value.toFixed(1)}%`;
 
-export function StatsExplorer({ snapshots, heroes }: { snapshots: HeroRateSnapshot[]; heroes: Hero[] }) {
+export function StatsExplorer({ snapshots, heroes, fetchedAt }: { snapshots: HeroRateSnapshot[]; heroes: Hero[]; fetchedAt: string }) {
   const [snapshotId, setSnapshotId] = useState(snapshots[0]?.id ?? "");
   const [role, setRole] = useState<"all" | Role>("all");
   const [query, setQuery] = useState("");
@@ -44,6 +44,10 @@ export function StatsExplorer({ snapshots, heroes }: { snapshots: HeroRateSnapsh
 
   return (
     <div className="stats-explorer">
+      <div className="stats-source-bar">
+        <span><strong>Blizzard 기반 통계 스냅샷</strong><small>{fetchedAt} 확인 · {snapshot.dataProviderLabel}로 갱신</small></span>
+        <a href={snapshot.sourceUrl} target="_blank" rel="noreferrer">Blizzard에서 상세 필터 열기<ExternalLink aria-hidden="true" /></a>
+      </div>
       <section className="stats-summary" aria-label="통계 요약">
         {metrics.map((metric) => {
           const leader = leaders[metric];

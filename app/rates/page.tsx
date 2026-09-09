@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { ExternalLink } from "lucide-react";
 import { AdSlot } from "@/components/AdSlot";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StatsExplorer } from "@/components/StatsExplorer";
@@ -22,11 +21,8 @@ export default function RatesPage() {
       </section>
       <div className="content-with-rail rates-layout">
         <div className="page-content">
-          <div className="stats-source-bar">
-            <span><strong>Blizzard 기반 통계 스냅샷</strong><small>{heroRates.fetchedAt} 확인 · {heroRates.snapshots[0].dataProviderLabel}로 갱신</small></span>
-            <a href={heroRates.snapshots[0].sourceUrl} target="_blank" rel="noreferrer">Blizzard에서 상세 필터 열기<ExternalLink aria-hidden="true" /></a>
-          </div>
-          <StatsExplorer snapshots={heroRates.snapshots} heroes={heroes} />
+          <StatsExplorer snapshots={heroRates.snapshots} heroes={heroes} fetchedAt={heroRates.fetchedAt} />
+          <p className="stats-disclaimer">{heroRates.notice}</p>
           <p className="stats-disclaimer">픽률은 전체 영웅 플레이 시간 대비 비율입니다. 표본이 부족한 값은 <strong>--</strong>로 표시하며, 수치는 패치·지역·입력 방식·등급·전장에 따라 달라집니다.</p>
           <AdSlot kind="banner" />
         </div>
