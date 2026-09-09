@@ -3,6 +3,9 @@ name: Deploy GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    # Daily 06:17 KST (21:17 UTC). GitHub may delay scheduled runs.
+    - cron: "17 21 * * *"
   workflow_dispatch:
 
 permissions:
@@ -25,8 +28,16 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run data:rates:test
+      - run: npm run test:recommendations
       - name: Refresh statistics before deployment
+        id: refresh
         run: npm run data:rates
+      - name: Report statistics refresh failure
+        if: ${{ failure() && steps.refresh.outcome == 'failure' }}
+        run: |
+          echo "::error title=Statistics refresh failed::New statistics were not published. The previous successful site deployment remains available."
+          echo "### Statistics refresh failed" >> "$GITHUB_STEP_SUMMARY"
+          echo "The previous successful deployment is retained. Inspect the refresh step; retry with workflow_dispatch after recovery." >> "$GITHUB_STEP_SUMMARY"
       - run: npm run data:validate
       - run: npm run videos:validate
       - run: npm run lint

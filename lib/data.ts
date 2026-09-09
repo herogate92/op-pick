@@ -38,7 +38,7 @@ export interface Matchup {
   skillInteractions?: SkillInteraction[];
   sourceUrls?: string[];
 }
-export interface Combo { id: string; name: string; heroes: string[]; score: number; difficulty: number; description: string; timing: string; counters: string[]; reviewedAt: string; }
+export interface Combo { id: string; name: string; heroes: string[]; score: number; difficulty: number; description: string; timing: string; counters: string[]; reviewedAt: string; status: "recommended" | "held"; modes: TeamMode[]; condition?: string; steps?: string[]; failure?: string; evidence?: { url: string; summary: string }; sourceUrls?: string[]; verificationNote?: string; holdReason?: string; }
 export interface MapRecommendation {
   hero: string; rank: number; winRate: number | null; note: string;
   condition: string; caution: string; sourceUrls: string[];
@@ -65,11 +65,13 @@ export interface HeroRateSnapshot {
   filters: { input: string; inputLabel: string; region: string; regionLabel: string; map: string; mapLabel: string; tier: string; tierLabel: string };
   rows: HeroRateRow[];
 }
-export interface HeroRatesDocument { fetchedAt: string; notice: string; snapshots: HeroRateSnapshot[]; }
+export interface HeroRatesDocument { fetchedAt: string; fetchedAtIso?: string; notice: string; snapshots: HeroRateSnapshot[]; }
 
 export const heroes = heroesJson as Hero[];
 export const matchups = matchupsJson as Matchup[];
-export const combos = combosJson as Combo[];
+const comboRecords = combosJson as Combo[];
+export const combos = comboRecords.filter(combo => combo.status === "recommended");
+export const heldCombos = comboRecords.filter(combo => combo.status === "held");
 export const maps = mapsJson as MapGuide[];
 const synergyRecords = teamSynergiesJson as (TeamSynergy | HeldTeamSynergy)[];
 // Only evidence-backed recommendations reach team scoring and auto-completion.

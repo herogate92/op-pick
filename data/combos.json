@@ -15,7 +15,27 @@
       "lucio",
       "zenyatta"
     ],
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-09-10",
+    "modes": [
+      "5v5"
+    ],
+    "status": "recommended",
+    "condition": "두 궁극기가 준비되고 아나가 겐지를 지정할 시야를 확보했으며, 겐지가 공격할 목표에 접근할 수 있을 때.",
+    "steps": [
+      "아나와 겐지가 목표와 진입 시점을 합의합니다.",
+      "겐지가 시야 안에서 나노를 받은 것을 확인하고 용검으로 진입합니다.",
+      "적 방어 기술에 막히면 무리한 추격 대신 이탈합니다."
+    ],
+    "failure": "수면총·기절이나 소리 방벽 같은 방어 기술로 공격 시간이 소모될 수 있습니다. 나노를 받아도 무적이 아니며 처치를 보장하지 않습니다.",
+    "evidence": {
+      "url": "https://mobalytics.gg/overwatch/heroes/genji-guide",
+      "summary": "전략 가이드가 나노 강화제와 용검의 연계 및 아나와 진입 타이밍을 맞추는 사례를 설명합니다."
+    },
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/ana?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/genji?locale=ko-kr"
+    ],
+    "verificationNote": "전략 가이드 사례·기존 기술 설명 기반 조건부 추천. 수치·확정 처치·특전 효과를 전제하지 않으며 게임 내 직접 재현은 하지 않았습니다."
   },
   {
     "id": "grav-dragon",
@@ -33,7 +53,27 @@
       "zenyatta",
       "lucio"
     ],
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-09-10",
+    "modes": [
+      "5v5"
+    ],
+    "status": "recommended",
+    "condition": "한조가 묶인 위치를 통과하도록 용의 진행 방향을 맞추고, 중력자탄 효과가 끝나기 전에 도달시킬 수 있을 때.",
+    "steps": [
+      "한조가 준비됐는지 확인하고 묶을 위치를 공유합니다.",
+      "자리야의 중력자탄 적중을 확인한 뒤 한조가 해당 지점을 관통하도록 발사합니다.",
+      "남은 적을 함께 압박하되 방어 궁극기로 버티면 추가 궁극기 소모를 재판단합니다."
+    ],
+    "failure": "중력자탄 투사체가 제거되거나 용이 늦게 도달하면 연계가 무너집니다. 초월·무적·구출 등의 대응이 남아 있으면 생존할 수 있습니다.",
+    "evidence": {
+      "url": "https://mobalytics.gg/overwatch/heroes/zarya-guide",
+      "summary": "전략 가이드의 한조 연계 항목에서 중력자탄과 용의 일격을 함께 사용하는 사례를 명시합니다."
+    },
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/zarya?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/hanzo?locale=ko-kr"
+    ],
+    "verificationNote": "전략 가이드 사례·기존 기술 설명 기반 조건부 추천. 수치·확정 처치·특전 효과를 전제하지 않으며 게임 내 직접 재현은 하지 않았습니다."
   },
   {
     "id": "grav-blossom",
@@ -51,7 +91,12 @@
       "dva",
       "kiriko"
     ],
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-09-10",
+    "modes": [
+      "5v5"
+    ],
+    "status": "held",
+    "holdReason": "자리야–리퍼의 일반 궁합은 확인했지만 중력자탄+죽음의 꽃의 구체적인 실행 사례를 이번 검토 출처에서 충분히 확인하지 못했습니다. 조합 자체가 불가능하다는 의미는 아닙니다."
   },
   {
     "id": "blizzard-bomb",
@@ -69,7 +114,12 @@
       "reinhardt",
       "mei"
     ],
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-09-10",
+    "modes": [
+      "5v5"
+    ],
+    "status": "held",
+    "holdReason": "눈보라의 이동 제한과 자폭의 사선 조건은 구분해야 합니다. 현재 적용 가능한 두 궁극기의 타이밍 사례를 충분히 확보하지 못해 보류합니다."
   },
   {
     "id": "window-visor",
@@ -87,7 +137,27 @@
       "sigma",
       "winston"
     ],
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-09-10",
+    "modes": [
+      "5v5"
+    ],
+    "status": "recommended",
+    "condition": "솔저의 사격이 매트릭스를 통과하고 적을 볼 수 있는 위치이며 적이 곧바로 엄폐하지 못할 때.",
+    "steps": [
+      "솔저가 사용할 사선을 정하고 그 앞에 매트릭스를 배치합니다.",
+      "매트릭스를 통과해 쏠 수 있는 위치에서 전술 조준경을 사용합니다.",
+      "적이 숨거나 방벽으로 막으면 무리하게 창 앞에 머무르지 않습니다."
+    ],
+    "failure": "전술 조준경은 벽이나 방벽을 무시하지 않습니다. 매트릭스 밖으로 나가는 탄환은 증폭되지 않으며 방어 매트릭스와 측면 진입에도 대응해야 합니다.",
+    "evidence": {
+      "url": "https://mobalytics.gg/overwatch/heroes/soldier-76-guide",
+      "summary": "솔저 가이드는 화력 지원 조합으로 증폭 매트릭스를 제시합니다. 전술 조준경에 적용하는 실행 절차는 기술 역할에 근거한 조건부 해설입니다."
+    },
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/baptiste?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/soldier-76?locale=ko-kr"
+    ],
+    "verificationNote": "전략 가이드 사례·기존 기술 설명 기반 조건부 추천. 수치·확정 처치·특전 효과를 전제하지 않으며 게임 내 직접 재현은 하지 않았습니다."
   },
   {
     "id": "kitsune-visor",
@@ -105,7 +175,27 @@
       "dva",
       "lucio"
     ],
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-09-10",
+    "modes": [
+      "5v5"
+    ],
+    "status": "recommended",
+    "condition": "솔저가 키츠네 러시의 영향을 받는 경로에서 적을 계속 볼 수 있고 두 궁극기가 준비됐을 때.",
+    "steps": [
+      "엄폐와 적의 위치를 고려해 러시 경로를 정합니다.",
+      "솔저가 경로에 맞춰 전술 조준경을 사용하고 사격을 이어갑니다.",
+      "적이 숨거나 우회하면 따라 나갈지 교전을 멈출지 판단합니다."
+    ],
+    "failure": "러시를 사용해도 적의 엄폐·방벽·흡수 기술은 남습니다. 경로를 따라 무리하게 전진하면 집중 공격을 받을 수 있습니다.",
+    "evidence": {
+      "url": "https://mobalytics.gg/overwatch/heroes/soldier-76-guide",
+      "summary": "솔저 가이드는 전술 조준경을 지원하는 궁극기로 키츠네 러시를 직접 제시합니다."
+    },
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/kiriko?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/soldier-76?locale=ko-kr"
+    ],
+    "verificationNote": "전략 가이드 사례·기존 기술 설명 기반 조건부 추천. 수치·확정 처치·특전 효과를 전제하지 않으며 게임 내 직접 재현은 하지 않았습니다."
   },
   {
     "id": "nano-bob",
@@ -123,7 +213,12 @@
       "sombra",
       "sigma"
     ],
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-09-10",
+    "modes": [
+      "5v5"
+    ],
+    "status": "held",
+    "holdReason": "B.O.B.에 대한 나노 적용 대상·유지 조건과 현재 연계 사례를 교차 확인하기 전까지 추천 평점을 적용하지 않습니다."
   },
   {
     "id": "window-bob",
@@ -141,6 +236,11 @@
       "ana",
       "sigma"
     ],
-    "reviewedAt": "2026-08-29"
+    "reviewedAt": "2026-09-10",
+    "modes": [
+      "5v5"
+    ],
+    "status": "held",
+    "holdReason": "애쉬와 바티스트의 일반 궁합만으로 B.O.B. 사격의 증폭과 실제 배치 사례까지 확인했다고 볼 수 없어 보류합니다."
   }
 ]
