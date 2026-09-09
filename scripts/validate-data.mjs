@@ -49,6 +49,25 @@ for (const matchup of matchups) {
   const id = `${matchup.hero}:${matchup.counter}`;
   if (matchupIds.has(id)) errors.push(`중복 상성: ${id}`);
   matchupIds.add(id);
+  if (matchup.skillInteractions !== undefined) {
+    if (!Array.isArray(matchup.skillInteractions) || !matchup.skillInteractions.length) {
+      errors.push(`기술 상성 사례 누락: ${matchup.id}`);
+      continue;
+    }
+    const hero = heroes.find((item) => item.key === matchup.hero);
+    const counter = heroes.find((item) => item.key === matchup.counter);
+    const caseIds = new Set();
+    for (const example of matchup.skillInteractions) {
+      if (!hero?.abilities.some((ability) => ability.name === example.heroAbility) || !counter?.abilities.some((ability) => ability.name === example.counterAbility)) errors.push(`존재하지 않는 상성 기술: ${matchup.id}`);
+      if (![example.interaction, example.condition, example.counterplay].every((value) => typeof value === "string" && value.trim())) errors.push(`기술 상성 효과·조건·대응법 누락: ${matchup.id}`);
+      const caseId = `${example.heroAbility}:${example.counterAbility}`;
+      if (caseIds.has(caseId)) errors.push(`중복 기술 상성 사례: ${matchup.id}/${caseId}`);
+      caseIds.add(caseId);
+    }
+    if (!Array.isArray(matchup.sourceUrls) || matchup.sourceUrls.length !== 2 || !matchup.sourceUrls.every((url) => {
+      try { const parsed = new URL(url); return parsed.protocol === "https:" && ["overfast-api.tekrop.fr", "overwatch.blizzard.com"].includes(parsed.hostname); } catch { return false; }
+    })) errors.push(`기술 상성 출처 오류: ${matchup.id}`);
+  }
 }
 
 const mapIds = new Set();

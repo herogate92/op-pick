@@ -503,6 +503,19 @@ button { color: inherit; }
 .verdict-source-row > small { color: #64758d; font-size: 8px; }
 .condition-box { display: flex; gap: 9px; margin: 10px 0; padding: 10px; background: rgba(8,220,243,.06); color: #b9c7d8; font-size: 10px; }
 .condition-box svg { flex: 0 0 18px; color: var(--cyan); }
+.matchup-skill-examples { min-width: 0; margin: 18px 0; }
+.matchup-skill-examples h3 { margin: 0 0 8px; color: var(--cyan-soft); font-size: 16px; }
+.matchup-skill-examples .skill-example-notice { color: #aebacc; font-size: 12px; line-height: 1.65; }
+.matchup-skill-examples article { margin-top: 12px; padding: 14px; border: 1px solid rgba(109,244,255,.2); border-radius: 8px; background: rgba(8,220,243,.04); overflow-wrap: anywhere; }
+.matchup-skill-examples h4 { margin: 0; font-size: 14px; line-height: 1.6; color: #eef7ff; }
+.matchup-skill-examples h4 span { color: #8fa1b8; margin: 0 5px; }
+.matchup-skill-examples article p, .matchup-skill-examples dd { margin: 8px 0 0; font-size: 13px; line-height: 1.75; color: #bdcadb; }
+.matchup-skill-examples dl { margin: 12px 0 0; }
+.matchup-skill-examples dl > div + div { margin-top: 10px; }
+.matchup-skill-examples dt { font-size: 12px; font-weight: 700; color: var(--cyan-soft); }
+.matchup-skill-examples dd { margin-top: 3px; }
+.skill-example-sources { display: flex; flex-wrap: wrap; gap: 8px 14px; margin-top: 12px; font-size: 12px; color: #aebacc; }
+.skill-example-sources a { color: var(--cyan-soft); text-decoration: underline; text-underline-offset: 3px; }
 .condition-box strong { display: block; margin-bottom: 3px; color: white; font-size: 11px; }
 .recommend-section { min-width: 0; padding: 16px; border: 1px solid rgba(255,255,255,.1); background: #0b1629; }
 .recommend-section .section-heading { margin-bottom: 10px; }

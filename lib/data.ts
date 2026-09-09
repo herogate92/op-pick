@@ -26,10 +26,15 @@ export interface Hero {
 }
 export type MatchupStatus = "verified" | "provisional";
 export type MatchupConfidence = "high" | "medium" | "low";
+export interface SkillInteraction {
+  heroAbility: string; counterAbility: string; interaction: string; condition: string; counterplay: string;
+}
 export interface Matchup {
   id: string; hero: string; counter: string; score: number; reason: string; condition: string;
   counterplay: string; status: MatchupStatus; confidence: MatchupConfidence; patchBasis: string; reviewedAt: string;
   evidence?: string[];
+  skillInteractions?: SkillInteraction[];
+  sourceUrls?: string[];
 }
 export interface Combo { id: string; name: string; heroes: string[]; score: number; difficulty: number; description: string; timing: string; counters: string[]; reviewedAt: string; }
 export interface MapRecommendation { hero: string; rank: number; winRate: number; note: string; }
