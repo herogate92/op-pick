@@ -8,3 +8,5 @@ out/
 data/raw/
 data/reports/
 work/
+
+__pycache__/

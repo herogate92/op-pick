@@ -140,16 +140,53 @@
       "winston",
       "tracer"
     ],
-    "score": 5,
-    "type": "집중 다이브",
-    "reason": "윈스턴의 점프 팩 진입에 트레이서가 합류해 고립된 같은 대상을 빠르게 압박합니다.",
+    "score": 3,
+    "type": "같은 목표에 진입 집중",
+    "reason": "윈스턴이 점프 팩으로 교전을 시작할 때 트레이서가 점멸로 합류해 같은 목표를 공격합니다.",
     "modes": [
-      "5v5",
-      "6v6"
+      "5v5"
     ],
-    "reviewedAt": "2026-08-30",
-    "status": "held",
-    "holdReason": "기존 요약에는 기술 역할 분담만 있고 구체적인 연계 사례·출처가 부족합니다. 사례를 보강하기 전 자동 추천에서 제외합니다."
+    "reviewedAt": "2026-09-10",
+    "status": "recommended",
+    "name": "윈스턴 + 트레이서 · 동시 후방 진입",
+    "category": "pair",
+    "abilities": [
+      {
+        "hero": "winston",
+        "name": "점프 팩"
+      },
+      {
+        "hero": "winston",
+        "name": "방벽 생성기"
+      },
+      {
+        "hero": "tracer",
+        "name": "점멸"
+      },
+      {
+        "hero": "tracer",
+        "name": "펄스 쌍권총"
+      }
+    ],
+    "example": "고립된 지원 영웅을 정한 뒤 윈스턴이 착지하는 시점에 트레이서가 옆에서 사격을 시작해 목표의 대응을 분산합니다.",
+    "steps": [
+      "트레이서가 합류할 경로와 두 영웅의 이탈 수단을 확인합니다.",
+      "윈스턴의 착지에 맞춰 같은 목표를 공격하고 방벽으로 막을 수 있는 사격을 나눕니다.",
+      "적 지원이 합류하거나 방벽이 소진되면 각자의 이동기로 이탈합니다."
+    ],
+    "condition": "트레이서가 실제로 합류 가능한 위치이고 점멸·시간 역행 등 생존 수단이 남아 있을 때.",
+    "failure": "점프와 합류 시점이 어긋나면 윈스턴이 혼자 집중 공격을 받습니다. 높은 고지에는 트레이서가 바로 합류하지 못하며, 방벽이 모든 치유와 공격을 막는 것은 아닙니다.",
+    "evidence": {
+      "type": "guide-example",
+      "url": "https://mobalytics.gg/overwatch/heroes/winston-guide",
+      "summary": "윈스턴 가이드는 단독 화력을 보완하는 합류 영웅으로 트레이서를 명시합니다. 교전 예시는 해당 역할 분담을 실행 순서로 풀어쓴 해설입니다."
+    },
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/winston?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/tracer?locale=ko-kr"
+    ],
+    "patchNote": "특전·6v6 수치를 전제하지 않습니다. 패치로 기술 동작이 바뀌면 재검토해야 합니다.",
+    "verificationNote": "공개 전략 가이드와 기술 설명 기반 조건부 추천 · 게임 내 직접 재현 미실시"
   },
   {
     "id": "reinhardt-lucio",
@@ -257,16 +294,49 @@
       "sigma",
       "baptiste"
     ],
-    "score": 4,
-    "type": "원거리 유지",
-    "reason": "시그마의 방벽과 바티스트의 불사 장치·증폭 매트릭스가 중장거리 교전을 안정적으로 유지합니다.",
+    "score": 3,
+    "type": "일반 기술 + 궁극기",
+    "reason": "증폭 매트릭스를 통과하는 강착과 초구체로 같은 사선의 적을 압박합니다.",
     "modes": [
-      "5v5",
-      "6v6"
+      "5v5"
     ],
-    "reviewedAt": "2026-08-30",
-    "status": "held",
-    "holdReason": "기존 요약에는 기술 역할 분담만 있고 구체적인 연계 사례·출처가 부족합니다. 사례를 보강하기 전 자동 추천에서 제외합니다."
+    "reviewedAt": "2026-09-10",
+    "status": "recommended",
+    "name": "시그마 + 바티스트 · 증폭 투사체",
+    "category": "mixed",
+    "abilities": [
+      {
+        "hero": "sigma",
+        "name": "강착"
+      },
+      {
+        "hero": "sigma",
+        "name": "초구체"
+      },
+      {
+        "hero": "baptiste",
+        "name": "증폭 매트릭스"
+      }
+    ],
+    "example": "적이 통로를 건너는 교전에서 시그마 앞에 매트릭스를 설치하고, 강착과 이어지는 초구체가 창을 통과하도록 사격합니다.",
+    "steps": [
+      "시그마와 바티스트가 같은 사격 방향과 창 설치 위치를 정합니다.",
+      "매트릭스를 통과하도록 강착을 던지고 적중한 목표에 초구체를 이어 쏩니다.",
+      "적이 엄폐하거나 사선을 우회하면 창 앞으로 무리하게 추격하지 않습니다."
+    ],
+    "condition": "매트릭스가 준비되어 있고 강착·초구체가 창을 통과해 목표에 도달할 사선이 있을 때.",
+    "failure": "투사체가 창 밖을 지나거나 적이 엄폐·방벽을 사용하면 기대한 화력을 전달하지 못합니다. 적 체력·방어 효과·패치에 따라 달라지므로 확정 처치 조합으로 표시하지 않습니다.",
+    "evidence": {
+      "type": "guide-example",
+      "url": "https://mobalytics.gg/overwatch/heroes/sigma-guide",
+      "summary": "시그마 가이드의 바티스트 항목이 증폭 매트릭스를 통과하는 강착·초구체의 연계를 직접 설명합니다. 가이드의 확정 처치 표현과 수치는 채택하지 않았습니다."
+    },
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/sigma?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/baptiste?locale=ko-kr"
+    ],
+    "patchNote": "특전·6v6 수치를 전제하지 않습니다. 패치로 기술 동작이 바뀌면 재검토해야 합니다.",
+    "verificationNote": "공개 전략 가이드와 기술 설명 기반 조건부 추천 · 게임 내 직접 재현 미실시"
   },
   {
     "id": "juno-winston",
