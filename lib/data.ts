@@ -38,7 +38,7 @@ export interface Matchup {
   skillInteractions?: SkillInteraction[];
   sourceUrls?: string[];
 }
-export interface Combo { id: string; name: string; heroes: string[]; score: number; difficulty: number; description: string; timing: string; counters: string[]; reviewedAt: string; status: "recommended" | "held"; modes: TeamMode[]; condition?: string; steps?: string[]; failure?: string; evidence?: { url: string; summary: string }; sourceUrls?: string[]; verificationNote?: string; holdReason?: string; }
+export interface Combo { id: string; name: string; heroes: string[]; score: number; difficulty: number; description: string; timing: string; counters: string[]; reviewedAt: string; status: "recommended" | "held"; modes: TeamMode[]; condition?: string; steps?: string[]; failure?: string; evidence?: { url: string; summary: string }; sourceUrls?: string[]; verificationNote?: string; holdReason?: string; reviewEvidence?: { url: string; summary: string }; recheckRequirement?: string; }
 export interface MapRecommendation {
   hero: string; rank: number; winRate: number | null; note: string;
   condition: string; caution: string; sourceUrls: string[];

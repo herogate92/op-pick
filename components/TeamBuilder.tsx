@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import { decodeTeam, encodeTeam, TEAM_SAVE_KEY, type SharedTeam } from "@/lib/team-share";
 import { AlertTriangle, Info, Check, ChevronRight, Cross, RotateCcw, Shield, Sparkles, Swords, UsersRound, WandSparkles } from "lucide-react";
 import type { Combo, MapGuide, Role, TeamCaution, TeamSynergy } from "@/lib/data";
 import { roleLabels, subroleLabels } from "@/lib/data";
@@ -13,6 +14,33 @@ export function TeamBuilder({ heroes, combos, maps, synergies, cautions }: { her
   const [teams, setTeams] = useState<Record<Mode, Team>>({ "5v5": Array(5).fill(null), "6v6": Array(6).fill(null) });
   const [activeSlot, setActiveSlot] = useState(0);
   const [selectedMapId, setSelectedMapId] = useState("");
+  const [shareMessage, setShareMessage] = useState("");
+  const [shareUrl, setShareUrl] = useState("");
+
+  useEffect(() => {
+    const restore = () => {
+      if (!window.location.hash.startsWith("#v=")) return;
+      try {
+        const state = decodeTeam(window.location.hash, heroes, maps.map(map => map.id));
+        setMode(state.mode);
+        setTeams(current => ({ ...current, [state.mode]: state.team }));
+        setSelectedMapId(state.mapId);
+        setActiveSlot(Math.max(0, state.team.findIndex(key => key === null)));
+        setShareMessage("공유 링크의 조합을 불러왔습니다.");
+      } catch (error) {
+        setShareMessage(`조합을 불러오지 못했습니다. ${error instanceof Error ? error.message : "링크를 확인하세요."}`);
+      }
+    };
+    const frame = requestAnimationFrame(restore);
+    window.addEventListener("hashchange", restore);
+    window.addEventListener("popstate", restore);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("hashchange", restore);
+      window.removeEventListener("popstate", restore);
+    };
+  }, [heroes, maps]);
+
   const team = teams[mode];
   const selectedKeys = team.filter(Boolean) as string[];
   const selectedHeroes = selectedKeys.map((key) => heroes.find((hero) => hero.key === key)).filter(Boolean) as BuilderHero[];
@@ -29,6 +57,37 @@ export function TeamBuilder({ heroes, combos, maps, synergies, cautions }: { her
   const remainingKeys = team.filter((key, index) => index !== targetSlot && key) as string[];
   const remainingCounts = roleOrder.reduce((counts, role) => ({ ...counts, [role]: heroes.filter(hero => remainingKeys.includes(hero.key) && hero.role === role).length }), { tank: 0, damage: 0, support: 0 } as Record<Role, number>);
   const recommendations = rankCandidates(heroes, combos, synergies, cautions, selectedMap, mode, team, targetSlot).slice(0, 5);
+
+  const currentState = (): SharedTeam => ({ mode, team, mapId: selectedMapId });
+  const saveTeam = () => {
+    try {
+      localStorage.setItem(TEAM_SAVE_KEY, encodeTeam(currentState()));
+      setShareMessage("이 브라우저에 현재 조합 1개를 저장했습니다.");
+    } catch { setShareMessage("브라우저 저장을 사용할 수 없습니다. 공유 링크를 보관해 주세요."); }
+  };
+  const loadTeam = () => {
+    try {
+      const saved = localStorage.getItem(TEAM_SAVE_KEY);
+      if (!saved) { setShareMessage("이 브라우저에 저장된 조합이 없습니다."); return; }
+      const state = decodeTeam(saved, heroes, maps.map(map => map.id));
+      setMode(state.mode);
+      setTeams(current => ({ ...current, [state.mode]: state.team }));
+      setSelectedMapId(state.mapId);
+      setActiveSlot(Math.max(0, state.team.findIndex(key => key === null)));
+      setShareMessage("저장된 조합을 불러왔습니다.");
+      setShareUrl("");
+    } catch (error) { setShareMessage(`저장된 조합을 불러오지 못했습니다. ${error instanceof Error ? error.message : "브라우저 설정을 확인하세요."}`); }
+  };
+  const shareTeam = async () => {
+    const url = new URL(window.location.href);
+    url.search = "";
+    url.hash = encodeTeam(currentState());
+    setShareUrl(url.href);
+    try {
+      await navigator.clipboard.writeText(url.href);
+      setShareMessage("현재 조합의 공유 링크를 복사했습니다.");
+    } catch { setShareMessage("자동 복사가 제한되어 있습니다. 아래 링크를 선택해 직접 복사하세요."); }
+  };
 
   const changeMode = (nextMode: Mode) => {
     setMode(nextMode);
@@ -81,6 +140,13 @@ export function TeamBuilder({ heroes, combos, maps, synergies, cautions }: { her
         <Sparkles aria-hidden="true" /><div><strong>{mode === "5v5" ? "역할 고정 규칙 적용" : "6대6 돌격 인원 제한"}</strong><span>{mode === "5v5" ? "슬롯에 맞는 역할의 영웅만 선택할 수 있습니다." : "돌격은 최대 2명까지 선택할 수 있습니다. 기존 돌격 영웅의 교체는 가능합니다. 5v5 전용 연계는 점수에 반영하지 않습니다."}</span></div>
         <label className="builder-map-select"><span>전장 반영</span><select value={selectedMapId} onChange={(event) => setSelectedMapId(event.target.value)}><option value="">전장 미선택</option>{maps.map((map) => <option key={map.id} value={map.id}>{map.name} · {map.mode}</option>)}</select></label>
       </div>
+
+      <section className="builder-sharing" aria-label="조합 저장 및 공유">
+        <div><button onClick={saveTeam}>이 브라우저에 저장</button><button onClick={loadTeam}>저장 조합 불러오기</button><button onClick={shareTeam}>공유 링크 복사</button></div>
+        <p>모드·영웅·빈 슬롯·전장을 저장합니다. 브라우저 저장은 1개이며 다시 저장하면 덮어씁니다. 공유 링크는 생성 당시의 조합을 담습니다.</p>
+        <p role="status" aria-live="polite">{shareMessage}</p>
+        {shareUrl && <label>공유 링크<input aria-label="공유 링크" readOnly value={shareUrl} onFocus={event => event.target.select()} /></label>}
+      </section>
 
       <div className="builder-layout">
         <section className="builder-workbench">
