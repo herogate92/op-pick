@@ -56,7 +56,7 @@ export interface TeamSynergy extends SynergyBase {
   evidence: { type: "official-match" | "official-example" | "guide-example"; url: string; summary: string };
   sourceUrls: string[]; patchNote: string; verificationNote: string;
 }
-export interface HeldTeamSynergy extends SynergyBase { status: "held"; holdReason: string; }
+export interface HeldTeamSynergy extends SynergyBase { status: "held"; holdReason: string; reviewEvidence?: { url: string; summary: string }; recheckRequirement?: string; }
 export interface TeamCaution { id: string; heroes: [string, string]; penalty: number; reason: string; mitigation: string; modes: TeamMode[]; reviewedAt: string; }
 export interface HeroRateRow { hero: string; winRate: number | null; pickRate: number | null; banRate: number | null; }
 export interface HeroRateSnapshot {
