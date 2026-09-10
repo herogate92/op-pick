@@ -1,16 +1,17 @@
-name: Recover timed-out Pages deployment
+name: Inspect Pages recovery status
 on:
   push:
     branches: [ops/recover-stale-pages]
     paths: [.github/workflows/recover-stale-pages.yml]
 permissions:
-  pages: write
+  pages: read
 jobs:
-  cancel-stale:
+  inspect-stale:
     runs-on: ubuntu-latest
     steps:
-      - name: Cancel known timed-out deployment
+      - name: Inspect canceled deployment and site status
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh api --method POST repos/herogate92/op-pick/pages/deployments/f1d3dd57046432c3e5f7061b6b48e80da81bae1d/cancel
+          gh api repos/herogate92/op-pick/pages/deployments/f1d3dd57046432c3e5f7061b6b48e80da81bae1d
+          gh api repos/herogate92/op-pick/pages --jq '{status,build_type,html_url}'
