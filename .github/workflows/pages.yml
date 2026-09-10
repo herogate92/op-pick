@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
   schedule:
-    # Daily 06:17 KST (21:17 UTC). GitHub may delay scheduled runs.
-    - cron: "17 21 * * *"
+    # Wednesday 08:17 KST (Tuesday 23:17 UTC); patch changes only.
+    - cron: "17 23 * * 2"
   workflow_dispatch:
 
 permissions:
@@ -20,16 +20,28 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.patch.outputs.changed }}
     steps:
       - uses: actions/checkout@v6
+      - name: Check official live patch
+        id: patch
+        run: python3 scripts/check-patch.py
       - uses: actions/setup-node@v6
+        if: steps.patch.outputs.changed != 'false'
         with:
           node-version: 24
           cache: npm
       - run: npm ci
+        if: steps.patch.outputs.changed != 'false'
       - run: npm run data:rates:test
+        if: steps.patch.outputs.changed != 'false'
+      - run: python3 scripts/test-patch.py
+        if: steps.patch.outputs.changed != 'false'
       - run: npm run test:recommendations
+        if: steps.patch.outputs.changed != 'false'
       - name: Refresh statistics before deployment
+        if: steps.patch.outputs.changed != 'false'
         id: refresh
         run: npm run data:rates
       - name: Report statistics refresh failure
@@ -39,11 +51,17 @@ jobs:
           echo "### Statistics refresh failed" >> "$GITHUB_STEP_SUMMARY"
           echo "The previous successful deployment is retained. Inspect the refresh step; retry with workflow_dispatch after recovery." >> "$GITHUB_STEP_SUMMARY"
       - run: npm run data:validate
+        if: steps.patch.outputs.changed != 'false'
       - run: npm run videos:validate
+        if: steps.patch.outputs.changed != 'false'
       - run: npm run lint
+        if: steps.patch.outputs.changed != 'false'
       - run: npm run build
+        if: steps.patch.outputs.changed != 'false'
       - uses: actions/configure-pages@v6
+        if: steps.patch.outputs.changed != 'false'
       - uses: actions/upload-pages-artifact@v5
+        if: steps.patch.outputs.changed != 'false'
         with:
           path: ./out
   deploy:
@@ -52,6 +70,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
+    if: needs.build.outputs.changed != 'false'
     steps:
       - name: Deploy
         id: deployment
