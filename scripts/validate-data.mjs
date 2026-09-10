@@ -113,6 +113,7 @@ for (const synergy of teamSynergies) {
   if (!synergy.reason || !synergy.type || !synergy.reviewedAt) errors.push(`팀 시너지 설명 또는 검수일 누락: ${synergy.id}`);
   if (!synergy.modes?.length || !synergy.modes.every((mode) => validTeamModes.has(mode))) errors.push(`팀 시너지 모드 오류: ${synergy.id}`);
   if (!["recommended", "held"].includes(synergy.status)) errors.push(`팀 시너지 추천 상태 누락: ${synergy.id}`);
+  if (synergy.reviewEvidence && (synergy.status !== "held" || !synergy.reviewEvidence.summary?.trim() || !synergy.recheckRequirement?.trim() || !/^https:\/\//.test(synergy.reviewEvidence.url ?? ""))) errors.push(`보류 검토 근거 또는 복귀 조건 누락: ${synergy.id}`);
   if (synergy.status === "held" && !synergy.holdReason?.trim()) errors.push(`시너지 보류 이유 누락: ${synergy.id}`);
   if (synergy.status === "recommended") {
     if (!["ability", "mixed", "pair"].includes(synergy.category)) errors.push(`시너지 유형 오류: ${synergy.id}`);
