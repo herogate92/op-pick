@@ -1,0 +1,29 @@
+[
+  {
+    "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
+    "category": "기술",
+    "id": "vendetta",
+    "contentDigest": "f8df51b3de46dad2db03bc3e8b5e8b4a806a143eea3d29f4a4e894a0b2e910ea",
+    "decision": "updated",
+    "reviewedAt": "2026-09-10",
+    "summary": "핫픽스에서 명시한 기술 버그 수정 안내를 반영했습니다. 미공개 수치와 기존 수치 확인일은 변경하지 않았습니다. 게임 내 재현 미실시."
+  },
+  {
+    "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
+    "category": "기술",
+    "id": "ramattra",
+    "contentDigest": "500038bec87fbb62370d604c3c78bc92e8c2ceb6b1756ca51057e3bed50a8819",
+    "decision": "updated",
+    "reviewedAt": "2026-09-10",
+    "summary": "핫픽스에서 명시한 기술 버그 수정 안내를 반영했습니다. 미공개 수치와 기존 수치 확인일은 변경하지 않았습니다. 게임 내 재현 미실시."
+  },
+  {
+    "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
+    "category": "기술",
+    "id": "jetpack-cat",
+    "contentDigest": "83027d56f1fae9a6d85f2736da60686c618ff7751de4b3c0c400a224dc789bde",
+    "decision": "updated",
+    "reviewedAt": "2026-09-10",
+    "summary": "핫픽스에서 명시한 기술 버그 수정 안내를 반영했습니다. 미공개 수치와 기존 수치 확인일은 변경하지 않았습니다. 게임 내 재현 미실시."
+  }
+]

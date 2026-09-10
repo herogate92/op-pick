@@ -34,7 +34,8 @@ def read_url(url):
     with urlopen(Request(url,headers={'User-Agent':'OP-PICK-LAB patch-check'}),timeout=30) as response: return response.read().decode()
 
 def main():
-    current=fingerprint(read_url(SOURCE))
+    html=read_url(SOURCE)
+    current=fingerprint(html)
     try:
         previous=json.loads(read_url('https://opick.ggwp.kr/patch-state.json'))
         if not re.fullmatch('[0-9a-f]{64}',previous.get('digest','')): raise ValueError('Invalid deployed patch marker')
@@ -43,6 +44,8 @@ def main():
         previous={}
     changed=current['digest']!=previous.get('digest') or os.environ.get('GITHUB_EVENT_NAME')!='schedule'
     if changed:
+        Path('work').mkdir(exist_ok=True)
+        Path('work/latest-patch.html').write_text(html)
         Path('public').mkdir(exist_ok=True)
         Path('public/patch-state.json').write_text(json.dumps(current,indent=2)+'\n')
     with open(os.environ['GITHUB_OUTPUT'],'a') as output:output.write(f'changed={str(changed).lower()}\n')
