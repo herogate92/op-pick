@@ -93,3 +93,25 @@ test('5대5 역할 고정과 6대6 제한 초과 진단을 유지한다', () => 
  assert.equal(selectionBlockReason(sixHeroes,sixHeroes[0],'5v5',Array(5).fill(null),0),null);
  assert.ok(getIssues('6v6',['tank','tank-b','tank-c',null,null,null],{tank:3,damage:0,support:0},0,0,[]).some(i => i.text.includes('최대 2명') && !i.good));
 });
+
+const { encodeTeam, decodeTeam } = await import('../lib/team-share.ts');
+test('공유 링크는 5대5와 6대6의 빈 슬롯·순서·맵을 그대로 복원한다', () => {
+ for (const state of [
+  {mode:'5v5',team:['tank',null,'ally','support-a',null],mapId:'kings-row'},
+  {mode:'6v6',team:['support-a','tank',null,'tank-b','ally',null],mapId:''},
+  {mode:'6v6',team:Array(6).fill(null),mapId:''},
+ ]) assert.deepEqual(decodeTeam('#'+encodeTeam(state),sixHeroes,['kings-row']),state);
+});
+test('공유 링크로 중복·역할 제한·탱커 상한을 우회할 수 없다', () => {
+ for (const state of [
+  {mode:'6v6',team:['tank','tank-b','tank-c',null,null,null],mapId:''},
+  {mode:'6v6',team:['tank','tank',null,null,null,null],mapId:''},
+  {mode:'5v5',team:[null,'tank',null,null,null],mapId:''},
+ ]) assert.throws(()=>decodeTeam(encodeTeam(state),sixHeroes,[]));
+});
+test('알 수 없는 영웅·전장·인원·버전과 손상된 링크를 거절한다', () => {
+ const valid = encodeTeam({mode:'6v6',team:twoTanks,mapId:''});
+ for (const value of [valid.replace('v=1','v=2'),valid+'&mode=5v5',valid.replace('mode=6v6','mode=7v7'),'v=1', 'x'.repeat(2049),encodeTeam({mode:'6v6',team:['unknown',null,null,null,null,null],mapId:''}),encodeTeam({mode:'6v6',team:twoTanks,mapId:'unknown'}),encodeTeam({mode:'6v6',team:['tank'],mapId:''})]) {
+  assert.throws(()=>decodeTeam(value,sixHeroes,[]));
+ }
+});

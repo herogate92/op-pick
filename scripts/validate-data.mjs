@@ -100,6 +100,7 @@ for (const combo of combos) {
   if (!combo.modes?.length || combo.modes.some(mode => !["5v5", "6v6"].includes(mode))) errors.push(`조합 모드 누락: ${combo.id}`);
   if (combo.status === "held" && !combo.holdReason) errors.push(`보류 사유 누락: ${combo.id}`);
   if (combo.status === "recommended" && (!combo.condition || !combo.failure || !combo.verificationNote || !combo.evidence?.summary || !combo.evidence?.url?.startsWith("https://") || !Array.isArray(combo.steps) || combo.steps.length < 3 || combo.steps.some(step => !step.trim()) || !combo.sourceUrls?.length)) errors.push(`궁극기 연계 근거 누락: ${combo.id}`);
+  if (combo.reviewEvidence && (combo.status !== "held" || !combo.reviewEvidence.summary?.trim() || !combo.recheckRequirement?.trim() || !combo.reviewEvidence.url?.startsWith("https://"))) errors.push(`궁극기 보류 검토 근거 누락: ${combo.id}`);
   if (!combo.reviewedAt) errors.push(`조합 검수일 누락: ${combo.id}`);
 }
 
