@@ -23,6 +23,7 @@ for (const hero of heroes) {
   if (!hero.sourceUrl || !hero.checkedAt) errors.push(`영웅 출처 누락: ${hero.key}`);
   if (!Array.isArray(hero.abilities)) errors.push(`기술 목록 오류: ${hero.key}`);
   for (const ability of hero.abilities ?? []) {
+    if (ability.patchNote && (!ability.patchNote.summary?.trim() || !/^\d{4}-\d{2}-\d{2}$/.test(ability.patchNote.date ?? "") || !ability.patchNote.sourceUrl?.startsWith("https://overwatch.blizzard.com/en-us/news/patch-notes/live/"))) errors.push(`기술 패치 안내 출처·날짜 누락: ${hero.key}/${ability.name}`);
     if (ability.video && (!ability.video.mp4 && !ability.video.webm)) errors.push(`기술 영상 주소 누락: ${hero.key}/${ability.name}`);
     if (ability.stats && (!Array.isArray(ability.stats) || !ability.stats.length)) errors.push(`기술 수치 형식 오류: ${hero.key}/${ability.name}`);
     if (ability.stats?.some((stat) => !stat.label || !stat.value)) errors.push(`기술 수치 값 누락: ${hero.key}/${ability.name}`);

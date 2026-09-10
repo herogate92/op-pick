@@ -551,7 +551,12 @@
         "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07/",
         "statsPatchDate": "2026-07-14",
         "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
-        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부",
+        "patchNote": {
+          "date": "2026-09-10",
+          "summary": "2026-09-10 핫픽스에서 수동 폭발 전에 발생하던 의도하지 않은 추가 지연이 수정됐습니다. 정확한 지연 시간은 공개되지 않았습니다.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+        }
       },
       {
         "name": "절멸",
@@ -2394,7 +2399,12 @@
         "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
         "statsPatchDate": "2026-09-08",
         "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
-        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부",
+        "patchNote": {
+          "date": "2026-09-10",
+          "summary": "2026-09-10 핫픽스에서 일부 상황의 사거리 문제가 수정됐습니다. 변경된 정확한 사거리 수치는 공개되지 않았습니다.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+        }
       },
       {
         "name": "수호 태세",
@@ -5517,6 +5527,11 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blte2e9b58f9f1fa93e/6981754b7a424411f368c885/Purr.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt256e09e7ee5729c6/6986518eefc72d8816137606/JCAT_Purr_100_4K_PRHQ_LIVE_1_MZ.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt93f8ff6f6ec1ea2f/698651948ada06b666c86158/JCAT_Purr_100_4K_PRHQ_LIVE_1_MZ.webm"
+        },
+        "patchNote": {
+          "date": "2026-09-10",
+          "summary": "2026-09-10 핫픽스에서 골골대기가 적 방벽을 통과하던 버그가 수정됐습니다. 방벽 너머에도 효과가 적용된다는 전제로 사용하지 마세요.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
         }
       },
       {

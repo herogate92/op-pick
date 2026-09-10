@@ -50,6 +50,11 @@ jobs:
           echo "::error title=Statistics refresh failed::New statistics were not published. The previous successful site deployment remains available."
           echo "### Statistics refresh failed" >> "$GITHUB_STEP_SUMMARY"
           echo "The previous successful deployment is retained. Inspect the refresh step; retry with workflow_dispatch after recovery." >> "$GITHUB_STEP_SUMMARY"
+      - name: Build persistent content review queue
+        if: steps.patch.outputs.changed != 'false'
+        run: python3 scripts/patch-review.py
+      - run: python3 scripts/test-patch-review.py
+        if: steps.patch.outputs.changed != 'false'
       - run: npm run data:validate
         if: steps.patch.outputs.changed != 'false'
       - run: npm run videos:validate

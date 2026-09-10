@@ -14,6 +14,7 @@ export interface Ability {
   video?: AbilityVideo;
   stats?: AbilityStat[]; statsCheckedAt?: string; statsSourceUrl?: string;
   statsPatchDate?: string; statsScope?: string; statsBasis?: string;
+  patchNote?: { date: string; summary: string; sourceUrl: string };
 }
 export interface StoryMedia { type: string; link: string; }
 export interface StoryChapter { title: string; picture: string; }

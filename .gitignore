@@ -10,3 +10,5 @@ data/reports/
 work/
 
 __pycache__/
+public/patch-review.json
+public/patch-review.html
