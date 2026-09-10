@@ -22,11 +22,21 @@ export const fixedSlots: Array<{ role: Role; label: string }> = [
 
 export const roleOrder: Role[] = ["tank", "damage", "support"];
 
+export function selectionBlockReason(heroes: BuilderHero[], hero: BuilderHero, mode: Mode, team: Team, slotIndex: number): string | null {
+  if (slotIndex < 0 || slotIndex >= team.length) return "선택할 슬롯이 없습니다.";
+  const remaining = team.filter((key, index) => index !== slotIndex && key);
+  if (remaining.includes(hero.key)) return "이미 다른 슬롯에 선택한 영웅입니다.";
+  if (mode === "5v5" && fixedSlots[slotIndex]?.role !== hero.role) return "슬롯에 맞는 역할만 선택할 수 있습니다.";
+  if (mode === "6v6" && hero.role === "tank" && remaining.filter(key => heroes.find(item => item.key === key)?.role === "tank").length >= 2) {
+    return "6대6에서는 돌격 영웅을 최대 2명까지 선택할 수 있습니다. 돌격 슬롯을 선택하면 교체할 수 있습니다.";
+  }
+  return null;
+}
+
 export function rankCandidates(heroes: BuilderHero[], combos: Combo[], synergies: TeamSynergy[], cautions: TeamCaution[], selectedMap: MapGuide | undefined, mode: Mode, team: Team, slotIndex: number) {
   const selected = team.filter((key, index) => index !== slotIndex && key) as string[];
   const counts = roleOrder.reduce((value, role) => ({ ...value, [role]: selected.map((key) => heroes.find((hero) => hero.key === key)).filter((hero) => hero?.role === role).length }), { tank: 0, damage: 0, support: 0 } as Record<Role, number>);
-  const requiredRole = mode === "5v5" ? fixedSlots[slotIndex].role : null;
-  return heroes.filter((hero) => hero.key !== team[slotIndex] && !selected.includes(hero.key) && (!requiredRole || hero.role === requiredRole)).map((hero) => {
+  return heroes.filter((hero) => hero.key !== team[slotIndex] && !selectionBlockReason(heroes, hero, mode, team, slotIndex)).map((hero) => {
     let score = combos.filter((combo) => combo.modes.includes(mode) && combo.heroes.includes(hero.key) && combo.heroes.some((key) => selected.includes(key))).reduce((sum, combo) => sum + combo.score * 9, 0);
     score += synergies.filter((synergy) => synergy.modes.includes(mode) && synergy.heroes.includes(hero.key) && synergy.heroes.some((key) => selected.includes(key))).reduce((sum, synergy) => sum + synergy.score * 10, 0);
     score -= cautions.filter((caution) => caution.modes.includes(mode) && caution.heroes.includes(hero.key) && caution.heroes.some((key) => selected.includes(key))).reduce((sum, caution) => sum + caution.penalty * 8, 0);
@@ -51,6 +61,7 @@ export function getIssues(mode: Mode, team: Team, counts: Record<Role, number>, 
   if (filled < team.length) issues.push({ text: `영웅 ${team.length - filled}명을 더 선택하세요.`, good: false });
   if (mode === "5v5") issues.push({ text: "역할 고정 비율이 자동으로 유지됩니다.", good: true });
   if (mode === "6v6") {
+    if (counts.tank > 2) issues.push({ text: "6대6에서는 돌격 영웅을 최대 2명까지 선택할 수 있습니다.", good: false });
     if (!counts.tank) issues.push({ text: "전선을 만들 돌격 영웅이 없습니다.", good: false });
     if (counts.support < 2) issues.push({ text: "안정적인 유지력을 위해 지원 2명을 우선 권장합니다.", good: false });
     if (counts.tank && counts.damage && counts.support) issues.push({ text: "돌격·공격·지원 역할이 모두 포함됐습니다.", good: true });

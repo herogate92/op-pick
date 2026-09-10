@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { assessTeam, rankCandidates, getIssues } from '../lib/team-builder.ts';
+import { assessTeam, rankCandidates, getIssues, selectionBlockReason } from '../lib/team-builder.ts';
 import { matchesCombo, heroSearchTerms } from '../lib/combo-search.ts';
 const hero = (key, role, name = key) => ({ key, name, role, subrole: '', portrait: '', reviewStatus: 'verified' });
 const heroes = [hero('tank','tank'), hero('old','damage'), hero('ally','damage'), hero('candidate-a','damage','가'), hero('candidate-b','damage','나'), hero('support-a','support'), hero('support-b','support')];
@@ -55,4 +55,41 @@ test('모든 궁극기 자료는 추천 근거나 개별 보류 이유가 있다
    if(c.status==='recommended') assert.ok(c.evidence?.url && c.condition && c.failure && c.steps?.length===3);
    else { assert.equal(c.status,'held'); assert.ok(c.holdReason); }
  }
+});
+
+const sixHeroes = [...heroes, hero('tank-b','tank'), hero('tank-c','tank'), hero('tank-d','tank')];
+const twoTanks = ['tank','tank-b','ally','support-a',null,null];
+test('6대6은 세 번째 돌격의 직접 선택과 추천을 막는다', () => {
+ const candidate = sixHeroes.find(h => h.key === 'tank-c');
+ for (const index of [2,4,5]) {
+  assert.match(selectionBlockReason(sixHeroes,candidate,'6v6',twoTanks,index), /최대 2명/);
+  assert.ok(rankCandidates(sixHeroes,[],[],[],undefined,'6v6',twoTanks,index).every(h => h.role !== 'tank'));
+ }
+});
+test('6대6 돌격 두 명 상태에서 기존 돌격 교체와 제거 후 추가를 허용한다', () => {
+ const candidate = sixHeroes.find(h => h.key === 'tank-c');
+ assert.equal(selectionBlockReason(sixHeroes,candidate,'6v6',twoTanks,0),null);
+ assert.ok(rankCandidates(sixHeroes,[],[],[],undefined,'6v6',twoTanks,0).some(h => h.key === candidate.key));
+ const removed = [...twoTanks]; removed[0] = null;
+ assert.equal(selectionBlockReason(sixHeroes,candidate,'6v6',removed,4),null);
+ assert.ok(selectionBlockReason(sixHeroes,sixHeroes[0],'6v6',twoTanks,4));
+});
+test('돌격에 높은 추천 점수가 있어도 6대6 자동 완성은 두 명을 넘지 않는다', () => {
+ const map = {recommendations:sixHeroes.filter(h => h.role === 'tank').map(h => ({hero:h.key,rank:1}))};
+ const links = [{heroes:['tank','tank-b','tank-c','tank-d'],modes:['6v6'],score:100}];
+ for (const seed of [Array(6).fill(null), twoTanks]) {
+  const draft = [...seed];
+  for (let index = 0; index < draft.length; index++) {
+   if (draft[index] !== null) continue;
+   const [best] = rankCandidates(sixHeroes,[],links,[],map,'6v6',draft,index);
+   assert.ok(best); draft[index] = best.key;
+  }
+  assert.equal(draft.filter(k => sixHeroes.find(h => h.key === k).role === 'tank').length,2);
+  assert.equal(new Set(draft).size,6);
+ }
+});
+test('5대5 역할 고정과 6대6 제한 초과 진단을 유지한다', () => {
+ assert.ok(selectionBlockReason(sixHeroes,sixHeroes[0],'5v5',Array(5).fill(null),1));
+ assert.equal(selectionBlockReason(sixHeroes,sixHeroes[0],'5v5',Array(5).fill(null),0),null);
+ assert.ok(getIssues('6v6',['tank','tank-b','tank-c',null,null,null],{tank:3,damage:0,support:0},0,0,[]).some(i => i.text.includes('최대 2명') && !i.good));
 });
