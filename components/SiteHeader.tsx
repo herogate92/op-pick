@@ -15,10 +15,11 @@ const navItems = [
 
 export function SiteHeader({ active }: { active: string }) {
   return (
+    <>
     <header className="topbar">
       <nav className="primary-nav" aria-label="주요 메뉴">
         {navItems.map(({ href, label, icon: Icon, id }) => (
-          <Link key={id} href={href} className={active === id ? "nav-link active" : "nav-link"}><Icon size={17} aria-hidden="true" /><span>{label}</span></Link>
+          <Link key={id} href={href} aria-current={active === id ? "page" : undefined} className={active === id ? "nav-link active" : "nav-link"}><Icon size={17} aria-hidden="true" /><span>{label}</span></Link>
         ))}
       </nav>
       <Link href="/" className="brand" aria-label="OP PICK LAB 홈">
@@ -28,8 +29,19 @@ export function SiteHeader({ active }: { active: string }) {
       <div className="top-actions">
         <Link href="/heroes/" className="icon-button" aria-label="영웅 검색"><Search size={20} /></Link>
         <Link href="/sources/" className={active === "sources" ? "update-chip active" : "update-chip"}>영웅 {heroes.length}명 · 안내</Link>
-        <Link href="/heroes/" className="menu-button" aria-label="영웅 메뉴 열기"><Menu size={21} /></Link>
+        <details className="mobile-menu">
+          <summary aria-label="전체 메뉴"><Menu size={21} aria-hidden="true" /><span>메뉴</span></summary>
+          <nav aria-label="전체 메뉴" className="mobile-menu-panel">
+            {navItems.map(({ href, label, icon: Icon, id }) => <Link key={id} href={href} aria-current={active === id ? "page" : undefined}><Icon size={20} aria-hidden="true" />{label}</Link>)}
+            <Link href="/sources/">자료 출처·이용 안내</Link>
+            <a href="/patch-review.html">패치 재검토 현황</a>
+          </nav>
+        </details>
       </div>
     </header>
+    <nav className="mobile-bottom-nav" aria-label="모바일 빠른 메뉴">
+      {navItems.filter(({ id }) => ["heroes", "matchups", "combos", "team-builder"].includes(id)).map(({ href, label, icon: Icon, id }) => <Link key={id} href={href} aria-current={active === id ? "page" : undefined}><Icon size={21} aria-hidden="true" /><span>{label}</span></Link>)}
+    </nav>
+    </>
   );
 }

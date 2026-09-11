@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Shield, Sparkles, Swords, UsersRound } from "lucide-react";
+import { ArrowRight, BarChart3, MapPinned, Shield, Sparkles, Swords, UsersRound } from "lucide-react";
 import { HomeBackgroundMedia } from "@/components/HomeBackgroundMedia";
 import { SiteHeader } from "@/components/SiteHeader";
 import { JsonLd } from "@/components/JsonLd";
@@ -50,8 +50,10 @@ export default function HomePage() {
       <nav className="home-quick-nav" aria-label="빠른 메뉴">
         <Link href="/heroes/"><Shield /><span><strong>영웅 도감</strong><small>스킬과 역할 확인</small></span><ArrowRight /></Link>
         <Link href="/matchups/"><Swords /><span><strong>상성 비교</strong><small>두 영웅 유불리 확인</small></span><ArrowRight /></Link>
-        <Link href="/combos/"><Sparkles /><span><strong>궁 조합</strong><small>대표 궁극기 연계</small></span><ArrowRight /></Link>
+        <Link href="/combos/"><Sparkles /><span><strong>시너지·궁 조합</strong><small>일반 스킬과 궁극기 연계</small></span><ArrowRight /></Link>
         <Link href="/team-builder/"><UsersRound /><span><strong>팀 구성</strong><small>5대5·6대6 가상 조합</small></span><ArrowRight /></Link>
+        <Link href="/maps/"><MapPinned /><span><strong>맵별 추천</strong><small>전장에 맞는 영웅 찾기</small></span><ArrowRight /></Link>
+        <Link href="/rates/"><BarChart3 /><span><strong>영웅 통계</strong><small>승률과 픽률 확인</small></span><ArrowRight /></Link>
       </nav>
     </main>
   );
