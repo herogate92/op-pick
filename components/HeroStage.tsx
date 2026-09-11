@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ChevronRight, Cross, HeartPulse, Home, MapPinned, Menu, Search, Shield, Sparkles, Swords, UsersRound, X, Zap } from "lucide-react";
+import { ChevronRight, Cross, HeartPulse, Search, Shield, Sparkles, Swords, X, Zap } from "lucide-react";
 import { AbilityStats } from "@/components/AbilityStats";
-import { BrandElectricity } from "@/components/BrandElectricity";
+import { SiteHeader } from "@/components/SiteHeader";
 import type { Ability, Combo, Matchup, Role } from "@/lib/data";
 import { roleAccent, roleLabels, subroleLabels } from "@/lib/data";
 
@@ -13,15 +13,6 @@ interface HeroSummary {
   abilities: Ability[]; perks: { minor: Ability[]; major: Ability[] };
   hitpoints: { shields: number; armor: number; health: number; total: number } | null;
 }
-
-const navItems = [
-  { href: "/", label: "홈", icon: Home },
-  { href: "/heroes/", label: "영웅", icon: Shield },
-  { href: "/maps/", label: "맵별 추천", icon: MapPinned },
-  { href: "/matchups/", label: "상성", icon: Swords },
-  { href: "/combos/", label: "조합", icon: Sparkles },
-  { href: "/team-builder/", label: "팀 구성", icon: UsersRound },
-];
 
 const heroRoleOrder: Role[] = ["tank", "damage", "support"];
 const heroRosterOrder: Record<Role, string[]> = {
@@ -35,6 +26,9 @@ export function HeroStage({ heroes, matchups, combos }: { heroes: HeroSummary[];
   const [query, setQuery] = useState("");
   const [searchOpen, setSearchOpen] = useState(false);
   const [skillsOpen, setSkillsOpen] = useState(false);
+  const [pickerOpen, setPickerOpen] = useState(true);
+  const [pickerRole, setPickerRole] = useState<Role>("tank");
+  const [rosterQuery, setRosterQuery] = useState("");
   const hero = selected === null ? null : heroes[selected];
   const weakAgainst = hero ? matchups.filter((item) => item.hero === hero.key && item.status === "verified").sort((a, b) => b.score - a.score).slice(0, 2) : [];
   const strongAgainst = hero ? matchups.filter((item) => item.counter === hero.key && item.status === "verified").sort((a, b) => b.score - a.score).slice(0, 2) : [];
@@ -44,6 +38,7 @@ export function HeroStage({ heroes, matchups, combos }: { heroes: HeroSummary[];
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
+      if (event.target instanceof HTMLElement && (event.target.matches("input, textarea, select") || event.target.isContentEditable)) return;
       if (event.key === "/" && !searchOpen) { event.preventDefault(); setSearchOpen(true); }
       if (event.key === "ArrowRight") setSelected((value) => value === null ? 0 : (value + 1) % heroes.length);
       if (event.key === "ArrowLeft") setSelected((value) => value === null ? heroes.length - 1 : (value - 1 + heroes.length) % heroes.length);
@@ -55,31 +50,88 @@ export function HeroStage({ heroes, matchups, combos }: { heroes: HeroSummary[];
 
   const selectHero = (key: string) => {
     const index = heroes.findIndex((item) => item.key === key);
-    if (index >= 0) setSelected(index);
+    if (index >= 0) {
+      setSelected(index);
+      setSkillsOpen(false);
+      setPickerOpen(false);
+      if (window.matchMedia("(max-width: 760px)").matches) requestAnimationFrame(() => {
+        document.getElementById("hero-dashboard")?.scrollIntoView({ block: "start" });
+        document.getElementById("hero-dashboard")?.focus({ preventScroll: true });
+      });
+    }
   };
 
   return (
     <main className={hero ? "hero-shell" : "hero-shell no-hero-selected"} style={{ "--hero-accent": hero ? roleAccent[hero.role] : "#08dcf3" } as React.CSSProperties}>
       <div className="hero-backdrop" style={hero?.background ? { backgroundImage: `url(${hero.background})` } : undefined} />
       <div className="hero-vignette" />
-      <header className="topbar">
-        <nav className="primary-nav" aria-label="주요 메뉴">
-          {navItems.map(({ href, label, icon: Icon }, index) => (
-            <Link key={href} href={href} className={index === 1 ? "nav-link active" : "nav-link"}><Icon size={17} aria-hidden="true" /><span>{label}</span></Link>
-          ))}
-        </nav>
-        <Link href="/" className="brand" aria-label="OP PICK LAB 홈">
-          <BrandElectricity />
-          <span className="brand-mark">OP</span><span><strong>OP PICK LAB</strong><small>오버워치 픽 연구소</small></span>
-        </Link>
-        <div className="top-actions">
-          <button className="icon-button" onClick={() => setSearchOpen(true)} aria-label="영웅 검색"><Search size={20} /></button>
-          <Link href="/sources/" className="update-chip">영웅 {heroes.length}명 · 안내</Link>
-          <button className="menu-button" onClick={() => setSearchOpen(true)} aria-label="메뉴와 검색 열기"><Menu size={21} /></button>
-        </div>
-      </header>
+      <SiteHeader active="heroes" />
+      <div className="mobile-hero-switcher">
+        <strong>{hero ? hero.name : "영웅을 선택하세요"}</strong>
+        <button type="button" disabled={!hero} aria-expanded={pickerOpen} aria-controls="hero-picker" onClick={() => {
+          setPickerOpen(!pickerOpen);
+          requestAnimationFrame(() => document.getElementById("hero-picker")?.scrollIntoView({ block: "start" }));
+        }}>{!hero ? "아래에서 선택" : pickerOpen ? "목록 접기" : "영웅 변경"}</button>
+      </div>
 
-      <section className="hero-content hero-dashboard" aria-live="polite">
+      <section id="hero-picker" data-open={pickerOpen} data-role={pickerRole} className="selector-dock" aria-label="영웅 선택">
+        <div className="dock-heading">
+          <strong>영웅 선택</strong>
+          <div><button type="button" className="clear-selection" onClick={() => { setSelected(null); setSkillsOpen(false); }} disabled={!hero}>선택 해제</button><small>← → 탐색 · / 검색</small></div>
+        </div>
+        <div className="mobile-picker-controls">
+          <label htmlFor="roster-search">{roleLabels[pickerRole]} 영웅 검색</label>
+          <input id="roster-search" type="search" value={rosterQuery} onChange={event => setRosterQuery(event.target.value)} placeholder="영웅 이름 검색" />
+          <div aria-label="영웅 역할 필터">{heroRoleOrder.map(role => <button type="button" key={role} aria-pressed={pickerRole === role} onClick={() => { setPickerRole(role); setRosterQuery(""); }}>{roleLabels[role]} {heroes.filter(item => item.role === role).length}</button>)}</div>
+        </div>
+        <div className="role-groups" style={{ "--role-grid": roleGridColumns } as React.CSSProperties}>
+          {heroRoleOrder.map((groupRole) => {
+            const order = heroRosterOrder[groupRole];
+            const groupHeroes = heroes.filter((item) => item.role === groupRole && item.name.toLowerCase().includes(rosterQuery.trim().toLowerCase())).sort((a, b) => {
+              const aIndex = order.indexOf(a.key);
+              const bIndex = order.indexOf(b.key);
+              return (aIndex < 0 ? Number.MAX_SAFE_INTEGER : aIndex) - (bIndex < 0 ? Number.MAX_SAFE_INTEGER : bIndex);
+            });
+            return (
+              <section
+                className={`role-group role-group-${groupRole}`}
+                key={groupRole}
+                aria-labelledby={`role-${groupRole}`}
+                style={{ "--role-columns": Math.ceil(groupHeroes.length / 2) } as React.CSSProperties}
+              >
+                <h3 id={`role-${groupRole}`}>
+                  {groupRole === "tank" && <Shield aria-hidden="true" />}
+                  {groupRole === "damage" && <Swords aria-hidden="true" />}
+                  {groupRole === "support" && <Cross aria-hidden="true" />}
+                  <span>{roleLabels[groupRole]}</span>
+                  <small>{groupHeroes.length}명</small>
+                </h3>
+                {!groupHeroes.length && <p role="status">검색 결과가 없습니다. 이름을 다시 입력해 주세요.</p>}
+                <div className="role-roster">
+                  {groupHeroes.map((item) => {
+                    const index = heroes.findIndex((candidate) => candidate.key === item.key);
+                    const isSelected = selected === index;
+                    return (
+                      <button
+                        key={item.key}
+                        className={isSelected ? "hero-thumb selected" : "hero-thumb"}
+                        onClick={() => selectHero(item.key)}
+                        aria-pressed={isSelected}
+                        aria-label={`${item.name} 선택`}
+                        title={item.name}
+                      >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}<img src={item.portrait} alt="" />
+                        <span>{item.name}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </section>
+            );
+          })}
+        </div>
+      </section>
+      <section id="hero-dashboard" tabIndex={-1} className="hero-content hero-dashboard" aria-live="polite">
         {hero ? <>
         <article className="dashboard-card hero-profile-card">
           <div className="hero-profile-top">
@@ -139,57 +191,6 @@ export function HeroStage({ heroes, matchups, combos }: { heroes: HeroSummary[];
         </> : <EmptySelection heroes={heroes.length} matchups={matchups.length} combos={combos.length} />}
       </section>
 
-      <section className="selector-dock" aria-label="영웅 선택">
-        <div className="dock-heading">
-          <strong>영웅 선택</strong>
-          <div><button type="button" className="clear-selection" onClick={() => { setSelected(null); setSkillsOpen(false); }} disabled={!hero}>선택 해제</button><small>← → 탐색 · / 검색</small></div>
-        </div>
-        <div className="role-groups" style={{ "--role-grid": roleGridColumns } as React.CSSProperties}>
-          {heroRoleOrder.map((groupRole) => {
-            const order = heroRosterOrder[groupRole];
-            const groupHeroes = heroes.filter((item) => item.role === groupRole).sort((a, b) => {
-              const aIndex = order.indexOf(a.key);
-              const bIndex = order.indexOf(b.key);
-              return (aIndex < 0 ? Number.MAX_SAFE_INTEGER : aIndex) - (bIndex < 0 ? Number.MAX_SAFE_INTEGER : bIndex);
-            });
-            return (
-              <section
-                className={`role-group role-group-${groupRole}`}
-                key={groupRole}
-                aria-labelledby={`role-${groupRole}`}
-                style={{ "--role-columns": Math.ceil(groupHeroes.length / 2) } as React.CSSProperties}
-              >
-                <h3 id={`role-${groupRole}`}>
-                  {groupRole === "tank" && <Shield aria-hidden="true" />}
-                  {groupRole === "damage" && <Swords aria-hidden="true" />}
-                  {groupRole === "support" && <Cross aria-hidden="true" />}
-                  <span>{roleLabels[groupRole]}</span>
-                  <small>{groupHeroes.length}명</small>
-                </h3>
-                <div className="role-roster">
-                  {groupHeroes.map((item) => {
-                    const index = heroes.findIndex((candidate) => candidate.key === item.key);
-                    const isSelected = selected === index;
-                    return (
-                      <button
-                        key={item.key}
-                        className={isSelected ? "hero-thumb selected" : "hero-thumb"}
-                        onClick={() => { setSelected(isSelected ? null : index); setSkillsOpen(false); }}
-                        aria-pressed={isSelected}
-                        aria-label={isSelected ? `${item.name} 선택 해제` : `${item.name} 선택`}
-                        title={item.name}
-                      >
-                        {/* eslint-disable-next-line @next/next/no-img-element */}<img src={item.portrait} alt="" />
-                        <span>{item.name}</span>
-                      </button>
-                    );
-                  })}
-                </div>
-              </section>
-            );
-          })}
-        </div>
-      </section>
       {skillsOpen && hero && (
         <div className="skill-overlay" role="dialog" aria-modal="true" aria-labelledby="skill-sheet-title">
           <button className="overlay-close" onClick={() => setSkillsOpen(false)} aria-label="스킬 정보 닫기"><X /></button>
