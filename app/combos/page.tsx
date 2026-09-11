@@ -19,12 +19,12 @@ export default function CombosPage() {
       <SiteHeader active="combos" />
       <section className="page-intro">
         <span className="section-kicker">TEAM SYNERGY</span>
-        <h1>기술 연계부터 <em>영웅 궁합까지</em></h1>
-        <p>일반 기술끼리, 일반 기술과 궁극기, 함께 쓰기 좋은 영웅의 역할 분담을 살펴보세요. 구체적인 활용 사례와 기술 근거가 있는 조합만 추천합니다.</p>
+        <h1>조합 <em>찾기</em></h1>
+        <p>영웅을 골라 함께 쓰기 좋은 조합을 확인하세요.</p>
       </section>
       <div className="content-with-rail">
         <div className="page-content">
-          <p className="seo-guide-note">5v5 기준 조건부 추천입니다. 공개 사례·기술 설명을 검토했으며 게임 내 직접 재현은 하지 않았습니다. 과거 사례가 현재 승률 우위를 보장하지는 않습니다.</p>
+          <details className="combo-basis"><summary>5v5 추천 · 자료 기준 안내</summary><p>5v5 기준 조건부 추천입니다. 공개 사례·기술 설명을 검토했으며 게임 내 직접 재현은 하지 않았습니다. 과거 사례가 현재 승률 우위를 보장하지는 않습니다.</p></details>
           <ComboExplorer heroes={heroes.map(({ key, name, role, portrait }) => ({ key, name, role, portrait }))} cards={[
             ...teamSynergies.map(synergy => ({ id: synergy.id, heroes: synergy.heroes, category: synergy.category, searchText: [synergy.name, synergy.type, ...synergy.abilities.map(a => a.name), ...synergy.heroes.map(key => heroSearchTerms(key, getHero(key)!.name))].join(" "), content: <SynergyCard synergy={synergy} /> })),
             ...combos.map(combo => ({ id: combo.id, heroes: combo.heroes, category: "ultimate", searchText: [combo.name, ...combo.heroes.map(key => heroSearchTerms(key, getHero(key)!.name))].join(" "), content: <UltimateComboCard combo={combo} /> })),
