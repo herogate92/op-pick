@@ -1125,3 +1125,33 @@ body:not(.ads-enabled) .ad-placeholder { display: none !important; }
 @media (min-width: 761px) {
   .home-quick-nav { grid-template-columns: repeat(6,minmax(0,1fr)); }
 }
+
+.mobile-hero-switcher, .mobile-picker-controls { display: none; }
+@media (max-width: 760px) {
+  .hero-shell { height: auto; min-height: 100svh; overflow: visible; }
+  .hero-shell .topbar { position: sticky; top: 0; }
+  .mobile-hero-switcher { position: sticky; top: 62px; z-index: 24; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 12px; border-bottom: 1px solid #35536e; background: #0b172a; }
+  .mobile-hero-switcher strong { font-size: 16px; }
+  .mobile-hero-switcher button { min-height: 44px; padding: 8px 16px; font-size: 14px; border: 1px solid var(--cyan); border-radius: 8px; background: #17344a; }
+  .hero-shell .selector-dock { position: relative; inset: auto; width: calc(100% - 24px); margin: 12px auto; padding: 12px; scroll-margin-top: 130px; }
+  .hero-shell .selector-dock[data-open="false"] { display: none; }
+  .hero-shell.no-hero-selected .hero-dashboard { display: none; }
+  .hero-shell .hero-dashboard { scroll-margin-top: 130px; }
+  .mobile-picker-controls { display: grid; gap: 8px; margin-bottom: 12px; }
+  .mobile-picker-controls label { font-size: 14px; }
+  .mobile-picker-controls input { min-width: 0; width: 100%; min-height: 44px; padding: 10px 12px; font-size: 16px; color: white; background: #091525; border: 1px solid #60768e; border-radius: 8px; }
+  .mobile-picker-controls > div { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 6px; }
+  .mobile-picker-controls button { min-height: 44px; font-size: 14px; background: #15273e; border: 1px solid #52657b; border-radius: 6px; }
+  .mobile-picker-controls button[aria-pressed="true"] { background: #16465d; border-color: var(--cyan); color: var(--cyan-soft); }
+  .selector-dock[data-role="tank"] .role-group:not(.role-group-tank), .selector-dock[data-role="damage"] .role-group:not(.role-group-damage), .selector-dock[data-role="support"] .role-group:not(.role-group-support) { display: none; }
+  .hero-shell .role-groups { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  .hero-shell .role-group h3 { font-size: 14px; }
+  .hero-shell .role-roster { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); grid-template-rows: none; grid-auto-flow: row; gap: 8px; overflow: visible; padding: 0; }
+  .hero-shell .hero-thumb { width: 100%; height: auto; min-height: 88px; overflow: hidden; border: 1px solid #61788f; border-radius: 8px; transform: none; }
+  .hero-shell .hero-thumb img { width: 100%; height: 62px; object-fit: contain; clip-path: none; }
+  .hero-shell .hero-thumb span { position: static; display: block; width: 100%; padding: 6px 2px; opacity: 1; visibility: visible; border: 0; border-radius: 0; background: #11243a; color: white; font-size: 12px; font-style: normal; line-height: 1.25; white-space: normal; }
+  .hero-shell .hero-thumb::after { display: none; }
+  .hero-shell .hero-thumb.selected { border: 2px solid var(--cyan); box-shadow: none; }
+  .hero-shell .dock-heading strong { font-size: 16px; letter-spacing: 0; }
+  .hero-shell .clear-selection { min-height: 44px; font-size: 14px; }
+}
