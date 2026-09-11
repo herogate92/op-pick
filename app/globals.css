@@ -1225,3 +1225,45 @@ body:has(.hero-picker-dialog[open]) { overflow: hidden; }
 .hero-picker-sheet .picker-search { display: flex; }
 .hero-picker-sheet .picker-portrait-grid button { padding: 0; }
 .hero-picker-sheet .picker-search input { padding: 8px 0; border: 0; background: transparent; }
+
+/* Combo browsing: one compact filter group followed immediately by cards. */
+.combo-basis { margin: 0 0 8px; color: #adbed2; font-size: 14px; }
+.combo-basis summary { padding: 8px 0; cursor: pointer; }
+.combo-basis p { padding: 10px 12px; margin: 0 0 8px; line-height: 1.6; background: #112137; }
+.combo-result-line { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 12px 0; font-size: 14px; }
+.combo-result-line p { margin: 0; }
+.combo-result-line a { padding: 8px 0; color: #a7bdd4; font-size: 14px; }
+.combo-query { margin-top: 10px; }
+.combo-query > span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+@media (max-width: 760px) {
+  .combos-page .page-intro { padding: 12px 0 8px; background: none; }
+  .combos-page .page-intro h1 { margin: 0 0 6px; font-size: 24px; }
+  .combos-page .page-intro > p { margin: 0; font-size: 14px; line-height: 1.4; }
+  .combos-page .content-with-rail { padding-top: 0; }
+  .combos-page .combo-filters { padding: 10px; margin: 0; border: 1px solid #30465f; border-radius: 10px; background: #0f1e32; }
+  .combo-primary-controls { grid-template-columns: minmax(0,1fr) auto; gap: 8px; }
+  .combo-primary-controls .hero-picker-trigger { display: flex; flex-direction: row; align-items: center; min-height: 52px; gap: 8px; padding: 6px 8px; border-radius: 6px; }
+  .combo-primary-controls .hero-picker-trigger > img, .combo-primary-controls .hero-picker-trigger > svg { width: 32px; height: 32px; flex-shrink: 0; }
+  .combo-primary-controls .hero-picker-trigger > span { display: flex; flex: 1; align-items: center; justify-content: space-between; gap: 6px; }
+  .combo-primary-controls .hero-picker-trigger small { display: none; }
+  .combo-primary-controls .hero-picker-trigger strong { font-size: 16px; }
+  .combo-primary-controls .hero-picker-trigger em { font-size: 12px; white-space: nowrap; }
+  .combo-primary-controls > button { min-height: 44px; padding: 8px; font-size: 14px; }
+  .combo-type-buttons { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 4px; margin: 8px 0 0; }
+  .combo-type-buttons button { min-height: 44px; padding: 6px 2px; font-size: 14px; }
+  .combo-query { margin-top: 8px; }
+  .combo-query input { min-height: 44px; padding: 8px; }
+  .combos-page .synergy-category-section { padding-bottom: 20px; margin-bottom: 20px; }
+  .combos-page .synergy-category-section .section-heading { margin: 0 0 10px; }
+  .combos-page .synergy-category-section .section-heading h2 { margin: 0; font-size: 18px; line-height: 1.4; }
+  .combos-page .synergy-category-section .section-heading > p { display: none; }
+  .combos-page .combo-grid { grid-template-columns: minmax(0,1fr); gap: 12px; }
+  .combos-page .combo-card { padding: 14px; border-radius: 10px; }
+  .combos-page .combo-card h3 { margin: 4px 0; font-size: 18px; line-height: 1.4; }
+  .combos-page .combo-card p { font-size: 14px; line-height: 1.6; }
+  .combos-page .synergy-evidence-badge { font-size: 12px; }
+  .combos-page .synergy-roster { margin: 10px 0; }
+  .combos-page .synergy-roster strong { font-size: 14px; }
+  .combos-page .synergy-abilities { gap: 6px; }
+  .combos-page .synergy-abilities li { font-size: 12px; }
+}

@@ -17,10 +17,10 @@ export function SynergyCard({ synergy }: { synergy: TeamSynergy }) {
       })}</div>
       <p className="combo-description">{synergy.reason}</p>
       <ul className="synergy-abilities">{synergy.abilities.map((ability) => <li key={`${ability.hero}:${ability.name}`}>{getHero(ability.hero)!.name} · {ability.name}</li>)}</ul>
-      <p><strong>교전 예시</strong> · {synergy.example}</p>
       <p><strong>추천 조건</strong> · {synergy.condition}</p>
       <details className="synergy-details">
-        <summary>실행 순서 · 실패 조건 · 근거 보기</summary>
+        <summary>활용 예시·실행·근거 보기</summary>
+        <p><strong>교전 예시</strong> · {synergy.example}</p>
         <ol>{synergy.steps.map((step) => <li key={step}>{step}</li>)}</ol>
         <p><strong>실패·대응 조건</strong> · {synergy.failure}</p>
         <p><strong>패치 주의</strong> · {synergy.patchNote}</p>
