@@ -136,20 +136,15 @@ export function TeamBuilder({ heroes, combos, maps, synergies, cautions }: { her
         </div>
       </header>
 
+      <nav className="builder-jump-nav" aria-label="팀 구성 바로가기"><a href="#team-slots">팀 선택</a><a href="#hero-roster">영웅 목록</a><a href="#team-analysis">추천·진단</a><a href="#team-sharing">저장·공유</a></nav>
       <div className="builder-priority-note">
         <Sparkles aria-hidden="true" /><div><strong>{mode === "5v5" ? "역할 고정 규칙 적용" : "6대6 돌격 인원 제한"}</strong><span>{mode === "5v5" ? "슬롯에 맞는 역할의 영웅만 선택할 수 있습니다." : "돌격은 최대 2명까지 선택할 수 있습니다. 기존 돌격 영웅의 교체는 가능합니다. 5v5 전용 연계는 점수에 반영하지 않습니다."}</span></div>
         <label className="builder-map-select"><span>전장 반영</span><select value={selectedMapId} onChange={(event) => setSelectedMapId(event.target.value)}><option value="">전장 미선택</option>{maps.map((map) => <option key={map.id} value={map.id}>{map.name} · {map.mode}</option>)}</select></label>
       </div>
 
-      <section className="builder-sharing" aria-label="조합 저장 및 공유">
-        <div><button onClick={saveTeam}>이 브라우저에 저장</button><button onClick={loadTeam}>저장 조합 불러오기</button><button onClick={shareTeam}>공유 링크 복사</button></div>
-        <p>모드·영웅·빈 슬롯·전장을 저장합니다. 브라우저 저장은 1개이며 다시 저장하면 덮어씁니다. 공유 링크는 생성 당시의 조합을 담습니다.</p>
-        <p role="status" aria-live="polite">{shareMessage}</p>
-        {shareUrl && <label>공유 링크<input aria-label="공유 링크" readOnly value={shareUrl} onFocus={event => event.target.select()} /></label>}
-      </section>
 
       <div className="builder-layout">
-        <section className="builder-workbench">
+        <section id="team-slots" className="builder-workbench">
           <div className="team-slots-heading"><div><span className="section-kicker">ALLY TEAM</span><h2>아군 영웅 구성</h2></div><div><button onClick={clearTeam}><RotateCcw />초기화</button><button className="auto-complete" onClick={completeTeam}><WandSparkles />추천으로 완성</button></div></div>
           <div className={`team-slots mode-${mode}`}>
             {team.map((key, index) => {
@@ -164,7 +159,7 @@ export function TeamBuilder({ heroes, combos, maps, synergies, cautions }: { her
             })}
           </div>
 
-          <section className="builder-roster" aria-label="영웅 목록">
+          <section id="hero-roster" className="builder-roster" aria-label="영웅 목록">
             <header><div><span className="section-kicker">HERO ROSTER</span><h2>{activeSlot + 1}번 슬롯에 영웅 선택</h2></div><span>{slotRole ? `${roleLabels[slotRole]} 영웅만 표시` : "돌격 최대 2명 · 기존 돌격 교체 가능"}</span></header>
             <div className="builder-role-groups">
               {roleOrder.map((role) => {
@@ -180,7 +175,7 @@ export function TeamBuilder({ heroes, combos, maps, synergies, cautions }: { her
           </section>
         </section>
 
-        <aside className="builder-analysis">
+        <aside id="team-analysis" className="builder-analysis">
           <section className="analysis-score-card">
             <div className="team-score" style={{ "--team-score": `${filled / team.length * 360}deg` } as React.CSSProperties}><span><strong>{filled}/{team.length}</strong><small>인원 구성</small></span></div>
             <div><span className="section-kicker">TEAM COMPLETENESS</span><h2>{filled === team.length ? "인원 구성 완료" : `${team.length - filled}자리 남음`}</h2><p>인원 충원은 전술 점수에 더하지 않습니다. 등록된 근거가 적으면 점수가 낮을 수 있으며, 승률이나 실제 강함을 뜻하지 않습니다.</p></div>
@@ -199,6 +194,13 @@ export function TeamBuilder({ heroes, combos, maps, synergies, cautions }: { her
           <section className="analysis-card detected-combos"><header><h3>활성 궁 조합</h3><span>{matchedCombos.length}</span></header>{matchedCombos.length ? matchedCombos.map((combo) => <Link href={`/combos/#${combo.id}`} key={combo.id}><Sparkles /><span><strong>{combo.name}</strong><small>추천 {combo.score}/5 · 난이도 {combo.difficulty}/5</small></span><ChevronRight /></Link>) : <p>두 영웅 이상을 선택하면 등록된 궁극기 연계를 찾아 표시합니다.</p>}</section>
         </aside>
       </div>
+      <section id="team-sharing" className="builder-sharing" aria-label="조합 저장 및 공유">
+        <div><button onClick={saveTeam}>이 브라우저에 저장</button><button onClick={loadTeam}>저장 조합 불러오기</button><button onClick={shareTeam}>공유 링크 복사</button></div>
+        <p>모드·영웅·빈 슬롯·전장을 저장합니다. 브라우저 저장은 1개이며 다시 저장하면 덮어씁니다. 공유 링크는 생성 당시의 조합을 담습니다.</p>
+        <p role="status" aria-live="polite">{shareMessage}</p>
+        {shareUrl && <label>공유 링크<input aria-label="공유 링크" readOnly value={shareUrl} onFocus={event => event.target.select()} /></label>}
+      </section>
+
     </div>
   );
 }
