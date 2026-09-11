@@ -1155,3 +1155,71 @@ body:not(.ads-enabled) .ad-placeholder { display: none !important; }
   .hero-shell .dock-heading strong { font-size: 16px; letter-spacing: 0; }
   .hero-shell .clear-selection { min-height: 44px; font-size: 14px; }
 }
+
+/* Compact selections keep results on the page; full rosters open only on demand. */
+.hero-picker-control { min-width: 0; }
+.hero-picker-trigger { display: flex; width: 100%; min-height: 88px; align-items: center; gap: 12px; padding: 12px; text-align: left; color: #f6f9ff; background: #11233a; border: 1px solid #49748d; border-radius: 10px; cursor: pointer; }
+.hero-picker-trigger > img { width: 56px; height: 56px; object-fit: contain; border-radius: 8px; background: #203954; }
+.hero-picker-trigger > svg { width: 40px; height: 40px; padding: 8px; }
+.hero-picker-trigger span { display: grid; gap: 4px; min-width: 0; }
+.hero-picker-trigger small { color: #b7c9dc; font-size: 14px; }
+.hero-picker-trigger strong { font-size: 18px; overflow-wrap: anywhere; }
+.hero-picker-trigger em { color: var(--cyan-soft); font-size: 14px; font-style: normal; }
+.hero-picker-dialog { position: fixed; inset: 0; width: min(620px,calc(100vw - 24px)); max-width: none; max-height: calc(100dvh - 24px); padding: 0; border: 1px solid #53809d; border-radius: 16px; color: #f6f9ff; background: #0b172a; overflow: auto; overscroll-behavior: contain; }
+.hero-picker-dialog::backdrop { background: #030916c9; }
+body:has(.hero-picker-dialog[open]) { overflow: hidden; }
+.hero-picker-sheet { padding: 16px; }
+.hero-picker-sheet > header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.hero-picker-sheet h2 { margin: 0; font-size: 20px; }
+.hero-picker-sheet > header button { display: grid; place-items: center; width: 44px; height: 44px; padding: 8px; color: white; background: #21374f; border: 1px solid #61748c; border-radius: 8px; cursor: pointer; }
+.picker-search { display: flex; align-items: center; gap: 8px; margin: 12px 0; padding: 0 10px; border: 1px solid #60748c; border-radius: 8px; background: #071223; }
+.picker-search svg { flex: 0 0 20px; }
+.picker-search input { min-width: 0; width: 100%; min-height: 48px; padding: 8px 0; font-size: 16px; color: white; border: 0; background: transparent; }
+.picker-role-buttons { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px; }
+.picker-role-buttons button, .picker-result-caption button { min-height: 44px; padding: 8px; font-size: 14px; color: #f6f9ff; border: 1px solid #536b85; border-radius: 8px; background: #1a2d45; cursor: pointer; }
+.picker-role-buttons small { font-size: 12px; }
+.picker-role-buttons button[aria-pressed="true"], .combo-type-buttons button[aria-pressed="true"] { color: var(--cyan-soft); border-color: var(--cyan); background: #143d54; }
+.picker-result-caption { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 48px; font-size: 14px; color: #bbcbdf; }
+.picker-portrait-grid { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 8px; }
+.picker-portrait-grid button { min-width: 0; padding: 0; overflow: hidden; color: white; background: #182c45; border: 1px solid #526b86; border-radius: 8px; cursor: pointer; }
+.picker-portrait-grid button[aria-pressed="true"] { outline: 2px solid var(--cyan); outline-offset: -2px; }
+.picker-portrait-grid img { display: block; width: 100%; height: 68px; object-fit: contain; }
+.picker-portrait-grid span { display: block; padding: 6px 2px; font-size: 14px; line-height: 1.25; overflow-wrap: anywhere; }
+.picker-portrait-grid > p { grid-column: 1 / -1; font-size: 16px; }
+.matchup-evidence summary, .combo-extra-filters summary { min-height: 44px; padding: 12px 0; color: var(--cyan-soft); font-size: 14px; cursor: pointer; }
+.matchup-evidence { border-block: 1px solid #2a4058; margin: 12px 0; }
+.matchup-selectors { position: sticky; top: 0; z-index: 18; padding: 8px 0; background: #0b1328; }
+#matchup-verdict { scroll-margin-top: 130px; }
+.combo-filters { display: block; padding: 12px; }
+.combo-primary-controls { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 10px; align-items: center; }
+.combo-extra-filters { margin-top: 8px; }
+.combo-extra-filters label { display: grid; gap: 8px; }
+.combo-type-buttons { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+@media (max-width: 760px) {
+  .comparison-page .page-intro, .combos-page .page-intro { padding-top: 12px; }
+  .comparison-page .page-intro > .section-kicker, .combos-page .page-intro > .section-kicker { display: none; }
+  .comparison-page .page-intro h1, .combos-page .page-intro h1 { font-size: 24px; line-height: 1.2; }
+  .comparison-page .page-intro > p, .combos-page .page-intro > p { font-size: 14px; }
+  .matchup-selectors { top: 62px; grid-template-columns: minmax(0,1fr) 36px minmax(0,1fr); gap: 6px; }
+  .matchup-selectors .hero-picker-trigger { min-height: 110px; flex-direction: column; gap: 5px; padding: 8px 4px; text-align: center; }
+  .matchup-selectors .hero-picker-trigger > img { width: 36px; height: 36px; }
+  .matchup-selectors .hero-picker-trigger span { gap: 2px; }
+  .matchup-selectors .hero-picker-trigger small, .matchup-selectors .hero-picker-trigger em { font-size: 12px; }
+  .matchup-selectors .hero-picker-trigger strong { font-size: 16px; }
+  .swap-button { width: 36px; min-height: 44px; border-radius: 8px; }
+  #matchup-verdict { scroll-margin-top: 70px; }
+  .verdict-card { min-height: 0; padding: 14px; gap: 8px; }
+  .verdict-icon { display: none; }
+  .verdict-copy h2 { font-size: 20px; line-height: 1.4; }
+  .verdict-copy > p, .condition-box { font-size: 16px; line-height: 1.6; }
+  .matchup-quality-row { flex-wrap: wrap; gap: 4px; }
+  .matchup-quality-badge, .verdict-source-row > small { font-size: 12px; }
+  .hero-picker-dialog { width: calc(100vw - 16px); max-height: calc(100dvh - 16px); border-radius: 12px; }
+  .hero-picker-sheet { padding: 12px; }
+  .picker-portrait-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }
+  .picker-portrait-grid span { font-size: 12px; }
+  .picker-search input { font-size: 16px; }
+}
+.hero-picker-sheet .picker-search { display: flex; }
+.hero-picker-sheet .picker-portrait-grid button { padding: 0; }
+.hero-picker-sheet .picker-search input { padding: 8px 0; border: 0; background: transparent; }
