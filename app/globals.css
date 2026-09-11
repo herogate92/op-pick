@@ -1097,7 +1097,9 @@ body:not(.ads-enabled) .ad-placeholder { display: none !important; }
   .home-quick-nav > a { min-height: 80px; padding: 12px; gap: 8px; }
   .home-quick-nav strong { font-size: 14px; }
   .home-quick-nav small { display: block; font-size: 12px; line-height: 1.4; color: #b0bfd0; }
-  .home-video-toggle { position: relative; inset: auto; margin: 12px; z-index: 6; }
+  .home-video-toggle { position: absolute; top: 74px; right: 12px; bottom: auto; left: auto; margin: 0; min-width: 44px; min-height: 44px; z-index: 6; }
+  .home-background-youtube { top: 62px; left: 0; width: 100%; height: auto; aspect-ratio: 16 / 9; min-width: 0; min-height: 0; transform: none; }
+  .cinematic-home-content h1 { padding-right: 52px; }
   .builder-jump-nav { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); position: sticky; top: 62px; z-index: 25; gap: 4px; padding: 8px 0; background: #0b1328; }
   .builder-jump-nav a { min-height: 44px; display: grid; place-items: center; font-size: 14px; background: #172943; border: 1px solid #3c536e; border-radius: 6px; }
   .builder-intro h1 { font-size: 28px; }
