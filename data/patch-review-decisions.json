@@ -124,5 +124,93 @@
     "summary": "파라이수 추천은 방벽으로 사선을 차단하고 네메시스로 코너·좁은 공간을 압박하는 조건입니다. 소용돌이 폭발 전 지연을 전제로 하지 않아 해당 핫픽스에 따른 설명·순위 변경은 하지 않습니다. 이번 기록은 9월 10일 핫픽스 영향만 판단하며 기존 상성 점수·등급의 재검증이나 게임 내 재현을 뜻하지 않습니다.",
     "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/",
     "sourceAccess": "공식 패치 검색 수록본 확인; 직접 페이지 열람은 403으로 실패"
+  },
+  {
+    "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
+    "category": "조합",
+    "id": "jetpack-cat-bastion",
+    "contentDigest": "1e4b24a4fd76e892253d7c10998c7b37f575474648cd7f2b59346017d3e94085",
+    "decision": "updated",
+    "reviewedAt": "2026-09-12",
+    "summary": "공중 운반 조합의 패치 안내에 골골대기의 적 방벽 관통 버그 수정을 추가했습니다. 생명줄 운반과 골골대기 효과를 구분하며, 방벽 관통 지원을 전제로 한 교전 유지를 경계하도록 했습니다. 이번 기록은 9월 10일 골골대기 핫픽스 영향만 판단하며, 기존 점수·등급의 재검증이나 게임 내 재현을 뜻하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/es-es/news/patch-notes/live/",
+    "sourceAccess": "공식 패치 검색 수록본 확인; 직접 페이지 열람은 오류로 실패"
+  },
+  {
+    "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
+    "category": "조합",
+    "id": "jetpack-cat-cassidy",
+    "contentDigest": "0c34c3a5662f9648ca24663e186034b849d08cab8c3cc68768bc595676169387",
+    "decision": "updated",
+    "reviewedAt": "2026-09-12",
+    "summary": "공중 운반 조합의 패치 안내에 골골대기의 적 방벽 관통 버그 수정을 추가했습니다. 생명줄 운반과 골골대기 효과를 구분하며, 방벽 관통 지원을 전제로 한 교전 유지를 경계하도록 했습니다. 이번 기록은 9월 10일 골골대기 핫픽스 영향만 판단하며, 기존 점수·등급의 재검증이나 게임 내 재현을 뜻하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/es-es/news/patch-notes/live/",
+    "sourceAccess": "공식 패치 검색 수록본 확인; 직접 페이지 열람은 오류로 실패"
+  },
+  {
+    "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
+    "category": "상성",
+    "id": "jetpack-cat-mauga",
+    "contentDigest": "6e88b029459ee044db16d5a0d471f82458be166efabfe86aa7a8366b3b78a3b7",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-12",
+    "summary": "마우가의 공중 표적 추적과 견인 중 사선 노출을 다룬 설명입니다. 골골대기의 적 방벽 관통을 전제로 하지 않아 해당 핫픽스만으로 문구나 점수를 바꿀 근거가 없습니다. 이번 기록은 9월 10일 골골대기 핫픽스 영향만 판단하며, 기존 점수·등급의 재검증이나 게임 내 재현을 뜻하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/es-es/news/patch-notes/live/",
+    "sourceAccess": "공식 패치 검색 수록본 확인; 직접 페이지 열람은 오류로 실패"
+  },
+  {
+    "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
+    "category": "상성",
+    "id": "jetpack-cat-ashe",
+    "contentDigest": "e23c2db56ee1913fb43e3c5a2203b7a145e5dd433333c9761c6d9e55de182973",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-12",
+    "summary": "애쉬의 조준 사격과 직선 비행·견인 동선 노출을 다룬 설명입니다. 골골대기의 적 방벽 관통을 전제로 하지 않아 해당 핫픽스만으로 문구나 점수를 바꿀 근거가 없습니다. 이번 기록은 9월 10일 골골대기 핫픽스 영향만 판단하며, 기존 점수·등급의 재검증이나 게임 내 재현을 뜻하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/es-es/news/patch-notes/live/",
+    "sourceAccess": "공식 패치 검색 수록본 확인; 직접 페이지 열람은 오류로 실패"
+  },
+  {
+    "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
+    "category": "상성",
+    "id": "jetpack-cat-domina",
+    "contentDigest": "c07e4ef2b56e672da0805b4e6f23a79d123b06e33c6b09e66c2ba63f0218ecf9",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-12",
+    "summary": "도미나의 중거리 사격과 같은 고도의 비행 동선 노출을 다룬 설명입니다. 골골대기의 적 방벽 관통을 전제로 하지 않아 해당 핫픽스만으로 문구나 점수를 바꿀 근거가 없습니다. 이번 기록은 9월 10일 골골대기 핫픽스 영향만 판단하며, 기존 점수·등급의 재검증이나 게임 내 재현을 뜻하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/es-es/news/patch-notes/live/",
+    "sourceAccess": "공식 패치 검색 수록본 확인; 직접 페이지 열람은 오류로 실패"
+  },
+  {
+    "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
+    "category": "맵",
+    "id": "lijiang-tower:jetpack-cat",
+    "contentDigest": "ee31b07994be8cb4e194597bda93abca728752591d1d8a23cebd4e250b3ad894",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-12",
+    "summary": "리장 타워 추천은 비행으로 높이를 바꾸고 생명줄로 아군을 재배치하는 경로에 관한 설명입니다. 골골대기를 적 방벽 너머 적용하는 전술을 전제로 하지 않아 해당 핫픽스에 따른 문구·순위 변경은 하지 않습니다. 이번 기록은 9월 10일 골골대기 핫픽스 영향만 판단하며, 기존 점수·등급의 재검증이나 게임 내 재현을 뜻하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/es-es/news/patch-notes/live/",
+    "sourceAccess": "공식 패치 검색 수록본 확인; 직접 페이지 열람은 오류로 실패"
+  },
+  {
+    "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
+    "category": "맵",
+    "id": "ilios:jetpack-cat",
+    "contentDigest": "b9e305402101a78b64b5854df492922c38b945f757ee8ab91f0e206758fe5c9d",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-12",
+    "summary": "일리오스 추천은 비행으로 높이를 바꾸고 생명줄로 아군을 재배치하는 경로에 관한 설명입니다. 골골대기를 적 방벽 너머 적용하는 전술을 전제로 하지 않아 해당 핫픽스에 따른 문구·순위 변경은 하지 않습니다. 이번 기록은 9월 10일 골골대기 핫픽스 영향만 판단하며, 기존 점수·등급의 재검증이나 게임 내 재현을 뜻하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/es-es/news/patch-notes/live/",
+    "sourceAccess": "공식 패치 검색 수록본 확인; 직접 페이지 열람은 오류로 실패"
+  },
+  {
+    "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
+    "category": "맵",
+    "id": "suravasa:jetpack-cat",
+    "contentDigest": "b0f5f0f433256056fa9e1319511ba029fbbc3392899e0cd97881ba4b2a5bf418",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-12",
+    "summary": "수라바사 추천은 비행으로 높이를 바꾸고 생명줄로 아군을 재배치하는 경로에 관한 설명입니다. 골골대기를 적 방벽 너머 적용하는 전술을 전제로 하지 않아 해당 핫픽스에 따른 문구·순위 변경은 하지 않습니다. 이번 기록은 9월 10일 골골대기 핫픽스 영향만 판단하며, 기존 점수·등급의 재검증이나 게임 내 재현을 뜻하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/es-es/news/patch-notes/live/",
+    "sourceAccess": "공식 패치 검색 수록본 확인; 직접 페이지 열람은 오류로 실패"
   }
 ]
