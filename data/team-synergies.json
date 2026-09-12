@@ -702,5 +702,109 @@
       "summary": "가이드는 캐서디에게 연꽃 단상으로 수직 이동 경로를 제공하는 예시를 설명합니다. 이 설명을 슬링샷 근거로 사용하지 않았습니다."
     },
     "recheckRequirement": "현행 패치에서 반복 가능한 구원의 손길 입력·취소 절차와 궁극기 유지·착지 조건"
+  },
+  {
+    "category": "pair",
+    "score": 3,
+    "modes": [
+      "6v6"
+    ],
+    "reviewedAt": "2026-09-12",
+    "status": "recommended",
+    "verificationNote": "6v6의 두 탱커 역할 분담에 대한 조건부 추천 · 게임 내 직접 재현 미실시 · 현행 승률 우위 미검증",
+    "patchNote": "과거 자료의 체력·방벽 지속 시간·재사용 대기시간을 현재 6v6 수치로 사용하지 않습니다. 현재 모드의 기술 자원과 아군 치유 사선을 확인하세요.",
+    "id": "reinhardt-zarya-6v6",
+    "name": "라인하르트 + 자리야 · 방어 자원 교대",
+    "heroes": [
+      "reinhardt",
+      "zarya"
+    ],
+    "type": "6v6 전선 유지",
+    "reason": "라인하르트가 근접 압박을 맡고 자리야가 방벽 씌우기로 노출 순간을 보완합니다. 보호가 끝나면 라인하르트가 방벽과 엄폐로 다시 전선을 정리합니다.",
+    "abilities": [
+      {
+        "hero": "reinhardt",
+        "name": "방벽 방패"
+      },
+      {
+        "hero": "reinhardt",
+        "name": "로켓 해머"
+      },
+      {
+        "hero": "zarya",
+        "name": "방벽 씌우기"
+      }
+    ],
+    "example": "코너에서 라인하르트가 해머를 휘두르는 순간에 자리야가 보호하고, 보호 종료 후 두 영웅이 코너로 돌아오는 짧은 교전입니다.",
+    "steps": [
+      "라인하르트가 접근 경로와 후퇴할 코너를 정하고 자리야가 아군 방벽 사용 가능 여부를 알립니다.",
+      "해머 공격으로 몸이 노출되는 시점에 방벽 씌우기를 맞춥니다.",
+      "보호가 끝나면 라인하르트가 방벽·엄폐로 후퇴를 돕고 다음 자원 주기를 기다립니다."
+    ],
+    "condition": "두 탱커가 서로 지원할 거리와 지원 영웅의 치유 사선을 유지할 때.",
+    "failure": "방벽을 미리 겹쳐 쓰거나 라인하르트가 혼자 깊게 돌진하면 보호가 끝난 뒤 고립됩니다. 두 탱커가 정면에만 머물면 측면과 본대가 노출됩니다.",
+    "evidence": {
+      "type": "guide-example",
+      "url": "https://ggclan.com/news/overwatch-2-6v6-tank-synergy-guide-master-dual-tank-coordination",
+      "summary": "2026-05-28 GG Clan의 6v6 가이드가 라인하르트의 방벽 해제 때 자리야가 보호하고, 자리야의 자원 공백을 라인하르트가 보완하는 운용을 설명합니다. 현행 최상위 조합이나 승률 근거는 아닙니다."
+    },
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/reinhardt?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/zarya?locale=ko-kr"
+    ]
+  },
+  {
+    "category": "pair",
+    "score": 3,
+    "modes": [
+      "6v6"
+    ],
+    "reviewedAt": "2026-09-12",
+    "status": "recommended",
+    "verificationNote": "6v6의 두 탱커 역할 분담에 대한 조건부 추천 · 게임 내 직접 재현 미실시 · 현행 승률 우위 미검증",
+    "patchNote": "과거 자료의 체력·방벽 지속 시간·재사용 대기시간을 현재 6v6 수치로 사용하지 않습니다. 현재 모드의 기술 자원과 아군 치유 사선을 확인하세요.",
+    "id": "winston-dva-6v6",
+    "name": "윈스턴 + D.Va · 동시 진입과 엄호",
+    "heroes": [
+      "winston",
+      "dva"
+    ],
+    "type": "6v6 고지 진입",
+    "reason": "윈스턴이 목표와 진입 위치를 정하고 D.Va가 같은 교전에 합류해 사격 엄호와 후속 압박을 맡습니다. 진입 후에는 함께 추격할지 본대로 복귀할지 맞춥니다.",
+    "abilities": [
+      {
+        "hero": "winston",
+        "name": "점프 팩"
+      },
+      {
+        "hero": "winston",
+        "name": "방벽 생성기"
+      },
+      {
+        "hero": "dva",
+        "name": "부스터"
+      },
+      {
+        "hero": "dva",
+        "name": "방어 매트릭스"
+      }
+    ],
+    "example": "고지의 고립된 적을 같은 타이밍에 압박하고, 적의 지원이 합류하면 엄폐나 본대로 함께 복귀하는 운용입니다.",
+    "steps": [
+      "지원 사선 안에서 목표와 착지 위치, 복귀 경로를 함께 정합니다.",
+      "윈스턴의 점프에 D.Va가 합류하고 필요한 사격 방향을 매트릭스로 엄호합니다.",
+      "목표가 도주하거나 방어 자원이 줄면 깊게 추격하지 않고 복귀하며 본대를 보호합니다."
+    ],
+    "condition": "두 탱커가 같은 목표에 도달할 수 있고 지원 사선과 복귀 수단이 남아 있을 때.",
+    "failure": "한 명만 먼저 진입하거나 두 탱커가 모두 본대를 비우면 손해입니다. 매트릭스가 모든 공격을 막는 것은 아니며 광선·근접 공격까지 막는 전제로 진입하지 마세요.",
+    "evidence": {
+      "type": "guide-example",
+      "url": "https://www.reddit.com/r/OverwatchUniversity/comments/kg6t7z/dva_guide_0_4000sr/",
+      "summary": "2020년 D.Va 가이드의 윈스턴 조합 설명은 함께 진입할 때의 안전성과 빠른·느린 다이브 선택을 다룹니다. 옛 6v6 자료에서 역할 분담만 참고했으며 당시 수치나 메타 평가는 적용하지 않았습니다."
+    },
+    "sourceUrls": [
+      "https://overfast-api.tekrop.fr/heroes/winston?locale=ko-kr",
+      "https://overfast-api.tekrop.fr/heroes/dva?locale=ko-kr"
+    ]
   }
 ]

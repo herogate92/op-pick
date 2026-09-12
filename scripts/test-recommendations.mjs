@@ -115,3 +115,21 @@ test('알 수 없는 영웅·전장·인원·버전과 손상된 링크를 거�
   assert.throws(()=>decodeTeam(value,sixHeroes,[]));
  }
 });
+
+test('6대6 두 탱커 연계는 검색·진단·교체 추천에서 모드를 지킨다', () => {
+ const rows = JSON.parse(readFileSync(new URL('../data/team-synergies.json', import.meta.url)));
+ const pairs = rows.filter(row => ['reinhardt-zarya-6v6','winston-dva-6v6'].includes(row.id));
+ assert.equal(pairs.length, 2);
+ for (const pair of pairs) {
+  assert.deepEqual(pair.modes, ['6v6']);
+  const card = {...pair, searchText: pair.name};
+  assert.equal(matchesCombo(card, '', pair.heroes[0], 'pair', '5v5'), false);
+  assert.equal(matchesCombo(card, '', pair.heroes[0], 'pair', '6v6'), true);
+  assert.equal(assessTeam(pair.heroes, '5v5', [], [pair], []).linkage, 0);
+  assert.ok(assessTeam(pair.heroes, '6v6', [], [pair], []).linkage > 0);
+  const roster = [...pair.heroes.map(key => hero(key,'tank')),hero('other-tank','tank')];
+  const team = [pair.heroes[0], null, null, null, null, null];
+  assert.equal(rankCandidates(roster, [], [pair], [], undefined, '6v6', team, 1)[0].key, pair.heroes[1]);
+  assert.ok(!rankCandidates(roster, [], [pair], [], undefined, '5v5', team.slice(0,5), 1).some(h => h.role === 'tank'));
+ }
+});
