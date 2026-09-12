@@ -77,15 +77,27 @@ def build_report(html, data, previous, decisions):
         item['status'] = 'pending'
         for decision in decisions:
             if all(decision.get(k)==item[k] for k in ['patchDigest','category','id','contentDigest']):
-                if decision.get('decision') not in ['updated','no-change'] or not decision.get('summary') or not decision.get('reviewedAt'):
+                if decision.get('decision') not in ['updated','no-change','deferred'] or not decision.get('summary') or not decision.get('reviewedAt'):
                     raise ValueError('Incomplete review decision')
-                item['status'] = 'reviewed'
+                if decision['decision'] == 'deferred' and not decision.get('recheckRequirement'):
+                    raise ValueError('Deferred review requires a recheck requirement')
+                item['status'] = 'pending' if decision['decision'] == 'deferred' else 'reviewed'
                 item['review'] = decision
     return {'schemaVersion':1,'trackingSince':START_DATE,'latestPatch':latest,'patches':sorted(patches.values(),key=lambda x:x['patchDate'],reverse=True),'items':sorted(queue.values(),key=lambda x:(x['patchDate'],x['category'],x['id']),reverse=True)}
 
 def render(report):
     items = report['items']; pending = sum(x['status']=='pending' for x in items)
-    rows = ''.join('<tr>'+''.join('<td>'+escape(str(value))+'</td>' for value in [x['patchDate'],x['category']])+f'<td><a href="{escape(x["url"],quote=True)}">{escape(x["label"])}</a></td><td>'+('검토 대기' if x['status']=='pending' else '자료 검토 완료')+'</td></tr>' for x in items)
+    rows = ''
+    for x in items:
+        review = x.get('review', {})
+        status = '근거 보강 대기' if review.get('decision') == 'deferred' else ('검토 대기' if x['status']=='pending' else '자료 검토 완료')
+        detail = ''
+        if review:
+            detail = '<details><summary>판단 이유</summary><p>'+escape(review['summary'])+'</p>'
+            if review.get('recheckRequirement'):
+                detail += '<p>다시 확인할 조건: '+escape(review['recheckRequirement'])+'</p>'
+            detail += '<p>기록일: '+escape(review['reviewedAt'])+'</p></details>'
+        rows += '<tr>'+''.join('<td>'+escape(str(value))+'</td>' for value in [x['patchDate'],x['category']])+f'<td><a href="{escape(x["url"],quote=True)}">{escape(x["label"])}</a>{detail}</td><td>'+status+'</td></tr>'
     return f'''<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>패치 재검토 현황 · OP PICK LAB</title><style>body{{font:16px/1.7 system-ui;max-width:1000px;margin:32px auto;padding:0 18px;background:#101b2b;color:#e8eef9}}a{{color:#8dd8ec}}table{{width:100%;border-collapse:collapse}}td,th{{padding:10px;text-align:left;border-bottom:1px solid #42526a}}.table{{overflow:auto}}</style><a href="/sources/">운영 원칙으로</a><h1>패치 재검토 현황</h1><p>확인한 최신 패치: {report['latestPatch']['patchDate']} · 검토 대기 {pending}건 / 전체 {len(items)}건</p><p>패치 본문에 언급된 영웅을 기준으로 넓게 추린 후보입니다. 모드·특전·실제 영향은 개별 확인이 필요하며, 목록에 있다는 이유만으로 기존 정보가 틀렸다는 뜻은 아닙니다. 통계 갱신은 기술 검증 완료를 뜻하지 않습니다.</p><p>{START_DATE} 이후 공식 라이브 페이지에서 감지한 패치를 추적합니다. 페이지에서 사라진 과거 패치는 자동으로 소급 수집하지 않습니다. 미처리 항목은 다음 배포에도 유지하며 직접 게임 재현을 자동 수행하지 않습니다.</p><p><a href="{gate.SOURCE}">공식 패치 원문</a> · <a href="/patch-review.json">전체 검토 목록 다운로드</a></p><div class="table"><table><thead><tr><th>패치</th><th>구분</th><th>관련 내용</th><th>상태</th></tr></thead><tbody>{rows}</tbody></table></div></html>'''
 
 def main():

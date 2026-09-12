@@ -840,7 +840,7 @@
         "winRate": null,
         "rateStatus": "수집 조건·출처 미확인으로 표시 보류",
         "condition": "옥상과 지상 사이에서 적의 사선을 나눌 때",
-        "caution": "개방된 사선에서 접근하면 피해가 누적되므로 아군과 동시에 진입하세요.",
+        "caution": "개방된 사선에서 접근하면 피해가 누적되므로 아군과 동시에 진입하세요. 9월 10일 팔라틴 팽 사거리 버그가 수정됐으나 거리 수치는 공개되지 않았습니다. 과거 영상의 코너 간격만으로 공격이 닿는다고 단정하지 마세요.",
         "sourceUrls": [
           "https://overfast-api.tekrop.fr/heroes/vendetta?locale=ko-kr"
         ]
@@ -1682,7 +1682,7 @@
         "winRate": null,
         "rateStatus": "수집 조건·출처 미확인으로 표시 보류",
         "condition": "코너를 끼고 본대와 측면의 공격 타이밍을 맞출 때",
-        "caution": "개방된 사선에서 접근하면 피해가 누적되므로 아군과 동시에 진입하세요.",
+        "caution": "개방된 사선에서 접근하면 피해가 누적되므로 아군과 동시에 진입하세요. 9월 10일 팔라틴 팽 사거리 버그가 수정됐으나 거리 수치는 공개되지 않았습니다. 과거 영상의 코너 간격만으로 공격이 닿는다고 단정하지 마세요.",
         "sourceUrls": [
           "https://overfast-api.tekrop.fr/heroes/vendetta?locale=ko-kr"
         ]
@@ -2092,7 +2092,7 @@
         "winRate": null,
         "rateStatus": "수집 조건·출처 미확인으로 표시 보류",
         "condition": "중앙 정면 사선을 피하고 옆 각도에서 교전을 시작할 때",
-        "caution": "개방된 사선에서 접근하면 피해가 누적되므로 아군과 동시에 진입하세요.",
+        "caution": "개방된 사선에서 접근하면 피해가 누적되므로 아군과 동시에 진입하세요. 9월 10일 팔라틴 팽 사거리 버그가 수정됐으나 거리 수치는 공개되지 않았습니다. 과거 영상의 코너 간격만으로 공격이 닿는다고 단정하지 마세요.",
         "sourceUrls": [
           "https://overfast-api.tekrop.fr/heroes/vendetta?locale=ko-kr"
         ]

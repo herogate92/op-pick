@@ -38,6 +38,30 @@ class Tests(unittest.TestCase):
   self.assertEqual(next(x for x in report['items'] if x['id']=='ana')['status'],'pending')
  def test_malformed_source_fails_closed(self):
   with self.assertRaises(ValueError):r.build_report('Denied',data(),{},[])
+ def test_deferred_review_stays_pending_and_expires(self):
+  html=patch('2026-09-10','Ana');first=r.build_report(html,data(),{},[])
+  item=next(x for x in first['items'] if x['id']=='ana')
+  decision={k:item[k] for k in ['patchDigest','category','id','contentDigest']}
+  decision.update(decision='deferred',summary='Insufficient evidence <script>',reviewedAt='2026-09-12',recheckRequirement='Check range <script>')
+  checked=r.build_report(html,data(),first,[decision])
+  actual=next(x for x in checked['items'] if x['id']=='ana')
+  self.assertEqual(actual['status'],'pending')
+  self.assertEqual(actual['review']['decision'],'deferred')
+  rendered=r.render(checked)
+  self.assertIn('근거 보강 대기',rendered)
+  self.assertIn('Check range &lt;script&gt;',rendered)
+  self.assertNotIn('<script>',rendered)
+  changed=deepcopy(data());changed['heroes'][0]['name']='changed'
+  refreshed=r.build_report(html,changed,checked,[decision])
+  self.assertNotIn('review',next(x for x in refreshed['items'] if x['id']=='ana'))
+  revised=r.build_report(patch('2026-09-10','Ana revised'),data(),checked,[decision])
+  self.assertNotIn('review',next(x for x in revised['items'] if x['id']=='ana' and x['patchDigest']!=item['patchDigest']))
+ def test_deferred_review_requires_next_condition(self):
+  html=patch('2026-09-10','Ana');first=r.build_report(html,data(),{},[])
+  item=next(x for x in first['items'] if x['id']=='ana')
+  decision={k:item[k] for k in ['patchDigest','category','id','contentDigest']}
+  decision.update(decision='deferred',summary='Missing evidence',reviewedAt='2026-09-12')
+  with self.assertRaises(ValueError):r.build_report(html,data(),first,[decision])
  def test_escape_html(self):
   d=data();d['heroes'][0]['name']='<script>alert(1)</script>'
   html=r.render(r.build_report(patch('2026-09-10','Ana'),d,{},[]))
