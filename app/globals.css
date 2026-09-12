@@ -1267,3 +1267,29 @@ body:has(.hero-picker-dialog[open]) { overflow: hidden; }
   .combos-page .synergy-abilities { gap: 6px; }
   .combos-page .synergy-abilities li { font-size: 12px; }
 }
+
+.builder-current-actions { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 10px 0; }
+.builder-current-actions button { min-height: 44px; padding: 10px 14px; font-size: 14px; color: var(--cyan-soft); border: 1px solid #49748d; border-radius: 8px; background: #11283e; cursor: pointer; }
+.builder-current-actions span { font-size: 14px; color: #bbcede; }
+.builder-picker-dialog .builder-roster { margin: 0; padding: 16px; border: 0; }
+.builder-picker-dialog .builder-roster > header { align-items: center; margin-bottom: 8px; }
+.builder-picker-close { display: grid; place-items: center; flex-shrink: 0; width: 44px; height: 44px; padding: 8px; border: 1px solid #60758d; border-radius: 8px; color: white; background: #20334a; cursor: pointer; }
+.builder-picker-dialog p, .builder-picker-dialog .builder-role-group h3 { font-size: 14px; line-height: 1.5; }
+.builder-picker-search { display: grid; gap: 6px; margin: 12px 0; font-size: 14px; }
+.builder-picker-search input { min-width: 0; width: 100%; min-height: 44px; padding: 10px; font-size: 16px; border: 1px solid #63758b; border-radius: 8px; color: white; background: #0b1525; }
+.builder-picker-dialog .builder-role-groups { grid-template-columns: 1fr; margin-top: 12px; }
+.builder-picker-dialog .builder-role-group > div { grid-template-columns: repeat(5,minmax(0,1fr)); gap: 8px; }
+.builder-picker-dialog .builder-role-group button { height: auto; min-height: 88px; border-radius: 8px; }
+.builder-picker-dialog .builder-role-group button img { display: block; height: 64px; transform: none; }
+.builder-picker-dialog .builder-role-group button span { position: static; display: block; padding: 6px 2px; font-size: 12px; white-space: normal; }
+.builder-picker-dialog .builder-role-group button:disabled { opacity: .45; }
+@media (max-width: 760px) {
+  .builder-jump-nav button { min-height: 44px; padding: 0; display: grid; place-items: center; font-size: 14px; color: white; background: #172943; border: 1px solid #3c536e; border-radius: 6px; cursor: pointer; }
+  .builder-picker-dialog .builder-role-group > div { grid-template-columns: repeat(4,minmax(0,1fr)); }
+  .builder-intro .section-kicker, .team-slots-heading .section-kicker { display: none; }
+  .builder-intro h1 { margin: 0 0 6px; font-size: 24px; }
+  .team-slot { height: 100px; }
+  .builder-analysis { gap: 12px; }
+  .builder-analysis .recommendation-card { order: -1; }
+  .builder-analysis .analysis-card { padding: 14px; }
+}

@@ -1,15 +1,19 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { heroSearchTerms } from "@/lib/combo-search";
 import { decodeTeam, encodeTeam, TEAM_SAVE_KEY, type SharedTeam } from "@/lib/team-share";
-import { AlertTriangle, Info, Check, ChevronRight, Cross, RotateCcw, Shield, Sparkles, Swords, UsersRound, WandSparkles } from "lucide-react";
+import { AlertTriangle, Info, Check, ChevronRight, Cross, RotateCcw, Shield, Sparkles, Swords, UsersRound, WandSparkles, X } from "lucide-react";
 import type { Combo, MapGuide, Role, TeamCaution, TeamSynergy } from "@/lib/data";
 import { roleLabels, subroleLabels } from "@/lib/data";
 
 import { assessTeam, fixedSlots, roleOrder, rankCandidates, getIssues, selectionBlockReason, type BuilderHero, type Mode, type Team } from "@/lib/team-builder";
 
 export function TeamBuilder({ heroes, combos, maps, synergies, cautions }: { heroes: BuilderHero[]; combos: Combo[]; maps: MapGuide[]; synergies: TeamSynergy[]; cautions: TeamCaution[] }) {
+  const rosterDialog = useRef<HTMLDialogElement>(null);
+  const [rosterRole, setRosterRole] = useState<Role>("tank");
+  const [rosterQuery, setRosterQuery] = useState("");
   const [mode, setMode] = useState<Mode>("5v5");
   const [teams, setTeams] = useState<Record<Mode, Team>>({ "5v5": Array(5).fill(null), "6v6": Array(6).fill(null) });
   const [activeSlot, setActiveSlot] = useState(0);
@@ -94,8 +98,15 @@ export function TeamBuilder({ heroes, combos, maps, synergies, cautions }: { her
     setActiveSlot(0);
   };
 
+  const openRoster = (index: number) => {
+    setActiveSlot(index);
+    setRosterQuery("");
+    setRosterRole(mode === "5v5" ? fixedSlots[index].role : heroes.find(hero => hero.key === team[index])?.role ?? "tank");
+    rosterDialog.current?.showModal();
+  };
   const chooseHero = (hero: BuilderHero) => {
     if (selectionBlockReason(heroes, hero, mode, team, activeSlot)) return;
+    rosterDialog.current?.close();
     const next = [...team];
     next[activeSlot] = hero.key;
     setTeams((current) => ({ ...current, [mode]: next }));
@@ -136,7 +147,7 @@ export function TeamBuilder({ heroes, combos, maps, synergies, cautions }: { her
         </div>
       </header>
 
-      <nav className="builder-jump-nav" aria-label="팀 구성 바로가기"><a href="#team-slots">팀 선택</a><a href="#hero-roster">영웅 목록</a><a href="#team-analysis">추천·진단</a><a href="#team-sharing">저장·공유</a></nav>
+      <nav className="builder-jump-nav" aria-label="팀 구성 바로가기"><a href="#team-slots">팀 선택</a><button type="button" onClick={() => openRoster(activeSlot)}>영웅 선택</button><a href="#team-analysis">추천·진단</a><a href="#team-sharing">저장·공유</a></nav>
       <div className="builder-priority-note">
         <Sparkles aria-hidden="true" /><div><strong>{mode === "5v5" ? "역할 고정 규칙 적용" : "6대6 돌격 인원 제한"}</strong><span>{mode === "5v5" ? "슬롯에 맞는 역할의 영웅만 선택할 수 있습니다." : "돌격은 최대 2명까지 선택할 수 있습니다. 기존 돌격 영웅의 교체는 가능합니다. 5v5 전용 연계는 점수에 반영하지 않습니다."}</span></div>
         <label className="builder-map-select"><span>전장 반영</span><select value={selectedMapId} onChange={(event) => setSelectedMapId(event.target.value)}><option value="">전장 미선택</option>{maps.map((map) => <option key={map.id} value={map.id}>{map.name} · {map.mode}</option>)}</select></label>
@@ -151,7 +162,7 @@ export function TeamBuilder({ heroes, combos, maps, synergies, cautions }: { her
               const hero = heroes.find((item) => item.key === key);
               const role = mode === "5v5" ? fixedSlots[index].role : hero?.role;
               return (
-                <button key={index} className={activeSlot === index ? "team-slot active" : "team-slot"} onClick={() => setActiveSlot(index)} aria-label={`${index + 1}번 슬롯 ${hero ? hero.name : "비어 있음"}`}>
+                <button key={index} className={activeSlot === index ? "team-slot active" : "team-slot"} onClick={() => openRoster(index)} aria-haspopup="dialog" aria-label={`${index + 1}번 슬롯 ${hero ? hero.name : "비어 있음"}`}>
                   <span className={`slot-role ${role ?? "free"}`}>{mode === "5v5" ? fixedSlots[index].label : hero ? roleLabels[hero.role] : "자유"}</span>
                   {hero ? <><img src={hero.portrait} alt="" /><strong>{hero.name}</strong><small>{subroleLabels[hero.subrole] ?? hero.subrole}</small><span className="slot-remove" onClick={(event) => { event.stopPropagation(); removeHero(index); }} aria-label={`${hero.name} 제거`}>×</span></> : <><UsersRound aria-hidden="true" /><strong>영웅 선택</strong><small>{mode === "5v5" ? `${roleLabels[fixedSlots[index].role]} 전용` : "돌격 최대 2명"}</small></>}
                 </button>
@@ -159,12 +170,16 @@ export function TeamBuilder({ heroes, combos, maps, synergies, cautions }: { her
             })}
           </div>
 
+          <div className="builder-current-actions"><button type="button" onClick={() => openRoster(activeSlot)}>{activeSlot + 1}번 슬롯 영웅 {team[activeSlot] ? "변경" : "선택"}</button><span>{filled}/{team.length}명 선택</span></div>
+          <dialog ref={rosterDialog} className="hero-picker-dialog builder-picker-dialog" aria-label="팀 영웅 선택" onClick={event => { if (event.target === event.currentTarget) rosterDialog.current?.close(); }}>
           <section id="hero-roster" className="builder-roster" aria-label="영웅 목록">
-            <header><div><span className="section-kicker">HERO ROSTER</span><h2>{activeSlot + 1}번 슬롯에 영웅 선택</h2></div><span>{slotRole ? `${roleLabels[slotRole]} 영웅만 표시` : "돌격 최대 2명 · 기존 돌격 교체 가능"}</span></header>
+            <header><div><span className="section-kicker">HERO ROSTER</span><h2>{activeSlot + 1}번 슬롯에 영웅 선택</h2></div><button className="builder-picker-close" type="button" aria-label="팀 영웅 선택 닫기" onClick={() => rosterDialog.current?.close()}><X /></button></header><p>{slotRole ? `${roleLabels[slotRole]} 영웅만 표시` : "돌격 최대 2명 · 기존 돌격 교체 가능"}</p>
+            <label className="builder-picker-search">영웅 이름·별칭 검색<input type="search" value={rosterQuery} onChange={event => setRosterQuery(event.target.value)} placeholder="위버, 맥크리, 영웅 이름" /></label>
+            {!slotRole && <div className="picker-role-buttons" aria-label="팀 영웅 역할">{roleOrder.map(role => <button type="button" key={role} aria-pressed={!rosterQuery.trim() && rosterRole === role} onClick={() => { setRosterRole(role); setRosterQuery(""); }}>{roleLabels[role]}</button>)}</div>}
             <div className="builder-role-groups">
-              {roleOrder.map((role) => {
-                const roleHeroes = heroes.filter((hero) => hero.role === role);
-                return <section key={role} className="builder-role-group"><h3>{role === "tank" ? <Shield /> : role === "damage" ? <Swords /> : <Cross />}{roleLabels[role]}<small>{roleHeroes.length}명</small></h3><div>{roleHeroes.map((hero) => {
+              {roleOrder.filter(role => slotRole ? role === slotRole : rosterQuery.trim() || role === rosterRole).map((role) => {
+                const roleHeroes = heroes.filter(hero => hero.role === role && heroSearchTerms(hero.key, hero.name).toLowerCase().includes(rosterQuery.trim().toLowerCase()));
+                return <section key={role} className="builder-role-group"><h3>{role === "tank" ? <Shield /> : role === "damage" ? <Swords /> : <Cross />}{roleLabels[role]}<small>{roleHeroes.length}명</small></h3>{!roleHeroes.length && <p>검색 결과가 없습니다.</p>}<div>{roleHeroes.map((hero) => {
                   const usedAt = team.findIndex((key) => key === hero.key);
                   const blockedReason = selectionBlockReason(heroes, hero, mode, team, activeSlot);
                   const disabled = Boolean(blockedReason);
@@ -173,9 +188,11 @@ export function TeamBuilder({ heroes, combos, maps, synergies, cautions }: { her
               })}
             </div>
           </section>
+          </dialog>
         </section>
 
         <aside id="team-analysis" className="builder-analysis">
+          <section className="analysis-card recommendation-card"><header><h3>{team[targetSlot] ? "선택 슬롯 교체 추천" : "선택 슬롯 픽 추천"}</h3><span>{targetSlot + 1}번 슬롯</span></header><div>{recommendations.map((hero, index) => <button key={hero.key} onClick={() => chooseHero(hero)}><em>{index + 1}</em><img src={hero.portrait} alt="" /><span><strong>{hero.name}</strong><small>{roleLabels[hero.role]} · {recommendReason(hero, remainingKeys, combos, synergies, selectedMap, remainingCounts, mode)}</small><small>근거 점수 {assessment.total} → {assessTeam([...remainingKeys, hero.key], mode, combos, synergies, cautions, selectedMap).total} · 선택한 {targetSlot + 1}번 슬롯{team[targetSlot] ? " 교체" : " 채우기"}</small></span><ChevronRight /></button>)}</div></section>
           <section className="analysis-score-card">
             <div className="team-score" style={{ "--team-score": `${filled / team.length * 360}deg` } as React.CSSProperties}><span><strong>{filled}/{team.length}</strong><small>인원 구성</small></span></div>
             <div><span className="section-kicker">TEAM COMPLETENESS</span><h2>{filled === team.length ? "인원 구성 완료" : `${team.length - filled}자리 남음`}</h2><p>인원 충원은 전술 점수에 더하지 않습니다. 등록된 근거가 적으면 점수가 낮을 수 있으며, 승률이나 실제 강함을 뜻하지 않습니다.</p></div>
@@ -187,7 +204,7 @@ export function TeamBuilder({ heroes, combos, maps, synergies, cautions }: { her
 
           <section className="analysis-card issues-card"><header><h3>조합 진단</h3><span>{issues.length}</span></header><div>{issues.map((issue, index) => <p key={index} className={issue.neutral ? "neutral" : issue.good ? "good" : "warning"}>{issue.neutral ? <Info /> : issue.good ? <Check /> : <AlertTriangle />}<span>{issue.text}</span></p>)}</div></section>
 
-          <section className="analysis-card recommendation-card"><header><h3>{team[targetSlot] ? "선택 슬롯 교체 추천" : "선택 슬롯 픽 추천"}</h3><span>{targetSlot + 1}번 슬롯</span></header><div>{recommendations.map((hero, index) => <button key={hero.key} onClick={() => chooseHero(hero)}><em>{index + 1}</em><img src={hero.portrait} alt="" /><span><strong>{hero.name}</strong><small>{roleLabels[hero.role]} · {recommendReason(hero, remainingKeys, combos, synergies, selectedMap, remainingCounts, mode)}</small><small>근거 점수 {assessment.total} → {assessTeam([...remainingKeys, hero.key], mode, combos, synergies, cautions, selectedMap).total} · 선택한 {targetSlot + 1}번 슬롯{team[targetSlot] ? " 교체" : " 채우기"}</small></span><ChevronRight /></button>)}</div></section>
+
 
           <section className="analysis-card detected-synergies"><header><h3>활성 전술 시너지</h3><span>{activeSynergies.length}</span></header>{activeSynergies.length ? activeSynergies.map((synergy) => <div key={synergy.id}><Sparkles /><span><strong>{synergy.name}</strong><small>{synergy.category === "mixed" ? "궁극기 준비 필요 · " : ""}{synergy.heroes.map((key) => heroes.find((hero) => hero.key === key)?.name ?? key).join(" + ")}</small><p>{synergy.reason}</p><Link href={`/combos/#${synergy.id}`}>조건·사례·실행 순서 보기</Link></span><em>{synergy.score}/5</em></div>) : <p>{mode === "6v6" ? "6v6 연계는 별도 사례 검토 전입니다. 5v5의 추천 점수를 그대로 적용하지 않습니다." : "사례와 기술 근거를 확인한 조합만 표시합니다. 보류 항목은 자동 추천 점수에서 제외됩니다."}</p>}</section>
 
