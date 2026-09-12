@@ -25,5 +25,104 @@
     "decision": "updated",
     "reviewedAt": "2026-09-10",
     "summary": "핫픽스에서 명시한 기술 버그 수정 안내를 반영했습니다. 미공개 수치와 기존 수치 확인일은 변경하지 않았습니다. 게임 내 재현 미실시."
+  },
+  {
+    "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
+    "category": "상성",
+    "id": "dmon-ramattra",
+    "contentDigest": "7348e2257cfe31b7b36317d93a42e66d6a574f6acb35b09201e07f001b8f9f85",
+    "decision": "updated",
+    "reviewedAt": "2026-09-12",
+    "summary": "소용돌이 사용 후 진입·회피 안내에 의도치 않은 폭발 전 지연 수정과 수치 미공개를 명시했습니다. 이번 기록은 9월 10일 핫픽스 영향만 판단하며 기존 상성 점수·등급의 재검증이나 게임 내 재현을 뜻하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/",
+    "sourceAccess": "공식 패치 검색 수록본 확인; 직접 페이지 열람은 403으로 실패"
+  },
+  {
+    "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
+    "category": "상성",
+    "id": "domina-ramattra",
+    "contentDigest": "1a0bf86c99f92955050358c8d5ac402ba8afcc75bad96574a7977b6c1c649acd",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-12",
+    "summary": "네메시스 형태의 정면 교전과 방벽 뒤 공간 확보에 관한 설명으로, 소용돌이 폭발 전 지연 수치나 그 지연을 이용하는 전술을 전제로 하지 않습니다. 해당 핫픽스만으로 문구·점수를 바꿀 근거는 없습니다. 이번 기록은 9월 10일 핫픽스 영향만 판단하며 기존 상성 점수·등급의 재검증이나 게임 내 재현을 뜻하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/",
+    "sourceAccess": "공식 패치 검색 수록본 확인; 직접 페이지 열람은 403으로 실패"
+  },
+  {
+    "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
+    "category": "상성",
+    "id": "ramattra-reaper",
+    "contentDigest": "6d447d16ca374b3c34a7f416db4d7a8fa5f50698ec548db6f927dbcf5fe5dc41",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-12",
+    "summary": "네메시스 형태의 몸집과 근접 산탄 교전에 관한 설명으로, 소용돌이 폭발 전 지연 수치나 그 지연을 이용하는 전술을 전제로 하지 않습니다. 해당 핫픽스만으로 문구·점수를 바꿀 근거는 없습니다. 이번 기록은 9월 10일 핫픽스 영향만 판단하며 기존 상성 점수·등급의 재검증이나 게임 내 재현을 뜻하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/",
+    "sourceAccess": "공식 패치 검색 수록본 확인; 직접 페이지 열람은 403으로 실패"
+  },
+  {
+    "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
+    "category": "상성",
+    "id": "ramattra-bastion",
+    "contentDigest": "16d5c1c7fac9e65e6ae73978737d2e7d8149b493f0cdb33a72f8b2b3588b112e",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-12",
+    "summary": "강습 화력에 대한 방벽·막기 자원 및 강습 종료 후 접근에 관한 설명으로, 소용돌이 폭발 전 지연 수치나 그 지연을 이용하는 전술을 전제로 하지 않습니다. 해당 핫픽스만으로 문구·점수를 바꿀 근거는 없습니다. 이번 기록은 9월 10일 핫픽스 영향만 판단하며 기존 상성 점수·등급의 재검증이나 게임 내 재현을 뜻하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/",
+    "sourceAccess": "공식 패치 검색 수록본 확인; 직접 페이지 열람은 403으로 실패"
+  },
+  {
+    "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
+    "category": "상성",
+    "id": "ramattra-mei",
+    "contentDigest": "ff66d9ba84b5ba92a3480e55ef2d092ea9c53640b81bc174535fffe4544073ce",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-12",
+    "summary": "빙벽에 의한 전선 분리와 고립 방지에 관한 설명으로, 소용돌이 폭발 전 지연 수치나 그 지연을 이용하는 전술을 전제로 하지 않습니다. 해당 핫픽스만으로 문구·점수를 바꿀 근거는 없습니다. 이번 기록은 9월 10일 핫픽스 영향만 판단하며 기존 상성 점수·등급의 재검증이나 게임 내 재현을 뜻하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/",
+    "sourceAccess": "공식 패치 검색 수록본 확인; 직접 페이지 열람은 403으로 실패"
+  },
+  {
+    "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
+    "category": "상성",
+    "id": "reinhardt-ramattra",
+    "contentDigest": "11512011e08a40f1d0a1aff826c1165cdafc7f16dcd44f5675a2f75d3ff83336",
+    "decision": "updated",
+    "reviewedAt": "2026-09-12",
+    "summary": "소용돌이 사용 후 진입·회피 안내에 의도치 않은 폭발 전 지연 수정과 수치 미공개를 명시했습니다. 이번 기록은 9월 10일 핫픽스 영향만 판단하며 기존 상성 점수·등급의 재검증이나 게임 내 재현을 뜻하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/",
+    "sourceAccess": "공식 패치 검색 수록본 확인; 직접 페이지 열람은 403으로 실패"
+  },
+  {
+    "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
+    "category": "맵",
+    "id": "nepal:ramattra",
+    "contentDigest": "868d81e9e2b91b5e44e5a1706caeb701364675f0fa4eadb70333d8d9869eb010",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-12",
+    "summary": "네팔 추천은 방벽으로 사선을 차단하고 네메시스로 코너·좁은 공간을 압박하는 조건입니다. 소용돌이 폭발 전 지연을 전제로 하지 않아 해당 핫픽스에 따른 설명·순위 변경은 하지 않습니다. 이번 기록은 9월 10일 핫픽스 영향만 판단하며 기존 상성 점수·등급의 재검증이나 게임 내 재현을 뜻하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/",
+    "sourceAccess": "공식 패치 검색 수록본 확인; 직접 페이지 열람은 403으로 실패"
+  },
+  {
+    "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
+    "category": "맵",
+    "id": "shambali-monastery:ramattra",
+    "contentDigest": "b78eacc83ccde641fa3274a1dc93154a6c1c0e65c1f7ba88a3a03ee6647518bd",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-12",
+    "summary": "샴발리 수도원 추천은 방벽으로 사선을 차단하고 네메시스로 코너·좁은 공간을 압박하는 조건입니다. 소용돌이 폭발 전 지연을 전제로 하지 않아 해당 핫픽스에 따른 설명·순위 변경은 하지 않습니다. 이번 기록은 9월 10일 핫픽스 영향만 판단하며 기존 상성 점수·등급의 재검증이나 게임 내 재현을 뜻하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/",
+    "sourceAccess": "공식 패치 검색 수록본 확인; 직접 페이지 열람은 403으로 실패"
+  },
+  {
+    "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
+    "category": "맵",
+    "id": "paraiso:ramattra",
+    "contentDigest": "38b9a032a0f0fb5c89f71c156cd90d06aa26d27a48b2550064da00c95a3113e0",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-12",
+    "summary": "파라이수 추천은 방벽으로 사선을 차단하고 네메시스로 코너·좁은 공간을 압박하는 조건입니다. 소용돌이 폭발 전 지연을 전제로 하지 않아 해당 핫픽스에 따른 설명·순위 변경은 하지 않습니다. 이번 기록은 9월 10일 핫픽스 영향만 판단하며 기존 상성 점수·등급의 재검증이나 게임 내 재현을 뜻하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/",
+    "sourceAccess": "공식 패치 검색 수록본 확인; 직접 페이지 열람은 403으로 실패"
   }
 ]
