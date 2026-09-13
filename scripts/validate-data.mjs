@@ -75,7 +75,8 @@ for (const matchup of matchups) {
 
 const mapIds = new Set();
 for (const hero of heroes) {
-  if (!matchups.some((matchup) => matchup.hero === hero.key && matchup.status === "verified")) errors.push(`검토된 상성 없는 영웅: ${hero.key}`);
+  const documentedTrial = hero.releaseStatus === "trial" && hero.reviewStatus === "review-needed" && hero.dataNotice?.trim() && hero.hitpointsNotice?.trim();
+  if (!documentedTrial && !matchups.some((matchup) => matchup.hero === hero.key && matchup.status === "verified")) errors.push(`검토된 상성 없는 영웅: ${hero.key}`);
 }
 const validMapModes = new Set(["쟁탈", "호위", "혼합", "밀기", "플래시포인트", "기타"]);
 for (const map of maps) {

@@ -6,6 +6,12 @@ import { matchesCombo, heroSearchTerms } from '../lib/combo-search.ts';
 const hero = (key, role, name = key) => ({ key, name, role, subrole: '', portrait: '', reviewStatus: 'verified' });
 const heroes = [hero('tank','tank'), hero('old','damage'), hero('ally','damage'), hero('candidate-a','damage','가'), hero('candidate-b','damage','나'), hero('support-a','support'), hero('support-b','support')];
 const fullTeam = ['tank','old','ally','support-a','support-b'];
+test('체험 영웅은 직접 선택 가능하지만 자동 추천에는 포함하지 않는다', () => {
+ const trial = {...hero('doctrine','support'), reviewStatus:'review-needed'};
+ const roster = [...heroes, trial];
+ assert.equal(selectionBlockReason(roster, trial, '5v5', ['tank','old','ally',null,null], 3), null);
+ assert.ok(!rankCandidates(roster, [], [], [], undefined, '6v6', [null,null,null,null,null,null], 0).some(row => row.key === 'doctrine'));
+});
 const synergy = (heroes, modes = ['5v5']) => ({ heroes, modes, score: 5 });
 test('교체할 기존 영웅과의 연계는 추천 근거에서 제외한다', () => {
  const ranked = rankCandidates(heroes, [], [synergy(['old','candidate-a']),synergy(['ally','candidate-b'])], [], undefined, '5v5', fullTeam, 1);

@@ -15,7 +15,7 @@ export function AbilityStats({ ability, compact = false }: { ability: Ability; c
         ))}
       </dl>
       <small>{ability.statsScope} · {ability.statsBasis}</small>
-      {ability.statsSourceUrl ? <small><a href={ability.statsSourceUrl} target="_blank" rel="noreferrer">공식 패치 {ability.statsPatchDate}</a> · 확인 {ability.statsCheckedAt}</small> : <small>기존 입력일 {ability.statsCheckedAt} · 최신 수치 검증 전</small>}
+      {ability.statsSourceUrl ? <small><a href={ability.statsSourceUrl} target="_blank" rel="noreferrer">공식 패치 {ability.statsPatchDate}</a> · 확인 {ability.statsCheckedAt}</small> : <small>{ability.statsScope?.includes("캡처") ? "캡처 확인일" : "기존 입력일"} {ability.statsCheckedAt} · 최신 수치 검증 전</small>}
     </div>
   );
 }

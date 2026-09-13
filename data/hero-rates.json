@@ -19,7 +19,8 @@
         "tier": "All",
         "tierLabel": "모든 등급 단계"
       },
-      "rows": [
+    "rows": [
+      { "hero": "doctrine", "winRate": null, "pickRate": null, "banRate": null },
         {
           "hero": "ana",
           "winRate": 48.3,
@@ -358,6 +359,7 @@
         "tierLabel": "모든 등급 단계"
       },
       "rows": [
+        { "hero": "doctrine", "winRate": null, "pickRate": null, "banRate": null },
         {
           "hero": "ana",
           "winRate": 48.9,

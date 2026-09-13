@@ -1,5 +1,81 @@
 [
   {
+    "key": "doctrine",
+    "name": "독트린",
+    "description": "영겁의 홀로 아군을 치유하고 적에게 피해를 주는 지원 영웅입니다. 주입으로 다음 기술을 강화하며 활기 드론으로 아군을 지원합니다. 체험 공개 자료 기준입니다.",
+    "portrait": "/heroes/doctrine-pending.svg",
+    "background": "/heroes/doctrine-pending.svg",
+    "role": "support",
+    "subrole": "survivor",
+    "gamemodes": [],
+    "location": "",
+    "birthday": "",
+    "age": null,
+    "hitpoints": { "health": 250, "armor": 0, "shields": 0, "total": 250 },
+    "hitpointsNotice": "독트린은 체험 공개 자료 기준입니다. 생명력 250과 기술·특전은 2026-09-13 제공된 훈련장 캡처에서 확인했습니다. 5대5·6대6 공통 수치로 검증한 것은 아닙니다. 공식 초상과 영상은 준비 중이며, 상성·시너지·맵 순위·승률은 자료 확보 전입니다.",
+    "releaseStatus": "trial",
+    "reviewStatus": "review-needed",
+    "dataNotice": "체험 영웅 · 훈련장 캡처 기준 · 상성·맵·통계 자료 준비 중",
+    "mediaPendingReason": "사용자 제공 훈련장 캡처로 기술을 등록했으며 공식 초상·영상 주소는 확인 전입니다.",
+    "abilities": [
+      {
+        "name": "영겁의 홀",
+        "description": "아군을 치유하고 적에게 피해를 주는 중거리 무기입니다. 주입하면 대형 관통 폭발파를 발사합니다.",
+        "icon": "/heroes/doctrine-pending.svg",
+        "stats": [
+          { "label": "탄약 / 재장전", "value": "18 / 1.5초" },
+          { "label": "기본 발사 특성", "value": "히트스캔 · 약한 치명타 · 관통" },
+          { "label": "피해 / 치유", "value": "각 60 (기본) → 18 (최대 감소)" },
+          { "label": "기본 감소 사거리", "value": "30~50미터" },
+          { "label": "주입 피해", "value": "90 (기본) → 27 (최대 감소)" },
+          { "label": "주입 치유", "value": "120 (기본) → 36 (최대 감소)" },
+          { "label": "주입 감소 사거리", "value": "40~60미터" }
+        ],
+        "statsCheckedAt": "2026-09-13",
+        "statsScope": "사용자 제공 훈련장 체험 캡처",
+        "statsBasis": "캡처 03 확인 · 정식 출시 및 모드별 수치 재확인 필요"
+      },
+      { "name": "주입", "description": "다음 기술에 강력한 효과를 추가합니다.", "icon": "/heroes/doctrine-pending.svg" },
+      { "name": "추진형 장막", "description": "수평으로 돌진하며 받는 피해가 감소합니다. 주입하면 자유롭게 비행합니다.", "icon": "/heroes/doctrine-pending.svg" },
+      { "name": "활기 드론", "description": "아군에게 드론을 배치해 공격 속도를 증가시키고 치유합니다. 주입하면 자신에게도 드론을 배치합니다.", "icon": "/heroes/doctrine-pending.svg" },
+      {
+        "name": "구제",
+        "description": "드론 무리를 날려 적의 최대 생명력을 감소시키고 아군에게 추가 생명력을 부여합니다.",
+        "icon": "/heroes/doctrine-pending.svg",
+        "stats": [
+          { "label": "궁극기 비용", "value": "2,800" },
+          { "label": "드론당 피해 / 치유", "value": "5 / 5" },
+          { "label": "최대 지속 시간 / 반경", "value": "6초 / 12미터" },
+          { "label": "적 최대 생명력 감소", "value": "드론당 5% · 총 최대 50%" },
+          { "label": "아군 추가 생명력", "value": "드론당 15 · 최대 150" },
+          { "label": "감소 지연 (화면 표기)", "value": "적 효과·아군 추가 생명력 모두 8초" },
+          { "label": "최대 투사체 시전 사거리", "value": "12미터" },
+          { "label": "화면 키워드", "value": "광역 · 본체 투사체 · 정화 가능 · 고정 · 방벽 무시 · 추가 생명력" }
+        ],
+        "statsCheckedAt": "2026-09-13",
+        "statsScope": "사용자 제공 훈련장 체험 캡처",
+        "statsBasis": "캡처 04의 표기 확인 · 실제 방벽·정화 상호작용과 정식 수치 재확인 필요"
+      }
+    ],
+    "perks": {
+      "minor": [
+        { "name": "은총", "description": "활기 드론이 부착되면 생명력을 40 치유합니다.", "icon": "/heroes/doctrine-pending.svg" },
+        { "name": "핏빛 흡수", "description": "주입된 영겁의 홀로 준 피해의 50%만큼 자가 치유됩니다.", "icon": "/heroes/doctrine-pending.svg" }
+      ],
+      "major": [
+        { "name": "수혈", "description": "준 피해와 치유에 따라 주입의 재사용 대기시간이 감소합니다.", "icon": "/heroes/doctrine-pending.svg" },
+        { "name": "생명의 대가", "description": "최대 생명력을 25 희생하며 영겁의 홀 치유량이 20% 증가합니다.", "icon": "/heroes/doctrine-pending.svg" }
+      ]
+    },
+    "storySummary": "",
+    "storyMedia": null,
+    "storyChapters": [],
+    "sourceUrl": "https://overwatch.blizzard.com/fr-fr/news/24294376/",
+    "checkedAt": "2026-09-13",
+    "abilitiesCheckedAt": "2026-09-13",
+    "abilitiesSourceUrl": "https://overwatch.blizzard.com/fr-fr/news/24294376/"
+  },
+  {
     "key": "genji",
     "name": "겐지",
     "description": "사이보그 시마다 겐지는 한때 거부했던 자신의 로봇 육체를 받아들였으며, 그 과정에서 한 차원 더 높은 인간성을 갖게 되었습니다.",

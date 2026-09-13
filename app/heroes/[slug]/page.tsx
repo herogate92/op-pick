@@ -76,7 +76,7 @@ export default async function HeroDetailPage({ params }: { params: Promise<{ slu
             <div className="detail-tags"><span>{roleLabels[hero.role]}</span><span>{subroleLabels[hero.subrole] ?? hero.subrole}</span></div>
             <p>{hero.description || "영웅 소개가 아직 등록되지 않았습니다."}</p>
             <div className="detail-links">
-              <a href={hero.sourceUrl} target="_blank" rel="noreferrer" className="text-link">공식 영웅 페이지 <ExternalLink size={14} /></a>
+              <a href={hero.sourceUrl} target="_blank" rel="noreferrer" className="text-link">{hero.releaseStatus === "trial" ? "공식 공개 안내" : "공식 영웅 페이지"} <ExternalLink size={14} /></a>
               {heroVideo && <a href={`https://www.youtube.com/watch?v=${heroVideo.id}`} target="_blank" rel="noreferrer" className="text-link hero-video-link" title={heroVideo.title}><PlayCircle size={15} /> 공식 영상 보기</a>}
             </div>
           </div>
