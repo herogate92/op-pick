@@ -135,6 +135,9 @@ const document = {
 const heroes = JSON.parse(await readFile(join(root, "data", "heroes.json"), "utf8"));
 const expectedKeys = new Set(heroes.map((hero) => hero.key));
 for (const snapshot of document.snapshots) {
+  for (const hero of heroes.filter(hero => hero.releaseStatus === "trial")) {
+    if (!snapshot.rows.some(row => row.hero === hero.key)) snapshot.rows.push({ hero: hero.key, winRate: null, pickRate: null, banRate: null });
+  }
   const seen = new Set();
   if (snapshot.rows.length !== expectedKeys.size) throw new Error(`${snapshot.id}: 영웅 수 불일치; 기존 스냅샷을 보존합니다.`);
   for (const row of snapshot.rows) {

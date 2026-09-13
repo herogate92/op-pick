@@ -36,7 +36,7 @@ export function selectionBlockReason(heroes: BuilderHero[], hero: BuilderHero, m
 export function rankCandidates(heroes: BuilderHero[], combos: Combo[], synergies: TeamSynergy[], cautions: TeamCaution[], selectedMap: MapGuide | undefined, mode: Mode, team: Team, slotIndex: number) {
   const selected = team.filter((key, index) => index !== slotIndex && key) as string[];
   const counts = roleOrder.reduce((value, role) => ({ ...value, [role]: selected.map((key) => heroes.find((hero) => hero.key === key)).filter((hero) => hero?.role === role).length }), { tank: 0, damage: 0, support: 0 } as Record<Role, number>);
-  return heroes.filter((hero) => hero.key !== team[slotIndex] && !selectionBlockReason(heroes, hero, mode, team, slotIndex)).map((hero) => {
+  return heroes.filter((hero) => hero.reviewStatus === "verified" && hero.key !== team[slotIndex] && !selectionBlockReason(heroes, hero, mode, team, slotIndex)).map((hero) => {
     let score = combos.filter((combo) => combo.modes.includes(mode) && combo.heroes.includes(hero.key) && combo.heroes.some((key) => selected.includes(key))).reduce((sum, combo) => sum + combo.score * 9, 0);
     score += synergies.filter((synergy) => synergy.modes.includes(mode) && synergy.heroes.includes(hero.key) && synergy.heroes.some((key) => selected.includes(key))).reduce((sum, synergy) => sum + synergy.score * 10, 0);
     score -= cautions.filter((caution) => caution.modes.includes(mode) && caution.heroes.includes(hero.key) && caution.heroes.some((key) => selected.includes(key))).reduce((sum, caution) => sum + caution.penalty * 8, 0);

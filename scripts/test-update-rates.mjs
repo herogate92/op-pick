@@ -43,6 +43,10 @@ test("statistics refresh replaces only complete valid snapshots", async () => {
     assert.equal(result.snapshots.length, 2);
     assert.deepEqual(result.snapshots[1].rows.map((r) => r.hero), ["ana", "dva"]);
     assert.equal(result.snapshots[1].rows[0].winRate, 51);
+    await writeFile(join(root, "data", "heroes.json"), JSON.stringify([{ key: "ana" }, { key: "dva" }, { key: "doctrine", releaseStatus: "trial" }]));
+    assert.equal(await run(), 0);
+    const withTrial = JSON.parse(await readFile(destination, "utf8"));
+    assert.deepEqual(withTrial.snapshots[0].rows.find(row => row.hero === "doctrine"), { hero: "doctrine", winRate: null, pickRate: null, banRate: null });
   } finally {
     await new Promise((resolve) => server.close(resolve));
     await rm(root, { recursive: true, force: true });

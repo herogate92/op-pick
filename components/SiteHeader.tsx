@@ -39,6 +39,7 @@ export function SiteHeader({ active }: { active: string }) {
         </details>
       </div>
     </header>
+    {heroes.filter(hero => hero.releaseStatus === "trial").map(hero => <details className="combo-basis" key={hero.key}><summary>신규 {hero.name} · 체험 정보</summary><p>{hero.dataNotice}. 팀 구성에서는 직접 선택할 수 있습니다. <Link href={`/heroes/${hero.key}/`}>기술·특전 보기</Link></p></details>)}
     <nav className="mobile-bottom-nav" aria-label="모바일 빠른 메뉴">
       {navItems.filter(({ id }) => ["heroes", "matchups", "combos", "team-builder"].includes(id)).map(({ href, label, icon: Icon, id }) => <Link key={id} href={href} aria-current={active === id ? "page" : undefined}><Icon size={21} aria-hidden="true" /><span>{label}</span></Link>)}
     </nav>

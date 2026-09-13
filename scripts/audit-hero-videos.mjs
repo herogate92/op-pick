@@ -47,6 +47,9 @@ async function checkDirectVideo(video) {
 }
 
 async function inspect(hero) {
+  if (hero.releaseStatus === "trial" && hero.reviewStatus === "review-needed" && hero.mediaPendingReason?.trim() && !mappings.has(hero.key) && !hero.abilities.some(ability => ability.video)) {
+    return { key: hero.key, name: hero.name, status: "pending-media", reason: hero.mediaPendingReason };
+  }
   const officialResponse = await fetch(hero.sourceUrl, { signal: AbortSignal.timeout(30_000) });
   const officialHtml = officialResponse.ok ? await officialResponse.text() : "";
   const abilityVideoUrls = hero.abilities.flatMap((ability) => ability.video ? Object.values(ability.video) : []);
@@ -107,7 +110,8 @@ const report = {
     youtube: results.filter((result) => result.kind === "youtube").length,
     officialAbility: results.filter((result) => result.kind === "official-ability").length,
     ok: results.filter((result) => result.status === "ok").length,
-    review: results.filter((result) => result.status !== "ok").length,
+    pendingMedia: results.filter((result) => result.status === "pending-media").length,
+    review: results.filter((result) => !["ok", "pending-media"].includes(result.status)).length,
   },
   review: results.filter((result) => result.status !== "ok"),
   results,

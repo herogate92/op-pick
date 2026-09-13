@@ -19,6 +19,7 @@ export interface Ability {
 export interface StoryMedia { type: string; link: string; }
 export interface StoryChapter { title: string; picture: string; }
 export interface Hero {
+  releaseStatus?: "trial"; dataNotice?: string; mediaPendingReason?: string;
   key: string; name: string; description: string; portrait: string; background: string;
   role: Role; subrole: string; gamemodes: string[]; location: string; birthday: string; age: number | null;
   hitpoints: { shields: number; armor: number; health: number; total: number } | null;
