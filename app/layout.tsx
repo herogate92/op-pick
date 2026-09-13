@@ -3,6 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://opick.ggwp.kr"),
+  verification: { other: { "naver-site-verification": "a6206b13c8339010c848c87480415de893ed6f77" } },
   title: { default: "OP PICK LAB | 오버워치 영웅 상성·카운터 픽·맵별 추천", template: "%s | OP PICK LAB" },
   description: "오버워치 영웅 정보, 카운터 픽과 궁극기 조합을 빠르게 확인하는 비공식 팬 가이드입니다.",
   applicationName: "OP PICK LAB",
