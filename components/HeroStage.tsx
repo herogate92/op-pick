@@ -48,15 +48,24 @@ export function HeroStage({ heroes, matchups, combos }: { heroes: HeroSummary[];
     return () => window.removeEventListener("keydown", onKey);
   }, [heroes.length, searchOpen]);
 
-  const selectHero = (key: string) => {
+  const clearSelection = () => {
+    setSelected(null);
+    setSkillsOpen(false);
+    setPickerOpen(true);
+  };
+
+  const selectHero = (key: string, toggle = true) => {
     const index = heroes.findIndex((item) => item.key === key);
     if (index >= 0) {
-      setSelected(index);
+      const deselect = toggle && selected === index;
+      setSelected(deselect ? null : index);
       setSkillsOpen(false);
-      setPickerOpen(false);
+      setPickerOpen(deselect);
+      setPickerRole(heroes[index].role);
       if (window.matchMedia("(max-width: 760px)").matches) requestAnimationFrame(() => {
-        document.getElementById("hero-dashboard")?.scrollIntoView({ block: "start" });
-        document.getElementById("hero-dashboard")?.focus({ preventScroll: true });
+        const target = document.getElementById(deselect ? "hero-picker" : "hero-dashboard");
+        target?.scrollIntoView({ block: "start" });
+        target?.focus({ preventScroll: true });
       });
     }
   };
@@ -74,10 +83,10 @@ export function HeroStage({ heroes, matchups, combos }: { heroes: HeroSummary[];
         }}>{!hero ? "아래에서 선택" : pickerOpen ? "목록 접기" : "영웅 변경"}</button>
       </div>
 
-      <section id="hero-picker" data-open={pickerOpen} data-role={pickerRole} className="selector-dock" aria-label="영웅 선택">
+      <section id="hero-picker" tabIndex={-1} data-open={pickerOpen} data-role={pickerRole} className="selector-dock" aria-label="영웅 선택">
         <div className="dock-heading">
           <strong>영웅 선택</strong>
-          <div><button type="button" className="clear-selection" onClick={() => { setSelected(null); setSkillsOpen(false); }} disabled={!hero}>선택 해제</button><small>← → 탐색 · / 검색</small></div>
+          <div><button type="button" className="clear-selection" onClick={clearSelection} disabled={!hero}>선택 해제</button><small>← → 탐색 · / 검색</small></div>
         </div>
         <div className="mobile-picker-controls">
           <label htmlFor="roster-search">{roleLabels[pickerRole]} 영웅 검색</label>
@@ -237,7 +246,7 @@ export function HeroStage({ heroes, matchups, combos }: { heroes: HeroSummary[];
             <div className="search-input-wrap"><Search size={20} /><input id="hero-search" autoFocus value={query} onChange={(event) => setQuery(event.target.value)} placeholder="영웅 이름 입력" /></div>
             <div className="search-results all-results">
               {heroes.filter((item) => item.name.toLowerCase().includes(query.toLowerCase())).map((item) => (
-                <button key={item.key} onClick={() => { selectHero(item.key); setSearchOpen(false); setQuery(""); }}>
+                <button key={item.key} onClick={() => { selectHero(item.key, false); setSearchOpen(false); setQuery(""); }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}<img src={item.portrait} alt="" />
                   <span><strong>{item.name}</strong><small>{roleLabels[item.role]} · {subroleLabels[item.subrole] ?? item.subrole}</small></span>
                 </button>
@@ -256,7 +265,7 @@ function EmptySelection({ heroes, matchups, combos }: { heroes: number; matchups
       <div className="empty-pick-icon"><Shield aria-hidden="true" /></div>
       <span className="eyebrow">READY TO PICK</span>
       <h1>영웅을 선택하세요</h1>
-      <p>아래 초상을 누르면 스킬, 상성, 추천 조합이 이 자리에 바로 표시됩니다. 선택한 영웅을 다시 누르면 이 안내 화면으로 돌아옵니다.</p>
+      <p>영웅 초상을 누르면 스킬, 상성, 추천 조합이 표시됩니다. 선택한 영웅을 다시 누르면 선택이 해제됩니다.</p>
       <div className="empty-role-guide">
         <span><Shield aria-hidden="true" /><strong>돌격</strong><small>전선과 공간 확보</small></span>
         <span><Swords aria-hidden="true" /><strong>공격</strong><small>화력과 처치 기회</small></span>
