@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Code2, Database, ExternalLink, Scale } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
+import { PatchNotesLink } from "@/components/PatchNotesLink";
 
 export const metadata: Metadata = {
   title: "운영 및 라이선스",
@@ -24,6 +25,7 @@ export default function SourcesPage() {
           <div>
             <span className="section-kicker">DATA POLICY</span>
             <h1>운영 원칙</h1>
+            <PatchNotesLink className="secondary-button" />
             <ul>
               <li>데이터는 외부 API 및 공개 정보를 기반으로 합니다. 따라서 공식 데이터와 다를 수 있습니다.</li>
               <li>변경 사항은 내용을 확인한 뒤 사이트에 반영합니다. <a href="/patch-review.html">패치 재검토 현황</a>에서 관련 콘텐츠의 검토 대기 상태를 확인할 수 있습니다.</li>
