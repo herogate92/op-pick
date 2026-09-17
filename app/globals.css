@@ -51,6 +51,7 @@ button { color: inherit; }
 .brand strong { font-size: 19px; letter-spacing: .04em; }
 .brand small { font-size: 10px; color: #c9faff; margin-top: 1px; }
 .top-actions { display: flex; align-items: center; justify-content: flex-end; gap: 10px; padding-right: 18px; }
+.patch-notes-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; white-space: nowrap; }
 .icon-button, .menu-button { width: 42px; height: 42px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 7px; background: rgba(255,255,255,.04); cursor: pointer; }
 .menu-button { display: none; }
 .update-chip { border: 1px solid rgba(109,244,255,.28); color: var(--cyan-soft); padding: 8px 11px; border-radius: 999px; font-size: 12px; font-weight: 750; }

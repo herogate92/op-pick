@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BarChart3, Home, MapPinned, Menu, Search, Shield, Sparkles, Swords, UsersRound } from "lucide-react";
 import { BrandElectricity } from "@/components/BrandElectricity";
+import { PatchNotesLink } from "@/components/PatchNotesLink";
 import { heroes } from "@/lib/data";
 
 const navItems = [
@@ -27,11 +28,13 @@ export function SiteHeader({ active }: { active: string }) {
         <span className="brand-mark">OP</span><span><strong>OP PICK LAB</strong><small>오버워치 픽 연구소</small></span>
       </Link>
       <div className="top-actions">
+        <PatchNotesLink className="update-chip patch-notes-link" />
         <Link href="/heroes/" className="icon-button" aria-label="영웅 검색"><Search size={20} /></Link>
         <Link href="/sources/" className={active === "sources" ? "update-chip active" : "update-chip"}>영웅 {heroes.length}명 · 안내</Link>
         <details className="mobile-menu">
           <summary aria-label="전체 메뉴"><Menu size={21} aria-hidden="true" /><span>메뉴</span></summary>
           <nav aria-label="전체 메뉴" className="mobile-menu-panel">
+            <PatchNotesLink />
             {navItems.map(({ href, label, icon: Icon, id }) => <Link key={id} href={href} aria-current={active === id ? "page" : undefined}><Icon size={20} aria-hidden="true" />{label}</Link>)}
             <Link href="/sources/">자료 출처·이용 안내</Link>
             <a href="/patch-review.html">패치 재검토 현황</a>
