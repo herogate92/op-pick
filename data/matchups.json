@@ -85,7 +85,7 @@
     "counter": "dmon",
     "score": 4,
     "reason": "D.Mon은 추진기로 아나와의 거리를 빠르게 좁히고 파워 배리어로 수면총과 생체 수류탄을 막으며 근접 압박을 이어갈 수 있습니다.",
-    "condition": "아나가 엄폐물과 아군에게서 떨어져 있고 D.Mon이 추진기 연료와 배리어 내구도를 충분히 남긴 상황에서 강합니다.",
+    "condition": "아나가 엄폐물과 아군에게서 떨어져 있고 D.Mon이 추진기 연료와 배리어 내구도를 충분히 남긴 상황에서 강합니다. 9월 17일 방어력 감소와 추진기 연료 소모 증가를 반영해 짧게 교전하고 퇴각 연료를 남기세요.",
     "reviewedAt": "2026-08-30",
     "status": "verified",
     "confidence": "high",
@@ -94,6 +94,9 @@
     "evidence": [
       "official-hero-kit",
       "current-matchup-crosscheck"
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
     ]
   },
   {
@@ -815,7 +818,7 @@
     "counter": "mei",
     "score": 4,
     "reason": "메이는 빙벽으로 수평 진입한 D.Mon과 지원진 사이를 끊어 근접 압박을 고립으로 바꿀 수 있습니다.",
-    "condition": "D.Mon이 추진기로 아군 시야 밖까지 깊게 들어간 상황에서 특히 강합니다.",
+    "condition": "D.Mon이 추진기로 아군 시야 밖까지 깊게 들어간 상황에서 특히 강합니다. 9월 17일 방어력 감소와 추진기 연료 소모 증가를 반영해 짧게 교전하고 퇴각 연료를 남기세요.",
     "reviewedAt": "2026-08-30",
     "status": "verified",
     "confidence": "high",
@@ -824,6 +827,9 @@
     "evidence": [
       "official-hero-kit",
       "current-matchup-crosscheck"
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
     ]
   },
   {
@@ -845,15 +851,18 @@
     "counter": "ramattra",
     "score": 4,
     "reason": "라마트라의 네메시스 형태는 정면 방벽에 의존하는 D.Mon을 직접 압박하고, 탐식의 소용돌이는 추진기 진입 경로를 제한합니다.",
-    "condition": "라마트라가 네메시스 형태와 소용돌이를 함께 사용할 수 있는 정면 교전에서 영향이 큽니다. 소용돌이의 수정 전 지연에 의존한 진입 타이밍은 적용하지 않습니다.",
+    "condition": "라마트라가 네메시스 형태와 소용돌이를 함께 사용할 수 있는 정면 교전에서 영향이 큽니다. 소용돌이의 수정 전 지연에 의존한 진입 타이밍은 적용하지 않습니다. 9월 17일 방어력 감소와 추진기 연료 소모 증가를 반영해 짧게 교전하고 퇴각 연료를 남기세요.",
     "reviewedAt": "2026-08-30",
     "status": "verified",
     "confidence": "high",
     "patchBasis": "2026-08-30 라이브 기술 구조 · 현재 상성 평가",
-    "counterplay": "네메시스 형태를 정면에서 오래 받아내지 말고, 소용돌이가 빠진 뒤 측면으로 이동해 융합포로 거리를 조절하세요. 9월 10일 소용돌이의 의도치 않은 폭발 전 지연이 수정됐으므로, 과거 지연을 회피 여유로 가정하지 말고 실제 소용돌이 소모와 위치를 확인하세요. 패치에는 수정 후 지연 수치가 공개되지 않았습니다.",
+    "counterplay": "네메시스 형태를 정면에서 오래 받아내지 말고, 소용돌이가 빠진 뒤 측면으로 이동해 융합포로 거리를 조절하세요. 9월 10일 소용돌이의 의도치 않은 폭발 전 지연이 수정됐으므로, 과거 지연을 회피 여유로 가정하지 말고 실제 소용돌이 소모와 위치를 확인하세요. 패치에는 수정 후 지연 수치가 공개되지 않았습니다. 융합 연발총은 피해 15·재사용 5초로 변경되어 이전 화력과 재사용 간격을 전제로 하지 않습니다.",
     "evidence": [
       "official-hero-kit",
       "current-matchup-crosscheck"
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
     ]
   },
   {
@@ -888,15 +897,18 @@
     "counter": "torbjorn",
     "score": 4,
     "reason": "D.Mon은 주력 근접 사거리가 짧아 떨어진 위치의 포탑을 빠르게 정리하기 어렵고, 접근 중 지속 피해를 받기 쉽습니다.",
-    "condition": "포탑이 고지대나 교차 사선에 배치되어 직접 접근이 어려울 때 불리함이 커집니다.",
+    "condition": "포탑이 고지대나 교차 사선에 배치되어 직접 접근이 어려울 때 불리함이 커집니다. 9월 17일 방어력 감소와 추진기 연료 소모 증가를 반영해 짧게 교전하고 퇴각 연료를 남기세요.",
     "reviewedAt": "2026-08-30",
     "status": "verified",
     "confidence": "high",
     "patchBasis": "2026-08-30 라이브 기술 구조 · 현재 상성 평가",
-    "counterplay": "먼저 융합포와 아군 화력으로 포탑을 제거한 뒤 진입하고, 포탑과 토르비욘을 동시에 상대하지 마세요.",
+    "counterplay": "먼저 융합포와 아군 화력으로 포탑을 제거한 뒤 진입하고, 포탑과 토르비욘을 동시에 상대하지 마세요. 융합 연발총은 피해 15·재사용 5초로 변경되어 이전 화력과 재사용 간격을 전제로 하지 않습니다.",
     "evidence": [
       "official-hero-kit",
       "current-matchup-crosscheck"
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
     ]
   },
   {

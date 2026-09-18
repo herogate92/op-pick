@@ -30,10 +30,10 @@
     "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
     "category": "상성",
     "id": "dmon-ramattra",
-    "contentDigest": "7348e2257cfe31b7b36317d93a42e66d6a574f6acb35b09201e07f001b8f9f85",
+    "contentDigest": "07a87655b9c172c2d25a21d9c0d2355a6cd880d0af9a61c0aacdf447e0ee1fdb",
     "decision": "updated",
-    "reviewedAt": "2026-09-12",
-    "summary": "소용돌이 사용 후 진입·회피 안내에 의도치 않은 폭발 전 지연 수정과 수치 미공개를 명시했습니다. 이번 기록은 9월 10일 핫픽스 영향만 판단하며 기존 상성 점수·등급의 재검증이나 게임 내 재현을 뜻하지 않습니다.",
+    "reviewedAt": "2026-09-18",
+    "summary": "소용돌이 사용 후 진입·회피 안내에 의도치 않은 폭발 전 지연 수정과 수치 미공개를 명시했습니다. 이번 기록은 9월 10일 핫픽스 영향만 판단하며 기존 상성 점수·등급의 재검증이나 게임 내 재현을 뜻하지 않습니다. 9월 17일 수치 안내 추가 후에도 기존 소용돌이 지연 수정 설명이 유지됨을 재확인했습니다.",
     "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/",
     "sourceAccess": "공식 패치 검색 수록본 확인; 직접 페이지 열람은 403으로 실패"
   },
@@ -649,5 +649,419 @@
     "summary": "확인한 9월 10일 본문은 세 영웅의 버그 수정과 9월 8일 리플레이 코드 유지 안내입니다. 공통 역할 제한·팀 인원·모드 규칙 변경은 명시하지 않아 기존 6대6 탱커 최대 2명 제한을 변경하지 않습니다. 다른 날짜의 패치나 모든 규칙을 재검증했다는 의미는 아닙니다.",
     "sourceUrl": "https://overwatch.blizzard.com/es-es/news/patch-notes/live/",
     "sourceAccess": "앞선 단계에서 확인한 공식 검색 수록본을 기준으로 판단; 이번 직접 원문 재접속은 403으로 실패"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "주의 조합",
+    "id": "mercy-lifeweaver-pressure",
+    "contentDigest": "863bbc89e3645b0d9e59261efc86e9d582f10d1a1795f13ffac7d25be0b38c96",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-18",
+    "summary": "이 항목은 일반 모드 메르시 콘텐츠입니다. 이번 변경은 스타디움 재활성화에 한정되어 일반 모드 설명·점수를 바꾸지 않습니다. 기존 근거 수준을 새로 검증한 것은 아닙니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "조합",
+    "id": "pharah-mercy",
+    "contentDigest": "56cce35198c7d796302868d7d2091b0a2138b6f8cfaec5c78fc7b2ee2db649ef",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-18",
+    "summary": "이 항목은 일반 모드 메르시 콘텐츠입니다. 이번 변경은 스타디움 재활성화에 한정되어 일반 모드 설명·점수를 바꾸지 않습니다. 기존 근거 수준을 새로 검증한 것은 아닙니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "조합",
+    "id": "dmon-lucio",
+    "contentDigest": "0e566330ffb28eb79616fad2c04551b377f2bb58cf282c6bd1b5576071fb3197",
+    "decision": "deferred",
+    "reviewedAt": "2026-09-18",
+    "summary": "기존 보류 조합이며 패치 후 진입·퇴각 연계 사례가 필요합니다. 보류 사유를 보강했습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+    "recheckRequirement": "9월 17일 패치 수치를 적용한 구체적인 기술 대응·연계 사례 및 교전 조건 확인"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "조합",
+    "id": "dmon-dva",
+    "contentDigest": "f567419aa70d34ea7a6c121aec19aebd04750d489fbebaade92f383bd6609951",
+    "decision": "deferred",
+    "reviewedAt": "2026-09-18",
+    "summary": "기존 보류 조합이며 패치 후 진입·퇴각 연계 사례가 필요합니다. 보류 사유를 보강했습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+    "recheckRequirement": "9월 17일 패치 수치를 적용한 구체적인 기술 대응·연계 사례 및 교전 조건 확인"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "전체 규칙",
+    "id": "global",
+    "contentDigest": "34f8f7e6e97b99aec0db71edf49c5872a2245ca818211774c970358c08bfb7c7",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-18",
+    "summary": "본문 전체 확인: D.Mon 밸런스 변경 및 스타디움 메르시 재활성화만 해당합니다. 일반 모드 공통 규칙 변경은 없습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "zarya-dmon",
+    "contentDigest": "e299eea95ef79ac00179da8f904b79b2f0ceb5b15e4488140d81fe83666cc9cc",
+    "decision": "deferred",
+    "reviewedAt": "2026-09-18",
+    "summary": "기존 자동 생성 초안으로, 이번 수치 변경만으로 상성 점수를 검증할 수 없어 보류합니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+    "recheckRequirement": "9월 17일 패치 수치를 적용한 구체적인 기술 대응·연계 사례 및 교전 조건 확인"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "sombra-dmon",
+    "contentDigest": "7b4031627feed3b5f1571c86e4a38fd89a7c3f8d946aba88714ab3eebe147bc8",
+    "decision": "deferred",
+    "reviewedAt": "2026-09-18",
+    "summary": "기존 자동 생성 초안으로, 이번 수치 변경만으로 상성 점수를 검증할 수 없어 보류합니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+    "recheckRequirement": "9월 17일 패치 수치를 적용한 구체적인 기술 대응·연계 사례 및 교전 조건 확인"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "sigma-dmon",
+    "contentDigest": "a6ac7a3216228a268debde147d6164ed2071ad2ddd8fa35c2b966ff1bc432bee",
+    "decision": "deferred",
+    "reviewedAt": "2026-09-18",
+    "summary": "기존 자동 생성 초안으로, 이번 수치 변경만으로 상성 점수를 검증할 수 없어 보류합니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+    "recheckRequirement": "9월 17일 패치 수치를 적용한 구체적인 기술 대응·연계 사례 및 교전 조건 확인"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "shion-dmon",
+    "contentDigest": "51c1b438036e673f9673536d914812d20d054ffccec664c2d9b363ed409e2190",
+    "decision": "deferred",
+    "reviewedAt": "2026-09-18",
+    "summary": "기존 자동 생성 초안으로, 이번 수치 변경만으로 상성 점수를 검증할 수 없어 보류합니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+    "recheckRequirement": "9월 17일 패치 수치를 적용한 구체적인 기술 대응·연계 사례 및 교전 조건 확인"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "reaper-mercy",
+    "contentDigest": "a80b76231abfa411a28a82fd5d1c4c7f717e33f57f60decd0f891d291963f008",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-18",
+    "summary": "이 항목은 일반 모드 메르시 콘텐츠입니다. 이번 변경은 스타디움 재활성화에 한정되어 일반 모드 설명·점수를 바꾸지 않습니다. 기존 근거 수준을 새로 검증한 것은 아닙니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "mercy-widowmaker",
+    "contentDigest": "686c792ab6bfdf7351522e864445bb8e27b54c5bb5c65f71cc4f64e972dce9cd",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-18",
+    "summary": "이 항목은 일반 모드 메르시 콘텐츠입니다. 이번 변경은 스타디움 재활성화에 한정되어 일반 모드 설명·점수를 바꾸지 않습니다. 기존 근거 수준을 새로 검증한 것은 아닙니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "mercy-soldier76",
+    "contentDigest": "35944b7e1cf8a4436ce908e5d3d3e7975359bcc8d2c9e725a7786de13e8040da",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-18",
+    "summary": "이 항목은 일반 모드 메르시 콘텐츠입니다. 이번 변경은 스타디움 재활성화에 한정되어 일반 모드 설명·점수를 바꾸지 않습니다. 기존 근거 수준을 새로 검증한 것은 아닙니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "mercy-mauga",
+    "contentDigest": "2e57caee39ef3f6be8105978de8e93c1848fed4611601bdacc64c0889fa9551b",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-18",
+    "summary": "이 항목은 일반 모드 메르시 콘텐츠입니다. 이번 변경은 스타디움 재활성화에 한정되어 일반 모드 설명·점수를 바꾸지 않습니다. 기존 근거 수준을 새로 검증한 것은 아닙니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "mercy-dva",
+    "contentDigest": "d0f0aa9f5d9a14c7bce1e648d89f337157db73e43b69e6461fae142a590432f8",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-18",
+    "summary": "이 항목은 일반 모드 메르시 콘텐츠입니다. 이번 변경은 스타디움 재활성화에 한정되어 일반 모드 설명·점수를 바꾸지 않습니다. 기존 근거 수준을 새로 검증한 것은 아닙니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "mercy-domina",
+    "contentDigest": "7caa1024e2bbd391d882626ee3b5c7b7f32e14fca804147773534c51afc61f9f",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-18",
+    "summary": "이 항목은 일반 모드 메르시 콘텐츠입니다. 이번 변경은 스타디움 재활성화에 한정되어 일반 모드 설명·점수를 바꾸지 않습니다. 기존 근거 수준을 새로 검증한 것은 아닙니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "mercy-dmon",
+    "contentDigest": "0f480c9e225b1cec46e6e9e15dcb73f601bbc9c1bda376de3c9524ddf2f773d7",
+    "decision": "deferred",
+    "reviewedAt": "2026-09-18",
+    "summary": "기존 자동 생성 초안으로, 이번 수치 변경만으로 상성 점수를 검증할 수 없어 보류합니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+    "recheckRequirement": "9월 17일 패치 수치를 적용한 구체적인 기술 대응·연계 사례 및 교전 조건 확인"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "mercy-cassidy",
+    "contentDigest": "ec49ccec1005e052691d573ecbe97f52d7fb281d50166c78ae3c1974302369f9",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-18",
+    "summary": "이 항목은 일반 모드 메르시 콘텐츠입니다. 이번 변경은 스타디움 재활성화에 한정되어 일반 모드 설명·점수를 바꾸지 않습니다. 기존 근거 수준을 새로 검증한 것은 아닙니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "mercy-ashe",
+    "contentDigest": "80b063582741bf6e2fcd02bc7b1d11a08f6e4ac768f5776d7d26d441d81182e2",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-18",
+    "summary": "이 항목은 일반 모드 메르시 콘텐츠입니다. 이번 변경은 스타디움 재활성화에 한정되어 일반 모드 설명·점수를 바꾸지 않습니다. 기존 근거 수준을 새로 검증한 것은 아닙니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "mercy-ana",
+    "contentDigest": "3cd4983adbb4b6f898cfcc0fc3ea3b41dff18e76512769f56a62c71908b134b0",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-18",
+    "summary": "이 항목은 일반 모드 메르시 콘텐츠입니다. 이번 변경은 스타디움 재활성화에 한정되어 일반 모드 설명·점수를 바꾸지 않습니다. 기존 근거 수준을 새로 검증한 것은 아닙니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "mei-mercy",
+    "contentDigest": "fc2a5f37ffe70ff4a8452a22fc1cb4764749b9131119ac26286137f8da43d6fc",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-18",
+    "summary": "이 항목은 일반 모드 메르시 콘텐츠입니다. 이번 변경은 스타디움 재활성화에 한정되어 일반 모드 설명·점수를 바꾸지 않습니다. 기존 근거 수준을 새로 검증한 것은 아닙니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "junkrat-mercy",
+    "contentDigest": "7c4d75345ac79f3fbadaf62a0cde1897f57e2ae586d27d4ba11d5176a31421c7",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-18",
+    "summary": "이 항목은 일반 모드 메르시 콘텐츠입니다. 이번 변경은 스타디움 재활성화에 한정되어 일반 모드 설명·점수를 바꾸지 않습니다. 기존 근거 수준을 새로 검증한 것은 아닙니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "domina-dmon",
+    "contentDigest": "6f77eea45894c7c0ad54b719f8b5d8dbd05a2df68b32140d9f8d4144f1b4a1da",
+    "decision": "deferred",
+    "reviewedAt": "2026-09-18",
+    "summary": "기존 자동 생성 초안으로, 이번 수치 변경만으로 상성 점수를 검증할 수 없어 보류합니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+    "recheckRequirement": "9월 17일 패치 수치를 적용한 구체적인 기술 대응·연계 사례 및 교전 조건 확인"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "dmon-torbjorn",
+    "contentDigest": "3a878bbef17977d23e6b9f7c253e9270592371ffa70361160a6d2ca86da6c464",
+    "decision": "updated",
+    "reviewedAt": "2026-09-18",
+    "summary": "방어력·연료 변경을 교전 조건에 반영했습니다. 기술 상호작용 구조는 유지하며 점수 재산정·게임 재현은 수행하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "dmon-reinhardt",
+    "contentDigest": "eab453d5ac72fc197f799c9dc25bc508a8582cf9e1133e288483a3375394e3fd",
+    "decision": "deferred",
+    "reviewedAt": "2026-09-18",
+    "summary": "기존 자동 생성 초안으로, 이번 수치 변경만으로 상성 점수를 검증할 수 없어 보류합니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+    "recheckRequirement": "9월 17일 패치 수치를 적용한 구체적인 기술 대응·연계 사례 및 교전 조건 확인"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "dmon-reaper",
+    "contentDigest": "cd09cc895e8ddc2f0ed9a69e02475b62ce2745f4b9febcaa425bcb08f3198619",
+    "decision": "deferred",
+    "reviewedAt": "2026-09-18",
+    "summary": "기존 자동 생성 초안으로, 이번 수치 변경만으로 상성 점수를 검증할 수 없어 보류합니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+    "recheckRequirement": "9월 17일 패치 수치를 적용한 구체적인 기술 대응·연계 사례 및 교전 조건 확인"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "dmon-ramattra",
+    "contentDigest": "07a87655b9c172c2d25a21d9c0d2355a6cd880d0af9a61c0aacdf447e0ee1fdb",
+    "decision": "updated",
+    "reviewedAt": "2026-09-18",
+    "summary": "방어력·연료 변경을 교전 조건에 반영했습니다. 기술 상호작용 구조는 유지하며 점수 재산정·게임 재현은 수행하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "dmon-pharah",
+    "contentDigest": "e4023582ee94eb5f5a6dcba61182fa0019e784ddfe00d219847b4f3afdb75a2a",
+    "decision": "deferred",
+    "reviewedAt": "2026-09-18",
+    "summary": "기존 자동 생성 초안으로, 이번 수치 변경만으로 상성 점수를 검증할 수 없어 보류합니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+    "recheckRequirement": "9월 17일 패치 수치를 적용한 구체적인 기술 대응·연계 사례 및 교전 조건 확인"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "dmon-mei",
+    "contentDigest": "a2431ead81e129b7637d832472fcb746cc65675289d7ac645d66816b128dc961",
+    "decision": "updated",
+    "reviewedAt": "2026-09-18",
+    "summary": "방어력·연료 변경을 교전 조건에 반영했습니다. 기술 상호작용 구조는 유지하며 점수 재산정·게임 재현은 수행하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "dmon-echo",
+    "contentDigest": "f2b677be2ca9a73031228a58497ef1e384eaec7ea91c6f9b9304e5bacfc99a0c",
+    "decision": "deferred",
+    "reviewedAt": "2026-09-18",
+    "summary": "기존 자동 생성 초안으로, 이번 수치 변경만으로 상성 점수를 검증할 수 없어 보류합니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+    "recheckRequirement": "9월 17일 패치 수치를 적용한 구체적인 기술 대응·연계 사례 및 교전 조건 확인"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "dmon-bastion",
+    "contentDigest": "8071723f3e507b424d05df430418266161be4c78d852f41b790e8371864728f7",
+    "decision": "deferred",
+    "reviewedAt": "2026-09-18",
+    "summary": "기존 자동 생성 초안으로, 이번 수치 변경만으로 상성 점수를 검증할 수 없어 보류합니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+    "recheckRequirement": "9월 17일 패치 수치를 적용한 구체적인 기술 대응·연계 사례 및 교전 조건 확인"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "cassidy-dmon",
+    "contentDigest": "804a368db709361e3ce30d80b5f776aaf45b808107c2263d4be7ba573392aa6d",
+    "decision": "deferred",
+    "reviewedAt": "2026-09-18",
+    "summary": "기존 자동 생성 초안으로, 이번 수치 변경만으로 상성 점수를 검증할 수 없어 보류합니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+    "recheckRequirement": "9월 17일 패치 수치를 적용한 구체적인 기술 대응·연계 사례 및 교전 조건 확인"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "상성",
+    "id": "ana-dmon",
+    "contentDigest": "43d31f4875338891dacbdebfee52d7a42cf853eb84826b86cc1177bc827dc6b2",
+    "decision": "updated",
+    "reviewedAt": "2026-09-18",
+    "summary": "방어력·연료 변경을 교전 조건에 반영했습니다. 기술 상호작용 구조는 유지하며 점수 재산정·게임 재현은 수행하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "맵",
+    "id": "shambali-monastery:mercy",
+    "contentDigest": "144aff2cc3388d88e1c055ec7c8965c438cbaf36e068ad54d873c628a86b62e6",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-18",
+    "summary": "이 항목은 일반 모드 메르시 콘텐츠입니다. 이번 변경은 스타디움 재활성화에 한정되어 일반 모드 설명·점수를 바꾸지 않습니다. 기존 근거 수준을 새로 검증한 것은 아닙니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "맵",
+    "id": "runasapi:dmon",
+    "contentDigest": "90919a85ec2e448de6355129fd0a2191c75869de0dbdb4a5ec1943449936a649",
+    "decision": "updated",
+    "reviewedAt": "2026-09-18",
+    "summary": "엄폐 이동·퇴각 연료와 융합 연발총 피해·재사용 변경을 주의사항에 반영했습니다. 추천 순위 재산정은 하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "맵",
+    "id": "new-junk-city:dmon",
+    "contentDigest": "801e45742baed7d069ff61e0d10224fed0fad7f6ec950eb6740f73a122d67631",
+    "decision": "updated",
+    "reviewedAt": "2026-09-18",
+    "summary": "엄폐 이동·퇴각 연료와 융합 연발총 피해·재사용 변경을 주의사항에 반영했습니다. 추천 순위 재산정은 하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "맵",
+    "id": "esperanca:mercy",
+    "contentDigest": "802fac08b403cba45bd2fb7c2d695463fc9dbc0f81189ad1ca172408d0c8fd36",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-18",
+    "summary": "이 항목은 일반 모드 메르시 콘텐츠입니다. 이번 변경은 스타디움 재활성화에 한정되어 일반 모드 설명·점수를 바꾸지 않습니다. 기존 근거 수준을 새로 검증한 것은 아닙니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "맵",
+    "id": "colosseo:mercy",
+    "contentDigest": "bd7e9417cb9b29a3d83f23a6c490d6cf2f96bb9ba9c4e1100251b4ae931a1193",
+    "decision": "no-change",
+    "reviewedAt": "2026-09-18",
+    "summary": "이 항목은 일반 모드 메르시 콘텐츠입니다. 이번 변경은 스타디움 재활성화에 한정되어 일반 모드 설명·점수를 바꾸지 않습니다. 기존 근거 수준을 새로 검증한 것은 아닙니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "맵",
+    "id": "aatlis:dmon",
+    "contentDigest": "f352762a13405b27b56e2885de94e45dfa72e45a34992c49bf80ce1d19d01a53",
+    "decision": "updated",
+    "reviewedAt": "2026-09-18",
+    "summary": "엄폐 이동·퇴각 연료와 융합 연발총 피해·재사용 변경을 주의사항에 반영했습니다. 추천 순위 재산정은 하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "기술",
+    "id": "mercy",
+    "contentDigest": "308d792e5e59b799206deee24542674f1c1bea3ccdda3516f7749994979c3c4c",
+    "decision": "updated",
+    "reviewedAt": "2026-09-18",
+    "summary": "스타디움 재활성화 안내를 반영했습니다. 일반 모드 수치는 변경하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+  },
+  {
+    "patchDigest": "3dafdf2b252a38147863a169c9ad8b0f149b786991314dab254083ae2fe70808",
+    "category": "기술",
+    "id": "dmon",
+    "contentDigest": "de8caba307cc8818e06f953105da7ee91ec147d3680960701898606e185249a8",
+    "decision": "updated",
+    "reviewedAt": "2026-09-18",
+    "summary": "공식 패치의 방어력·무기·추진기·특전 변경을 표시하고 모드를 구분했습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
   }
 ]

@@ -1947,9 +1947,10 @@
         "winRate": null,
         "rateStatus": "수집 조건·출처 미확인으로 표시 보류",
         "condition": "로봇 진행 방향에 맞춰 엄폐와 교전 위치를 옮길 때",
-        "caution": "근접 압박이 닿지 않는 사선에서는 융합 연발총과 엄폐를 활용하세요.",
+        "caution": "근접 압박이 닿지 않는 사선에서는 융합 연발총과 엄폐를 활용하세요. 9월 17일 방어력 감소와 추진기 연료 소모율 증가(25→30)를 고려해 엄폐 사이에서 짧게 이동하고 퇴각 연료를 남기세요. 융합 연발총은 피해 15·재사용 5초입니다.",
         "sourceUrls": [
-          "https://overfast-api.tekrop.fr/heroes/dmon?locale=ko-kr"
+          "https://overfast-api.tekrop.fr/heroes/dmon?locale=ko-kr",
+          "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
         ]
       },
       {
@@ -2262,9 +2263,10 @@
         "winRate": null,
         "rateStatus": "수집 조건·출처 미확인으로 표시 보류",
         "condition": "다음 거점에 함께 이동한 뒤 좁은 출입구 교전을 만들 때",
-        "caution": "근접 압박이 닿지 않는 사선에서는 융합 연발총과 엄폐를 활용하세요.",
+        "caution": "근접 압박이 닿지 않는 사선에서는 융합 연발총과 엄폐를 활용하세요. 9월 17일 방어력 감소와 추진기 연료 소모율 증가(25→30)를 고려해 엄폐 사이에서 짧게 이동하고 퇴각 연료를 남기세요. 융합 연발총은 피해 15·재사용 5초입니다.",
         "sourceUrls": [
-          "https://overfast-api.tekrop.fr/heroes/dmon?locale=ko-kr"
+          "https://overfast-api.tekrop.fr/heroes/dmon?locale=ko-kr",
+          "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
         ]
       },
       {
@@ -2355,9 +2357,10 @@
         "winRate": null,
         "rateStatus": "수집 조건·출처 미확인으로 표시 보류",
         "condition": "현재 활성 거점의 엄폐를 확보하고 팀 단위로 진입할 때",
-        "caution": "근접 압박이 닿지 않는 사선에서는 융합 연발총과 엄폐를 활용하세요.",
+        "caution": "근접 압박이 닿지 않는 사선에서는 융합 연발총과 엄폐를 활용하세요. 9월 17일 방어력 감소와 추진기 연료 소모율 증가(25→30)를 고려해 엄폐 사이에서 짧게 이동하고 퇴각 연료를 남기세요. 융합 연발총은 피해 15·재사용 5초입니다.",
         "sourceUrls": [
-          "https://overfast-api.tekrop.fr/heroes/dmon?locale=ko-kr"
+          "https://overfast-api.tekrop.fr/heroes/dmon?locale=ko-kr",
+          "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
         ]
       },
       {

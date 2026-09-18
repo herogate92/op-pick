@@ -95,6 +95,7 @@ export default async function HeroDetailPage({ params }: { params: Promise<{ slu
       <div className="content-with-rail">
         <div className="page-content">
           {hero.hitpointsNotice && <p className="seo-guide-note">{hero.hitpointsNotice}</p>}
+          {hero.patchNote && <p className="seo-guide-note">{hero.patchNote.summary} <a href={hero.patchNote.sourceUrl} target="_blank" rel="noreferrer">공식 패치 {hero.patchNote.date}</a></p>}
           <section className="content-section">
             <div className="section-heading"><span className="section-kicker">01 · ABILITIES</span><h2>기술</h2><p>기술 설명 확인 {hero.abilitiesCheckedAt ?? hero.checkedAt}. 세부 수치는 표시된 모드·패치 기준이며, 출처가 확인된 항목부터 제공합니다.</p></div>
             {hero.abilities.length ? <div className="ability-grid">{hero.abilities.map((ability) => <article key={ability.name} className={`ability-card${ability.video ? " has-media" : ""}`}>{/* eslint-disable-next-line @next/next/no-img-element */}<img className="ability-icon" src={ability.icon} alt="" /><div><h3>{ability.name}</h3><p>{ability.description}</p><AbilityStats ability={ability} /></div>{ability.video && <video className="ability-demo" controls muted playsInline preload="metadata" poster={ability.video.thumbnail} aria-label={`${hero.name} ${ability.name} 기술 시연`}><source src={ability.video.webm} type="video/webm" /><source src={ability.video.mp4} type="video/mp4" /></video>}</article>)}</div> : <ReviewPending />}

@@ -11,7 +11,12 @@
     "location": "",
     "birthday": "",
     "age": null,
-    "hitpoints": { "health": 250, "armor": 0, "shields": 0, "total": 250 },
+    "hitpoints": {
+      "health": 250,
+      "armor": 0,
+      "shields": 0,
+      "total": 250
+    },
     "hitpointsNotice": "독트린은 체험 공개 자료 기준입니다. 생명력 250과 기술·특전은 2026-09-13 제공된 훈련장 캡처에서 확인했습니다. 5대5·6대6 공통 수치로 검증한 것은 아닙니다. 공식 초상과 영상은 준비 중이며, 상성·시너지·맵 순위·승률은 자료 확보 전입니다.",
     "releaseStatus": "trial",
     "reviewStatus": "review-needed",
@@ -23,34 +28,91 @@
         "description": "아군을 치유하고 적에게 피해를 주는 중거리 무기입니다. 주입하면 대형 관통 폭발파를 발사합니다.",
         "icon": "/heroes/doctrine-pending.svg",
         "stats": [
-          { "label": "탄약 / 재장전", "value": "18 / 1.5초" },
-          { "label": "기본 발사 특성", "value": "히트스캔 · 약한 치명타 · 관통" },
-          { "label": "피해 / 치유", "value": "각 60 (기본) → 18 (최대 감소)" },
-          { "label": "기본 감소 사거리", "value": "30~50미터" },
-          { "label": "주입 피해", "value": "90 (기본) → 27 (최대 감소)" },
-          { "label": "주입 치유", "value": "120 (기본) → 36 (최대 감소)" },
-          { "label": "주입 감소 사거리", "value": "40~60미터" }
+          {
+            "label": "탄약 / 재장전",
+            "value": "18 / 1.5초"
+          },
+          {
+            "label": "기본 발사 특성",
+            "value": "히트스캔 · 약한 치명타 · 관통"
+          },
+          {
+            "label": "피해 / 치유",
+            "value": "각 60 (기본) → 18 (최대 감소)"
+          },
+          {
+            "label": "기본 감소 사거리",
+            "value": "30~50미터"
+          },
+          {
+            "label": "주입 피해",
+            "value": "90 (기본) → 27 (최대 감소)"
+          },
+          {
+            "label": "주입 치유",
+            "value": "120 (기본) → 36 (최대 감소)"
+          },
+          {
+            "label": "주입 감소 사거리",
+            "value": "40~60미터"
+          }
         ],
         "statsCheckedAt": "2026-09-13",
         "statsScope": "사용자 제공 훈련장 체험 캡처",
         "statsBasis": "캡처 03 확인 · 정식 출시 및 모드별 수치 재확인 필요"
       },
-      { "name": "주입", "description": "다음 기술에 강력한 효과를 추가합니다.", "icon": "/heroes/doctrine-pending.svg" },
-      { "name": "추진형 장막", "description": "수평으로 돌진하며 받는 피해가 감소합니다. 주입하면 자유롭게 비행합니다.", "icon": "/heroes/doctrine-pending.svg" },
-      { "name": "활기 드론", "description": "아군에게 드론을 배치해 공격 속도를 증가시키고 치유합니다. 주입하면 자신에게도 드론을 배치합니다.", "icon": "/heroes/doctrine-pending.svg" },
+      {
+        "name": "주입",
+        "description": "다음 기술에 강력한 효과를 추가합니다.",
+        "icon": "/heroes/doctrine-pending.svg"
+      },
+      {
+        "name": "추진형 장막",
+        "description": "수평으로 돌진하며 받는 피해가 감소합니다. 주입하면 자유롭게 비행합니다.",
+        "icon": "/heroes/doctrine-pending.svg"
+      },
+      {
+        "name": "활기 드론",
+        "description": "아군에게 드론을 배치해 공격 속도를 증가시키고 치유합니다. 주입하면 자신에게도 드론을 배치합니다.",
+        "icon": "/heroes/doctrine-pending.svg"
+      },
       {
         "name": "구제",
         "description": "드론 무리를 날려 적의 최대 생명력을 감소시키고 아군에게 추가 생명력을 부여합니다.",
         "icon": "/heroes/doctrine-pending.svg",
         "stats": [
-          { "label": "궁극기 비용", "value": "2,800" },
-          { "label": "드론당 피해 / 치유", "value": "5 / 5" },
-          { "label": "최대 지속 시간 / 반경", "value": "6초 / 12미터" },
-          { "label": "적 최대 생명력 감소", "value": "드론당 5% · 총 최대 50%" },
-          { "label": "아군 추가 생명력", "value": "드론당 15 · 최대 150" },
-          { "label": "감소 지연 (화면 표기)", "value": "적 효과·아군 추가 생명력 모두 8초" },
-          { "label": "최대 투사체 시전 사거리", "value": "12미터" },
-          { "label": "화면 키워드", "value": "광역 · 본체 투사체 · 정화 가능 · 고정 · 방벽 무시 · 추가 생명력" }
+          {
+            "label": "궁극기 비용",
+            "value": "2,800"
+          },
+          {
+            "label": "드론당 피해 / 치유",
+            "value": "5 / 5"
+          },
+          {
+            "label": "최대 지속 시간 / 반경",
+            "value": "6초 / 12미터"
+          },
+          {
+            "label": "적 최대 생명력 감소",
+            "value": "드론당 5% · 총 최대 50%"
+          },
+          {
+            "label": "아군 추가 생명력",
+            "value": "드론당 15 · 최대 150"
+          },
+          {
+            "label": "감소 지연 (화면 표기)",
+            "value": "적 효과·아군 추가 생명력 모두 8초"
+          },
+          {
+            "label": "최대 투사체 시전 사거리",
+            "value": "12미터"
+          },
+          {
+            "label": "화면 키워드",
+            "value": "광역 · 본체 투사체 · 정화 가능 · 고정 · 방벽 무시 · 추가 생명력"
+          }
         ],
         "statsCheckedAt": "2026-09-13",
         "statsScope": "사용자 제공 훈련장 체험 캡처",
@@ -59,12 +121,28 @@
     ],
     "perks": {
       "minor": [
-        { "name": "은총", "description": "활기 드론이 부착되면 생명력을 40 치유합니다.", "icon": "/heroes/doctrine-pending.svg" },
-        { "name": "핏빛 흡수", "description": "주입된 영겁의 홀로 준 피해의 50%만큼 자가 치유됩니다.", "icon": "/heroes/doctrine-pending.svg" }
+        {
+          "name": "은총",
+          "description": "활기 드론이 부착되면 생명력을 40 치유합니다.",
+          "icon": "/heroes/doctrine-pending.svg"
+        },
+        {
+          "name": "핏빛 흡수",
+          "description": "주입된 영겁의 홀로 준 피해의 50%만큼 자가 치유됩니다.",
+          "icon": "/heroes/doctrine-pending.svg"
+        }
       ],
       "major": [
-        { "name": "수혈", "description": "준 피해와 치유에 따라 주입의 재사용 대기시간이 감소합니다.", "icon": "/heroes/doctrine-pending.svg" },
-        { "name": "생명의 대가", "description": "최대 생명력을 25 희생하며 영겁의 홀 치유량이 20% 증가합니다.", "icon": "/heroes/doctrine-pending.svg" }
+        {
+          "name": "수혈",
+          "description": "준 피해와 치유에 따라 주입의 재사용 대기시간이 감소합니다.",
+          "icon": "/heroes/doctrine-pending.svg"
+        },
+        {
+          "name": "생명의 대가",
+          "description": "최대 생명력을 25 희생하며 영겁의 홀 치유량이 20% 증가합니다.",
+          "icon": "/heroes/doctrine-pending.svg"
+        }
       ]
     },
     "storySummary": "",
@@ -1768,7 +1846,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/mercy?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/mercy?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-09-17",
+      "summary": "스타디움의 게임플레이 문제 수정 후 모든 스타디움 대기열에서 메르시가 다시 활성화됐습니다. 일반 5대5·6대6 기술 수치 변경은 아닙니다.",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+    }
   },
   {
     "key": "mei",
@@ -7055,9 +7138,9 @@
     "age": 28,
     "hitpoints": {
       "shields": 0,
-      "armor": 325,
+      "armor": 275,
       "health": 325,
-      "total": 650
+      "total": 600
     },
     "abilities": [
       {
@@ -7169,13 +7252,26 @@
           {
             "label": "사용 후 회복 시간",
             "value": "0.2초"
+          },
+          {
+            "label": "피해 (9월 17일)",
+            "value": "15"
+          },
+          {
+            "label": "재사용 대기시간 (9월 17일)",
+            "value": "5초"
           }
         ],
         "statsCheckedAt": "2026-09-09",
         "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08/",
         "statsPatchDate": "2026-08-14",
         "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
-        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
+        "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부",
+        "patchNote": {
+          "date": "2026-09-17",
+          "summary": "피해가 16에서 15로 감소하고 재사용 대기시간이 4초에서 5초로 증가했습니다. 아래 시전·회복 시간은 기존 8월 14일 자료입니다.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+        }
       },
       {
         "name": "추진기",
@@ -7185,6 +7281,22 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt7d7b429a4ab598d2/6a73dffac07be4067a2d4fa7/propulsors.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8ad9b0701563dd51/6a73e8f36a019179e71552e2/04_260727_DMon_WebAbilities_1P_Propulsors_KG_0001.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt524a626057fe6457/6a73e8fd8355d2c3302d6360/04_260727_DMon_WebAbilities_1P_Propulsors_KG_0001.webm"
+        },
+        "stats": [
+          {
+            "label": "연료 소모율",
+            "value": "30"
+          }
+        ],
+        "statsCheckedAt": "2026-09-18",
+        "statsPatchDate": "2026-09-17",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/",
+        "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
+        "statsBasis": "공식 패치 명시 항목 · 단위가 공개되지 않아 임의 환산하지 않음",
+        "patchNote": {
+          "date": "2026-09-17",
+          "summary": "연료 소모율이 25에서 30으로 증가했습니다.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
         }
       },
       {
@@ -7254,7 +7366,7 @@
         },
         {
           "name": "집중 융합",
-          "description": "융합 연발총의 발사 속도가 느려지지만, 분산 없이 더욱 강력한 탄을 발사합니다.",
+          "description": "융합 연발총의 발사 속도가 느려지지만, 분산 없이 더욱 강력한 탄을 발사합니다. 9월 17일 패치 기준 탄당 피해는 36입니다(기존 45).",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/46d8466d7de4b04dea213c55cae621e407206055eb3b9247796b3f8cd7ba2b4e.png"
         }
       ]
@@ -7282,7 +7394,13 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/dmon?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/dmon?locale=ko-kr",
+    "hitpointsNotice": "표시 생명력은 5대5 기준: 일반 생명력 325 + 방어력 275 = 총 600. 9월 17일 패치에서 방어력이 5대5 325→275, 6대6 300→250으로 감소했습니다. 6대6 총 생명력은 이 값과 구분해야 합니다.",
+    "patchNote": {
+      "date": "2026-09-17",
+      "summary": "융합 연발총 피해 16→15, 재사용 대기시간 4→5초, 주요 특전 집중 융합 탄당 피해 45→36, 추진기 연료 소모율 25→30으로 변경됐습니다.",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+    }
   },
   {
     "key": "dva",
