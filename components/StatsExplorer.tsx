@@ -6,6 +6,7 @@ import Link from "next/link";
 import { BarChart3, Cross, ExternalLink, Search, Shield, Swords, Trophy } from "lucide-react";
 import type { Hero, HeroRateSnapshot, Role } from "@/lib/data";
 import { summarizeRates } from "@/lib/stats-summary";
+import { rateDelta, type StatsComparison } from "@/lib/stats-history";
 
 type SortKey = "winRate" | "pickRate" | "banRate";
 
@@ -14,12 +15,15 @@ const roleIcons = { all: BarChart3, tank: Shield, damage: Swords, support: Cross
 const metricLabels: Record<SortKey, string> = { winRate: "승률", pickRate: "픽률", banRate: "밴률" };
 const formatRate = (value: number | null) => value === null ? "--" : `${value.toFixed(1)}%`;
 
-export function StatsExplorer({ snapshots, heroes, fetchedAt }: { snapshots: HeroRateSnapshot[]; heroes: Hero[]; fetchedAt: string }) {
+export function StatsExplorer({ snapshots, heroes, fetchedAt, comparisons }: { snapshots: HeroRateSnapshot[]; heroes: Hero[]; fetchedAt: string; comparisons: StatsComparison[] }) {
+  const [comparisonMode, setComparisonMode] = useState<"previous" | "priorPatch">("previous");
   const [snapshotId, setSnapshotId] = useState(snapshots[0]?.id ?? "");
   const [role, setRole] = useState<"all" | Role>("all");
   const [query, setQuery] = useState("");
   const [sortKey, setSortKey] = useState<SortKey>("winRate");
   const snapshot = snapshots.find((item) => item.id === snapshotId) ?? snapshots[0];
+  const baseline = comparisons.find(item => item.id === snapshot.id)?.[comparisonMode];
+  const priorRows = new Map(baseline?.snapshot.rows.map(row => [row.hero, row]));
   const modeOf = (item: HeroRateSnapshot) => item.gameMode ?? item.id;
   const gameMode = modeOf(snapshot);
   const changeCondition = (field: "input" | "region" | "tier", value: string) => {
@@ -88,6 +92,10 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt }: { snapshots: Her
         </div>
         <p className="stats-filter-note">모든 전장 합산 · 등급별 통계는 PC 아시아 경쟁전에서 제공합니다. 모드 변경 또는 지원하지 않는 조건으로 변경하면 전체 등급으로 전환됩니다.</p>
         {!metrics.includes("banRate") && <p className="stats-filter-note">{gameMode === "quickplay" ? "빠른 대전은 밴률을 제공하지 않습니다." : "현재 조건의 밴률 자료가 없습니다."}</p>}
+        <div className="stats-history-controls">
+          <label>증감 비교<select value={comparisonMode} onChange={event => setComparisonMode(event.target.value as "previous" | "priorPatch")}><option value="previous">이전 수집 대비</option><option value="priorPatch">이전 패치 기록 대비</option></select></label>
+          <p aria-live="polite">{baseline ? `비교 기준: ${new Intl.DateTimeFormat("ko-KR", { timeZone: "Asia/Seoul", dateStyle: "medium", timeStyle: "short" }).format(new Date(baseline.collectedAt))} KST${baseline.patchDate ? ` · 감지 패치 ${baseline.patchDate}` : ""}` : "같은 조건의 비교 기록이 아직 없습니다."}<br />증감 단위는 %p입니다. 패치별 경기 표본을 분리한 자료가 아니므로 패치 효과를 뜻하지 않습니다.</p>
+        </div>
 
         <div className="stats-toolbar">
           <div className="stats-role-tabs" role="tablist" aria-label="역할 필터">
@@ -114,7 +122,10 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt }: { snapshots: Her
                   <tr key={row.hero}>
                     <td><span className={index < 3 ? "stats-rank top" : "stats-rank"}>{index < 3 && <Trophy aria-hidden="true" />}{index + 1}</span></td>
                     <td><Link href={`/heroes/${hero.key}/${snapshot.id === gameMode ? `#stats-${snapshot.id}` : ""}`} className="stats-hero"><span className={`stats-portrait role-${hero.role}`}><Image src={hero.portrait} alt="" width={44} height={44} /></span><span><strong>{hero.name}</strong><small>{roleLabels[hero.role]} · 영웅 정보</small></span></Link></td>
-                    {metrics.map((metric) => <td key={metric}><div className={`rate-cell ${activeSortKey === metric ? "active" : ""}`}><strong>{formatRate(row[metric])}</strong><span><i style={{ width: `${Math.max(0, ((row[metric] ?? 0) / maxValues[metric]) * 100)}%` }} /></span></div></td>)}
+                    {metrics.map((metric) => {
+                      const delta = rateDelta(row[metric], priorRows.get(row.hero)?.[metric]);
+                      return <td key={metric}><div className={`rate-cell ${activeSortKey === metric ? "active" : ""}`}><strong>{formatRate(row[metric])}</strong><small className="stats-rate-delta">{delta === null ? "비교 자료 없음" : `${delta > 0 ? "+" : ""}${delta.toFixed(1)}%p`}</small><span><i style={{ width: `${Math.max(0, ((row[metric] ?? 0) / maxValues[metric]) * 100)}%` }} /></span></div></td>;
+                    })}
                   </tr>
                 );
               })}
