@@ -16,6 +16,8 @@ const snapshots = modes.flatMap(mode => ["PC", "Console"].flatMap(input => Objec
   id: input === "PC" && region === "Asia" ? mode.id : `${mode.id}-${input}-${region}`,
 }))));
 snapshots.push(...Object.keys(tiers).map(tier => ({ ...modes[1], id: `competitive-PC-Asia-${tier}`, gameMode: "competitive", input: "PC", region: "Asia", tier })));
+const maps = JSON.parse(await readFile(join(root, "data", "maps.json"), "utf8"));
+snapshots.push(...maps.map(map => ({ ...modes[1], id: `competitive-PC-Asia-map-${map.id}`, gameMode: "competitive", input: "PC", region: "Asia", tier: "All", map: map.id, mapLabel: map.name })));
 
 function decodeAttribute(value) {
   return value
@@ -29,7 +31,7 @@ function decodeAttribute(value) {
 function getOfficialSourceUrl(snapshot) {
   const params = new URLSearchParams({
     input: snapshot.input,
-    map: "all-maps",
+    map: snapshot.map ?? "all-maps",
     region: snapshot.region,
     role: "All",
     rq: snapshot.rq,
@@ -44,8 +46,8 @@ function getFilters(snapshot) {
     inputLabel: snapshot.input === "PC" ? "마우스 및 키보드" : "컨트롤러",
     region: snapshot.region,
     regionLabel: regions[snapshot.region],
-    map: "all-maps",
-    mapLabel: "모든 전장",
+    map: snapshot.map ?? "all-maps",
+    mapLabel: snapshot.mapLabel ?? "모든 전장",
     tier: snapshot.tier,
     tierLabel: tiers[snapshot.tier] ?? "모든 등급 단계",
   };
@@ -59,6 +61,7 @@ async function fetchFromOverfast(snapshot) {
     order_by: "hero:asc",
   });
   if (snapshot.tier !== "All") params.set("competitive_division", snapshot.tier.toLowerCase());
+  if (snapshot.map) params.set("map", snapshot.map);
   const dataProviderUrl = `${overfastBaseUrl}?${params}`;
   const response = await fetch(dataProviderUrl, {
     headers: { "User-Agent": "OP-PICK-LAB statistics-snapshot" },
@@ -136,7 +139,10 @@ const fetchedAt = new Intl.DateTimeFormat("en-CA", {
 }).format(new Date());
 // Bound upstream traffic; publish only after every requested condition validates.
 const collected = [];
-for (const snapshot of snapshots) collected.push(await fetchSnapshot(snapshot));
+for (const snapshot of snapshots) {
+  collected.push(await fetchSnapshot(snapshot));
+  console.log(`수집 ${collected.length}/${snapshots.length}: ${snapshot.id}`);
+}
 const document = {
   fetchedAt,
   notice: "Blizzard 공개 통계를 OverFast API 우선, 공식 페이지 대체 방식으로 수집했습니다. 수집일은 제공자의 집계 종료일이나 최신 패치 이후 경기만을 의미하지 않습니다.",

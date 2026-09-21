@@ -11,6 +11,7 @@ test("statistics refresh replaces only complete valid snapshots", async () => {
   const root = await mkdtemp(join(tmpdir(), "op-rates-test-"));
   let competitiveRows;
   let invalidTier = false;
+  let invalidMap = false;
   const good = [{ hero: "ana", winrate: 51, pickrate: 4, banrate: 0 }, { hero: "dva", winrate: 49, pickrate: 3, banrate: 12.5 }];
   const requests = [];
   const server = createServer((request, response) => {
@@ -18,11 +19,13 @@ test("statistics refresh replaces only complete valid snapshots", async () => {
     requests.push(new URL(request.url, "http://localhost"));
     response.writeHead(200, { "Content-Type": "application/json" });
     const tier = new URL(request.url, "http://localhost").searchParams.get("competitive_division");
-    response.end(JSON.stringify(invalidTier && tier === "diamond" ? good.slice(0, 1) : competitive ? competitiveRows : good));
+    const map = new URL(request.url, "http://localhost").searchParams.get("map");
+    response.end(JSON.stringify((invalidTier && tier === "diamond") || (invalidMap && map === "kings-row") ? good.slice(0, 1) : competitive ? competitiveRows : good));
   });
   try {
     await mkdir(join(root, "scripts"));
     await mkdir(join(root, "data"));
+    await writeFile(join(root, "data", "maps.json"), JSON.stringify([{id:"kings-row",name:"왕의 길"}]));
     await copyFile(new URL("./update-official-rates.mjs", import.meta.url), join(root, "scripts", "update.mjs"));
     await writeFile(join(root, "data", "heroes.json"), JSON.stringify([{ key: "ana" }, { key: "dva" }]));
     await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
@@ -44,7 +47,10 @@ test("statistics refresh replaces only complete valid snapshots", async () => {
     competitiveRows = good;
     assert.equal(await run(), 0);
     const result = JSON.parse(await readFile(destination, "utf8"));
-    assert.equal(result.snapshots.length, 20);
+    assert.equal(result.snapshots.length, 21);
+    const map = result.snapshots.find(item => item.filters.map === "kings-row");
+    assert.equal(new URL(map.sourceUrl).searchParams.get("map"), "kings-row");
+    assert.equal(new URL(map.dataProviderUrl).searchParams.get("map"), "kings-row");
     const competitive = result.snapshots.find(item => item.id === "competitive");
     assert.deepEqual(competitive.rows.map((r) => r.hero), ["ana", "dva"]);
     assert.equal(competitive.rows[0].winRate, 51);
@@ -59,6 +65,10 @@ test("statistics refresh replaces only complete valid snapshots", async () => {
     assert.notEqual(await run(), 0);
     assert.equal(await readFile(destination, "utf8"), previous, "a broken tier must not overwrite the last complete collection");
     invalidTier = false;
+    invalidMap = true;
+    assert.notEqual(await run(), 0);
+    assert.equal(await readFile(destination, "utf8"), previous, "incomplete map data must preserve the whole collection");
+    invalidMap = false;
     competitiveRows = good.map(row => ({ hero: row.hero, winrate: row.winrate, pickrate: row.pickrate }));
     assert.equal(await run(), 0);
     const missingBan = JSON.parse(await readFile(destination, "utf8"));

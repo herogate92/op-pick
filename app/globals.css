@@ -850,6 +850,27 @@ body:not(.ads-enabled) .ad-placeholder { display: none !important; }
 .stats-history-list summary { min-height: 44px; cursor: pointer; padding: 10px 0; }
 .stats-history-list a { display: inline-block; min-height: 44px; padding: 10px 0; color: var(--cyan-soft); }
 
+.stats-candidates { margin: 12px; padding: 12px; border: 1px solid #30465b; background: #091426; color: #c4d2df; }
+.stats-candidates summary { min-height: 44px; padding: 10px 0; cursor: pointer; font-size: 15px; font-weight: 700; }
+.stats-candidates p, .map-statistics p { font-size: 12px; line-height: 1.7; }
+.stats-candidate-roles, .stats-candidate-picker { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.stats-candidates button, .stats-candidates input { min-height: 44px; padding: 8px 12px; background: #13273d; color: #e9f5ff; border: 1px solid #37506a; border-radius: 4px; font: inherit; font-size: 13px; }
+.stats-candidates button[aria-pressed="true"] { color: #07101e; background: var(--cyan-soft); }
+.stats-candidates button:disabled { opacity: .4; }
+.stats-candidate-roles label { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; font-size: 12px; }
+.stats-candidate-cards { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,210px),1fr)); gap: 8px; }
+.stats-candidate-cards article { padding: 12px; background: #132338; border: 1px solid #30465b; }
+.stats-candidate-cards header { display: flex; justify-content: space-between; align-items: center; }
+.stats-candidate-cards dl { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px; font-size: 13px; }
+.stats-candidate-cards dd { margin: 6px 0; }
+.stats-tier-row { display: grid; grid-template-columns: 56px minmax(0,1fr); gap: 10px; padding: 12px 0; border-top: 1px solid #29425b; font-size: 13px; line-height: 1.8; }
+.stats-candidates h3 { font-size: 16px; }
+.map-statistics { margin: 16px 0; padding: 16px; border: 1px solid #30465b; }
+.map-statistics h2 { font-size: 18px; }
+.map-statistics > a { display: inline-block; min-height: 44px; color: var(--cyan-soft); font-size: 13px; }
+.stats-condition-filters { grid-template-columns: repeat(4,minmax(0,1fr)); }
+@media(max-width:760px) { .stats-condition-filters { grid-template-columns: repeat(2,minmax(0,1fr)); } .stats-condition-filters label:last-child { grid-column: auto; } .stats-candidate-cards { grid-template-columns: 1fr; } }
+
 /* Home dashboard: menus stay in document flow at every screen size. */
 .home-dashboard .cinematic-home-content { min-height: 0; padding: 56px 0 32px; }
 .home-dashboard .home-quick-nav { position: relative; inset: auto; transform: none; margin: 0 auto; }

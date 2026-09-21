@@ -1,6 +1,16 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { summarizeRates } from '../lib/stats-summary.ts';
+import { statsTier } from '../lib/stats-tier.ts';
+
+test('승률 구간 경계와 낮은 픽률·체험·누락 제외를 구분한다', () => {
+  const row = {hero:'ana',winRate:55,pickRate:1,banRate:null};
+  for (const [winRate,tier] of [[55,'S'],[54.9,'A'],[52,'A'],[51.9,'B'],[49,'B'],[48.9,'C']]) assert.equal(statsTier({...row,winRate}),tier);
+  assert.equal(statsTier({...row,pickRate:0.9}),'미분류');
+  assert.equal(statsTier({...row,winRate:null}),'미분류');
+  assert.equal(statsTier({...row,pickRate:null}),'미분류');
+  assert.equal(statsTier(row,true),'미분류');
+});
 
 test('역할·검색으로 남은 행만 요약하며 누락 영웅을 통계 제공 인원에서 제외한다', () => {
   const rows = [
