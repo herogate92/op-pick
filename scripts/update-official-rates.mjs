@@ -5,10 +5,17 @@ import { fileURLToPath } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const officialBaseUrl = "https://overwatch.blizzard.com/ko-kr/rates/";
 const overfastBaseUrl = process.env.OVERFAST_API_BASE_URL ?? "https://overfast-api.tekrop.fr/heroes/stats";
-const snapshots = [
+const modes = [
   { id: "quickplay", label: "빠른 대전 · 역할 고정", rq: "0" },
   { id: "competitive", label: "경쟁전 · 역할 고정", rq: "1" },
 ];
+const tiers = { Bronze: "브론즈", Silver: "실버", Gold: "골드", Platinum: "플래티넘", Emerald: "에메랄드", Diamond: "다이아몬드", Master: "마스터", Grandmaster: "그랜드마스터 및 챔피언" };
+const regions = { Asia: "아시아", Americas: "아메리카", Europe: "유럽" };
+const snapshots = modes.flatMap(mode => ["PC", "Console"].flatMap(input => Object.keys(regions).map(region => ({
+  ...mode, gameMode: mode.id, input, region, tier: "All",
+  id: input === "PC" && region === "Asia" ? mode.id : `${mode.id}-${input}-${region}`,
+}))));
+snapshots.push(...Object.keys(tiers).map(tier => ({ ...modes[1], id: `competitive-PC-Asia-${tier}`, gameMode: "competitive", input: "PC", region: "Asia", tier })));
 
 function decodeAttribute(value) {
   return value
@@ -21,36 +28,37 @@ function decodeAttribute(value) {
 
 function getOfficialSourceUrl(snapshot) {
   const params = new URLSearchParams({
-    input: "PC",
+    input: snapshot.input,
     map: "all-maps",
-    region: "Asia",
+    region: snapshot.region,
     role: "All",
     rq: snapshot.rq,
-    tier: "All",
+    tier: snapshot.tier,
   });
   return `${officialBaseUrl}?${params}`;
 }
 
-function getFilters() {
+function getFilters(snapshot) {
   return {
-    input: "PC",
-    inputLabel: "마우스 및 키보드",
-    region: "Asia",
-    regionLabel: "아시아",
+    input: snapshot.input,
+    inputLabel: snapshot.input === "PC" ? "마우스 및 키보드" : "컨트롤러",
+    region: snapshot.region,
+    regionLabel: regions[snapshot.region],
     map: "all-maps",
     mapLabel: "모든 전장",
-    tier: "All",
-    tierLabel: "모든 등급 단계",
+    tier: snapshot.tier,
+    tierLabel: tiers[snapshot.tier] ?? "모든 등급 단계",
   };
 }
 
 async function fetchFromOverfast(snapshot) {
   const params = new URLSearchParams({
-    platform: "pc",
-    gamemode: snapshot.id,
-    region: "asia",
+    platform: snapshot.input.toLowerCase(),
+    gamemode: snapshot.gameMode,
+    region: snapshot.region.toLowerCase(),
     order_by: "hero:asc",
   });
+  if (snapshot.tier !== "All") params.set("competitive_division", snapshot.tier.toLowerCase());
   const dataProviderUrl = `${overfastBaseUrl}?${params}`;
   const response = await fetch(dataProviderUrl, {
     headers: { "User-Agent": "OP-PICK-LAB statistics-snapshot" },
@@ -63,17 +71,18 @@ async function fetchFromOverfast(snapshot) {
 
   return {
     id: snapshot.id,
+    gameMode: snapshot.gameMode,
     label: snapshot.label,
     sourceUrl: getOfficialSourceUrl(snapshot),
     dataProvider: "overfast",
     dataProviderLabel: "OverFast API",
     dataProviderUrl,
-    filters: getFilters(),
+    filters: getFilters(snapshot),
     rows: rows.map((row) => ({
       hero: row.hero,
       winRate: row.winrate ?? null,
       pickRate: row.pickrate ?? null,
-      banRate: null,
+      banRate: snapshot.gameMode === "competitive" ? row.banrate ?? null : null,
     })),
   };
 }
@@ -93,17 +102,18 @@ async function fetchFromBlizzard(snapshot) {
 
   return {
     id: snapshot.id,
+    gameMode: snapshot.gameMode,
     label: snapshot.label,
     sourceUrl,
     dataProvider: "blizzard",
     dataProviderLabel: "Blizzard 공식 통계",
     dataProviderUrl: sourceUrl,
-    filters: getFilters(),
+    filters: getFilters(snapshot),
     rows: rows.map((row) => ({
       hero: row.id,
       winRate: row.cells.winrate ?? null,
       pickRate: row.cells.pickrate ?? null,
-      banRate: row.cells.banrate ?? null,
+      banRate: snapshot.gameMode === "competitive" ? row.cells.banrate ?? null : null,
     })),
   };
 }
@@ -124,10 +134,13 @@ const fetchedAt = new Intl.DateTimeFormat("en-CA", {
   month: "2-digit",
   day: "2-digit",
 }).format(new Date());
+// Bound upstream traffic; publish only after every requested condition validates.
+const collected = [];
+for (const snapshot of snapshots) collected.push(await fetchSnapshot(snapshot));
 const document = {
   fetchedAt,
   notice: "Blizzard 공개 통계를 OverFast API 우선, 공식 페이지 대체 방식으로 수집했습니다. 수집일은 제공자의 집계 종료일이나 최신 패치 이후 경기만을 의미하지 않습니다.",
-  snapshots: await Promise.all(snapshots.map(fetchSnapshot)),
+  snapshots: collected,
   fetchedAtIso: new Date().toISOString(),
 };
 

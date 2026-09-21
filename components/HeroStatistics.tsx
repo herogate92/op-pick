@@ -9,7 +9,7 @@ export function HeroStatistics({ heroKey, heroName, rates }: { heroKey: string; 
     <header><h2>{heroName} 통계</h2><Link href="/rates/">전체 영웅 통계 →</Link></header>
     <p>마지막 수집: {collected}</p>
     <div className="hero-statistics-grid">
-      {rates.snapshots.map(snapshot => {
+      {rates.snapshots.filter(snapshot => snapshot.id === "quickplay" || snapshot.id === "competitive").map(snapshot => {
         const row = snapshot.rows.find(item => item.hero === heroKey);
         const values = [["승률", row?.winRate], ["픽률", row?.pickRate], ["밴률", row?.banRate]] as const;
         return <article key={snapshot.id} id={`stats-${snapshot.id}`}>

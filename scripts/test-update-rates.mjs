@@ -10,11 +10,15 @@ import { test } from "node:test";
 test("statistics refresh replaces only complete valid snapshots", async () => {
   const root = await mkdtemp(join(tmpdir(), "op-rates-test-"));
   let competitiveRows;
-  const good = [{ hero: "ana", winrate: 51, pickrate: 4 }, { hero: "dva", winrate: 49, pickrate: 3 }];
+  let invalidTier = false;
+  const good = [{ hero: "ana", winrate: 51, pickrate: 4, banrate: 0 }, { hero: "dva", winrate: 49, pickrate: 3, banrate: 12.5 }];
+  const requests = [];
   const server = createServer((request, response) => {
     const competitive = new URL(request.url, "http://localhost").searchParams.get("gamemode") === "competitive";
+    requests.push(new URL(request.url, "http://localhost"));
     response.writeHead(200, { "Content-Type": "application/json" });
-    response.end(JSON.stringify(competitive ? competitiveRows : good));
+    const tier = new URL(request.url, "http://localhost").searchParams.get("competitive_division");
+    response.end(JSON.stringify(invalidTier && tier === "diamond" ? good.slice(0, 1) : competitive ? competitiveRows : good));
   });
   try {
     await mkdir(join(root, "scripts"));
@@ -31,7 +35,7 @@ test("statistics refresh replaces only complete valid snapshots", async () => {
       child.on("close", resolve);
     });
     const destination = join(root, "data", "hero-rates.json");
-    for (const rows of [good.slice(0, 1), [good[0], good[0]], [good[0], { ...good[1], hero: "unknown" }], [good[0], { ...good[1], winrate: 101 }], good.map((r) => ({ hero: r.hero, winrate: null, pickrate: null }))]) {
+    for (const rows of [good.slice(0, 1), [good[0], good[0]], [good[0], { ...good[1], hero: "unknown" }], [good[0], { ...good[1], winrate: 101 }], [good[0], { ...good[1], banrate: -1 }], good.map((r) => ({ hero: r.hero, winrate: null, pickrate: null }))]) {
       competitiveRows = rows;
       await writeFile(destination, "last-good-snapshot\n");
       assert.notEqual(await run(), 0);
@@ -40,9 +44,25 @@ test("statistics refresh replaces only complete valid snapshots", async () => {
     competitiveRows = good;
     assert.equal(await run(), 0);
     const result = JSON.parse(await readFile(destination, "utf8"));
-    assert.equal(result.snapshots.length, 2);
-    assert.deepEqual(result.snapshots[1].rows.map((r) => r.hero), ["ana", "dva"]);
-    assert.equal(result.snapshots[1].rows[0].winRate, 51);
+    assert.equal(result.snapshots.length, 20);
+    const competitive = result.snapshots.find(item => item.id === "competitive");
+    assert.deepEqual(competitive.rows.map((r) => r.hero), ["ana", "dva"]);
+    assert.equal(competitive.rows[0].winRate, 51);
+    assert.deepEqual(competitive.rows.map(r => r.banRate), [0, 12.5]);
+    assert.equal(result.snapshots[0].rows[0].banRate, null);
+    const diamond = result.snapshots.find(item => item.filters.tier === "Diamond");
+    assert.equal(new URL(diamond.dataProviderUrl).searchParams.get("competitive_division"), "diamond");
+    assert.equal(new URL(diamond.sourceUrl).searchParams.get("tier"), "Diamond");
+    assert.ok(requests.some(url => url.searchParams.get("platform") === "console" && url.searchParams.get("region") === "europe"));
+    const previous = await readFile(destination, "utf8");
+    invalidTier = true;
+    assert.notEqual(await run(), 0);
+    assert.equal(await readFile(destination, "utf8"), previous, "a broken tier must not overwrite the last complete collection");
+    invalidTier = false;
+    competitiveRows = good.map(row => ({ hero: row.hero, winrate: row.winrate, pickrate: row.pickrate }));
+    assert.equal(await run(), 0);
+    const missingBan = JSON.parse(await readFile(destination, "utf8"));
+    assert.equal(missingBan.snapshots.find(item => item.id === "competitive").rows[0].banRate, null);
     await writeFile(join(root, "data", "heroes.json"), JSON.stringify([{ key: "ana" }, { key: "dva" }, { key: "doctrine", releaseStatus: "trial" }]));
     assert.equal(await run(), 0);
     const withTrial = JSON.parse(await readFile(destination, "utf8"));

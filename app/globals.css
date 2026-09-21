@@ -833,6 +833,13 @@ body:not(.ads-enabled) .ad-placeholder { display: none !important; }
   .stats-table { min-width: 660px; }
 }
 
+.stats-condition-filters { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 10px; padding: 16px; }
+.stats-condition-filters label { display: grid; min-width: 0; gap: 8px; color: #afc1d3; font-size: 13px; }
+.stats-condition-filters select { width: 100%; min-width: 0; min-height: 44px; border: 1px solid #3b526a; border-radius: 4px; padding: 8px; color: #fff; background: #102036; font: inherit; }
+.stats-condition-filters select:disabled { opacity: .65; }
+.stats-filter-note { margin: 0; padding: 0 16px 12px; color: #a8bbcf; font-size: 12px; line-height: 1.6; }
+@media (max-width: 760px) { .stats-condition-filters { grid-template-columns: repeat(2,minmax(0,1fr)); padding: 12px; } .stats-condition-filters label:last-child { grid-column: 1 / -1; } }
+
 /* Home dashboard: menus stay in document flow at every screen size. */
 .home-dashboard .cinematic-home-content { min-height: 0; padding: 56px 0 32px; }
 .home-dashboard .home-quick-nav { position: relative; inset: auto; transform: none; margin: 0 auto; }
