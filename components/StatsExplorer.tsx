@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BarChart3, Cross, ExternalLink, Search, Shield, Swords, Trophy } from "lucide-react";
 import type { Hero, HeroRateSnapshot, Role } from "@/lib/data";
+import { summarizeRates } from "@/lib/stats-summary";
 
 type SortKey = "winRate" | "pickRate" | "banRate";
 
@@ -32,10 +33,7 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt }: { snapshots: Her
       .sort((a, b) => (b[activeSortKey] ?? -1) - (a[activeSortKey] ?? -1));
   }, [activeSortKey, heroByKey, query, role, snapshot]);
 
-  const topFor = (metric: SortKey) => snapshot.rows
-    .filter((row) => row[metric] !== null && (metric !== "banRate" || (row[metric] ?? 0) > 0))
-    .reduce<(typeof snapshot.rows)[number] | undefined>((top, row) => !top || (row[metric] ?? -1) > (top[metric] ?? -1) ? row : top, undefined);
-  const leaders = { winRate: topFor("winRate"), pickRate: topFor("pickRate"), banRate: topFor("banRate") };
+  const { leaders, available } = summarizeRates(rows);
   const maxValues = {
     winRate: Math.max(...rows.map((row) => row.winRate ?? 0), 1),
     pickRate: Math.max(...rows.map((row) => row.pickRate ?? 0), 1),
@@ -48,7 +46,8 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt }: { snapshots: Her
         <span><strong>Blizzard 기반 통계 스냅샷</strong><small>마지막 성공 수집: {fetchedAt} · {snapshot.dataProviderLabel}로 갱신</small></span>
         <a href={snapshot.sourceUrl} target="_blank" rel="noreferrer">Blizzard에서 상세 필터 열기<ExternalLink aria-hidden="true" /></a>
       </div>
-      <section className="stats-summary" aria-label="통계 요약">
+      <p className="stats-context" aria-live="polite">{snapshot.label} · {roleLabels[role]}{query.trim() ? ` · 검색: ${query.trim()}` : ""} 기준 요약</p>
+      <section className="stats-summary" aria-label="선택 조건의 통계 요약">
         {metrics.map((metric) => {
           const leader = leaders[metric];
           const hero = leader ? heroByKey.get(leader.hero) : undefined;
@@ -60,7 +59,7 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt }: { snapshots: Her
             </button>
           );
         })}
-        <div className="stats-count-card"><span>분석 영웅</span><strong>{snapshot.rows.length}명</strong><em>공식 집계</em></div>
+        <div className="stats-count-card"><span>통계 제공 영웅</span><strong>{available}명</strong><em>표시 {rows.length}명 · 통계 없음 {rows.length - available}명</em></div>
       </section>
 
       <section className="stats-panel">
@@ -96,7 +95,7 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt }: { snapshots: Her
                 return (
                   <tr key={row.hero}>
                     <td><span className={index < 3 ? "stats-rank top" : "stats-rank"}>{index < 3 && <Trophy aria-hidden="true" />}{index + 1}</span></td>
-                    <td><Link href={`/heroes/${hero.key}/`} className="stats-hero"><span className={`stats-portrait role-${hero.role}`}><Image src={hero.portrait} alt="" width={44} height={44} /></span><span><strong>{hero.name}</strong><small>{roleLabels[hero.role]}</small></span></Link></td>
+                    <td><Link href={`/heroes/${hero.key}/#stats-${snapshot.id}`} className="stats-hero"><span className={`stats-portrait role-${hero.role}`}><Image src={hero.portrait} alt="" width={44} height={44} /></span><span><strong>{hero.name}</strong><small>{roleLabels[hero.role]}</small></span></Link></td>
                     {metrics.map((metric) => <td key={metric}><div className={`rate-cell ${activeSortKey === metric ? "active" : ""}`}><strong>{formatRate(row[metric])}</strong><span><i style={{ width: `${Math.max(0, ((row[metric] ?? 0) / maxValues[metric]) * 100)}%` }} /></span></div></td>)}
                   </tr>
                 );

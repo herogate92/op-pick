@@ -5,6 +5,8 @@ import { Activity, ArrowRight, BookOpen, CalendarDays, Crosshair, ExternalLink, 
 import { AdSlot } from "@/components/AdSlot";
 import { AbilityStats } from "@/components/AbilityStats";
 import { HeroMiniCard } from "@/components/HeroMiniCard";
+import { HeroStatistics } from "@/components/HeroStatistics";
+import { heroRates } from "@/lib/data";
 import { HeroBackgroundMedia } from "@/components/HeroBackgroundMedia";
 import { JsonLd } from "@/components/JsonLd";
 import { ScoreMeter } from "@/components/ScoreMeter";
@@ -94,6 +96,7 @@ export default async function HeroDetailPage({ params }: { params: Promise<{ slu
 
       <div className="content-with-rail">
         <div className="page-content">
+          <HeroStatistics heroKey={hero.key} heroName={hero.name} rates={heroRates} />
           {hero.hitpointsNotice && <p className="seo-guide-note">{hero.hitpointsNotice}</p>}
           {hero.patchNote && <p className="seo-guide-note">{hero.patchNote.summary} <a href={hero.patchNote.sourceUrl} target="_blank" rel="noreferrer">공식 패치 {hero.patchNote.date}</a></p>}
           <section className="content-section">
