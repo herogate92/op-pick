@@ -1130,6 +1130,21 @@ body:not(.ads-enabled) .ad-placeholder { display: none !important; }
   .home-quick-nav { grid-template-columns: repeat(6,minmax(0,1fr)); }
 }
 
+.hero-statistics { margin-bottom: 24px; padding: 16px; border: 1px solid var(--line); border-radius: 12px; background: #0d1b2e; }
+.hero-statistics header { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.hero-statistics h2 { margin: 0; font-size: 22px; }
+.hero-statistics p, .hero-statistics small { color: #b7c9dc; font-size: 13px; line-height: 1.6; }
+.hero-statistics a { color: var(--cyan-soft); }
+.hero-statistics-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; margin: 12px 0; }
+.hero-statistics-grid article { min-width: 0; padding: 14px; border: 1px solid #385570; border-radius: 8px; scroll-margin-top: 90px; }
+.hero-statistics-grid article:target { border-color: var(--cyan); }
+.hero-statistics h3 { margin: 0; font-size: 16px; }
+.hero-statistics dl { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px; margin: 12px 0; }
+.hero-statistics dt { color: #b7c9dc; font-size: 12px; }
+.hero-statistics dd { margin: 5px 0 0; font-size: 18px; font-weight: 750; }
+.hero-statistics nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.hero-statistics nav a { min-height: 44px; display: inline-flex; align-items: center; padding: 8px 12px; border: 1px solid #385570; border-radius: 8px; }
+@media (max-width: 760px) { .hero-statistics-grid { grid-template-columns: 1fr; } }
 .mobile-hero-switcher, .mobile-picker-controls { display: none; }
 @media (max-width: 760px) {
   .hero-shell { height: auto; min-height: 100svh; overflow: visible; }
