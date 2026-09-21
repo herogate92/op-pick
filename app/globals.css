@@ -840,6 +840,16 @@ body:not(.ads-enabled) .ad-placeholder { display: none !important; }
 .stats-filter-note { margin: 0; padding: 0 16px 12px; color: #a8bbcf; font-size: 12px; line-height: 1.6; }
 @media (max-width: 760px) { .stats-condition-filters { grid-template-columns: repeat(2,minmax(0,1fr)); padding: 12px; } .stats-condition-filters label:last-child { grid-column: 1 / -1; } }
 
+.stats-history-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 12px 16px; border-top: 1px solid #263e55; }
+.stats-history-controls label { display: grid; gap: 6px; color: #b5c7d8; font-size: 13px; }
+.stats-history-controls select { min-height: 44px; padding: 8px; border: 1px solid #3b526a; background: #102036; color: #fff; font: inherit; }
+.stats-history-controls p, .stats-history-list { color: #a8bbcf; font-size: 12px; line-height: 1.7; }
+.stats-history-controls p { margin: 0; flex: 1 1 240px; }
+.stats-rate-delta { display: block; padding: 4px 0; color: #acc9dc; font-size: 11px; white-space: nowrap; }
+.stats-history-list { margin: 16px 0; padding: 12px; border: 1px solid #30465b; }
+.stats-history-list summary { min-height: 44px; cursor: pointer; padding: 10px 0; }
+.stats-history-list a { display: inline-block; min-height: 44px; padding: 10px 0; color: var(--cyan-soft); }
+
 /* Home dashboard: menus stay in document flow at every screen size. */
 .home-dashboard .cinematic-home-content { min-height: 0; padding: 56px 0 32px; }
 .home-dashboard .home-quick-nav { position: relative; inset: auto; transform: none; margin: 0 auto; }
