@@ -833,6 +833,41 @@ body:not(.ads-enabled) .ad-placeholder { display: none !important; }
   .stats-table { min-width: 660px; }
 }
 
+/* Home dashboard: menus stay in document flow at every screen size. */
+.home-dashboard .cinematic-home-content { min-height: 0; padding: 56px 0 32px; }
+.home-dashboard .home-quick-nav { position: relative; inset: auto; transform: none; margin: 0 auto; }
+.home-dashboard .home-video-overlay { pointer-events: none; }
+.home-dashboard .home-video-toggle { top: 100px; bottom: auto; }
+.home-updates { position: relative; z-index: 3; width: min(1500px,calc(100% - 70px)); margin: 20px auto 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.home-updates section { min-width: 0; padding: 20px; border: 1px solid #294055; background: rgba(7,16,31,.94); }
+.home-updates header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+.home-updates h2 { margin: 0; font-size: 18px; }
+.home-updates a { color: var(--cyan-soft); }
+.home-updates header a, .home-patch-links a, .home-review-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; font-size: 13px; }
+.home-updates svg { width: 16px; }
+.home-updates p, .home-updates time, .home-data-note { color: #a8b8ca; font-size: 12px; line-height: 1.6; }
+.home-role-stats { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px; margin: 12px 0; }
+.home-role-stats > div { min-width: 0; padding: 10px; background: #122339; }
+.home-role-stats small { color: #a8b8ca; }
+.home-role-stats a { display: flex; flex-direction: column; gap: 6px; padding-top: 6px; min-height: 56px; }
+.home-role-stats strong { overflow-wrap: anywhere; font-size: 15px; }
+.home-role-stats span { font-size: 20px; font-weight: 800; }
+.home-patch-links { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 12px; }
+@media (max-width: 760px) {
+  .home-dashboard .topbar { position: sticky; z-index: 40; }
+  .home-dashboard .cinematic-home-content { padding: 20px 0 16px; }
+  .home-dashboard .cinematic-home-content h1 { font-size: 30px; padding-right: 0; margin-bottom: 0; }
+  .home-dashboard .cinematic-home-content > p { font-size: 14px; margin: 10px 0 0; }
+  .home-dashboard .cinematic-actions { display: none; }
+  .home-dashboard .home-quick-nav > a { min-height: 68px; padding: 10px; grid-template-columns: 22px minmax(0,1fr); }
+  .home-dashboard .home-quick-nav small { font-size: 11px; }
+  .home-dashboard .home-background-poster { opacity: .16; }
+  .home-updates { width: calc(100% - 24px); grid-template-columns: 1fr; gap: 12px; margin: 14px auto 8px; }
+  .home-updates section { padding: 12px; }
+  .home-updates h2 { font-size: 16px; }
+  .home-role-stats > div { padding: 8px; }
+}
+
 /* Cinematic home */
 .cinematic-home { min-height: 100svh; position: relative; overflow: hidden; background: #050b16; }
 .home-background-media { position: absolute; z-index: 0; inset: 0; overflow: hidden; background: #050b16; }
