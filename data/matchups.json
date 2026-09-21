@@ -193,13 +193,26 @@
     "hero": "anran",
     "counter": "jetpack-cat",
     "score": 4,
-    "reason": "제트팩 캣은(는) 안란의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "안란의 접근 경로와 제트팩 캣의 고도 변화가 달라 근접 압박을 피할 여지는 있으나 확정 상성은 아닙니다.",
+    "condition": "천장·연료·질주 착지 위치와 두 영웅의 원거리 공격도 함께 고려해야 합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "가속 대상의 경로를 아군과 견제하고 공중 목표를 향해 무리하게 질주하지 마세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "맹염 질주",
+        "counterAbility": "정신 없는 비행",
+        "interaction": "안란의 접근 경로와 제트팩 캣의 고도 변화가 달라 근접 압박을 피할 여지는 있으나 확정 상성은 아닙니다.",
+        "condition": "천장·연료·질주 착지 위치와 두 영웅의 원거리 공격도 함께 고려해야 합니다.",
+        "counterplay": "가속 대상의 경로를 아군과 견제하고 공중 목표를 향해 무리하게 질주하지 마세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/anran/",
+      "https://overwatch.blizzard.com/en-us/heroes/jetpack-cat/"
+    ]
   },
   {
     "id": "anran-kiriko",
@@ -349,13 +362,26 @@
     "hero": "ashe",
     "counter": "vendetta",
     "score": 4,
-    "reason": "벤데타은(는) 애쉬의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "애쉬의 거리 벌리기와 벤데타의 도약 추격이 어느 순서로 쓰이는지에 따라 결과가 달라집니다.",
+    "condition": "충격 샷건 적중·도약 착지·고지 퇴로를 확인해야 합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "도약 방향을 확인한 뒤 충격 샷건을 쓰고 착지 경로와 겹치지 않는 엄폐로 이동하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "충격 샷건",
+        "counterAbility": "치솟는 베기",
+        "interaction": "애쉬의 거리 벌리기와 벤데타의 도약 추격이 어느 순서로 쓰이는지에 따라 결과가 달라집니다.",
+        "condition": "충격 샷건 적중·도약 착지·고지 퇴로를 확인해야 합니다.",
+        "counterplay": "도약 방향을 확인한 뒤 충격 샷건을 쓰고 착지 경로와 겹치지 않는 엄폐로 이동하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/ashe/",
+      "https://overwatch.blizzard.com/en-us/heroes/vendetta/"
+    ]
   },
   {
     "id": "ashe-venture",
@@ -622,13 +648,26 @@
     "hero": "brigitte",
     "counter": "jetpack-cat",
     "score": 4,
-    "reason": "제트팩 캣은(는) 브리기테의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "공중 고도와 도리깨 투척 적중 조건이 함께 작용하므로 비행 영웅이라는 이유만으로 우위를 정할 수 없습니다.",
+    "condition": "낮은 고도 진입과 높은 고도 이동을 구분해야 합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "낮게 접근하는 경로에서 견제하고 공중 목표를 쫓아 본대 보호 위치를 비우지 마세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "도리깨 투척",
+        "counterAbility": "정신 없는 비행",
+        "interaction": "공중 고도와 도리깨 투척 적중 조건이 함께 작용하므로 비행 영웅이라는 이유만으로 우위를 정할 수 없습니다.",
+        "condition": "낮은 고도 진입과 높은 고도 이동을 구분해야 합니다.",
+        "counterplay": "낮게 접근하는 경로에서 견제하고 공중 목표를 쫓아 본대 보호 위치를 비우지 마세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/brigitte/",
+      "https://overwatch.blizzard.com/en-us/heroes/jetpack-cat/"
+    ]
   },
   {
     "id": "brigitte-mauga",
@@ -648,13 +687,26 @@
     "hero": "brigitte",
     "counter": "ramattra",
     "score": 4,
-    "reason": "라마트라은(는) 브리기테의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "응징의 관통 효과와 방벽 방패의 구체적인 상호작용은 최신 판정을 확인할 필요가 있습니다.",
+    "condition": "방벽 피해와 본체 피해를 분리해 기록해야 하며 방벽 크기만으로 결론을 내리지 않습니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "네메시스 정면에 방벽을 들고 오래 서 있지 말고 도리깨 투척과 엄폐로 근접 교전 시간을 줄이세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "방벽 방패",
+        "counterAbility": "응징 (네메시스 형태)",
+        "interaction": "응징의 관통 효과와 방벽 방패의 구체적인 상호작용은 최신 판정을 확인할 필요가 있습니다.",
+        "condition": "방벽 피해와 본체 피해를 분리해 기록해야 하며 방벽 크기만으로 결론을 내리지 않습니다.",
+        "counterplay": "네메시스 정면에 방벽을 들고 오래 서 있지 말고 도리깨 투척과 엄폐로 근접 교전 시간을 줄이세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/brigitte/",
+      "https://overwatch.blizzard.com/en-us/heroes/ramattra/"
+    ]
   },
   {
     "id": "brigitte-reinhardt",
@@ -700,13 +752,26 @@
     "hero": "cassidy",
     "counter": "dmon",
     "score": 4,
-    "reason": "D.Mon은(는) 캐서디의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "D.Mon의 접근과 캐서디의 거리 유지 중 어느 쪽이 유리한지에는 사거리와 퇴로가 필요합니다.",
+    "condition": "추진기 연료와 피스키퍼 적중률을 고정하지 않은 일반 우위 평가는 보류합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "개방된 정면에서 직선으로 물러나기보다 아군이 사격할 수 있는 엄폐 쪽으로 이동하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "피스키퍼",
+        "counterAbility": "추진기",
+        "interaction": "D.Mon의 접근과 캐서디의 거리 유지 중 어느 쪽이 유리한지에는 사거리와 퇴로가 필요합니다.",
+        "condition": "추진기 연료와 피스키퍼 적중률을 고정하지 않은 일반 우위 평가는 보류합니다.",
+        "counterplay": "개방된 정면에서 직선으로 물러나기보다 아군이 사격할 수 있는 엄폐 쪽으로 이동하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/cassidy/",
+      "https://overwatch.blizzard.com/en-us/heroes/dmon/"
+    ]
   },
   {
     "id": "cassidy-freja",
@@ -791,26 +856,52 @@
     "hero": "dmon",
     "counter": "bastion",
     "score": 4,
-    "reason": "바스티온은(는) D.Mon의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "바스티온의 집중 사격과 D.Mon의 방벽·엄폐 순환을 비교할 구체적 교전 조건이 필요합니다.",
+    "condition": "강습 지속 구간, 방벽 내구도, 이탈 경로를 함께 확인해야 합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "강습 사선에 방벽을 오래 노출하지 말고 엄폐를 이용해 사격 구간을 넘기세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "파워 배리어",
+        "counterAbility": "설정: 강습",
+        "interaction": "바스티온의 집중 사격과 D.Mon의 방벽·엄폐 순환을 비교할 구체적 교전 조건이 필요합니다.",
+        "condition": "강습 지속 구간, 방벽 내구도, 이탈 경로를 함께 확인해야 합니다.",
+        "counterplay": "강습 사선에 방벽을 오래 노출하지 말고 엄폐를 이용해 사격 구간을 넘기세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/dmon/",
+      "https://overwatch.blizzard.com/en-us/heroes/bastion/"
+    ]
   },
   {
     "id": "dmon-echo",
     "hero": "dmon",
     "counter": "echo",
-    "score": 4,
-    "reason": "에코은(는) D.Mon의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "에코가 비행으로 고도를 바꾸면 수평 이동 중심의 D.Mon은 근접 사거리를 유지하기 어렵습니다.",
+    "condition": "비행을 사용할 수 있고 천장·지형이 고도 확보를 허용해야 합니다.",
+    "reviewedAt": "2026-09-21",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "에코가 착지할 경로를 견제하고 수평 추진기로 무리하게 추격하지 마세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "추진기",
+        "counterAbility": "비행",
+        "interaction": "에코가 비행으로 고도를 바꾸면 수평 이동 중심의 D.Mon은 근접 사거리를 유지하기 어렵습니다.",
+        "condition": "비행을 사용할 수 있고 천장·지형이 고도 확보를 허용해야 합니다.",
+        "counterplay": "에코가 착지할 경로를 견제하고 수평 추진기로 무리하게 추격하지 마세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/dmon/",
+      "https://overwatch.blizzard.com/en-us/heroes/echo/"
+    ]
   },
   {
     "id": "dmon-mei",
@@ -836,14 +927,27 @@
     "id": "dmon-pharah",
     "hero": "dmon",
     "counter": "pharah",
-    "score": 4,
-    "reason": "파라은(는) D.Mon의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "파라의 공중 높이와 D.Mon 추진기의 수평 이동 차이 때문에, 고도를 유지한 파라는 근접 접근을 어렵게 만들 수 있습니다.",
+    "condition": "파라가 연료와 공중 엄폐를 확보한 상황에 한정합니다. 지상 착지나 융합 연발총 사격까지 무력화하는 것은 아닙니다.",
+    "reviewedAt": "2026-09-21",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "공중 추격에 연료를 낭비하지 말고 엄폐에서 융합 연발총과 아군 원거리 화력을 연결하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "추진기",
+        "counterAbility": "호버 추진기",
+        "interaction": "파라의 공중 높이와 D.Mon 추진기의 수평 이동 차이 때문에, 고도를 유지한 파라는 근접 접근을 어렵게 만들 수 있습니다.",
+        "condition": "파라가 연료와 공중 엄폐를 확보한 상황에 한정합니다. 지상 착지나 융합 연발총 사격까지 무력화하는 것은 아닙니다.",
+        "counterplay": "공중 추격에 연료를 낭비하지 말고 엄폐에서 융합 연발총과 아군 원거리 화력을 연결하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/dmon/",
+      "https://overwatch.blizzard.com/en-us/heroes/pharah/"
+    ]
   },
   {
     "id": "dmon-ramattra",
@@ -870,26 +974,52 @@
     "hero": "dmon",
     "counter": "reaper",
     "score": 4,
-    "reason": "리퍼은(는) D.Mon의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "리퍼가 방벽 정면을 쏘는지 측후면에서 교전하는지에 따라 피해 양상이 달라집니다.",
+    "condition": "샷건 거리와 방벽 내구도·방향을 함께 봐야 합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "정면 방벽만 믿고 장시간 붙지 말고 아군 화력과 엄폐로 교전 시간을 줄이세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "파워 배리어",
+        "counterAbility": "헬파이어 샷건",
+        "interaction": "리퍼가 방벽 정면을 쏘는지 측후면에서 교전하는지에 따라 피해 양상이 달라집니다.",
+        "condition": "샷건 거리와 방벽 내구도·방향을 함께 봐야 합니다.",
+        "counterplay": "정면 방벽만 믿고 장시간 붙지 말고 아군 화력과 엄폐로 교전 시간을 줄이세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/dmon/",
+      "https://overwatch.blizzard.com/en-us/heroes/reaper/"
+    ]
   },
   {
     "id": "dmon-reinhardt",
     "hero": "dmon",
     "counter": "reinhardt",
     "score": 4,
-    "reason": "라인하르트은(는) D.Mon의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "두 돌진 기술의 충돌 우선순위가 확인되지 않아 라인하르트의 일방적 우위로 설명할 수 없습니다.",
+    "condition": "정면 충돌·측면 적중·방벽 전개 상황을 따로 확인해야 합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "돌진 경로에서 옆으로 벗어나고, 돌진 강타가 반드시 돌진을 중단시킨다고 가정하지 마세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "돌진 강타",
+        "counterAbility": "돌진",
+        "interaction": "두 돌진 기술의 충돌 우선순위가 확인되지 않아 라인하르트의 일방적 우위로 설명할 수 없습니다.",
+        "condition": "정면 충돌·측면 적중·방벽 전개 상황을 따로 확인해야 합니다.",
+        "counterplay": "돌진 경로에서 옆으로 벗어나고, 돌진 강타가 반드시 돌진을 중단시킨다고 가정하지 마세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/dmon/",
+      "https://overwatch.blizzard.com/en-us/heroes/reinhardt/"
+    ]
   },
   {
     "id": "dmon-torbjorn",
@@ -929,13 +1059,26 @@
     "hero": "domina",
     "counter": "dmon",
     "score": 4,
-    "reason": "D.Mon은(는) 도미나의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "D.Mon이 근접 사거리까지 도달하는지와 도미나의 방벽 배치를 나누어 판단해야 합니다.",
+    "condition": "방벽을 우회할 경로와 근접 진입 후 퇴각 연료가 필요합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "방벽 뒤에 고정되지 말고 배치와 위치를 바꿔 근접 접근 시간을 늘리세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "방벽 배열",
+        "counterAbility": "플라스마 세이버 ",
+        "interaction": "D.Mon이 근접 사거리까지 도달하는지와 도미나의 방벽 배치를 나누어 판단해야 합니다.",
+        "condition": "방벽을 우회할 경로와 근접 진입 후 퇴각 연료가 필요합니다.",
+        "counterplay": "방벽 뒤에 고정되지 말고 배치와 위치를 바꿔 근접 접근 시간을 늘리세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/domina/",
+      "https://overwatch.blizzard.com/en-us/heroes/dmon/"
+    ]
   },
   {
     "id": "domina-ramattra",
@@ -1773,13 +1916,26 @@
     "hero": "hanzo",
     "counter": "vendetta",
     "score": 4,
-    "reason": "벤데타은(는) 한조의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "두 이동 기술의 착지 위치와 사용 순서가 중요하며, 벤데타의 접근만으로 한조의 퇴로가 사라지지는 않습니다.",
+    "condition": "이단뛰기·벽 오르기 이후 추격 가능한 경로를 확인해야 합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "도약 착지 방향을 보고 옆으로 이동하며 벽 오르기 가능한 엄폐를 남기세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "이단뛰기",
+        "counterAbility": "치솟는 베기",
+        "interaction": "두 이동 기술의 착지 위치와 사용 순서가 중요하며, 벤데타의 접근만으로 한조의 퇴로가 사라지지는 않습니다.",
+        "condition": "이단뛰기·벽 오르기 이후 추격 가능한 경로를 확인해야 합니다.",
+        "counterplay": "도약 착지 방향을 보고 옆으로 이동하며 벽 오르기 가능한 엄폐를 남기세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/hanzo/",
+      "https://overwatch.blizzard.com/en-us/heroes/vendetta/"
+    ]
   },
   {
     "id": "hanzo-winston",
@@ -2067,26 +2223,52 @@
     "hero": "jetpack-cat",
     "counter": "bastion",
     "score": 4,
-    "reason": "바스티온은(는) 제트팩 캣의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "운반 중 노출과 강습 사격이 겹치는 상황은 위험하지만 운반 자체가 바스티온의 확정 우위를 뜻하지는 않습니다.",
+    "condition": "운송 경로와 강습 지속 구간·거리 확인이 필요합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "강습 사선을 가로지르는 긴 운반을 피하고 엄폐 구간을 나누어 이동하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "생명줄",
+        "counterAbility": "설정: 강습",
+        "interaction": "운반 중 노출과 강습 사격이 겹치는 상황은 위험하지만 운반 자체가 바스티온의 확정 우위를 뜻하지는 않습니다.",
+        "condition": "운송 경로와 강습 지속 구간·거리 확인이 필요합니다.",
+        "counterplay": "강습 사선을 가로지르는 긴 운반을 피하고 엄폐 구간을 나누어 이동하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/jetpack-cat/",
+      "https://overwatch.blizzard.com/en-us/heroes/bastion/"
+    ]
   },
   {
     "id": "jetpack-cat-cassidy",
     "hero": "jetpack-cat",
     "counter": "cassidy",
     "score": 4,
-    "reason": "캐서디은(는) 제트팩 캣의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "공중 목표에 대한 캐서디의 사격 기회는 거리·엄폐·적중률에 크게 좌우됩니다.",
+    "condition": "근거리 사선이 열린 경우와 먼 공중 경로를 구분해야 합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "캐서디 바로 위의 낮은 고도에서 오래 머물지 말고 엄폐가 있는 이동 경로를 고르세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "정신 없는 비행",
+        "counterAbility": "피스키퍼",
+        "interaction": "공중 목표에 대한 캐서디의 사격 기회는 거리·엄폐·적중률에 크게 좌우됩니다.",
+        "condition": "근거리 사선이 열린 경우와 먼 공중 경로를 구분해야 합니다.",
+        "counterplay": "캐서디 바로 위의 낮은 고도에서 오래 머물지 말고 엄폐가 있는 이동 경로를 고르세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/jetpack-cat/",
+      "https://overwatch.blizzard.com/en-us/heroes/cassidy/"
+    ]
   },
   {
     "id": "jetpack-cat-domina",
@@ -2110,39 +2292,78 @@
     "hero": "jetpack-cat",
     "counter": "juno",
     "score": 4,
-    "reason": "주노은(는) 제트팩 캣의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "주노의 유도 어뢰와 제트팩 캣의 가속을 비교하려면 목표 지정과 사선 유지 조건이 필요합니다.",
+    "condition": "가속만으로 유도를 해제하거나 어뢰가 항상 적중한다고 단정하지 않습니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "어뢰 준비를 보면 엄폐 뒤로 이동하고 아군 운반 중 노출 시간을 줄이세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "정신 없는 비행",
+        "counterAbility": "펄사 어뢰",
+        "interaction": "주노의 유도 어뢰와 제트팩 캣의 가속을 비교하려면 목표 지정과 사선 유지 조건이 필요합니다.",
+        "condition": "가속만으로 유도를 해제하거나 어뢰가 항상 적중한다고 단정하지 않습니다.",
+        "counterplay": "어뢰 준비를 보면 엄폐 뒤로 이동하고 아군 운반 중 노출 시간을 줄이세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/jetpack-cat/",
+      "https://overwatch.blizzard.com/en-us/heroes/juno/"
+    ]
   },
   {
     "id": "jetpack-cat-soldier-76",
     "hero": "jetpack-cat",
     "counter": "soldier-76",
-    "score": 4,
-    "reason": "솔저: 76은(는) 제트팩 캣의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "전술 조준경의 자동 조준은 시야 안에서 이동하는 제트팩 캣을 추적 사격하는 데 활용할 수 있습니다.",
+    "condition": "솔저의 사선이 열려 있어야 합니다. 벽 뒤나 사격할 수 없는 대상까지 맞히는 기술은 아닙니다.",
+    "reviewedAt": "2026-09-21",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "가속만으로 조준을 피하려 하지 말고 건물·지형 뒤로 이동해 사선을 끊으세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "정신 없는 비행",
+        "counterAbility": "전술 조준경",
+        "interaction": "전술 조준경의 자동 조준은 시야 안에서 이동하는 제트팩 캣을 추적 사격하는 데 활용할 수 있습니다.",
+        "condition": "솔저의 사선이 열려 있어야 합니다. 벽 뒤나 사격할 수 없는 대상까지 맞히는 기술은 아닙니다.",
+        "counterplay": "가속만으로 조준을 피하려 하지 말고 건물·지형 뒤로 이동해 사선을 끊으세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/jetpack-cat/",
+      "https://overwatch.blizzard.com/en-us/heroes/soldier-76/"
+    ]
   },
   {
     "id": "jetpack-cat-sombra",
     "hero": "jetpack-cat",
     "counter": "sombra",
     "score": 4,
-    "reason": "솜브라은(는) 제트팩 캣의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "해킹이 제트팩 캣의 비행과 가속을 각각 얼마나 제한하는지 확인이 필요합니다.",
+    "condition": "기본 체공·활성 가속·운반 중 상태를 분리한 사례가 필요합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "해킹 시야를 엄폐로 끊고 해킹당하면 즉시 추락한다고 단정하지 마세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "정신 없는 비행",
+        "counterAbility": "해킹",
+        "interaction": "해킹이 제트팩 캣의 비행과 가속을 각각 얼마나 제한하는지 확인이 필요합니다.",
+        "condition": "기본 체공·활성 가속·운반 중 상태를 분리한 사례가 필요합니다.",
+        "counterplay": "해킹 시야를 엄폐로 끊고 해킹당하면 즉시 추락한다고 단정하지 마세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/jetpack-cat/",
+      "https://overwatch.blizzard.com/en-us/heroes/sombra/"
+    ]
   },
   {
     "id": "junker-queen-ashe",
@@ -2630,13 +2851,26 @@
     "hero": "lifeweaver",
     "counter": "vendetta",
     "score": 4,
-    "reason": "벤데타은(는) 라이프위버의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "벤데타가 높이를 확보할 수 있어 단상만으로 안전을 보장할 수 없지만 항상 단상 위를 추격하는 것도 아닙니다.",
+    "condition": "단상 높이·도약 착지점·사용 가능한 퇴로를 확인해야 합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "단상을 먼저 소모해 고정된 위치에 머물지 말고 도약 방향을 보며 산들 걸음으로 퇴로를 확보하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "연꽃 단상",
+        "counterAbility": "치솟는 베기",
+        "interaction": "벤데타가 높이를 확보할 수 있어 단상만으로 안전을 보장할 수 없지만 항상 단상 위를 추격하는 것도 아닙니다.",
+        "condition": "단상 높이·도약 착지점·사용 가능한 퇴로를 확인해야 합니다.",
+        "counterplay": "단상을 먼저 소모해 고정된 위치에 머물지 말고 도약 방향을 보며 산들 걸음으로 퇴로를 확보하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/lifeweaver/",
+      "https://overwatch.blizzard.com/en-us/heroes/vendetta/"
+    ]
   },
   {
     "id": "lifeweaver-venture",
@@ -2968,13 +3202,26 @@
     "hero": "mercy",
     "counter": "dmon",
     "score": 4,
-    "reason": "D.Mon은(는) 메르시의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "수평 추진기만으로 수호천사의 높이 변화와 아군 이동 경로를 계속 추적한다는 근거는 부족합니다.",
+    "condition": "메르시가 이동할 아군과 고지·엄폐가 있는지 확인해야 합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "아군을 이동 대상으로 확보하고 지상 추격 경로에서 벗어나세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "수호천사",
+        "counterAbility": "추진기",
+        "interaction": "수평 추진기만으로 수호천사의 높이 변화와 아군 이동 경로를 계속 추적한다는 근거는 부족합니다.",
+        "condition": "메르시가 이동할 아군과 고지·엄폐가 있는지 확인해야 합니다.",
+        "counterplay": "아군을 이동 대상으로 확보하고 지상 추격 경로에서 벗어나세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/mercy/",
+      "https://overwatch.blizzard.com/en-us/heroes/dmon/"
+    ]
   },
   {
     "id": "mercy-domina",
@@ -3046,13 +3293,26 @@
     "hero": "mizuki",
     "counter": "jetpack-cat",
     "score": 4,
-    "reason": "제트팩 캣은(는) 미즈키의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "속박 사슬이 비행·가속에 미치는 정확한 제약은 공식 짧은 설명만으로 확인되지 않습니다.",
+    "condition": "가속 시작 전후와 사슬 적중 후 이동 가능 범위를 비교해야 합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "비행 대상에 사슬을 쓸 때 거리와 엄폐를 확보하고, 적중만으로 추락을 보장한다고 가정하지 마세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "속박 사슬",
+        "counterAbility": "정신 없는 비행",
+        "interaction": "속박 사슬이 비행·가속에 미치는 정확한 제약은 공식 짧은 설명만으로 확인되지 않습니다.",
+        "condition": "가속 시작 전후와 사슬 적중 후 이동 가능 범위를 비교해야 합니다.",
+        "counterplay": "비행 대상에 사슬을 쓸 때 거리와 엄폐를 확보하고, 적중만으로 추락을 보장한다고 가정하지 마세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/mizuki/",
+      "https://overwatch.blizzard.com/en-us/heroes/jetpack-cat/"
+    ]
   },
   {
     "id": "mizuki-pharah",
@@ -3318,14 +3578,27 @@
     "id": "ramattra-ana",
     "hero": "ramattra",
     "counter": "ana",
-    "score": 4,
-    "reason": "아나은(는) 라마트라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "아나의 생체 수류탄은 라마트라에게 치유 차단을 적용해 절멸 중 아군 치유로 버티는 운영을 압박할 수 있습니다.",
+    "condition": "수류탄 폭발이 적중하고 치유 차단이 유지되는 구간입니다. 절멸이나 추가 방어력을 제거하는 기술은 아닙니다.",
+    "reviewedAt": "2026-09-21",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "치유 차단 중에는 치유만 믿고 전진하지 말고 엄폐와 거리 조절로 효과가 끝날 시간을 확보하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "절멸",
+        "counterAbility": "생체 수류탄",
+        "interaction": "아나의 생체 수류탄은 라마트라에게 치유 차단을 적용해 절멸 중 아군 치유로 버티는 운영을 압박할 수 있습니다.",
+        "condition": "수류탄 폭발이 적중하고 치유 차단이 유지되는 구간입니다. 절멸이나 추가 방어력을 제거하는 기술은 아닙니다.",
+        "counterplay": "치유 차단 중에는 치유만 믿고 전진하지 말고 엄폐와 거리 조절로 효과가 끝날 시간을 확보하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/ramattra/",
+      "https://overwatch.blizzard.com/en-us/heroes/ana/"
+    ]
   },
   {
     "id": "ramattra-bastion",
@@ -3357,40 +3630,79 @@
     "id": "ramattra-orisa",
     "hero": "ramattra",
     "counter": "orisa",
-    "score": 4,
-    "reason": "오리사은(는) 라마트라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "오리사의 투창은 기절과 밀쳐내기로 라마트라의 연속 근접 공격을 끊을 기회를 만듭니다.",
+    "condition": "투창이 방벽에 막히지 않고 적중해야 합니다. 네메시스 형태 전체를 취소한다는 의미는 아닙니다.",
+    "reviewedAt": "2026-09-21",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "투창 사선을 엄폐로 끊고 투창이 소모된 시점에 근접 교전을 시작하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "응징 (네메시스 형태)",
+        "counterAbility": "투창",
+        "interaction": "오리사의 투창은 기절과 밀쳐내기로 라마트라의 연속 근접 공격을 끊을 기회를 만듭니다.",
+        "condition": "투창이 방벽에 막히지 않고 적중해야 합니다. 네메시스 형태 전체를 취소한다는 의미는 아닙니다.",
+        "counterplay": "투창 사선을 엄폐로 끊고 투창이 소모된 시점에 근접 교전을 시작하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/ramattra/",
+      "https://overwatch.blizzard.com/en-us/heroes/orisa/"
+    ]
   },
   {
     "id": "ramattra-wuyang",
     "hero": "ramattra",
     "counter": "wuyang",
-    "score": 4,
-    "reason": "우양은(는) 라마트라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "우양의 수호의 파도는 접근하는 적을 밀어 근접 응징의 유효 거리를 벌리는 데 활용할 수 있습니다.",
+    "condition": "파도가 적중하고 넉백이 적용될 공간이 필요합니다. 네메시스 변신 자체를 해제하지는 않습니다.",
+    "reviewedAt": "2026-09-21",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "파도가 빠진 뒤 다시 접근하고 밀려난 상태에서 응징을 계속 휘두르기보다 위치를 재정비하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "응징 (네메시스 형태)",
+        "counterAbility": "수호의 파도",
+        "interaction": "우양의 수호의 파도는 접근하는 적을 밀어 근접 응징의 유효 거리를 벌리는 데 활용할 수 있습니다.",
+        "condition": "파도가 적중하고 넉백이 적용될 공간이 필요합니다. 네메시스 변신 자체를 해제하지는 않습니다.",
+        "counterplay": "파도가 빠진 뒤 다시 접근하고 밀려난 상태에서 응징을 계속 휘두르기보다 위치를 재정비하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/ramattra/",
+      "https://overwatch.blizzard.com/en-us/heroes/wuyang/"
+    ]
   },
   {
     "id": "ramattra-zenyatta",
     "hero": "ramattra",
     "counter": "zenyatta",
-    "score": 4,
-    "reason": "젠야타은(는) 라마트라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "젠야타는 부조화로 범위 교전을 지속하는 라마트라가 받는 피해를 늘려 아군 집중 사격을 도울 수 있습니다.",
+    "condition": "부조화가 실제 적용되고 아군이 같은 대상을 공격해야 합니다. 절멸 자체를 취소하는 효과는 아닙니다.",
+    "reviewedAt": "2026-09-21",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "엄폐로 적 사선을 끊고 부조화가 붙은 상태에서 장시간 정면 교전을 이어가지 마세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "절멸",
+        "counterAbility": "부조화의 구슬",
+        "interaction": "젠야타는 부조화로 범위 교전을 지속하는 라마트라가 받는 피해를 늘려 아군 집중 사격을 도울 수 있습니다.",
+        "condition": "부조화가 실제 적용되고 아군이 같은 대상을 공격해야 합니다. 절멸 자체를 취소하는 효과는 아닙니다.",
+        "counterplay": "엄폐로 적 사선을 끊고 부조화가 붙은 상태에서 장시간 정면 교전을 이어가지 마세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/ramattra/",
+      "https://overwatch.blizzard.com/en-us/heroes/zenyatta/"
+    ]
   },
   {
     "id": "reaper-ashe",
@@ -3605,13 +3917,26 @@
     "hero": "reinhardt",
     "counter": "jetpack-cat",
     "score": 4,
-    "reason": "제트팩 캣은(는) 라인하르트의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "납치한다냥의 쓰러뜨림·견인과 돌진 충돌의 우선순위는 별도 확인이 필요합니다.",
+    "condition": "방벽을 든 상태와 돌진 중 상태, 견인 대상 선정 조건을 구분해야 합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "상대 궁극기가 있을 때 혼자 고립된 착지 지점으로 돌진하지 마세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "돌진",
+        "counterAbility": "납치한다냥",
+        "interaction": "납치한다냥의 쓰러뜨림·견인과 돌진 충돌의 우선순위는 별도 확인이 필요합니다.",
+        "condition": "방벽을 든 상태와 돌진 중 상태, 견인 대상 선정 조건을 구분해야 합니다.",
+        "counterplay": "상대 궁극기가 있을 때 혼자 고립된 착지 지점으로 돌진하지 마세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/reinhardt/",
+      "https://overwatch.blizzard.com/en-us/heroes/jetpack-cat/"
+    ]
   },
   {
     "id": "reinhardt-orisa",
@@ -3846,13 +4171,26 @@
     "hero": "shion",
     "counter": "dmon",
     "score": 4,
-    "reason": "D.Mon은(는) 시온의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "두 영웅 모두 이동 기술이 있어 D.Mon의 수평 추격만으로 시온을 붙잡는다고 단정할 수 없습니다.",
+    "condition": "피하기 이후의 위치와 남은 추진기 연료에 따라 결과가 달라집니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "같은 평면에서 직선으로 도망가기보다 엄폐를 꺾고 피하기를 퇴각에 남기세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "피하기",
+        "counterAbility": "추진기",
+        "interaction": "두 영웅 모두 이동 기술이 있어 D.Mon의 수평 추격만으로 시온을 붙잡는다고 단정할 수 없습니다.",
+        "condition": "피하기 이후의 위치와 남은 추진기 연료에 따라 결과가 달라집니다.",
+        "counterplay": "같은 평면에서 직선으로 도망가기보다 엄폐를 꺾고 피하기를 퇴각에 남기세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/shion/",
+      "https://overwatch.blizzard.com/en-us/heroes/dmon/"
+    ]
   },
   {
     "id": "shion-hazard",
@@ -4067,13 +4405,26 @@
     "hero": "sigma",
     "counter": "dmon",
     "score": 4,
-    "reason": "D.Mon은(는) 시그마의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "강착과 파워 배리어의 충돌 판정이 이 상성의 핵심이지만, 영웅 소개만으로 방벽 교전의 승자를 확정할 수 없습니다.",
+    "condition": "방벽 전개 시점·내구도와 강착 적중을 확인해야 합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "방벽이 내려간 순간을 노리고, 근접 사거리에서는 거리를 다시 벌리세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "강착",
+        "counterAbility": "파워 배리어",
+        "interaction": "강착과 파워 배리어의 충돌 판정이 이 상성의 핵심이지만, 영웅 소개만으로 방벽 교전의 승자를 확정할 수 없습니다.",
+        "condition": "방벽 전개 시점·내구도와 강착 적중을 확인해야 합니다.",
+        "counterplay": "방벽이 내려간 순간을 노리고, 근접 사거리에서는 거리를 다시 벌리세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/sigma/",
+      "https://overwatch.blizzard.com/en-us/heroes/dmon/"
+    ]
   },
   {
     "id": "sigma-genji",
@@ -4249,13 +4600,26 @@
     "hero": "soldier-76",
     "counter": "vendetta",
     "score": 4,
-    "reason": "벤데타은(는) 솔저: 76의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "벤데타의 도약이 질주로 이탈하는 솔저를 따라잡는지는 착지 위치와 퇴로에 달려 있습니다.",
+    "condition": "한 번의 진입 성공을 지속적인 상성 우위로 확대할 근거는 부족합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "진입 방향을 본 뒤 코너를 꺾고, 질주를 먼저 소모해 퇴로를 없애지 마세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "질주",
+        "counterAbility": "치솟는 베기",
+        "interaction": "벤데타의 도약이 질주로 이탈하는 솔저를 따라잡는지는 착지 위치와 퇴로에 달려 있습니다.",
+        "condition": "한 번의 진입 성공을 지속적인 상성 우위로 확대할 근거는 부족합니다.",
+        "counterplay": "진입 방향을 본 뒤 코너를 꺾고, 질주를 먼저 소모해 퇴로를 없애지 마세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/soldier-76/",
+      "https://overwatch.blizzard.com/en-us/heroes/vendetta/"
+    ]
   },
   {
     "id": "soldier-76-venture",
@@ -4301,13 +4665,26 @@
     "hero": "sombra",
     "counter": "dmon",
     "score": 4,
-    "reason": "D.Mon은(는) 솜브라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "전방 방벽과 해킹은 서로 다른 대응 방향을 요구합니다. 파워 배리어만으로 측면 해킹까지 차단한다고 볼 근거는 부족합니다.",
+    "condition": "해킹 사선과 시전 방해 여부를 구분해야 합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "방벽 정면에 머물지 말고 측면에서 시야를 확보한 뒤 위치변환기로 퇴로를 남기세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "해킹",
+        "counterAbility": "파워 배리어",
+        "interaction": "전방 방벽과 해킹은 서로 다른 대응 방향을 요구합니다. 파워 배리어만으로 측면 해킹까지 차단한다고 볼 근거는 부족합니다.",
+        "condition": "해킹 사선과 시전 방해 여부를 구분해야 합니다.",
+        "counterplay": "방벽 정면에 머물지 말고 측면에서 시야를 확보한 뒤 위치변환기로 퇴로를 남기세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/sombra/",
+      "https://overwatch.blizzard.com/en-us/heroes/dmon/"
+    ]
   },
   {
     "id": "sombra-dva",
@@ -4444,13 +4821,26 @@
     "hero": "symmetra",
     "counter": "jetpack-cat",
     "score": 4,
-    "reason": "제트팩 캣은(는) 시메트라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "고도를 이용한 거리 조절 가능성과 실제 사거리 이탈을 구분해야 합니다.",
+    "condition": "천장 높이·연료·광자 발사기 사선에 따라 달라집니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "낮게 내려오는 경로를 아군과 견제하고 공중 목표를 쫓아 엄폐에서 벗어나지 마세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "광자 발사기",
+        "counterAbility": "정신 없는 비행",
+        "interaction": "고도를 이용한 거리 조절 가능성과 실제 사거리 이탈을 구분해야 합니다.",
+        "condition": "천장 높이·연료·광자 발사기 사선에 따라 달라집니다.",
+        "counterplay": "낮게 내려오는 경로를 아군과 견제하고 공중 목표를 쫓아 엄폐에서 벗어나지 마세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/symmetra/",
+      "https://overwatch.blizzard.com/en-us/heroes/jetpack-cat/"
+    ]
   },
   {
     "id": "symmetra-pharah",
@@ -4600,13 +4990,26 @@
     "hero": "torbjorn",
     "counter": "ramattra",
     "score": 4,
-    "reason": "라마트라은(는) 토르비욘의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "공허 방벽이 포탑 사선을 가리는 동안과 방벽이 끝난 이후를 나누어 볼 필요가 있습니다.",
+    "condition": "포탑 위치와 방벽 지속·배치가 전제이며 포탑의 표적 변경까지 단정하지 않습니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "포탑을 본대 사격 각도와 분리하고 방벽 하나로 두 사선이 함께 막히지 않게 배치하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "포탑 설치",
+        "counterAbility": "공허 방벽 (옴닉 형태)",
+        "interaction": "공허 방벽이 포탑 사선을 가리는 동안과 방벽이 끝난 이후를 나누어 볼 필요가 있습니다.",
+        "condition": "포탑 위치와 방벽 지속·배치가 전제이며 포탑의 표적 변경까지 단정하지 않습니다.",
+        "counterplay": "포탑을 본대 사격 각도와 분리하고 방벽 하나로 두 사선이 함께 막히지 않게 배치하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/torbjorn/",
+      "https://overwatch.blizzard.com/en-us/heroes/ramattra/"
+    ]
   },
   {
     "id": "torbjorn-zarya",
@@ -4730,26 +5133,52 @@
     "hero": "vendetta",
     "counter": "cassidy",
     "score": 4,
-    "reason": "캐서디은(는) 벤데타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "수호 태세의 전방 피해 완화와 캐서디의 사격 방향에 따라 결과가 달라집니다.",
+    "condition": "완화 에너지·사거리·측면 사격 여부를 확인해야 합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "정면 태세만 유지하며 접근하지 말고 엄폐와 진입 기술로 노출 시간을 줄이세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "수호 태세",
+        "counterAbility": "피스키퍼",
+        "interaction": "수호 태세의 전방 피해 완화와 캐서디의 사격 방향에 따라 결과가 달라집니다.",
+        "condition": "완화 에너지·사거리·측면 사격 여부를 확인해야 합니다.",
+        "counterplay": "정면 태세만 유지하며 접근하지 말고 엄폐와 진입 기술로 노출 시간을 줄이세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/vendetta/",
+      "https://overwatch.blizzard.com/en-us/heroes/cassidy/"
+    ]
   },
   {
     "id": "vendetta-echo",
     "hero": "vendetta",
     "counter": "echo",
-    "score": 4,
-    "reason": "에코은(는) 벤데타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
-    "status": "provisional",
-    "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "score": 3,
+    "reason": "에코는 비행으로 대검의 근접 교전 거리를 벗어나는 각도를 만들 수 있습니다.",
+    "condition": "고도를 유지할 공간과 비행 여유가 필요합니다. 벤데타의 치솟는 베기 접근까지 차단하는 것은 아닙니다.",
+    "reviewedAt": "2026-09-21",
+    "status": "verified",
+    "confidence": "medium",
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "비행 중인 에코를 대검만으로 추격하지 말고 착지·비행 소모 뒤 접근할 기회를 보세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "팔라틴 팽",
+        "counterAbility": "비행",
+        "interaction": "에코는 비행으로 대검의 근접 교전 거리를 벗어나는 각도를 만들 수 있습니다.",
+        "condition": "고도를 유지할 공간과 비행 여유가 필요합니다. 벤데타의 치솟는 베기 접근까지 차단하는 것은 아닙니다.",
+        "counterplay": "비행 중인 에코를 대검만으로 추격하지 말고 착지·비행 소모 뒤 접근할 기회를 보세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/vendetta/",
+      "https://overwatch.blizzard.com/en-us/heroes/echo/"
+    ]
   },
   {
     "id": "vendetta-jetpack-cat",
@@ -4773,13 +5202,26 @@
     "hero": "vendetta",
     "counter": "mei",
     "score": 4,
-    "reason": "메이은(는) 벤데타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "빙벽으로 진입 후 지원 시야와 퇴로를 나누는 상황은 가능하지만 모든 질주를 중단시키는 것은 아닙니다.",
+    "condition": "벽 생성 위치와 벤데타가 이미 통과했는지에 따라 달라집니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "빙벽이 남아 있을 때 좁은 길로 깊게 진입하지 말고 치솟는 베기를 퇴로로 남기세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "소용돌이 질주",
+        "counterAbility": "빙벽",
+        "interaction": "빙벽으로 진입 후 지원 시야와 퇴로를 나누는 상황은 가능하지만 모든 질주를 중단시키는 것은 아닙니다.",
+        "condition": "벽 생성 위치와 벤데타가 이미 통과했는지에 따라 달라집니다.",
+        "counterplay": "빙벽이 남아 있을 때 좁은 길로 깊게 진입하지 말고 치솟는 베기를 퇴로로 남기세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/vendetta/",
+      "https://overwatch.blizzard.com/en-us/heroes/mei/"
+    ]
   },
   {
     "id": "vendetta-orisa",
@@ -4820,26 +5262,52 @@
     "hero": "vendetta",
     "counter": "roadhog",
     "score": 4,
-    "reason": "로드호그은(는) 벤데타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "수호 태세가 갈고리에 보이는 정확한 방어 판정은 공개 소개만으로 확인되지 않습니다.",
+    "condition": "태세 전개 방향·갈고리 적중·끌어오기 결과를 분리해 확인해야 합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "태세가 갈고리를 막는다고 가정하지 말고 엄폐로 갈고리 사선을 끊으세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "수호 태세",
+        "counterAbility": "사슬 갈고리",
+        "interaction": "수호 태세가 갈고리에 보이는 정확한 방어 판정은 공개 소개만으로 확인되지 않습니다.",
+        "condition": "태세 전개 방향·갈고리 적중·끌어오기 결과를 분리해 확인해야 합니다.",
+        "counterplay": "태세가 갈고리를 막는다고 가정하지 말고 엄폐로 갈고리 사선을 끊으세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/vendetta/",
+      "https://overwatch.blizzard.com/en-us/heroes/roadhog/"
+    ]
   },
   {
     "id": "vendetta-symmetra",
     "hero": "vendetta",
     "counter": "symmetra",
     "score": 4,
-    "reason": "시메트라은(는) 벤데타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "감시 포탑이 진입 경로를 방해할 가능성과 벤데타가 포탑을 제거할 시간을 함께 봐야 합니다.",
+    "condition": "포탑 배치·시야와 질주 경로가 겹치는 상황의 사례가 필요합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "진입 전에 포탑 위치를 확인하고 여러 사선으로 동시에 들어가지 마세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "소용돌이 질주",
+        "counterAbility": "감시 포탑",
+        "interaction": "감시 포탑이 진입 경로를 방해할 가능성과 벤데타가 포탑을 제거할 시간을 함께 봐야 합니다.",
+        "condition": "포탑 배치·시야와 질주 경로가 겹치는 상황의 사례가 필요합니다.",
+        "counterplay": "진입 전에 포탑 위치를 확인하고 여러 사선으로 동시에 들어가지 마세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/vendetta/",
+      "https://overwatch.blizzard.com/en-us/heroes/symmetra/"
+    ]
   },
   {
     "id": "venture-cassidy",
@@ -5132,13 +5600,26 @@
     "hero": "winston",
     "counter": "ramattra",
     "score": 4,
-    "reason": "라마트라은(는) 윈스턴의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "소용돌이는 범위 안의 적을 감속·하강시키지만 점프 팩을 언제나 취소한다고 단정할 수 없습니다.",
+    "condition": "점프 시작·공중 통과·착지 때의 범위 접촉과 탈출 가능성을 구분해야 합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "소용돌이 범위 밖 착지점을 선택하고, 수정 전 폭발 지연을 탈출 여유로 계산하지 마세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "점프 팩",
+        "counterAbility": "탐식의 소용돌이",
+        "interaction": "소용돌이는 범위 안의 적을 감속·하강시키지만 점프 팩을 언제나 취소한다고 단정할 수 없습니다.",
+        "condition": "점프 시작·공중 통과·착지 때의 범위 접촉과 탈출 가능성을 구분해야 합니다.",
+        "counterplay": "소용돌이 범위 밖 착지점을 선택하고, 수정 전 폭발 지연을 탈출 여유로 계산하지 마세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/winston/",
+      "https://overwatch.blizzard.com/en-us/heroes/ramattra/"
+    ]
   },
   {
     "id": "winston-roadhog",
@@ -5366,13 +5847,26 @@
     "hero": "zarya",
     "counter": "dmon",
     "score": 4,
-    "reason": "D.Mon은(는) 자리야의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "방벽이 남아 있는 자리야를 계속 공격하면 상대 자원 운용에 이득을 줄 수 있어, D.Mon의 근접 진입만으로 우위를 단정할 수 없습니다.",
+    "condition": "자리야의 방벽 사용 횟수와 에너지를 확인해야 합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "D.Mon이 접근하면 방벽을 교전에 맞추고 아군과 교차 사격하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "입자 방벽",
+        "counterAbility": "플라스마 세이버 ",
+        "interaction": "방벽이 남아 있는 자리야를 계속 공격하면 상대 자원 운용에 이득을 줄 수 있어, D.Mon의 근접 진입만으로 우위를 단정할 수 없습니다.",
+        "condition": "자리야의 방벽 사용 횟수와 에너지를 확인해야 합니다.",
+        "counterplay": "D.Mon이 접근하면 방벽을 교전에 맞추고 아군과 교차 사격하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/zarya/",
+      "https://overwatch.blizzard.com/en-us/heroes/dmon/"
+    ]
   },
   {
     "id": "zarya-lifeweaver",
@@ -5496,13 +5990,26 @@
     "hero": "zenyatta",
     "counter": "vendetta",
     "score": 4,
-    "reason": "벤데타은(는) 젠야타의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "벤데타의 진입과 젠야타의 근거리 밀쳐내기를 함께 고려해야 하며, 진입 성공을 바로 처치로 볼 수 없습니다.",
+    "condition": "치솟는 베기 착지 위치와 밀어차기 후 거리 회복을 확인해야 합니다.",
+    "reviewedAt": "2026-09-21",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "counterplay": "아군 가까이에서 진입 경로를 보고, 착지 후 밀어차기와 엄폐로 거리를 회복하세요.",
+    "skillInteractions": [
+      {
+        "heroAbility": "밀어차기",
+        "counterAbility": "치솟는 베기",
+        "interaction": "벤데타의 진입과 젠야타의 근거리 밀쳐내기를 함께 고려해야 하며, 진입 성공을 바로 처치로 볼 수 없습니다.",
+        "condition": "치솟는 베기 착지 위치와 밀어차기 후 거리 회복을 확인해야 합니다.",
+        "counterplay": "아군 가까이에서 진입 경로를 보고, 착지 후 밀어차기와 엄폐로 거리를 회복하세요."
+      }
+    ],
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/heroes/zenyatta/",
+      "https://overwatch.blizzard.com/en-us/heroes/vendetta/"
+    ]
   },
   {
     "id": "zenyatta-venture",

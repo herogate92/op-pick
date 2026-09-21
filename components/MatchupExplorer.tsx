@@ -49,8 +49,8 @@ export function MatchupExplorer({ heroes, matchups }: { heroes: Hero[]; matchups
             <div className="verdict-icon"><ShieldAlert /></div>
             <div className="verdict-copy">
               <div className="matchup-quality-row"><span className="section-kicker">MATCHUP VERDICT</span><MatchupQualityBadge matchup={relation.data} /></div>
-              <h2><strong>{relation.winner.name}</strong>이(가) {relation.loser.name}을(를) 상대하기 {relation.data.status === "verified" ? "유리합니다" : "유리할 가능성이 있습니다"}</h2>
-              <ScoreMeter value={relation.data.score} label={relation.data.status === "verified" ? "상성 강도" : "초기 평가"} />
+              <h2>{relation.data.status === "verified" ? <><strong>{relation.winner.name}</strong>이(가) {relation.loser.name}을(를) 상대하기 유리합니다</> : <>{relation.loser.name} · {relation.winner.name} 상성 판단 보류</>}</h2>
+              {relation.data.status === "verified" && <ScoreMeter value={relation.data.score} label="상성 강도" />}
               <p>{relation.data.reason}</p>
               <details className="matchup-evidence" key={`${leftKey}-${rightKey}`}><summary>스킬 사례·검토 근거 보기</summary>
               <MatchupSkillExamples matchup={relation.data} heroName={relation.loser.name} counterName={relation.winner.name} />

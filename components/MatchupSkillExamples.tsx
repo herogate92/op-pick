@@ -6,8 +6,8 @@ export function MatchupSkillExamples({ matchup, heroName, counterName }: {
   if (!matchup.skillInteractions?.length) return null;
   return (
     <section className="matchup-skill-examples" aria-label="기술로 보는 상성 사례">
-      <h3>기술로 보는 상성 사례</h3>
-      <p className="skill-example-notice">공개 기술 설명을 바탕으로 정리한 조건부 상성입니다. 기술 하나의 우위가 모든 교전의 승리를 뜻하지는 않습니다.</p>
+      <h3>{matchup.status === "provisional" ? "기술별 검토 조건" : "기술로 보는 상성 사례"}</h3>
+      <p className="skill-example-notice">{matchup.status === "provisional" ? "기술 설명은 확인했지만 두 영웅의 우위는 아직 판단하지 않았습니다. 아래 조건과 대응은 검토 참고용이며, 실전 검증을 마친 사례가 아닙니다." : "공개 기술 설명을 바탕으로 정리한 조건부 상성입니다. 기술 하나의 우위가 모든 교전의 승리를 뜻하지는 않습니다."}</p>
       {matchup.skillInteractions.map((example) => (
         <article key={`${example.heroAbility}-${example.counterAbility}`}>
           <h4>{heroName} · {example.heroAbility} <span>vs</span> {counterName} · {example.counterAbility}</h4>
