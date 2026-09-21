@@ -87,7 +87,7 @@ export function MapExplorer({ maps, heroes }: { maps: PublicMapGuide[]; heroes: 
                 <h2>{selected.name}</h2>
                 <p>추천 영웅 {selected.recommendations.length}명 · 조건부 전략 가이드</p>
               </div>
-              <Link href={`/maps/${selected.id}/`} className="map-detail-link text-link">상세 추천 보기</Link>
+              <Link href={`/maps/${selected.id}/`} className="map-detail-link text-link">전장 통계·후보 비교·상세 추천</Link>
             </header>
             <div className="map-role-sections">
               <p className="map-analysis-note">{selected.analysisBasis}<br />{selected.layoutCaveat}</p>

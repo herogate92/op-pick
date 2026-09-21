@@ -5,7 +5,8 @@ import { ArrowLeft, CalendarDays, MapPinned } from "lucide-react";
 import { AdSlot } from "@/components/AdSlot";
 import { JsonLd } from "@/components/JsonLd";
 import { SiteHeader } from "@/components/SiteHeader";
-import { getHero, maps, roleLabels, type Role } from "@/lib/data";
+import { getHero, maps, heroes, heroRates, roleLabels, type Role } from "@/lib/data";
+import { StatsCandidates } from "@/components/StatsCandidates";
 
 export function generateStaticParams() {
   return maps.map((map) => ({ map: map.id }));
@@ -29,6 +30,7 @@ export default async function MapDetailPage({ params }: { params: Promise<{ map:
   const map = maps.find((item) => item.id === mapId);
   if (!map) notFound();
   const pageUrl = `https://opick.ggwp.kr/maps/${map.id}/`;
+  const statistics = heroRates.snapshots.find(item => item.filters.map === map.id && item.gameMode === "competitive" && item.filters.input === "PC" && item.filters.region === "Asia" && item.filters.tier === "All");
   const jsonLd = [
     {
       "@context": "https://schema.org", "@type": "WebPage", name: `${map.name} 추천 영웅`,
@@ -63,6 +65,7 @@ export default async function MapDetailPage({ params }: { params: Promise<{ map:
             <Link href="/maps/"><ArrowLeft aria-hidden="true" />전체 맵 선택</Link>
           </section>
           <p className="seo-guide-note">전장 특징: {map.terrain}<br />{map.layoutCaveat}</p>
+          {statistics ? <section className="map-statistics"><h2>{map.name} 통계로 후보 비교</h2><p>수집 {heroRates.fetchedAt} · PC 아시아 경쟁전·전체 등급 · 역할 고정</p><a href={statistics.sourceUrl} target="_blank" rel="noreferrer">동일 조건의 공식 통계 ↗</a><StatsCandidates snapshot={statistics} heroes={heroes} /></section> : <p className="seo-guide-note">이 전장의 통계 자료가 아직 없습니다.</p>}
           {(["tank", "damage", "support"] as Role[]).map((role) => {
             const recommendations = map.recommendations.filter((item) => getHero(item.hero)?.role === role);
             if (!recommendations.length) return null;
@@ -89,7 +92,7 @@ export default async function MapDetailPage({ params }: { params: Promise<{ map:
               </section>
             );
           })}
-          <p className="seo-guide-note">추천은 조건부 전략 분석이며 패치·팀 조합에 따라 달라집니다. 기존 맵 승률은 수집 조건과 원출처가 확인되지 않아 표시를 보류했습니다. 최신 전체 맵 통계는 <Link href="/rates/">승률·픽률</Link>에서 확인하세요. {map.sourceUrls.map((url, index) => <a key={url} href={url} target="_blank" rel="noreferrer"> 전장 자료 {index + 1}</a>)}</p>
+          <p className="seo-guide-note">추천은 조건부 전략 분석이며 패치·팀 조합에 따라 달라집니다. 위 통계는 별도로 수집한 자료이며 전략 추천의 점수가 아닙니다. 전체 조건 비교는 <Link href="/rates/">승률·픽률·밴률</Link>에서 확인하세요. {map.sourceUrls.map((url, index) => <a key={url} href={url} target="_blank" rel="noreferrer"> 전장 자료 {index + 1}</a>)}</p>
           <AdSlot kind="banner" />
         </div>
         <AdSlot kind="rail" />

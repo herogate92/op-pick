@@ -7,6 +7,7 @@ import { BarChart3, Cross, ExternalLink, Search, Shield, Swords, Trophy } from "
 import type { Hero, HeroRateSnapshot, Role } from "@/lib/data";
 import { summarizeRates } from "@/lib/stats-summary";
 import { rateDelta, type StatsComparison } from "@/lib/stats-history";
+import { StatsCandidates } from "@/components/StatsCandidates";
 
 type SortKey = "winRate" | "pickRate" | "banRate";
 
@@ -26,10 +27,10 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt, comparisons }: { s
   const priorRows = new Map(baseline?.snapshot.rows.map(row => [row.hero, row]));
   const modeOf = (item: HeroRateSnapshot) => item.gameMode ?? item.id;
   const gameMode = modeOf(snapshot);
-  const changeCondition = (field: "input" | "region" | "tier", value: string) => {
+  const changeCondition = (field: "input" | "region" | "tier" | "map", value: string) => {
     const filters = { ...snapshot.filters, [field]: value };
     const candidates = snapshots.filter(item => modeOf(item) === gameMode && item.filters.input === filters.input && item.filters.region === filters.region);
-    const next = candidates.find(item => item.filters.tier === filters.tier) ?? candidates.find(item => item.filters.tier === "All");
+    const next = candidates.find(item => item.filters.tier === filters.tier && item.filters.map === filters.map) ?? candidates.find(item => item.filters.tier === filters.tier && item.filters.map === "all-maps") ?? candidates.find(item => item.filters.tier === "All" && item.filters.map === "all-maps");
     if (next) setSnapshotId(next.id);
   };
   const metrics = (["winRate", "pickRate", "banRate"] as SortKey[]).filter((metric) => metric !== "banRate" || snapshot.rows.some((row) => row.banRate !== null));
@@ -58,7 +59,7 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt, comparisons }: { s
         <span><strong>Blizzard 기반 통계 스냅샷</strong><small>마지막 성공 수집: {fetchedAt} · {snapshot.dataProviderLabel}로 갱신</small></span>
         <a href={snapshot.sourceUrl} target="_blank" rel="noreferrer">Blizzard에서 상세 필터 열기<ExternalLink aria-hidden="true" /></a>
       </div>
-      <p className="stats-context" aria-live="polite">{snapshot.label} · {snapshot.filters.inputLabel} · {snapshot.filters.regionLabel} · {snapshot.filters.tierLabel} · {roleLabels[role]}{query.trim() ? ` · 검색: ${query.trim()}` : ""} 기준 요약</p>
+      <p className="stats-context" aria-live="polite">{snapshot.label} · {snapshot.filters.inputLabel} · {snapshot.filters.regionLabel} · {snapshot.filters.tierLabel} · {snapshot.filters.mapLabel} · {roleLabels[role]}{query.trim() ? ` · 검색: ${query.trim()}` : ""} 기준 요약</p>
       <section className="stats-summary" aria-label="선택 조건의 통계 요약">
         {metrics.map((metric) => {
           const leader = leaders[metric];
@@ -84,13 +85,14 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt, comparisons }: { s
         </div>
 
         <div className="stats-condition-filters">
-          {(["input", "region", "tier"] as const).map(field => {
-            const options = snapshots.filter(item => modeOf(item) === gameMode && (field !== "tier" || (item.filters.input === snapshot.filters.input && item.filters.region === snapshot.filters.region)));
+          {(["input", "region", "tier", "map"] as const).map(field => {
+            const options = snapshots.filter(item => modeOf(item) === gameMode && ((field !== "tier" && field !== "map") || (item.filters.input === snapshot.filters.input && item.filters.region === snapshot.filters.region && (field === "map" ? item.filters.tier === snapshot.filters.tier : item.filters.map === snapshot.filters.map))));
             const values = [...new Map(options.map(item => [item.filters[field], item.filters[`${field}Label`]])).entries()];
-            return <label key={field}>{field === "input" ? "입력 장치" : field === "region" ? "지역" : "경쟁전 등급"}<select value={snapshot.filters[field]} disabled={values.length < 2} onChange={event => changeCondition(field, event.target.value)}>{values.map(([value, label]) => <option key={value} value={value}>{label}</option>)}</select></label>;
+            return <label key={field}>{field === "input" ? "입력 장치" : field === "region" ? "지역" : field === "map" ? "전장" : "경쟁전 등급"}<select value={snapshot.filters[field]} disabled={values.length < 2} onChange={event => changeCondition(field, event.target.value)}>{values.map(([value, label]) => <option key={value} value={value}>{label}</option>)}</select></label>;
           })}
         </div>
-        <p className="stats-filter-note">모든 전장 합산 · 등급별 통계는 PC 아시아 경쟁전에서 제공합니다. 모드 변경 또는 지원하지 않는 조건으로 변경하면 전체 등급으로 전환됩니다.</p>
+        <p className="stats-filter-note">전장별 통계는 PC 아시아 경쟁전·전체 등급, 등급별 통계는 PC 아시아 경쟁전·모든 전장에서 제공합니다. 지원하지 않는 조건으로 변경하면 전체 등급 또는 모든 전장으로 전환됩니다.</p>
+        <StatsCandidates snapshot={snapshot} heroes={heroes} />
         {!metrics.includes("banRate") && <p className="stats-filter-note">{gameMode === "quickplay" ? "빠른 대전은 밴률을 제공하지 않습니다." : "현재 조건의 밴률 자료가 없습니다."}</p>}
         <div className="stats-history-controls">
           <label>증감 비교<select value={comparisonMode} onChange={event => setComparisonMode(event.target.value as "previous" | "priorPatch")}><option value="previous">이전 수집 대비</option><option value="priorPatch">이전 패치 기록 대비</option></select></label>
