@@ -11,7 +11,7 @@ type SortKey = "winRate" | "pickRate" | "banRate";
 
 const roleLabels: Record<"all" | Role, string> = { all: "전체", tank: "돌격", damage: "공격", support: "지원" };
 const roleIcons = { all: BarChart3, tank: Shield, damage: Swords, support: Cross };
-const metricLabels: Record<SortKey, string> = { winRate: "승률", pickRate: "픽률", banRate: "금지율" };
+const metricLabels: Record<SortKey, string> = { winRate: "승률", pickRate: "픽률", banRate: "밴률" };
 const formatRate = (value: number | null) => value === null ? "--" : `${value.toFixed(1)}%`;
 
 export function StatsExplorer({ snapshots, heroes, fetchedAt }: { snapshots: HeroRateSnapshot[]; heroes: Hero[]; fetchedAt: string }) {
@@ -20,6 +20,14 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt }: { snapshots: Her
   const [query, setQuery] = useState("");
   const [sortKey, setSortKey] = useState<SortKey>("winRate");
   const snapshot = snapshots.find((item) => item.id === snapshotId) ?? snapshots[0];
+  const modeOf = (item: HeroRateSnapshot) => item.gameMode ?? item.id;
+  const gameMode = modeOf(snapshot);
+  const changeCondition = (field: "input" | "region" | "tier", value: string) => {
+    const filters = { ...snapshot.filters, [field]: value };
+    const candidates = snapshots.filter(item => modeOf(item) === gameMode && item.filters.input === filters.input && item.filters.region === filters.region);
+    const next = candidates.find(item => item.filters.tier === filters.tier) ?? candidates.find(item => item.filters.tier === "All");
+    if (next) setSnapshotId(next.id);
+  };
   const metrics = (["winRate", "pickRate", "banRate"] as SortKey[]).filter((metric) => metric !== "banRate" || snapshot.rows.some((row) => row.banRate !== null));
   const activeSortKey = metrics.includes(sortKey) ? sortKey : "winRate";
   const heroByKey = useMemo(() => new Map(heroes.map((hero) => [hero.key, hero])), [heroes]);
@@ -46,7 +54,7 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt }: { snapshots: Her
         <span><strong>Blizzard 기반 통계 스냅샷</strong><small>마지막 성공 수집: {fetchedAt} · {snapshot.dataProviderLabel}로 갱신</small></span>
         <a href={snapshot.sourceUrl} target="_blank" rel="noreferrer">Blizzard에서 상세 필터 열기<ExternalLink aria-hidden="true" /></a>
       </div>
-      <p className="stats-context" aria-live="polite">{snapshot.label} · {roleLabels[role]}{query.trim() ? ` · 검색: ${query.trim()}` : ""} 기준 요약</p>
+      <p className="stats-context" aria-live="polite">{snapshot.label} · {snapshot.filters.inputLabel} · {snapshot.filters.regionLabel} · {snapshot.filters.tierLabel} · {roleLabels[role]}{query.trim() ? ` · 검색: ${query.trim()}` : ""} 기준 요약</p>
       <section className="stats-summary" aria-label="선택 조건의 통계 요약">
         {metrics.map((metric) => {
           const leader = leaders[metric];
@@ -64,12 +72,22 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt }: { snapshots: Her
 
       <section className="stats-panel">
         <div className="stats-mode-tabs" role="tablist" aria-label="게임 모드">
-          {snapshots.map((item) => (
-            <button key={item.id} type="button" role="tab" aria-selected={snapshot.id === item.id} className={snapshot.id === item.id ? "selected" : ""} onClick={() => setSnapshotId(item.id)}>
+          {snapshots.filter(item => item.id === "quickplay" || item.id === "competitive").map((item) => (
+            <button key={item.id} type="button" role="tab" aria-selected={gameMode === item.id} className={gameMode === item.id ? "selected" : ""} onClick={() => setSnapshotId(snapshots.find(candidate => modeOf(candidate) === item.id && candidate.filters.input === snapshot.filters.input && candidate.filters.region === snapshot.filters.region && candidate.filters.tier === "All")?.id ?? item.id)}>
               <span>{item.id === "competitive" ? "COMP" : "QUICK"}</span><strong>{item.label}</strong>
             </button>
           ))}
         </div>
+
+        <div className="stats-condition-filters">
+          {(["input", "region", "tier"] as const).map(field => {
+            const options = snapshots.filter(item => modeOf(item) === gameMode && (field !== "tier" || (item.filters.input === snapshot.filters.input && item.filters.region === snapshot.filters.region)));
+            const values = [...new Map(options.map(item => [item.filters[field], item.filters[`${field}Label`]])).entries()];
+            return <label key={field}>{field === "input" ? "입력 장치" : field === "region" ? "지역" : "경쟁전 등급"}<select value={snapshot.filters[field]} disabled={values.length < 2} onChange={event => changeCondition(field, event.target.value)}>{values.map(([value, label]) => <option key={value} value={value}>{label}</option>)}</select></label>;
+          })}
+        </div>
+        <p className="stats-filter-note">모든 전장 합산 · 등급별 통계는 PC 아시아 경쟁전에서 제공합니다. 모드 변경 또는 지원하지 않는 조건으로 변경하면 전체 등급으로 전환됩니다.</p>
+        {!metrics.includes("banRate") && <p className="stats-filter-note">{gameMode === "quickplay" ? "빠른 대전은 밴률을 제공하지 않습니다." : "현재 조건의 밴률 자료가 없습니다."}</p>}
 
         <div className="stats-toolbar">
           <div className="stats-role-tabs" role="tablist" aria-label="역할 필터">
@@ -95,7 +113,7 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt }: { snapshots: Her
                 return (
                   <tr key={row.hero}>
                     <td><span className={index < 3 ? "stats-rank top" : "stats-rank"}>{index < 3 && <Trophy aria-hidden="true" />}{index + 1}</span></td>
-                    <td><Link href={`/heroes/${hero.key}/#stats-${snapshot.id}`} className="stats-hero"><span className={`stats-portrait role-${hero.role}`}><Image src={hero.portrait} alt="" width={44} height={44} /></span><span><strong>{hero.name}</strong><small>{roleLabels[hero.role]}</small></span></Link></td>
+                    <td><Link href={`/heroes/${hero.key}/${snapshot.id === gameMode ? `#stats-${snapshot.id}` : ""}`} className="stats-hero"><span className={`stats-portrait role-${hero.role}`}><Image src={hero.portrait} alt="" width={44} height={44} /></span><span><strong>{hero.name}</strong><small>{roleLabels[hero.role]} · 영웅 정보</small></span></Link></td>
                     {metrics.map((metric) => <td key={metric}><div className={`rate-cell ${activeSortKey === metric ? "active" : ""}`}><strong>{formatRate(row[metric])}</strong><span><i style={{ width: `${Math.max(0, ((row[metric] ?? 0) / maxValues[metric]) * 100)}%` }} /></span></div></td>)}
                   </tr>
                 );
