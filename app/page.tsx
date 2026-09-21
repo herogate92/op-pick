@@ -61,7 +61,7 @@ export default function HomePage() {
         <Link href="/rates/"><BarChart3 /><span><strong>영웅 통계</strong><small>승률과 픽률 확인</small></span><ArrowRight /></Link>
       </nav>
       <div className="home-updates">
-        {snapshot && <section className="home-stats" aria-labelledby="home-stats-title">
+        {snapshot && <section className="home-rates-summary" aria-labelledby="home-stats-title">
           <header><h2 id="home-stats-title">역할별 승률 상위</h2><Link href="/rates/">통계 전체 <ArrowRight aria-hidden="true" /></Link></header>
           <p>{snapshot.label} · {snapshot.filters.inputLabel} · {snapshot.filters.regionLabel} · {snapshot.filters.tierLabel} · {snapshot.filters.mapLabel}</p>
           <div className="home-role-stats">
