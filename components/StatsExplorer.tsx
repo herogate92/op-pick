@@ -91,7 +91,7 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt, comparisons }: { s
             return <label key={field}>{field === "input" ? "입력 장치" : field === "region" ? "지역" : field === "map" ? "전장" : "경쟁전 등급"}<select value={snapshot.filters[field]} disabled={values.length < 2} onChange={event => changeCondition(field, event.target.value)}>{values.map(([value, label]) => <option key={value} value={value}>{label}</option>)}</select></label>;
           })}
         </div>
-        <p className="stats-filter-note">전장별 통계는 PC 아시아 경쟁전·전체 등급, 등급별 통계는 PC 아시아 경쟁전·모든 전장에서 제공합니다. 지원하지 않는 조건으로 변경하면 전체 등급 또는 모든 전장으로 전환됩니다.</p>
+        <p className="stats-filter-note">경쟁전은 모든 지역·입력 장치에서 전장별(전체 등급) 또는 등급별(모든 전장) 통계를 제공합니다. 전장과 개별 등급의 동시 지정은 지원하지 않습니다. 빠른 대전은 모든 전장·전체 등급 기준입니다.</p>
         <StatsCandidates snapshot={snapshot} heroes={heroes} />
         {!metrics.includes("banRate") && <p className="stats-filter-note">{gameMode === "quickplay" ? "빠른 대전은 밴률을 제공하지 않습니다." : "현재 조건의 밴률 자료가 없습니다."}</p>}
         <div className="stats-history-controls">

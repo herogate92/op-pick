@@ -6,7 +6,7 @@ import { AdSlot } from "@/components/AdSlot";
 import { JsonLd } from "@/components/JsonLd";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getHero, maps, heroes, heroRates, roleLabels, type Role } from "@/lib/data";
-import { StatsCandidates } from "@/components/StatsCandidates";
+import { MapStatistics } from "@/components/MapStatistics";
 
 export function generateStaticParams() {
   return maps.map((map) => ({ map: map.id }));
@@ -30,7 +30,7 @@ export default async function MapDetailPage({ params }: { params: Promise<{ map:
   const map = maps.find((item) => item.id === mapId);
   if (!map) notFound();
   const pageUrl = `https://opick.ggwp.kr/maps/${map.id}/`;
-  const statistics = heroRates.snapshots.find(item => item.filters.map === map.id && item.gameMode === "competitive" && item.filters.input === "PC" && item.filters.region === "Asia" && item.filters.tier === "All");
+  const statistics = heroRates.snapshots.filter(item => item.filters.map === map.id && item.gameMode === "competitive" && item.filters.tier === "All");
   const jsonLd = [
     {
       "@context": "https://schema.org", "@type": "WebPage", name: `${map.name} 추천 영웅`,
@@ -65,7 +65,7 @@ export default async function MapDetailPage({ params }: { params: Promise<{ map:
             <Link href="/maps/"><ArrowLeft aria-hidden="true" />전체 맵 선택</Link>
           </section>
           <p className="seo-guide-note">전장 특징: {map.terrain}<br />{map.layoutCaveat}</p>
-          {statistics ? <section className="map-statistics"><h2>{map.name} 통계로 후보 비교</h2><p>수집 {heroRates.fetchedAt} · PC 아시아 경쟁전·전체 등급 · 역할 고정</p><a href={statistics.sourceUrl} target="_blank" rel="noreferrer">동일 조건의 공식 통계 ↗</a><StatsCandidates snapshot={statistics} heroes={heroes} /></section> : <p className="seo-guide-note">이 전장의 통계 자료가 아직 없습니다.</p>}
+          <MapStatistics snapshots={statistics} heroes={heroes} fetchedAt={heroRates.fetchedAt} mapName={map.name}/>
           {(["tank", "damage", "support"] as Role[]).map((role) => {
             const recommendations = map.recommendations.filter((item) => getHero(item.hero)?.role === role);
             if (!recommendations.length) return null;

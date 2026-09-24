@@ -15,9 +15,10 @@ const snapshots = modes.flatMap(mode => ["PC", "Console"].flatMap(input => Objec
   ...mode, gameMode: mode.id, input, region, tier: "All",
   id: input === "PC" && region === "Asia" ? mode.id : `${mode.id}-${input}-${region}`,
 }))));
-snapshots.push(...Object.keys(tiers).map(tier => ({ ...modes[1], id: `competitive-PC-Asia-${tier}`, gameMode: "competitive", input: "PC", region: "Asia", tier })));
+const competitiveContexts = ["PC", "Console"].flatMap(input => Object.keys(regions).map(region => ({ input, region })));
+snapshots.push(...competitiveContexts.flatMap(context => Object.keys(tiers).map(tier => ({ ...modes[1], ...context, id: `competitive-${context.input}-${context.region}-${tier}`, gameMode: "competitive", tier }))));
 const maps = JSON.parse(await readFile(join(root, "data", "maps.json"), "utf8"));
-snapshots.push(...maps.map(map => ({ ...modes[1], id: `competitive-PC-Asia-map-${map.id}`, gameMode: "competitive", input: "PC", region: "Asia", tier: "All", map: map.id, mapLabel: map.name })));
+snapshots.push(...competitiveContexts.flatMap(context => maps.map(map => ({ ...modes[1], ...context, id: `competitive-${context.input}-${context.region}-map-${map.id}`, gameMode: "competitive", tier: "All", map: map.id, mapLabel: map.name }))));
 
 function decodeAttribute(value) {
   return value

@@ -47,7 +47,21 @@ test("statistics refresh replaces only complete valid snapshots", async () => {
     competitiveRows = good;
     assert.equal(await run(), 0);
     const result = JSON.parse(await readFile(destination, "utf8"));
-    assert.equal(result.snapshots.length, 21);
+    assert.equal(result.snapshots.length, 66);
+    assert.equal(new Set(result.snapshots.map(item => item.id)).size, 66);
+    for (const input of ["PC", "Console"]) for (const region of ["Asia", "Americas", "Europe"]) {
+      const scoped = result.snapshots.filter(item => item.gameMode === "competitive" && item.filters.input === input && item.filters.region === region);
+      assert.equal(scoped.filter(item => item.filters.map === "kings-row").length, 1);
+      assert.equal(scoped.filter(item => item.filters.tier !== "All").length, 8);
+      for (const item of scoped) {
+        const provider = new URL(item.dataProviderUrl).searchParams;
+        const official = new URL(item.sourceUrl).searchParams;
+        assert.equal(provider.get("platform"), input.toLowerCase());
+        assert.equal(provider.get("region"), region.toLowerCase());
+        assert.equal(official.get("input"), input);
+        assert.equal(official.get("region"), region);
+      }
+    }
     const map = result.snapshots.find(item => item.filters.map === "kings-row");
     assert.equal(new URL(map.sourceUrl).searchParams.get("map"), "kings-row");
     assert.equal(new URL(map.dataProviderUrl).searchParams.get("map"), "kings-row");

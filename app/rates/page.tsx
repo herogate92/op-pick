@@ -8,7 +8,7 @@ import { getComparisons, validateHistory, type StatsHistory } from "@/lib/stats-
 
 export const metadata: Metadata = {
   title: "오버워치 영웅 승률·픽률·밴률 통계",
-  description: "Blizzard 공개 통계로 지역·입력 장치별 승률·픽률·밴률과 PC 아시아 경쟁전 등급별 영웅 성적을 비교합니다.",
+  description: "아시아·아메리카·유럽의 PC·컨트롤러 통계를 비교합니다. 경쟁전 전장별·등급별 영웅 승률·픽률·밴률을 확인하세요.",
   alternates: { canonical: "/rates/" },
 };
 
