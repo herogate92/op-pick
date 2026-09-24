@@ -22,6 +22,7 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt, comparisons }: { s
   const [role, setRole] = useState<"all" | Role>("all");
   const [query, setQuery] = useState("");
   const [sortKey, setSortKey] = useState<SortKey>("winRate");
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const snapshot = snapshots.find((item) => item.id === snapshotId) ?? snapshots[0];
   const baseline = comparisons.find(item => item.id === snapshot.id)?.[comparisonMode];
   const priorRows = new Map(baseline?.snapshot.rows.map(row => [row.hero, row]));
@@ -55,6 +56,7 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt, comparisons }: { s
 
   return (
     <div className="stats-explorer">
+      <details className="stats-extras"><summary>통계 요약·출처·수집 시각</summary>
       <div className="stats-source-bar">
         <span><strong>Blizzard 기반 통계 스냅샷</strong><small>마지막 성공 수집: {fetchedAt} · {snapshot.dataProviderLabel}로 갱신</small></span>
         <a href={snapshot.sourceUrl} target="_blank" rel="noreferrer">Blizzard에서 상세 필터 열기<ExternalLink aria-hidden="true" /></a>
@@ -74,6 +76,7 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt, comparisons }: { s
         })}
         <div className="stats-count-card"><span>통계 제공 영웅</span><strong>{available}명</strong><em>표시 {rows.length}명 · 통계 없음 {rows.length - available}명</em></div>
       </section>
+      </details>
 
       <section className="stats-panel">
         <div className="stats-mode-tabs" role="tablist" aria-label="게임 모드">
@@ -84,6 +87,8 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt, comparisons }: { s
           ))}
         </div>
 
+        <details className="stats-filter-drawer" open={filtersOpen} onToggle={event => setFiltersOpen(event.currentTarget.open)}>
+        <summary><strong>조건 변경</strong><span>{snapshot.filters.input === "PC" ? "PC" : "컨트롤러"} · {snapshot.filters.regionLabel} · {snapshot.filters.tierLabel} · {snapshot.filters.mapLabel}</span></summary>
         <div className="stats-condition-filters">
           {(["input", "region", "tier", "map"] as const).map(field => {
             const options = snapshots.filter(item => modeOf(item) === gameMode && ((field !== "tier" && field !== "map") || (item.filters.input === snapshot.filters.input && item.filters.region === snapshot.filters.region && (field === "map" ? item.filters.tier === snapshot.filters.tier : item.filters.map === snapshot.filters.map))));
@@ -92,12 +97,16 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt, comparisons }: { s
           })}
         </div>
         <p className="stats-filter-note">경쟁전은 모든 지역·입력 장치에서 전장별(전체 등급) 또는 등급별(모든 전장) 통계를 제공합니다. 전장과 개별 등급의 동시 지정은 지원하지 않습니다. 빠른 대전은 모든 전장·전체 등급 기준입니다.</p>
+        <button type="button" className="stats-filter-done" onClick={() => setFiltersOpen(false)}>조건 적용 · 결과 보기</button>
+        </details>
         <StatsCandidates snapshot={snapshot} heroes={heroes} />
         {!metrics.includes("banRate") && <p className="stats-filter-note">{gameMode === "quickplay" ? "빠른 대전은 밴률을 제공하지 않습니다." : "현재 조건의 밴률 자료가 없습니다."}</p>}
+        <details className="stats-extras stats-comparison-details"><summary>증감 기준 · {comparisonMode === "previous" ? "이전 수집 대비" : "이전 패치 기록 대비"}</summary>
         <div className="stats-history-controls">
           <label>증감 비교<select value={comparisonMode} onChange={event => setComparisonMode(event.target.value as "previous" | "priorPatch")}><option value="previous">이전 수집 대비</option><option value="priorPatch">이전 패치 기록 대비</option></select></label>
           <p aria-live="polite">{baseline ? `비교 기준: ${new Intl.DateTimeFormat("ko-KR", { timeZone: "Asia/Seoul", dateStyle: "medium", timeStyle: "short" }).format(new Date(baseline.collectedAt))} KST${baseline.patchDate ? ` · 감지 패치 ${baseline.patchDate}` : ""}` : "같은 조건의 비교 기록이 아직 없습니다."}<br />증감 단위는 %p입니다. 패치별 경기 표본을 분리한 자료가 아니므로 패치 효과를 뜻하지 않습니다.</p>
         </div>
+        </details>
 
         <div className="stats-toolbar">
           <div className="stats-role-tabs" role="tablist" aria-label="역할 필터">
@@ -109,14 +118,14 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt, comparisons }: { s
           <label className="stats-search"><Search aria-hidden="true" /><span className="sr-only">영웅 검색</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="영웅 이름 검색" /></label>
         </div>
 
-        <div className="stats-context">
-          <span>{snapshot.filters.inputLabel}</span><span>{snapshot.filters.regionLabel}</span><span>{snapshot.filters.mapLabel}</span><span>{snapshot.filters.tierLabel}</span>
-          <strong>{rows.length}명 표시</strong>
+        <div className="stats-result-heading" aria-live="polite">
+          <strong>{roleLabels[role]} · {rows.length}명</strong><span>{metricLabels[activeSortKey]} 높은 순 · 통계 제공 {available}명</span>
         </div>
+        <div className="stats-mobile-metrics" aria-label="표시 지표">{metrics.map(metric => <button type="button" key={metric} aria-pressed={activeSortKey === metric} onClick={() => setSortKey(metric)}>{metricLabels[metric]}</button>)}</div>
 
         <div className="stats-table-wrap">
           <table className="stats-table">
-            <thead><tr><th scope="col">순위</th><th scope="col">영웅</th>{metrics.map((metric) => <th scope="col" key={metric}><button type="button" className={activeSortKey === metric ? "selected" : ""} onClick={() => setSortKey(metric)}>{metricLabels[metric]}</button></th>)}</tr></thead>
+            <thead><tr><th scope="col">순위</th><th scope="col">영웅</th>{metrics.map((metric) => <th scope="col" key={metric} data-active={activeSortKey === metric} aria-sort={activeSortKey === metric ? "descending" : "none"}><button type="button" className={activeSortKey === metric ? "selected" : ""} onClick={() => setSortKey(metric)}>{metricLabels[metric]}</button></th>)}</tr></thead>
             <tbody>
               {rows.map((row, index) => {
                 const hero = row.heroData!;
@@ -126,7 +135,7 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt, comparisons }: { s
                     <td><Link href={`/heroes/${hero.key}/${snapshot.id === gameMode ? `#stats-${snapshot.id}` : ""}`} className="stats-hero"><span className={`stats-portrait role-${hero.role}`}><Image src={hero.portrait} alt="" width={44} height={44} /></span><span><strong>{hero.name}</strong><small>{roleLabels[hero.role]} · 영웅 정보</small></span></Link></td>
                     {metrics.map((metric) => {
                       const delta = rateDelta(row[metric], priorRows.get(row.hero)?.[metric]);
-                      return <td key={metric}><div className={`rate-cell ${activeSortKey === metric ? "active" : ""}`}><strong>{formatRate(row[metric])}</strong><small className="stats-rate-delta">{delta === null ? "비교 자료 없음" : `${delta > 0 ? "+" : ""}${delta.toFixed(1)}%p`}</small><span><i style={{ width: `${Math.max(0, ((row[metric] ?? 0) / maxValues[metric]) * 100)}%` }} /></span></div></td>;
+                      return <td key={metric} data-active={activeSortKey === metric}><div className={`rate-cell ${activeSortKey === metric ? "active" : ""}`}><strong>{formatRate(row[metric])}</strong><small className="stats-rate-delta">{delta === null ? "비교 자료 없음" : `${delta > 0 ? "+" : ""}${delta.toFixed(1)}%p`}</small><span><i style={{ width: `${Math.max(0, ((row[metric] ?? 0) / maxValues[metric]) * 100)}%` }} /></span></div></td>;
                     })}
                   </tr>
                 );
