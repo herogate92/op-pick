@@ -38,6 +38,7 @@ export interface Matchup {
   id: string; hero: string; counter: string; score: number; reason: string; condition: string;
   counterplay: string; status: MatchupStatus; confidence: MatchupConfidence; patchBasis: string; reviewedAt: string;
   evidence?: string[];
+  reviewSources?: { url: string; label: string }[];
   skillInteractions?: SkillInteraction[];
   sourceUrls?: string[];
 }

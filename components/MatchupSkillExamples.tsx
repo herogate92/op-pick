@@ -24,6 +24,7 @@ export function MatchupSkillExamples({ matchup, heroName, counterName }: {
           <a key={url} href={url} target="_blank" rel="noreferrer">{index === 0 ? heroName : counterName} 기술 정보</a>
         ))}
       </div>
+      {matchup.reviewSources?.length ? <div className="skill-example-sources"><span>추가 검토 자료 · 최신 판정 확정 아님</span>{matchup.reviewSources.map(source => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label}</a>)}</div> : null}
     </section>
   );
 }

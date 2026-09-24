@@ -772,12 +772,12 @@
     "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
     "category": "상성",
     "id": "vendetta-roadhog",
-    "contentDigest": "7fb4513492c72f52c22ddca3699bca75e58e65eae05561ddf063e1f9f1dbf15f",
+    "contentDigest": "ec3cc16f389fda022e005fc805f2479021d9d1295a91a485746b2fbf8820cdc0",
     "decision": "deferred",
-    "reviewedAt": "2026-09-21",
-    "summary": "수호 태세가 갈고리에 보이는 정확한 방어 판정은 공개 소개만으로 확인되지 않습니다. 성립 조건: 태세 전개 방향·갈고리 적중·끌어오기 결과를 분리해 확인해야 합니다. 공식 기술 설명 기반 조건부 분석이며 게임 내 재현은 하지 않았습니다.",
+    "reviewedAt": "2026-09-24",
+    "summary": "2025년 11월 공개 이용자 보고는 수호 태세 중에도 사슬 갈고리에 끌려간다고 설명합니다. 공식 설명의 전방 피해 감소·근접 공격 방어를 모든 군중 제어 면역으로 해석할 수 없으며, 과거 보고만으로 최신 판정을 확정하지 않습니다. 최신 패치에서 직접 재현하지 않아 근거 보강 대기를 유지합니다.",
     "sourceUrl": "https://overwatch.blizzard.com/en-us/heroes/roadhog/",
-    "recheckRequirement": "태세 전개 방향·갈고리 적중·끌어오기 결과를 분리해 확인해야 합니다. 해당 기술 순서·위치가 드러나는 현재 패치 사례 필요."
+    "recheckRequirement": "현재 패치에서 태세를 먼저 켠 정면 피격과 태세가 없는 피격을 비교하고, 갈고리 피해·끌어오기·태세 중단을 따로 확인해야 합니다."
   },
   {
     "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
@@ -921,12 +921,12 @@
     "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
     "category": "상성",
     "id": "jetpack-cat-sombra",
-    "contentDigest": "17948ae848bdbf0bce47c3596aad7c73e1f52998cba1355da1117c098e4bcb88",
+    "contentDigest": "8a2eae0bdfc9a04de0a07d2f6c66b754216c7cd72623c55e112d8f9c99458f92",
     "decision": "deferred",
-    "reviewedAt": "2026-09-21",
-    "summary": "해킹이 제트팩 캣의 비행과 가속을 각각 얼마나 제한하는지 확인이 필요합니다. 성립 조건: 기본 체공·활성 가속·운반 중 상태를 분리한 사례가 필요합니다. 공식 기술 설명 기반 조건부 분석이며 게임 내 재현은 하지 않았습니다.",
+    "reviewedAt": "2026-09-24",
+    "summary": "2026년 2월 이용자 보고에는 해킹 후 기본 체공은 유지되고 가속·견인이 제한된다는 설명이 있습니다. 같은 토론에 고도 변화에 대한 이견도 있어 기본 체공·가속·운반을 한 가지 비행 취소로 묶어 단정하지 않습니다. 최신 패치에서 직접 재현하지 않아 근거 보강 대기를 유지합니다.",
     "sourceUrl": "https://overwatch.blizzard.com/en-us/heroes/sombra/",
-    "recheckRequirement": "기본 체공·활성 가속·운반 중 상태를 분리한 사례가 필요합니다. 해당 기술 순서·위치가 드러나는 현재 패치 사례 필요."
+    "recheckRequirement": "현재 패치에서 정지 체공·정신 없는 비행·아군 운반을 각각 해킹하고 고도 변화, 가속 중단, 생명줄 해제 여부를 별도로 확인해야 합니다."
   },
   {
     "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
@@ -986,12 +986,12 @@
     "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",
     "category": "상성",
     "id": "brigitte-ramattra",
-    "contentDigest": "4b047cb65470875168004dfdbe06a6b27b9111b070524c59b2384e5d34b37ad5",
+    "contentDigest": "f72cd161003e0f521e745644dd14c59e7dda675ef46b41bfb8e55c44a5dcdad6",
     "decision": "deferred",
-    "reviewedAt": "2026-09-21",
-    "summary": "응징의 관통 효과와 방벽 방패의 구체적인 상호작용은 최신 판정을 확인할 필요가 있습니다. 성립 조건: 방벽 피해와 본체 피해를 분리해 기록해야 하며 방벽 크기만으로 결론을 내리지 않습니다. 공식 기술 설명 기반 조건부 분석이며 게임 내 재현은 하지 않았습니다.",
+    "reviewedAt": "2026-09-24",
+    "summary": "2024-10-29 공식 패치에는 응징의 방벽 관통 복원이 명시되어 있고 현재 공개 기술 데이터도 관통 에너지를 설명합니다. 다만 이 기록만으로 현재 패치의 방벽 방패·집결 상태별 피해 판정을 재현 검증한 것은 아닙니다. 최신 패치에서 직접 재현하지 않아 근거 보강 대기를 유지합니다.",
     "sourceUrl": "https://overwatch.blizzard.com/en-us/heroes/ramattra/",
-    "recheckRequirement": "방벽 피해와 본체 피해를 분리해 기록해야 하며 방벽 크기만으로 결론을 내리지 않습니다. 해당 기술 순서·위치가 드러나는 현재 패치 사례 필요."
+    "recheckRequirement": "네메시스 응징 사거리 안에서 일반 방벽 방패와 집결 중 방벽을 나눠 본체·방벽 피해를 확인해야 합니다. 과거의 방벽 추가 피해 변경과 관통 복원을 혼동하지 마세요."
   },
   {
     "patchDigest": "d36dbd83e236714a3405ee14cc6d49a912b4e4ef976344b0aa94a05db0fc70f0",

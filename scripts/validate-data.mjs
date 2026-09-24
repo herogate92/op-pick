@@ -70,6 +70,9 @@ for (const matchup of matchups) {
     if (!Array.isArray(matchup.sourceUrls) || matchup.sourceUrls.length !== 2 || !matchup.sourceUrls.every((url) => {
       try { const parsed = new URL(url); return parsed.protocol === "https:" && ["overfast-api.tekrop.fr", "overwatch.blizzard.com"].includes(parsed.hostname); } catch { return false; }
     })) errors.push(`기술 상성 출처 오류: ${matchup.id}`);
+    if (matchup.reviewSources && (!Array.isArray(matchup.reviewSources) || !matchup.reviewSources.every(source => {
+      try { return typeof source.label === "string" && source.label.trim() && new URL(source.url).protocol === "https:"; } catch { return false; }
+    }))) errors.push(`상성 추가 검토 출처 오류: ${matchup.id}`);
   }
 }
 
