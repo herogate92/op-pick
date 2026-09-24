@@ -687,25 +687,35 @@
     "hero": "brigitte",
     "counter": "ramattra",
     "score": 4,
-    "reason": "응징의 관통 효과와 방벽 방패의 구체적인 상호작용은 최신 판정을 확인할 필요가 있습니다.",
-    "condition": "방벽 피해와 본체 피해를 분리해 기록해야 하며 방벽 크기만으로 결론을 내리지 않습니다.",
-    "reviewedAt": "2026-09-21",
+    "reason": "2024-10-29 공식 패치에는 응징의 방벽 관통 복원이 명시되어 있고 현재 공개 기술 데이터도 관통 에너지를 설명합니다. 다만 이 기록만으로 현재 패치의 방벽 방패·집결 상태별 피해 판정을 재현 검증한 것은 아닙니다.",
+    "condition": "네메시스 응징 사거리 안에서 일반 방벽 방패와 집결 중 방벽을 나눠 본체·방벽 피해를 확인해야 합니다. 과거의 방벽 추가 피해 변경과 관통 복원을 혼동하지 마세요.",
+    "reviewedAt": "2026-09-24",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "patchBasis": "2026-09-24 공개 자료 재검토 · 과거 패치/이용자 보고와 현재 판정을 구분 · 게임 내 재현 미실시",
     "counterplay": "네메시스 정면에 방벽을 들고 오래 서 있지 말고 도리깨 투척과 엄폐로 근접 교전 시간을 줄이세요.",
     "skillInteractions": [
       {
         "heroAbility": "방벽 방패",
         "counterAbility": "응징 (네메시스 형태)",
-        "interaction": "응징의 관통 효과와 방벽 방패의 구체적인 상호작용은 최신 판정을 확인할 필요가 있습니다.",
-        "condition": "방벽 피해와 본체 피해를 분리해 기록해야 하며 방벽 크기만으로 결론을 내리지 않습니다.",
+        "interaction": "2024-10-29 공식 패치에는 응징의 방벽 관통 복원이 명시되어 있고 현재 공개 기술 데이터도 관통 에너지를 설명합니다. 다만 이 기록만으로 현재 패치의 방벽 방패·집결 상태별 피해 판정을 재현 검증한 것은 아닙니다.",
+        "condition": "네메시스 응징 사거리 안에서 일반 방벽 방패와 집결 중 방벽을 나눠 본체·방벽 피해를 확인해야 합니다. 과거의 방벽 추가 피해 변경과 관통 복원을 혼동하지 마세요.",
         "counterplay": "네메시스 정면에 방벽을 들고 오래 서 있지 말고 도리깨 투척과 엄폐로 근접 교전 시간을 줄이세요."
       }
     ],
     "sourceUrls": [
       "https://overwatch.blizzard.com/en-us/heroes/brigitte/",
       "https://overwatch.blizzard.com/en-us/heroes/ramattra/"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-gb/news/patch-notes/live/2024/10/",
+        "label": "2024-10-29 공식 패치 · 방벽 관통 복원"
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/heroes/ramattra?locale=en-us",
+        "label": "현재 공개 기술 설명 · OverFast"
+      }
     ]
   },
   {
@@ -2344,25 +2354,31 @@
     "hero": "jetpack-cat",
     "counter": "sombra",
     "score": 4,
-    "reason": "해킹이 제트팩 캣의 비행과 가속을 각각 얼마나 제한하는지 확인이 필요합니다.",
-    "condition": "기본 체공·활성 가속·운반 중 상태를 분리한 사례가 필요합니다.",
-    "reviewedAt": "2026-09-21",
+    "reason": "2026년 2월 이용자 보고에는 해킹 후 기본 체공은 유지되고 가속·견인이 제한된다는 설명이 있습니다. 같은 토론에 고도 변화에 대한 이견도 있어 기본 체공·가속·운반을 한 가지 비행 취소로 묶어 단정하지 않습니다.",
+    "condition": "현재 패치에서 정지 체공·정신 없는 비행·아군 운반을 각각 해킹하고 고도 변화, 가속 중단, 생명줄 해제 여부를 별도로 확인해야 합니다.",
+    "reviewedAt": "2026-09-24",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "patchBasis": "2026-09-24 공개 자료 재검토 · 과거 패치/이용자 보고와 현재 판정을 구분 · 게임 내 재현 미실시",
     "counterplay": "해킹 시야를 엄폐로 끊고 해킹당하면 즉시 추락한다고 단정하지 마세요.",
     "skillInteractions": [
       {
         "heroAbility": "정신 없는 비행",
         "counterAbility": "해킹",
-        "interaction": "해킹이 제트팩 캣의 비행과 가속을 각각 얼마나 제한하는지 확인이 필요합니다.",
-        "condition": "기본 체공·활성 가속·운반 중 상태를 분리한 사례가 필요합니다.",
+        "interaction": "2026년 2월 이용자 보고에는 해킹 후 기본 체공은 유지되고 가속·견인이 제한된다는 설명이 있습니다. 같은 토론에 고도 변화에 대한 이견도 있어 기본 체공·가속·운반을 한 가지 비행 취소로 묶어 단정하지 않습니다.",
+        "condition": "현재 패치에서 정지 체공·정신 없는 비행·아군 운반을 각각 해킹하고 고도 변화, 가속 중단, 생명줄 해제 여부를 별도로 확인해야 합니다.",
         "counterplay": "해킹 시야를 엄폐로 끊고 해킹당하면 즉시 추락한다고 단정하지 마세요."
       }
     ],
     "sourceUrls": [
       "https://overwatch.blizzard.com/en-us/heroes/jetpack-cat/",
       "https://overwatch.blizzard.com/en-us/heroes/sombra/"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://www.reddit.com/r/SombraMains/comments/1r2mhnl/jetpack_cat_flight_doesnt_get_canceled_by_hack/",
+        "label": "과거 이용자 보고 · 해킹 후 체공·가속·견인 논의"
+      }
     ]
   },
   {
@@ -5262,25 +5278,31 @@
     "hero": "vendetta",
     "counter": "roadhog",
     "score": 4,
-    "reason": "수호 태세가 갈고리에 보이는 정확한 방어 판정은 공개 소개만으로 확인되지 않습니다.",
-    "condition": "태세 전개 방향·갈고리 적중·끌어오기 결과를 분리해 확인해야 합니다.",
-    "reviewedAt": "2026-09-21",
+    "reason": "2025년 11월 공개 이용자 보고는 수호 태세 중에도 사슬 갈고리에 끌려간다고 설명합니다. 공식 설명의 전방 피해 감소·근접 공격 방어를 모든 군중 제어 면역으로 해석할 수 없으며, 과거 보고만으로 최신 판정을 확정하지 않습니다.",
+    "condition": "현재 패치에서 태세를 먼저 켠 정면 피격과 태세가 없는 피격을 비교하고, 갈고리 피해·끌어오기·태세 중단을 따로 확인해야 합니다.",
+    "reviewedAt": "2026-09-24",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
+    "patchBasis": "2026-09-24 공개 자료 재검토 · 과거 패치/이용자 보고와 현재 판정을 구분 · 게임 내 재현 미실시",
     "counterplay": "태세가 갈고리를 막는다고 가정하지 말고 엄폐로 갈고리 사선을 끊으세요.",
     "skillInteractions": [
       {
         "heroAbility": "수호 태세",
         "counterAbility": "사슬 갈고리",
-        "interaction": "수호 태세가 갈고리에 보이는 정확한 방어 판정은 공개 소개만으로 확인되지 않습니다.",
-        "condition": "태세 전개 방향·갈고리 적중·끌어오기 결과를 분리해 확인해야 합니다.",
+        "interaction": "2025년 11월 공개 이용자 보고는 수호 태세 중에도 사슬 갈고리에 끌려간다고 설명합니다. 공식 설명의 전방 피해 감소·근접 공격 방어를 모든 군중 제어 면역으로 해석할 수 없으며, 과거 보고만으로 최신 판정을 확정하지 않습니다.",
+        "condition": "현재 패치에서 태세를 먼저 켠 정면 피격과 태세가 없는 피격을 비교하고, 갈고리 피해·끌어오기·태세 중단을 따로 확인해야 합니다.",
         "counterplay": "태세가 갈고리를 막는다고 가정하지 말고 엄폐로 갈고리 사선을 끊으세요."
       }
     ],
     "sourceUrls": [
       "https://overwatch.blizzard.com/en-us/heroes/vendetta/",
       "https://overwatch.blizzard.com/en-us/heroes/roadhog/"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://www.reddit.com/r/Overwatch/comments/1p85nq2/vendettas_warding_stance_will_not_save_you_from/",
+        "label": "2025년 11월 이용자 보고 · 태세와 갈고리"
+      }
     ]
   },
   {
