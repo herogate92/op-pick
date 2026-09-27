@@ -3,7 +3,7 @@
 import { useId, useRef, useState } from "react";
 import { Search, X } from "lucide-react";
 import type { Role } from "@/lib/data";
-import { roleLabels } from "@/lib/data";
+import { roleLabels } from "@/lib/labels";
 import { heroSearchTerms } from "@/lib/combo-search";
 
 export type PickerHero = { key: string; name: string; role: Role; portrait: string };

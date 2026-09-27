@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { HeroStage } from "@/components/HeroStage";
+import { SiteHeader } from "@/components/SiteHeader";
 import { combos, heroes, matchups } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -12,5 +13,7 @@ export default function HeroesPage() {
   const summary = heroes.map(({ key, name, role, subrole, portrait, background, description, abilities, perks, hitpoints, hitpointsNotice, patchNote }) => ({
     key, name, role, subrole, portrait, background, description, abilities, perks, hitpoints, hitpointsNotice, patchNote,
   }));
-  return <HeroStage heroes={summary} matchups={matchups} combos={combos} />;
+  const stageMatchups = matchups.map(({ id, hero, counter, score, reason, status }) => ({ id, hero, counter, score, reason, status }));
+  const stageCombos = combos.map(({ id, name, heroes, score }) => ({ id, name, heroes, score }));
+  return <HeroStage header={<SiteHeader active="heroes" />} heroes={summary} matchups={stageMatchups} combos={stageCombos} />;
 }

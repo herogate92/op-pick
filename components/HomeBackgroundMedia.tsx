@@ -1,23 +1,15 @@
 "use client";
 
 import { Pause, Play } from "lucide-react";
-import { useState, useSyncExternalStore } from "react";
-
-const motionQuery = "(min-width: 761px) and (prefers-reduced-motion: no-preference)";
-function subscribeMotion(callback: () => void) {
-  const query = window.matchMedia(motionQuery);
-  query.addEventListener("change", callback);
-  return () => query.removeEventListener("change", callback);
-}
-const getMotionSnapshot = () => window.matchMedia(motionQuery).matches;
-const getServerSnapshot = () => false;
+import { useState } from "react";
+import { useBackgroundVideoAllowed } from "@/lib/use-background-video";
 
 const VIDEO_ID = "5-CS8C2VBWM";
 const VIDEO_URL = `https://www.youtube-nocookie.com/embed/${VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${VIDEO_ID}&controls=0&disablekb=1&fs=0&iv_load_policy=3&playsinline=1&rel=0&modestbranding=1&cc_load_policy=0`;
 
 export function HomeBackgroundMedia({ poster }: { poster?: string }) {
   const [isPlaying, setIsPlaying] = useState(true);
-  const allowVideo = useSyncExternalStore(subscribeMotion, getMotionSnapshot, getServerSnapshot);
+  const allowVideo = useBackgroundVideoAllowed();
 
   return (
     <>

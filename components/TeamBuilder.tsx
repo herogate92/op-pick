@@ -6,7 +6,7 @@ import { heroSearchTerms } from "@/lib/combo-search";
 import { decodeTeam, encodeTeam, TEAM_SAVE_KEY, type SharedTeam } from "@/lib/team-share";
 import { AlertTriangle, Info, Check, ChevronRight, Cross, RotateCcw, Shield, Sparkles, Swords, UsersRound, WandSparkles, X } from "lucide-react";
 import type { Combo, MapGuide, Role, TeamCaution, TeamSynergy } from "@/lib/data";
-import { roleLabels, subroleLabels } from "@/lib/data";
+import { roleLabels, subroleLabels } from "@/lib/labels";
 
 import { assessTeam, fixedSlots, roleOrder, rankCandidates, getIssues, selectionBlockReason, type BuilderHero, type Mode, type Team } from "@/lib/team-builder";
 

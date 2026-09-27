@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BarChart3, Cross, ExternalLink, Search, Shield, Swords, Trophy } from "lucide-react";
-import type { Hero, HeroRateSnapshot, Role } from "@/lib/data";
+import type { HeroCard, HeroRateSnapshot, Role } from "@/lib/data";
 import { summarizeRates } from "@/lib/stats-summary";
 import { rateDelta, type StatsComparison } from "@/lib/stats-history";
 import { StatsCandidates } from "@/components/StatsCandidates";
@@ -16,7 +16,7 @@ const roleIcons = { all: BarChart3, tank: Shield, damage: Swords, support: Cross
 const metricLabels: Record<SortKey, string> = { winRate: "승률", pickRate: "픽률", banRate: "밴률" };
 const formatRate = (value: number | null) => value === null ? "--" : `${value.toFixed(1)}%`;
 
-export function StatsExplorer({ snapshots, heroes, fetchedAt, comparisons }: { snapshots: HeroRateSnapshot[]; heroes: Hero[]; fetchedAt: string; comparisons: StatsComparison[] }) {
+export function StatsExplorer({ snapshots, heroes, fetchedAt, comparisons }: { snapshots: HeroRateSnapshot[]; heroes: HeroCard[]; fetchedAt: string; comparisons: StatsComparison[] }) {
   const [comparisonMode, setComparisonMode] = useState<"previous" | "priorPatch">("previous");
   const [snapshotId, setSnapshotId] = useState(snapshots[0]?.id ?? "");
   const [role, setRole] = useState<"all" | Role>("all");
