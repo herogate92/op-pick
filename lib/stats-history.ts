@@ -67,3 +67,15 @@ export function getComparisons(current: HeroRatesDocument, history: StatsHistory
 export function rateDelta(current: number | null | undefined, previous: number | null | undefined) {
   return current == null || previous == null ? null : Math.round((current - previous) * 10) / 10;
 }
+
+// Latest collection taken before a patch went live: its detected patch is older, or, when no patch was
+// recorded, it was collected on an earlier day. Collection windows are the provider's, not patch-only games.
+export function findPrePatchBaseline(history: StatsHistory, snapshot: HeroRateSnapshot, patchDate: string): StatsBaseline | null {
+  for (const entry of [...history.entries].reverse()) {
+    const before = entry.patch ? entry.patch.patchDate < patchDate : entry.fetchedAtIso.slice(0, 10) < patchDate;
+    if (!before) continue;
+    const baseline = entry.snapshots.find(item => conditionKey(item) === conditionKey(snapshot));
+    if (baseline) return { collectedAt: entry.fetchedAtIso, patchDate: entry.patch?.patchDate ?? null, snapshot: baseline };
+  }
+  return null;
+}

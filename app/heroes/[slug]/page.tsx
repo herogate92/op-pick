@@ -13,6 +13,7 @@ import { ScoreMeter } from "@/components/ScoreMeter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getCombosFor, getCountersFor, getHero, getStrongAgainst, hasDetailedMatchupData, heroes, roleAccent, roleLabels, subroleLabels } from "@/lib/data";
 import { getHeroVideo } from "@/lib/hero-videos";
+import { getPatchSummary, patchDateLabel } from "@/lib/patches";
 
 export function generateStaticParams() { return heroes.map((hero) => ({ slug: hero.key })); }
 
@@ -39,8 +40,9 @@ export default async function HeroDetailPage({ params }: { params: Promise<{ slu
   const { slug } = await params;
   const hero = getHero(slug);
   if (!hero) notFound();
-  const counters = getCountersFor(hero.key);
-  const strongAgainst = getStrongAgainst(hero.key);
+  const byScore = (a: { score: number }, b: { score: number }) => b.score - a.score;
+  const counters = getCountersFor(hero.key).sort(byScore);
+  const strongAgainst = getStrongAgainst(hero.key).sort(byScore);
   const heroCombos = getCombosFor(hero.key);
   const heroVideo = getHeroVideo(hero.key);
   const directBackgroundVideo = heroVideo ? undefined : hero.abilities.find((ability) => ability.video)?.video;
@@ -103,7 +105,7 @@ export default async function HeroDetailPage({ params }: { params: Promise<{ slu
         <div className="page-content">
           <HeroStatistics heroKey={hero.key} heroName={hero.name} rates={heroRates} />
           {hero.hitpointsNotice && <p className="seo-guide-note">{hero.hitpointsNotice}</p>}
-          {hero.patchNote && <p className="seo-guide-note">{hero.patchNote.summary} <a href={hero.patchNote.sourceUrl} target="_blank" rel="noreferrer">공식 패치 {hero.patchNote.date}</a></p>}
+          {hero.patchNote && <p className="seo-guide-note">{hero.patchNote.summary} <a href={hero.patchNote.sourceUrl} target="_blank" rel="noreferrer">공식 패치 {hero.patchNote.date}</a>{getPatchSummary(hero.patchNote.date) && <> · <Link href={`/patches/${hero.patchNote.date}/`}>{patchDateLabel(hero.patchNote.date).short} 패치 정리</Link></>}</p>}
           <section className="content-section">
             <div className="section-heading"><span className="section-kicker">01 · ABILITIES</span><h2>기술</h2><p>기술 설명 확인 {hero.abilitiesCheckedAt ?? hero.checkedAt}. 세부 수치는 표시된 모드·패치 기준이며, 출처가 확인된 항목부터 제공합니다.</p></div>
             {hero.abilities.length ? <div className="ability-grid">{hero.abilities.map((ability) => <article key={ability.name} className={`ability-card${ability.video ? " has-media" : ""}`}>{/* eslint-disable-next-line @next/next/no-img-element */}<img className="ability-icon" src={ability.icon} alt="" /><div><h3>{ability.name}</h3><p>{ability.description}</p><AbilityStats ability={ability} /></div>{ability.video && <video className="ability-demo" controls muted playsInline preload="metadata" poster={ability.video.thumbnail} aria-label={`${hero.name} ${ability.name} 기술 시연`}><source src={ability.video.webm} type="video/webm" /><source src={ability.video.mp4} type="video/mp4" /></video>}</article>)}</div> : <ReviewPending />}
@@ -158,5 +160,8 @@ function PerkGroup({ title, items }: { title: string; items: { name: string; des
 }
 
 function MatchupGroup({ title, icon, items }: { title: string; icon: React.ReactNode; items: { matchup: ReturnType<typeof getCountersFor>[number]; hero: NonNullable<ReturnType<typeof getHero>> }[] }) {
-  return <div className="matchup-group"><h3>{icon}{title}</h3>{items.length ? items.slice(0, 5).map(({ matchup, hero }) => <article key={matchup.id} className="matchup-row"><HeroMiniCard hero={hero} suffix={<ScoreMeter value={matchup.score} />} /><p>{matchup.reason}</p><small>{matchup.condition}</small>{hasDetailedMatchupData(matchup) && <Link className="text-link matchup-detail-link" href={`/matchups/${matchup.hero}-vs-${matchup.counter}/`}>상성 상세 분석</Link>}</article>) : <ReviewPending text="등록된 상성 정보가 아직 없습니다." />}</div>;
+  const rest = items.slice(5).filter(({ matchup }) => hasDetailedMatchupData(matchup));
+  return <div className="matchup-group"><h3>{icon}{title}</h3>{items.length ? items.slice(0, 5).map(({ matchup, hero }) => <article key={matchup.id} className="matchup-row"><HeroMiniCard hero={hero} suffix={<ScoreMeter value={matchup.score} />} /><p>{matchup.reason}</p><small>{matchup.condition}</small>{hasDetailedMatchupData(matchup) && <Link className="text-link matchup-detail-link" href={`/matchups/${matchup.hero}-vs-${matchup.counter}/`}>상성 상세 분석</Link>}</article>) : <ReviewPending text="등록된 상성 정보가 아직 없습니다." />}
+    {rest.length > 0 && <div className="matchup-more"><p>나머지 {rest.length}명 · 상성 강도 순 상세 분석</p><ul>{rest.map(({ matchup, hero }) => <li key={matchup.id}><Link prefetch={false} href={`/matchups/${matchup.hero}-vs-${matchup.counter}/`}>{hero.name}</Link></li>)}</ul></div>}
+  </div>;
 }

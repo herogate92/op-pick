@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { detailedMatchups, heroes, maps } from "@/lib/data";
+import { patchesLastReviewedAt, patchSummaries } from "@/lib/patches";
 
 export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -14,6 +15,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/combos/`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/team-builder/`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/sources/`, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${base}/patches/`, lastModified: patchesLastReviewedAt, changeFrequency: "weekly", priority: 0.8 },
+    ...patchSummaries.map((patch) => ({ url: `${base}/patches/${patch.date}/`, lastModified: patch.lastReviewedAt ?? patch.date, changeFrequency: "monthly" as const, priority: 0.7 })),
     ...heroes.map((hero) => ({ url: `${base}/heroes/${hero.key}/`, lastModified: hero.checkedAt, changeFrequency: "monthly" as const, priority: 0.7 })),
     ...maps.map((map) => ({ url: `${base}/maps/${map.id}/`, lastModified: map.reviewedAt, changeFrequency: "weekly" as const, priority: 0.7 })),
     ...detailedMatchups.map((matchup) => ({ url: `${base}/matchups/${matchup.hero}-vs-${matchup.counter}/`, lastModified: matchup.reviewedAt, changeFrequency: "monthly" as const, priority: 0.7 })),
