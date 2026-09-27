@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
-import type { Hero, HeroRateSnapshot } from "@/lib/data";
+import type { HeroCard, HeroRateSnapshot } from "@/lib/data";
 import { StatsCandidates } from "@/components/StatsCandidates";
 
-export function MapStatistics({ snapshots, heroes, fetchedAt, mapName }: { snapshots: HeroRateSnapshot[]; heroes: Hero[]; fetchedAt: string; mapName: string }) {
+export function MapStatistics({ snapshots, heroes, fetchedAt, mapName }: { snapshots: HeroRateSnapshot[]; heroes: HeroCard[]; fetchedAt: string; mapName: string }) {
   const [selectedId, setSelectedId] = useState(snapshots[0]?.id);
   const snapshot = snapshots.find(item => item.id === selectedId) ?? snapshots[0];
   if (!snapshot) return <p className="seo-guide-note">이 전장의 통계 자료가 아직 없습니다.</p>;

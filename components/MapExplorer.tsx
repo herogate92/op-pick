@@ -15,7 +15,7 @@ import {
   Target,
   Truck,
 } from "lucide-react";
-import type { Hero, MapGuide, Role } from "@/lib/data";
+import type { HeroCard, MapGuide, Role } from "@/lib/data";
 
 type PublicMapGuide = MapGuide;
 
@@ -33,7 +33,7 @@ const modeIcons = {
 
 const getMapImage = (id: string) => `/maps/${id}.webp`;
 
-export function MapExplorer({ maps, heroes }: { maps: PublicMapGuide[]; heroes: Hero[] }) {
+export function MapExplorer({ maps, heroes }: { maps: PublicMapGuide[]; heroes: HeroCard[] }) {
   const [mode, setMode] = useState("전체");
   const visibleMaps = useMemo(() => mode === "전체" ? maps : maps.filter((map) => map.mode === mode), [maps, mode]);
   const [selectedId, setSelectedId] = useState(maps[0]?.id ?? "");

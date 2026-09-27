@@ -16,17 +16,22 @@ import { getHeroVideo } from "@/lib/hero-videos";
 
 export function generateStaticParams() { return heroes.map((hero) => ({ slug: hero.key })); }
 
+// Worded after what players search for ("오버워치 겐지 카운터").
+const heroPageTitle = (name: string) => `오버워치 ${name} 카운터·상성·조합`;
+const heroPageDescription = (name: string) => `오버워치 ${name}의 카운터 픽과 상대하기 유리한 영웅, 기술·특전, 추천 조합을 확인하세요.`;
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const hero = getHero(slug);
   if (!hero) return {};
-  const description = `${hero.name}의 기술, 특전, 카운터 픽과 추천 조합을 확인하세요.`;
+  const title = heroPageTitle(hero.name);
+  const description = heroPageDescription(hero.name);
   return {
-    title: `${hero.name} 정보와 상성`,
+    title,
     description,
     alternates: { canonical: `/heroes/${hero.key}/` },
-    openGraph: { title: `${hero.name} 정보와 상성`, description, url: `/heroes/${hero.key}/`, images: hero.portrait ? [{ url: hero.portrait }] : [] },
-    twitter: { card: "summary", title: `${hero.name} 정보와 상성`, description, images: hero.portrait ? [hero.portrait] : [] },
+    openGraph: { title, description, url: `/heroes/${hero.key}/`, images: hero.portrait ? [{ url: hero.portrait }] : [] },
+    twitter: { card: "summary", title, description, images: hero.portrait ? [hero.portrait] : [] },
   };
 }
 
@@ -45,8 +50,8 @@ export default async function HeroDetailPage({ params }: { params: Promise<{ slu
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      name: `${hero.name} 정보와 상성`,
-      description: `${hero.name}의 기술, 특전, 카운터 픽과 추천 조합을 확인하세요.`,
+      name: heroPageTitle(hero.name),
+      description: heroPageDescription(hero.name),
       url: pageUrl,
       inLanguage: "ko-KR",
       dateModified: hero.checkedAt,

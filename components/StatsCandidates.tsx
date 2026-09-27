@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
-import type { Hero, HeroRateSnapshot } from "@/lib/data";
+import type { HeroCard, HeroRateSnapshot } from "@/lib/data";
 import { statsTier } from "@/lib/stats-tier";
 
-export function StatsCandidates({snapshot,heroes}:{snapshot:HeroRateSnapshot;heroes:Hero[]}) {
+export function StatsCandidates({snapshot,heroes}:{snapshot:HeroRateSnapshot;heroes:HeroCard[]}) {
   const [selected,setSelected]=useState<string[]>([]);
   const [role,setRole]=useState("tank");
   const [query,setQuery]=useState("");

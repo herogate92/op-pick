@@ -1,3 +1,4 @@
+import "server-only";
 import heroesJson from "@/data/heroes.json";
 import matchupsJson from "@/data/matchups.json";
 import combosJson from "@/data/combos.json";
@@ -84,12 +85,11 @@ export const teamSynergies = synergyRecords.filter((item): item is TeamSynergy =
 export const heldTeamSynergies = synergyRecords.filter((item): item is HeldTeamSynergy => item.status === "held");
 export const teamCautions = teamCautionsJson as TeamCaution[];
 export const heroRates = heroRatesJson as HeroRatesDocument;
-export const roleLabels: Record<Role, string> = { tank: "돌격", damage: "공격", support: "지원" };
-export const subroleLabels: Record<string, string> = {
-  stalwart: "강건한 자", initiator: "개시자", bruiser: "투사", sharpshooter: "명사수", recon: "수색가",
-  specialist: "전문가", flanker: "측면 공격가", survivor: "생존왕", medic: "의무관", tactician: "전술가",
-};
-export const roleAccent: Record<Role, string> = { tank: "#5fd4ff", damage: "#ff7153", support: "#5af0bd" };
+export { roleAccent, roleLabels, subroleLabels } from "./labels";
+
+// Client lists get only these fields; whole heroes would serialize stories and abilities into each page.
+export type HeroCard = Pick<Hero, "key" | "name" | "role" | "portrait" | "releaseStatus">;
+export const heroCards: HeroCard[] = heroes.map(({ key, name, role, portrait, releaseStatus }) => ({ key, name, role, portrait, releaseStatus }));
 export function getHero(key: string) { return heroes.find((hero) => hero.key === key); }
 export function getCountersFor(key: string) { return matchups.filter((matchup) => matchup.hero === key && matchup.status === "verified"); }
 export function getStrongAgainst(key: string) { return matchups.filter((matchup) => matchup.counter === key && matchup.status === "verified"); }

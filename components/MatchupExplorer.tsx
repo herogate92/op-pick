@@ -3,16 +3,25 @@
 import { useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { ArrowLeftRight, CheckCircle2, HelpCircle, ShieldAlert } from "lucide-react";
-import type { Hero, Matchup } from "@/lib/data";
-import { roleLabels } from "@/lib/data";
+import type { HeroCard, Matchup } from "@/lib/data";
+import { roleLabels } from "@/lib/labels";
 import { ScoreMeter } from "./ScoreMeter";
 import { MatchupSkillExamples } from "./MatchupSkillExamples";
 
 import { HeroPicker } from "./HeroPicker";
 
-export function MatchupExplorer({ heroes, matchups }: { heroes: Hero[]; matchups: Matchup[] }) {
-  const initialHero = useSearchParams().get("hero") ?? undefined;
-  const initialOpponent = useSearchParams().get("opponent") ?? undefined;
+type MatchupExplorerProps = { heroes: HeroCard[]; matchups: Matchup[] };
+
+// Reading the URL suspends prerendering, so the page renders <MatchupExplorer> as the Suspense fallback
+// to keep a real comparison in the static HTML, then this replaces it with the ?hero=&opponent= pair.
+export function MatchupExplorerFromUrl(props: MatchupExplorerProps) {
+  const params = useSearchParams();
+  const initialHero = params.get("hero") ?? undefined;
+  const initialOpponent = params.get("opponent") ?? undefined;
+  return <MatchupExplorer key={`${initialHero}-${initialOpponent}`} {...props} initialHero={initialHero} initialOpponent={initialOpponent} />;
+}
+
+export function MatchupExplorer({ heroes, matchups, initialHero, initialOpponent }: MatchupExplorerProps & { initialHero?: string; initialOpponent?: string }) {
   const firstKey = heroes.some((hero) => hero.key === initialHero) ? initialHero! : "ana";
   const firstCounter = heroes.some((hero) => hero.key === initialOpponent)
     ? initialOpponent!

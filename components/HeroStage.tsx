@@ -4,9 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ChevronRight, Cross, HeartPulse, Search, Shield, Sparkles, Swords, X, Zap } from "lucide-react";
 import { AbilityStats } from "@/components/AbilityStats";
-import { SiteHeader } from "@/components/SiteHeader";
 import type { Ability, Combo, Matchup, Role } from "@/lib/data";
-import { roleAccent, roleLabels, subroleLabels } from "@/lib/data";
+import { roleAccent, roleLabels, subroleLabels } from "@/lib/labels";
 
 interface HeroSummary {
   hitpointsNotice?: string; patchNote?: Ability["patchNote"];
@@ -22,7 +21,11 @@ const heroRosterOrder: Record<Role, string[]> = {
   support: ["lifeweaver", "lucio", "mercy", "moira", "mizuki", "baptiste", "brigitte", "ana", "wuyang", "illari", "jetpack-cat", "zenyatta", "juno", "kiriko"],
 };
 
-export function HeroStage({ heroes, matchups, combos }: { heroes: HeroSummary[]; matchups: Matchup[]; combos: Combo[] }) {
+type StageMatchup = Pick<Matchup, "id" | "hero" | "counter" | "score" | "reason" | "status">;
+type StageCombo = Pick<Combo, "id" | "name" | "heroes" | "score">;
+
+// The header arrives prerendered from the page so it and the data it reads stay out of the client bundle.
+export function HeroStage({ header, heroes, matchups, combos }: { header: React.ReactNode; heroes: HeroSummary[]; matchups: StageMatchup[]; combos: StageCombo[] }) {
   const [selected, setSelected] = useState<number | null>(null);
   const [query, setQuery] = useState("");
   const [searchOpen, setSearchOpen] = useState(false);
@@ -75,7 +78,7 @@ export function HeroStage({ heroes, matchups, combos }: { heroes: HeroSummary[];
     <main className={hero ? "hero-shell" : "hero-shell no-hero-selected"} style={{ "--hero-accent": hero ? roleAccent[hero.role] : "#08dcf3" } as React.CSSProperties}>
       <div className="hero-backdrop" style={hero?.background ? { backgroundImage: `url(${hero.background})` } : undefined} />
       <div className="hero-vignette" />
-      <SiteHeader active="heroes" />
+      {header}
       <div className="mobile-hero-switcher">
         <strong>{hero ? hero.name : "영웅을 선택하세요"}</strong>
         <button type="button" disabled={!hero} aria-expanded={pickerOpen} aria-controls="hero-picker" onClick={() => {
@@ -121,18 +124,26 @@ export function HeroStage({ heroes, matchups, combos }: { heroes: HeroSummary[];
                   {groupHeroes.map((item) => {
                     const index = heroes.findIndex((candidate) => candidate.key === item.key);
                     const isSelected = selected === index;
+                    // A real link lets crawlers reach every hero page; a plain click still selects in place.
                     return (
-                      <button
+                      <Link
                         key={item.key}
+                        href={`/heroes/${item.key}/`}
+                        prefetch={false}
                         className={isSelected ? "hero-thumb selected" : "hero-thumb"}
-                        onClick={() => selectHero(item.key)}
-                        aria-pressed={isSelected}
+                        onClick={(event) => {
+                          if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+                          event.preventDefault();
+                          selectHero(item.key);
+                        }}
+                        onKeyDown={(event) => { if (event.key === " ") { event.preventDefault(); selectHero(item.key); } }}
+                        aria-current={isSelected ? "true" : undefined}
                         aria-label={`${item.name} 선택`}
                         title={item.name}
                       >
                         {/* eslint-disable-next-line @next/next/no-img-element */}<img src={item.portrait} alt="" />
                         <span>{item.name}</span>
-                      </button>
+                      </Link>
                     );
                   })}
                 </div>
@@ -304,7 +315,7 @@ function SkillPerk({ perk }: { perk: Ability }) {
   );
 }
 
-function QuickMatchupColumn({ title, items, opponentKey, heroes }: { title: string; items: Matchup[]; opponentKey: "hero" | "counter"; heroes: HeroSummary[] }) {
+function QuickMatchupColumn({ title, items, opponentKey, heroes }: { title: string; items: StageMatchup[]; opponentKey: "hero" | "counter"; heroes: HeroSummary[] }) {
   return (
     <div className="matchup-quick-group">
       <h3>{title}</h3>

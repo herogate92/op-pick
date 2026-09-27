@@ -5,7 +5,7 @@ import { ArrowLeft, CalendarDays, MapPinned } from "lucide-react";
 import { AdSlot } from "@/components/AdSlot";
 import { JsonLd } from "@/components/JsonLd";
 import { SiteHeader } from "@/components/SiteHeader";
-import { getHero, maps, heroes, heroRates, roleLabels, type Role } from "@/lib/data";
+import { getHero, heroCards, heroRates, maps, roleLabels, type Role } from "@/lib/data";
 import { MapStatistics } from "@/components/MapStatistics";
 
 export function generateStaticParams() {
@@ -18,10 +18,10 @@ export async function generateMetadata({ params }: { params: Promise<{ map: stri
   if (!map) return {};
   const description = `${map.name} ${map.mode} 전장에서 추천하는 오버워치 영웅과 역할별 우선순위를 확인하세요.`;
   return {
-    title: `${map.name} 추천 영웅`,
+    title: `오버워치 ${map.name} 추천 영웅`,
     description,
     alternates: { canonical: `/maps/${map.id}/` },
-    openGraph: { title: `${map.name} 추천 영웅`, description, url: `/maps/${map.id}/` },
+    openGraph: { title: `오버워치 ${map.name} 추천 영웅`, description, url: `/maps/${map.id}/` },
   };
 }
 
@@ -33,7 +33,7 @@ export default async function MapDetailPage({ params }: { params: Promise<{ map:
   const statistics = heroRates.snapshots.filter(item => item.filters.map === map.id && item.gameMode === "competitive" && item.filters.tier === "All");
   const jsonLd = [
     {
-      "@context": "https://schema.org", "@type": "WebPage", name: `${map.name} 추천 영웅`,
+      "@context": "https://schema.org", "@type": "WebPage", name: `오버워치 ${map.name} 추천 영웅`,
       description: `${map.name} ${map.mode} 전장의 역할별 추천 영웅 가이드`, url: pageUrl,
       inLanguage: "ko-KR", dateModified: map.reviewedAt,
       isPartOf: { "@type": "WebSite", name: "OP PICK LAB", url: "https://opick.ggwp.kr/" },
@@ -65,7 +65,7 @@ export default async function MapDetailPage({ params }: { params: Promise<{ map:
             <Link href="/maps/"><ArrowLeft aria-hidden="true" />전체 맵 선택</Link>
           </section>
           <p className="seo-guide-note">전장 특징: {map.terrain}<br />{map.layoutCaveat}</p>
-          <MapStatistics snapshots={statistics} heroes={heroes} fetchedAt={heroRates.fetchedAt} mapName={map.name}/>
+          <MapStatistics snapshots={statistics} heroes={heroCards} fetchedAt={heroRates.fetchedAt} mapName={map.name}/>
           {(["tank", "damage", "support"] as Role[]).map((role) => {
             const recommendations = map.recommendations.filter((item) => getHero(item.hero)?.role === role);
             if (!recommendations.length) return null;

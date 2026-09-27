@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ pair: str
   if (!matchup) return {};
   const hero = getHero(matchup.hero)!;
   const counter = getHero(matchup.counter)!;
-  const title = `${hero.name} 카운터: ${counter.name} 상성 분석`;
+  const title = `오버워치 ${hero.name} 카운터: ${counter.name} 상성 분석`;
   const description = `${counter.name}이(가) ${hero.name}을(를) 상대하기 유리한 이유와 실제 운영 조건을 확인하세요.`;
   return {
     title, description, alternates: { canonical: `/matchups/${pair}/` },
@@ -38,7 +38,7 @@ export default async function MatchupDetailPage({ params }: { params: Promise<{ 
   const jsonLd = [
     {
       "@context": "https://schema.org", "@type": "WebPage",
-      name: `${hero.name} 카운터: ${counter.name} 상성 분석`, description: matchup.reason,
+      name: `오버워치 ${hero.name} 카운터: ${counter.name} 상성 분석`, description: matchup.reason,
       url: pageUrl, inLanguage: "ko-KR", dateModified: matchup.reviewedAt,
       isPartOf: { "@type": "WebSite", name: "OP PICK LAB", url: "https://opick.ggwp.kr/" },
     },

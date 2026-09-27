@@ -5,7 +5,7 @@ import { TeamBuilder } from "@/components/TeamBuilder";
 import { combos, heroes, maps, teamCautions, teamSynergies } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "팀 조합 연구소",
+  title: "오버워치 팀 조합 짜기·픽 추천",
   description: "5대5 역할 고정과 돌격 최대 2명의 6대6 구성으로 아군 영웅을 조합하고 역할 균형과 궁극기 연계를 확인합니다.",
   alternates: { canonical: "/team-builder/" },
 };

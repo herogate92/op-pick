@@ -2,6 +2,7 @@
 
 import { Pause, Play } from "lucide-react";
 import { useState } from "react";
+import { useBackgroundVideoAllowed } from "@/lib/use-background-video";
 
 export function HeroBackgroundMedia({
   videoId,
@@ -14,8 +15,9 @@ export function HeroBackgroundMedia({
   poster?: string;
   heroName: string;
 }) {
-  const hasVideo = Boolean(videoId || directVideo?.mp4 || directVideo?.webm);
-  const [isPlaying, setIsPlaying] = useState(hasVideo);
+  const allowVideo = useBackgroundVideoAllowed();
+  const hasVideo = allowVideo && Boolean(videoId || directVideo?.mp4 || directVideo?.webm);
+  const [isPlaying, setIsPlaying] = useState(true);
   const videoUrl = videoId
     ? `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&disablekb=1&fs=0&iv_load_policy=3&playsinline=1&rel=0&modestbranding=1&cc_load_policy=0`
     : undefined;
@@ -27,7 +29,7 @@ export function HeroBackgroundMedia({
           className="hero-background-poster"
           style={poster ? { backgroundImage: `url(${poster})` } : undefined}
         />
-        {isPlaying && videoUrl && (
+        {hasVideo && isPlaying && videoUrl && (
           <iframe
             className="hero-background-youtube"
             src={videoUrl}
@@ -37,7 +39,7 @@ export function HeroBackgroundMedia({
             tabIndex={-1}
           />
         )}
-        {isPlaying && !videoUrl && directVideo && (
+        {hasVideo && isPlaying && !videoUrl && directVideo && (
           <video
             className="hero-background-video"
             autoPlay
