@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const read = async (name) => JSON.parse(await readFile(join(root, "data", name), "utf8"));
-const [heroes, matchups, combos, maps, teamSynergies, teamCautions, heroRates] = await Promise.all([
+const [heroes, matchups, combos, maps, teamSynergies, teamCautions, heroRates, patches, patchDecisions] = await Promise.all([
   read("heroes.json"),
   read("matchups.json"),
   read("combos.json"),
@@ -12,6 +12,8 @@ const [heroes, matchups, combos, maps, teamSynergies, teamCautions, heroRates] =
   read("team-synergies.json"),
   read("team-cautions.json"),
   read("hero-rates.json"),
+  read("patches.json"),
+  read("patch-review-decisions.json"),
 ]);
 
 const errors = [];
@@ -159,6 +161,26 @@ for (const snapshot of heroRates.snapshots ?? []) {
   }
 }
 
+// Patch pages join review decisions by digest and hero notes by date, so both must be registered.
+const patchDates = new Set();
+const patchDigests = new Set();
+for (const patch of patches) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(patch.date ?? "") || patchDates.has(patch.date)) errors.push(`패치 날짜 오류·중복: ${patch.date}`);
+  if (!/^[0-9a-f]{64}$/.test(patch.digest ?? "") || patchDigests.has(patch.digest)) errors.push(`패치 digest 오류·중복: ${patch.date}`);
+  if (!patch.sourceUrl?.startsWith("https://overwatch.blizzard.com/en-us/news/patch-notes/live/")) errors.push(`패치 출처 오류: ${patch.date}`);
+  patchDates.add(patch.date);
+  patchDigests.add(patch.digest);
+}
+for (const digest of new Set(patchDecisions.map((decision) => decision.patchDigest))) {
+  if (!patchDigests.has(digest)) errors.push(`data/patches.json에 없는 재검토 패치: ${digest.slice(0, 12)}`);
+}
+const firstTrackedPatch = [...patchDates].sort()[0];
+for (const hero of heroes) {
+  for (const note of [hero.patchNote, ...[...hero.abilities, ...hero.perks.minor, ...hero.perks.major].map((ability) => ability.patchNote)]) {
+    if (note && firstTrackedPatch && note.date >= firstTrackedPatch && !patchDates.has(note.date)) errors.push(`data/patches.json에 없는 패치 안내 날짜: ${hero.key}/${note.date}`);
+  }
+}
+
 if (!heroes.some((hero) => hero.name === "D.Va")) errors.push("D.Va 이름 검증 실패");
 if (!heroes.some((hero) => hero.name === "솔저: 76")) errors.push("솔저: 76 이름 검증 실패");
 
@@ -168,4 +190,4 @@ if (errors.length) {
 }
 
 const verifiedMatchups = matchups.filter((matchup) => matchup.status === "verified").length;
-console.log(`데이터 검증 완료: 영웅 ${heroes.length}, 상성 ${matchups.length}(검증 ${verifiedMatchups}, 검토 필요 ${matchups.length - verifiedMatchups}), 궁 조합 ${combos.length}, 팀 시너지 ${teamSynergies.length}, 주의 조합 ${teamCautions.length}, 맵 ${maps.length}, 맵 추천 ${maps.reduce((sum, map) => sum + map.recommendations.length, 0)}, 공식 통계 ${heroRates.snapshots.length}개 조건`);
+console.log(`데이터 검증 완료: 영웅 ${heroes.length}, 상성 ${matchups.length}(검증 ${verifiedMatchups}, 검토 필요 ${matchups.length - verifiedMatchups}), 궁 조합 ${combos.length}, 팀 시너지 ${teamSynergies.length}, 주의 조합 ${teamCautions.length}, 맵 ${maps.length}, 맵 추천 ${maps.reduce((sum, map) => sum + map.recommendations.length, 0)}, 패치 ${patches.length}, 공식 통계 ${heroRates.snapshots.length}개 조건`);

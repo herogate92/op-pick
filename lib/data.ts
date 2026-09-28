@@ -6,6 +6,8 @@ import mapsJson from "@/data/maps.json";
 import teamSynergiesJson from "@/data/team-synergies.json";
 import teamCautionsJson from "@/data/team-cautions.json";
 import heroRatesJson from "@/data/hero-rates.json";
+import patchesJson from "@/data/patches.json";
+import patchReviewDecisionsJson from "@/data/patch-review-decisions.json";
 
 export type Role = "tank" | "damage" | "support";
 export interface AbilityStat { label: string; value: string; }
@@ -72,6 +74,12 @@ export interface HeroRateSnapshot {
   rows: HeroRateRow[];
 }
 export interface HeroRatesDocument { fetchedAt: string; fetchedAtIso?: string; notice: string; snapshots: HeroRateSnapshot[]; }
+export interface PatchRecord { date: string; digest: string; sourceUrl: string; }
+export type ReviewDecision = "updated" | "no-change" | "deferred";
+export interface PatchReviewDecision {
+  patchDigest: string; category: string; id: string; contentDigest: string; decision: ReviewDecision;
+  reviewedAt: string; summary: string; recheckRequirement?: string; sourceUrl?: string;
+}
 
 export const heroes = heroesJson as Hero[];
 export const matchups = matchupsJson as Matchup[];
@@ -85,6 +93,9 @@ export const teamSynergies = synergyRecords.filter((item): item is TeamSynergy =
 export const heldTeamSynergies = synergyRecords.filter((item): item is HeldTeamSynergy => item.status === "held");
 export const teamCautions = teamCautionsJson as TeamCaution[];
 export const heroRates = heroRatesJson as HeroRatesDocument;
+// Newest first; each entry ties an official patch date to the digest its review decisions use.
+export const patches = [...(patchesJson as PatchRecord[])].sort((a, b) => b.date.localeCompare(a.date));
+export const patchReviewDecisions = patchReviewDecisionsJson as PatchReviewDecision[];
 export { roleAccent, roleLabels, subroleLabels } from "./labels";
 
 // Client lists get only these fields; whole heroes would serialize stories and abilities into each page.

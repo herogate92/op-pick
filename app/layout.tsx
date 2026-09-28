@@ -18,15 +18,16 @@ export const metadata: Metadata = {
     siteName: "OP PICK LAB",
     locale: "ko_KR",
     type: "website",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "OP PICK LAB · 오버워치 픽 연구소" }],
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "OP PICK LAB · 오버워치 픽 연구소" }],
   },
-  twitter: { card: "summary_large_image", title: "OP PICK LAB · 오버워치 픽 연구소", description: "픽은 빠르게, 판단은 정확하게.", images: ["/og.png"] },
+  twitter: { card: "summary_large_image", title: "OP PICK LAB · 오버워치 픽 연구소", description: "픽은 빠르게, 판단은 정확하게.", images: ["/og.jpg"] },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="ko">
       <body>
+        <link rel="alternate" type="application/rss+xml" title="OP PICK LAB 패치 변경 정리" href="/feed.xml" />
         {children}
         <footer className="legal-footer">
           Overwatch는 Blizzard Entertainment, Inc.의 상표입니다.

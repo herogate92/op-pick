@@ -5,6 +5,7 @@ import { HomeBackgroundMedia } from "@/components/HomeBackgroundMedia";
 import { SiteHeader } from "@/components/SiteHeader";
 import { JsonLd } from "@/components/JsonLd";
 import { getHero, heroes, heroRates, roleLabels } from "@/lib/data";
+import { getPatchSummary, patchDateLabel } from "@/lib/patches";
 import { summarizeRates } from "@/lib/stats-summary";
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function HomePage() {
   const patchedHeroes = heroes.filter(hero => hero.patchNote).sort((a, b) => b.patchNote!.date.localeCompare(a.patchNote!.date));
   const latestPatchDate = patchedHeroes[0]?.patchNote?.date;
   const latestPatchedHeroes = patchedHeroes.filter(hero => hero.patchNote?.date === latestPatchDate);
+  const latestPatch = latestPatchDate ? getPatchSummary(latestPatchDate) : undefined;
   const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -78,7 +80,10 @@ export default function HomePage() {
           <header><h2 id="home-patch-title">최근 반영한 영웅 패치</h2><time dateTime={latestPatchDate}>{latestPatchDate}</time></header>
           <div className="home-patch-links">{latestPatchedHeroes.map(hero => <Link key={hero.key} href={`/heroes/${hero.key}/`}>{hero.name} 변경 내용 <ArrowRight aria-hidden="true" /></Link>)}</div>
           <p>영웅 설명 반영 기준입니다. 관련 상성·조합의 검토 상태는 별도로 확인하세요.</p>
-          <Link className="home-review-link" href="/patch-review.html">패치 재검토 현황 <ArrowRight aria-hidden="true" /></Link>
+          <div className="home-patch-actions">
+            {latestPatch && <Link className="home-review-link" href={`/patches/${latestPatch.date}/`}>{patchDateLabel(latestPatch.date).short} 패치 정리 <ArrowRight aria-hidden="true" /></Link>}
+            <Link className="home-review-link" href="/patch-review.html">패치 재검토 현황 <ArrowRight aria-hidden="true" /></Link>
+          </div>
         </section>}
       </div>
     </main>

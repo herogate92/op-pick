@@ -5,7 +5,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { createServer } from "node:http";
 import { spawn } from "node:child_process";
-import { appendHistory, getComparisons, rateDelta, validateHistory } from "../lib/stats-history.ts";
+import { appendHistory, findPrePatchBaseline, getComparisons, rateDelta, validateHistory } from "../lib/stats-history.ts";
 
 const seed = JSON.parse(await readFile(new URL("../public/stats-history.json", import.meta.url), "utf8"));
 const entry = (day, digest = "a") => ({ ...structuredClone(seed.entries[0]), fetchedAtIso: `2026-08-${String(day).padStart(2, "0")}T00:00:00.000Z`, patch: { patchDate: "2026-08-01", digest, sourceUrl: "https://overwatch.blizzard.com/en-us/news/patch-notes/" } });
@@ -31,6 +31,17 @@ test("이전 수집과 이전 감지 패치를 구분하고 미기록 패치는 
   assert.equal(result.priorPatch.collectedAt, first.fetchedAtIso);
   first.patch = null;
   assert.equal(getComparisons(current, history)[0].priorPatch, null);
+});
+
+test("패치 전 기준은 더 오래된 감지 패치나 패치일 이전 수집만 쓴다", () => {
+  const before = entry(10), after = entry(20, "b"), unknownEarly = entry(5), unknownSameDay = entry(15);
+  after.patch.patchDate = "2026-08-15"; unknownEarly.patch = null; unknownSameDay.patch = null;
+  const snapshot = after.snapshots[0];
+  assert.equal(findPrePatchBaseline({ version: 1, entries: [before, after] }, snapshot, "2026-08-15").collectedAt, before.fetchedAtIso);
+  assert.equal(findPrePatchBaseline({ version: 1, entries: [unknownEarly, unknownSameDay, after] }, snapshot, "2026-08-15").collectedAt, unknownEarly.fetchedAtIso);
+  assert.equal(findPrePatchBaseline({ version: 1, entries: [unknownSameDay, after] }, snapshot, "2026-08-15"), null);
+  const otherTier = structuredClone(before); otherTier.snapshots[0].filters.tier = "different";
+  assert.equal(findPrePatchBaseline({ version: 1, entries: [otherTier, after] }, snapshot, "2026-08-15"), null);
 });
 
 test("다른 집계 조건·제공자·미래 자료와 비교하지 않는다", () => {
