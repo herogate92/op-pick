@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -30,7 +31,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="alternate" type="application/rss+xml" title="OP PICK LAB 패치 변경 정리" href="/feed.xml" />
         {children}
         <footer className="legal-footer">
-          Overwatch는 Blizzard Entertainment, Inc.의 상표입니다.
+          <p>OP PICK LAB은 Blizzard Entertainment와 제휴하거나 보증을 받지 않은 비공식 팬 사이트입니다. Overwatch와 Blizzard Entertainment는 미국 및 기타 국가에서 Blizzard Entertainment, Inc.의 상표 또는 등록 상표입니다. 영웅 이미지·아이콘·영상 등 게임 콘텐츠의 저작권은 Blizzard Entertainment, Inc.에 있습니다.</p>
+          <p lang="en">Overwatch is a trademark or registered trademark of Blizzard Entertainment, Inc. in the U.S. and/or other countries. Game content and materials © Blizzard Entertainment, Inc. OP PICK LAB is not affiliated with or endorsed by Blizzard Entertainment.</p>
+          <p><Link href="/sources/#copyright">저작권·자료 출처</Link> · <a href="/THIRD_PARTY_NOTICES.txt">오픈소스 라이선스</a></p>
         </footer>
       </body>
     </html>

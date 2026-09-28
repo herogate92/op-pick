@@ -39,6 +39,8 @@ npm run dev
 
 본 프로젝트는 Blizzard Entertainment와 관련이 없는 비공식 팬 가이드입니다. 실제 광고를 연결하기 전에 Blizzard의 이미지·상표 사용 정책을 별도로 검토해야 합니다.
 
+모든 페이지 하단 푸터와 `/sources/#copyright`에 비제휴 고지, Overwatch·Blizzard Entertainment 상표 표기, 게임 콘텐츠 저작권(© Blizzard Entertainment, Inc.) 표기를 한국어·영어로 제공합니다. 권리자 요청 시 해당 자료를 교체하거나 삭제합니다.
+
 ### 추천 탐색·평가 개선 (2026-09-10)
 
 - 팀 구성의 추천은 선택한 슬롯을 채우거나 교체합니다. 교체로 빠질 영웅은 후보 계산과 설명에서 제외하며, 교체 전후 등록 근거 점수를 표시합니다.
