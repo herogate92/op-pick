@@ -10,7 +10,6 @@ import { roleAccent, roleLabels, subroleLabels } from "@/lib/labels";
 interface HeroSummary {
   hitpointsNotice?: string; patchNote?: Ability["patchNote"];
   key: string; name: string; role: Role; subrole: string; portrait: string; background: string; description: string;
-  abilities: Ability[]; perks: { minor: Ability[]; major: Ability[] };
   hitpoints: { shields: number; armor: number; health: number; total: number } | null;
 }
 
@@ -21,6 +20,8 @@ const heroRosterOrder: Record<Role, string[]> = {
   support: ["lifeweaver", "lucio", "mercy", "moira", "mizuki", "baptiste", "brigitte", "ana", "wuyang", "illari", "jetpack-cat", "zenyatta", "juno", "kiriko"],
 };
 
+// Loaded from /heroes/<key>/skills.json when the skill sheet opens; most of the roster's weight is here.
+type HeroSkills = { abilities: Ability[]; perks: { minor: Ability[]; major: Ability[] } };
 type StageMatchup = Pick<Matchup, "id" | "hero" | "counter" | "score" | "reason" | "status">;
 type StageCombo = Pick<Combo, "id" | "name" | "heroes" | "score">;
 
@@ -30,6 +31,7 @@ export function HeroStage({ header, heroes, matchups, combos }: { header: React.
   const [query, setQuery] = useState("");
   const [searchOpen, setSearchOpen] = useState(false);
   const [skillsOpen, setSkillsOpen] = useState(false);
+  const [skills, setSkills] = useState<Record<string, HeroSkills | "error">>({});
   const [pickerOpen, setPickerOpen] = useState(true);
   const [pickerRole, setPickerRole] = useState<Role>("tank");
   const [rosterQuery, setRosterQuery] = useState("");
@@ -51,6 +53,18 @@ export function HeroStage({ header, heroes, matchups, combos }: { header: React.
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [heroes.length, searchOpen]);
+
+  const openSkills = () => {
+    setSkillsOpen(true);
+    if (!hero || (skills[hero.key] && skills[hero.key] !== "error")) return;
+    const key = hero.key;
+    setSkills((current) => { const next = { ...current }; delete next[key]; return next; });
+    fetch(`/heroes/${key}/skills.json`)
+      .then((response) => { if (!response.ok) throw new Error(String(response.status)); return response.json() as Promise<HeroSkills>; })
+      .then((data) => setSkills((current) => ({ ...current, [key]: data })))
+      .catch(() => setSkills((current) => ({ ...current, [key]: "error" })));
+  };
+  const heroSkills = hero ? skills[hero.key] : undefined;
 
   const clearSelection = () => {
     setSelected(null);
@@ -174,7 +188,7 @@ export function HeroStage({ header, heroes, matchups, combos }: { header: React.
           {hero.patchNote && <p>{hero.patchNote.summary} <a href={hero.patchNote.sourceUrl} target="_blank" rel="noreferrer">공식 패치 {hero.patchNote.date}</a></p>}
           <div className="hero-actions compact-actions">
             <Link href={`/heroes/${hero.key}/`} className="primary-button">전체 정보 <ChevronRight aria-hidden="true" /></Link>
-            <button type="button" className="secondary-button skill-open-button" onClick={() => setSkillsOpen(true)}>스킬 보기</button>
+            <button type="button" className="secondary-button skill-open-button" onClick={openSkills}>스킬 보기</button>
           </div>
         </article>
 
@@ -225,28 +239,30 @@ export function HeroStage({ header, heroes, matchups, combos }: { header: React.
               </div>
               <Link href={`/heroes/${hero.key}/`}>상세 페이지 <ChevronRight aria-hidden="true" /></Link>
             </header>
-            <div className="skill-sheet-grid">
+            {heroSkills === "error" ? <div className="dashboard-empty" role="alert">스킬 정보를 불러오지 못했습니다. <Link href={`/heroes/${hero.key}/`}>상세 페이지</Link>에서 확인하거나 다시 열어 주세요.</div>
+            : !heroSkills ? <div className="dashboard-empty" role="status">스킬 정보를 불러오는 중입니다.</div>
+            : <div className="skill-sheet-grid">
               <section className="skill-sheet-column">
                 <h3><Zap aria-hidden="true" /> 기술</h3>
                 <div className="skill-sheet-list">
-                  {hero.abilities.map((ability) => (
+                  {heroSkills.abilities.map((ability) => (
                     <article key={ability.name}>
                       {/* eslint-disable-next-line @next/next/no-img-element */}<img src={ability.icon} alt="" />
                       <div><strong>{ability.name}</strong><p>{ability.description}</p><AbilityStats ability={ability} compact /></div>
                     </article>
                   ))}
-                  {!hero.abilities.length && <div className="dashboard-empty">기술 정보가 준비 중입니다.</div>}
+                  {!heroSkills.abilities.length && <div className="dashboard-empty">기술 정보가 준비 중입니다.</div>}
                 </div>
               </section>
               <section className="skill-sheet-column perk-sheet-column">
                 <h3><Sparkles aria-hidden="true" /> 특전</h3>
                 <div className="perk-sheet-groups">
-                  <div><h4>보조 특전</h4>{hero.perks.minor.map((perk) => <SkillPerk key={perk.name} perk={perk} />)}</div>
-                  <div><h4>주요 특전</h4>{hero.perks.major.map((perk) => <SkillPerk key={perk.name} perk={perk} />)}</div>
-                  {!hero.perks.minor.length && !hero.perks.major.length && <div className="dashboard-empty">특전 정보가 준비 중입니다.</div>}
+                  <div><h4>보조 특전</h4>{heroSkills.perks.minor.map((perk) => <SkillPerk key={perk.name} perk={perk} />)}</div>
+                  <div><h4>주요 특전</h4>{heroSkills.perks.major.map((perk) => <SkillPerk key={perk.name} perk={perk} />)}</div>
+                  {!heroSkills.perks.minor.length && !heroSkills.perks.major.length && <div className="dashboard-empty">특전 정보가 준비 중입니다.</div>}
                 </div>
               </section>
-            </div>
+            </div>}
           </section>
         </div>
       )}

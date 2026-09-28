@@ -79,3 +79,21 @@ export function findPrePatchBaseline(history: StatsHistory, snapshot: HeroRateSn
   }
   return null;
 }
+
+export type RateMover = { hero: string; value: number; delta: number };
+// Largest win-rate moves between two collections of the same condition. Heroes under the pick-rate floor
+// in either collection are skipped so a handful of games cannot top the list.
+export function findRateMovers(current: HeroRateSnapshot, baseline: HeroRateSnapshot, limit = 3, minPickRate = 1) {
+  const before = new Map(baseline.rows.map(row => [row.hero, row]));
+  const moves: RateMover[] = [];
+  for (const row of current.rows) {
+    const prior = before.get(row.hero);
+    const delta = rateDelta(row.winRate, prior?.winRate);
+    if (delta === null || delta === 0 || (row.pickRate ?? 0) < minPickRate || (prior?.pickRate ?? 0) < minPickRate) continue;
+    moves.push({ hero: row.hero, value: row.winRate!, delta });
+  }
+  return {
+    rising: moves.filter(move => move.delta > 0).sort((a, b) => b.delta - a.delta).slice(0, limit),
+    falling: moves.filter(move => move.delta < 0).sort((a, b) => a.delta - b.delta).slice(0, limit),
+  };
+}

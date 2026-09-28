@@ -5,6 +5,7 @@ import { ArrowLeftRight, CalendarDays, CheckCircle2, ShieldAlert } from "lucide-
 import { AdSlot } from "@/components/AdSlot";
 import { JsonLd } from "@/components/JsonLd";
 import { ScoreMeter } from "@/components/ScoreMeter";
+import { ShareButton } from "@/components/ShareButton";
 import { SiteHeader } from "@/components/SiteHeader";
 import { MatchupSkillExamples } from "@/components/MatchupSkillExamples";
 import { detailedMatchups, getDetailedMatchup, getHero, roleLabels } from "@/lib/data";
@@ -81,7 +82,7 @@ export default async function MatchupDetailPage({ params }: { params: Promise<{ 
             </div>
             <div className="condition-box"><CheckCircle2 aria-hidden="true" /><span><strong>{hero.name} 대응 포인트</strong>{matchup.counterplay}</span></div>
             <MatchupSkillExamples matchup={matchup} heroName={hero.name} counterName={counter.name} />
-            <footer><span><CalendarDays aria-hidden="true" />{matchup.patchBasis} · 마지막 검수 {matchup.reviewedAt}</span><Link href={`/matchups/?hero=${hero.key}&opponent=${counter.key}`}>비교 도구에서 보기</Link></footer>
+            <footer><span><CalendarDays aria-hidden="true" />{matchup.patchBasis} · 마지막 검수 {matchup.reviewedAt}</span><Link href={`/matchups/?hero=${hero.key}&opponent=${counter.key}`}>비교 도구에서 보기</Link><ShareButton title={`${hero.name} 카운터: ${counter.name} 상성 분석 · OP PICK LAB`} path={`/matchups/${pair}/`} /></footer>
           </section>
           <p className="seo-guide-note">상성은 맵, 사거리, 팀 조합과 숙련도에 따라 달라질 수 있습니다.</p>
           <AdSlot kind="banner" />

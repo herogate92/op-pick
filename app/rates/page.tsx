@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { AdSlot } from "@/components/AdSlot";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StatsExplorer } from "@/components/StatsExplorer";
@@ -22,7 +23,7 @@ export default function RatesPage() {
       <section className="page-intro rates-intro">
         <span className="section-kicker">OFFICIAL HERO STATS</span>
         <h1>영웅 <em>통계</em></h1>
-        <p>지역·입력 장치·등급을 골라 승률·픽률·밴률을 비교하세요.</p>
+        <p>지역·입력 장치·등급을 골라 승률·픽률·밴률을 비교하세요. 역할별 승률 구간은 <Link href="/tier/">영웅 티어표</Link>에서 한눈에 볼 수 있습니다.</p>
       </section>
       <div className="content-with-rail rates-layout">
         <div className="page-content">

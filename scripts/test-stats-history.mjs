@@ -5,7 +5,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { createServer } from "node:http";
 import { spawn } from "node:child_process";
-import { appendHistory, findPrePatchBaseline, getComparisons, rateDelta, validateHistory } from "../lib/stats-history.ts";
+import { appendHistory, findPrePatchBaseline, findRateMovers, getComparisons, rateDelta, validateHistory } from "../lib/stats-history.ts";
 
 const seed = JSON.parse(await readFile(new URL("../public/stats-history.json", import.meta.url), "utf8"));
 const entry = (day, digest = "a") => ({ ...structuredClone(seed.entries[0]), fetchedAtIso: `2026-08-${String(day).padStart(2, "0")}T00:00:00.000Z`, patch: { patchDate: "2026-08-01", digest, sourceUrl: "https://overwatch.blizzard.com/en-us/news/patch-notes/" } });
@@ -42,6 +42,17 @@ test("패치 전 기준은 더 오래된 감지 패치나 패치일 이전 수�
   assert.equal(findPrePatchBaseline({ version: 1, entries: [unknownSameDay, after] }, snapshot, "2026-08-15"), null);
   const otherTier = structuredClone(before); otherTier.snapshots[0].filters.tier = "different";
   assert.equal(findPrePatchBaseline({ version: 1, entries: [otherTier, after] }, snapshot, "2026-08-15"), null);
+});
+
+test("승률 변동은 픽률 기준을 넘는 영웅만 크기순으로 고른다", () => {
+  const snapshot = (rows) => ({ ...structuredClone(seed.entries[0].snapshots[0]), rows });
+  const row = (hero, winRate, pickRate = 5) => ({ hero, winRate, pickRate, banRate: null });
+  const before = snapshot([row("a", 50), row("b", 50), row("c", 50), row("d", 50, 0.5), row("e", 50), row("f", null)]);
+  const after = snapshot([row("a", 52.5), row("b", 49), row("c", 50), row("d", 60, 0.5), row("e", 51), row("f", 55)]);
+  const { rising, falling } = findRateMovers(after, before, 1);
+  assert.deepEqual(rising, [{ hero: "a", value: 52.5, delta: 2.5 }]);
+  assert.deepEqual(falling, [{ hero: "b", value: 49, delta: -1 }]);
+  assert.deepEqual(findRateMovers(after, before).rising.map(move => move.hero), ["a", "e"]);
 });
 
 test("다른 집계 조건·제공자·미래 자료와 비교하지 않는다", () => {
