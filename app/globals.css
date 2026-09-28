@@ -749,7 +749,17 @@ button { color: inherit; }
 .license-section > header > svg { color: var(--cyan); }
 .license-section h2 { margin: 4px 0 5px; font-size: 24px; }
 .license-section header p { margin: 0; color: #8595aa; font-size: 11px; }
+.policy-note-primary p { margin: 0; color: #a9b5c5; font-size: 13px; line-height: 1.6; }
+.privacy-section h2 { margin: 26px 0 8px; font-size: 18px; }
+.privacy-section h2:first-child { margin-top: 0; }
+.privacy-section p, .privacy-section li { color: #a9b5c5; font-size: 13px; line-height: 1.7; }
+.privacy-section p { margin: 0; }
+.privacy-section ul { margin: 0; padding-left: 20px; }
+.privacy-section li { margin: 6px 0; }
+.privacy-section a { color: var(--cyan-soft); }
+.privacy-section code { padding: 1px 5px; color: var(--paper); background: #13233b; font-size: 12px; }
 .copyright-section > ul { margin: 18px 0 0; padding-left: 20px; }
+.copyright-section a { color: var(--cyan-soft); }
 .copyright-section li { margin: 8px 0; color: #a9b5c5; font-size: 13px; line-height: 1.6; }
 .copyright-section > p { margin: 14px 0 0; color: #7d8ca3; font-size: 12px; line-height: 1.6; }
 .license-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 9px; margin-top: 18px; }
