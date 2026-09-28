@@ -6,7 +6,9 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { JsonLd } from "@/components/JsonLd";
 import { getHero, heroes, heroRates, roleLabels } from "@/lib/data";
 import { getPatchSummary, patchDateLabel } from "@/lib/patches";
+import { findRateMovers, getComparisons, validateHistory, type StatsHistory } from "@/lib/stats-history";
 import { summarizeRates } from "@/lib/stats-summary";
+import historyJson from "@/public/stats-history.json";
 
 export const metadata: Metadata = {
   title: "오버워치 영웅 상성·카운터 픽·맵별 추천",
@@ -21,6 +23,11 @@ function CtaElectricity() {
 export default function HomePage() {
   const poster = getHero("tracer")?.background ?? getHero("ana")?.background;
   const snapshot = heroRates.snapshots.find(item => item.id === "competitive");
+  validateHistory(historyJson);
+  const history: StatsHistory = historyJson;
+  const previous = snapshot && getComparisons(heroRates, history).find(item => item.id === snapshot.id)?.previous;
+  const movers = snapshot && previous ? findRateMovers(snapshot, previous.snapshot, 1) : undefined;
+  const topMovers = movers ? [...movers.rising, ...movers.falling] : [];
   const patchedHeroes = heroes.filter(hero => hero.patchNote).sort((a, b) => b.patchNote!.date.localeCompare(a.patchNote!.date));
   const latestPatchDate = patchedHeroes[0]?.patchNote?.date;
   const latestPatchedHeroes = patchedHeroes.filter(hero => hero.patchNote?.date === latestPatchDate);
@@ -64,7 +71,7 @@ export default function HomePage() {
       </nav>
       <div className="home-updates">
         {snapshot && <section className="home-rates-summary" aria-labelledby="home-stats-title">
-          <header><h2 id="home-stats-title">역할별 승률 상위</h2><Link href="/rates/">통계 전체 <ArrowRight aria-hidden="true" /></Link></header>
+          <header><h2 id="home-stats-title">역할별 승률 상위</h2><span className="home-header-links"><Link href="/tier/">티어표 <ArrowRight aria-hidden="true" /></Link><Link href="/rates/">통계 전체 <ArrowRight aria-hidden="true" /></Link></span></header>
           <p>{snapshot.label} · {snapshot.filters.inputLabel} · {snapshot.filters.regionLabel} · {snapshot.filters.tierLabel} · {snapshot.filters.mapLabel}</p>
           <div className="home-role-stats">
             {(["tank", "damage", "support"] as const).map(role => {
@@ -74,6 +81,7 @@ export default function HomePage() {
               return <div key={role}><small>{roleLabels[role]}</small>{hero && leader ? <Link href={`/heroes/${hero.key}/#stats-${snapshot.id}`}><strong>{hero.name}</strong><span>{leader.winRate!.toFixed(1)}%</span></Link> : <strong>자료 없음</strong>}</div>;
             })}
           </div>
+          {topMovers.length > 0 && previous && <p className="home-movers"><span>직전 수집({previous.collectedAt.slice(5, 10).replace("-", "/")}) 대비 승률</span>{topMovers.map(move => <Link key={move.hero} href="/tier/"><strong>{getHero(move.hero)?.name}</strong> <em className={move.delta > 0 ? "up" : "down"}>{move.delta > 0 ? "▲ +" : "▼ "}{move.delta.toFixed(1)}%p</em></Link>)}</p>}
           <small className="home-data-note">수집 {heroRates.fetchedAt} · 통계 제공 영웅 기준이며 상성 순위가 아닙니다.</small>
         </section>}
         {latestPatchDate && <section className="home-patch" aria-labelledby="home-patch-title">

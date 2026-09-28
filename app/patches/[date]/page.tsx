@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, CalendarDays, ClipboardCheck, ExternalLink, Shield } from "lucide-react";
 import { AdSlot } from "@/components/AdSlot";
 import { JsonLd } from "@/components/JsonLd";
+import { ShareButton } from "@/components/ShareButton";
 import { SiteHeader } from "@/components/SiteHeader";
 import { heroRates, patches, roleLabels } from "@/lib/data";
 import { decisionLabels, getPatchSummary, patchDateLabel, patchDescription, patchSummaries, patchTitle, type PatchReviewItem } from "@/lib/patches";
@@ -83,6 +84,7 @@ export default async function PatchDetailPage({ params }: { params: Promise<{ da
             <span><Shield aria-hidden="true" />영웅 변경 {patch.changes.length}명</span>
             <span><ClipboardCheck aria-hidden="true" />콘텐츠 재검토 {reviewTotal}건</span>
             <Link href="/patches/"><ArrowLeft aria-hidden="true" />전체 패치</Link>
+            <ShareButton title={`${patchTitle(patch)} · OP PICK LAB`} path={`/patches/${patch.date}/`} />
           </section>
           {patch.scope && <p className="seo-guide-note">패치 범위: {patch.scope}</p>}
 

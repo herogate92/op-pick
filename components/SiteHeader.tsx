@@ -37,6 +37,7 @@ export function SiteHeader({ active }: { active: string }) {
             <PatchNotesLink />
             {navItems.map(({ href, label, icon: Icon, id }) => <Link key={id} href={href} aria-current={active === id ? "page" : undefined}><Icon size={20} aria-hidden="true" />{label}</Link>)}
             <Link href="/sources/">자료 출처·이용 안내</Link>
+            <Link href="/tier/">영웅 티어표</Link>
             <Link href="/patches/">패치 변경 정리</Link>
             <a href="/patch-review.html">패치 재검토 현황</a>
           </nav>

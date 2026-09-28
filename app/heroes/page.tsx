@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 };
 
 export default function HeroesPage() {
-  const summary = heroes.map(({ key, name, role, subrole, portrait, background, description, abilities, perks, hitpoints, hitpointsNotice, patchNote }) => ({
-    key, name, role, subrole, portrait, background, description, abilities, perks, hitpoints, hitpointsNotice, patchNote,
+  const summary = heroes.map(({ key, name, role, subrole, portrait, background, description, hitpoints, hitpointsNotice, patchNote }) => ({
+    key, name, role, subrole, portrait, background, description, hitpoints, hitpointsNotice, patchNote,
   }));
   const stageMatchups = matchups.map(({ id, hero, counter, score, reason, status }) => ({ id, hero, counter, score, reason, status }));
   const stageCombos = combos.map(({ id, name, heroes, score }) => ({ id, name, heroes, score }));
