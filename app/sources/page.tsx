@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Code2, Database, ExternalLink, Scale } from "lucide-react";
+import { Code2, Copyright, Database, ExternalLink, Scale } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { PatchNotesLink } from "@/components/PatchNotesLink";
 
 export const metadata: Metadata = {
   title: "운영 및 라이선스",
-  description: "OP PICK LAB의 데이터 운영 원칙과 오픈소스 라이선스 안내입니다.",
+  description: "OP PICK LAB의 데이터 운영 원칙, Blizzard 저작권·상표 표기와 오픈소스 라이선스 안내입니다.",
   alternates: { canonical: "/sources/" },
 };
 
@@ -37,6 +37,17 @@ export default function SourcesPage() {
               <li>통계 수집일은 제공 API를 조회한 날짜이며, 제공자의 집계 종료일이나 최신 패치 이후의 경기만을 뜻하지 않습니다.</li>
             </ul>
           </div>
+        </section>
+
+        <section className="license-section copyright-section" id="copyright">
+          <header><Copyright aria-hidden="true" /><div><span className="section-kicker">COPYRIGHT</span><h2>저작권·상표</h2><p>OP PICK LAB은 Blizzard Entertainment와 제휴하거나 보증을 받지 않은 비공식 팬 사이트입니다.</p></div></header>
+          <ul>
+            <li>Overwatch와 Blizzard Entertainment는 미국 및 기타 국가에서 Blizzard Entertainment, Inc.의 상표 또는 등록 상표입니다.</li>
+            <li>영웅 초상·배경·스토리 이미지, 기술·특전 아이콘, 기술 시연 영상, 전장 이미지와 공식 유튜브 영상 등 게임 콘텐츠의 저작권은 Blizzard Entertainment, Inc.에 있습니다. 이미지와 영상은 대부분 Blizzard 공식 페이지·서버의 자료를 그대로 불러와 표시합니다.</li>
+            <li>영웅·기술 설명과 승률·픽률·밴률은 Blizzard 공식 영웅 페이지·패치 노트와 공개 통계를 바탕으로 하며, 일부는 OverFast API를 거쳐 수집합니다. 상성·조합·맵 추천 분석과 패치 요약은 OP PICK LAB이 작성했습니다.</li>
+            <li>권리자의 요청이 있으면 해당 자료를 교체하거나 삭제합니다.</li>
+          </ul>
+          <p lang="en">Overwatch is a trademark or registered trademark of Blizzard Entertainment, Inc. in the U.S. and/or other countries. Game content and materials © Blizzard Entertainment, Inc. All rights reserved. OP PICK LAB is not affiliated with or endorsed by Blizzard Entertainment.</p>
         </section>
 
         <section className="license-section">
