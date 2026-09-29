@@ -12,6 +12,7 @@ const NEW_HERO_GAMEPLAY: HeroVideo = {
 
 export const heroVideos: Record<string, HeroVideo> = {
   domina: NEW_HERO_GAMEPLAY,
+  doctrine: { id: "k5AB7ZX3Ly0", title: "독트린 | 신규 영웅 게임플레이 트레일러 | 오버워치", kind: "gameplay" },
   doomfist: { id: "e320nRwXyu8", title: "오버워치 2 영웅 가이드: 둠피스트", kind: "guide" },
   ramattra: { id: "TjGANWk9hy0", title: "라마트라 소개 영상 | 오버워치 2", kind: "intro" },
   lifeweaver: { id: "x1Shsa11udw", title: "라이프위버 소개 영상 | 오버워치 2", kind: "intro" },

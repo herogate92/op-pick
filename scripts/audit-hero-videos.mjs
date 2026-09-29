@@ -56,6 +56,8 @@ async function inspect(hero) {
   const abilitiesMatchOfficial = officialResponse.ok
     && abilityVideoUrls.length > 0
     && abilityVideoUrls.every((url) => officialHtml.includes(url));
+  // A trial hero has a reveal trailer before any official hero page with ability clips exists.
+  const abilityMatchRequired = !(hero.releaseStatus === "trial" && abilityVideoUrls.length === 0);
 
   const id = mappings.get(hero.key);
   if (!id) {
@@ -95,7 +97,7 @@ async function inspect(hero) {
     embedOk,
     officialPageOk: officialResponse.ok,
     abilitiesMatchOfficial,
-    status: official && titleMatches && !legacyTitle && embedOk && abilitiesMatchOfficial ? "ok" : "review",
+    status: official && titleMatches && !legacyTitle && embedOk && (abilitiesMatchOfficial || !abilityMatchRequired) ? "ok" : "review",
   };
 }
 

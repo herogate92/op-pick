@@ -17,11 +17,11 @@
       "shields": 0,
       "total": 250
     },
-    "hitpointsNotice": "독트린은 체험 공개 자료 기준입니다. 생명력 250과 기술·특전은 2026-09-13 제공된 훈련장 캡처에서 확인했습니다. 5대5·6대6 공통 수치로 검증한 것은 아닙니다. 공식 초상과 영상은 준비 중이며, 상성·시너지·맵 순위·승률은 자료 확보 전입니다.",
+    "hitpointsNotice": "독트린은 블리즈컨 2026에서 공개된 지원 영웅으로, 시즌 5(2026년 10월 7일, 한국 시간)에 정식 출시될 예정입니다. 생명력 250과 기술·특전은 체험 기간인 2026-09-13 제공된 훈련장 캡처에서 확인했으며 5대5·6대6 공통 수치로 검증한 것은 아닙니다. 공식 게임플레이 트레일러를 연결했고 공식 초상은 준비 중입니다. 상성·시너지·맵 순위·승률은 자료 확보 전입니다.",
     "releaseStatus": "trial",
     "reviewStatus": "review-needed",
-    "dataNotice": "체험 영웅 · 훈련장 캡처 기준 · 상성·맵·통계 자료 준비 중",
-    "mediaPendingReason": "사용자 제공 훈련장 캡처로 기술을 등록했으며 공식 초상·영상 주소는 확인 전입니다.",
+    "dataNotice": "체험 영웅 · 시즌 5(2026-10-07) 정식 출시 예정 · 훈련장 캡처 기준 · 상성·맵·통계 자료 준비 중",
+    "mediaPendingReason": "공식 게임플레이 트레일러는 연결했으며, 기술은 사용자 제공 훈련장 캡처 기준입니다. 공식 초상과 기술 시연 영상은 정식 출시 후 공식 영웅 페이지에서 확인합니다.",
     "abilities": [
       {
         "name": "영겁의 홀",
@@ -148,10 +148,10 @@
     "storySummary": "",
     "storyMedia": null,
     "storyChapters": [],
-    "sourceUrl": "https://overwatch.blizzard.com/fr-fr/news/24294376/",
-    "checkedAt": "2026-09-13",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/24294376/",
+    "checkedAt": "2026-09-29",
     "abilitiesCheckedAt": "2026-09-13",
-    "abilitiesSourceUrl": "https://overwatch.blizzard.com/fr-fr/news/24294376/"
+    "abilitiesSourceUrl": "https://overwatch.blizzard.com/ko-kr/news/24294376/"
   },
   {
     "key": "genji",
