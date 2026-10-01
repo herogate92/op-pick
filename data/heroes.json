@@ -146,7 +146,10 @@
       ]
     },
     "storySummary": "",
-    "storyMedia": null,
+    "storyMedia": {
+      "type": "video",
+      "link": "https://overwatch.blizzard.com/ko-kr/videos/video/bltd10b186a081f730b/trailer-de-heroi-do-doctrine-fuga/"
+    },
     "storyChapters": [],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/24294376/",
     "checkedAt": "2026-09-29",
