@@ -13,8 +13,12 @@ import historyJson from "@/public/stats-history.json";
 
 const condition = (snapshot: HeroRateSnapshot) => `${snapshot.filters.inputLabel} · ${snapshot.filters.regionLabel} · ${snapshot.filters.tierLabel} · ${snapshot.filters.mapLabel}`;
 
+// Players search with the month ("오버워치 티어 10월"); the collection date refreshes on every deploy.
+const [collectedYear, collectedMonth] = heroRates.fetchedAt.split("-").map(Number);
+const period = `${collectedYear}년 ${collectedMonth}월`;
+
 export const metadata: Metadata = {
-  title: "오버워치 영웅 티어표 · 경쟁전 승률 구간",
+  title: `오버워치 영웅 티어표 (${period}) · 경쟁전 승률 구간`,
   description: `오버워치 돌격·공격·지원 영웅을 경쟁전과 빠른 대전 승률 구간(S·A·B·C)으로 나눈 티어표입니다. ${heroRates.fetchedAt} 수집 통계와 직전 수집 대비 승률 급상승·급하락 영웅을 함께 보여 줍니다.`,
   alternates: { canonical: "/tier/" },
 };
@@ -31,7 +35,7 @@ export default function TierPage() {
   const pageUrl = "https://opick.ggwp.kr/tier/";
   const jsonLd = [
     {
-      "@context": "https://schema.org", "@type": "WebPage", name: "오버워치 영웅 티어표", description: metadata.description,
+      "@context": "https://schema.org", "@type": "WebPage", name: `오버워치 영웅 티어표 (${period})`, description: metadata.description,
       url: pageUrl, inLanguage: "ko-KR", dateModified: heroRates.fetchedAtIso ?? heroRates.fetchedAt,
       isPartOf: { "@type": "WebSite", name: "OP PICK LAB", url: "https://opick.ggwp.kr/" },
     },
@@ -51,7 +55,7 @@ export default function TierPage() {
       <section className="page-intro">
         <span className="section-kicker">HERO TIER LIST</span>
         <h1>영웅 <em>티어표</em></h1>
-        <p>Blizzard 공개 통계의 승률을 구간으로 나눴습니다. 숙련도·조합·상성을 반영한 종합 추천 순위가 아닙니다.</p>
+        <p>{period} 수집한 Blizzard 공개 통계의 승률을 구간으로 나눴습니다. 숙련도·조합·상성을 반영한 종합 추천 순위가 아닙니다.</p>
       </section>
       <div className="content-with-rail">
         <div className="page-content">

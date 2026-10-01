@@ -5,6 +5,7 @@ import { Activity, ArrowRight, BookOpen, CalendarDays, Crosshair, ExternalLink, 
 import { AdSlot } from "@/components/AdSlot";
 import { AbilityStats } from "@/components/AbilityStats";
 import { HeroMiniCard } from "@/components/HeroMiniCard";
+import { HeroGlance } from "@/components/HeroGlance";
 import { HeroStatistics } from "@/components/HeroStatistics";
 import { heroRates } from "@/lib/data";
 import { HeroBackgroundMedia } from "@/components/HeroBackgroundMedia";
@@ -44,6 +45,8 @@ export default async function HeroDetailPage({ params }: { params: Promise<{ slu
   const counters = getCountersFor(hero.key).sort(byScore);
   const strongAgainst = getStrongAgainst(hero.key).sort(byScore);
   const heroCombos = getCombosFor(hero.key);
+  const latestPatchDate = [hero.patchNote, ...[...hero.abilities, ...hero.perks.minor, ...hero.perks.major].map((ability) => ability.patchNote)]
+    .map((note) => note?.date).filter((date): date is string => Boolean(date && getPatchSummary(date))).sort().at(-1);
   const heroVideo = getHeroVideo(hero.key);
   const directBackgroundVideo = heroVideo ? undefined : hero.abilities.find((ability) => ability.video)?.video;
   const related = heroes.filter((item) => item.role === hero.role && item.key !== hero.key).slice(0, 6);
@@ -103,6 +106,7 @@ export default async function HeroDetailPage({ params }: { params: Promise<{ slu
 
       <div className="content-with-rail">
         <div className="page-content">
+          <HeroGlance hero={hero} counters={counters} strongAgainst={strongAgainst} combos={heroCombos} snapshot={heroRates.snapshots.find((item) => item.id === "competitive")} patchDate={latestPatchDate} />
           <HeroStatistics heroKey={hero.key} heroName={hero.name} rates={heroRates} />
           {hero.hitpointsNotice && <p className="seo-guide-note">{hero.hitpointsNotice}</p>}
           {hero.patchNote && <p className="seo-guide-note">{hero.patchNote.summary} <a href={hero.patchNote.sourceUrl} target="_blank" rel="noreferrer">공식 패치 {hero.patchNote.date}</a>{getPatchSummary(hero.patchNote.date) && <> · <Link href={`/patches/${hero.patchNote.date}/`}>{patchDateLabel(hero.patchNote.date).short} 패치 정리</Link></>}</p>}
@@ -133,14 +137,14 @@ export default async function HeroDetailPage({ params }: { params: Promise<{ slu
           </section>
 
           {(hero.storySummary || hero.storyMedia || hero.storyChapters.length > 0) && <section className="content-section story-section">
-            <div className="section-heading"><span className="section-kicker">05 · STORY</span><h2>영웅 이야기</h2><p>공식 영웅 페이지의 배경 요약과 스토리 구성을 정리했습니다.</p></div>
+            <div className="section-heading"><span className="section-kicker">05 · STORY</span><h2>영웅 이야기</h2><p>{hero.releaseStatus === "trial" ? "정식 출시 전이라 공식 영웅 페이지의 이야기는 아직 없습니다. 공개된 공식 스토리 영상을 연결했습니다." : "공식 영웅 페이지의 배경 요약과 스토리 구성을 정리했습니다."}</p></div>
             {hero.storySummary && <blockquote>{hero.storySummary}</blockquote>}
             <div className="story-actions">
               {hero.storyMedia && <a href={hero.storyMedia.link} target="_blank" rel="noreferrer"><Film /> 공식 스토리 영상 보기 <ExternalLink /></a>}
-              <a href={hero.sourceUrl} target="_blank" rel="noreferrer"><BookOpen /> 공식 페이지에서 전체 이야기 읽기 <ExternalLink /></a>
+              {hero.releaseStatus !== "trial" && <a href={hero.sourceUrl} target="_blank" rel="noreferrer"><BookOpen /> 공식 페이지에서 전체 이야기 읽기 <ExternalLink /></a>}
             </div>
             {hero.storyChapters.length > 0 && <div className="story-chapter-grid">{hero.storyChapters.map((chapter) => <a href={hero.sourceUrl} target="_blank" rel="noreferrer" key={chapter.title} className="story-chapter-card">{chapter.picture && <span>{/* eslint-disable-next-line @next/next/no-img-element */}<img src={chapter.picture} alt="" loading="lazy" /></span>}<strong>{chapter.title}</strong><small>공식 페이지에서 챕터 전문 보기 <ArrowRight /></small></a>)}</div>}
-            <p>저작권을 고려해 긴 원문은 복제하지 않고, 챕터 제목과 공식 링크만 제공합니다.</p>
+            {hero.storyChapters.length > 0 && <p>저작권을 고려해 긴 원문은 복제하지 않고, 챕터 제목과 공식 링크만 제공합니다.</p>}
           </section>}
           <AdSlot kind="banner" />
           <section className="content-section compact-section"><div className="section-heading"><h2>같은 역할의 영웅</h2></div><div className="mini-card-grid">{related.map((item) => <HeroMiniCard key={item.key} hero={item} />)}</div></section>
