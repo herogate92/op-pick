@@ -463,6 +463,29 @@ button { color: inherit; }
 .ad-rail { position: sticky; top: 100px; width: 300px; height: 600px; }
 .ad-banner { width: 100%; min-height: 120px; margin: 36px 0; }
 .ad-mobile { display: none; min-height: 100px; }
+.house-ad { border: 0; background: none; }
+.house-ad a { height: 100%; position: relative; display: flex; align-items: center; gap: 16px; padding: 18px 22px; color: #e6f7f2; border: 1px solid rgba(109,245,209,.35); border-radius: 10px; background: radial-gradient(circle at 12% 20%, rgba(109,245,209,.16), transparent 42%), linear-gradient(135deg,#101b2a,#0a1322 70%); transition: border-color .15s, transform .15s; }
+.house-ad a:hover, .house-ad a:focus-visible { border-color: #6df5d1; transform: translateY(-1px); }
+.house-ad-badge { position: absolute; top: 8px; right: 10px; padding: 1px 6px; color: #8aa79f; border: 1px solid rgba(138,167,159,.4); border-radius: 3px; font-size: 10px; font-weight: 700; }
+.house-ad-mark { width: 56px; height: 56px; flex: 0 0 56px; }
+.house-ad-copy { min-width: 0; flex: 1; display: grid; gap: 3px; }
+.house-ad-copy strong { color: #fff; font-size: 20px; letter-spacing: -.02em; }
+.house-ad-copy small { color: #6df5d1; font-size: 12px; font-weight: 800; }
+.house-ad-copy > span { color: #b9c9c5; font-size: 13px; line-height: 1.5; }
+.house-ad-copy ul { display: grid; gap: 8px; margin: 14px 0 0; padding: 0; list-style: none; }
+.house-ad-copy li { padding: 8px 10px; color: #d6e6e2; border: 1px solid rgba(109,245,209,.18); border-radius: 6px; background: rgba(109,245,209,.05); font-size: 13px; }
+.house-ad-cta { flex: 0 0 auto; padding: 10px 16px; color: #07211b; border-radius: 6px; background: #6df5d1; font-size: 14px; font-weight: 900; white-space: nowrap; }
+.ad-rail.house-ad a { flex-direction: column; align-items: stretch; justify-content: center; gap: 18px; padding: 40px 24px 24px; text-align: center; }
+.ad-rail.house-ad .house-ad-mark { width: 96px; height: 96px; flex-basis: auto; align-self: center; }
+.ad-rail.house-ad .house-ad-copy { flex: 0 0 auto; }
+.ad-rail.house-ad .house-ad-copy strong { font-size: 26px; }
+.ad-rail.house-ad .house-ad-copy li { text-align: left; }
+.ad-rail.house-ad .house-ad-cta { padding: 13px; font-size: 15px; text-align: center; }
+.ad-mobile.house-ad a { gap: 12px; padding: 14px 14px 12px; }
+.ad-mobile.house-ad .house-ad-mark { width: 44px; height: 44px; flex-basis: 44px; }
+.ad-mobile.house-ad .house-ad-copy strong { font-size: 16px; }
+.ad-mobile.house-ad .house-ad-copy small { overflow: hidden; font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+.ad-mobile.house-ad .house-ad-cta { padding: 8px 10px; font-size: 12px; }
 
 /* Matchup page */
 .page-intro { width: min(1380px, calc(100% - 64px)); margin: 0 auto; padding: 18px 0 10px; background: radial-gradient(circle at 80% 20%, rgba(8,220,243,.08), transparent 34%); }
@@ -823,6 +846,10 @@ body:not(.ads-enabled) .ad-placeholder { display: none !important; }
   .ability-grid, .perk-columns, .matchup-columns, .mini-card-grid, .counter-recommend-grid { grid-template-columns: 1fr; }
   .story-chapter-grid { grid-template-columns: 1fr; }
   .ad-mobile { display: grid; width: min(320px,100%); margin: 30px auto; }
+  .ad-banner.house-ad a { flex-wrap: wrap; padding: 16px; }
+  .ad-banner.house-ad .house-ad-mark { width: 44px; height: 44px; flex-basis: 44px; }
+  .ad-banner.house-ad .house-ad-cta { width: 100%; text-align: center; }
+  .ad-banner.house-ad .house-ad-copy > span { display: none; }
   .page-intro { padding: 16px 0 10px; }
   .page-intro h1 { font-size: 27px; white-space: normal; }
   .page-intro > p { font-size: 12px; }

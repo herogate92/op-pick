@@ -6,6 +6,7 @@ import Link from "next/link";
 import { BarChart3, Cross, ExternalLink, Search, Shield, Swords, Trophy } from "lucide-react";
 import type { HeroCard, HeroRateSnapshot, Role } from "@/lib/data";
 import { summarizeRates } from "@/lib/stats-summary";
+import { formatKst } from "@/lib/format-time";
 import { rateDelta, type StatsComparison } from "@/lib/stats-history";
 import { StatsCandidates } from "@/components/StatsCandidates";
 
@@ -104,7 +105,7 @@ export function StatsExplorer({ snapshots, heroes, fetchedAt, comparisons }: { s
         <details className="stats-extras stats-comparison-details"><summary>증감 기준 · {comparisonMode === "previous" ? "이전 수집 대비" : "이전 패치 기록 대비"}</summary>
         <div className="stats-history-controls">
           <label>증감 비교<select value={comparisonMode} onChange={event => setComparisonMode(event.target.value as "previous" | "priorPatch")}><option value="previous">이전 수집 대비</option><option value="priorPatch">이전 패치 기록 대비</option></select></label>
-          <p aria-live="polite">{baseline ? `비교 기준: ${new Intl.DateTimeFormat("ko-KR", { timeZone: "Asia/Seoul", dateStyle: "medium", timeStyle: "short" }).format(new Date(baseline.collectedAt))} KST${baseline.patchDate ? ` · 감지 패치 ${baseline.patchDate}` : ""}` : "같은 조건의 비교 기록이 아직 없습니다."}<br />증감 단위는 %p입니다. 패치별 경기 표본을 분리한 자료가 아니므로 패치 효과를 뜻하지 않습니다.</p>
+          <p aria-live="polite">{baseline ? `비교 기준: ${formatKst(baseline.collectedAt)}${baseline.patchDate ? ` · 감지 패치 ${baseline.patchDate}` : ""}` : "같은 조건의 비교 기록이 아직 없습니다."}<br />증감 단위는 %p입니다. 패치별 경기 표본을 분리한 자료가 아니므로 패치 효과를 뜻하지 않습니다.</p>
         </div>
         </details>
 
