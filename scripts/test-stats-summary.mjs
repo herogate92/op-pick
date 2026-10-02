@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { summarizeRates } from '../lib/stats-summary.ts';
 import { statsTier } from '../lib/stats-tier.ts';
+import { formatKst } from '../lib/format-time.ts';
 
 test('승률 구간 경계와 낮은 픽률·체험·누락 제외를 구분한다', () => {
   const row = {hero:'ana',winRate:55,pickRate:1,banRate:null};
@@ -33,4 +34,9 @@ test('검색 결과 없음과 전부 누락된 데이터에서 다른 영웅을 
     assert.equal(result.leaders.pickRate,undefined);
     assert.equal(result.leaders.banRate,undefined);
   }
+});
+
+test('KST 시각은 실행 환경과 관계없이 같은 24시간 표기로 만든다', () => {
+  assert.equal(formatKst('2026-09-21T07:16:20.287Z'), '2026. 9. 21. 16:16 KST');
+  assert.equal(formatKst('2026-09-30T15:05:00.000Z'), '2026. 10. 1. 00:05 KST');
 });

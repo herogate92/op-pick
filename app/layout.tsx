@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ADSENSE_CLIENT, adsEnabled } from "@/lib/site-config";
+import { ADSENSE_CLIENT, adsEnabled, HOUSE_AD } from "@/lib/site-config";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="ko">
-      <body>
+      <body className={HOUSE_AD ? "ads-enabled" : undefined}>
         <link rel="alternate" type="application/rss+xml" title="OP PICK LAB 패치 변경 정리" href="/feed.xml" />
         {/* Auto ads: React hoists this async script into <head>, where AdSense review looks for it. */}
         {adsEnabled && <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} crossOrigin="anonymous" />}

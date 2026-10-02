@@ -1,9 +1,10 @@
 import Link from "next/link";
 import type { HeroRatesDocument } from "@/lib/data";
+import { formatKst } from "@/lib/format-time";
 
 export function HeroStatistics({ heroKey, heroName, rates }: { heroKey: string; heroName: string; rates: HeroRatesDocument }) {
   const collected = rates.fetchedAtIso
-    ? new Intl.DateTimeFormat("ko-KR", { timeZone: "Asia/Seoul", dateStyle: "medium", timeStyle: "short" }).format(new Date(rates.fetchedAtIso)) + " KST"
+    ? formatKst(rates.fetchedAtIso)
     : rates.fetchedAt;
   return <section className="hero-statistics" aria-label={`${heroName} 통계`}>
     <header><h2>{heroName} 통계</h2><Link href="/rates/">전체 영웅 통계 →</Link></header>
