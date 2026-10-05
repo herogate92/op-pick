@@ -12,6 +12,7 @@ import { HeroBackgroundMedia } from "@/components/HeroBackgroundMedia";
 import { JsonLd } from "@/components/JsonLd";
 import { ScoreMeter } from "@/components/ScoreMeter";
 import { SiteHeader } from "@/components/SiteHeader";
+import { SeasonHeroNotice } from "@/components/SeasonHeroNotice";
 import { getCombosFor, getCountersFor, getHero, getStrongAgainst, hasDetailedMatchupData, heroes, roleAccent, roleLabels, subroleLabels } from "@/lib/data";
 import { getHeroVideo } from "@/lib/hero-videos";
 import { getPatchSummary, patchDateLabel } from "@/lib/patches";
@@ -106,6 +107,7 @@ export default async function HeroDetailPage({ params }: { params: Promise<{ slu
 
       <div className="content-with-rail">
         <div className="page-content">
+          <SeasonHeroNotice heroKey={hero.key} />
           <HeroGlance hero={hero} counters={counters} strongAgainst={strongAgainst} combos={heroCombos} snapshot={heroRates.snapshots.find((item) => item.id === "competitive")} patchDate={latestPatchDate} />
           <HeroStatistics heroKey={hero.key} heroName={hero.name} rates={heroRates} />
           {hero.hitpointsNotice && <p className="seo-guide-note">{hero.hitpointsNotice}</p>}

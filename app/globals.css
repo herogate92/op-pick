@@ -939,6 +939,28 @@ body:not(.ads-enabled) .ad-placeholder { display: none !important; }
 .home-dashboard .home-video-overlay { pointer-events: none; }
 .home-dashboard .home-video-toggle { top: 100px; bottom: auto; }
 .home-updates { position: relative; z-index: 3; width: min(1500px,calc(100% - 70px)); margin: 20px auto 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.home-updates .home-season { grid-column: 1 / -1; border-color: #596389; background: linear-gradient(110deg,rgba(29,20,47,.96),rgba(7,16,31,.96)); }
+.home-season-actions { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+.home-season-actions a { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; }
+.season-video { width: 100%; max-width: 1000px; margin: 24px auto 12px; aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid #294055; border-radius: 14px; background: #07101f; }
+.season-video iframe { display: block; width: 100%; height: 100%; border: 0; }
+.season-links { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 16px; }
+.season-links a, .season-card a { display: inline-flex; align-items: center; min-height: 44px; color: var(--cyan-soft); }
+.season-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+.season-card { min-width: 0; padding: 20px; border: 1px solid #294055; border-radius: 14px; background: rgba(7,16,31,.94); scroll-margin-top: 24px; }
+.season-card h3 { margin: 0 0 10px; font-size: 20px; }
+.season-card p { margin: 0; color: #b4becd; line-height: 1.65; }
+.season-card small { display: block; margin-bottom: 10px; color: var(--cyan-soft); }
+.season-hero-notice { margin: 16px 0; padding: 14px 16px; border: 1px solid #596389; border-radius: 10px; background: rgba(29,20,47,.8); font-size: 13px; line-height: 1.6; }
+.season-hero-notice p { margin: 5px 0; color: #b4becd; }
+.season-hero-notice a { display: inline-flex; align-items: center; min-height: 44px; color: var(--cyan-soft); }
+@media (max-width: 760px) {
+  .season-grid { grid-template-columns: 1fr; gap: 12px; }
+  .season-card { padding: 16px; }
+  .season-card h3 { font-size: 18px; }
+  .season-video { margin-top: 16px; }
+  .season-links { gap: 0; flex-direction: column; }
+}
 .home-updates section { min-width: 0; padding: 20px; border: 1px solid #294055; background: rgba(7,16,31,.94); }
 .home-updates header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
 .home-updates h2 { margin: 0; font-size: 18px; }

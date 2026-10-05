@@ -3,8 +3,9 @@
 import { Pause, Play } from "lucide-react";
 import { useState } from "react";
 import { useBackgroundVideoAllowed } from "@/lib/use-background-video";
+import { season } from "@/lib/season";
 
-const VIDEO_ID = "5-CS8C2VBWM";
+const VIDEO_ID = season.videoId;
 const VIDEO_URL = `https://www.youtube-nocookie.com/embed/${VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${VIDEO_ID}&controls=0&disablekb=1&fs=0&iv_load_policy=3&playsinline=1&rel=0&modestbranding=1&cc_load_policy=0`;
 
 export function HomeBackgroundMedia({ poster }: { poster?: string }) {

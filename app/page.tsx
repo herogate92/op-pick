@@ -9,6 +9,7 @@ import { getPatchSummary, patchDateLabel } from "@/lib/patches";
 import { findRateMovers, getComparisons, validateHistory, type StatsHistory } from "@/lib/stats-history";
 import { summarizeRates } from "@/lib/stats-summary";
 import historyJson from "@/public/stats-history.json";
+import { season } from "@/lib/season";
 
 export const metadata: Metadata = {
   title: "오버워치 영웅 상성·카운터 픽·맵별 추천",
@@ -21,7 +22,7 @@ function CtaElectricity() {
 }
 
 export default function HomePage() {
-  const poster = getHero("tracer")?.background ?? getHero("ana")?.background;
+  const poster = season.poster;
   const snapshot = heroRates.snapshots.find(item => item.id === "competitive");
   validateHistory(historyJson);
   const history: StatsHistory = historyJson;
@@ -70,6 +71,11 @@ export default function HomePage() {
         <Link href="/rates/"><BarChart3 /><span><strong>영웅 통계</strong><small>승률과 픽률 확인</small></span><ArrowRight /></Link>
       </nav>
       <div className="home-updates">
+        <section className="home-season" aria-labelledby="home-season-title">
+          <header><h2 id="home-season-title">5시즌 공개 · {season.title}</h2><time dateTime={season.startsAt}>{season.startsLabel} 시작 예정</time></header>
+          <p>독트린 합류 · 솜브라 지원 전환 · 로드호그 개편 · 신규 호위 전장 그림스뵈튼</p>
+          <div className="home-season-actions"><Link href="/season/">공개 내용·일정 보기 <ArrowRight aria-hidden="true" /></Link><a href={`https://www.youtube.com/watch?v=${season.videoId}`} target="_blank" rel="noreferrer">공식 영상 보기 ↗</a></div>
+        </section>
         {snapshot && <section className="home-rates-summary" aria-labelledby="home-stats-title">
           <header><h2 id="home-stats-title">역할별 승률 상위</h2><span className="home-header-links"><Link href="/tier/">티어표 <ArrowRight aria-hidden="true" /></Link><Link href="/rates/">통계 전체 <ArrowRight aria-hidden="true" /></Link></span></header>
           <p>{snapshot.label} · {snapshot.filters.inputLabel} · {snapshot.filters.regionLabel} · {snapshot.filters.tierLabel} · {snapshot.filters.mapLabel}</p>

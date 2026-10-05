@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ChevronRight, Cross, HeartPulse, Search, Shield, Sparkles, Swords, X, Zap } from "lucide-react";
 import { AbilityStats } from "@/components/AbilityStats";
+import { SeasonHeroNotice } from "@/components/SeasonHeroNotice";
 import type { Ability, Combo, Matchup, Role } from "@/lib/data";
 import { roleAccent, roleLabels, subroleLabels } from "@/lib/labels";
 
@@ -184,6 +185,7 @@ export function HeroStage({ header, heroes, matchups, combos }: { header: React.
             <span><Shield aria-hidden="true" /> 역할 <strong>{roleLabels[hero.role]}</strong></span>
           </div>
           <p className="profile-description">{hero.description || "영웅 소개가 아직 등록되지 않았습니다."}</p>
+          <SeasonHeroNotice heroKey={hero.key} />
           {hero.hitpointsNotice && <p>{hero.hitpointsNotice}</p>}
           {hero.patchNote && <p>{hero.patchNote.summary} <a href={hero.patchNote.sourceUrl} target="_blank" rel="noreferrer">공식 패치 {hero.patchNote.date}</a></p>}
           <div className="hero-actions compact-actions">

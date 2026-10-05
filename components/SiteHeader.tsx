@@ -35,6 +35,7 @@ export function SiteHeader({ active }: { active: string }) {
           <summary aria-label="전체 메뉴"><Menu size={21} aria-hidden="true" /><span>메뉴</span></summary>
           <nav aria-label="전체 메뉴" className="mobile-menu-panel">
             <PatchNotesLink />
+            <Link href="/season/" aria-current={active === "season" ? "page" : undefined}>5시즌 영상·공개 내용</Link>
             {navItems.map(({ href, label, icon: Icon, id }) => <Link key={id} href={href} aria-current={active === id ? "page" : undefined}><Icon size={20} aria-hidden="true" />{label}</Link>)}
             <Link href="/sources/">자료 출처·이용 안내</Link>
             <Link href="/tier/">영웅 티어표</Link>

@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://opick.ggwp.kr";
   return [
     { url: `${base}/`, changeFrequency: "weekly", priority: 1 },
+    { url: `${base}/season/`, lastModified: "2026-10-06", changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/heroes/`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/rates/`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/tier/`, changeFrequency: "weekly", priority: 0.9 },
