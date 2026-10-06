@@ -951,6 +951,16 @@ body:not(.ads-enabled) .ad-placeholder { display: none !important; }
 .season-content .page-intro { width: 100%; }
 .season-video { width: 100%; margin: 24px 0 12px; aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid #294055; border-radius: 14px; background: #07101f; }
 .season-video iframe { display: block; width: 100%; height: 100%; border: 0; }
+.season-video-preview { position: relative; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; padding: 24px; border: 0; color: #fff; background-color: #182137; background-size: cover; background-position: center; cursor: pointer; }
+.season-video-preview::before { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(4,10,21,.95), transparent 65%); }
+.season-video-play { position: relative; display: grid; place-items: center; width: 76px; height: 76px; border: 1px solid rgba(255,255,255,.75); border-radius: 50%; background: rgba(4,10,21,.65); transition: background .2s ease; }
+.season-video-play svg { width: 30px; height: 30px; margin-left: 4px; fill: currentColor; }
+.season-video-preview:hover .season-video-play, .season-video-preview:focus-visible .season-video-play { color: #07101f; background: var(--cyan); }
+.season-video-preview:focus-visible { outline: 3px solid var(--cyan); outline-offset: -4px; }
+.season-video-caption { position: absolute; left: 24px; right: 24px; bottom: 24px; display: grid; gap: 6px; text-align: left; }
+.season-video-caption small { color: var(--cyan-soft); font-size: 12px; }
+.season-video-caption strong { font-size: clamp(18px, 3vw, 28px); }
+.season-video-caption > span { color: #c4d0df; font-size: 13px; }
 .season-links { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 16px; }
 .season-links a, .season-card a { display: inline-flex; align-items: center; min-height: 44px; color: var(--cyan-soft); }
 .season-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
@@ -967,6 +977,10 @@ body:not(.ads-enabled) .ad-placeholder { display: none !important; }
   .season-card { padding: 16px; }
   .season-card h3 { font-size: 18px; }
   .season-video { margin-top: 16px; }
+  .season-video-play { width: 54px; height: 54px; }
+  .season-video-play svg { width: 22px; height: 22px; }
+  .season-video-caption { left: 14px; right: 14px; bottom: 12px; gap: 3px; }
+  .season-video-caption > span { display: none; }
   .season-links { gap: 0; flex-direction: column; }
 }
 .home-updates section { min-width: 0; padding: 20px; border: 1px solid #294055; background: rgba(7,16,31,.94); }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
+import { SeasonTrailer } from "@/components/SeasonTrailer";
 import { season } from "@/lib/season";
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export default function SeasonPage() {
     <SiteHeader active="season" />
     <div className="season-content">
     <section className="page-intro"><span className="section-kicker">REIGN OF TALON · SEASON 5</span><h1>5시즌 <em>{season.title}</em></h1><p>시작 예정 <time dateTime={season.startsAt}>{season.startsLabel}</time> · 공개 내용 확인 {season.checkedAt}</p></section>
-    <div className="season-video"><iframe src={`https://www.youtube-nocookie.com/embed/${season.videoId}?rel=0&playsinline=1`} title={season.videoTitle} loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowFullScreen referrerPolicy="strict-origin-when-cross-origin" /></div>
+    <SeasonTrailer />
     <div className="season-links"><a href={`https://www.youtube.com/watch?v=${season.videoId}`} target="_blank" rel="noreferrer">한국 공식 채널에서 영상 보기 ↗</a><a href={season.sourceUrl} target="_blank" rel="noreferrer">공식 시즌 소개 원문 ↗</a></div>
     <p className="seo-guide-note">출시 전 공식 소개를 정리했습니다. 영웅의 상세 수치와 추천은 표시된 라이브 패치 기준이며, 출시 패치와 구분해 확인하세요.</p>
     <section className="content-section"><div className="section-heading"><span className="section-kicker">HEROES & MAP</span><h2>전장에 생기는 변화</h2></div><div className="season-grid">{season.highlights.map(item => <article id={item.id} key={item.id} className="season-card"><h3>{item.title}</h3><p>{item.text}</p>{"href" in item && <Link href={item.href}>{item.link} →</Link>}</article>)}</div></section>
