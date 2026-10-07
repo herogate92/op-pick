@@ -1320,10 +1320,10 @@
     "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
     "category": "기술",
     "id": "sombra",
-    "contentDigest": "57d48f45f9b734a921da90fb1a6207fc5b519b1759dd4978930e13e0a7fa4c5d",
+    "contentDigest": "c03a7f2bf920763b16ddf86e0190dd5ebf60e672649afd74ad61c28c372a4ecd",
     "decision": "updated",
     "reviewedAt": "2026-10-07",
-    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다. 공식 영웅 페이지의 개편된 기술 시연 영상과 아이콘으로 교체했습니다.",
     "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
   },
   {
@@ -1360,10 +1360,10 @@
     "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
     "category": "기술",
     "id": "roadhog",
-    "contentDigest": "39bd768bdda937a9e6ebfa9b02a66bc8d050155d83a6d4e018b087deae546041",
+    "contentDigest": "dc8a130528ffdc6abc201786125d9c74eecd1bf4fdd95b471627ba5ef314e863",
     "decision": "updated",
     "reviewedAt": "2026-10-07",
-    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다. 공식 영웅 페이지의 개편된 기술 시연 영상과 아이콘으로 교체했습니다.",
     "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
   },
   {

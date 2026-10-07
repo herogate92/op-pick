@@ -17,8 +17,8 @@ interface HeroSummary {
 const heroRoleOrder: Role[] = ["tank", "damage", "support"];
 const heroRosterOrder: Record<Role, string[]> = {
   tank: ["dmon", "dva", "domina", "doomfist", "ramattra", "reinhardt", "wrecking-ball", "roadhog", "mauga", "sigma", "orisa", "winston", "zarya", "junker-queen", "hazard"],
-  damage: ["genji", "reaper", "mei", "bastion", "vendetta", "venture", "sojourn", "soldier-76", "sombra", "symmetra", "sierra", "shion", "anran", "ashe", "echo", "emre", "widowmaker", "junkrat", "cassidy", "torbjorn", "tracer", "pharah", "freja", "hanzo"],
-  support: ["lifeweaver", "lucio", "mercy", "moira", "mizuki", "baptiste", "brigitte", "ana", "wuyang", "illari", "jetpack-cat", "zenyatta", "juno", "kiriko"],
+  damage: ["genji", "reaper", "mei", "bastion", "vendetta", "venture", "sojourn", "soldier-76", "symmetra", "sierra", "shion", "anran", "ashe", "echo", "emre", "widowmaker", "junkrat", "cassidy", "torbjorn", "tracer", "pharah", "freja", "hanzo"],
+  support: ["doctrine", "sombra", "lifeweaver", "lucio", "mercy", "moira", "mizuki", "baptiste", "brigitte", "ana", "wuyang", "illari", "jetpack-cat", "zenyatta", "juno", "kiriko"],
 };
 
 // Loaded from /heroes/<key>/skills.json when the skill sheet opens; most of the roster's weight is here.

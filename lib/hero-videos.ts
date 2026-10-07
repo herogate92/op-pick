@@ -23,7 +23,6 @@ export const heroVideos: Record<string, HeroVideo> = {
   vendetta: { id: "pJ2BEIYDEkE", title: "벤데타 게임플레이 트레일러 | 오버워치 2", kind: "gameplay" },
   venture: { id: "X2iA4VBO-WM", title: "벤처 소개 영상 | 오버워치 2", kind: "intro" },
   sojourn: { id: "7_E7XMmn1Aw", title: "소전 소개 영상 | 오버워치 2", kind: "intro" },
-  sombra: { id: "o4nwYj5-y7o", title: "오버워치 2 영웅 가이드: 솜브라 리워크", kind: "guide" },
   sierra: { id: "Jmvgx1e4k5I", title: "시에라 신규 영웅 게임플레이 트레일러 | 오버워치", kind: "gameplay" },
   shion: { id: "HnyJ5b7CXoo", title: "시온 신규 영웅 게임플레이 트레일러 | 오버워치", kind: "gameplay" },
   anran: NEW_HERO_GAMEPLAY,

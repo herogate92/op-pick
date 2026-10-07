@@ -1371,16 +1371,21 @@
         "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
         "statsPatchDate": "2026-10-06",
         "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
-        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치",
+        "video": {
+          "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltddd33f6a4a78017a/6abad96e55641d39c9f3591c/scrapgun.png",
+          "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltc3fb627c40ece157/6abad581dee8847a1fcbae48/260917_Roadhog_HeroRework_Broll_WEB_ScrapGun_01.mp4",
+          "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt94a4fa85bbfa9160/6abad581dee8848268cbae4c/260917_Roadhog_HeroRework_Broll_WEB_ScrapGun_01.webm"
+        }
       },
       {
         "name": "사슬 갈고리",
         "description": "적을 자신에게 끌어당깁니다.",
         "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7edc1cdef13c2fd21e279043816aa1d2975dc784298502fd121b927729e1e86d.png",
         "video": {
-          "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb7e613287c154390/6339084e1a0b5e7d3d1ec5d5/ROADHOG_GRAPPLEHOOK.jpg",
-          "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt64a3ef7e15942399/6594a7facd72b19d912c1e63/OW2_RoadhogUpdate_HRZ_60_ChainHook.mp4",
-          "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt6a34055cf0b68eee/6594a819619a8e3aaa5d68b1/OW2_RoadhogUpdate_HRZ_60_ChainHook.webm"
+          "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt725b885deae940dc/6abad96e32e6023e0ec0e036/chainhook.png",
+          "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt3df99dd28299ec68/6abad581ad9209340e562ae6/260917_Roadhog_HeroRework_Broll_WEB_ChainHook_01.mp4",
+          "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt0dfa6a8b5dc75a86/6abad58132e602d03ac0e024/260917_Roadhog_HeroRework_Broll_WEB_ChainHook_01.webm"
         },
         "patchNote": {
           "date": "2026-10-06",
@@ -1497,7 +1502,13 @@
         "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
         "statsPatchDate": "2026-10-06",
         "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
-        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치",
+        "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/23bd9bc7960a9958d04584375c5ea81c6615da668e9ad8c6cbb4920561f7c199.png",
+        "video": {
+          "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt50b7f1ef7dc62017/6abad96e3f72c309b327f96a/trashcompactor.png",
+          "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blte075a8f1798d31c9/6abad5812c05807ebd274156/260923_Roadhog_HeroRework_Broll_WEB_TrashCompactor_02.mp4",
+          "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltf6d37814d83eb534/6abad5812c05803f6c274158/260923_Roadhog_HeroRework_Broll_WEB_TrashCompactor_02.webm"
+        }
       }
     ],
     "perks": {
@@ -1558,7 +1569,7 @@
       }
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/roadhog/",
-    "checkedAt": "2026-08-29",
+    "checkedAt": "2026-10-07",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-10-07",
     "abilitiesSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
@@ -3619,9 +3630,9 @@
         "description": "위치변환기를 던진 뒤 해당 위치로 순간이동합니다. 순간이동 후 짧은 시간 동안 은신 상태가 됩니다.",
         "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13259eeec8db36c3158d1d4bd4fe99667067ee7bf678349eec5cbd0d32da3a7f.png",
         "video": {
-          "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltdd7dcb5aabef6beb/6333cbbe2dc7636608cc7094/SOMBRA_TRANSLOCATOR.jpg",
-          "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt772ed8b5a3ea133e/6333cbb5e3c2a2741688cafd/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_SombraTranslocator_WEB_16x9_1920x1080p30_H264.mp4",
-          "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt35d9c3f26239a763/6679f4965e8b86774485d175/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_SombraTranslocator_WEB_16x9_1920x1080p30_WEBM.webm"
+          "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt20818c7d575b5f62/6abad984ad92093333562af2/translocator.png",
+          "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt38fd610131372699/6abad59532e602f7e0c0e028/260923_Sombra_HeroRework_Broll_WEB_Translocator_02_1.mp4",
+          "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blte1f4279933b9eb04/6abad5964b66aa310c91d5fa/260923_Sombra_HeroRework_Broll_WEB_Translocator.webm"
         },
         "patchNote": {
           "date": "2026-10-06",
@@ -3712,7 +3723,13 @@
         "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
         "statsPatchDate": "2026-10-06",
         "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
-        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치",
+        "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8646a0e19104f5185b6296c0123fd768c3333a18ffe4aa922e2724df9b2aa041.png",
+        "video": {
+          "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt83d64cf8748c8844/6abad9843f72c3257427f96e/hotfix.png",
+          "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt231cdfdbb7226d7f/6abad59455641d73e6f35912/260917_Sombra_HeroRework_Broll_WEB_Hotfix_01.mp4",
+          "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltc21a2c8b6743959a/6abad594dee8847f50cbae50/260917_Sombra_HeroRework_Broll_WEB_Hotfix_01.webm"
+        }
       },
       {
         "name": "사이버 스페이스",
@@ -3744,7 +3761,13 @@
         "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
         "statsPatchDate": "2026-10-06",
         "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
-        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치",
+        "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/22bfcf655c54a065b149c3359ce2447f6c4c09835fd957ce72fa8a4e023ba7ef.png",
+        "video": {
+          "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt9bd83b656a8f8198/6abad9847ec8fe49920009a4/cyberspace.png",
+          "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt66cccd8c1662b0ba/6abad59355641d61d6f3590e/260917_Sombra_HeroRework_Broll_WEB_Cyberspace_01.mp4",
+          "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt11a55e546f52333c/6abad594f8f124a731bcbd33/260917_Sombra_HeroRework_Broll_WEB_Cyberspace_01.webm"
+        }
       },
       {
         "name": "공모자",
