@@ -65,6 +65,7 @@ export default async function MapDetailPage({ params }: { params: Promise<{ map:
             <Link href="/maps/"><ArrowLeft aria-hidden="true" />전체 맵 선택</Link>
           </section>
           <p className="seo-guide-note">전장 특징: {map.terrain}<br />{map.layoutCaveat}</p>
+          {map.recommendationNotice && <p className="seo-guide-note">{map.recommendationNotice}</p>}
           <MapStatistics snapshots={statistics} heroes={heroCards} fetchedAt={heroRates.fetchedAt} mapName={map.name}/>
           {(["tank", "damage", "support"] as Role[]).map((role) => {
             const recommendations = map.recommendations.filter((item) => getHero(item.hero)?.role === role);

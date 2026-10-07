@@ -180,13 +180,22 @@
     "hero": "ana",
     "counter": "sombra",
     "score": 4,
-    "reason": "은신 진입과 해킹이 아나의 제한된 생존 수단을 무력화합니다.",
-    "condition": "아군과 시야를 공유하고 해킹 음향을 확인하세요.",
-    "reviewedAt": "2026-08-29",
-    "status": "verified",
-    "confidence": "medium",
-    "patchBasis": "2026-08-30 라이브 영웅 기술 기준",
-    "counterplay": "아군과 시야를 공유하고 해킹 음향을 확인하세요."
+    "reason": "솜브라의 지원 전환으로 기존 상성 판단을 보류했습니다. 영웅 대상 해킹과 바이러스는 삭제되었습니다.",
+    "condition": "긴급 패치·사이버 스페이스·EMP를 기준으로 새 상호작용을 확인해야 합니다.",
+    "reviewedAt": "2026-10-07",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "2026-10-06 지원 솜브라 개편",
+    "counterplay": "예전 해킹·바이러스 대응 대신 치유 사거리와 약화 구역을 확인하세요.",
+    "evidence": [
+      "공식 5시즌 패치의 역할·기술 교체 확인"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "label": "5시즌 공식 출시 패치"
+      }
+    ]
   },
   {
     "id": "anran-jetpack-cat",
@@ -349,13 +358,22 @@
     "hero": "ashe",
     "counter": "sombra",
     "score": 4,
-    "reason": "솜브라은(는) 애쉬의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "솜브라의 지원 전환으로 기존 상성 판단을 보류했습니다. 영웅 대상 해킹과 바이러스는 삭제되었습니다.",
+    "condition": "긴급 패치·사이버 스페이스·EMP를 기준으로 새 상호작용을 확인해야 합니다.",
+    "reviewedAt": "2026-10-07",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-10-06 지원 솜브라 개편",
+    "counterplay": "예전 해킹·바이러스 대응 대신 치유 사거리와 약화 구역을 확인하세요.",
+    "evidence": [
+      "공식 5시즌 패치의 역할·기술 교체 확인"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "label": "5시즌 공식 출시 패치"
+      }
+    ]
   },
   {
     "id": "ashe-vendetta",
@@ -2160,13 +2178,22 @@
     "hero": "illari",
     "counter": "sombra",
     "score": 4,
-    "reason": "솜브라은(는) 일리아리의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "솜브라의 지원 전환으로 기존 상성 판단을 보류했습니다. 영웅 대상 해킹과 바이러스는 삭제되었습니다.",
+    "condition": "긴급 패치·사이버 스페이스·EMP를 기준으로 새 상호작용을 확인해야 합니다.",
+    "reviewedAt": "2026-10-07",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-10-06 지원 솜브라 개편",
+    "counterplay": "예전 해킹·바이러스 대응 대신 치유 사거리와 약화 구역을 확인하세요.",
+    "evidence": [
+      "공식 5시즌 패치의 역할·기술 교체 확인"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "label": "5시즌 공식 출시 패치"
+      }
+    ]
   },
   {
     "id": "illari-widowmaker",
@@ -2354,31 +2381,25 @@
     "hero": "jetpack-cat",
     "counter": "sombra",
     "score": 4,
-    "reason": "2026년 2월 이용자 보고에는 해킹 후 기본 체공은 유지되고 가속·견인이 제한된다는 설명이 있습니다. 같은 토론에 고도 변화에 대한 이견도 있어 기본 체공·가속·운반을 한 가지 비행 취소로 묶어 단정하지 않습니다.",
-    "condition": "현재 패치에서 정지 체공·정신 없는 비행·아군 운반을 각각 해킹하고 고도 변화, 가속 중단, 생명줄 해제 여부를 별도로 확인해야 합니다.",
-    "reviewedAt": "2026-09-24",
+    "reason": "솜브라의 지원 전환으로 기존 상성 판단을 보류했습니다. 영웅 대상 해킹과 바이러스는 삭제되었습니다.",
+    "condition": "긴급 패치·사이버 스페이스·EMP를 기준으로 새 상호작용을 확인해야 합니다.",
+    "reviewedAt": "2026-10-07",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "2026-09-24 공개 자료 재검토 · 과거 패치/이용자 보고와 현재 판정을 구분 · 게임 내 재현 미실시",
-    "counterplay": "해킹 시야를 엄폐로 끊고 해킹당하면 즉시 추락한다고 단정하지 마세요.",
-    "skillInteractions": [
-      {
-        "heroAbility": "정신 없는 비행",
-        "counterAbility": "해킹",
-        "interaction": "2026년 2월 이용자 보고에는 해킹 후 기본 체공은 유지되고 가속·견인이 제한된다는 설명이 있습니다. 같은 토론에 고도 변화에 대한 이견도 있어 기본 체공·가속·운반을 한 가지 비행 취소로 묶어 단정하지 않습니다.",
-        "condition": "현재 패치에서 정지 체공·정신 없는 비행·아군 운반을 각각 해킹하고 고도 변화, 가속 중단, 생명줄 해제 여부를 별도로 확인해야 합니다.",
-        "counterplay": "해킹 시야를 엄폐로 끊고 해킹당하면 즉시 추락한다고 단정하지 마세요."
-      }
-    ],
+    "patchBasis": "2026-10-06 지원 솜브라 개편",
+    "counterplay": "예전 해킹·바이러스 대응 대신 치유 사거리와 약화 구역을 확인하세요.",
     "sourceUrls": [
       "https://overwatch.blizzard.com/en-us/heroes/jetpack-cat/",
       "https://overwatch.blizzard.com/en-us/heroes/sombra/"
     ],
     "reviewSources": [
       {
-        "url": "https://www.reddit.com/r/SombraMains/comments/1r2mhnl/jetpack_cat_flight_doesnt_get_canceled_by_hack/",
-        "label": "과거 이용자 보고 · 해킹 후 체공·가속·견인 논의"
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "label": "5시즌 공식 출시 패치"
       }
+    ],
+    "evidence": [
+      "공식 5시즌 패치의 역할·기술 교체 확인"
     ]
   },
   {
@@ -2698,13 +2719,22 @@
     "hero": "juno",
     "counter": "sombra",
     "score": 4,
-    "reason": "솜브라은(는) 주노의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "솜브라의 지원 전환으로 기존 상성 판단을 보류했습니다. 영웅 대상 해킹과 바이러스는 삭제되었습니다.",
+    "condition": "긴급 패치·사이버 스페이스·EMP를 기준으로 새 상호작용을 확인해야 합니다.",
+    "reviewedAt": "2026-10-07",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-10-06 지원 솜브라 개편",
+    "counterplay": "예전 해킹·바이러스 대응 대신 치유 사거리와 약화 구역을 확인하세요.",
+    "evidence": [
+      "공식 5시즌 패치의 역할·기술 교체 확인"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "label": "5시즌 공식 출시 패치"
+      }
+    ]
   },
   {
     "id": "juno-winston",
@@ -2854,13 +2884,22 @@
     "hero": "lifeweaver",
     "counter": "sombra",
     "score": 4,
-    "reason": "솜브라은(는) 라이프위버의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "솜브라의 지원 전환으로 기존 상성 판단을 보류했습니다. 영웅 대상 해킹과 바이러스는 삭제되었습니다.",
+    "condition": "긴급 패치·사이버 스페이스·EMP를 기준으로 새 상호작용을 확인해야 합니다.",
+    "reviewedAt": "2026-10-07",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-10-06 지원 솜브라 개편",
+    "counterplay": "예전 해킹·바이러스 대응 대신 치유 사거리와 약화 구역을 확인하세요.",
+    "evidence": [
+      "공식 5시즌 패치의 역할·기술 교체 확인"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "label": "5시즌 공식 출시 패치"
+      }
+    ]
   },
   {
     "id": "lifeweaver-vendetta",
@@ -2958,13 +2997,22 @@
     "hero": "lucio",
     "counter": "sombra",
     "score": 4,
-    "reason": "솜브라은(는) 루시우의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "솜브라의 지원 전환으로 기존 상성 판단을 보류했습니다. 영웅 대상 해킹과 바이러스는 삭제되었습니다.",
+    "condition": "긴급 패치·사이버 스페이스·EMP를 기준으로 새 상호작용을 확인해야 합니다.",
+    "reviewedAt": "2026-10-07",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-10-06 지원 솜브라 개편",
+    "counterplay": "예전 해킹·바이러스 대응 대신 치유 사거리와 약화 구역을 확인하세요.",
+    "evidence": [
+      "공식 5시즌 패치의 역할·기술 교체 확인"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "label": "5시즌 공식 출시 패치"
+      }
+    ]
   },
   {
     "id": "mauga-ana",
@@ -3556,13 +3604,22 @@
     "hero": "pharah",
     "counter": "sombra",
     "score": 4,
-    "reason": "솜브라은(는) 파라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "솜브라의 지원 전환으로 기존 상성 판단을 보류했습니다. 영웅 대상 해킹과 바이러스는 삭제되었습니다.",
+    "condition": "긴급 패치·사이버 스페이스·EMP를 기준으로 새 상호작용을 확인해야 합니다.",
+    "reviewedAt": "2026-10-07",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-10-06 지원 솜브라 개편",
+    "counterplay": "예전 해킹·바이러스 대응 대신 치유 사거리와 약화 구역을 확인하세요.",
+    "evidence": [
+      "공식 5시즌 패치의 역할·기술 교체 확인"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "label": "5시즌 공식 출시 패치"
+      }
+    ]
   },
   {
     "id": "pharah-widowmaker",
@@ -4356,13 +4413,22 @@
     "hero": "sierra",
     "counter": "sombra",
     "score": 4,
-    "reason": "솜브라은(는) 시에라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "솜브라의 지원 전환으로 기존 상성 판단을 보류했습니다. 영웅 대상 해킹과 바이러스는 삭제되었습니다.",
+    "condition": "긴급 패치·사이버 스페이스·EMP를 기준으로 새 상호작용을 확인해야 합니다.",
+    "reviewedAt": "2026-10-07",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-10-06 지원 솜브라 개편",
+    "counterplay": "예전 해킹·바이러스 대응 대신 치유 사거리와 약화 구역을 확인하세요.",
+    "evidence": [
+      "공식 5시즌 패치의 역할·기술 교체 확인"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "label": "5시즌 공식 출시 패치"
+      }
+    ]
   },
   {
     "id": "sierra-winston",
@@ -4473,13 +4539,22 @@
     "hero": "sigma",
     "counter": "sombra",
     "score": 4,
-    "reason": "솜브라은(는) 시그마의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "솜브라의 지원 전환으로 기존 상성 판단을 보류했습니다. 영웅 대상 해킹과 바이러스는 삭제되었습니다.",
+    "condition": "긴급 패치·사이버 스페이스·EMP를 기준으로 새 상호작용을 확인해야 합니다.",
+    "reviewedAt": "2026-10-07",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-10-06 지원 솜브라 개편",
+    "counterplay": "예전 해킹·바이러스 대응 대신 치유 사거리와 약화 구역을 확인하세요.",
+    "evidence": [
+      "공식 5시즌 패치의 역할·기술 교체 확인"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "label": "5시즌 공식 출시 패치"
+      }
+    ]
   },
   {
     "id": "sigma-symmetra",
@@ -4668,38 +4743,47 @@
     "hero": "sombra",
     "counter": "cassidy",
     "score": 4,
-    "reason": "캐서디은(는) 솜브라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "솜브라의 지원 전환으로 기존 상성 판단을 보류했습니다. 영웅 대상 해킹과 바이러스는 삭제되었습니다.",
+    "condition": "긴급 패치·사이버 스페이스·EMP를 기준으로 새 상호작용을 확인해야 합니다.",
+    "reviewedAt": "2026-10-07",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-10-06 지원 솜브라 개편",
+    "counterplay": "예전 해킹·바이러스 대응 대신 치유 사거리와 약화 구역을 확인하세요.",
+    "evidence": [
+      "공식 5시즌 패치의 역할·기술 교체 확인"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "label": "5시즌 공식 출시 패치"
+      }
+    ]
   },
   {
     "id": "sombra-dmon",
     "hero": "sombra",
     "counter": "dmon",
     "score": 4,
-    "reason": "전방 방벽과 해킹은 서로 다른 대응 방향을 요구합니다. 파워 배리어만으로 측면 해킹까지 차단한다고 볼 근거는 부족합니다.",
-    "condition": "해킹 사선과 시전 방해 여부를 구분해야 합니다.",
-    "reviewedAt": "2026-09-21",
+    "reason": "솜브라의 지원 전환으로 기존 상성 판단을 보류했습니다. 영웅 대상 해킹과 바이러스는 삭제되었습니다.",
+    "condition": "긴급 패치·사이버 스페이스·EMP를 기준으로 새 상호작용을 확인해야 합니다.",
+    "reviewedAt": "2026-10-07",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "2026-09-21 공식 기술 설명 대조 · 조건부 분석 · 실전 재현·승률 검증 미실시",
-    "counterplay": "방벽 정면에 머물지 말고 측면에서 시야를 확보한 뒤 위치변환기로 퇴로를 남기세요.",
-    "skillInteractions": [
-      {
-        "heroAbility": "해킹",
-        "counterAbility": "파워 배리어",
-        "interaction": "전방 방벽과 해킹은 서로 다른 대응 방향을 요구합니다. 파워 배리어만으로 측면 해킹까지 차단한다고 볼 근거는 부족합니다.",
-        "condition": "해킹 사선과 시전 방해 여부를 구분해야 합니다.",
-        "counterplay": "방벽 정면에 머물지 말고 측면에서 시야를 확보한 뒤 위치변환기로 퇴로를 남기세요."
-      }
-    ],
+    "patchBasis": "2026-10-06 지원 솜브라 개편",
+    "counterplay": "예전 해킹·바이러스 대응 대신 치유 사거리와 약화 구역을 확인하세요.",
     "sourceUrls": [
       "https://overwatch.blizzard.com/en-us/heroes/sombra/",
       "https://overwatch.blizzard.com/en-us/heroes/dmon/"
+    ],
+    "evidence": [
+      "공식 5시즌 패치의 역할·기술 교체 확인"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "label": "5시즌 공식 출시 패치"
+      }
     ]
   },
   {
@@ -4707,38 +4791,47 @@
     "hero": "sombra",
     "counter": "dva",
     "score": 4,
-    "reason": "D.Va은(는) 솜브라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "솜브라의 지원 전환으로 기존 상성 판단을 보류했습니다. 영웅 대상 해킹과 바이러스는 삭제되었습니다.",
+    "condition": "긴급 패치·사이버 스페이스·EMP를 기준으로 새 상호작용을 확인해야 합니다.",
+    "reviewedAt": "2026-10-07",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-10-06 지원 솜브라 개편",
+    "counterplay": "예전 해킹·바이러스 대응 대신 치유 사거리와 약화 구역을 확인하세요.",
+    "evidence": [
+      "공식 5시즌 패치의 역할·기술 교체 확인"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "label": "5시즌 공식 출시 패치"
+      }
+    ]
   },
   {
     "id": "sombra-kiriko",
     "hero": "sombra",
     "counter": "kiriko",
     "score": 3,
-    "reason": "정화의 방울은 바이러스의 지속 피해를 정화하여 솜브라의 기습 후 처치 연계를 끊을 수 있습니다.",
-    "condition": "정화가 피해 대상에게 닿았을 때. 이미 발생한 피해를 되돌리는 것은 아닙니다.",
-    "reviewedAt": "2026-09-09",
-    "status": "verified",
-    "confidence": "medium",
-    "patchBasis": "2026-09-09 공개 기술 설명과 2026-09-08 라이브 패치 확인에 따른 조건부 분석 · 게임 내 재현 미실시",
-    "counterplay": "정화의 방울을 먼저 유도하거나 키리코와 떨어진 목표를 공격하고, 정화 후에는 무리한 추격 대신 이탈하세요.",
-    "skillInteractions": [
-      {
-        "heroAbility": "바이러스",
-        "counterAbility": "정화의 방울",
-        "interaction": "정화의 방울은 바이러스의 지속 피해를 정화하여 솜브라의 기습 후 처치 연계를 끊을 수 있습니다.",
-        "condition": "정화가 피해 대상에게 닿았을 때. 이미 발생한 피해를 되돌리는 것은 아닙니다.",
-        "counterplay": "정화의 방울을 먼저 유도하거나 키리코와 떨어진 목표를 공격하고, 정화 후에는 무리한 추격 대신 이탈하세요."
-      }
-    ],
+    "reason": "솜브라의 지원 전환으로 기존 상성 판단을 보류했습니다. 영웅 대상 해킹과 바이러스는 삭제되었습니다.",
+    "condition": "긴급 패치·사이버 스페이스·EMP를 기준으로 새 상호작용을 확인해야 합니다.",
+    "reviewedAt": "2026-10-07",
+    "status": "provisional",
+    "confidence": "low",
+    "patchBasis": "2026-10-06 지원 솜브라 개편",
+    "counterplay": "예전 해킹·바이러스 대응 대신 치유 사거리와 약화 구역을 확인하세요.",
     "sourceUrls": [
       "https://overfast-api.tekrop.fr/heroes/sombra?locale=ko-kr",
       "https://overfast-api.tekrop.fr/heroes/kiriko?locale=ko-kr"
+    ],
+    "evidence": [
+      "공식 5시즌 패치의 역할·기술 교체 확인"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "label": "5시즌 공식 출시 패치"
+      }
     ]
   },
   {
@@ -4746,52 +4839,88 @@
     "hero": "sombra",
     "counter": "mei",
     "score": 4,
-    "reason": "메이은(는) 솜브라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "솜브라의 지원 전환으로 기존 상성 판단을 보류했습니다. 영웅 대상 해킹과 바이러스는 삭제되었습니다.",
+    "condition": "긴급 패치·사이버 스페이스·EMP를 기준으로 새 상호작용을 확인해야 합니다.",
+    "reviewedAt": "2026-10-07",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-10-06 지원 솜브라 개편",
+    "counterplay": "예전 해킹·바이러스 대응 대신 치유 사거리와 약화 구역을 확인하세요.",
+    "evidence": [
+      "공식 5시즌 패치의 역할·기술 교체 확인"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "label": "5시즌 공식 출시 패치"
+      }
+    ]
   },
   {
     "id": "sombra-moira",
     "hero": "sombra",
     "counter": "moira",
     "score": 4,
-    "reason": "모이라은(는) 솜브라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "솜브라의 지원 전환으로 기존 상성 판단을 보류했습니다. 영웅 대상 해킹과 바이러스는 삭제되었습니다.",
+    "condition": "긴급 패치·사이버 스페이스·EMP를 기준으로 새 상호작용을 확인해야 합니다.",
+    "reviewedAt": "2026-10-07",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-10-06 지원 솜브라 개편",
+    "counterplay": "예전 해킹·바이러스 대응 대신 치유 사거리와 약화 구역을 확인하세요.",
+    "evidence": [
+      "공식 5시즌 패치의 역할·기술 교체 확인"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "label": "5시즌 공식 출시 패치"
+      }
+    ]
   },
   {
     "id": "sombra-symmetra",
     "hero": "sombra",
     "counter": "symmetra",
     "score": 4,
-    "reason": "시메트라은(는) 솜브라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "솜브라의 지원 전환으로 기존 상성 판단을 보류했습니다. 영웅 대상 해킹과 바이러스는 삭제되었습니다.",
+    "condition": "긴급 패치·사이버 스페이스·EMP를 기준으로 새 상호작용을 확인해야 합니다.",
+    "reviewedAt": "2026-10-07",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-10-06 지원 솜브라 개편",
+    "counterplay": "예전 해킹·바이러스 대응 대신 치유 사거리와 약화 구역을 확인하세요.",
+    "evidence": [
+      "공식 5시즌 패치의 역할·기술 교체 확인"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "label": "5시즌 공식 출시 패치"
+      }
+    ]
   },
   {
     "id": "sombra-zarya",
     "hero": "sombra",
     "counter": "zarya",
     "score": 4,
-    "reason": "자리야은(는) 솜브라의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "솜브라의 지원 전환으로 기존 상성 판단을 보류했습니다. 영웅 대상 해킹과 바이러스는 삭제되었습니다.",
+    "condition": "긴급 패치·사이버 스페이스·EMP를 기준으로 새 상호작용을 확인해야 합니다.",
+    "reviewedAt": "2026-10-07",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-10-06 지원 솜브라 개편",
+    "counterplay": "예전 해킹·바이러스 대응 대신 치유 사거리와 약화 구역을 확인하세요.",
+    "evidence": [
+      "공식 5시즌 패치의 역할·기술 교체 확인"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "label": "5시즌 공식 출시 패치"
+      }
+    ]
   },
   {
     "id": "symmetra-cassidy",
@@ -5505,13 +5634,22 @@
     "hero": "widowmaker",
     "counter": "sombra",
     "score": 4,
-    "reason": "솜브라은(는) 위도우메이커의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "솜브라의 지원 전환으로 기존 상성 판단을 보류했습니다. 영웅 대상 해킹과 바이러스는 삭제되었습니다.",
+    "condition": "긴급 패치·사이버 스페이스·EMP를 기준으로 새 상호작용을 확인해야 합니다.",
+    "reviewedAt": "2026-10-07",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-10-06 지원 솜브라 개편",
+    "counterplay": "예전 해킹·바이러스 대응 대신 치유 사거리와 약화 구역을 확인하세요.",
+    "evidence": [
+      "공식 5시즌 패치의 역할·기술 교체 확인"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "label": "5시즌 공식 출시 패치"
+      }
+    ]
   },
   {
     "id": "widowmaker-winston",
@@ -5752,13 +5890,22 @@
     "hero": "wrecking-ball",
     "counter": "sombra",
     "score": 4,
-    "reason": "솜브라은(는) 레킹볼의 핵심 운영을 방해하거나 유리한 교전 조건을 만들기 좋습니다.",
-    "condition": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요.",
-    "reviewedAt": "2026-08-30",
+    "reason": "솜브라의 지원 전환으로 기존 상성 판단을 보류했습니다. 영웅 대상 해킹과 바이러스는 삭제되었습니다.",
+    "condition": "긴급 패치·사이버 스페이스·EMP를 기준으로 새 상호작용을 확인해야 합니다.",
+    "reviewedAt": "2026-10-07",
     "status": "provisional",
     "confidence": "low",
-    "patchBasis": "자동 생성 초안 · 개별 검토 필요",
-    "counterplay": "통계·평가는 패치, 플랫폼, 지역, 등급과 맵에 따라 달라질 수 있으므로 팀 조합과 교전 지형을 함께 확인하세요."
+    "patchBasis": "2026-10-06 지원 솜브라 개편",
+    "counterplay": "예전 해킹·바이러스 대응 대신 치유 사거리와 약화 구역을 확인하세요.",
+    "evidence": [
+      "공식 5시즌 패치의 역할·기술 교체 확인"
+    ],
+    "reviewSources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "label": "5시즌 공식 출시 패치"
+      }
+    ]
   },
   {
     "id": "wrecking-ball-torbjorn",

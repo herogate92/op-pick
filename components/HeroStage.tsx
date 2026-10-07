@@ -249,7 +249,7 @@ export function HeroStage({ header, heroes, matchups, combos }: { header: React.
                 <div className="skill-sheet-list">
                   {heroSkills.abilities.map((ability) => (
                     <article key={ability.name}>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}<img src={ability.icon} alt="" />
+                      {/* eslint-disable-next-line @next/next/no-img-element */}{ability.icon && <img src={ability.icon} alt="" />}
                       <div><strong>{ability.name}</strong><p>{ability.description}</p><AbilityStats ability={ability} compact /></div>
                     </article>
                   ))}
@@ -327,7 +327,7 @@ function EmptySelection({ heroes, matchups, combos }: { heroes: number; matchups
 function SkillPerk({ perk }: { perk: Ability }) {
   return (
     <article className="skill-perk">
-      {/* eslint-disable-next-line @next/next/no-img-element */}<img src={perk.icon} alt="" />
+      {/* eslint-disable-next-line @next/next/no-img-element */}{perk.icon && <img src={perk.icon} alt="" />}
       <div><strong>{perk.name}</strong><p>{perk.description}</p></div>
     </article>
   );

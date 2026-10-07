@@ -1025,5 +1025,625 @@
     "summary": "안란의 접근 경로와 제트팩 캣의 고도 변화가 달라 근접 압박을 피할 여지는 있으나 확정 상성은 아닙니다. 성립 조건: 천장·연료·질주 착지 위치와 두 영웅의 원거리 공격도 함께 고려해야 합니다. 공식 기술 설명 기반 조건부 분석이며 게임 내 재현은 하지 않았습니다.",
     "sourceUrl": "https://overwatch.blizzard.com/en-us/heroes/jetpack-cat/",
     "recheckRequirement": "천장·연료·질주 착지 위치와 두 영웅의 원거리 공격도 함께 고려해야 합니다. 해당 기술 순서·위치가 드러나는 현재 패치 사례 필요."
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "조합",
+    "id": "jetpack-cat-cassidy",
+    "contentDigest": "dc0be1affef6ebdc929bad0089b00f4bf8dee65ddda689e333428edd479cc1bb",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "황야의 무법자 사용 중 생명줄 연결 제한을 확인해 공중 석양 시너지를 추천에서 제외했습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "전체 규칙",
+    "id": "global",
+    "contentDigest": "1d992605ab6e336e58576b3616c4835fe4d280b08d42eae9b8f6faaaac9c6242",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "5시즌 출시(북미 10월 6일·한국 10월 7일): 독트린 정식 출시, 솜브라 지원·전술가 전환, 로드호그 개편과 일반 영웅 밸런스·타점 변경을 반영했습니다. 히트스캔 크기는 대형 0.07→0.04m·소형 0.04→0.02m. 그림스뵈튼 호위 전장, 전장 투표 반복 방지, 상위 500위 등급 기준, 스타디움 빠른 대전 역할 제한을 시즌 안내에 추가했습니다. 수수께끼의 영웅 돌격 3명 규칙은 해당 모드에만 적용되며 일반 6대6 조합 도구의 돌격 2명 제한과 구분합니다. 스타디움 전용 아이템·파워는 일반 영웅 수치에 섞지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "상성",
+    "id": "wrecking-ball-sombra",
+    "contentDigest": "e19f288e2d310ed0224c3337517dcc656a6758cdac8ae7d022184b532545569d",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "삭제된 영웅 해킹·바이러스에 의존한 판단을 제거하고 미검증으로 전환했습니다. 새로운 상성 점수는 추천에 사용하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "상성",
+    "id": "widowmaker-sombra",
+    "contentDigest": "20bd799003822e3c10941ecdc54d898cb59e4505072e118d2833d84d98cbaccf",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "삭제된 영웅 해킹·바이러스에 의존한 판단을 제거하고 미검증으로 전환했습니다. 새로운 상성 점수는 추천에 사용하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "상성",
+    "id": "sombra-zarya",
+    "contentDigest": "3b0740210f34dc0a0ac6932215b6cac36b47ae3d019454617c478502a0df957f",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "삭제된 영웅 해킹·바이러스에 의존한 판단을 제거하고 미검증으로 전환했습니다. 새로운 상성 점수는 추천에 사용하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "상성",
+    "id": "sombra-symmetra",
+    "contentDigest": "305d6541838313ff9a97764f120943a862bd69e6d02ab38ba0ce97dff8ed64db",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "삭제된 영웅 해킹·바이러스에 의존한 판단을 제거하고 미검증으로 전환했습니다. 새로운 상성 점수는 추천에 사용하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "상성",
+    "id": "sombra-moira",
+    "contentDigest": "8b8ce67f528ff0fc244ca8e4a36c040b47ea9bbd2b6c69a13c52acac05eaf943",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "삭제된 영웅 해킹·바이러스에 의존한 판단을 제거하고 미검증으로 전환했습니다. 새로운 상성 점수는 추천에 사용하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "상성",
+    "id": "sombra-mei",
+    "contentDigest": "c06b998f41a2243b49e245953edd6e599b8024506a12d39620635714d0507c31",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "삭제된 영웅 해킹·바이러스에 의존한 판단을 제거하고 미검증으로 전환했습니다. 새로운 상성 점수는 추천에 사용하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "상성",
+    "id": "sombra-kiriko",
+    "contentDigest": "5c1ec1d4b3bbe08df199f655a10c0ec0762e1ffc99839414fd5b6e4b414738ea",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "삭제된 영웅 해킹·바이러스에 의존한 판단을 제거하고 미검증으로 전환했습니다. 새로운 상성 점수는 추천에 사용하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "상성",
+    "id": "sombra-dva",
+    "contentDigest": "580702979e96a113c78972bde0f4ba5ad2f72a383f8406a57539b059e691353a",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "삭제된 영웅 해킹·바이러스에 의존한 판단을 제거하고 미검증으로 전환했습니다. 새로운 상성 점수는 추천에 사용하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "상성",
+    "id": "sombra-dmon",
+    "contentDigest": "e9f824a1749c5f3c675fa4d373a1b4549519045814e2a518e8c945b2bf5ddc34",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "삭제된 영웅 해킹·바이러스에 의존한 판단을 제거하고 미검증으로 전환했습니다. 새로운 상성 점수는 추천에 사용하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "상성",
+    "id": "sombra-cassidy",
+    "contentDigest": "668b853f595790cbd92cfa73bf7b719c8be592c57175ed413c45ca0ff6f4dd30",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "삭제된 영웅 해킹·바이러스에 의존한 판단을 제거하고 미검증으로 전환했습니다. 새로운 상성 점수는 추천에 사용하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "상성",
+    "id": "sigma-sombra",
+    "contentDigest": "fc34129bef3a0b2dcf3b9b8d926fc7cf7ce0f71cfe2c066e685826772572a873",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "삭제된 영웅 해킹·바이러스에 의존한 판단을 제거하고 미검증으로 전환했습니다. 새로운 상성 점수는 추천에 사용하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "상성",
+    "id": "sierra-sombra",
+    "contentDigest": "0b2b038cb4366042047614057e8968fdb3baf8eda43ba407b30c5d6c607fbc4e",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "삭제된 영웅 해킹·바이러스에 의존한 판단을 제거하고 미검증으로 전환했습니다. 새로운 상성 점수는 추천에 사용하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "상성",
+    "id": "pharah-sombra",
+    "contentDigest": "7c85394eef08040448c3a72cc180b34511bacbe38625de7d908178db902a6dba",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "삭제된 영웅 해킹·바이러스에 의존한 판단을 제거하고 미검증으로 전환했습니다. 새로운 상성 점수는 추천에 사용하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "상성",
+    "id": "lucio-sombra",
+    "contentDigest": "704555dcf92ff02b617c73bc0ca29b4cb540eefa66a753ec8d6f531c6c7bbc4d",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "삭제된 영웅 해킹·바이러스에 의존한 판단을 제거하고 미검증으로 전환했습니다. 새로운 상성 점수는 추천에 사용하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "상성",
+    "id": "lifeweaver-sombra",
+    "contentDigest": "5b51da5f29ba0b64dfb0d41c089c982fd89c10064b041acac087ab0a02d6ebb5",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "삭제된 영웅 해킹·바이러스에 의존한 판단을 제거하고 미검증으로 전환했습니다. 새로운 상성 점수는 추천에 사용하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "상성",
+    "id": "juno-sombra",
+    "contentDigest": "8bdf74c299fbd1f0ac663adcf96bdac5b10c4c6c08c1b76c380609dcd6521c8a",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "삭제된 영웅 해킹·바이러스에 의존한 판단을 제거하고 미검증으로 전환했습니다. 새로운 상성 점수는 추천에 사용하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "상성",
+    "id": "jetpack-cat-sombra",
+    "contentDigest": "d7aa7535ab62b3a02b717738cb91dfb2dff974d508ebc0761e7b196010c0e82e",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "삭제된 영웅 해킹·바이러스에 의존한 판단을 제거하고 미검증으로 전환했습니다. 새로운 상성 점수는 추천에 사용하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "상성",
+    "id": "illari-sombra",
+    "contentDigest": "6f501e174e371e85c425524b1799b60add6c79d516a355ac802ffdda83fa591c",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "삭제된 영웅 해킹·바이러스에 의존한 판단을 제거하고 미검증으로 전환했습니다. 새로운 상성 점수는 추천에 사용하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "상성",
+    "id": "ashe-sombra",
+    "contentDigest": "c1d7bf9640bd372c3d311be6f799655b373247e58e28af6ad1ea1b202356a033",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "삭제된 영웅 해킹·바이러스에 의존한 판단을 제거하고 미검증으로 전환했습니다. 새로운 상성 점수는 추천에 사용하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "상성",
+    "id": "ana-sombra",
+    "contentDigest": "b4a47a25cc44305bc70b792fab766bcbd0b09646a57d32d08027eaa85109d003",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "삭제된 영웅 해킹·바이러스에 의존한 판단을 제거하고 미검증으로 전환했습니다. 새로운 상성 점수는 추천에 사용하지 않습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "zenyatta",
+    "contentDigest": "6ada7b7c45e04e4b1c53c21c6af84f58344aad5a27ad3eeece3b8dc074e05304",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "wuyang",
+    "contentDigest": "ba2457c870a510fb952dd11ef4b4013d9c02af548bb04af7aae2753bc18157c2",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "wrecking-ball",
+    "contentDigest": "be4d385c0a3659744185ad290cda45d54836c471f8f0928b3d95c865be0ee3a4",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "venture",
+    "contentDigest": "68235e385fb5b6d4257eef8d90cee9cd3470280e5678879061a7a1f16591b8bd",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "tracer",
+    "contentDigest": "faa26c1e525c1ad6d36985ad951f67c66324a84000292ab32ede0dbe6903ed05",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "torbjorn",
+    "contentDigest": "b06f51763172d85c011d8cc988a06cc8d32d67bb88e74924c57c82e242a41827",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "symmetra",
+    "contentDigest": "eda41acc5b879d05be867dd0c741bf9f288a73ca39ee42b6ce96692f39e88021",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "sombra",
+    "contentDigest": "57d48f45f9b734a921da90fb1a6207fc5b519b1759dd4978930e13e0a7fa4c5d",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "sojourn",
+    "contentDigest": "44806b48e96e702a79a7f8da763ed947d984a42041897f3e0cc1aac066e856ab",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "sierra",
+    "contentDigest": "c74ce84165216b2bcd26e16f2b9cdb248d54807707c5e3c39b6c558b231cbd87",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "shion",
+    "contentDigest": "e160d572cf1d34af88960280515367da3030adf1833e90f56840246f814025b5",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "roadhog",
+    "contentDigest": "39bd768bdda937a9e6ebfa9b02a66bc8d050155d83a6d4e018b087deae546041",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "reinhardt",
+    "contentDigest": "ee42f6a500c5fad5d26a6560f8643c409959d2113f7b82e5a2f0ecc0c90b6b9c",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "moira",
+    "contentDigest": "c6c8ce00151e80083eef3d1159e84a09c3871886749ba05b25d19412ca0e39a1",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "mizuki",
+    "contentDigest": "e0c8e61d570a9b955adc6bfe9cc9139f20bce75bce33d3aa7d9f8b7b0e23c16f",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "mercy",
+    "contentDigest": "ada954e9ad9ed8f93da16640e02da596a63eb501874ebb309a8df06ba3d17e67",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "mauga",
+    "contentDigest": "e5a1a3df047e70db251d40da148231a96579a70618d947aa48d7d4f894fbb40c",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "lucio",
+    "contentDigest": "a92572dd0fcb7b8cb1fd83e0fcdfc105e7d2263dbad071f551bb20bafcdbb18b",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "lifeweaver",
+    "contentDigest": "6265478b1b72d949a272590c11c3a9031e1be01b3d1b45666b901e466c6996c2",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "kiriko",
+    "contentDigest": "e41052306247dd0d003ed11bd15dc354a0a5a7403b827828fba18a4bd4b549ee",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "juno",
+    "contentDigest": "aae1c6d8cc6448079bb27839c31a9514864892d73914771a8e319dffacbb7e3e",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "junkrat",
+    "contentDigest": "f7eca699ceb243f73f0e9255546b8ff03450df94a32d5676bf0dc94a511e420c",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "junker-queen",
+    "contentDigest": "8070f0fe3c5e7436cde8f6c138ac5e0005a3f24e2ce6fb966fcffd7d85a81fd2",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "jetpack-cat",
+    "contentDigest": "e17fc0b04f70b035a318a21e159a981c22989fcd480303392a058054e8ec72e1",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "illari",
+    "contentDigest": "4031f681a3da3335fe45959a5a3ca3fccf53fd37fd8e1f516b44969fc6c84f5d",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "hazard",
+    "contentDigest": "34e16b9c286faad387dfb42673ef74474118d77d16a0d30b5bde3c175508ca4e",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "hanzo",
+    "contentDigest": "cf172606d872bc861a32e3f78f486ee52ce866b548b56446919369ab522cb1a1",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "genji",
+    "contentDigest": "e6419b74e88c5ff86f21741f1d9f723e47e0e5ddb20b563752e7db3830dea4ef",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "emre",
+    "contentDigest": "757c966c1b6efef710ad71d2583188103e8434e1cf45c91e56bbfdab9422280e",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "echo",
+    "contentDigest": "891c0b0997af0cebed0b0c20c44cffee7ef8ce05775ae8e105ffe61e28b25bdb",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "dva",
+    "contentDigest": "3e60f2b12582f2f4acdf49ba09abc3ad8bb8d285fe4d97f878cd570950e15a39",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "doomfist",
+    "contentDigest": "eb70962e6fe8afa6b52daf88d70b4edc6140584e2ee4b33dc0fb5b4a5bff89f5",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "domina",
+    "contentDigest": "06a56c942b48b37f1e9776e063518389f7b882c036296d3721e79d9660f6c60f",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "doctrine",
+    "contentDigest": "38e256cd566d3cbc31dd72f87a4072c059697ba6ba0fe27afda717ad9c5efb7e",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "cassidy",
+    "contentDigest": "f10cf8b696bf1b8be8886c2e3e4156dcfb0161c4553c6469b7a26d9cdb58e7f6",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "bastion",
+    "contentDigest": "655515c04571f9557be2ecacc20d2829fa277bb390b18658234a70ee86c57358",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "baptiste",
+    "contentDigest": "dfa316fb85750525528bec35d0f2bd416314a82bcb55b5b234978b50d1c96b32",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "ashe",
+    "contentDigest": "4d7f00297a8a91cde5bfc1c466dfb64db5e960490f43cc68fa8a355845740c9d",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "anran",
+    "contentDigest": "94258237080f5c42821874c4f22915b46327860ac6d22a2fcc5d45ca134f82e2",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+  },
+  {
+    "patchDigest": "d8c4e2636077a5b959ecf4c2eee605938a3b269eebdb3196f24f54474ff51492",
+    "category": "기술",
+    "id": "ana",
+    "contentDigest": "5eb21cf31ff68a4cb2ac532fa44b781bd86c9a647788fd181ce900aadbb10cc2",
+    "decision": "updated",
+    "reviewedAt": "2026-10-07",
+    "summary": "공식 출시 패치의 해당 영웅 기술·특전·역할 또는 타점 변경을 반영했습니다. 확인되지 않은 수치는 추가하지 않았습니다.",
+    "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
   }
 ]

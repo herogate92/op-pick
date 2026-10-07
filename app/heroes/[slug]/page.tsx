@@ -114,7 +114,7 @@ export default async function HeroDetailPage({ params }: { params: Promise<{ slu
           {hero.patchNote && <p className="seo-guide-note">{hero.patchNote.summary} <a href={hero.patchNote.sourceUrl} target="_blank" rel="noreferrer">공식 패치 {hero.patchNote.date}</a>{getPatchSummary(hero.patchNote.date) && <> · <Link href={`/patches/${hero.patchNote.date}/`}>{patchDateLabel(hero.patchNote.date).short} 패치 정리</Link></>}</p>}
           <section className="content-section">
             <div className="section-heading"><span className="section-kicker">01 · ABILITIES</span><h2>기술</h2><p>기술 설명 확인 {hero.abilitiesCheckedAt ?? hero.checkedAt}. 세부 수치는 표시된 모드·패치 기준이며, 출처가 확인된 항목부터 제공합니다.</p></div>
-            {hero.abilities.length ? <div className="ability-grid">{hero.abilities.map((ability) => <article key={ability.name} className={`ability-card${ability.video ? " has-media" : ""}`}>{/* eslint-disable-next-line @next/next/no-img-element */}<img className="ability-icon" src={ability.icon} alt="" /><div><h3>{ability.name}</h3><p>{ability.description}</p><AbilityStats ability={ability} /></div>{ability.video && <video className="ability-demo" controls muted playsInline preload="metadata" poster={ability.video.thumbnail} aria-label={`${hero.name} ${ability.name} 기술 시연`}><source src={ability.video.webm} type="video/webm" /><source src={ability.video.mp4} type="video/mp4" /></video>}</article>)}</div> : <ReviewPending />}
+            {hero.abilities.length ? <div className="ability-grid">{hero.abilities.map((ability) => <article key={ability.name} className={`ability-card${ability.video ? " has-media" : ""}`}>{/* eslint-disable-next-line @next/next/no-img-element */}{ability.icon && <img className="ability-icon" src={ability.icon} alt="" />}<div><h3>{ability.name}</h3><p>{ability.description}</p><AbilityStats ability={ability} /></div>{ability.video && <video className="ability-demo" controls muted playsInline preload="metadata" poster={ability.video.thumbnail} aria-label={`${hero.name} ${ability.name} 기술 시연`}><source src={ability.video.webm} type="video/webm" /><source src={ability.video.mp4} type="video/mp4" /></video>}</article>)}</div> : <ReviewPending />}
           </section>
 
           <section className="content-section tinted-section">
@@ -126,6 +126,7 @@ export default async function HeroDetailPage({ params }: { params: Promise<{ slu
 
           <section className="content-section">
             <div className="section-heading"><span className="section-kicker">03 · MATCHUPS</span><h2>상성 리포트</h2><p>맵, 사거리와 팀 조합에 따라 결과가 달라질 수 있습니다.</p></div>
+            {hero.matchupReviewNotice && <p className="seo-guide-note">{hero.matchupReviewNotice}</p>}
             <div className="matchup-columns">
               <MatchupGroup title="상대하기 까다로운 영웅" icon={<Swords />} items={counters.map((matchup) => ({ matchup, hero: getHero(matchup.counter)! }))} />
               <MatchupGroup title="상대하기 유리한 영웅" icon={<Crosshair />} items={strongAgainst.map((matchup) => ({ matchup, hero: getHero(matchup.hero)! }))} />
@@ -162,7 +163,7 @@ function ReviewPending({ text = "등록된 정보가 아직 없습니다." }: { 
 }
 
 function PerkGroup({ title, items }: { title: string; items: { name: string; description: string; icon: string }[] }) {
-  return <div className="perk-group"><h3>{title}</h3>{items.map((item) => <article key={item.name} className="perk-card">{/* eslint-disable-next-line @next/next/no-img-element */}<img src={item.icon} alt="" /><div><strong>{item.name}</strong><p>{item.description}</p></div></article>)}</div>;
+  return <div className="perk-group"><h3>{title}</h3>{items.map((item) => <article key={item.name} className="perk-card">{/* eslint-disable-next-line @next/next/no-img-element */}{item.icon && <img src={item.icon} alt="" />}<div><strong>{item.name}</strong><p>{item.description}</p></div></article>)}</div>;
 }
 
 function MatchupGroup({ title, icon, items }: { title: string; icon: React.ReactNode; items: { matchup: ReturnType<typeof getCountersFor>[number]; hero: NonNullable<ReturnType<typeof getHero>> }[] }) {

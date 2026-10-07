@@ -2,121 +2,138 @@
   {
     "key": "doctrine",
     "name": "독트린",
-    "description": "영겁의 홀로 아군을 치유하고 적에게 피해를 주는 지원 영웅입니다. 주입으로 다음 기술을 강화하며 활기 드론으로 아군을 지원합니다. 체험 공개 자료 기준입니다.",
-    "portrait": "/heroes/doctrine-pending.svg",
-    "background": "/heroes/doctrine-pending.svg",
+    "description": "무시무시한 악당이 된 사이버네틱 전문가 독트린은 생명력을 흡수하는 드론 떼를 사용해 운명을 선고합니다.",
+    "portrait": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2492a15c575c12314907d0d77501ec337b4d56796bc7f03e5dfb50d415612bae.png",
+    "background": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt60e3b23836c0509c/6abad4e34b66aa427191d5f6/1600_Doctrine.png",
     "role": "support",
     "subrole": "survivor",
     "gamemodes": [],
-    "location": "",
-    "birthday": "",
-    "age": null,
+    "location": "감시 기지: 그림스뵈튼",
+    "birthday": "10월 20일",
+    "age": 77,
     "hitpoints": {
-      "health": 250,
       "armor": 0,
       "shields": 0,
+      "health": 250,
       "total": 250
     },
-    "hitpointsNotice": "독트린은 블리즈컨 2026에서 공개된 지원 영웅으로, 시즌 5(2026년 10월 7일, 한국 시간)에 정식 출시될 예정입니다. 생명력 250과 기술·특전은 체험 기간인 2026-09-13 제공된 훈련장 캡처에서 확인했으며 5대5·6대6 공통 수치로 검증한 것은 아닙니다. 공식 게임플레이 트레일러를 연결했고 공식 초상은 준비 중입니다. 상성·시너지·맵 순위·승률은 자료 확보 전입니다.",
-    "releaseStatus": "trial",
+    "hitpointsNotice": "공식 영웅 페이지의 생명력 250을 반영했습니다. 출시 패치에 명시된 기술 수치를 표시하며, 모드별로 확인되지 않은 수치는 공통값으로 추정하지 않습니다.",
     "reviewStatus": "review-needed",
-    "dataNotice": "체험 영웅 · 시즌 5(2026-10-07) 정식 출시 예정 · 훈련장 캡처 기준 · 상성·맵·통계 자료 준비 중",
-    "mediaPendingReason": "공식 게임플레이 트레일러는 연결했으며, 기술은 사용자 제공 훈련장 캡처 기준입니다. 공식 초상과 기술 시연 영상은 정식 출시 후 공식 영웅 페이지에서 확인합니다.",
+    "dataNotice": "5시즌 정식 출시 · 공식 영웅 정보와 출시 패치 반영 · 상성 자료 수집 중",
     "abilities": [
       {
         "name": "영겁의 홀",
-        "description": "아군을 치유하고 적에게 피해를 주는 중거리 무기입니다. 주입하면 대형 관통 폭발파를 발사합니다.",
-        "icon": "/heroes/doctrine-pending.svg",
-        "stats": [
-          {
-            "label": "탄약 / 재장전",
-            "value": "18 / 1.5초"
-          },
-          {
-            "label": "기본 발사 특성",
-            "value": "히트스캔 · 약한 치명타 · 관통"
-          },
-          {
-            "label": "피해 / 치유",
-            "value": "각 60 (기본) → 18 (최대 감소)"
-          },
-          {
-            "label": "기본 감소 사거리",
-            "value": "30~50미터"
-          },
-          {
-            "label": "주입 피해",
-            "value": "90 (기본) → 27 (최대 감소)"
-          },
-          {
-            "label": "주입 치유",
-            "value": "120 (기본) → 36 (최대 감소)"
-          },
-          {
-            "label": "주입 감소 사거리",
-            "value": "40~60미터"
-          }
-        ],
-        "statsCheckedAt": "2026-09-13",
-        "statsScope": "사용자 제공 훈련장 체험 캡처",
-        "statsBasis": "캡처 03 확인 · 정식 출시 및 모드별 수치 재확인 필요"
+        "description": "아군은 치유하고 적에게는 피해를 주는 중거리 무기입니다.  주입: 대형 관통 폭발파를 발사합니다.",
+        "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3ffab68d983c0108cb80c8c55e9980ae855342f5d31c94e3a3f9e7bcf8ac7b6d.png",
+        "video": {
+          "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt84b9e78afbc7b5ab/6abae532f8f1243313bcbd45/primaryfire.png",
+          "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltd50b42a15181ea63/6abad5532c05800fce27414c/Ability_01_PrimaryFire_AndInfusedPrimary_1P_InfuseAndHealthBarUI_KG_01.mp4",
+          "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blte3f6ab6721211f59/6abad55332e602ad7ac0e020/Ability_01_PrimaryFire_AndInfusedPrimary_1P_InfuseAndHealthBarUI_KG_01.webm"
+        }
       },
       {
         "name": "주입",
         "description": "다음 기술에 강력한 효과를 추가합니다.",
-        "icon": "/heroes/doctrine-pending.svg"
-      },
-      {
-        "name": "추진형 장막",
-        "description": "수평으로 돌진하며 받는 피해가 감소합니다. 주입하면 자유롭게 비행합니다.",
-        "icon": "/heroes/doctrine-pending.svg"
+        "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13178efb1b3fceb275829ff4caa894fd883011d49d2ab33b9130ccf5d777597c.png",
+        "video": {
+          "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt4788d9339f0aeaf1/6abae533f8f1249f25bcbd4d/infuse.png",
+          "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt9be939c44d57142a/6abad55132e602c8b7c0e01c/Ability_02_Infuse_1P_InfuseUI_KG_01.mp4",
+          "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blta31570dcfd1a7368/6abad5513ad3920dd46f9281/Ability_02_Infuse_1P_InfuseUI_KG_01.webm"
+        }
       },
       {
         "name": "활기 드론",
-        "description": "아군에게 드론을 배치해 공격 속도를 증가시키고 치유합니다. 주입하면 자신에게도 드론을 배치합니다.",
-        "icon": "/heroes/doctrine-pending.svg"
+        "description": "아군에게 드론을 배치해 공격 속도를 증가시키고 치유합니다.  주입: 자신에게도 드론을 배치합니다.",
+        "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a0db060f87598d0c57247dd03d2da4d13ea194e7c5c72d93cde7ed0c5393002c.png",
+        "video": {
+          "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt91bc2a04d12eb707/6abae533f8f1246c65bcbd49/invigoratingdrones.png",
+          "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb1d2d61d8dc2f2be/6abad5542c0580dd56274150/Ability_03_InvigoratingDrones_AndInfusedDrones_1P_InfuseAndTeamHealUI_KG_01.mp4",
+          "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt6a35f540bd13619d/6abad554f8f1247a98bcbd2f/Ability_03_InvigoratingDrones_AndInfusedDrones_1P_InfuseAndTeamHealUI_KG_01.webm"
+        },
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "공격 속도 증가 35% → 30%.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+        },
+        "stats": [
+          {
+            "label": "공격 속도 증가",
+            "value": "30%"
+          }
+        ],
+        "statsCheckedAt": "2026-10-07",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "statsPatchDate": "2026-10-06",
+        "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
+      },
+      {
+        "name": "추진형 장막",
+        "description": "수평으로 돌진합니다. 받는 피해가 감소합니다.  주입: 자유롭게 비행합니다.",
+        "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c3d96fb3fe2df91421d82e134385f0fe23b8950af35ac73e50d91eb0371cd18d.png",
+        "video": {
+          "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt4b460cbb4542b5b0/6abae5324b66aab6b291d600/shroudedmomentum.png",
+          "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltbd987e855ee31458/6abad5543f72c3750827f952/Ability_04_ShroudedMomentum_AndInfusedDashFlight_1P_InfuseUI_KG_01.mp4",
+          "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt3b1e39e3c451c35e/6abad554dee884b79ccbae44/Ability_04_ShroudedMomentum_AndInfusedDashFlight_1P_InfuseUI_KG_01.webm"
+        },
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "대기시간 7 → 8초, 피해 감소 50% → 40%. 치명타 면역 삭제.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+        },
+        "stats": [
+          {
+            "label": "재사용 대기시간",
+            "value": "8초"
+          },
+          {
+            "label": "피해 감소",
+            "value": "40%"
+          },
+          {
+            "label": "치명타 면역",
+            "value": "없음"
+          }
+        ],
+        "statsCheckedAt": "2026-10-07",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "statsPatchDate": "2026-10-06",
+        "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
       },
       {
         "name": "구제",
-        "description": "드론 무리를 날려 적의 최대 생명력을 감소시키고 아군에게 추가 생명력을 부여합니다.",
-        "icon": "/heroes/doctrine-pending.svg",
+        "description": "드론 무리를 날려 적의 최대 생명력을 감소시키고, 아군에게는 추가 생명력을 부여합니다.",
+        "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8ebbedfc4f56c80106e83280513eaf433471ac96900f782ffef8fcf764faeebb.png",
+        "video": {
+          "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt566c738efd2882d0/6abae53232e6027d61c0e03c/deliverance.png",
+          "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt0ae0caabe54e31e0/6abae53232e60238f0c0e040/Ultimate_Deliverance_1P_HealthBarUI_KG_01.mp4",
+          "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltd371a0246286f403/6abae5333f72c3e3ce27f974/Ultimate_Deliverance_1P_HealthBarUI_KG_01.webm"
+        },
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "드론 발사 속도 4 → 5. 효과 지속 8 → 6초, 부패 지속 5 → 4초. 궁극기 비용 +8%.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+        },
         "stats": [
           {
-            "label": "궁극기 비용",
-            "value": "2,800"
+            "label": "드론 발사 속도",
+            "value": "초당 5"
           },
           {
-            "label": "드론당 피해 / 치유",
-            "value": "5 / 5"
+            "label": "추가 생명력·약화 지속",
+            "value": "6초"
           },
           {
-            "label": "최대 지속 시간 / 반경",
-            "value": "6초 / 12미터"
-          },
-          {
-            "label": "적 최대 생명력 감소",
-            "value": "드론당 5% · 총 최대 50%"
-          },
-          {
-            "label": "아군 추가 생명력",
-            "value": "드론당 15 · 최대 150"
-          },
-          {
-            "label": "감소 지연 (화면 표기)",
-            "value": "적 효과·아군 추가 생명력 모두 8초"
-          },
-          {
-            "label": "최대 투사체 시전 사거리",
-            "value": "12미터"
-          },
-          {
-            "label": "화면 키워드",
-            "value": "광역 · 본체 투사체 · 정화 가능 · 고정 · 방벽 무시 · 추가 생명력"
+            "label": "부패 지속",
+            "value": "4초"
           }
         ],
-        "statsCheckedAt": "2026-09-13",
-        "statsScope": "사용자 제공 훈련장 체험 캡처",
-        "statsBasis": "캡처 04의 표기 확인 · 실제 방벽·정화 상호작용과 정식 수치 재확인 필요"
+        "statsCheckedAt": "2026-10-07",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "statsPatchDate": "2026-10-06",
+        "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
       }
     ],
     "perks": {
@@ -124,24 +141,29 @@
         {
           "name": "은총",
           "description": "활기 드론이 부착되면 생명력을 40 치유합니다.",
-          "icon": "/heroes/doctrine-pending.svg"
+          "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/65d3986853fa5e6fb01fae33f5b50e75956080770eb077149a3fc6438f78f10c.png"
         },
         {
           "name": "핏빛 흡수",
-          "description": "주입된 영겁의 홀로 준 피해의 50%만큼 자가 치유됩니다.",
-          "icon": "/heroes/doctrine-pending.svg"
+          "description": "주입된 영겁의 홀로 준 피해의 50%만큼 치유됩니다.",
+          "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/32ffd184fd6bf247ca7539d2d3175659acb8bec2be892a2008c2e281c5f5468f.png"
         }
       ],
       "major": [
         {
           "name": "수혈",
           "description": "준 피해와 치유에 따라 주입의 재사용 대기시간이 감소합니다.",
-          "icon": "/heroes/doctrine-pending.svg"
+          "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d4231c031993e68b5cd6359ca35be5f1bac7571f0619ada25cd30f48e9091e5a.png",
+          "patchNote": {
+            "date": "2026-10-06",
+            "summary": "피해·치유의 대기시간 감소 변환율이 체험 대비 50% 감소했습니다.",
+            "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+          }
         },
         {
           "name": "생명의 대가",
-          "description": "최대 생명력을 25 희생하며 영겁의 홀 치유량이 20% 증가합니다.",
-          "icon": "/heroes/doctrine-pending.svg"
+          "description": "최대 생명력을 25 희생합니다. 영겁의 홀 치유량이 20% 증가합니다.",
+          "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1f60c2577f3709fe41fbf494432e7539b4a942374b301b06a97ed7c0bb11017f.png"
         }
       ]
     },
@@ -151,10 +173,16 @@
       "link": "https://overwatch.blizzard.com/ko-kr/videos/video/bltd10b186a081f730b/trailer-de-heroi-do-doctrine-fuga/"
     },
     "storyChapters": [],
-    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/24294376/",
-    "checkedAt": "2026-09-29",
-    "abilitiesCheckedAt": "2026-09-13",
-    "abilitiesSourceUrl": "https://overwatch.blizzard.com/ko-kr/news/24294376/"
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/doctrine/",
+    "checkedAt": "2026-10-07",
+    "abilitiesCheckedAt": "2026-10-07",
+    "abilitiesSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+    "matchupReviewNotice": "정식 출시 수치는 반영했습니다. 출시 후 상성 자료를 확보하기 전에는 상성 순위를 제공하지 않습니다.",
+    "patchNote": {
+      "date": "2026-10-06",
+      "summary": "지원 영웅으로 정식 출시. 체험 대비 궁극기 비용 +8%, 활기 드론·추진형 장막·구제·수혈 조정.",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+    }
   },
   {
     "key": "genji",
@@ -206,7 +234,23 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb3d8a560f70e2fdb/633905b78537f87bfbcdc410/GENJI_Swift_Strike.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltf9ec83bd4fdf4c15/633905b2da1d806602f83efa/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_GenjiSwiftStrike_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt1439d510340336a6/6679ab5291d53bad66dc0621/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_GenjiSwiftStrike_WEB_16x9_1920x1080p30_WEBM.webm"
-        }
+        },
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "피해 50 → 60.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+        },
+        "stats": [
+          {
+            "label": "피해",
+            "value": "60"
+          }
+        ],
+        "statsCheckedAt": "2026-10-07",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "statsPatchDate": "2026-10-06",
+        "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
       },
       {
         "name": "용검",
@@ -216,7 +260,27 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt49e2ae40d11634b2/633905b7ec7e18758be51056/GENJI_Dragon_Blade.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt7f884f211708603c/633905b2e3c2a2741688cbb5/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_GenjiDragonStrike_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt09ca4d1905bcc68b/6679ab604f84eb765e24bbcd/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_GenjiDragonStrike_WEB_16x9_1920x1080p30_WEBM.webm"
-        }
+        },
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "피해 110 → 100, 휘두르기 속도 15% 증가.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+        },
+        "stats": [
+          {
+            "label": "공격력",
+            "value": "100"
+          },
+          {
+            "label": "휘두르기 속도 변화",
+            "value": "이전 패치 대비 +15%"
+          }
+        ],
+        "statsCheckedAt": "2026-10-07",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "statsPatchDate": "2026-10-06",
+        "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
       },
       {
         "name": "사이보그의 날렵함",
@@ -281,8 +345,8 @@
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/genji/",
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
-    "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/genji?locale=ko-kr"
+    "abilitiesCheckedAt": "2026-10-07",
+    "abilitiesSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
   },
   {
     "key": "domina",
@@ -410,7 +474,7 @@
         "stats": [
           {
             "label": "재사용 대기시간",
-            "value": "8초"
+            "value": "7초"
           },
           {
             "label": "피해",
@@ -425,9 +489,14 @@
             "value": "2~4m"
           }
         ],
-        "statsCheckedAt": "2026-08-30",
+        "statsCheckedAt": "2026-10-07",
         "statsBasis": "기존 입력값 · 수치 원출처 재확인 필요",
-        "statsScope": "적용 모드 미확인"
+        "statsScope": "적용 모드 미확인",
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "재사용 대기시간 8 → 7초.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+        }
       },
       {
         "name": "판옵티콘",
@@ -449,6 +518,26 @@
         "statsPatchDate": "2026-08-11",
         "statsScope": "라이브 일반 모드 · 특전·스타디움 강화 제외",
         "statsBasis": "공식 패치 명시 항목 · 전체 기술 수치 중 일부"
+      },
+      {
+        "name": "재조립",
+        "description": "기술로 준 피해에 비례해 생명력을 흡수합니다.",
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "기술 생명력 흡수율 75% → 100%.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+        },
+        "stats": [
+          {
+            "label": "기술 생명력 흡수",
+            "value": "100%"
+          }
+        ],
+        "statsCheckedAt": "2026-10-07",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "statsPatchDate": "2026-10-06",
+        "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
       }
     ],
     "perks": {
@@ -499,8 +588,8 @@
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/domina/",
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
-    "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/domina?locale=ko-kr"
+    "abilitiesCheckedAt": "2026-10-07",
+    "abilitiesSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
   },
   {
     "key": "doomfist",
@@ -635,7 +724,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/doomfist?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/doomfist?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점 19.7 → 21 허리 타점 30 → 35 다리 타점이 21에서 26으로 증가했습니다. 주먹 타점이 24에서 20으로 감소했습니다."
+    }
   },
   {
     "key": "ramattra",
@@ -935,7 +1029,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/lifeweaver?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/lifeweaver?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점 14.8 → 17 몸통 타점 19.7 → 25 다리 타점 15.5 → 19 허리 타점이 15.9에서 20으로 증가했습니다."
+    }
   },
   {
     "key": "reinhardt",
@@ -1059,7 +1158,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/reinhardt?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/reinhardt?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  어깨 타점 40 → 35 손 타점이 25에서 20으로 감소했습니다. 발 타점이 40에서 30으로 감소했습니다."
+    }
   },
   {
     "key": "wrecking-ball",
@@ -1192,7 +1296,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/wrecking-ball?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/wrecking-ball?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점 22 → 25 몸통 타점 83.5 → 87.5"
+    }
   },
   {
     "key": "roadhog",
@@ -1217,13 +1326,52 @@
     "abilities": [
       {
         "name": "고철 총",
-        "description": "근거리에 방사 피해를 줍니다. 무기의 근거리 기본 발사로 폭발하는 중거리 투사체입니다.",
+        "description": "산탄과 중앙 투사체를 2연발로 발사합니다.",
         "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d48d0b264d765e3732abda784e986595f7a6c5ad0e56f1929c008ffc0492a39d.png",
-        "video": {
-          "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt471d77a8a98cfae2/6339084e2dc7636608cc7140/ROADHOG_SCRAPGUN.jpg",
-          "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltc0889537a9a6ac96/63390853ed7dcc6a002803dc/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_RoadhogScrapGun_WEB_16x9_1920x1080p30_H264.mp4",
-          "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt77040315c3b9f76a/6679e1038e2bf8feccb2436a/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_RoadhogScrapGun_WEB_16x9_1920x1080p30_WEBM.webm"
-        }
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "기본 발사 2연발. 탄약 6 → 12, 연발당 총 피해 175 → 204. 기존 보조 발사 삭제.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+        },
+        "stats": [
+          {
+            "label": "연발당 총 피해",
+            "value": "204"
+          },
+          {
+            "label": "탄약",
+            "value": "12"
+          },
+          {
+            "label": "산탄 수 / 피해",
+            "value": "발사당 16 / 산탄당 4.25"
+          },
+          {
+            "label": "중앙 투사체 피해",
+            "value": "34"
+          },
+          {
+            "label": "치명타 배율",
+            "value": "1.5배"
+          },
+          {
+            "label": "탄 퍼짐",
+            "value": "6"
+          },
+          {
+            "label": "피해 감소 거리",
+            "value": "20~35m"
+          },
+          {
+            "label": "투사체 속도",
+            "value": "100m/s"
+          }
+        ],
+        "statsCheckedAt": "2026-10-07",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "statsPatchDate": "2026-10-06",
+        "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
       },
       {
         "name": "사슬 갈고리",
@@ -1233,7 +1381,31 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb7e613287c154390/6339084e1a0b5e7d3d1ec5d5/ROADHOG_GRAPPLEHOOK.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt64a3ef7e15942399/6594a7facd72b19d912c1e63/OW2_RoadhogUpdate_HRZ_60_ChainHook.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt6a34055cf0b68eee/6594a819619a8e3aaa5d68b1/OW2_RoadhogUpdate_HRZ_60_ChainHook.webm"
-        }
+        },
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "기절 0.4 → 0.3초, 끌어온 거리 3 → 4.5m. 대기시간 5대5 7 → 6초 / 6대6 8 → 7초.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+        },
+        "stats": [
+          {
+            "label": "끌려온 뒤 기절",
+            "value": "0.3초"
+          },
+          {
+            "label": "최종 거리",
+            "value": "4.5m"
+          },
+          {
+            "label": "재사용 대기시간",
+            "value": "5대5 6초 / 6대6 7초"
+          }
+        ],
+        "statsCheckedAt": "2026-10-07",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "statsPatchDate": "2026-10-06",
+        "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
       },
       {
         "name": "숨 돌리기",
@@ -1243,7 +1415,35 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt4f4f04152fd51a7c/6339084eb8dbde69f5279928/ROADHOG_TAKEABREATHER.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltebe82cdccb2a3f83/6594a7fb21f6601fa5478a1d/OW2_RoadhogUpdate_HRZ_60_TakeABreather.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb7114304aa4b88e0/6594a819b4fe9d69049e7c30/OW2_RoadhogUpdate_HRZ_60_TakeABreather.webm"
-        }
+        },
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "지속 3 → 2초, 초당 치유 150 → 200, 피해 감소 40% → 35%, 대기시간 1.25 → 2초.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+        },
+        "stats": [
+          {
+            "label": "최대 지속",
+            "value": "2초"
+          },
+          {
+            "label": "치유",
+            "value": "초당 200"
+          },
+          {
+            "label": "피해 감소",
+            "value": "35%"
+          },
+          {
+            "label": "재사용 대기시간",
+            "value": "2초"
+          }
+        ],
+        "statsCheckedAt": "2026-10-07",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "statsPatchDate": "2026-10-06",
+        "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
       },
       {
         "name": "돼재앙",
@@ -1254,19 +1454,71 @@
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltc0a4979550855fbe/6594a7fbbb381a639a8a545a/OW2_RoadhogUpdate_HRZ_60_WholeHog.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt26a7f339b38e6a29/6594a819ebf6a1571e4cafa1/OW2_RoadhogUpdate_HRZ_60_WholeHog.webm"
         }
+      },
+      {
+        "name": "쓰레기 압축기",
+        "description": "전방 투사체를 2초 동안 흡수한 뒤 흡수량에 따라 강해지는 폭발탄을 발사합니다.",
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "기존 보조 발사를 대체합니다.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+        },
+        "stats": [
+          {
+            "label": "흡수 지속",
+            "value": "2초"
+          },
+          {
+            "label": "폭발 피해 / 직접 명중",
+            "value": "75~200 / 10"
+          },
+          {
+            "label": "피해 변환율",
+            "value": "흡수량의 30%"
+          },
+          {
+            "label": "폭발 내부 / 외부 반경",
+            "value": "2m / 6m"
+          },
+          {
+            "label": "외곽 피해 배율",
+            "value": "30%"
+          },
+          {
+            "label": "사용 중 이동 속도",
+            "value": "15% 감소"
+          },
+          {
+            "label": "재사용 대기시간",
+            "value": "5대5 10초 / 6대6 11초"
+          }
+        ],
+        "statsCheckedAt": "2026-10-07",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "statsPatchDate": "2026-10-06",
+        "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
       }
     ],
     "perks": {
       "minor": [
         {
           "name": "고철 갈고리",
-          "description": "사슬 갈고리 명중 시 탄약을 2발 재장전합니다.",
-          "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ca8a50b6b369d47a33ec5d4a3e42e12ca1aebb8144a29d959a134fb4226934a.png"
+          "description": "사슬 갈고리 명중 시 탄약을 4발 재장전합니다.",
+          "patchNote": {
+            "date": "2026-10-06",
+            "summary": "사슬 갈고리 명중 시 탄약을 4발 재장전합니다.",
+            "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+          }
         },
         {
-          "name": "파편 발사기",
-          "description": "고철총 보조 발사의 사거리가 50% 늘어나고 탄 퍼짐이 25% 줄어듭니다.",
-          "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d48d0b264d765e3732abda784e986595f7a6c5ad0e56f1929c008ffc0492a39d.png"
+          "name": "이리 와 꼬마 돼지야",
+          "description": "돼재앙 사용 중 사슬 갈고리 재사용 대기시간이 80% 감소합니다.",
+          "patchNote": {
+            "date": "2026-10-06",
+            "summary": "돼재앙 사용 중 사슬 갈고리 재사용 대기시간이 80% 감소합니다.",
+            "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+          }
         }
       ],
       "major": [
@@ -1276,9 +1528,13 @@
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bbeb9d0110d04466eda5f4a845bd27685f80703264c967c0cf224f1b99d6f49d.png"
         },
         {
-          "name": "풀드포크",
-          "description": "사슬 갈고리로 적을 끌어당긴 거리에 비례해 최대 300의 추가 생명력을 얻습니다.",
-          "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/db9a0129262448dad0c5f70558b561d77b40c9bc721c0cae1dd75a7ed647d4b7.png"
+          "name": "독기 배출",
+          "description": "쓰레기 압축기 사용 중 전방 적을 30% 둔화하고 초당 20의 피해를 줍니다.",
+          "patchNote": {
+            "date": "2026-10-06",
+            "summary": "쓰레기 압축기 사용 중 전방 적을 30% 둔화하고 초당 20의 피해를 줍니다.",
+            "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+          }
         }
       ]
     },
@@ -1304,8 +1560,13 @@
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/roadhog/",
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
-    "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/roadhog?locale=ko-kr"
+    "abilitiesCheckedAt": "2026-10-07",
+    "abilitiesSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+    "patchNote": {
+      "date": "2026-10-06",
+      "summary": "고철총 2연발 개편, 보조 발사를 쓰레기 압축기로 교체. 갈고리·숨 돌리기와 특전 조정.",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+    }
   },
   {
     "key": "lucio",
@@ -1388,7 +1649,23 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt2772fe015f499d3f/6339061b1a0b5e7d3d1ec5b9/LUCIO_SOUNDBARRIER.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt286461dc60c11e54/6339062d2dc7636608cc712e/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_LucioSoundBarrier_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8f6cb68cbc108b8a/6679a0ea4f84eba52024bbc7/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_LucioSoundBarrier_WEB_16x9_1920x1080p30_WEBM.webm"
-        }
+        },
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "추가 생명력 감소 지속 시간 5 → 6초.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+        },
+        "stats": [
+          {
+            "label": "추가 생명력 감소 지속",
+            "value": "6초"
+          }
+        ],
+        "statsCheckedAt": "2026-10-07",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "statsPatchDate": "2026-10-06",
+        "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
       },
       {
         "name": "벽 타기",
@@ -1410,8 +1687,12 @@
         },
         {
           "name": "비트 드롭",
-          "description": "소리 방벽을 시전하는 동안 볼륨을 높여라!가 활성화됩니다.",
-          "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4639fbbde04ac4e8ca26a56ebd4ddc3f34ccf5c20add8796fe2282a2b2b739fa.png"
+          "description": "소리 방벽 시전 후 4초 동안 볼륨을 높여라!를 활성화합니다.",
+          "patchNote": {
+            "date": "2026-10-06",
+            "summary": "소리 방벽 시전 후 4초 동안 볼륨을 높여라!를 활성화합니다.",
+            "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+          }
         }
       ],
       "major": [
@@ -1450,8 +1731,13 @@
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/lucio/",
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
-    "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/lucio?locale=ko-kr"
+    "abilitiesCheckedAt": "2026-10-07",
+    "abilitiesSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점이 13.2에서 16으로 증가했습니다."
+    }
   },
   {
     "key": "reaper",
@@ -1719,7 +2005,12 @@
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
     "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/mauga?locale=ko-kr",
-    "hitpointsNotice": "9월 8일 라이브 패치의 생명력·방어력 변경 반영. 모드별 차이에 유의하세요."
+    "hitpointsNotice": "9월 8일 라이브 패치의 생명력·방어력 변경 반영. 모드별 차이에 유의하세요.",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점 22 → 23.5 손 타점 16 → 12 다리 타점 길이 50 → 35 몸통 타점 40 → 42 몸통 타점 너비가 30에서 40으로 증가했습니다."
+    }
   },
   {
     "key": "mercy",
@@ -1851,9 +2142,9 @@
     "abilitiesCheckedAt": "2026-09-09",
     "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/mercy?locale=ko-kr",
     "patchNote": {
-      "date": "2026-09-17",
-      "summary": "스타디움의 게임플레이 문제 수정 후 모든 스타디움 대기열에서 메르시가 다시 활성화됐습니다. 일반 5대5·6대6 기술 수치 변경은 아닙니다.",
-      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09/"
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점 14.4 → 17 몸통 타점 22.4 → 24.5 다리 타점이 22.4에서 20으로 감소했습니다."
     }
   },
   {
@@ -2082,7 +2373,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/moira?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/moira?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  몸통 타점 27 → 25"
+    }
   },
   {
     "key": "mizuki",
@@ -2241,7 +2537,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/mizuki?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/mizuki?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점 높이가 10에서 6으로 감소했습니다. 머리 타점 16 → 17.5 몸통 타점 22 → 24 다리 타점 17 → 19"
+    }
   },
   {
     "key": "bastion",
@@ -2302,7 +2603,23 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltd72fcf89eb0611ba/6333a53bb8dbde69f527983c/BASTION_RECONFIGURE.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltc478ba44a6f9f5e9/6333a4eeed7dcc6a002802da/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_BastionReconfigure_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt2a87d31be573db89/667991df845030e04a77894c/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_BastionReconfigure_WEB_16x9_1920x1080p30_H264.webm"
-        }
+        },
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "강습 설정 지속 시간 6 → 5초.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+        },
+        "stats": [
+          {
+            "label": "강습 설정 지속",
+            "value": "5초"
+          }
+        ],
+        "statsCheckedAt": "2026-10-07",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "statsPatchDate": "2026-10-06",
+        "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
       },
       {
         "name": "설정: 포격",
@@ -2363,8 +2680,13 @@
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/bastion/",
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
-    "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/bastion?locale=ko-kr"
+    "abilitiesCheckedAt": "2026-10-07",
+    "abilitiesSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점 20 → 21.5 뒤편 미니건 타점 20 → 18 아래팔 타점 20 → 15"
+    }
   },
   {
     "key": "baptiste",
@@ -2510,7 +2832,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/baptiste?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/baptiste?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점이 15.1에서 16으로 증가했습니다."
+    }
   },
   {
     "key": "vendetta",
@@ -2818,7 +3145,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/venture?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/venture?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  몸통 타점 22.9 → 25 다리 타점 17 → 21"
+    }
   },
   {
     "key": "brigitte",
@@ -3096,7 +3428,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/sojourn?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/sojourn?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점이 14.9에서 16으로 증가했습니다. 몸통 타점 20.5 → 23.5 다리 타점 17 → 18.5"
+    }
   },
   {
     "key": "soldier-76",
@@ -3224,8 +3561,8 @@
     "description": "세계에서 가장 악명 높은 해커로 손꼽히는 솜브라는 정보를 이용해 권력자들을 조종합니다.",
     "portrait": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/47727b02a16e3bd7b2447d86ae1edf11587bc320b2aecb4f2f16a7ca4ad4e8a0.png",
     "background": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt73c08ba684761b8a/631a8ac1f581050de0035de2/1600_Sombra.jpg",
-    "role": "damage",
-    "subrole": "recon",
+    "role": "support",
+    "subrole": "tactician",
     "gamemodes": [
       "quickplay"
     ],
@@ -3247,17 +3584,35 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt4b2a2ed1bdae253a/6333cbbe64fe5a7d44819fa8/SOMBRA_MACHINE_PISTOL.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8b74781f1f6c2bf8/6333cbb58537f87bfbcdc356/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_SombraMachinePistol_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltbdaba609b8d6c127/6679f4922309b51b10e26a01/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_SombraMachinePistol_WEB_16x9_1920x1080p30_H264.webm"
-        }
-      },
-      {
-        "name": "해킹",
-        "description": "누르고 있으면 해킹합니다. 해킹된 적은 기술을 사용할 수 없으며, 벽 너머에서도 감지됩니다. 해킹된 생명력 팩은 적이 사용할 수 없으며 더 빨리 재생성됩니다. 피해를 받으면 해킹 시도가 취소됩니다.",
-        "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8ab2253eef852a5a038df53fe84ff1dfff0dfea2224bddf881797093695f2261.png",
-        "video": {
-          "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt2c6f334127c1ca0b/6333cbbeb8dbde69f5279868/SOMBRA_HACK.jpg",
-          "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt861f9cd6d5425c1e/6333cbb41ccd046877c0e449/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_SombraHack-Enemies_WEB_16x9_1920x1080p30_H264.mp4",
-          "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt99fff21ca444c608/6679f48c8ec4a4eab43734b0/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_SombraHack-Enemies_WEB_16x9_1920x1080p30_WEBM.webm"
-        }
+        },
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "발당 피해 8 → 7, 감소 시작 거리 15 → 20m, 최대 탄 퍼짐 2.3 → 2, 최대 퍼짐 도달 6 → 10발.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+        },
+        "stats": [
+          {
+            "label": "발당 피해",
+            "value": "7"
+          },
+          {
+            "label": "피해 감소 시작",
+            "value": "20m"
+          },
+          {
+            "label": "최대 탄 퍼짐",
+            "value": "2"
+          },
+          {
+            "label": "최대 탄 퍼짐 도달",
+            "value": "10발"
+          }
+        ],
+        "statsCheckedAt": "2026-10-07",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "statsPatchDate": "2026-10-06",
+        "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
       },
       {
         "name": "위치변환기",
@@ -3267,17 +3622,31 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltdd7dcb5aabef6beb/6333cbbe2dc7636608cc7094/SOMBRA_TRANSLOCATOR.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt772ed8b5a3ea133e/6333cbb5e3c2a2741688cafd/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_SombraTranslocator_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt35d9c3f26239a763/6679f4965e8b86774485d175/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_SombraTranslocator_WEB_16x9_1920x1080p30_WEBM.webm"
-        }
-      },
-      {
-        "name": "바이러스",
-        "description": "지속 피해를 주는 투사체로 적을 감염시킵니다. 바이러스는 해킹된 적에게 더 빠른 속도로 피해를 줍니다.",
-        "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2e933c2c42fea37400c5e296cfc9ea1fc2958071b04bde8960c0fa7ca17f3251.png",
-        "video": {
-          "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt995ab3030236881e/65b94e85af7bc9cccac943e3/Sombra_Virus.jpg",
-          "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt636db86303cba4d3/65b94a81529b713cb44a13cd/0119_Sombra_Virus_AA_01.mp4",
-          "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltf66dca508bfc0ae9/6679fc6e9d84e7755fe03bc5/0119_Sombra_Virus_AA_01.webm"
-        }
+        },
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "은신 5 → 6.5초, 진입 0.3 → 0.75초, 사거리 18 → 12.25m, 대기시간 6 → 7.5초. 이동 속도 보너스는 순간이동 직후 적용.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+        },
+        "stats": [
+          {
+            "label": "은신 지속 / 진입",
+            "value": "6.5초 / 0.75초"
+          },
+          {
+            "label": "투사체 사거리",
+            "value": "12.25m"
+          },
+          {
+            "label": "재사용 대기시간",
+            "value": "7.5초"
+          }
+        ],
+        "statsCheckedAt": "2026-10-07",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "statsPatchDate": "2026-10-06",
+        "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
       },
       {
         "name": "EMP",
@@ -3287,15 +3656,116 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt1683335edc9e6d8a/6333cbbe1a0b5e7d3d1ec4ef/SOMBRA_EMP.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt121cf30640f319f8/6333cbb41a0b5e7d3d1ec4eb/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_SombraEMP_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltd18bd3397d36348e/6679f2c64f84eb5b3d24bbea/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_SombraEMP_WEB_16x9_1920x1080p30_H264.webm"
+        },
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "현재 생명력 피해 25% → 20%. 궁극기 비용 +67.5%.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+        },
+        "stats": [
+          {
+            "label": "현재 생명력 비례 피해",
+            "value": "20%"
+          }
+        ],
+        "statsCheckedAt": "2026-10-07",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "statsPatchDate": "2026-10-06",
+        "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
+      },
+      {
+        "name": "긴급 패치",
+        "description": "아군을 즉시·지속 치유합니다. 생명력 팩과 적 배치 물체 해킹은 충전량을 소모하지 않으며 별도 대기시간이 적용됩니다. 은신 중 사용하면 잠시 노출되지만 은신은 유지됩니다.",
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "신규 보조 발사. 영웅 해킹을 대체하는 아군 치유 기술.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+        },
+        "stats": [
+          {
+            "label": "즉시 / 지속 치유",
+            "value": "65 / 초당 25"
+          },
+          {
+            "label": "치유 한도 / 유지 한도",
+            "value": "총 175 / 12초"
+          },
+          {
+            "label": "사거리 / 시전",
+            "value": "17m / 0.5초"
+          },
+          {
+            "label": "충전 / 재사용 대기시간",
+            "value": "2회 / 8초"
+          },
+          {
+            "label": "생명력 팩 해킹 지속",
+            "value": "30초"
+          },
+          {
+            "label": "물체 해킹 별도 대기시간",
+            "value": "6초 · 피해로 중단돼도 적용"
+          }
+        ],
+        "statsCheckedAt": "2026-10-07",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "statsPatchDate": "2026-10-06",
+        "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
+      },
+      {
+        "name": "사이버 스페이스",
+        "description": "충돌 지점에 아군 치유·적 피해 구역을 만듭니다. 구역의 적을 약화해 그 적이 주는 피해와 치유를 50% 줄입니다.",
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "바이러스를 대체하는 신규 기술. 약화는 대상의 피해·치유 출력에 적용됩니다.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+        },
+        "stats": [
+          {
+            "label": "충돌 피해 / 치유",
+            "value": "40 / 40"
+          },
+          {
+            "label": "구역 피해 / 치유",
+            "value": "초당 25 / 초당 30"
+          },
+          {
+            "label": "구역 지속 / 반경",
+            "value": "3초 / 5m"
+          },
+          {
+            "label": "약화",
+            "value": "주는 피해·치유 50% 감소"
+          }
+        ],
+        "statsCheckedAt": "2026-10-07",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "statsPatchDate": "2026-10-06",
+        "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
+      },
+      {
+        "name": "공모자",
+        "description": "궁극기가 완전히 충전된 적을 확인합니다.",
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "기회주의자를 대체하는 신규 지속 능력.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
         }
       }
     ],
     "perks": {
       "minor": [
         {
-          "name": "암호화 업로드",
-          "description": "투명화 중에 해킹을 사용할 수 있으며, 해킹에 성공하면 은신의 지속 시간이 3초 증가합니다.",
-          "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/282c6799d179564162500a2baff9dd78add8c67aab0142ae4164f7da39a95acb.png"
+          "name": "생명력 해킹",
+          "description": "EMP 사용 시 주변 아군 모두에게 긴급 패치를 적용합니다.",
+          "patchNote": {
+            "date": "2026-10-06",
+            "summary": "EMP 사용 시 주변 아군 모두에게 긴급 패치를 적용합니다.",
+            "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+          }
         },
         {
           "name": "CTRL ALT ESC",
@@ -3305,14 +3775,22 @@
       ],
       "major": [
         {
-          "name": "고속 대역폭",
-          "description": "해킹한 생명력 팩이 4초 동안 아군의 이동 속도를 25% 증가시키고 50의 추가 생명력을 부여합니다.",
-          "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/74aaa7eed6e3eda7d9336006455230e43c769500027b95e68062ddf836a237ab.png"
+          "name": "데이터 패킷",
+          "description": "생명력 팩을 긴급 패치로 해킹하면 기본 재사용 대기시간이 4초 감소합니다.",
+          "patchNote": {
+            "date": "2026-10-06",
+            "summary": "생명력 팩을 긴급 패치로 해킹하면 기본 재사용 대기시간이 4초 감소합니다.",
+            "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+          }
         },
         {
-          "name": "바이러스 복제",
-          "description": "해킹한 적을 바이러스로 공격하면 바이러스가 8미터 이내의 적에게 퍼집니다.",
-          "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f07dadc22d6b469a372f58031769729390acbcbd3541d0d4f9f69b98153b5b25.png"
+          "name": "사이버 보안",
+          "description": "생명력이 절반 미만인 아군에게 사이버 스페이스의 치유량이 2배가 됩니다.",
+          "patchNote": {
+            "date": "2026-10-06",
+            "summary": "생명력이 절반 미만인 아군에게 사이버 스페이스의 치유량이 2배가 됩니다.",
+            "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+          }
         }
       ]
     },
@@ -3336,10 +3814,16 @@
       }
     ],
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/sombra/",
-    "checkedAt": "2026-08-29",
-    "reviewStatus": "verified",
-    "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/sombra?locale=ko-kr"
+    "checkedAt": "2026-10-07",
+    "reviewStatus": "review-needed",
+    "abilitiesCheckedAt": "2026-10-07",
+    "abilitiesSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+    "matchupReviewNotice": "지원 역할 전환과 해킹·바이러스 삭제로 기존 상성을 재검토 중입니다.",
+    "patchNote": {
+      "date": "2026-10-06",
+      "summary": "공격·수색가 → 지원·전술가. 해킹·바이러스 대신 긴급 패치·사이버 스페이스, 지속 능력 공모자 추가. 보조/주요 특전 경험치 +67%/+69.5%. 머리 타점이 14에서 16으로 증가했습니다. 몸통 타점이 25에서 23으로 감소했습니다. 다리 타점 15 → 18",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+    }
   },
   {
     "key": "sigma",
@@ -3587,7 +4071,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/symmetra?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/symmetra?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  몸통 타점 22.4 → 24 다리 타점이 22.4에서 20으로 감소했습니다."
+    }
   },
   {
     "key": "sierra",
@@ -3770,7 +4259,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/sierra?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/sierra?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  몸통 타점이 20.7에서 23으로 증가했습니다. 다리 타점 16.7 → 19 아래 다리 타점 15 → 19 아래 다리 타점 높이가 54.9에서 40으로 감소했습니다."
+    }
   },
   {
     "key": "shion",
@@ -3869,9 +4363,13 @@
     "perks": {
       "minor": [
         {
-          "name": "신속 재장전",
-          "description": "피하기 시 탄약 9발을 재장전합니다.",
-          "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/89b16eb9226b933934040d80842d3bf395e058d7bfebc98f71250ddfcd86e2a4.png"
+          "name": "생존 본능",
+          "description": "피하기의 추가 생명력 지속 시간이 1초 증가합니다.",
+          "patchNote": {
+            "date": "2026-10-06",
+            "summary": "피하기의 추가 생명력 지속 시간이 1초 증가합니다.",
+            "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+          }
         },
         {
           "name": "X 마키나",
@@ -3918,8 +4416,8 @@
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/shion/",
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
-    "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/shion?locale=ko-kr"
+    "abilitiesCheckedAt": "2026-10-07",
+    "abilitiesSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
   },
   {
     "key": "ana",
@@ -4002,9 +4500,13 @@
     "perks": {
       "minor": [
         {
-          "name": "혼미",
-          "description": "수면총에서 깨어난 적이 느려지고 2초에 걸쳐 50의 피해를 받습니다.",
-          "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/261f0fabdaf55159b9e13103abd465cfe3bf50a3906f97b1a47e9c2dc961905b.png"
+          "name": "국소 마취",
+          "description": "수면총이 적중 시 폭발하여 적을 둔화하고 3초 동안 총 45의 피해를 줍니다.",
+          "patchNote": {
+            "date": "2026-10-06",
+            "summary": "수면총이 적중 시 폭발하여 적을 둔화하고 3초 동안 총 45의 피해를 줍니다.",
+            "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+          }
         },
         {
           "name": "가속 혈청",
@@ -4051,8 +4553,13 @@
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/ana/",
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
-    "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/ana?locale=ko-kr"
+    "abilitiesCheckedAt": "2026-10-07",
+    "abilitiesSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점 16.9 → 18"
+    }
   },
   {
     "key": "anran",
@@ -4210,7 +4717,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/anran?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/anran?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점 15.2 → 17 몸통 타점이 18에서 23으로 증가했습니다. 다리 타점 14.7 → 19"
+    }
   },
   {
     "key": "ashe",
@@ -4324,7 +4836,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/ashe?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/ashe?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  몸통 타점 22.4 → 25 다리 타점 16.7 → 19"
+    }
   },
   {
     "key": "echo",
@@ -4453,7 +4970,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/echo?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/echo?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점 15.9 → 18 다리 타점이 14.6에서 20으로 증가했습니다."
+    }
   },
   {
     "key": "emre",
@@ -4494,7 +5016,23 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt3d1c3a95fa893ca9/69817536f50df31652469413/CyberFrag.png",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8663a3b51a3cd214/6986515af2d21830898ef938/EMRE_CyberFrag_100_LIVE_BEST_MZ.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltc769e67ec8d0bea4/698651667c6e2c4f905e0b0a/EMRE_CyberFrag_100_LIVE_BEST_MZ.webm"
-        }
+        },
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "재사용 대기시간 10 → 9초.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+        },
+        "stats": [
+          {
+            "label": "재사용 대기시간",
+            "value": "9초"
+          }
+        ],
+        "statsCheckedAt": "2026-10-07",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "statsPatchDate": "2026-10-06",
+        "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
       },
       {
         "name": "오버라이드 프로토콜",
@@ -4569,8 +5107,13 @@
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/emre/",
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
-    "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/emre?locale=ko-kr"
+    "abilitiesCheckedAt": "2026-10-07",
+    "abilitiesSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점 16 → 18 다리 타점이 17.5에서 20으로 증가했습니다."
+    }
   },
   {
     "key": "orisa",
@@ -4848,7 +5391,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/wuyang?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/wuyang?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점이 14.85에서 16으로 증가했습니다. 몸통 타점이 20.2에서 23으로 증가했습니다."
+    }
   },
   {
     "key": "widowmaker",
@@ -5207,7 +5755,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/illari?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/illari?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점 14.9 → 18 몸통 타점 20 → 23.5"
+    }
   },
   {
     "key": "zarya",
@@ -5485,7 +6038,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/junker-queen?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/junker-queen?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점 17.8 → 19 몸통 타점 26.2 → 28 허리 타점이 23.8에서 26으로 증가했습니다. 다리 타점 19.2 → 22"
+    }
   },
   {
     "key": "junkrat",
@@ -5616,7 +6174,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/junkrat?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/junkrat?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  몸통 타점 32 → 29 다리 타점이 17.3에서 20으로 증가했습니다."
+    }
   },
   {
     "key": "jetpack-cat",
@@ -5756,7 +6319,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/jetpack-cat?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/jetpack-cat?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점 15.8 → 18.5 몸통 타점 14.8 → 17 허리 타점이 19.5에서 26으로 증가했습니다. 다리 타점 9.7 → 12"
+    }
   },
   {
     "key": "zenyatta",
@@ -5895,7 +6463,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/zenyatta?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/zenyatta?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점 20 → 17 몸통 타점이 32에서 30으로 감소했습니다. 다리 타점 24 → 22"
+    }
   },
   {
     "key": "juno",
@@ -6048,7 +6621,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/juno?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/juno?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  몸통 타점이 19에서 23으로 증가했습니다. 손 타점 8.5 → 5 팔 타점 9 → 7"
+    }
   },
   {
     "key": "cassidy",
@@ -6100,6 +6678,11 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltd408205e877eff06/6333c97e425ea374105b60a7/CASSIDY_DEADEYE.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blteae98b44ea71a51f/6333c987da1d806602f83e2c/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_CassidyDeadeye_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt22e1c46d23134283/667991f091d53ba368dc0619/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_CassidyDeadeye_WEB_16x9_1920x1080p30_H264.webm"
+        },
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "궁극기 사용 중 제트팩 캣의 생명줄에 연결할 수 없습니다.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
         }
       }
     ],
@@ -6151,8 +6734,13 @@
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/cassidy/",
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
-    "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/cassidy?locale=ko-kr"
+    "abilitiesCheckedAt": "2026-10-07",
+    "abilitiesSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  몸통 타점이 37에서 33으로 감소했습니다. 다리 타점 24 → 22"
+    }
   },
   {
     "key": "kiriko",
@@ -6310,7 +6898,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/kiriko?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/kiriko?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점이 14.9에서 16으로 증가했습니다. 몸통 타점 17.7 → 21"
+    }
   },
   {
     "key": "torbjorn",
@@ -6445,7 +7038,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/torbjorn?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/torbjorn?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점이 23.3에서 20으로 감소했습니다. 집게 타점 15 → 11"
+    }
   },
   {
     "key": "tracer",
@@ -6574,7 +7172,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/tracer?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/tracer?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  몸통 타점 22.4 → 24 다리 타점이 22.4에서 20으로 감소했습니다."
+    }
   },
   {
     "key": "pharah",
@@ -6985,7 +7588,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/hanzo?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/hanzo?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점 16 → 18"
+    }
   },
   {
     "key": "hazard",
@@ -7123,7 +7731,12 @@
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
     "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/hazard?locale=ko-kr"
+    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/hazard?locale=ko-kr",
+    "patchNote": {
+      "date": "2026-10-06",
+      "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+      "summary": "타점 조정:  머리 타점이 18.5에서 20으로 증가했습니다. 다리 타점 21.9 → 24"
+    }
   },
   {
     "key": "dmon",
@@ -7470,7 +8083,23 @@
           "thumbnail": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt1b6543cefd5b666e/6339051ee3c2a2741688cbab/DVA_MICROMISSILES.jpg",
           "mp4": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt6d005b67c7df369c/63390518b8dbde69f52798f6/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_DVaMicroMissiles_WEB_16x9_1920x1080p30_H264.mp4",
           "webm": "https://blz-contentstack-assets.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8bd5a7ad1b8c7cf5/6668b72590273dcd21e48785/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_DVaMicroMissiles_WEB_16x9_1920x1080p30_WEBM.webm"
-        }
+        },
+        "patchNote": {
+          "date": "2026-10-06",
+          "summary": "발사 속도 초당 11 → 14발.",
+          "sourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+        },
+        "stats": [
+          {
+            "label": "발사 속도",
+            "value": "초당 14발"
+          }
+        ],
+        "statsCheckedAt": "2026-10-07",
+        "statsSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
+        "statsPatchDate": "2026-10-06",
+        "statsScope": "일반 라이브 · 모드별 차이는 개별 표기",
+        "statsBasis": "공식 5시즌 출시 패치에 명시된 수치"
       },
       {
         "name": "자폭",
@@ -7547,8 +8176,8 @@
     "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/dva/",
     "checkedAt": "2026-08-29",
     "reviewStatus": "verified",
-    "abilitiesCheckedAt": "2026-09-09",
-    "abilitiesSourceUrl": "https://overfast-api.tekrop.fr/heroes/dva?locale=ko-kr",
+    "abilitiesCheckedAt": "2026-10-07",
+    "abilitiesSourceUrl": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/",
     "hitpointsNotice": "API 생명력 구성과 9월 8일 5v5 패치 표기가 달라 총 생명력은 재확인 중입니다. 공식 변경: 메카 기본 생명력 200."
   }
 ]

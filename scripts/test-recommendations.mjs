@@ -6,6 +6,28 @@ import { matchesCombo, heroSearchTerms } from '../lib/combo-search.ts';
 const hero = (key, role, name = key) => ({ key, name, role, subrole: '', portrait: '', reviewStatus: 'verified' });
 const heroes = [hero('tank','tank'), hero('old','damage'), hero('ally','damage'), hero('candidate-a','damage','가'), hero('candidate-b','damage','나'), hero('support-a','support'), hero('support-b','support')];
 const fullTeam = ['tank','old','ally','support-a','support-b'];
+test('시즌 5 지원 솜브라는 지원 슬롯에서 선택되며 삭제된 기술의 상성은 추천하지 않는다', () => {
+ const roster = JSON.parse(readFileSync(new URL('../data/heroes.json', import.meta.url)));
+ const sombra = roster.find(h => h.key === 'sombra');
+ assert.equal(sombra.role, 'support');
+ assert.equal(selectionBlockReason(roster, sombra, '5v5', Array(5).fill(null), 3), null);
+ assert.ok(selectionBlockReason(roster, sombra, '5v5', Array(5).fill(null), 1));
+ const matchups = JSON.parse(readFileSync(new URL('../data/matchups.json', import.meta.url)));
+ const abilities = new Map(roster.map(h => [h.key, new Set(h.abilities.map(a => a.name))]));
+ for (const m of matchups.filter(m => m.status === 'verified')) {
+   for (const pair of m.skillInteractions ?? []) {
+     assert.ok(abilities.get(m.hero).has(pair.heroAbility));
+     assert.ok(abilities.get(m.counter).has(pair.counterAbility));
+   }
+ }
+ const links = JSON.parse(readFileSync(new URL('../data/team-synergies.json', import.meta.url)));
+ const skyNoon = links.find(link => link.id === 'jetpack-cat-cassidy');
+ assert.equal(skyNoon.status, 'held');
+ assert.equal(assessTeam(['jetpack-cat','cassidy'], '5v5', [], links.filter(l => l.status === 'recommended'), []).linkage, 0);
+ const maps = JSON.parse(readFileSync(new URL('../data/maps.json', import.meta.url)));
+ const newMap = maps.find(m => m.id === 'watchpoint-grimsvotn');
+ assert.equal(assessTeam(['sombra','doctrine'], '5v5', [], [], [], newMap).mapPoints, 0);
+});
 test('체험 영웅은 직접 선택 가능하지만 자동 추천에는 포함하지 않는다', () => {
  const trial = {...hero('doctrine','support'), reviewStatus:'review-needed'};
  const roster = [...heroes, trial];

@@ -23,6 +23,7 @@ export interface StoryMedia { type: string; link: string; }
 export interface StoryChapter { title: string; picture: string; }
 export interface Hero {
   patchNote?: Ability["patchNote"];
+  matchupReviewNotice?: string;
   releaseStatus?: "trial"; dataNotice?: string; mediaPendingReason?: string;
   key: string; name: string; description: string; portrait: string; background: string;
   role: Role; subrole: string; gamemodes: string[]; location: string; birthday: string; age: number | null;
@@ -51,6 +52,7 @@ export interface MapRecommendation {
   condition: string; caution: string; sourceUrls: string[];
 }
 export interface MapGuide {
+  recommendationNotice?: string;
   id: string; name: string; mode: string; recommendations: MapRecommendation[]; reviewedAt: string;
   terrain: string; analysisBasis: string; layoutCaveat: string; sourceUrls: string[];
 }

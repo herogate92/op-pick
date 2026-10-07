@@ -1978,19 +1978,6 @@
         "sourceUrls": [
           "https://overfast-api.tekrop.fr/heroes/freja?locale=ko-kr"
         ]
-      },
-      {
-        "hero": "sombra",
-        "rank": 3,
-        "note": "루나사피의 경사진 로봇 경로와 건물 사이 우회로에서 측면에서 해킹과 바이러스로 본대가 공격하는 목표를 압박하고 위치변환기로 빠져나옵니다.",
-        "legacyWinRate": 47.8,
-        "winRate": null,
-        "rateStatus": "수집 조건·출처 미확인으로 표시 보류",
-        "condition": "로봇 진행 방향에 맞춰 엄폐와 교전 위치를 옮길 때",
-        "caution": "다음 거점 이동 때는 단독 처치 추격보다 아군과 합류하는 시간을 맞추세요.",
-        "sourceUrls": [
-          "https://overfast-api.tekrop.fr/heroes/sombra?locale=ko-kr"
-        ]
       }
     ],
     "reviewedAt": "2026-09-09",
@@ -2017,19 +2004,6 @@
         "caution": "열린 하늘에서 오래 머물지 말고 매트릭스가 향하지 않은 경로를 선택하세요.",
         "sourceUrls": [
           "https://overfast-api.tekrop.fr/heroes/freja?locale=ko-kr"
-        ]
-      },
-      {
-        "hero": "sombra",
-        "rank": 2,
-        "note": "이스페란사의 중앙 연결로와 굽은 로봇 경로·고지에서 측면에서 해킹과 바이러스로 본대가 공격하는 목표를 압박하고 위치변환기로 빠져나옵니다.",
-        "legacyWinRate": 47.8,
-        "winRate": null,
-        "rateStatus": "수집 조건·출처 미확인으로 표시 보류",
-        "condition": "연결로를 통해 아군과 빠르게 재합류할 때",
-        "caution": "다음 거점 이동 때는 단독 처치 추격보다 아군과 합류하는 시간을 맞추세요.",
-        "sourceUrls": [
-          "https://overfast-api.tekrop.fr/heroes/sombra?locale=ko-kr"
         ]
       },
       {
@@ -2122,19 +2096,6 @@
         "caution": "열린 하늘에서 오래 머물지 말고 매트릭스가 향하지 않은 경로를 선택하세요.",
         "sourceUrls": [
           "https://overfast-api.tekrop.fr/heroes/freja?locale=ko-kr"
-        ]
-      },
-      {
-        "hero": "sombra",
-        "rank": 1,
-        "note": "콜로세오의 중앙 긴 통로와 로봇 경로의 코너·다리 주변에서 측면에서 해킹과 바이러스로 본대가 공격하는 목표를 압박하고 위치변환기로 빠져나옵니다.",
-        "legacyWinRate": 47.8,
-        "winRate": null,
-        "rateStatus": "수집 조건·출처 미확인으로 표시 보류",
-        "condition": "중앙 정면 사선을 피하고 옆 각도에서 교전을 시작할 때",
-        "caution": "다음 거점 이동 때는 단독 처치 추격보다 아군과 합류하는 시간을 맞추세요.",
-        "sourceUrls": [
-          "https://overfast-api.tekrop.fr/heroes/sombra?locale=ko-kr"
         ]
       },
       {
@@ -2449,5 +2410,19 @@
       "https://overfast-api.tekrop.fr/maps"
     ],
     "layoutCaveat": "세부 지형의 현장 검증 전 조건부 가이드입니다. 거점마다 실제 접근·퇴각 경로를 확인하세요."
+  },
+  {
+    "id": "watchpoint-grimsvotn",
+    "name": "감시 기지: 그림스뵈튼",
+    "mode": "호위",
+    "reviewedAt": "2026-10-07",
+    "terrain": "아이슬란드 화산 지대의 오버워치 감시 기지",
+    "analysisBasis": "공식 5시즌 패치에서 전장 추가와 호위 모드 확인",
+    "layoutCaveat": "구간별 운영과 추천 영웅은 실전 자료 확보 후 추가합니다.",
+    "sourceUrls": [
+      "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10/"
+    ],
+    "recommendations": [],
+    "recommendationNotice": "신규 전장입니다. 검증된 구간별 자료가 없어 영웅 순위를 아직 제공하지 않습니다."
   }
 ]

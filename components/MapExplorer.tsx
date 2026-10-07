@@ -91,6 +91,7 @@ export function MapExplorer({ maps, heroes }: { maps: PublicMapGuide[]; heroes: 
             </header>
             <div className="map-role-sections">
               <p className="map-analysis-note">{selected.analysisBasis}<br />{selected.layoutCaveat}</p>
+              {selected.recommendationNotice && <p className="map-analysis-note">{selected.recommendationNotice}</p>}
               {(["tank", "damage", "support"] as Role[]).map((role) => {
                 const Icon = roleIcons[role];
                 const recommendations = selected.recommendations.filter((item) => heroByKey.get(item.hero)?.role === role);

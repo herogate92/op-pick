@@ -81,7 +81,8 @@ for (const matchup of matchups) {
 const mapIds = new Set();
 for (const hero of heroes) {
   const documentedTrial = hero.releaseStatus === "trial" && hero.reviewStatus === "review-needed" && hero.dataNotice?.trim() && hero.hitpointsNotice?.trim();
-  if (!documentedTrial && !matchups.some((matchup) => matchup.hero === hero.key && matchup.status === "verified")) errors.push(`검토된 상성 없는 영웅: ${hero.key}`);
+  const documentedPending = hero.matchupReviewNotice?.trim() && hero.patchNote?.date && hero.patchNote?.sourceUrl;
+  if (!documentedTrial && !documentedPending && !matchups.some((matchup) => matchup.hero === hero.key && matchup.status === "verified")) errors.push(`검토된 상성 없는 영웅: ${hero.key}`);
 }
 const validMapModes = new Set(["쟁탈", "호위", "혼합", "밀기", "플래시포인트", "기타"]);
 for (const map of maps) {
@@ -90,7 +91,7 @@ for (const map of maps) {
   if (!map.name || !validMapModes.has(map.mode)) errors.push(`맵 기본값 오류: ${map.id}`);
   if (!map.reviewedAt) errors.push(`맵 검수일 누락: ${map.id}`);
   if (!map.terrain || !map.analysisBasis || !map.layoutCaveat || !map.sourceUrls?.length) errors.push(`맵 전략 근거 누락: ${map.id}`);
-  if (!Array.isArray(map.recommendations) || !map.recommendations.length) errors.push(`맵 추천 누락: ${map.id}`);
+  if (!Array.isArray(map.recommendations) || (!map.recommendations.length && !map.recommendationNotice?.trim())) errors.push(`맵 추천 누락: ${map.id}`);
   for (const recommendation of map.recommendations ?? []) {
     if (!keys.has(recommendation.hero)) errors.push(`존재하지 않는 맵 추천 영웅: ${map.id}/${recommendation.hero}`);
     if (recommendation.rank < 1 || recommendation.rank > 3) errors.push(`맵 추천 순위 오류: ${map.id}/${recommendation.hero}`);
